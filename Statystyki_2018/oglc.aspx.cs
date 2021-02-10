@@ -73,7 +73,7 @@ namespace Statystyki_2018
 
             try
             {
-                DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 2, 20, 20, tenPlik);
+                DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 2, 19, 20, tenPlik);
                 Session["tabelka002"] = tabelka01;
                 tabela_1();
                 tabela_3();
@@ -344,12 +344,12 @@ namespace Statystyki_2018
 
                 MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], table, 18, 0, 5, false, false, false, false, false, false);
 
-                rowik = table.Rows.Count - 2;
+                rowik = table.Rows.Count ;
 
                 // pod tabela z tebeli nr 2
               
                 DataTable  table2x = (DataTable)Session["tabelka002"];
-                for (int row2 = rowik; row2 < rowik + 11; row2++)
+                for (int row2 = rowik; row2 < rowik + 10; row2++)
                 {
                     for (int i = 2; i < 19; i++)
                     {
@@ -366,7 +366,7 @@ namespace Statystyki_2018
                     }
                 }
                 //------------
-                for (int row2 = rowik; row2 < rowik + 11; row2++)
+                for (int row2 = rowik; row2 < rowik + 10; row2++)
                 {
                     for (int i = 1; i < 9; i++)
                     {
@@ -380,33 +380,32 @@ namespace Statystyki_2018
                 MyWorksheet1.Cells[rowik + 8, 1, rowik + 8, 2].Merge = true;
                 MyWorksheet1.Cells[rowik + 8, 1].Value = "Wpływ";
                 MyWorksheet1.Cells[rowik + 9, 1, rowik + 9, 2].Merge = true;
-                MyWorksheet1.Cells[rowik + 9, 1].Value = "Wpływ";
+                MyWorksheet1.Cells[rowik + 9, 1].Value = "Załatwienia";
+              
                 MyWorksheet1.Cells[rowik + 10, 1, rowik + 10, 2].Merge = true;
-                MyWorksheet1.Cells[rowik + 10, 1].Value = "Załatwienia";
-                MyWorksheet1.Cells[rowik + 11, 1, rowik + 11, 2].Merge = true;
-                MyWorksheet1.Cells[rowik + 11, 1].Value = " Pozostało na następny miesiąc";
-                MyWorksheet1.Cells[rowik + 12, 1, rowik + 17, 1].Merge = true;
-                MyWorksheet1.Cells[rowik + 12, 1].Value = " Zaległość";
+                MyWorksheet1.Cells[rowik + 10, 1].Value = " Pozostało na następny miesiąc";
+                MyWorksheet1.Cells[rowik + 11, 1, rowik + 16, 1].Merge = true;
+                MyWorksheet1.Cells[rowik + 11, 1].Value = " Zaległość";
+                MyWorksheet1.Cells[rowik + 11, 2, rowik + 11, 2].Merge = true;
+                MyWorksheet1.Cells[rowik + 11, 2].Value = " 0-3 miesiący";
                 MyWorksheet1.Cells[rowik + 12, 2, rowik + 12, 2].Merge = true;
-                MyWorksheet1.Cells[rowik + 12, 2].Value = " 0-3 miesiący";
+                MyWorksheet1.Cells[rowik + 12, 2].Value = " 3-6 miesięcy";
                 MyWorksheet1.Cells[rowik + 13, 2, rowik + 13, 2].Merge = true;
-                MyWorksheet1.Cells[rowik + 13, 2].Value = " 3-6 miesięcy";
+                MyWorksheet1.Cells[rowik + 13, 2].Value = " 6-12 miesięcy";
                 MyWorksheet1.Cells[rowik + 14, 2, rowik + 14, 2].Merge = true;
-                MyWorksheet1.Cells[rowik + 14, 2].Value = " 6-12 miesięcy";
+                MyWorksheet1.Cells[rowik + 14, 2].Value = " 12-24 miesięcy (do 2 lat)";
                 MyWorksheet1.Cells[rowik + 15, 2, rowik + 15, 2].Merge = true;
-                MyWorksheet1.Cells[rowik + 15, 2].Value = " 12-24 miesięcy (do 2 lat)";
+                MyWorksheet1.Cells[rowik + 15, 2].Value = " 36-60 miesięcy (3-5 lat)";
                 MyWorksheet1.Cells[rowik + 16, 2, rowik + 16, 2].Merge = true;
-                MyWorksheet1.Cells[rowik + 16, 2].Value = " 36-60 miesięcy (3-5 lat)";
-                MyWorksheet1.Cells[rowik + 17, 2, rowik + 17, 2].Merge = true;
-                MyWorksheet1.Cells[rowik + 17, 2].Value = " Powyżej 60 miesięcy (powyżej 5 lat)";
+                MyWorksheet1.Cells[rowik + 16, 2].Value = " Powyżej 60 miesięcy (powyżej 5 lat)";
                 DataTable tabelka001 = (DataTable)Session["tabelka002"];
 
                 // druga
 
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka003"], 33, 0, 7, false, false, false, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka003"], 33, 0, 7, false, true, false, false, false, false);
                 try
                 {
-                    MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka004"], 5, 0, 6,true, false, false, false, false, false);
+                    MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka004"], 5, 0, 6,true, true, false, false, false, false);
                 }
                 catch
                 {

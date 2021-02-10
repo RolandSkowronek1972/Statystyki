@@ -353,7 +353,7 @@ namespace Statystyki_2018
                 }
             }
         }
-
+        
         public GridViewRow PodsumowanieTabeli(DataTable dane, int iloscKolumn, string cssStyleDlaTabeli)
         {
             DataTable tabelka = tabellaLiczbowa(dane);

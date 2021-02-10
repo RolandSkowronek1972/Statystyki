@@ -14,6 +14,26 @@
                 left: 0;
                 right: 0;
             }
+
+        @media print {
+
+            @page {
+                font-size: 7.5pt;
+                size: 29cm 21.7cm;
+                margin: 5mm 5mm 5mm 5mm;
+            }
+
+            .horizont {
+                transform: translate(-20mm, 0) scale(0.7);
+                -webkit-transform: translate(-20mm, 0) scale(0.7);
+                -moz-transform: translate(-20mm, 0) scale(0.7);
+            }
+             .horizont2 {
+                transform: translate(-50mm, 0) scale(0.55);
+                -webkit-transform: translate(-50mm, 0) scale(0.55);
+                -moz-transform: translate(-50mm, 0) scale(0.55);
+            }
+        }
     </style>
 
     <script src="Scripts/rls.js"></script>
@@ -61,7 +81,7 @@
 
             <br />
         </div>
-        <div id="zalatwienia">
+        <div id="zalatwienia" class="horizont">
             <br />
 
             <asp:Label ID="tabela2Label" runat="server"></asp:Label>
@@ -236,9 +256,6 @@
                         </ItemTemplate>
                         <ItemStyle CssClass="col_45" BackColor="#cccccc" />
                     </asp:TemplateField>
-
-                    
-
                 </Columns>
                 <FooterStyle Font-Bold="True" HorizontalAlign="Center" Wrap="False" />
                 <HeaderStyle Wrap="False" />
@@ -246,7 +263,7 @@
             </asp:GridView>
             <br />
         </div>
-        <div id="wyznaczenia" class="page-break">
+        <div id="wyznaczenia" class="page-break horizont2">
             <asp:Label ID="Label17" runat="server" Visible="False"></asp:Label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Label ID="infoLabel3" runat="server" Text="Tabela 3 \/" Visible="False"></asp:Label>
@@ -543,7 +560,7 @@
                         <ItemStyle CssClass="col_46" />
                     </asp:TemplateField>
 
-                      <asp:TemplateField HeaderText="d_06" SortExpression="d_06">
+                    <asp:TemplateField HeaderText="d_06" SortExpression="d_06">
 
                         <ItemTemplate>
                             <a href="javascript:openPopup('popup.aspx?sesja=<%# Eval("id_sedziego")+ "!"+Eval("id_tabeli") +"!31!7"%>')">
@@ -553,7 +570,7 @@
                         <ItemStyle CssClass="col_46" />
                     </asp:TemplateField>
 
-                      <asp:TemplateField HeaderText="d_06" SortExpression="d_06">
+                    <asp:TemplateField HeaderText="d_06" SortExpression="d_06">
 
                         <ItemTemplate>
                             <a href="javascript:openPopup('popup.aspx?sesja=<%# Eval("id_sedziego")+ "!"+Eval("id_tabeli") +"!32!7"%>')">
@@ -570,7 +587,7 @@
         </div>
 
         <br />
-        <div id="Div11" class="page-break">
+        <div id="Div11" class="page-break horizont">
             &nbsp;<asp:Label ID="Label15" runat="server" Visible="False"></asp:Label>
             &nbsp;
     &nbsp;<asp:Label ID="infoLabel5" runat="server" Text="Tabela 4 \/" Visible="False"></asp:Label>
@@ -633,19 +650,16 @@
 
         <div id="debag">
             <br />
-            <br />
+
             Raport statystyczny
                      <asp:Label ID="Label27" runat="server"></asp:Label>
             &nbsp;Sporzadzone dn.
-            <asp:Label ID="Label29" runat="server"></asp:Label>&nbsp;przez&nbsp;
-&nbsp;&nbsp;
+            <asp:Label ID="Label29" runat="server"></asp:Label>&nbsp;przez&nbsp;&nbsp;&nbsp;
             <asp:Label ID="Label28" runat="server"></asp:Label>
             &nbsp;<asp:Label ID="Label30" runat="server"></asp:Label>
             <br />
 
             <asp:Label ID="Label11" runat="server"></asp:Label>
         </div>
-
-        <br />
     </div>
 </asp:Content>

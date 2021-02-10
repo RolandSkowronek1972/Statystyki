@@ -126,10 +126,10 @@ namespace Statystyki_2018
 
                 // pierwsza
                 DataTable table1 = (DataTable)Session["tabelka001"];
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], table1, 55, 0, 8, true, false, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], table1, 55, 0, 8, true, true, false, false, false);
 
                 //pod tabela
-                int rowik = table1.Rows.Count +1;
+                int rowik = table1.Rows.Count +2;
 
                 tb.komorkaExcela(MyWorksheet1, rowik + 7, 1, "Zaległość z poprzedniego miesiąca", true, 0, 1);
                 tb.komorkaExcela(MyWorksheet1, rowik + 8, 1, "Wpływ", true, 0, 1);

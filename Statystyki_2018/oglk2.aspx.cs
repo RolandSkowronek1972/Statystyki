@@ -546,17 +546,19 @@ namespace Statystyki_2018
                 ExcelWorksheet MyWorksheet1 = MyExcel.Workbook.Worksheets[1];
 
                 MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 7, 0, 7, false, true, false, false, false);
-                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 13, 0, 7, false, true, false, false, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 1, 0, 7, false, true, false, false, false);
                 MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 3, 1, 5, false, true, false, false, false);
-                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 3, 1, 5, false, true, false, false, false);
-                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[5], (DataTable)Session["tabelka005"], 6, 1, 5, false, true, false, false, false);
-                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[6], (DataTable)Session["tabelka006"], 2, 4, 4, 2, false);
-                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[7], (DataTable)Session["tabelka007"], 1, 12, 2, 5, false);
-                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[8], (DataTable)Session["tabelka008"], 1, 12, 2, 5, false);
-                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[9], (DataTable)Session["tabelka009"], 3, 4, 2, 7, false);
-                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[10], (DataTable)Session["tabelka010"], 7, 1, 5, false, true, false, false, false);
-                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[11], (DataTable)Session["tabelka011"], 7, 1, 5, false, true, false, false, false);
-                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[12], (DataTable)Session["tabelka012"], 7, 1, 5, false, true, false, false, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 2, 4, 4, 2, false);
+
+            //    MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 3, 1, 5, false, true, false, false, false);
+             //   MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[5], (DataTable)Session["tabelka005"], 6, 1, 5, false, true, false, false, false);
+             //   MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[6], (DataTable)Session["tabelka006"], 2, 4, 4, 2, false);
+            //   MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[7], (DataTable)Session["tabelka007"], 1, 12, 2, 5, false);
+             //   MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[8], (DataTable)Session["tabelka008"], 1, 12, 2, 5, false);
+            //    MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[9], (DataTable)Session["tabelka009"], 3, 4, 2, 7, false);
+            //    MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[10], (DataTable)Session["tabelka010"], 7, 1, 5, false, true, false, false, false);
+            //    MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[11], (DataTable)Session["tabelka011"], 7, 1, 5, false, true, false, false, false);
+           //     MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[12], (DataTable)Session["tabelka012"], 7, 1, 5, false, true, false, false, false);
 
                 try
                 {

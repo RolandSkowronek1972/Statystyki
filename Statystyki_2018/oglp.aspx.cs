@@ -29,6 +29,7 @@ namespace Statystyki_2018
                 path = Server.MapPath("~\\Template\\" + tenPlikNazwa + ".xlsx");
                 if (idWydzial == null)
                 {
+                    Server.Transfer("default.aspx");
                     return;
                 }
                 bool dost = cm.dostep(idWydzial, (string)Session["identyfikatorUzytkownika"]);
@@ -89,11 +90,11 @@ namespace Statystyki_2018
 
         protected void odswiez()
         {
-            string yyx = (string)Session["id_dzialu"];
+            string id_dzialu = (string)Session["id_dzialu"];
             try
             {
-                cm.log.Info(tenPlik + "ładowanie danych do tabeli 100");
-                DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 100, 20, 20, tenPlik);
+                cm.log.Info(tenPlik + "ładowanie danych do tabeli 100");//aaa
+                DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"],100, 20, 20, tenPlik);
                 Session["tabelka100"] = tabelka01;
             }
             catch (Exception ex)
@@ -122,11 +123,11 @@ namespace Statystyki_2018
             makeLabels();
             try
             {
-                Label11.Visible = cl.debug(int.Parse(yyx));
-                infoLabel2.Visible = cl.debug(int.Parse(yyx));
-                infoLabel3.Visible = cl.debug(int.Parse(yyx));
-                infoLabel4.Visible = cl.debug(int.Parse(yyx));
-                infoLabel5.Visible = cl.debug(int.Parse(yyx));
+                Label11.Visible = cl.debug(int.Parse(id_dzialu));
+                infoLabel2.Visible = cl.debug(int.Parse(id_dzialu));
+                infoLabel3.Visible = cl.debug(int.Parse(id_dzialu));
+                infoLabel4.Visible = cl.debug(int.Parse(id_dzialu));
+                infoLabel5.Visible = cl.debug(int.Parse(id_dzialu));
             }
             catch
             {
@@ -733,36 +734,36 @@ namespace Statystyki_2018
 
                 // pierwsza
 
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 13, 0, 4, false, false, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 7, 0, 4, false, false, false, false, false);
                 // podtabela
 
-                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 4, 1, "Pozostało z poprzedniego miesiąca", true, 0, 3);
-                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 5, 1, "Wpływ", true, 0, 3);
-                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 6, 1, "Załatwienia", true, 0, 3);
-                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 7, 1, "Pozostało na następny miesiąc", true, 0, 3);
-                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 8, 1, "Odroczenia spraw ", true, 0, 3);
+                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 4, 1, "Pozostało z poprzedniego miesiąca", true, 0, 2);
+                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 5, 1, "Wpływ", true, 0, 2);
+                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 6, 1, "Załatwienia", true, 0, 2);
+                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 7, 1, "Pozostało na następny miesiąc", true, 0, 2);
+                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 8, 1, "Odroczenia spraw ", true, 0, 2);
                 tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 9, 1, "Ilość spraw niezałatwionych licząc od daty wpływu / zawieszone niezakreślone", true, 0, 6);
-                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 10, 1, "Powyżej 3 - 6 miesięcy", true, 0, 3);
-                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 11, 1, "Powyżej 6 - 12 miesięcy", true, 0, 3);
-                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 12, 1, "Powyżej 12 do 24 miesiący", true, 0, 3);
-                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 13, 1, "Powyżej 2 lat do 3 lat", true, 0, 3);
-                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 14, 1, "WpPowyżej 3 lat do 5 latływ", true, 0, 3);
-                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 15, 1, "Powyżej 5 lat do 8 lat", true, 0, 3);
-                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 16, 1, "Powyżej 8 lat", true, 0, 3);
+                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 10, 1, "Powyżej 3 - 6 miesięcy", true, 0, 2);
+                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 11, 1, "Powyżej 6 - 12 miesięcy", true, 0, 2);
+                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 12, 1, "Powyżej 12 do 24 miesiący", true, 0, 2);
+                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 13, 1, "Powyżej 2 lat do 3 lat", true, 0, 2);
+                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 14, 1, "WpPowyżej 3 lat do 5 latływ", true, 0, 2);
+                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 15, 1, "Powyżej 5 lat do 8 lat", true, 0, 2);
+                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 16, 1, "Powyżej 8 lat", true, 0, 2);
                 //  DataTable tabelka02 = dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse((string)Session["id_wydzial"]), 100, Date1.Date, Date2.Date, 4, tenPlik);
                 int iloscWierszy = (((DataTable)Session["tabelka001"]).Rows.Count + 4);
-                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka100"], 5, 4, 4, iloscWierszy, false);
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka100"], 13, 4, 3, iloscWierszy, false);
 
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 13, 0, 5, false, false, false, false, false);
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 13, 0, 4, false, false, false, false, false);
-                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 4, 4, 1, 4, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 12, 0, 5, false, true, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 4, 0, 4, false, true, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 4, 3 , 1, 4, false);
 
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[5], (DataTable)Session["tabelka005"], 4, 0, 4, false, false, false, false, false);
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[6], (DataTable)Session["tabelka006"], 13, 0, 5, false, false, false, false, false);
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[7], (DataTable)Session["tabelka007"], 4, 0, 3, false, false, false, false, false);
-                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[8], (DataTable)Session["tabelka008"], 12, 3, 1, 4, false);
-                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[9], (DataTable)Session["tabelka009"], 1, 11, 1, 7, false);
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[10], (DataTable)Session["tabelka010"], 11, 0, 6, false, false, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[5], (DataTable)Session["tabelka005"], 3, 0, 4, false, true, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[6], (DataTable)Session["tabelka006"], 13, 0, 5, false, true, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[7], (DataTable)Session["tabelka007"], 5, 0, 3, false, true, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[8], (DataTable)Session["tabelka008"], 12, 2, 1, 4, false);
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[9], (DataTable)Session["tabelka009"], 1, 11, 0, 7, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[10], (DataTable)Session["tabelka010"], 11, 0, 6, false, true, false, false, false);
 
                 try
                 {

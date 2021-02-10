@@ -507,8 +507,8 @@
                     </asp:TemplateField>
                      <asp:TemplateField HeaderText="d_07" SortExpression="d_01">
                         <ItemTemplate>
-                            <a href="javascript:openPopup('popup.aspx?sesja=<%# Eval("id_sedziego")+ "!"+Eval("id_tabeli") +"!44!2"%>')">
-                                <asp:Label ID="Label_gwTabela1154" runat="server" Text='<%# Eval("d_44")%>' CssClass="normal"></asp:Label>
+                            <a href="javascript:openPopup('popup.aspx?sesja=<%# Eval("id_sedziego")+ "!"+Eval("id_tabeli") +"!54!2"%>')">
+                                <asp:Label ID="Label_gwTabela1154" runat="server" Text='<%# Eval("d_54")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
                         <ItemStyle CssClass="col_60" />

@@ -14,6 +14,15 @@
                 left: 0;
                 right: 0;
             }
+
+        @media print {
+
+            .horizont {
+                transform: translate(-25mm, 0) scale(0.80);
+                -webkit-transform: translate(-25mm, 0) scale(0.80);
+                -moz-transform: translate(-25mm, 0) scale(0.80);
+            }
+        }
     </style>
 
     <script src="Scripts/rls.js"></script>
@@ -56,7 +65,7 @@
             <br />
         </div>
 
-        <div id="zalatwienia">
+        <div id="zalatwienia" class="horizont">
             <br />
 
             &nbsp;&nbsp;&nbsp;&nbsp;
@@ -127,7 +136,7 @@
             <br />
         </div>
 
-        <div>
+        <div class="horizont page-break">
             &nbsp;<asp:Label ID="Label12" runat="server" Text="Wydajnośc sędziów orzekających w Wydziale  IV Pracy"></asp:Label>
             &nbsp;&nbsp;&nbsp;
            <asp:Label ID="Label2" runat="server" Text="tabela  2" Visible="False"></asp:Label>
@@ -237,7 +246,7 @@
 
             <br />
         </div>
-        <div>
+        <div class="horizont page-break">
             &nbsp;<asp:Label ID="Label14" runat="server" Text="Wskaźnik odroczeń (liczba spraw odroczonych przez liczbę spraw wyznaczonych na rozprawę)"></asp:Label>
             &nbsp;&nbsp;&nbsp;
            <asp:Label ID="infoLabel3" runat="server" Text="tabela  3" Visible="False"></asp:Label>
@@ -283,7 +292,7 @@
 
             <br />
         </div>
-        <div class="page-break">
+        <div class="horizont page-break">
             &nbsp;<asp:Label ID="Label7" runat="server" Text="Wielokrotna (należy podzielić pozostałość na koniec okresu kontrolnego przez średni miesięczny wpływ)"></asp:Label>
             &nbsp;&nbsp;&nbsp;
            <asp:Label ID="infoLabel4" runat="server" Text="tabela 4" Visible="False"></asp:Label>
@@ -858,15 +867,12 @@
             Raport statystyczny
                      <asp:Label ID="Label27" runat="server"></asp:Label>
             &nbsp;Sporzadzone dn.
-            <asp:Label ID="Label29" runat="server"></asp:Label>&nbsp;przez&nbsp;
-&nbsp;&nbsp;
+            <asp:Label ID="Label29" runat="server"></asp:Label>&nbsp;przez&nbsp;&nbsp;&nbsp;
             <asp:Label ID="Label28" runat="server"></asp:Label>
             &nbsp;<asp:Label ID="Label30" runat="server"></asp:Label>
             <br />
 
             <asp:Label ID="Label11" runat="server"></asp:Label>
         </div>
-
-        <br />
     </div>
 </asp:Content>

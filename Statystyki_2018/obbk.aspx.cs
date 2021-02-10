@@ -143,7 +143,7 @@ namespace Statystyki_2018
                 tb.komorkaExcela(MyWorksheet1, rowik + 10, 1, "Pozostało na następny miesiąc", true, 0, 1);
                 tb.komorkaExcela(MyWorksheet1, rowik + 11, 1, "3-6 miesięcy", true, 0, 1);
                 tb.komorkaExcela(MyWorksheet1, rowik + 12, 1, "6-12 miesięcy", true, 0, 1);
-                tb.komorkaExcela(MyWorksheet1, rowik + 13, 1, "ponad 12 miesięcy", true, 0, 1);
+                tb.komorkaExcela(MyWorksheet1, rowik + 13, 1, "Powyżej 12 miesięcy", true, 0, 1);
 
                 DataTable tabelka001 = (DataTable)Session["tabelka002"];
 
