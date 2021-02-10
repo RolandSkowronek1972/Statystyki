@@ -1,0 +1,1509 @@
+﻿<komorki>
+
+  <tabela id="1.1.1.1">
+    <daneTabeli>
+      <iloscWierszy>43</iloscWierszy>
+      <tekstNadTabela>Ewidencja spraw z zakresu ubezpieczeń społecznych – ogółem I instancja</tekstNadTabela>
+      <iloscWierszyNaglowka>4</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>4</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>16</iloscKolumnPoIteracji>
+      <lp>1</lp>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>4</colSpan>
+        <rowspan>4</rowspan>
+        <style>center col_250</style>
+        <text> SPRAWY WG REPERTORIÓW LUB WYKAZÓW</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>4</rowspan>
+        <style>center col_80_fest</style>
+        <text>pozostało z ubiegłego roku</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>1</rowspan>
+        <style>center</style>
+        <text>WPŁYNĘŁO</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>10</colSpan>
+        <rowspan>1</rowspan>
+        <style>center</style>
+        <text>ZAŁATWIONO</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>2</rowspan>
+        <style>center</style>
+        <text>Odroczono</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>4</rowspan>
+        <style>center</style>
+        <text>Pozostało na okres następny</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest</style>
+        <text>Razem</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest</style>
+        <text>w tym odwołań od decyzji uprawnionego organu</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest</style>
+        <text>Razem</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>8</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>w tym sposób załatwienia odwołań</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest</style>
+        <text>inne załatwienia</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>od decyzji uprawnionego organu</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest</style>
+        <text>w związku z niewydaniem decyzji zobowiązano uprawniony organ  do wydania decyzji w określonym terminie</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest</style>
+        <text>uchylono</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>umorzono</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest</style>
+        <text>ogółem</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest</style>
+        <text>w tym publikację orzeczenia</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_80_fest</style>
+        <text>odda-lono</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_80_fest</style>
+        <text>zmieniono zaskarżoną decyzję w całości lub w części</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_80_fest</style>
+        <text>odrzucono</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_80_fest</style>
+        <text>uchylenie decyzji, przekazanie sprawy do rozpoznania uprawnionemu organowi,umorzenie postępowania</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_80_fest</style>
+        <text>ogółem</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_80_fest</style>
+        <text>w tym w wyniku cofnięcia pozwu/wniosku/skargi</text>
+      </komorka>
+    </naglowek>
+    <tablaBoczna>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>4</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text> Ogółem I instancja (w.2 + dz.1.1.1.1.a w. 1)</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>4</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_80_fest</style>
+        <text>Ogółem I instancja z wyłączeniem zażaleniowych(w. 03, 32, 42, 43)</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>4</colSpan>
+        <rowspan>1</rowspan>
+        <style>center</style>
+        <text>U razem (w. 04 do 31 =dz. 1.1.e w.01)</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>3</rowspan>
+        <style>center</style>
+        <text>O prawo do</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>emerytury</style>
+        <text>Odroczono</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>3</rowspan>
+        <style>center</style>
+        <text>z wyłączeniem rolników i służb mundurowych</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>501</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>renty z tytułu niezdolności do pracy</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>502</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>renty rodzinnej</text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>503</text>
+      </komorka>
+      <komorka>
+        <wiersz>7</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>O rentę lub emeryturę żołnierzy zawodowych, funkcjonariuszy Policji, Agencji Bezpieczeństwa Wewnętrznego, Agencji Wywiadu, Służby Kontrwywiadu Wojskowego, Służby Wywiadu Wojskowego, Centralnego Biura Antykorupcyjnego, Biura Ochrony Rządu, Straży Granicznej, Służby Więziennej, Państwowej Straży Pożarnej oraz członków ich rodzin (z wyjątkiem rent znakowanych symbolem 507)</text>
+      </komorka>
+      <komorka>
+        <wiersz>7</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>506</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>8</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>wypadków lub chorób pozostających w związku ze służba wojskową, w  Policji, Agencji Bezpieczeństwa Wewnętrznego, Agencji Wywiadu, Służby Kontrwywiadu Wojskowego, Służby Wywiadu Wojskowego, Centralnego Biura Antykorupcyjnego, Biura Ochrony Rządu, Straży Granicznej, Służby Więziennej, Państwowej Straży Pożarnej</text>
+      </komorka>
+      <komorka>
+        <wiersz>8</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>507</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>9</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>O rentę z tytułu niezdolności do pracy przewidzianą dla inwalidów wojennych i wojskowych oraz ich rodzin</text>
+      </komorka>
+      <komorka>
+        <wiersz>9</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>508</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>10</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center </style>
+        <text>O prawo do</text>
+      </komorka>
+      <komorka>
+        <wiersz>10</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>renty rolniczej z tytułu niezdolności do pracy</text>
+      </komorka>
+      <komorka>
+        <wiersz>10</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>510</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>11</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>emerytury rolniczej</text>
+      </komorka>
+      <komorka>
+        <wiersz>11</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>511p</text>
+      </komorka>
+      <komorka>
+        <wiersz>12</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>renty rodzinnej z ubezpieczenia społecznego rolników</text>
+      </komorka>
+      <komorka>
+        <wiersz>12</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>511n</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>13</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>O wysokość emerytury lub renty (z wy-łączeniem rolników i służb mundurowych)</text>
+      </komorka>
+      <komorka>
+        <wiersz>13</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>512</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>14</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>O rentę rolniczą lub rodzinną z tytułu niezdolności do pracy powstałej wskutek wypadku przy pracy rolniczej lub rolniczej choroby zawodowej</text>
+      </komorka>
+      <komorka>
+        <wiersz>14</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>513</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>15</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>O rentę szkoleniową</text>
+      </komorka>
+      <komorka>
+        <wiersz>15</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>517</text>
+      </komorka>
+      <komorka>
+        <wiersz>16</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>O rentę socjalną</text>
+      </komorka>
+      <komorka>
+        <wiersz>16</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>568</text>
+      </komorka>
+      <komorka>
+        <wiersz>17</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>Ustalenie istnienia bądź nieistnienia ubezpieczeń społecznych i ich zakresu lub o należności z tytułu składek na ubezpieczenia społeczne, Fundusz Pracy, Fundusz Gwarantowanych Świadczeń Pracowniczych, Fundusz Emerytur Pomostowych oraz na ubezpieczenie zdrowotne</text>
+      </komorka>
+      <komorka>
+        <wiersz>17</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>557</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>18</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>Roszczenia ze stosunków prawnych między członkami otwartych funduszy emerytalnych a tymi funduszami lub ich organami</text>
+      </komorka>
+      <komorka>
+        <wiersz>18</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>561</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>19</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>O emeryturę pomostową</text>
+      </komorka>
+      <komorka>
+        <wiersz>19</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>577</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>20</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>O wysokość emerytury rolniczej, renty rolniczej z tytułu niezdolności do pracy i renty rodzinnej oraz emerytury i renty z ubezpieczenia społecznego rolników indywidualnych i członków ich rodzin</text>
+      </komorka>
+      <komorka>
+        <wiersz>20</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>578</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>21</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>O wysokość emerytury i renty żołnierzy zawodowych, funkcjonariuszy Policji, Agencji Bezpieczeństwa Wewnętrznego, agencji Wywiadu, służby Kontrwywiadu Wojskowego, Służby Wywiadu Wojskowego, Centralnego Biura Antykorupcyjnego, Biura Ochrony Rządu, Straży Granicznej, Służby Więziennej, Państwowej Straży Pożarnej, inwalidów wojennych i wojskowych oraz członków ich rodzin</text>
+      </komorka>
+      <komorka>
+        <wiersz>21</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>579</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>22</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>O nauczycielskie świadczenie kompensacyjne</text>
+      </komorka>
+      <komorka>
+        <wiersz>22</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>580</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>23</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>Sprawy dotyczące odpowiedzialności osób trzecich i następców prawnych za składki na ubezpieczenia społeczne, FP (Fundusz Pracy), FGŚP (Fundusz Gwarantowanych Świadczeń Pracowniczych) i ubezpieczenie zdrowotne</text>
+      </komorka>
+      <komorka>
+        <wiersz>23</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>581</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>24</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>O ustalenie kapitału początkowego</text>
+      </komorka>
+      <komorka>
+        <wiersz>24</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>582</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>25</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>O świadczenie przedemerytalne</text>
+      </komorka>
+      <komorka>
+        <wiersz>25</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>583</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>26</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>O wysokość zasiłku przedemerytalnego</text>
+      </komorka>
+      <komorka>
+        <wiersz>26</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>584</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>27</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>O ekwiwalent pieniężny z tytułu prawa do bezpłatnego węgla</text>
+      </komorka>
+      <komorka>
+        <wiersz>27</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>568</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>28</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>O inne dodatki wypłacane przez organ rentowy jeśli przedmiotem postępowania nie jest prawo do emerytury lub renty</text>
+      </komorka>
+      <komorka>
+        <wiersz>28</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>586</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>29</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>O wydanie zaświadczenia w sprawie z zakresu ubezpieczeń społecznych</text>
+      </komorka>
+      <komorka>
+        <wiersz>29</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>587</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>30</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>O wydanie pisemnej interpretacji przepisów prawnych</text>
+      </komorka>
+      <komorka>
+        <wiersz>30</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>588</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>31</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>Inne bez symbolu i o symbolach niewymienionych</text>
+      </komorka>
+      <komorka>
+        <wiersz>31</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>-</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>32</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>Inne bez symbolu i o symbolach niewymienionych</text>
+      </komorka>
+      <komorka>
+        <wiersz>32</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>-</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>33</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>O nadanie klauzuli wykonalności</text>
+      </komorka>
+      <komorka>
+        <wiersz>33</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>104</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>34</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>O zwolnienie od kosztów sądowych i i/lub ustanowienie radcy prawnego, adwokata</text>
+      </komorka>
+      <komorka>
+        <wiersz>34</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>105</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>35</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>Uznanie orzeczenia sądu zagranicznego</text>
+      </komorka>
+      <komorka>
+        <wiersz>35</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>107</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>36</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>O wyznaczenie sądu</text>
+      </komorka>
+      <komorka>
+        <wiersz>36</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>108</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>37</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>O wyłączenie sędziego</text>
+      </komorka>
+      <komorka>
+        <wiersz>37</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>-</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>38</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>O odtworzenie akt </text>
+      </komorka>
+      <komorka>
+        <wiersz>38</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>111</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>39</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>O uznanie i stwierdzenie wykonalności wyroku sądu polubownego wydanego za granicą </text>
+      </komorka>
+      <komorka>
+        <wiersz>39</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>117</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>40</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>Dotyczące pomocy sądowej </text>
+      </komorka>
+      <komorka>
+        <wiersz>40</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>113</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>41</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>Inne bez symbolu i o symbolu wyżej niewymienionym </text>
+      </komorka>
+      <komorka>
+        <wiersz>41</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>-</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>42</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>WSC (skarga o stwierdzenie niezgodności z prawem) – I instancja</text>
+      </komorka>
+      <komorka>
+        <wiersz>42</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>-</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>43</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>WSNc (skarga nadzwyczajna) – I instancja</text>
+      </komorka>
+      <komorka>
+        <wiersz>43</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>-</text>
+      </komorka>
+    </tablaBoczna>
+  </tabela>
+  
+<tabela id="1.1.1.1.a">
+    <daneTabeli>
+      <iloscWierszy>22</iloscWierszy>
+      <tekstNadTabela>Ewidencja spraw z zakresu ubezpieczeń społecznych – ogółem I instancja</tekstNadTabela>
+      <iloscWierszyNaglowka>4</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>4</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>16</iloscKolumnPoIteracji>
+      <lp>1</lp>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>4</colSpan>
+        <rowspan>4</rowspan>
+        <style>center col_250</style>
+        <text> SPRAWY WG REPERTORIÓW LUB WYKAZÓW</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>4</rowspan>
+        <style>center col_80_fest</style>
+        <text>pozostało z ubiegłego roku</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>1</rowspan>
+        <style>center</style>
+        <text>WPŁYNĘŁO</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>10</colSpan>
+        <rowspan>1</rowspan>
+        <style>center</style>
+        <text>ZAŁATWIONO</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>2</rowspan>
+        <style>center</style>
+        <text>Odroczono</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>4</rowspan>
+        <style>center</style>
+        <text>Pozostało na okres następny</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest</style>
+        <text>Razem</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest</style>
+        <text>w tym odwołań od decyzji uprawnionego organu</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest</style>
+        <text>Razem</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>8</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>w tym sposób załatwienia odwołań</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest</style>
+        <text>inne załatwienia</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>od decyzji uprawnionego organu</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest</style>
+        <text>w związku z niewydaniem decyzji zobowiązano uprawniony organ  do wydania decyzji w określonym terminie</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest</style>
+        <text>uchylono</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>umorzono</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest</style>
+        <text>ogółem</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest</style>
+        <text>w tym publikację orzeczenia</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_80_fest</style>
+        <text>odda-lono</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_80_fest</style>
+        <text>zmieniono zaskarżoną decyzję w całości lub w części</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_80_fest</style>
+        <text>odrzucono</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_80_fest</style>
+        <text>uchylenie decyzji, przekazanie sprawy do rozpoznania uprawnionemu organowi,umorzenie postępowania</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_80_fest</style>
+        <text>ogółem</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_80_fest</style>
+        <text>w tym w wyniku cofnięcia pozwu/wniosku/skargi</text>
+      </komorka>
+    </naglowek>
+    <tablaBoczna>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>4</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text> Ogółem I instancja (w.2 + dz.1.1.1.1.a w. 1)</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>4</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_80_fest</style>
+        <text>Ogółem I instancja z wyłączeniem zażaleniowych(w. 03, 32, 42, 43)</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>4</colSpan>
+        <rowspan>1</rowspan>
+        <style>center</style>
+        <text>U razem (w. 04 do 31 =dz. 1.1.e w.01)</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>3</rowspan>
+        <style>center</style>
+        <text>O prawo do</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>emerytury</style>
+        <text>Odroczono</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>3</rowspan>
+        <style>center</style>
+        <text>z wyłączeniem rolników i służb mundurowych</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>501</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>renty z tytułu niezdolności do pracy</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>502</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>renty rodzinnej</text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>503</text>
+      </komorka>
+      <komorka>
+        <wiersz>7</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>O rentę lub emeryturę żołnierzy zawodowych, funkcjonariuszy Policji, Agencji Bezpieczeństwa Wewnętrznego, Agencji Wywiadu, Służby Kontrwywiadu Wojskowego, Służby Wywiadu Wojskowego, Centralnego Biura Antykorupcyjnego, Biura Ochrony Rządu, Straży Granicznej, Służby Więziennej, Państwowej Straży Pożarnej oraz członków ich rodzin (z wyjątkiem rent znakowanych symbolem 507)</text>
+      </komorka>
+      <komorka>
+        <wiersz>7</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>506</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>8</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>wypadków lub chorób pozostających w związku ze służba wojskową, w  Policji, Agencji Bezpieczeństwa Wewnętrznego, Agencji Wywiadu, Służby Kontrwywiadu Wojskowego, Służby Wywiadu Wojskowego, Centralnego Biura Antykorupcyjnego, Biura Ochrony Rządu, Straży Granicznej, Służby Więziennej, Państwowej Straży Pożarnej</text>
+      </komorka>
+      <komorka>
+        <wiersz>8</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>507</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>9</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>O rentę z tytułu niezdolności do pracy przewidzianą dla inwalidów wojennych i wojskowych oraz ich rodzin</text>
+      </komorka>
+      <komorka>
+        <wiersz>9</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>508</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>10</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center </style>
+        <text>O prawo do</text>
+      </komorka>
+      <komorka>
+        <wiersz>10</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>renty rolniczej z tytułu niezdolności do pracy</text>
+      </komorka>
+      <komorka>
+        <wiersz>10</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>510</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>11</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>emerytury rolniczej</text>
+      </komorka>
+      <komorka>
+        <wiersz>11</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>511p</text>
+      </komorka>
+      <komorka>
+        <wiersz>12</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>renty rodzinnej z ubezpieczenia społecznego rolników</text>
+      </komorka>
+      <komorka>
+        <wiersz>12</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>511n</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>13</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>O wysokość emerytury lub renty (z wy-łączeniem rolników i służb mundurowych)</text>
+      </komorka>
+      <komorka>
+        <wiersz>13</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>512</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>14</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>O rentę rolniczą lub rodzinną z tytułu niezdolności do pracy powstałej wskutek wypadku przy pracy rolniczej lub rolniczej choroby zawodowej</text>
+      </komorka>
+      <komorka>
+        <wiersz>14</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>513</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>15</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>O rentę szkoleniową</text>
+      </komorka>
+      <komorka>
+        <wiersz>15</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>517</text>
+      </komorka>
+      <komorka>
+        <wiersz>16</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>O rentę socjalną</text>
+      </komorka>
+      <komorka>
+        <wiersz>16</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>568</text>
+      </komorka>
+      <komorka>
+        <wiersz>17</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>Ustalenie istnienia bądź nieistnienia ubezpieczeń społecznych i ich zakresu lub o należności z tytułu składek na ubezpieczenia społeczne, Fundusz Pracy, Fundusz Gwarantowanych Świadczeń Pracowniczych, Fundusz Emerytur Pomostowych oraz na ubezpieczenie zdrowotne</text>
+      </komorka>
+      <komorka>
+        <wiersz>17</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>557</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>18</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>Roszczenia ze stosunków prawnych między członkami otwartych funduszy emerytalnych a tymi funduszami lub ich organami</text>
+      </komorka>
+      <komorka>
+        <wiersz>18</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>561</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>19</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>O emeryturę pomostową</text>
+      </komorka>
+      <komorka>
+        <wiersz>19</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>577</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>20</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>O wysokość emerytury rolniczej, renty rolniczej z tytułu niezdolności do pracy i renty rodzinnej oraz emerytury i renty z ubezpieczenia społecznego rolników indywidualnych i członków ich rodzin</text>
+      </komorka>
+      <komorka>
+        <wiersz>20</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>578</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>21</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>O wysokość emerytury i renty żołnierzy zawodowych, funkcjonariuszy Policji, Agencji Bezpieczeństwa Wewnętrznego, agencji Wywiadu, służby Kontrwywiadu Wojskowego, Służby Wywiadu Wojskowego, Centralnego Biura Antykorupcyjnego, Biura Ochrony Rządu, Straży Granicznej, Służby Więziennej, Państwowej Straży Pożarnej, inwalidów wojennych i wojskowych oraz członków ich rodzin</text>
+      </komorka>
+      <komorka>
+        <wiersz>21</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>579</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>22</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_50H</style>
+        <text>O nauczycielskie świadczenie kompensacyjne</text>
+      </komorka>
+      <komorka>
+        <wiersz>22</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>580</text>
+      </komorka>
+
+    </tablaBoczna>
+  </tabela>
+
+</komorki>

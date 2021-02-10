@@ -1,0 +1,1340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{985AFC5D-9260-41A2-8CEB-15A50942A584}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>stat2018</RootNamespace>
+    <AssemblyName>stat2018</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress>
+    </Use64BitIISExpress>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;CODE_ANALYSIS;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <IncludeIisSettings>true</IncludeIisSettings>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.1213, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\wab_x\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin">
+      <HintPath>..\..\wab_x\bin\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxRichEdit.v17.1, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v17.1, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.Resources.v17.1, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.Resources.v17.1.resources">
+    </Reference>
+    <Reference Include="DevExpress.Web.v17.1, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.v17.1.resources">
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.0.5.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\wab_x\bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\statystyki-popup\Bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Edm, Version=5.6.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\statystyki-popup\Bin\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>..\..\statystyki-popup\Bin\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>..\..\statystyki-popup\Bin\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="adm.aspx" />
+    <Content Include="aktpe.aspx" />
+    <Content Include="aktk2.aspx" />
+    <Content Include="aktk.aspx" />
+    <Content Include="aglg.aspx" />
+    <Content Include="aglc.aspx" />
+    <Content Include="agl.aspx" />
+    <Content Include="akrg.aspx" />
+    <Content Include="akrp.aspx" />
+    <Content Include="akrk.aspx" />
+    <Content Include="oczc.aspx" />
+    <Content Include="oczc2.aspx" />
+    <Content Include="mp.aspx" />
+    <Content Include="aopg.aspx" />
+    <Content Include="mk.aspx" />
+    <Content Include="mss10e.aspx" />
+    <Content Include="oglk2.aspx" />
+    <Content Include="okrcN.aspx" />
+    <Content Include="XMLHeaders\MSS1o.xml" />
+    <Content Include="XMLHeaders\oczc1.xml" />
+    <Content Include="XMLHeaders\MSS10r.xml" />
+    <Content Include="XMLHeaders\okrc.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLHeaders\MSS11r.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLHeaders\MSS5r.xml" />
+    <Content Include="XMLHeaders\MSS19o.xml" />
+    <Content Include="XMLHeaders\MSS19r.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLHeaders\MSS16r.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLHeaders\oglr_01.xml" />
+    <Content Include="XMLHeaders\MSS1r.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="onsu.aspx" />
+    <Content Include="oopp.aspx" />
+    <Content Include="oopg.aspx" />
+    <Content Include="aopc.aspx" />
+    <Content Include="aopk.aspx" />
+    <Content Include="aopk2.aspx" />
+    <Content Include="aopc2.aspx" />
+    <Content Include="aoppe.aspx" />
+    <Content Include="aopp.aspx" />
+    <Content Include="mss16r.aspx" />
+    <Content Include="mss19r.aspx" />
+    <Content Include="nowa.aspx" />
+    <Content Include="kontrolkaExcell.aspx" />
+    <Content Include="kontrolkaDruk.aspx" />
+    <Content Include="akrc.aspx" />
+    <Content Include="mss11o.aspx" />
+    <Content Include="mss5o.aspx" />
+    <Content Include="okrr.aspx" />
+    <Content Include="okt2.aspx" />
+    <Content Include="oglc3.aspx" />
+    <Content Include="oglk3.aspx" />
+    <Content Include="mss1o.aspx" />
+    <Content Include="obbp.aspx" />
+    <Content Include="aglg2.aspx" />
+    <Content Include="obbr.aspx" />
+    <Content Include="obbk.aspx" />
+    <Content Include="oglp.aspx" />
+    <Content Include="oktkr.aspx" />
+    <Content Include="oktp.aspx" />
+    <Content Include="oktr.aspx" />
+    <Content Include="mss19o.aspx" />
+    <Content Include="passwordPopup.aspx" />
+    <Content Include="style\oktkr.css" />
+    <Content Include="style\MUstyles.css" />
+    <Content Include="template.aspx" />
+    <Content Include="oktg.aspx" />
+    <Content Include="okrc.aspx" />
+    <Content Include="okrd.aspx" />
+    <Content Include="oglr2.aspx" />
+    <Content Include="okrp.aspx" />
+    <Content Include="oglc.aspx" />
+    <Content Include="Scripts\jQuery.print.js" />
+    <Content Include="test.aspx" />
+    <Content Include="obba.aspx" />
+    <Content Include="UserControlls\ZarzadzanieFormularzami.ascx" />
+    <Content Include="wab.aspx" />
+    <Content Include="okrk.aspx" />
+    <Content Include="akac.aspx" />
+    <Content Include="Akac2.aspx" />
+    <Content Include="akak.aspx" />
+    <Content Include="ansp.aspx" />
+    <Content Include="ansk.aspx" />
+    <Content Include="ansc.aspx" />
+    <Content Include="akape.aspx" />
+    <Content Include="akap2.aspx" />
+    <Content Include="akap.aspx" />
+    <Content Include="akak2.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="img\ajax-loader.gif" />
+    <Content Include="img\alert.JPG" />
+    <Content Include="img\bg-signin-divider.png" />
+    <Content Include="img\calendar.png" />
+    <Content Include="img\cal_1.jpg" />
+    <Content Include="img\cancel.png" />
+    <Content Include="img\cd-top-arrow.svg" />
+    <Content Include="img\collapse.jpg" />
+    <Content Include="img\collapse_blue.jpg" />
+    <Content Include="img\details.jpg" />
+    <Content Include="img\edit.jpg" />
+    <Content Include="img\expand.jpg" />
+    <Content Include="img\expand_blue.jpg" />
+    <Content Include="img\images.png" />
+    <Content Include="img\minus.jpg" />
+    <Content Include="img\ok_1.png" />
+    <Content Include="img\plus-icon.png" />
+    <Content Include="img\pobrane.jpg" />
+    <Content Include="img\str1.png" />
+    <Content Include="img\str2.png" />
+    <Content Include="img\stralka.jpg" />
+    <Content Include="img\whitePoint.png" />
+    <Content Include="img\zamknij.jpg" />
+    <Content Include="kof.aspx" />
+    <Content Include="kontrolka.aspx" />
+    <Content Include="mss10r.aspx" />
+    <Content Include="mss11r.aspx" />
+    <Content Include="mss1r.aspx" />
+    <Content Include="mss40r.aspx" />
+    <Content Include="mss5r.aspx" />
+    <Content Include="ocenaPracownika.aspx" />
+    <Content Include="oglc2.aspx" />
+    <Content Include="oglk.aspx" />
+    <Content Include="oglr.aspx" />
+    <Content Include="oktk.aspx" />
+    <Content Include="oktc.aspx" />
+    <Content Include="oksr.aspx" />
+    <Content Include="onsc.aspx" />
+    <Content Include="onsg.aspx" />
+    <Content Include="onsk.aspx" />
+    <Content Include="onsp.aspx" />
+    <Content Include="onsr.aspx" />
+    <Content Include="onsuOLD.aspx" />
+    <Content Include="oopc.aspx" />
+    <Content Include="oopk.aspx" />
+    <Content Include="oopr.aspx" />
+    <Content Include="oopu.aspx" />
+    <Content Include="otrc.aspx">
+      <BrowseToURL>m</BrowseToURL>
+    </Content>
+    <Content Include="otrg.aspx" />
+    <Content Include="otrk.aspx" />
+    <Content Include="otrkd.aspx" />
+    <Content Include="otrkr.aspx" />
+    <Content Include="otrp.aspx" />
+    <Content Include="otrr.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="popup.aspx" />
+    <Content Include="redirector.aspx" />
+    <Content Include="Scripts\ai.0.15.0-build58334.js" />
+    <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="Scripts\custom.js" />
+    <Content Include="Scripts\jquery-1.8.3.js" />
+    <Content Include="Scripts\jquery-1.8.3.min.js" />
+    <Content Include="obbc.aspx" />
+    <Content Include="onsa.aspx" />
+    <Content Include="wizk.aspx" />
+    <Content Include="wizc.aspx" />
+    <Content Include="wyszukiwarkaspraw.aspx" />
+    <Content Include="msstabele\mss5r.xlsx" />
+    <Content Include="Template\aopc2.xlsx" />
+    <Content Include="XMLHeaders\onsu4.xml" />
+    <Content Include="XMLHeaders\onsu3.xml" />
+    <Content Include="XMLHeaders\onsu2.xml" />
+    <Content Include="XMLHeaders\akrp2.xml" />
+    <Content Include="XMLHeaders\mss.xml" />
+    <Content Include="XMLHeaders\MSS5o.xml" />
+    <Content Include="XMLHeaders\test.xml" />
+    <Content Include="XMLHeaders\ansa.xml" />
+    <Content Include="XMLHeaders\wizk_1_25.xml" />
+    <Content Include="XMLHeaders\wizk_1_20.xml" />
+    <Content Include="XMLHeaders\wizk_1_19.xml" />
+    <Content Include="XMLHeaders\wizk_1_13.xml" />
+    <Content Include="XMLHeaders\aktpe2.xml" />
+    <Content Include="XMLHeaders\aktpe1.xml" />
+    <Content Include="XMLHeaders\aktk2_2.xml" />
+    <Content Include="XMLHeaders\aktk2_1.xml" />
+    <Content Include="XMLHeaders\aktk2.xml" />
+    <Content Include="XMLHeaders\aktk1.xml" />
+    <Content Include="XMLHeaders\aglc3.xml" />
+    <Content Include="XMLHeaders\aglc1.xml" />
+    <Content Include="XMLHeaders\oopc.xml" />
+    <Content Include="XMLHeaders\okt2.xml" />
+    <Content Include="libman.json" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Scripts\jquery-latest.min.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery.divascookies-0.6.min.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\modernizr.js" />
+    <Content Include="Scripts\rls.js" />
+    <Content Include="Site1.Master" />
+    <Content Include="log4net.config" />
+    <Content Include="style\menu.css" />
+    <Content Include="UserControlls\PopupLinkButtom2.ascx" />
+    <Content Include="UserControlls\PopupLinkButtom.ascx" />
+    <Content Include="version.txt" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Template\aopc.xlsx" />
+    <Content Include="Template\obba.xlsx" />
+    <None Include="Properties\PublishProfiles\file.pubxml" />
+    <Content Include="Template\akac.xlsx" />
+    <Content Include="Template\akac2.xlsx" />
+    <Content Include="Template\akap.xlsx" />
+    <Content Include="Template\akap2.xlsx" />
+    <Content Include="Template\akape.xls" />
+    <Content Include="Template\oglc.xlsx" />
+    <Content Include="Template\oglk.xlsx" />
+    <Content Include="Template\oglr.xlsx" />
+    <Content Include="Template\oktk.xlsx" />
+    <Content Include="Template\onsc.xlsx" />
+    <Content Include="Template\oopc.xlsx" />
+    <Content Include="Template\oopp.xlsx" />
+    <Content Include="Template\oopu.xlsx" />
+    <Content Include="Template\RaportCywilny01.xlsx" />
+    <Content Include="Template\RaportKarny.xlsx" />
+    <Content Include="Template\SamsungIF_Rg.woff" />
+    <Content Include="Template\SSRocena.xlsx" />
+    <Content Include="Template\SSRocena1.xlsx" />
+    <Content Include="Template\statystykiWydzialCywilny.xlsx" />
+    <Content Include="Template\okrr.xlsx" />
+    <Content Include="Template\oglc2.xlsx" />
+    <Content Include="Template\OKTC.xlsx" />
+    <Content Include="Template\wab.xlsx" />
+    <Content Include="Template\oglr2.xlsx" />
+    <Content Include="Template\okrd.xlsx" />
+    <Content Include="Template\oktg.xlsx" />
+    <Content Include="Template\otrc.xlsx" />
+    <Content Include="Template\onsg.xlsx" />
+    <Content Include="Template\oktr.xlsx" />
+    <Content Include="Template\okrp.xlsx" />
+    <Content Include="Template\oktp.xlsx" />
+    <Content Include="Template\agl.xlsx" />
+    <Content Include="Template\oktkr.xlsx" />
+    <Content Include="Template\aglc.xlsx" />
+    <Content Include="Template\oopr.xlsx" />
+    <Content Include="Template\wizc_aspx.xlsx" />
+    <Content Include="Template\obbc.xlsx" />
+    <Content Include="Template\obbk.xlsx" />
+    <Content Include="Template\obbr.xlsx" />
+    <Content Include="Template\obbp.xlsx" />
+    <Content Include="Template\oopk.xlsx" />
+    <Content Include="Template\aglg2.xlsx" />
+    <Content Include="Template\oglk3.xlsx" />
+    <Content Include="Template\akrc.xlsx" />
+    <Content Include="Template\akrk.xlsx" />
+    <Content Include="Template\akrg.xlsx" />
+    <Content Include="Template\akrp.xlsx" />
+    <Content Include="Template\aopg.xlsx" />
+    <Content Include="Template\aopp.xlsx" />
+    <Content Include="Template\aoppe.xlsx" />
+    <Content Include="Template\aopk2.xlsx" />
+    <Content Include="Template\aopk.xlsx" />
+    <Content Include="Template\oglc3.xlsx" />
+    <Content Include="Template\oglp.xlsx" />
+    <Content Include="Template\otrr.xlsx" />
+    <Content Include="Template\aktk.xlsx" />
+    <Content Include="Template\aktk2.xlsx" />
+    <Content Include="Template\aktpe.xlsx" />
+    <Content Include="Template\oopg.xlsx" />
+    <Content Include="Template\okrc.xlsx" />
+    <Content Include="Template\mk.xlsx" />
+    <Content Include="Template\onsu.xlsx" />
+    <Content Include="Template\onsr.xlsx" />
+    <Content Include="Template\otrkr.xlsx" />
+    <Content Include="Template\otrkd.xlsx" />
+    <Content Include="Template\okrk.xlsx" />
+    <Content Include="Template\aglg.xlsx" />
+    <Content Include="Template\oczc.xlsx" />
+    <Content Include="Template\mp.xlsx" />
+    <Content Include="Template\oglk2.xlsx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="style\login.css" />
+    <Content Include="style\new.css" />
+    <Content Include="style\popup.css" />
+    <Content Include="style\ssrocena.css" />
+    <Content Include="style\style.css" />
+    <Content Include="style\Tables.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adm.aspx.cs">
+      <DependentUpon>adm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adm.aspx.designer.cs">
+      <DependentUpon>adm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aktpe.aspx.cs">
+      <DependentUpon>aktpe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aktpe.aspx.designer.cs">
+      <DependentUpon>aktpe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aktk2.aspx.cs">
+      <DependentUpon>aktk2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aktk2.aspx.designer.cs">
+      <DependentUpon>aktk2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aktk.aspx.cs">
+      <DependentUpon>aktk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aktk.aspx.designer.cs">
+      <DependentUpon>aktk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aglg.aspx.cs">
+      <DependentUpon>aglg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aglg.aspx.designer.cs">
+      <DependentUpon>aglg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aglc.aspx.cs">
+      <DependentUpon>aglc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aglc.aspx.designer.cs">
+      <DependentUpon>aglc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="akrg.aspx.cs">
+      <DependentUpon>akrg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="akrg.aspx.designer.cs">
+      <DependentUpon>akrg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="akrp.aspx.cs">
+      <DependentUpon>akrp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="akrp.aspx.designer.cs">
+      <DependentUpon>akrp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="akrk.aspx.cs">
+      <DependentUpon>akrk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="akrk.aspx.designer.cs">
+      <DependentUpon>akrk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oczc.aspx.cs">
+      <DependentUpon>oczc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oczc.aspx.designer.cs">
+      <DependentUpon>oczc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oczc2.aspx.cs">
+      <DependentUpon>oczc2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oczc2.aspx.designer.cs">
+      <DependentUpon>oczc2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mp.aspx.cs">
+      <DependentUpon>mp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mp.aspx.designer.cs">
+      <DependentUpon>mp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aopg.aspx.cs">
+      <DependentUpon>aopg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aopg.aspx.designer.cs">
+      <DependentUpon>aopg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mk.aspx.cs">
+      <DependentUpon>mk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mk.aspx.designer.cs">
+      <DependentUpon>mk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mss10e.aspx.cs">
+      <DependentUpon>mss10e.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mss10e.aspx.designer.cs">
+      <DependentUpon>mss10e.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs" />
+    <Compile Include="oglk2.aspx.cs">
+      <DependentUpon>oglk2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oglk2.aspx.designer.cs">
+      <DependentUpon>oglk2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="okrcN.aspx.cs">
+      <DependentUpon>okrcN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="okrcN.aspx.designer.cs">
+      <DependentUpon>okrcN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onsu.aspx.cs">
+      <DependentUpon>onsu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="onsu.aspx.designer.cs">
+      <DependentUpon>onsu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oopp.aspx.cs">
+      <DependentUpon>oopp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oopp.aspx.designer.cs">
+      <DependentUpon>oopp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oopg.aspx.cs">
+      <DependentUpon>oopg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oopg.aspx.designer.cs">
+      <DependentUpon>oopg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="classes\CustomTemplate.cs" />
+    <Compile Include="classes\devExpressXXL.cs" />
+    <Compile Include="aopc.aspx.cs">
+      <DependentUpon>aopc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aopc.aspx.designer.cs">
+      <DependentUpon>aopc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aopk.aspx.cs">
+      <DependentUpon>aopk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aopk.aspx.designer.cs">
+      <DependentUpon>aopk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aopk2.aspx.cs">
+      <DependentUpon>aopk2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aopk2.aspx.designer.cs">
+      <DependentUpon>aopk2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aopc2.aspx.cs">
+      <DependentUpon>aopc2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aopc2.aspx.designer.cs">
+      <DependentUpon>aopc2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aoppe.aspx.cs">
+      <DependentUpon>aoppe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aoppe.aspx.designer.cs">
+      <DependentUpon>aoppe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aopp.aspx.cs">
+      <DependentUpon>aopp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aopp.aspx.designer.cs">
+      <DependentUpon>aopp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="classes\datyDoMSS.cs" />
+    <Compile Include="classes\listaFormularzy.cs" />
+    <Compile Include="classes\log_4_net.cs" />
+    <Compile Include="classes\XMLHeaders.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="mss16r.aspx.cs">
+      <DependentUpon>mss16r.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mss16r.aspx.designer.cs">
+      <DependentUpon>mss16r.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mss19r.aspx.cs">
+      <DependentUpon>mss19r.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mss19r.aspx.designer.cs">
+      <DependentUpon>mss19r.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nowa.aspx.cs">
+      <DependentUpon>nowa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nowa.aspx.designer.cs">
+      <DependentUpon>nowa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kontrolkaExcell.aspx.cs">
+      <DependentUpon>kontrolkaExcell.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kontrolkaExcell.aspx.designer.cs">
+      <DependentUpon>kontrolkaExcell.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kontrolkaDruk.aspx.cs">
+      <DependentUpon>kontrolkaDruk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kontrolkaDruk.aspx.designer.cs">
+      <DependentUpon>kontrolkaDruk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="akrc.aspx.cs">
+      <DependentUpon>akrc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="akrc.aspx.designer.cs">
+      <DependentUpon>akrc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mss11o.aspx.cs">
+      <DependentUpon>mss11o.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mss11o.aspx.designer.cs">
+      <DependentUpon>mss11o.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mss5o.aspx.cs">
+      <DependentUpon>mss5o.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mss5o.aspx.designer.cs">
+      <DependentUpon>mss5o.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="okrr.aspx.cs">
+      <DependentUpon>okrr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="okrr.aspx.designer.cs">
+      <DependentUpon>okrr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="okt2.aspx.cs">
+      <DependentUpon>okt2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="okt2.aspx.designer.cs">
+      <DependentUpon>okt2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oglc3.aspx.cs">
+      <DependentUpon>oglc3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oglc3.aspx.designer.cs">
+      <DependentUpon>oglc3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oglk3.aspx.cs">
+      <DependentUpon>oglk3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oglk3.aspx.designer.cs">
+      <DependentUpon>oglk3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="classes\dataReaders.cs" />
+    <Compile Include="agl.aspx.cs">
+      <DependentUpon>agl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="agl.aspx.designer.cs">
+      <DependentUpon>agl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mss1o.aspx.cs">
+      <DependentUpon>mss1o.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mss1o.aspx.designer.cs">
+      <DependentUpon>mss1o.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="obbp.aspx.cs">
+      <DependentUpon>obbp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="obbp.aspx.designer.cs">
+      <DependentUpon>obbp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aglg2.aspx.cs">
+      <DependentUpon>aglg2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aglg2.aspx.designer.cs">
+      <DependentUpon>aglg2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="obbr.aspx.cs">
+      <DependentUpon>obbr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="obbr.aspx.designer.cs">
+      <DependentUpon>obbr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="obbk.aspx.cs">
+      <DependentUpon>obbk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="obbk.aspx.designer.cs">
+      <DependentUpon>obbk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oglp.aspx.cs">
+      <DependentUpon>oglp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oglp.aspx.designer.cs">
+      <DependentUpon>oglp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oktkr.aspx.cs">
+      <DependentUpon>oktkr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oktkr.aspx.designer.cs">
+      <DependentUpon>oktkr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oktp.aspx.cs">
+      <DependentUpon>oktp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oktp.aspx.designer.cs">
+      <DependentUpon>oktp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oktr.aspx.cs">
+      <DependentUpon>oktr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oktr.aspx.designer.cs">
+      <DependentUpon>oktr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mss19o.aspx.cs">
+      <DependentUpon>mss19o.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mss19o.aspx.designer.cs">
+      <DependentUpon>mss19o.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="passwordPopup.aspx.cs">
+      <DependentUpon>passwordPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="passwordPopup.aspx.designer.cs">
+      <DependentUpon>passwordPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="template.aspx.cs">
+      <DependentUpon>template.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="template.aspx.designer.cs">
+      <DependentUpon>template.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oktg.aspx.cs">
+      <DependentUpon>oktg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oktg.aspx.designer.cs">
+      <DependentUpon>oktg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="okrc.aspx.cs">
+      <DependentUpon>okrc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="okrc.aspx.designer.cs">
+      <DependentUpon>okrc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="okrd.aspx.cs">
+      <DependentUpon>okrd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="okrd.aspx.designer.cs">
+      <DependentUpon>okrd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oglr2.aspx.cs">
+      <DependentUpon>oglr2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oglr2.aspx.designer.cs">
+      <DependentUpon>oglr2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="okrp.aspx.cs">
+      <DependentUpon>okrp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="okrp.aspx.designer.cs">
+      <DependentUpon>okrp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oglc.aspx.cs">
+      <DependentUpon>oglc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oglc.aspx.designer.cs">
+      <DependentUpon>oglc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="obba.aspx.cs">
+      <DependentUpon>obba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="obba.aspx.designer.cs">
+      <DependentUpon>obba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlls\ZarzadzanieFormularzami.ascx.cs">
+      <DependentUpon>ZarzadzanieFormularzami.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControlls\ZarzadzanieFormularzami.ascx.designer.cs">
+      <DependentUpon>ZarzadzanieFormularzami.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="wab.aspx.cs">
+      <DependentUpon>wab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wab.aspx.designer.cs">
+      <DependentUpon>wab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="okrk.aspx.cs">
+      <DependentUpon>okrk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="okrk.aspx.designer.cs">
+      <DependentUpon>okrk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="akac.aspx.cs">
+      <DependentUpon>akac.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="akac.aspx.designer.cs">
+      <DependentUpon>akac.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Akac2.aspx.cs">
+      <DependentUpon>Akac2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Akac2.aspx.designer.cs">
+      <DependentUpon>Akac2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="akak.aspx.cs">
+      <DependentUpon>akak.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="akak.aspx.designer.cs">
+      <DependentUpon>akak.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ansp.aspx.cs">
+      <DependentUpon>ansp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ansp.aspx.designer.cs">
+      <DependentUpon>ansp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ansk.aspx.cs">
+      <DependentUpon>ansk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ansk.aspx.designer.cs">
+      <DependentUpon>ansk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ansc.aspx.cs">
+      <DependentUpon>ansc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ansc.aspx.designer.cs">
+      <DependentUpon>ansc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="akape.aspx.cs">
+      <DependentUpon>akape.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="akape.aspx.designer.cs">
+      <DependentUpon>akape.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="akap2.aspx.cs">
+      <DependentUpon>akap2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="akap2.aspx.designer.cs">
+      <DependentUpon>akap2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="akap.aspx.cs">
+      <DependentUpon>akap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="akap.aspx.designer.cs">
+      <DependentUpon>akap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="akak2.aspx.cs">
+      <DependentUpon>akak2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="akak2.aspx.designer.cs">
+      <DependentUpon>akak2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="classes\Class1.cs" />
+    <Compile Include="classes\common.cs" />
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="classes\Header.cs" />
+    <Compile Include="classes\logowanie.cs" />
+    <Compile Include="classes\mss.cs" />
+    <Compile Include="classes\pdfTables.cs" />
+    <Compile Include="kof.aspx.cs">
+      <DependentUpon>kof.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kof.aspx.designer.cs">
+      <DependentUpon>kof.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kontrolka.aspx.cs">
+      <DependentUpon>kontrolka.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kontrolka.aspx.designer.cs">
+      <DependentUpon>kontrolka.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mss10r.aspx.cs">
+      <DependentUpon>mss10r.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mss10r.aspx.designer.cs">
+      <DependentUpon>mss10r.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mss11r.aspx.cs">
+      <DependentUpon>mss11r.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mss11r.aspx.designer.cs">
+      <DependentUpon>mss11r.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mss1r.aspx.cs">
+      <DependentUpon>mss1r.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mss1r.aspx.designer.cs">
+      <DependentUpon>mss1r.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mss40r.aspx.cs">
+      <DependentUpon>mss40r.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mss40r.aspx.designer.cs">
+      <DependentUpon>mss40r.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mss5r.aspx.cs">
+      <DependentUpon>mss5r.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mss5r.aspx.designer.cs">
+      <DependentUpon>mss5r.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ocenaPracownika.aspx.cs">
+      <DependentUpon>ocenaPracownika.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ocenaPracownika.aspx.designer.cs">
+      <DependentUpon>ocenaPracownika.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oglc2.aspx.cs">
+      <DependentUpon>oglc2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oglc2.aspx.designer.cs">
+      <DependentUpon>oglc2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oglk.aspx.cs">
+      <DependentUpon>oglk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oglk.aspx.designer.cs">
+      <DependentUpon>oglk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oglr.aspx.cs">
+      <DependentUpon>oglr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oglr.aspx.designer.cs">
+      <DependentUpon>oglr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oktk.aspx.cs">
+      <DependentUpon>oktk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oktk.aspx.designer.cs">
+      <DependentUpon>oktk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oktc.aspx.cs">
+      <DependentUpon>oktc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oktc.aspx.designer.cs">
+      <DependentUpon>oktc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oksr.aspx.cs">
+      <DependentUpon>oksr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oksr.aspx.designer.cs">
+      <DependentUpon>oksr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onsc.aspx.cs">
+      <DependentUpon>onsc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="onsc.aspx.designer.cs">
+      <DependentUpon>onsc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onsg.aspx.cs">
+      <DependentUpon>onsg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="onsg.aspx.designer.cs">
+      <DependentUpon>onsg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onsk.aspx.cs">
+      <DependentUpon>onsk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="onsk.aspx.designer.cs">
+      <DependentUpon>onsk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onsp.aspx.cs">
+      <DependentUpon>onsp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="onsp.aspx.designer.cs">
+      <DependentUpon>onsp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onsr.aspx.cs">
+      <DependentUpon>onsr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="onsr.aspx.designer.cs">
+      <DependentUpon>onsr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onsuOLD.aspx.cs">
+      <DependentUpon>onsuOLD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="onsuOLD.aspx.designer.cs">
+      <DependentUpon>onsuOLD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oopc.aspx.cs">
+      <DependentUpon>oopc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oopc.aspx.designer.cs">
+      <DependentUpon>oopc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oopk.aspx.cs">
+      <DependentUpon>oopk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oopk.aspx.designer.cs">
+      <DependentUpon>oopk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oopr.aspx.cs">
+      <DependentUpon>oopr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oopr.aspx.designer.cs">
+      <DependentUpon>oopr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oopu.aspx.cs">
+      <DependentUpon>oopu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oopu.aspx.designer.cs">
+      <DependentUpon>oopu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="otrc.aspx.cs">
+      <DependentUpon>otrc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="otrc.aspx.designer.cs">
+      <DependentUpon>otrc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="otrg.aspx.cs">
+      <DependentUpon>otrg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="otrg.aspx.designer.cs">
+      <DependentUpon>otrg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="otrk.aspx.cs">
+      <DependentUpon>otrk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="otrk.aspx.designer.cs">
+      <DependentUpon>otrk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="otrkd.aspx.cs">
+      <DependentUpon>otrkd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="otrkd.aspx.designer.cs">
+      <DependentUpon>otrkd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="otrkr.aspx.cs">
+      <DependentUpon>otrkr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="otrkr.aspx.designer.cs">
+      <DependentUpon>otrkr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="otrp.aspx.cs">
+      <DependentUpon>otrp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="otrp.aspx.designer.cs">
+      <DependentUpon>otrp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="otrr.aspx.cs">
+      <DependentUpon>otrr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="otrr.aspx.designer.cs">
+      <DependentUpon>otrr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="popup.aspx.cs">
+      <DependentUpon>popup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="popup.aspx.designer.cs">
+      <DependentUpon>popup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="redirector.aspx.cs">
+      <DependentUpon>redirector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="redirector.aspx.designer.cs">
+      <DependentUpon>redirector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="classes\SsrSso.cs" />
+    <Compile Include="classes\tabele.cs" />
+    <Compile Include="UserControlls\PopupLinkButtom2.ascx.cs">
+      <DependentUpon>PopupLinkButtom2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControlls\PopupLinkButtom2.ascx.designer.cs">
+      <DependentUpon>PopupLinkButtom2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlls\PopupLinkButtom.ascx.cs">
+      <DependentUpon>PopupLinkButtom.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControlls\PopupLinkButtom.ascx.designer.cs">
+      <DependentUpon>PopupLinkButtom.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="obbc.aspx.cs">
+      <DependentUpon>obbc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="obbc.aspx.designer.cs">
+      <DependentUpon>obbc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onsa.aspx.cs">
+      <DependentUpon>onsa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="onsa.aspx.designer.cs">
+      <DependentUpon>onsa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wizk.aspx.cs">
+      <DependentUpon>wizk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wizk.aspx.designer.cs">
+      <DependentUpon>wizk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wizc.aspx.cs">
+      <DependentUpon>wizc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wizc.aspx.designer.cs">
+      <DependentUpon>wizc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wyszukiwarka.cs" />
+    <Compile Include="wyszukiwarkaspraw.aspx.cs">
+      <DependentUpon>wyszukiwarkaspraw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wyszukiwarkaspraw.aspx.designer.cs">
+      <DependentUpon>wyszukiwarkaspraw.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="App_GlobalResources\" />
+    <Folder Include="classes\App_LocalResources\" />
+    <Folder Include="enums\" />
+    <Folder Include="Wymiana\Temp\" />
+    <Folder Include="Wymiana\Tmp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49192</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49193/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:49193/</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <servers defaultServer="">
+            <server name="SelfHostServer" exePath="" cmdArgs="" url="http://localhost:49192/" workingDir="" />
+          </servers>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

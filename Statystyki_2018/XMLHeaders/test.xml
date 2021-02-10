@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<komorki>
+  <iloscWierszy>
+    <text>3</text>
+  </iloscWierszy>
+  <wiersze> 
+    <wiersz1>
+      <wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>5</colSpan>
+        <tekst>cos</tekst>
+      </wiersz>
+    </wiersz1>
+    <wiersz2>
+      <wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <tekst>cos21</tekst>
+      </wiersz>
+      <wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <tekst>cos21</tekst>
+      </wiersz>
+    </wiersz2>
+    <wiesz3>
+      <wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <tekst>cos31</tekst>
+      </wiersz>
+      <wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <tekst>cos32</tekst>
+      </wiersz>
+      <wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <tekst>cos33</tekst>
+      </wiersz>
+      <wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <tekst>cos34</tekst>
+      </wiersz>
+      <wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <tekst>cos35</tekst>
+      </wiersz>
+
+    </wiesz3>
+  </wiersze>
+</komorki>

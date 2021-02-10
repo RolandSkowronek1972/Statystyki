@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<komorki>
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>1</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text></text>
+  </komorka>
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>2</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text></text>
+  </komorka>
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>3</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text><![CDATA[&nbsp;]]> </text>
+  </komorka>
+
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text></text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>1</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>Nmo</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Nkd</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>5</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>Nsm</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>6</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+
+    <text>RAZEM</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>7</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+
+    <text>RC</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>8</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>0</rowSpan>
+    <hv>h</hv>
+
+    <text>RNc</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>9</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+
+    <text>RNs</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>14</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>RCo</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>15</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>Cps</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>16</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>RCZ</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>19</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>RAZEM</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>1</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>3</rowSpan>
+    <hv>h</hv>
+    <text>L.p. </text>
+  </komorka>
+
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>2</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>3</rowSpan>
+    <hv>h</hv>
+    <text>Nazwisko i imię sędziego </text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>3</kolumna>
+    <colSpan>0</colSpan>
+    <rowSpan>3</rowSpan>
+    <hv>h</hv>
+    <text>Dni rozpraw</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>22</colSpan>
+    <rowSpan>0</rowSpan>
+    <hv>h</hv>
+    <text>ZAŁATWIENIA Sprawy rodzinne i nieletnich</text>
+  </komorka>
+ <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>5</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>3</rowSpan>
+    <hv>h</hv>
+    <text>RAZEM</text>
+  </komorka>
+</komorki>

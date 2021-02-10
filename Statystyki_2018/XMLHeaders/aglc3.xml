@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<komorki>
+
+
+
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>1</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Odrocz.1</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>2</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Odrocz publ.</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>3</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Odrocz.2</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Odrocz publ.</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>7</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Odrocz.</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>8</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Odrocz publ.</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>10</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Odrocz.</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>11</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Odrocz publ.</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>13</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Odrocz.</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>14</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Odrocz publ.</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>16</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Odrocz.</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>17</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Odrocz publ.1</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>19</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Odrocz.</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>20</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Odrocz publ.2</text>
+  </komorka>
+
+
+
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>1</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>L.p. </text>
+  </komorka>
+  
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>2</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>Nazwisko i imię sędziego </text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>3</kolumna>
+    <colSpan>3</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>C</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>6</kolumna>
+    <colSpan>3</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>NS</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>9</kolumna>
+    <colSpan>3</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Co I inst.</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>12</kolumna>
+    <colSpan>3</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Ca</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>15</kolumna>
+    <colSpan>3</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Cz</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>18</kolumna>
+    <colSpan>3</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Co II inst.</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>21</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>Wykaz S</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>22</kolumna>
+    <colSpan>3</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>WSC</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>25</kolumna>
+    <colSpan>3</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>RAZEM</text>
+  </komorka>
+
+</komorki>

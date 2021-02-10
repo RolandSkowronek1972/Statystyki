@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<komorki>
+
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>1</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <style>gray</style>
+
+    <text>Ogółem</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>2</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>pow.      3 lat</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>1</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <style>gray</style>
+
+    <text>Ogółem</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>2</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>pow.      3 lat</text>
+  </komorka>
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>1</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <style>gray</style>
+
+    <text>Ogółem</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>2</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>pow.      3 lat</text>
+  </komorka>
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>1</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <style>gray</style>
+
+    <text>Ogółem</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>2</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>pow.      3 lat</text>
+  </komorka>
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>1</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <style>gray</style>
+
+    <text>Ogółem</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>2</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>pow.      3 lat</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>3</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>ilość sporządzonych</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>w tym po terminia</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>1</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>K</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>2</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Ko</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>3</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Kp</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Kop</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>5</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <style>gray</style>
+    <text>Razem</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>1</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>3</rowSpan>
+    <hv>h</hv>
+    <text>L.p.</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>2</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>3</rowSpan>
+    <hv>h</hv>
+    <text>Nazwisko i imię sędziego                   (funkcja w wydziale) </text>
+  </komorka>
+
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>3</kolumna>
+    <colSpan>10</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Sprawy "stare" w referacie</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>12</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>Sporządzanie uzasadnień</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>14</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>3</rowSpan>
+    <hv>h</hv>
+    <text>Absencja w dniach roboczych (urlopy)</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>16</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>3</rowSpan>
+    <hv>h</hv>
+    <text>Absencja w dniach roboczych (zwolnienia lekarskie)</text>
+  </komorka>
+</komorki>

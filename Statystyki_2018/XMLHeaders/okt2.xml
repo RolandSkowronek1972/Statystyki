@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<komorki>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>2</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+
+    <text>GC / GNs</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>3</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+
+    <text>GNc</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+
+    <text>GCo</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>5</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+
+    <text>GCps</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>6</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+
+    <text>Załatwienia  razem</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>7</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+
+    <text>Wyroki oczne</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>8</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+
+    <text>Wyroki zaoczne</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>9</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+
+    <text>Ugody</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>10</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+
+    <text>Umorzenia  z innych powodów</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>11</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <text>Zawieszenia</text>
+    <hv>h</hv>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>12</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+
+    <text>Nakazy zapłaty</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>13</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+
+    <text>Zwroty pozwu </text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>14</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+
+    <text>przekazania</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>15</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+
+    <text>Inne sposoby załatwień</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>16</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+
+    <text>Uzasadnienia wyroków</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>17</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+
+    <text>Zwroty pozwu GNc</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>18</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+
+    <text>Inne sposoby załatwień</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>19</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+
+    <text>GCo</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>20</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+
+    <text>GCps</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>1</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>Sędzia / referendarz </text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>2</kolumna>
+    <colSpan>4</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Wpływ spraw do referatu</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>8</kolumna>
+    <colSpan>11</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Załatwienia GC</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>17</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>Nakazy zapłaty </text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>18</kolumna>
+    <colSpan>4</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Załatwienia pozostałe</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>22</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+
+    <text>Stan referatuGC i dla ref. GNc</text>
+  </komorka>
+</komorki>

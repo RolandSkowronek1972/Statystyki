@@ -1,0 +1,1304 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<komorki xmlns="urn:tabeleMSS">
+
+  <tabela id="2.2">
+    <daneTabeli>
+
+      <iloscWierszy>25</iloscWierszy>
+      <tekstNadTabela>Wykonywanie środków karnych, środków kompensacyjnych</tekstNadTabela>
+      <iloscWierszyNaglowka>1</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>3</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>2</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>2.2</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_500</style>
+        <text> Wykonywanie środków karnych, środków kompensacyjnych</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>
+          Wpływ (w okresie sprawozdawczym)
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>
+          Wykonywane (stan w ostatnim dniu okresu sprawozdawczego)
+        </text>
+      </komorka>
+    </naglowek>
+    <tablaBoczna>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Ogółem liczba środków karnych (w.01 = w.02+03)  </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style> wciecie </style>
+        <text>
+          Orzeczone środki karne w art.
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>39 pkt 3 kk	zakaz prowadzenia pojazdów </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>39 pkt 7 kk	świadczenie pieniężne</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Ogółem liczba przepadków (w.04=w. 05+06)</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style> wciecie </style>
+        <text>
+          Orzeczone przepadki
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>w art. 45a kk </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>z innych ustaw</text>
+      </komorka>
+      <komorka>
+        <wiersz>7</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Ogółem liczba obowiązków  i środków kompensacyjnych (w.07 = w.08 do 14+18 do 21+24+25)</text>
+      </komorka>
+      <komorka>
+        <wiersz>8</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>18</rowspan>
+        <style> wciecie </style>
+        <text>Orzeczone obowiązki w art.</text>
+      </komorka>
+      <komorka>
+        <wiersz>8</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style> wciecie </style>
+        <text>67 § 3 kk</text>
+      </komorka>
+      <komorka>
+        <wiersz>8</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>naprawienie szkody lub zadośćuczynienie</text>
+      </komorka>
+      <komorka>
+        <wiersz>9</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>nawiązka</text>
+      </komorka>
+      <komorka>
+        <wiersz>10</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>72 § 1 pkt 1 kk	informowanie sądu lub kuratora o przebiegu okresu próby</text>
+      </komorka>
+      <komorka>
+        <wiersz>11</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>72 § 1 pkt 2 kk	przeproszenie pokrzywdzonego</text>
+      </komorka>
+      <komorka>
+        <wiersz>12</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text> 72 § 1 pkt 3 kk	wykonywanie ciążącego na sprawcy obowiązku łożenia na utrzymanie innej osoby</text>
+      </komorka>
+      <komorka>
+        <wiersz>13</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text> 72 § 1 pkt 5 kk	powstrzymanie się od nadużywania alkoholu lub używania innych środków odurzających</text>
+      </komorka>
+      <komorka>
+        <wiersz>14</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text> 72 § 1 pkt 6 kk</text>
+      </komorka>
+      <komorka>
+        <wiersz>14</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text> ogółem (w.14 = w.15 do 17)</text>
+      </komorka>
+      <komorka>
+        <wiersz>15</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text> leczenie odwykowe (terapia uzależnień) – alkohol</text>
+      </komorka>
+      <komorka>
+        <wiersz>16</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text> leczenie odwykowe (terapia uzależnień)  – środki odurzające</text>
+      </komorka>
+      <komorka>
+        <wiersz>17</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text> leczenie rehabilitacyjne, oddziaływania terapeutyczne</text>
+      </komorka>
+      <komorka>
+        <wiersz>18</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style> wciecie </style>
+        <text> 72 § 1 pkt 6a kk</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>18</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>uczestnictwo w oddziaływaniach korekcyjno-edukacyjnych</text>
+      </komorka>
+      <komorka>
+        <wiersz>19</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>terapia</text>
+      </komorka>
+      <komorka>
+        <wiersz>20</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>72 § 1 pkt 6b kk	uczestnictwo w oddziaływaniach korekcyjno-edukacyjnych</text>
+      </komorka>
+      <komorka>
+        <wiersz>21</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style> wciecie </style>
+        <text>72 § 1 pkt 7a kk</text>
+      </komorka>
+      <komorka>
+        <wiersz>21</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>ogółem (w.21 = w.22+23)</text>
+      </komorka>
+      <komorka>
+        <wiersz>22</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>powstrzymanie się od kontaktowania się z pokrzywdzonym lub innymi osobami w określony sposób</text>
+      </komorka>
+      <komorka>
+        <wiersz>23</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>powstrzymywanie się od zbliżania się do pokrzywdzonego lub innych osób</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>24</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>72 § 1 pkt 7b kk	opuszczenia lokalu zajmowanego wspólnie z pokrzywdzonym</text>
+      </komorka>
+      <komorka>
+        <wiersz>25</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>z innych ustaw</text>
+      </komorka>
+    </tablaBoczna>
+  </tabela>
+
+  <tabela id="6.1">
+    <daneTabeli>
+
+      <iloscWierszy>33</iloscWierszy>
+      <tekstNadTabela>Warunkowe zawieszenie wykonania kary </tekstNadTabela>
+      <iloscWierszyNaglowka>1</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>3</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>2</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>6.1</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_500</style>
+        <text>Orzeczone kary z warunkowym zawieszeniem wykonania (wykaz Wzaw)        </text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>Sprawy Wzaw </text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>Osoby</text>
+      </komorka>
+    </naglowek>
+    <tablaBoczna>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Wpływ (k. 01 w. 01= dz.1 k.02 w.06 )    </text>
+        <null></null>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>w tym przekazane z innego sądu   </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>9</rowspan>
+        <style> wciecie </style>
+        <text>Sprawy z w. 01, w których orzeczono karę </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>pozbawienia wolności (w.03=04+05)</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style> wciecie </style>
+        <text>z tego </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>z nałożonymi obowiązkami, środkami karnymi, środkami kompensacyjnymi lub przepadkiem </text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>bez nałożonych obowiązków, środków karnych, środków kompensacyjnych lub przepadku </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>ograniczenia wolności (w.06=07+08)</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>7</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style> wciecie </style>
+        <text>z tego </text>
+      </komorka>
+      <komorka>
+        <wiersz>7</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>z nałożonymi obowiązkami lub środkami karnymi </text>
+      </komorka>
+      <komorka>
+        <wiersz>8</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>bez nałożonych obowiązków lub środków karnych</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>9</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>grzywny (w.09=10+11)</text>
+      </komorka>
+      <komorka>
+        <wiersz>10</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style> wciecie </style>
+        <text>z tego </text>
+      </komorka>
+      <komorka>
+        <wiersz>10</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>z nałożonymi obowiązkami lub środkami karnymi</text>
+      </komorka>
+      <komorka>
+        <wiersz>11</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>bez nałożonych obowiązków lub środków karnych</text>
+      </komorka>
+      <komorka>
+        <wiersz>12</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style> wciecie </style>
+        <text>z tego z w.01</text>
+      </komorka>
+      <komorka>
+        <wiersz>12</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>osoby wcześniej nie karane za przestępstwa</text>
+      </komorka>
+      <komorka>
+        <wiersz>13</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>osoby uprzednio karane za przestępstwa</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>14</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Zakończono wykonywanie orzeczeń (k.01 w.14=w.15 do w.20 = dz.1 k.03 w.06)</text>
+      </komorka>
+      <komorka>
+        <wiersz>15</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>6</rowspan>
+        <style> wciecie </style>
+        <text>Na skutek</text>
+      </komorka>
+      <komorka>
+        <wiersz>15</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>upływu okresu próby</text>
+      </komorka>
+      <komorka>
+        <wiersz>16</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>zarządzenia wykonania kary</text>
+      </komorka>
+      <komorka>
+        <wiersz>17</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>zamiany na karę ograniczenia wolności albo grzywnę w trybie art. 75a § 1 kk</text>
+      </komorka>
+      <komorka>
+        <wiersz>18</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>umorzenia postępowania wykonawczego</text>
+      </komorka>
+      <komorka>
+        <wiersz>19</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>przekazania innemu sądowi </text>
+      </komorka>
+      <komorka>
+        <wiersz>20</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>innych przyczyn</text>
+      </komorka>
+      <komorka>
+        <wiersz>21</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Pozostało (stan w ostatnim dniu okresu statystycznego) </text>
+      </komorka>
+      <komorka>
+        <wiersz>22</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>w tym przekazane z innego sądu</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>23</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>9</rowspan>
+        <style> wciecie </style>
+        <text>Sprawy z w. 21 kol. 01, w których orzeczono karę </text>
+      </komorka>
+      <komorka>
+        <wiersz>23</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>pozbawienia wolności (w.03=24+25)</text>
+      </komorka>
+      <komorka>
+        <wiersz>24</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style> wciecie </style>
+        <text>z tego </text>
+      </komorka>
+      <komorka>
+        <wiersz>24</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>z nałożonymi obowiązkami, środkami karnymi, środkami kompensacyjnymi lub przepadkiem </text>
+      </komorka>
+      <komorka>
+        <wiersz>25</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>bez nałożonych obowiązków, środków karnych, środków kompensacyjnych lub przepadku </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>26</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>ograniczenia wolności (=w.27+28)</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>27</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style> wciecie </style>
+        <text>z tego </text>
+      </komorka>
+      <komorka>
+        <wiersz>27</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>z nałożonymi obowiązkami lub środkami karnymi </text>
+      </komorka>
+      <komorka>
+        <wiersz>28</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>bez nałożonych obowiązków lub środków karnych</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>29</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>grzywny (=w.30+31)</text>
+      </komorka>
+      <komorka>
+        <wiersz>30</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style> wciecie </style>
+        <text>z tego </text>
+      </komorka>
+      <komorka>
+        <wiersz>30</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>z nałożonymi obowiązkami lub środkami karnymi</text>
+      </komorka>
+      <komorka>
+        <wiersz>31</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>bez nałożonych obowiązków lub środków karnych</text>
+      </komorka>
+      <komorka>
+        <wiersz>32</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style> wciecie </style>
+        <text>z tego z w.21</text>
+      </komorka>
+      <komorka>
+        <wiersz>32</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>osoby wcześniej nie karane za przestępstwa</text>
+      </komorka>
+      <komorka>
+        <wiersz>33</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>osoby uprzednio karane za przestępstwa</text>
+      </komorka>
+    </tablaBoczna>
+  </tabela>
+
+  <tabela id="6.2">
+    <daneTabeli>
+
+      <iloscWierszy>43</iloscWierszy>
+      <tekstNadTabela>Wykonywanie środków karnych, obowiązków, środków kompensacyjnych lub przepadku w okresie warunkowego zawieszenia kary </tekstNadTabela>
+      <iloscWierszyNaglowka>1</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>3</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>2</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>6.2</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_500</style>
+        <text>
+          WyszczegóŚrodki karne, obowiązki, środki kompensacyjne lub przepadek orzeczone przy warunkowym zawieszeniu kary
+          (dotyczy spraw Wzaw)
+          (k.01 w.01+22 >= dz.01 k.02 w.06)
+          lnienie
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>
+          Wpływ (w okresie sprawozdawczym)
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+          Wykonywane (stan w ostatnim dniu okresu sprawozdawczego)
+        </text>
+      </komorka>
+    </naglowek>
+    <tablaBoczna>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Ogółem liczba środków karnych (w.01 = w.02 do 05+10 do 21)   </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>17</rowspan>
+        <style> wciecie </style>
+        <text>Orzeczone środki karne w art </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>39 pkt 1 kk	pozbawienie praw publicznych</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>39 pkt 2 kk	zakaz zajmowania określonego stanowiska, wykonywania określonego zawodu lub prowadzenia określonej działalności gospodarczej</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>39 pkt 2a kk	zakaz prowadzenia działalności związanej z wychowaniem, leczeniem, edukacją małoletnich lub z opieką nad nimi,</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>5</rowspan>
+        <style> wciecie </style>
+        <text>39 pkt 2b kk</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>ogółem (w.05 = 06 do 09)</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>obowiązek powstrzymania się (lub zakaz) od przebywania w określonych środowiskach lub miejscach</text>
+      </komorka>
+      <komorka>
+        <wiersz>7</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>zakaz kontaktowania się z określonymi osobami</text>
+      </komorka>
+      <komorka>
+        <wiersz>8</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>zakaz zbliżania się do określonych osób</text>
+      </komorka>
+      <komorka>
+        <wiersz>9</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>zakaz opuszczania określonego miejsca pobytu bez zgody sądu</text>
+      </komorka>
+      <komorka>
+        <wiersz>10</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>39 pkt 2c kk	zakaz wstępu na imprezę masową</text>
+      </komorka>
+      <komorka>
+        <wiersz>11</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>39 pkt 2d kk	zakaz wstępu do ośrodków gier i uczestnictwa w grach hazardowych</text>
+      </komorka>
+      <komorka>
+        <wiersz>12</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>39 pkt 2e kk	nakaz (okresowego) opuszczenia lokalu zajmowanego wspólnie z pokrzywdzonym</text>
+      </komorka>
+      <komorka>
+        <wiersz>13</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>39 pkt 3 kk	zakaz prowadzenia pojazdów</text>
+      </komorka>
+      <komorka>
+        <wiersz>14</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>39 pkt 4 kk	przepadek</text>
+      </komorka>
+      <komorka>
+        <wiersz>15</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>39 pkt 5 kk 	obowiązek naprawienia szkody lub zadośćuczynienia za doznaną krzywdę</text>
+      </komorka>
+      <komorka>
+        <wiersz>16</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>39 pkt 6 kk	nawiązka</text>
+      </komorka>
+      <komorka>
+        <wiersz>17</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>39 pkt 7 kk	świadczenie pieniężne</text>
+      </komorka>
+      <komorka>
+        <wiersz>18</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>39 pkt 8 kk	podanie wyroku do publicznej wiadomości</text>
+      </komorka>
+      <komorka>
+        <wiersz>19</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Przepadek (art. 44 kk z wył. 39 pkt 4 kk)</text>
+      </komorka>
+      <komorka>
+        <wiersz>20</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style> wciecie </style>
+        <text>Środki kompensacyjne</text>
+      </komorka>
+      <komorka>
+        <wiersz>20</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>obowiązek naprawienia szkody lub zadośćuczynienia za doznaną krzywdę (art. 46 § 1 kk)</text>
+      </komorka>
+      <komorka>
+        <wiersz>21</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>nawiązka (art. 46 § 2 i 47 §  1 lub 2 kk)</text>
+      </komorka>
+      <komorka>
+        <wiersz>22</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Ogółem liczba obowiązków (w.22 = w.23 do 28+32 do 36+39 do 43)</text>
+      </komorka>
+      <komorka>
+        <wiersz>23</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>21</rowspan>
+        <style> wciecie </style>
+        <text>Orzeczone obowiązki w art.</text>
+      </komorka>
+      <komorka>
+        <wiersz>23</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>72 § 1 pkt 1 kk 	informowania sądu lub kuratora o przebiegu okresu próby</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>23</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>72 § 1 pkt 1 kk 	informowania sądu lub kuratora o przebiegu okresu próby</text>
+      </komorka>
+      <komorka>
+        <wiersz>24</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>72 § 1 pkt 2 kk	przeproszenia pokrzywdzonego</text>
+      </komorka>
+      <komorka>
+        <wiersz>25</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>72 § 1 pkt 3 kk	wykonywania ciążącego na nim obowiązku łożenia na utrzymanie innej osoby</text>
+      </komorka>
+      <komorka>
+        <wiersz>26</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>72 § 1 pkt 4 kk	wykonywania pracy zarobkowej, do nauki lub przygotowania się do zawodu</text>
+      </komorka>
+      <komorka>
+        <wiersz>27</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>72 § 1 pkt 5 kk	powstrzymania się od nadużywania alkoholu lub używania innych środków odurzających</text>
+      </komorka>
+      <komorka>
+        <wiersz>28</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>4</rowspan>
+        <style> wciecie </style>
+        <text>72 § 1 pkt 6 kk</text>
+      </komorka>
+      <komorka>
+        <wiersz>28</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>ogółem (w.28 = 29 do 31)</text>
+      </komorka>
+      <komorka>
+        <wiersz>29</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>leczenie odwykowe (terapia uzależnień)  – alkohol</text>
+      </komorka>
+      <komorka>
+        <wiersz>30</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>leczenie odwykowe  (terapia uzależnień)  – środki odurzające</text>
+      </komorka>
+      <komorka>
+        <wiersz>31</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>leczenie rehabilitacyjne, oddziaływania terapeutyczne</text>
+      </komorka>
+      <komorka>
+        <wiersz>32</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style> wciecie </style>
+        <text>72 § 1 pkt 6a kk</text>
+      </komorka>
+      <komorka>
+        <wiersz>32</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>uczestnictwo w programach korekcyjno-edukacyjnych</text>
+      </komorka>
+      <komorka>
+        <wiersz>33</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>terapia</text>
+      </komorka>
+      <komorka>
+        <wiersz>34</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>72 § 1 pkt 6b kk	uczestnictwa w oddziaływaniach korekcyjno-edukacyjnych</text>
+      </komorka>
+      <komorka>
+        <wiersz>35</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>72 § 1 pkt 7 kk	powstrzymania się od przebywania w określonych środowiskach lub miejscach</text>
+      </komorka>
+      <komorka>
+        <wiersz>36</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style> wciecie </style>
+        <text>72 § 1 pkt 7a kk</text>
+      </komorka>
+      <komorka>
+        <wiersz>36</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>ogółem (w.36 = 37+38)</text>
+      </komorka>
+      <komorka>
+        <wiersz>37</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>powstrzymania się od kontaktowania się z pokrzywdzonym lub innymi osobami w określony sposób</text>
+      </komorka>
+      <komorka>
+        <wiersz>38</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>powstrzymywania się od zbliżania się do pokrzywdzonego lub innych osób</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>39</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>72 § 1 pkt 7b kk	opuszczenia lokalu zajmowanego wspólnie z pokrzywdzonym</text>
+      </komorka>
+      <komorka>
+        <wiersz>40</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>72 § 1 pkt 8 kk	innego stosownego postępowania w okresie próby</text>
+      </komorka>
+      <komorka>
+        <wiersz>41</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>72 § 1a kk	określenie przez sąd sposób kontaktu skazanego z pokrzywdzonym w razie orzeczenia obowiązku z art. 72 § 1b kk</text>
+      </komorka>
+      <komorka>
+        <wiersz>42</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>72 § 2 kk	naprawienia szkody w całości lub w części albo uiszczenia świadczenia wymienionego w art. 39 pkt 7 kk</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>43</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>71 ust. 1 ustawy z dnia 29 lipca 2005 r. o przeciwdziałaniu narkomanii - leczenie lub rehabilitacja w podmiocie leczniczym (Dz. U. z 2012 r., poz. 124, z późn. zm.)</text>
+      </komorka>
+    </tablaBoczna>
+  </tabela>
+
+  <tabela id="12.a">
+    <daneTabeli>
+
+      <iloscWierszy>1</iloscWierszy>
+      <tekstNadTabela>Art. 43a § 1 i 2 kk (świadczenie pieniężne) na rzecz Funduszu Pomocy Pokrzywdzonym oraz Pomocy Postpenitencjarnej - Funduszu Sprawiedliwości </tekstNadTabela>
+      <iloscWierszyNaglowka>1</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>1</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>3</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>12.a</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_250</style>
+        <text> Wyszczególnienie</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_250</style>
+        <text>Kwota przekazana na rachunek Funduszu Sprawiedliwości</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_250</style>
+        <text>w tym w drodze postępowania egzekucyjnego</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_250</style>
+        <text>Kwota należności do zapłaty na rzecz Funduszu Sprawiedliwości – stan na ostatni dzień okresu statystycznego</text>
+      </komorka>
+   
+    </naglowek>
+    <tablaBoczna>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Ogółem    </text>
+      </komorka>
+    </tablaBoczna>
+  </tabela>
+
+  <tabela id="12.b">
+    <daneTabeli>
+
+      <iloscWierszy>1</iloscWierszy>
+      <tekstNadTabela> Art. 47 § 1 kk, 57a § 2kk (nawiązka) na rzecz Funduszu Pomocy Pokrzywdzonym oraz Pomocy Postpenitencjarnej - Funduszu Sprawiedliwości</tekstNadTabela>
+      <iloscWierszyNaglowka>1</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>1</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>3</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>12.a</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_250</style>
+        <text> Wyszczególnienie</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_250</style>
+        <text>Kwota przekazana na rachunek Funduszu Sprawiedliwości</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_250</style>
+        <text>w tym w drodze postępowania egzekucyjnego</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_250</style>
+        <text>Kwota należności do zapłaty na rzecz Funduszu Sprawiedliwości – stan na ostatni dzień okresu statystycznego</text>
+      </komorka>
+
+    </naglowek>
+    <tablaBoczna>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Ogółem    </text>
+      </komorka>
+    </tablaBoczna>
+  </tabela> 
+  
+  
+</komorki>

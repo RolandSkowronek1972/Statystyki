@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<komorki>
+
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>1</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <style>col_36 center borderAll</style>
+    <text>L.p. </text>
+  </komorka>
+
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>2</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <style>col_100 center borderAll</style>
+    <text>Nazwisko i imię sędziego </text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>3</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <style>col_100 center borderAll</style>
+    <text>funkcja</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <style>col_50 center borderAll</style>
+    <text>pomoc asystenta</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <style>col_100 center borderAll</style>
+    <text>kategoria spraw</text>
+  </komorka>
+  
+
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>12</colSpan>
+    <rowSpan>1</rowSpan>
+    <style> center borderAll</style>
+    <text>%</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>1</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_100 center borderAll</style>
+    <text>do 3 miesięcy</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>2</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_100 center borderAll</style>
+    <text>suma powyżej 3 miesięcy</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_100 center borderAll</style>
+    <text>powyżej  3 do 6  miesięcy</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_100 center borderAll</style>
+    <text>powyżej  6 do 12 miesięcy</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_100 center borderAll</style>
+    <text>suma powyżej 12 miesięcy</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_100 center borderAll</style>
+    <text>powyżej 12 miesięcy do 2 lat</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_100 center borderAll</style>
+    <text>powyżej 2 do 3 lat</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_100 center borderAll</style>
+    <text>suma powyżej 3 lat</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_100 center borderAll</style>
+    <text>powyżej 3 do 5 lat</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_100 center borderAll</style>
+    <text>powyżej 5 do 8 lat</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_100 center borderAll</style>
+    <text> ponad 8 lat  </text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_100 center borderAll</style>
+    <text> SUMA  </text>
+  </komorka>
+</komorki>

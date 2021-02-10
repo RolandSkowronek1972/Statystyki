@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Statystyki_2018.Site1" %>
+
+<%@ Register Assembly="DevExpress.Web.v17.1, Version=17.1.17.0,  Culture=neutral,  PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <link href="style/menu.css" rel="stylesheet" type="text/css" />
+    <link href="style/login.css" rel="stylesheet" type="text/css" />
+    <link href="style/new.css" rel="stylesheet" type="text/css" />
+    <link href="style/Tables.css" rel="stylesheet" type="text/css" />
+    <link href="style/style.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery-1.8.3.js"></script>
+  <script src="Scripts/rls.js"></script>
+    <script>
+        
+        initCountdownValue = 500;
+        var inactivityCountdown = initCountdownValue;
+        $(document).ready(function () {
+
+            $(document).delegate("#login", "click", function (e) {
+                location.reload();
+            });
+
+            function Logout() {
+                window.location.href = "/default.aspx?logout=true";
+            }
+
+            var intervalid = window.setInterval(function Redirect() {
+                inactivityCountdown--;
+
+                const hours = Math.floor(inactivityCountdown / 3600);
+                const minutes = Math.floor((inactivityCountdown - hours * 3600) / 60);
+                const seconds = Math.floor((inactivityCountdown % 60));
+
+                document.getElementById("demoX").innerHTML = minutes + ":" + seconds;//inactivityCountdown;
+                document.getElementById("form1").addEventListener("mousemove", function (e) {
+                    inactivityCountdown = initCountdownValue;
+                }
+                );
+                if (inactivityCountdown < 1) {
+                    clearInterval(intervalid);
+                    Logout();
+
+                }
+            }, 1 * 1000);
+
+            $(document).delegate("form1", "click change keydown mousemove", function () {
+                inactivityCountdown = initCountdownValue;
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div id="loggedout" style="display: none">
+            Kliknij proszę  <a id="login" href="#">TUTAJ</a> aby przejsc do strony logowania.
+        </div>
+
+        <div style="top: 0px;" class="noprint">
+
+            <div id="menuHolder" class="menuHolder">
+                <div style="width: 70%;">
+                    <dx:ASPxMenu ID="ASPxPopupMenu1" runat="server" Theme="Moderno" ItemLinkMode="TextOnly" CssClass="hoverLink">
+                    </dx:ASPxMenu>
+                </div>
+                <div style="width: 20%; float: left; margin-top: 7px; text-align: center;">
+                    <asp:Label ID="Label1" runat="server" Font-Size="Large"></asp:Label>
+                </div>
+                <div style="width: 10%; float: right; margin-top: -5px; text-align: center;">
+                    <p id="demoX"></p>
+                </div>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <a href="#top" class="cd-top">Top</a>
+    </form>
+</body>
+</html>

@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<komorki>
+
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>1</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_36 center borderAll</style>
+    <text>L.p. </text>
+  </komorka>
+
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>2</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_200 center borderAll</style>
+    <text>Nazwisko i imię sędziego </text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>3</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_81 center borderAll</style>
+    <text>funkcja</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_50 center borderAll</style>
+    <text>pomoc asystenta</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_81 center borderAll</style>
+    <text>kategoria spraw</text>
+  </komorka>
+  
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_81 center borderAll</style>
+    <text>wpływ</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_81 center borderAll</style>
+    <text>załatwienia</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_81 center borderAll</style>
+    <text>pozostałość</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_81 center borderAll</style>
+    <text>sprawy zawieszone</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_81 center borderAll</style>
+    <text>wpływ na sędziego według liczby sędziów i wakujących stanowisk sędziowskich w ramach limitu</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_81 center borderAll</style>
+    <text>załatwienia  na sędziego według liczby sędziów i wakujących stanowisk sędziowskich w ramach limitu</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_81 center borderAll</style>
+    <text>pozostałość na sędziego według liczby sędziów i wakujących stanowisk sędziowskich w ramach limitu</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_81 center borderAll</style>
+    <text>wpływ na sędziego według obsady średniookresowej (efektywnego czasu pracy)</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_81 center borderAll</style>
+    <text>załatwienia na sędziego według obsady średniookresowej (efektywnego czasu pracy)</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_81 center borderAll</style>
+    <text>pozostałość na sędziego według obsady średniookresowej (wg limitu)</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_81 center borderAll</style>
+    <text> wskaźnik pozostałości    </text>
+  </komorka>
+
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <style>col_81 center borderAll</style>
+    <text> efektywny czas pracy  </text>
+  </komorka>
+</komorki>

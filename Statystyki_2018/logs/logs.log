@@ -1,0 +1,1240 @@
+2021-02-08 22:46:09,893  INFO Statystyki_2018.log_4_net - start tworzenia Ste1   22:46:09
+2021-02-08 22:46:09,962  INFO Statystyki_2018.log_4_net - Site1.Master:Brak przeniesienia z logowania identyfikatora numerycznego U¿ytkownika! 
+2021-02-08 22:46:10,019  INFO Statystyki_2018.log_4_net - Object reference not set to an instance of an object.
+2021-02-08 22:46:17,146  INFO Statystyki_2018.log_4_net - uruchomienie logowania
+2021-02-08 22:46:17,147  INFO Statystyki_2018.log_4_net - rozpoczecie logowania 22:46:17
+2021-02-08 22:46:17,504  INFO Statystyki_2018.log_4_net - b³ad logowania domenowego  22:46:17
+2021-02-08 22:46:17,504  INFO Statystyki_2018.log_4_net - próba logowania z bazy  22:46:17
+2021-02-08 22:46:17,881  INFO Statystyki_2018.log_4_net - Logowanie: identyfikator u¿ytkownika: test to 6
+2021-02-08 22:46:17,882  INFO Statystyki_2018.log_4_net - logowania z bazy poprawne  22:46:17
+2021-02-08 22:46:17,884  INFO Statystyki_2018.log_4_net - uruchomienie  redirector.aspx 22:46:17
+2021-02-08 22:46:17,964  INFO Statystyki_2018.log_4_net - start redirektora  22:46:17
+2021-02-08 22:46:17,964  INFO Statystyki_2018.log_4_net - start tworzenia Ste1   22:46:17
+2021-02-08 22:46:17,964  INFO Statystyki_2018.log_4_net - start tworzenia menu  daneDoManuMiesieczne  22:46:17
+2021-02-08 22:46:17,967  INFO Statystyki_2018.log_4_net -  getDataTable - parametetr name= @identyfikatorUzytkownika wartosc: 6
+2021-02-08 22:46:17,971  INFO Statystyki_2018.log_4_net - start tworzenia menu  daneDoManuKontrolek 22:46:17
+2021-02-08 22:46:17,972  INFO Statystyki_2018.log_4_net - naglowek getDataTable - parametetr name= @identyfikatorUzytkownika wartosc: 6
+2021-02-08 22:46:17,975  INFO Statystyki_2018.log_4_net - start tworzenia menu  daneDoManuMSS 22:46:17
+2021-02-08 22:46:17,976  INFO Statystyki_2018.log_4_net - Naglowki getDataTable - parametetr name= @identyfikatorUzytkownika wartosc: 6
+2021-02-08 22:46:17,978  INFO Statystyki_2018.log_4_net - start tworzenia menu daneDoManuInne  22:46:17
+2021-02-08 22:46:17,981  INFO Statystyki_2018.log_4_net - start tworzenia menu wyloguj  22:46:17
+2021-02-08 22:46:17,981  INFO Statystyki_2018.log_4_net - Header: Rozpoczêcie procedury tworzenia elementów menu wyloguj
+2021-02-08 22:46:17,982  INFO Statystyki_2018.log_4_net - koniec tworzenia manu   22:46:17
+2021-02-08 22:46:18,395  INFO Statystyki_2018.log_4_net - uruchomienie logowania
+2021-02-08 22:46:18,396  INFO Statystyki_2018.log_4_net - rozpoczecie logowania 22:46:18
+2021-02-08 22:46:18,451  INFO Statystyki_2018.log_4_net - b³ad logowania domenowego  22:46:18
+2021-02-08 22:46:18,451  INFO Statystyki_2018.log_4_net - próba logowania z bazy  22:46:18
+2021-02-08 22:46:18,451  INFO Statystyki_2018.log_4_net - Logowanie: identyfikator u¿ytkownika: test to 6
+2021-02-08 22:46:18,452  INFO Statystyki_2018.log_4_net - logowania z bazy poprawne  22:46:18
+2021-02-08 22:46:18,452  INFO Statystyki_2018.log_4_net - uruchomienie  redirector.aspx 22:46:18
+2021-02-08 22:46:18,453  INFO Statystyki_2018.log_4_net - start redirektora  22:46:18
+2021-02-08 22:46:18,453  INFO Statystyki_2018.log_4_net - start tworzenia Ste1   22:46:18
+2021-02-08 22:46:18,453  INFO Statystyki_2018.log_4_net - start tworzenia menu  daneDoManuMiesieczne  22:46:18
+2021-02-08 22:46:18,453  INFO Statystyki_2018.log_4_net -  getDataTable - parametetr name= @identyfikatorUzytkownika wartosc: 6
+2021-02-08 22:46:18,454  INFO Statystyki_2018.log_4_net - start tworzenia menu  daneDoManuKontrolek 22:46:18
+2021-02-08 22:46:18,454  INFO Statystyki_2018.log_4_net - naglowek getDataTable - parametetr name= @identyfikatorUzytkownika wartosc: 6
+2021-02-08 22:46:18,455  INFO Statystyki_2018.log_4_net - start tworzenia menu  daneDoManuMSS 22:46:18
+2021-02-08 22:46:18,455  INFO Statystyki_2018.log_4_net - Naglowki getDataTable - parametetr name= @identyfikatorUzytkownika wartosc: 6
+2021-02-08 22:46:18,455  INFO Statystyki_2018.log_4_net - start tworzenia menu daneDoManuInne  22:46:18
+2021-02-08 22:46:18,456  INFO Statystyki_2018.log_4_net - start tworzenia menu wyloguj  22:46:18
+2021-02-08 22:46:18,456  INFO Statystyki_2018.log_4_net - Header: Rozpoczêcie procedury tworzenia elementów menu wyloguj
+2021-02-08 22:46:18,457  INFO Statystyki_2018.log_4_net - koniec tworzenia manu   22:46:18
+2021-02-08 22:46:22,264  INFO Statystyki_2018.log_4_net - oglk2.aspx :Generowanie tabeli danych: Wyci¹dniêcie kwerend dla tabeli :1
+2021-02-08 22:46:22,264  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_tabeli wartosc: 1
+2021-02-08 22:46:22,264  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_dzialu wartosc: 12
+2021-02-08 22:46:22,267  INFO Statystyki_2018.log_4_net - oglk2.aspx :Generowanie tabeli danych: Wpisywanie danych sedziów dla tabeli : 1
+2021-02-08 22:46:22,267  INFO Statystyki_2018.log_4_net - oglk2.aspx :Generowanie tabeli danych: Wpisywanie danych sedziów dla tabeli -> parametr data_1: 2021-01-01
+2021-02-08 22:46:22,268  INFO Statystyki_2018.log_4_net - oglk2.aspx :Generowanie tabeli danych: Wpisywanie danych sedziów dla tabeli -> parametr data_2: 2021-01-31
+2021-02-08 22:46:22,268  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:22,268  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:22,339  INFO Statystyki_2018.log_4_net - oglk2.aspx :Generowanie tabeli danych: Wpisywanie danych dla tabeli : 1 Input string was not in a correct format.
+2021-02-08 22:46:22,341  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:22,341  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:22,343  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:22,343  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:22,344  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:22,344  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:22,345  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:22,345  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:22,348  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:22,348  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:22,349  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:22,349  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:22,354  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:22,354  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:22,467  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:22,467  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:22,580  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:22,580  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:22,694  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:22,694  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:22,807  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:22,807  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:22,918  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:22,918  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:23,096  INFO Statystyki_2018.log_4_net - sumowanie w stopce : Specified argument was out of the range of valid values.
+Parameter name: index
+2021-02-08 22:46:23,097  INFO Statystyki_2018.log_4_net - oglk2.aspx :Generowanie tabeli danych: Wyci¹dniêcie kwerend dla tabeli :2
+2021-02-08 22:46:23,097  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_tabeli wartosc: 2
+2021-02-08 22:46:23,097  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_dzialu wartosc: 12
+2021-02-08 22:46:23,099  INFO Statystyki_2018.log_4_net - oglk2.aspx :Generowanie tabeli danych: Wpisywanie danych sedziów dla tabeli : 2
+2021-02-08 22:46:23,099  INFO Statystyki_2018.log_4_net - oglk2.aspx :Generowanie tabeli danych: Wpisywanie danych sedziów dla tabeli -> parametr data_1: 2021-01-01
+2021-02-08 22:46:23,099  INFO Statystyki_2018.log_4_net - oglk2.aspx :Generowanie tabeli danych: Wpisywanie danych sedziów dla tabeli -> parametr data_2: 2021-01-31
+2021-02-08 22:46:23,099  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:23,099  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:23,157  INFO Statystyki_2018.log_4_net - oglk2.aspx :Generowanie tabeli danych: Wpisywanie danych dla tabeli : 2 Input string was not in a correct format.
+2021-02-08 22:46:23,161  INFO Statystyki_2018.log_4_net - oglk2.aspx :Generowanie tabeli danych: Wpisywanie danych sedziów dla tabeli -> parametr data_1: 2021-01-01
+2021-02-08 22:46:23,161  INFO Statystyki_2018.log_4_net - oglk2.aspx :Generowanie tabeli danych: Wpisywanie danych sedziów dla tabeli -> parametr data_2: 2021-01-31
+2021-02-08 22:46:23,161  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:23,161  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:23,222  INFO Statystyki_2018.log_4_net - oglk2.aspx :Generowanie tabeli danych: Wpisywanie danych dla tabeli : 2 Input string was not in a correct format.
+2021-02-08 22:46:23,225  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:23,226  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:23,231  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:23,231  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:23,232  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:23,233  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:23,239  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:23,239  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:23,240  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:23,240  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:23,246  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:23,246  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:23,249  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:23,249  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:23,255  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:23,255  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:23,258  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:23,258  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:23,263  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:23,263  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:23,375  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:23,375  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:23,483  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:23,483  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:23,647  INFO Statystyki_2018.log_4_net - sumowanie w stopce : Specified argument was out of the range of valid values.
+Parameter name: index
+2021-02-08 22:46:23,647  INFO Statystyki_2018.log_4_net - oglk2.aspx :Generowanie tabeli danych: Wyci¹dniêcie kwerend dla tabeli :3
+2021-02-08 22:46:23,647  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_tabeli wartosc: 3
+2021-02-08 22:46:23,647  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_dzialu wartosc: 12
+2021-02-08 22:46:23,648  INFO Statystyki_2018.log_4_net - oglk2.aspx :Generowanie tabeli danych: Wpisywanie danych sedziów dla tabeli : 3
+2021-02-08 22:46:23,648  INFO Statystyki_2018.log_4_net - oglk2.aspx :Generowanie tabeli danych: Wpisywanie danych sedziów dla tabeli -> parametr data_1: 2021-01-01
+2021-02-08 22:46:23,649  INFO Statystyki_2018.log_4_net - oglk2.aspx :Generowanie tabeli danych: Wpisywanie danych sedziów dla tabeli -> parametr data_2: 2021-01-31
+2021-02-08 22:46:23,649  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:23,649  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:23,689  INFO Statystyki_2018.log_4_net - oglk2.aspx :Generowanie tabeli danych: Wpisywanie danych dla tabeli : 3 Input string was not in a correct format.
+2021-02-08 22:46:23,692  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:23,692  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:23,696  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:23,696  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:23,697  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:23,697  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:23,698  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:23,698  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:23,703  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:23,704  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:23,857  INFO Statystyki_2018.log_4_net - sumowanie w stopce : Specified argument was out of the range of valid values.
+Parameter name: index
+2021-02-08 22:46:23,857  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_wydzial wartosc: 12
+2021-02-08 22:46:23,857  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_tabeli wartosc: 4
+2021-02-08 22:46:23,861  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,861  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,861  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,862  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,862  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,862  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,862  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,862  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,862  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu TextBox
+2021-02-08 22:46:23,862  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ textbox 
+2021-02-08 22:46:23,863  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_wydzial wartosc: 12
+2021-02-08 22:46:23,864  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_tabeli wartosc: 5
+2021-02-08 22:46:23,865  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,865  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,865  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,865  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,865  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,866  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,866  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,866  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,866  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,866  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,866  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,866  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,866  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,866  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,866  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,866  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,867  INFO Statystyki_2018.log_4_net - oglk2.aspx :Generowanie tabeli danych: Wyci¹dniêcie kwerend dla tabeli :6
+2021-02-08 22:46:23,867  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_tabeli wartosc: 6
+2021-02-08 22:46:23,867  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_dzialu wartosc: 12
+2021-02-08 22:46:23,868  INFO Statystyki_2018.log_4_net - oglk2.aspx :Generowanie tabeli danych: iloœæ kwerend wyci¹gaj¹cych dane  dla tabeli : 6=0
+2021-02-08 22:46:23,868  INFO Statystyki_2018.log_4_net - oglk2.aspx :Generowanie tabeli danych: Wpisywanie danych sedziów dla tabeli : 6
+2021-02-08 22:46:23,868  INFO Statystyki_2018.log_4_net - oglk2.aspx :Generowanie tabeli danych: Wpisywanie danych sedziów dla tabeli -> parametr data_1: 2021-01-01
+2021-02-08 22:46:23,868  INFO Statystyki_2018.log_4_net - oglk2.aspx :Generowanie tabeli danych: Wpisywanie danych sedziów dla tabeli -> parametr data_2: 2021-01-31
+2021-02-08 22:46:23,868  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-08 22:46:23,868  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-08 22:46:23,924  INFO Statystyki_2018.log_4_net - oglk2.aspx :Generowanie tabeli danych: Wpisywanie danych dla tabeli : 6 Input string was not in a correct format.
+2021-02-08 22:46:23,987  INFO Statystyki_2018.log_4_net - sumowanie w stopce : Specified argument was out of the range of valid values.
+Parameter name: index
+2021-02-08 22:46:23,987  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_wydzial wartosc: 12
+2021-02-08 22:46:23,987  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_tabeli wartosc: 7
+2021-02-08 22:46:23,992  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,992  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,992  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu TextBox
+2021-02-08 22:46:23,993  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ textbox 
+2021-02-08 22:46:23,993  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,993  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,993  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu TextBox
+2021-02-08 22:46:23,993  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ textbox 
+2021-02-08 22:46:23,993  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,993  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,993  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu TextBox
+2021-02-08 22:46:23,993  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ textbox 
+2021-02-08 22:46:23,993  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,993  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,993  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu TextBox
+2021-02-08 22:46:23,994  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ textbox 
+2021-02-08 22:46:23,994  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_wydzial wartosc: 12
+2021-02-08 22:46:23,994  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_tabeli wartosc: 8
+2021-02-08 22:46:23,996  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,996  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,996  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,996  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,996  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,996  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,996  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,996  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,996  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,996  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,997  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,997  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,997  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,997  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,997  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,997  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,997  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,997  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,997  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,997  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,997  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,997  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,997  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,997  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,997  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_wydzial wartosc: 12
+2021-02-08 22:46:23,997  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_tabeli wartosc: 9
+2021-02-08 22:46:23,999  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,999  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,999  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,999  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,999  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,999  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,999  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,999  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,999  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,999  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,999  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:23,999  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:23,999  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_wydzial wartosc: 12
+2021-02-08 22:46:23,999  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_tabeli wartosc: 10
+2021-02-08 22:46:24,002  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,002  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,002  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,002  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,002  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,002  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,002  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,002  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,002  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,002  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,003  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,003  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,003  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,003  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,003  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,003  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,003  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,003  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,003  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,003  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,003  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,003  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,003  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,003  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,004  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,004  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,004  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,004  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,004  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,004  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,004  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,004  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,004  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,004  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,004  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,005  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,005  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,005  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,005  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,005  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,005  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,005  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,005  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,005  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,005  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,005  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,006  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,006  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,006  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,006  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,006  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,006  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,006  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,006  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,006  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,006  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,006  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,006  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,006  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,006  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,006  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,006  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,006  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,006  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,006  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,006  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,007  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,007  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,007  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,007  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,007  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,007  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,007  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,007  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,007  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,007  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,007  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,007  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,007  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,007  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,007  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,007  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,007  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,007  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,007  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,007  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,008  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,008  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,008  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,008  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,008  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,008  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,008  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,008  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,008  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,008  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,008  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,008  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,008  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,008  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,008  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,008  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,009  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,009  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,009  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,009  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,009  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,009  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,009  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,009  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,009  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,009  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,009  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,009  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,009  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,009  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,010  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,010  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,010  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,010  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,010  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,010  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,010  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,010  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,010  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,010  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,010  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,010  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,010  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,010  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,010  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,010  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,010  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,010  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,010  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,010  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,011  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,011  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,011  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,011  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,011  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,011  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,011  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,011  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,011  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,011  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,011  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,011  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,011  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,011  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,011  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,011  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,011  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,012  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,012  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,012  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,012  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,012  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,012  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,012  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,012  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,012  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,012  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,012  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,012  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,012  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,013  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,013  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,013  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,013  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,013  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,013  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,013  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,013  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,013  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,013  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,013  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,013  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,013  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,013  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,014  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,014  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,014  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,014  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,014  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,014  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,014  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,014  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,014  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,014  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,014  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,014  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,014  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,014  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,014  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,014  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,014  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,014  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,014  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,014  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,014  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,015  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,015  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,015  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,015  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_wydzial wartosc: 12
+2021-02-08 22:46:24,015  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_tabeli wartosc: 11
+2021-02-08 22:46:24,020  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,020  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,020  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,020  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,020  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,020  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,020  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,021  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,021  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,021  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,021  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,021  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,021  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,021  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,021  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,021  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,021  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,021  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,022  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,022  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,022  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,022  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,022  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,022  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,022  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,022  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,022  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,022  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,022  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,023  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,023  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,023  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,023  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,023  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,023  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,023  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,023  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,023  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,023  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,023  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,023  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,023  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,023  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,023  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,023  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,024  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,024  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,024  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,024  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,024  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,024  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,024  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,024  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,024  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,024  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,024  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,024  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,024  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,024  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,024  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,024  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_wydzial wartosc: 12
+2021-02-08 22:46:24,024  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_tabeli wartosc: 12
+2021-02-08 22:46:24,026  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,026  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,026  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,026  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,026  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,026  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,026  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,026  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,026  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,026  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,026  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,026  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,026  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,026  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,026  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,026  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,026  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_wydzial wartosc: 12
+2021-02-08 22:46:24,027  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_tabeli wartosc: 13
+2021-02-08 22:46:24,027  INFO Statystyki_2018.log_4_net - oglk2.aspx DR0003-> : odczyt kwerend: brak kwerend do doczytu danych
+2021-02-08 22:46:24,027  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,027  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,081  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:24,081  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,081  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,137  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:24,137  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,137  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,191  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:24,191  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,191  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,247  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:24,247  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,247  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,304  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:24,304  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,304  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,359  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:24,359  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,359  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,413  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:24,413  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,413  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,469  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:24,469  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,469  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,524  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:24,524  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,524  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,579  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:24,579  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,579  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,636  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:24,636  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,636  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,691  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:24,691  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,691  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,746  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:24,746  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,746  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,801  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:24,801  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,801  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,856  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:24,856  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,856  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,911  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:24,911  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,911  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:24,967  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:24,967  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:24,967  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:25,023  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:25,023  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:25,023  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:25,079  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:25,079  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:25,079  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:25,134  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:25,134  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:25,134  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:25,190  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:25,190  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:25,190  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:25,245  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:25,245  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:25,245  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:25,301  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:25,301  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:25,301  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:25,357  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:25,357  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:25,357  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:25,414  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:25,414  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:25,414  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:25,469  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:25,469  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:25,469  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:25,524  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:25,524  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:25,524  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:25,580  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:25,580  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:25,580  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:25,636  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:25,636  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:25,637  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:25,692  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:25,692  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:25,692  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:25,746  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:25,746  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:25,746  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:25,803  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:25,803  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:25,803  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:25,857  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:25,857  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:25,857  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:25,913  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:25,913  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:25,913  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:25,969  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:25,970  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:25,970  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:26,025  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:26,025  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:26,025  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:26,081  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:26,081  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:26,081  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:26,136  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:26,136  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:26,136  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:26,192  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:26,192  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:26,192  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:26,247  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:26,247  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:26,247  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:26,303  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:26,303  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:26,303  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:26,359  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:26,359  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:26,359  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:26,413  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:26,413  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:26,413  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:26,469  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:26,470  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:26,470  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:26,523  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:26,523  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:26,524  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:26,578  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:26,578  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:26,578  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:26,635  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:26,635  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:26,635  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:26,689  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:26,689  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:26,689  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:26,746  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:26,746  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:26,746  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:26,801  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:26,801  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:26,802  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:26,857  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:26,857  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:26,857  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:26,912  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:26,912  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:26,912  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:26,967  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:26,967  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:26,967  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:27,024  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:27,024  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:27,024  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:27,079  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:27,079  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:27,079  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:27,135  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:27,135  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:27,135  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:27,190  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:27,190  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:27,190  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:27,244  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:27,244  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:27,244  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:27,300  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:27,300  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:27,301  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:27,357  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:27,357  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:27,357  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:27,413  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:27,413  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:27,413  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:27,468  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:27,468  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:27,468  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:27,524  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:27,524  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:27,524  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:27,580  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:27,580  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:27,580  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:27,636  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:27,636  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:27,636  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:27,690  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:27,690  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:27,690  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:27,746  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:27,746  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:27,746  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:27,802  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:27,802  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:27,802  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:27,858  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:27,858  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:27,858  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:27,912  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:27,912  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:27,912  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:27,967  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:27,967  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:27,968  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:28,025  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:28,025  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:28,025  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:28,080  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:28,080  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:28,080  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:28,134  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:28,134  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:28,134  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:28,190  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:28,190  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:28,190  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:28,244  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:28,244  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:28,244  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:28,299  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:28,299  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:28,299  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:28,355  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:28,355  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:28,355  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:28,409  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:28,409  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:28,409  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:28,465  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:28,465  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:28,465  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:28,522  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:28,522  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:28,522  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:28,579  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:28,579  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:28,579  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:28,635  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:28,635  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:28,635  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:28,691  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:28,691  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:28,691  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:28,747  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:28,747  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:28,747  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:28,804  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:28,804  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:28,804  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:28,859  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:28,859  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:28,859  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:28,913  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:28,913  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:28,914  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:28,970  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:28,970  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:28,970  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:29,026  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:29,026  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:29,026  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:29,081  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:29,081  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:29,081  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:29,137  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:29,137  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:29,137  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:29,190  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:29,190  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:29,190  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:29,245  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:29,245  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:29,245  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:29,300  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:29,300  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:29,300  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:29,354  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:29,354  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:29,354  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:29,410  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:29,410  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:29,410  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:29,466  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:29,466  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:29,466  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:29,522  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:29,522  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:29,522  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:29,578  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:29,578  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:29,578  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:29,635  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:29,635  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:29,635  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:29,690  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:29,690  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:29,690  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:29,746  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:29,746  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:29,746  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:29,801  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:29,801  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:29,801  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:29,857  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:29,857  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:29,857  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:29,912  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:29,912  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:29,912  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:29,967  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:29,967  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:29,967  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:30,023  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:30,023  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:30,024  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:30,080  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:30,080  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:30,080  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:30,135  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:30,135  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:30,136  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:30,191  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:30,191  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:30,191  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:30,245  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:30,245  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:30,245  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:30,301  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:30,301  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:30,301  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:30,355  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:30,355  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:30,355  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:30,411  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:30,411  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:30,412  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:30,466  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:30,466  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:30,466  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:30,521  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:30,521  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:30,521  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:30,575  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:30,576  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:30,576  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:30,632  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:30,632  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:30,632  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:30,686  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:30,686  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:30,686  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:30,741  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:30,741  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:30,741  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:30,797  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:30,797  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:30,797  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:30,853  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:30,853  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:30,853  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:30,910  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:30,910  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:30,910  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:30,965  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:30,965  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:30,965  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:31,021  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:31,021  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:31,021  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:31,077  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:31,077  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:31,077  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:31,132  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:31,132  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:31,132  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:31,186  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:31,186  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:31,186  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:31,241  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:31,241  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:31,241  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:31,297  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:31,297  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:31,298  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:31,354  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:31,354  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:31,354  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:31,409  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:31,409  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:31,409  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:31,464  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:31,464  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:31,464  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:31,521  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:31,521  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:31,521  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:31,577  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:31,577  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:31,577  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:31,632  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:31,632  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:31,632  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:31,688  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:31,688  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:31,688  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:31,744  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:31,744  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:31,744  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:31,800  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:31,800  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:31,800  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:31,854  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:31,854  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:31,854  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:31,910  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:31,910  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:31,910  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:31,966  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:31,966  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:31,966  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:32,021  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:32,021  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:32,021  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:32,075  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:32,075  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:32,075  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:32,132  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:32,132  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_wydzial wartosc: 12
+2021-02-08 22:46:32,132  INFO Statystyki_2018.log_4_net - oglk2.aspx getDataTable - parametetr name= @id_tabeli wartosc: 14
+2021-02-08 22:46:32,133  INFO Statystyki_2018.log_4_net - oglk2.aspx DR0003-> : odczyt kwerend: brak kwerend do doczytu danych
+2021-02-08 22:46:32,133  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:32,133  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:32,189  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:32,189  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:32,189  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:32,245  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:32,245  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:32,245  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:32,301  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:32,301  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:32,301  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:32,356  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:32,356  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:32,356  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:32,411  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:32,411  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:32,411  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:32,466  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:32,466  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:32,466  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:32,521  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:32,521  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:32,521  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:32,575  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:32,575  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:32,575  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:32,632  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:32,632  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:32,632  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:32,687  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:32,687  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:32,687  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:32,743  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:32,743  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:32,743  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:32,798  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:32,798  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:32,798  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:32,852  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:32,852  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:32,852  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:32,906  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:32,906  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:32,906  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:32,963  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:32,963  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:32,963  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:33,018  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:33,018  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:33,018  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:33,072  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:33,072  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:33,072  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:33,126  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:33,126  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:33,126  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:33,180  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:33,180  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:33,180  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:33,236  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:33,236  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:33,236  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:33,294  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:33,294  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:33,294  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:33,349  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:33,349  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:33,349  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:33,404  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:33,404  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:33,404  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:33,458  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:33,458  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:33,458  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:33,512  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:33,512  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:33,512  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:33,567  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:33,567  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:33,567  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:33,623  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:33,623  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:33,623  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:33,677  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:33,677  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:33,677  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:33,734  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:33,734  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:33,734  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:33,789  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:33,789  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:33,789  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:33,844  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:33,844  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:33,844  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:33,899  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:33,899  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:33,899  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:33,953  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:33,953  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:33,953  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:34,008  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:34,008  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:34,008  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:34,063  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:34,063  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:34,063  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:34,119  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:34,119  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:34,119  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:34,174  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:34,174  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:34,174  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:34,230  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:34,230  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:34,230  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:34,286  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:34,286  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:34,286  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:34,342  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:34,342  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:34,342  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:34,397  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:34,397  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:34,397  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:34,452  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:34,452  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:34,452  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:34,507  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:34,507  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:34,507  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:34,563  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:34,563  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:34,563  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:34,618  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:34,618  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:34,618  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:34,675  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:34,675  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:34,675  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:34,730  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:34,730  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:34,730  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:34,785  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:34,785  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:34,785  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:34,841  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:34,841  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:34,841  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:34,896  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:34,896  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:34,896  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:34,952  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:34,952  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:34,952  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:35,008  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:35,008  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:35,008  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:35,063  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:35,063  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:35,063  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:35,119  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:35,119  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:35,120  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:35,174  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:35,175  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:35,175  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:35,229  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:35,229  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:35,229  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:35,286  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:35,286  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:35,286  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:35,341  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:35,341  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:35,341  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:35,395  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:35,395  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:35,395  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:35,451  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:35,451  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:35,451  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:35,506  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:35,506  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:35,506  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:35,562  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:35,562  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:35,562  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:35,617  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:35,617  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:35,617  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:35,672  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:35,672  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:35,672  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:35,728  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:35,728  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:35,728  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:35,783  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:35,783  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:35,783  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:35,839  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:35,839  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:35,840  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:35,894  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:35,894  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:35,894  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:35,951  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:35,951  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:35,951  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:36,007  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:36,007  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:36,007  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:36,062  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:36,062  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:36,062  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:36,118  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:36,118  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:36,118  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:36,172  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:36,172  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:36,172  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:36,229  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:36,229  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:36,229  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:36,285  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:36,285  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:36,285  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:36,339  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:36,339  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:36,340  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:36,394  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:36,394  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:36,394  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:36,449  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:36,449  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:36,450  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:36,505  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:36,505  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:36,505  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:36,561  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:36,561  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:36,561  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:36,617  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:36,617  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:36,617  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:36,672  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:36,672  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:36,672  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:36,727  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:36,727  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:36,727  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:36,783  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:36,783  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:36,783  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:36,839  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:36,839  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:36,839  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:36,895  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:36,895  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:36,895  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:36,950  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:36,950  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:36,950  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:37,008  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:37,008  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:37,008  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:37,063  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:37,063  INFO Statystyki_2018.log_4_net - oglk2.aspx nazwaTypu Label
+2021-02-08 22:46:37,064  INFO Statystyki_2018.log_4_net - oglk2.aspx Typ Label 
+2021-02-08 22:46:37,118  INFO Statystyki_2018.log_4_net - oglk2.aspx pisz Object reference not set to an instance of an object.
+2021-02-08 22:46:37,123  INFO Statystyki_2018.log_4_net - start tworzenia Ste1   22:46:37
+2021-02-08 22:46:37,124  INFO Statystyki_2018.log_4_net - start tworzenia menu   22:46:37
+2021-02-08 22:46:37,124  INFO Statystyki_2018.log_4_net - koniec tworzenia manu   22:46:37

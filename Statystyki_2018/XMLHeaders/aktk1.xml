@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<komorki>
+
+  <komorka>
+    <wiersz>4</wiersz>
+    <kolumna>1</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>na rozprawach</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>4</wiersz>
+    <kolumna>2</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>na posiedzeniach</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>4</wiersz>
+    <kolumna>3</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>na rozprawach</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>4</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>na posiedzeniach</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>4</wiersz>
+    <kolumna>1</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>na rozprawach</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>4</wiersz>
+    <kolumna>6</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>na posiedzeniach</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>1</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <style>gray</style>
+   
+    <text>Ogółem</text>
+  </komorka>
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>2</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>K</text>
+  </komorka>
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>3</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>Ko</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <style>gray</style>
+  
+    <text>Ogółem</text>
+  </komorka>
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>5</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>K</text>
+  </komorka>
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>6</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>Ko</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>7</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>Kp</text>
+  </komorka>
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>8</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>Kop</text>
+  </komorka>
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>10</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <style>gray</style>
+   <text>ogółem</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>11</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>w tym wielotomowe pow. 10 tomów</text>
+  </komorka>
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>12</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>w tym wyroki łączne</text>
+  </komorka>
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>23</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>ilość osób osądzonych</text>
+  </komorka>
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>24</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Wyroki łaczne</text>
+  </komorka>
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>26</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>wyroki</text>
+  </komorka>
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>27</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>inne załatwienia</text>
+  </komorka>
+ 
+
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>28</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <style>gray</style>
+    <text>Razem</text>
+  </komorka>
+  
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>29</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>w tym wielotomowe pow. 10 tomów</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>31</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>odszkodowania</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>33</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>unieważnienia</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>34</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <text>pozostałe</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>35</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>2</rowSpan>
+    <hv>h</hv>
+    <style>gray</style>
+    <text>Razem</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>1</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>3</rowSpan>
+    <hv>h</hv>
+    <text>Rozprawy</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>2</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>3</rowSpan>
+    <hv>h</hv>
+    <text>Posiedzenia</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>3</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>3</rowSpan>
+    <hv>h</hv>
+    <text>ilość dni sesyjnych</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>4</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>3</rowSpan>
+    <hv>h</hv>
+    <text>w tym sprawy własne ***</text>
+  </komorka>
+  
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>5</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>3</rowSpan>
+    <hv>h</hv>
+    <text>ilość spraw jako II sędzia ***</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>6</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>3</rowSpan>
+    <hv>h</hv>
+    <text>ilość sesji odwołanych</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>7</kolumna>
+    <colSpan>3</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>na rozprawach</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>10</kolumna>
+    <colSpan>5</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>na posiedzeniach</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>11</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>3</rowSpan>
+    <hv>h</hv>
+    <style>gray</style>
+    <text>Razem</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>12</kolumna>
+    <colSpan>3</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>K</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>15</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>3</rowSpan>
+    <hv>h</hv>
+    <text>Ko</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>16</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>3</rowSpan>
+    <hv>h</hv>
+    <text>Kp</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>17</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>3</rowSpan>
+    <hv>h</hv>
+    <text>Kop</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>18</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>3</rowSpan>
+    <hv>h</hv>
+    <style>gray</style>
+    <text>Razem</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>19</kolumna>
+    <colSpan>8</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>K</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>27</kolumna>
+    <colSpan>5</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Ko</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>32</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>3</rowSpan>
+    <hv>h</hv>
+    <text>Kp</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>33</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>3</rowSpan>
+    <hv>h</hv>
+    <text>Kop</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>33</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>3</rowSpan>
+    <hv>h</hv>
+    <style>gray</style>
+    <text>Razem</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>1</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>4</rowSpan>
+    <hv>h</hv>
+    <text>L.p.</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>1</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>4</rowSpan>
+    <hv>h</hv>
+    <text>Nazwisko i imię sędziego                   (funkcja w wydziale) </text>
+  </komorka>
+
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>2</kolumna>
+    <colSpan>6</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Ilość odbytych sesji</text>
+  </komorka>
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>7</kolumna>
+    <colSpan>9</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Ilość wyznaczonych spraw</text>
+  </komorka>
+
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>16</kolumna>
+    <colSpan>7</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Wpływ spraw </text>
+  </komorka>
+
+  <komorka>
+    <wiersz>1</wiersz>
+    <kolumna>23</kolumna>
+    <colSpan>16</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Załatwienia spraw </text>
+  </komorka>
+</komorki>

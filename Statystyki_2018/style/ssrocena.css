@@ -1,0 +1,82 @@
+﻿.blackBox 
+{
+    border-color:#eee;
+    border-style:solid;
+    border-width:1px;
+    text-align:center;
+    height:35px;
+}
+.sto {
+    width:100px;
+}
+
+.sto2 {
+    width:200px;
+}
+.rotateText {
+-webkit-transform: rotate(270deg);
+-moz-transform: rotate(270deg);
+-o-transform: rotate(270deg);
+writing-mode: lr-tb;
+}
+.wideBox
+ {
+     border-color:#eee;
+    border-style:solid;
+    border-width:1px;
+    text-align:center;
+    height:35px;
+    width:220px;
+}
+
+
+.wideBoxLeft
+ {
+     border-color:#eee;
+    border-style:solid;
+    border-width:1px;
+    text-align:left;
+    height:35px;
+    width:220px;
+}
+
+
+.middleBox {
+     border-color:#eee;
+    border-style:solid;
+    border-right:none;
+    border-width:1px;
+    text-align:center;
+    height:35px;
+    width:80px;
+}
+.smallBox 
+{
+     border-color:#eee;
+    border-style:solid;
+    border-width:1px;
+    text-align:center;
+    height:35px;
+    width:40px;
+    border-left:none;
+
+}
+.tabless01 
+ td {
+      border-color:#eee;
+    border-style:solid;
+    border-width:1px;
+    text-align:center;
+    height:35px;
+    width:164px;
+}
+
+.tabless02 
+ td {
+      border-color:#eee;
+    border-style:solid;
+    border-width:1px;
+    text-align:center;
+    height:35px;
+    width:122px;
+}

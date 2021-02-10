@@ -1,0 +1,3677 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<komorki>
+  <tabela id="1.1.1">
+    <daneTabeli>
+      <iloscWierszy>203</iloscWierszy>
+      <tekstNadTabela>Ewidencja spraw – I instancja i ogółem I i II instancja</tekstNadTabela>
+      <iloscWierszyNaglowka>5</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>4</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>15</iloscKolumnPoIteracji>
+      <lp>1</lp>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>4</colSpan>
+        <rowspan>5</rowspan>
+        <style>center col_250</style>
+        <text> SPRAWY WG REPERTORIÓW LUB WYKAZÓW</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>5</rowspan>
+        <style>center col_80_fest</style>
+        <text>pozostało z ubiegłego roku</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>5</rowspan>
+        <style>center</style>
+        <text>WPŁYNĘŁO Razem</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>10</colSpan>
+        <rowspan>1</rowspan>
+        <style>center</style>
+        <text>ZAŁATWIONO</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>2</rowspan>
+        <style>center</style>
+        <text>Odroczono</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>5</rowspan>
+        <style>center</style>
+        <text>Pozostało na okres następny</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>4</rowspan>
+        <style>center col_80_fest</style>
+        <text>Razem</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>9</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_80_fest</style>
+        <text>z tego</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest </style>
+        <text>uwzględniono w całości lub części</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest</style>
+        <text>oddalono</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest</style>
+        <text>zwrócono</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest</style>
+        <text>odrzucono </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>4</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>umorzono</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest</style>
+        <text>inne załatwienia</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest</style>
+        <text>ogółem</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest</style>
+        <text>w tym publikację orzeczenia</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest</style>
+        <text>ogółem</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_80_fest</style>
+        <text>w tym w wyniku </text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_80_fest</style>
+        <text>zawarcia ugody przed sądem </text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_80_fest</style>
+        <text>cofnięcia pozwu wniosku</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_80_fest</style>
+        <text>mediacji</text>
+      </komorka>
+    </naglowek>
+    <tablaBoczna>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>OGÓŁEM I i II instancja (wiersze 02 +dz. 1.1.2. w. 01)</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>-</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Ogółem I instancja   (wiersze 03, 120, 127, 139, 144, 185, 202, 203 + dz.  1.1.1.a w.01)</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>-</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>C (procesowe)</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>-</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>5</rowspan>
+        <style> wciecie </style>
+        <text>o rozwód</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>razem (w.04 = w.05 do 08)</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>-</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>rozwód</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>004</text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>z zastosowaniem art.58 §2 k.r.o. bez zdania pierwszego</text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>004a</text>
+      </komorka>
+      <komorka>
+        <wiersz>7</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>z zastosowaniem art.58 §3 k.r.o.</text>
+      </komorka>
+      <komorka>
+        <wiersz>7</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>004b</text>
+      </komorka>
+      <komorka>
+        <wiersz>8</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>z zastosowaniem art. 58 §2 k.r.o. (bez zdania pierwszego) i §3</text>
+      </komorka>
+      <komorka>
+        <wiersz>8</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>004ab</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>9</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>5</rowspan>
+        <style> wciecie </style>
+        <text>o separację</text>
+      </komorka>
+      <komorka>
+        <wiersz>9</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>razem (w.09 = w.10 do 13)</text>
+      </komorka>
+      <komorka>
+        <wiersz>9</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>-</text>
+      </komorka>
+      <komorka>
+        <wiersz>10</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>separacja</text>
+      </komorka>
+      <komorka>
+        <wiersz>10</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>040</text>
+      </komorka>
+      <komorka>
+        <wiersz>11</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>z zastosowaniem art.58 §2 k.r.o. bez zdania pierwszego</text>
+      </komorka>
+      <komorka>
+        <wiersz>11</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>040a</text>
+      </komorka>
+      <komorka>
+        <wiersz>12</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>z zastosowaniem art.58 §3 k.r.o.</text>
+      </komorka>
+      <komorka>
+        <wiersz>12</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>040b</text>
+      </komorka>
+      <komorka>
+        <wiersz>13</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>z zastosowaniem art. 58 §2 k.r.o. (bez zdania pierwszego) i §3</text>
+      </komorka>
+      <komorka>
+        <wiersz>13</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>040ab</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>14</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Unieważnienie małżeństwa</text>
+      </komorka>
+      <komorka>
+        <wiersz>14</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>005</text>
+      </komorka>
+      <komorka>
+        <wiersz>15</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia z art. 231 kc</text>
+      </komorka>
+      <komorka>
+        <wiersz>15</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>009</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>16</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Opróżnienie lokalu mieszkalnego</text>
+      </komorka>
+      <komorka>
+        <wiersz>16</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>101m</text>
+      </komorka>
+      <komorka>
+        <wiersz>17</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Opróżnienie lokalu użytkowego</text>
+      </komorka>
+      <komorka>
+        <wiersz>17</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>010u</text>
+      </komorka>
+      <komorka>
+        <wiersz>18</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Wydanie nieruchomości</text>
+      </komorka>
+      <komorka>
+        <wiersz>18</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>011</text>
+      </komorka>
+      <komorka>
+        <wiersz>19</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Ochrona naturalnego środowiska człowieka</text>
+      </komorka>
+      <komorka>
+        <wiersz>19</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>013</text>
+      </komorka>
+      <komorka>
+        <wiersz>20</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Odszkodowania z tytułu wypadków komunikacyjnych</text>
+      </komorka>
+      <komorka>
+        <wiersz>20</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>014</text>
+      </komorka>
+      <komorka>
+        <wiersz>21</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style> wciecie </style>
+        <text>Odszkodowania z tytułu wypadków komunikacyjnych</text>
+      </komorka>
+      <komorka>
+        <wiersz>21</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>z wyłączeniem spraw o symbolu 325, 014oc i 014pz</text>
+      </komorka>
+      <komorka>
+        <wiersz>21</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>014wk</text>
+      </komorka>
+      <komorka>
+        <wiersz>22</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>spory na tle ubezpieczeń OC posiadaczy pojazdów mechanicznych  z wyłączeniem spraw o symbolu 014pz</text>
+      </komorka>
+      <komorka>
+        <wiersz>22</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>014oc</text>
+      </komorka>
+      <komorka>
+        <wiersz>23</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>roszczenia z tytułu zwrotu kosztów najmu pojazdu zastępczego przeciwko ubezpieczycielowi OC posiadacza pojazdu mechanicznego</text>
+      </komorka>
+      <komorka>
+        <wiersz>23</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>014pz</text>
+      </komorka>
+      <komorka>
+        <wiersz>24</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia związane z rękojmią i gwarancją</text>
+      </komorka>
+      <komorka>
+        <wiersz>24</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>018</text>
+      </komorka>
+      <komorka>
+        <wiersz>25</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia z tytułu umów kontraktacji</text>
+      </komorka>
+      <komorka>
+        <wiersz>25</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>019</text>
+      </komorka>
+      <komorka>
+        <wiersz>26</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Zwolnienie zajętego przedmiotu od egzekucji</text>
+      </komorka>
+      <komorka>
+        <wiersz>26</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>020</text>
+      </komorka>
+      <komorka>
+        <wiersz>27</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Pozbawienie tytułu wykonawczego wykonalności</text>
+      </komorka>
+      <komorka>
+        <wiersz>27</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>021</text>
+      </komorka>
+      <komorka>
+        <wiersz>28</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Odszkodowania z tytułu odpowiedzialności Skarbu Państwa za szkody wyrządzone przez funkcjonariuszy podległych Ministrowi Edukacji Narodowej</text>
+      </komorka>
+      <komorka>
+        <wiersz>28</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>026</text>
+      </komorka>
+      <komorka>
+        <wiersz>29</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style> wciecie </style>
+        <text>Odszkodowania za szkody wyrządzone przez służbę zdrowia</text>
+      </komorka>
+      <komorka>
+        <wiersz>29</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>samodzielnemu  (posiadającemu osobowość prawną) publicznemu zakładowi opieki zdrowotnej</text>
+      </komorka>
+      <komorka>
+        <wiersz>29</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>027</text>
+      </komorka>
+      <komorka>
+        <wiersz>30</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Skarbowi Państwa lub jednostkom samorządu terytorialnego, w związku ze szkodą zaistniałą w niesamodzielnym publicznym zakładzie służby zdrowia -w tym także przed 1.I.1999r.</text>
+      </komorka>
+      <komorka>
+        <wiersz>30</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>027a</text>
+      </komorka>
+      <komorka>
+        <wiersz>31</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>niepublicznym (prywatnym i spółdzielczym) zakładom służby zdrowia (bez względu na ich formę organizacyjną)</text>
+      </komorka>
+      <komorka>
+        <wiersz>31</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>027b</text>
+      </komorka>
+      <komorka>
+        <wiersz>32</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style> wciecie </style>
+        <text>Odszkodowania z tytułu odpowiedzialności Skarbu Państwa za szkody wyrządzone przez funkcjonariuszy</text>
+      </komorka>
+      <komorka>
+        <wiersz>32</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style> wciecie </style>
+        <text>podległych Ministrowi Sprawiedliwości</text>
+      </komorka>
+      <komorka>
+        <wiersz>32</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>zakładów karnych</text>
+      </komorka>
+      <komorka>
+        <wiersz>32</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>028</text>
+      </komorka>
+      <komorka>
+        <wiersz>33</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>innych</text>
+      </komorka>
+      <komorka>
+        <wiersz>33</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>029</text>
+      </komorka>
+      <komorka>
+        <wiersz>34</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>innych resortów z wyjątkiem spraw o symbolu 026</text>
+      </komorka>
+      <komorka>
+        <wiersz>34</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>030</text>
+      </komorka>
+      <komorka>
+        <wiersz>35</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Ochrona dóbr osobistych</text>
+      </komorka>
+      <komorka>
+        <wiersz>35</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>031</text>
+      </komorka>
+      <komorka>
+        <wiersz>36</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Ochrona praw autorskich</text>
+      </komorka>
+      <komorka>
+        <wiersz>36</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>033</text>
+      </komorka>
+      <komorka>
+        <wiersz>37</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia z ustawy z dnia 30 czerwca 2000 r. - Prawo własności przemysłowej (Dz. U. z 2017 r. poz. 776)</text>
+      </komorka>
+      <komorka>
+        <wiersz>37</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>034</text>
+      </komorka>
+      <komorka>
+        <wiersz>38</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Uchylenie uchwał organu spółdzielni, z wyłączeniem uchwał dotyczących spółdzielczego stosunku pracy</text>
+      </komorka>
+      <komorka>
+        <wiersz>38</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>035</text>
+      </komorka>
+      <komorka>
+        <wiersz>39</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Uchylenie uchwał wspólnot mieszkaniowych (art. 25 ust. 1 ustawy z dnia 24 czerwca 1994 r. o własności lokali)</text>
+      </komorka>
+      <komorka>
+        <wiersz>39</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>035wm</text>
+      </komorka>
+      <komorka>
+        <wiersz>40</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O wydanie orzeczenia zastępującego uchwałę o podziale spółdzielni (art. 17 pkt 4<![CDATA[<sup>1</sup>]]>kpc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>40</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>074</text>
+      </komorka>
+      <komorka>
+        <wiersz>41</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O ustalenie istnienia lub nieistnienia małżeństwa</text>
+      </komorka>
+      <komorka>
+        <wiersz>41</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>041</text>
+      </komorka>
+      <komorka>
+        <wiersz>42</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia wynikające z prawa prasowego</text>
+      </komorka>
+      <komorka>
+        <wiersz>42</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>042</text>
+      </komorka>
+      <komorka>
+        <wiersz>43</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Spory na tle waloryzacji (art. 358<![CDATA[<sup>1</sup>]]> kc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>43</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>043</text>
+      </komorka>
+      <komorka>
+        <wiersz>44</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia z umowy leasingu</text>
+      </komorka>
+      <komorka>
+        <wiersz>44</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>072</text>
+      </komorka>
+      <komorka>
+        <wiersz>45</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style> wciecie </style>
+        <text>Spory na tle obrotu</text>
+      </komorka>
+      <komorka>
+        <wiersz>45</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>akcjami</text>
+      </komorka>
+      <komorka>
+        <wiersz>45</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>044a</text>
+      </komorka>
+      <komorka>
+        <wiersz>46</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>innymi papierami wartościowymi</text>
+      </komorka>
+      <komorka>
+        <wiersz>46</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>044</text>
+      </komorka>
+      <komorka>
+        <wiersz>47</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O ustalenie istnienia lub nieistnienia stosunku praw-nego lub prawa (art. 189 kpc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>47</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>045</text>
+      </komorka>
+      <komorka>
+        <wiersz>48</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia z art. 1891 kpc</text>
+      </komorka>
+      <komorka>
+        <wiersz>48</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>086</text>
+      </komorka>
+      <komorka>
+        <wiersz>49</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O ustalenie , czy podwyżka jest niezasadna albo zasadna w innej wysokości [art.8a ust. 5 ustawy z dnia 21 czerwca 2001r. o ochronie praw lokatorów, mieszkaniowym zasobie gminy i o zmianie Kodeksu cywilnego (Dz. U. z 2018 r. poz. 1234 ze zm.)]</text>
+      </komorka>
+      <komorka>
+        <wiersz>49</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>071</text>
+      </komorka>
+      <komorka>
+        <wiersz>50</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia z umowy spółki cywilnej</text>
+      </komorka>
+      <komorka>
+        <wiersz>50</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>046</text>
+      </komorka>
+      <komorka>
+        <wiersz>51</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia z umów ubezpieczenia, z wyłączeniem spraw o symbolu 014wk, 014oc, 014pz</text>
+      </komorka>
+      <komorka>
+        <wiersz>51</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>047</text>
+      </komorka>
+      <komorka>
+        <wiersz>52</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia z umowy komisu</text>
+      </komorka>
+      <komorka>
+        <wiersz>52</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>048</text>
+      </komorka>
+      <komorka>
+        <wiersz>53</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia z umów bankowych, z wyłączeniem spraw o symbolu 049c i 049cf</text>
+      </komorka>
+      <komorka>
+        <wiersz>53</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>poręczenia</text>
+      </komorka>
+      <komorka>
+        <wiersz>53</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>049a</text>
+      </komorka>
+      <komorka>
+        <wiersz>54</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>gwarancje bankowe i akredytywy</text>
+      </komorka>
+      <komorka>
+        <wiersz>54</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>049b</text>
+      </komorka>
+      <komorka>
+        <wiersz>55</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>innych</text>
+      </komorka>
+      <komorka>
+        <wiersz>55</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>049</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>56</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia z umów bankowych</text>
+      </komorka>
+      <komorka>
+        <wiersz>56</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>waloryzowanych/ denominowanych /indeksowanych do waluty innej niż waluta polska z wyłączeniem denominowanych /indeksowanych do franka szwajcarskiego</text>
+      </komorka>
+      <komorka>
+        <wiersz>56</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>049c</text>
+      </komorka>
+      <komorka>
+        <wiersz>57</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>denominowanych /indeksowanych do franka szwajcarskiego</text>
+      </komorka>
+      <komorka>
+        <wiersz>57</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>049</text>
+      </komorka>
+      <komorka>
+        <wiersz>58</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Unieważnienie aktu notarialnego</text>
+      </komorka>
+      <komorka>
+        <wiersz>58</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>051</text>
+      </komorka>
+      <komorka>
+        <wiersz>59</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia z umowy darowizny</text>
+      </komorka>
+      <komorka>
+        <wiersz>59</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>053</text>
+      </komorka>
+      <komorka>
+        <wiersz>60</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia o zachowek</text>
+      </komorka>
+      <komorka>
+        <wiersz>60</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>054</text>
+      </komorka>
+      <komorka>
+        <wiersz>61</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Odszkodowania za szkody na osobie</text>
+      </komorka>
+      <komorka>
+        <wiersz>61</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>055</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>62</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style> wciecie </style>
+        <text>Odszkodowania za naruszenie dóbr osobistych na podstawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>62</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>zadośćuczynienie za doznaną krzywdę</text>
+      </komorka>
+      <komorka>
+        <wiersz>62</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>056</text>
+      </komorka>
+      <komorka>
+        <wiersz>63</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>na cel społeczny</text>
+      </komorka>
+      <komorka>
+        <wiersz>63</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>056s</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>64</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style> wciecie </style>
+        <text>Odszkodowania za naruszenie zasady równego traktowania (art. 13 ustawy z dnia 3 grudnia 2010 r. o wdrożeniu niektórych przepisów UE w zakresie równego traktowania (Dz. U. z 2016 r., poz. 1219)</text>
+      </komorka>
+      <komorka>
+        <wiersz>64</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>zadośćuczynienie za doznaną krzywdę</text>
+      </komorka>
+      <komorka>
+        <wiersz>64</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>056rtz</text>
+      </komorka>
+      <komorka>
+        <wiersz>65</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>na cel społeczny</text>
+      </komorka>
+      <komorka>
+        <wiersz>65</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>056rts</text>
+      </komorka>
+      <komorka>
+        <wiersz>66</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Bezpodstawne wzbogacenie (art. 405 kc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>66</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>057</text>
+      </komorka>
+      <komorka>
+        <wiersz>67</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia o przywrócenie stanu zgodnego z prawem i o zaniechanie naruszeń  (art. 222 §2 kc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>67</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>058</text>
+      </komorka>
+      <komorka>
+        <wiersz>68</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style> wciecie </style>
+        <text>Odpowiedzialność za szkodę wyrządzoną przez niezgodne z prawem działanie lub zaniechanie przy wykonaniu władzy publicznej (art.417§1 kc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>68</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Skarbu Państwa</text>
+      </komorka>
+      <komorka>
+        <wiersz>68</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>059</text>
+      </komorka>
+      <komorka>
+        <wiersz>69</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>jednostki samorządu terytorialnego</text>
+      </komorka>
+      <komorka>
+        <wiersz>69</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>060</text>
+      </komorka>
+      <komorka>
+        <wiersz>70</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>inne osoby prawne</text>
+      </komorka>
+      <komorka>
+        <wiersz>70</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>060a</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>71</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style> wciecie </style>
+        <text>Solidarna odpowiedzialność na podstawie porozumienia za wykonywanie zadań z zakresu władzy publicznej (art.417§2 kc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>71</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Skarbu Państwa</text>
+      </komorka>
+      <komorka>
+        <wiersz>71</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>061</text>
+      </komorka>
+      <komorka>
+        <wiersz>72</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>jednostki samorządu terytorialnego</text>
+      </komorka>
+      <komorka>
+        <wiersz>72</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>062</text>
+      </komorka>
+      <komorka>
+        <wiersz>73</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>inne osoby prawne</text>
+      </komorka>
+      <komorka>
+        <wiersz>73</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>062a</text>
+      </komorka>
+      <komorka>
+        <wiersz>74</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Żądanie naprawienia szkody wyrządzonej na osobie przez zgodne z prawem wykonywanie władzy publicznej gdy okoliczności wskazują, że wymagają tego względy słuszności (art. 4172 kc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>74</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>068</text>
+      </komorka>
+      <komorka>
+        <wiersz>75</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Żądanie zadośćuczynienia pieniężnego za szkody wyrządzone na osobie przez zgodne z prawem wykonywanie władzy publicznej gdy okoliczności wskazują, że wymagają tego względy słuszności (art. 4172 kc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>75</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>069</text>
+      </komorka>
+      <komorka>
+        <wiersz>76</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Odpowiedzialność za wydanie aktu norma¬tywnego niezgodnego z Konstytucją , ratyfikowaną umową międzynarodową lub ustawą oraz za niewydanie aktu normatywnego, którego obowiązek wydania przewiduje przepis prawa  (art.4171§1 i 4  kc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>76</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>063</text>
+      </komorka>
+      <komorka>
+        <wiersz>77</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Odpowiedzialność za wydanie prawomoc¬nego orzeczenia lub ostatecznej decyzji oraz za niewydanie orzeczenia lub decyzji, gdy obowiązek ich wydania przewiduje przepis prawa(art.4171§2 i 3  kc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>77</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>064</text>
+      </komorka>
+      <komorka>
+        <wiersz>78</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia wniesione na podstawie art.16 ustawy z dn.17 czerwca 2004 r. o skardze na naruszenie prawa strony do rozpoznania sprawy w postępowaniu przygotowawczym (…) (Dz. U. z 2018 r. poz. 75)</text>
+      </komorka>
+      <komorka>
+        <wiersz>78</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>070</text>
+      </komorka>
+      <komorka>
+        <wiersz>79</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia z walutowych transakcji instrumentami pochodnymi (opcje walutowe, swapy walutowe, CIRS, forward i inne)</text>
+      </komorka>
+      <komorka>
+        <wiersz>79</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>075</text>
+      </komorka>
+      <komorka>
+        <wiersz>80</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O uchylenie wyroku sądu polubownego</text>
+      </komorka>
+      <komorka>
+        <wiersz>80</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>073</text>
+      </komorka>
+      <komorka>
+        <wiersz>81</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O uznanie umowy za bezskuteczną (art. 59 kc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>81</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>306</text>
+      </komorka>
+      <komorka>
+        <wiersz>82</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O unieważnienie umowy zawartej w wyniku aukcji albo przetargu (art. 705 kc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>82</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>308</text>
+      </komorka>
+      <komorka>
+        <wiersz>83</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O wydanie rzeczy ruchomej (art.  222 § 1 kc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>83</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>309</text>
+      </komorka>
+      <komorka>
+        <wiersz>84</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia wzajemne między właścicielem a samoistnym posiadaczem rzeczy (art. 229 kc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>84</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>301</text>
+      </komorka>
+      <komorka>
+        <wiersz>85</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O wstrzymanie budowy (art. 347 kc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>85</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>310</text>
+      </komorka>
+      <komorka>
+        <wiersz>86</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O rozstrzygnięcie z powodu nadzwyczajnej zmian stosunków (art. 3571 kc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>86</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>311</text>
+      </komorka>
+      <komorka>
+        <wiersz>87</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Żądania z tytułu wyzysku (art. 388 kc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>87</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>312</text>
+      </komorka>
+      <komorka>
+        <wiersz>88</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O zawarcie umowy przyrzeczonej (art. 390 § 2 kc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>88</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>313</text>
+      </komorka>
+      <komorka>
+        <wiersz>89</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O orzeczenie przepadku świadczenia spełnionego w zamian za dokonanie czynu zabronionego przez ustawę lub w celu niegodziwym (art. 412 kc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>89</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>314</text>
+      </komorka>
+      <komorka>
+        <wiersz>90</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O naprawienie szkody wynikłej z czynu niedozwolonego, z wyłączeniem spraw o symbolach 014wk, 014oc, 014pz,  026, 027, 027a, 027b, 028, 029, 030, 050, 050z, 055, 056, 056s, 059, 060, 060a, 061, 062, 062a, 068, 069, 063, 064</text>
+      </komorka>
+      <komorka>
+        <wiersz>90</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>302</text>
+      </komorka>
+      <komorka>
+        <wiersz>91</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O naprawienie szkody z tytułu odpowiedzialności za szkodę wyrządzoną przez produkt niebezpieczny</text>
+      </komorka>
+      <komorka>
+        <wiersz>91</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>303</text>
+      </komorka>
+      <komorka>
+        <wiersz>92</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O naprawienie szkody wynikłej z niewykonania lub nienależytego wykonania zobowiązania</text>
+      </komorka>
+      <komorka>
+        <wiersz>92</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>304</text>
+      </komorka>
+      <komorka>
+        <wiersz>93</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O upoważnienie do wykonania zastępczego na koszt dłużnika (art. 480  kc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>93</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>315</text>
+      </komorka>
+      <komorka>
+        <wiersz>94</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O uznanie czynności prawnej za bezskuteczną</text>
+      </komorka>
+      <komorka>
+        <wiersz>94</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>307</text>
+      </komorka>
+      <komorka>
+        <wiersz>95</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>15</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia</text>
+      </komorka>
+      <komorka>
+        <wiersz>95</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>14</rowspan>
+        <style> wciecie </style>
+        <text>z umowy</text>
+      </komorka>
+      <komorka>
+        <wiersz>95</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>sprzedaży</text>
+      </komorka>
+      <komorka>
+        <wiersz>95</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>88</text>
+      </komorka>
+      <komorka>
+        <wiersz>96</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>dostawy</text>
+      </komorka>
+      <komorka>
+        <wiersz>96</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>89</text>
+      </komorka>
+      <komorka>
+        <wiersz>97</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>o dzieło</text>
+      </komorka>
+      <komorka>
+        <wiersz>97</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>90</text>
+      </komorka>
+      <komorka>
+        <wiersz>98</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>o roboty budowlane</text>
+      </komorka>
+      <komorka>
+        <wiersz>98</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>91</text>
+      </komorka>
+      <komorka>
+        <wiersz>99</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>deweloperskiej art. 9 ustawy z 16 września 2011 r. o ochronie praw nabywcy lokalu mieszkalnego lub domu jednorodzinnego (Dz.U. z 2017r. poz. 1468)</text>
+      </komorka>
+      <komorka>
+        <wiersz>99</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>091a</text>
+      </komorka>
+      <komorka>
+        <wiersz>100</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>najmu lub dzierżawy</text>
+      </komorka>
+      <komorka>
+        <wiersz>100</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>92</text>
+      </komorka>
+      <komorka>
+        <wiersz>101</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>pożyczki</text>
+      </komorka>
+      <komorka>
+        <wiersz>101</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>93</text>
+      </komorka>
+      <komorka>
+        <wiersz>102</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>zlecenia</text>
+      </komorka>
+      <komorka>
+        <wiersz>102</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>94</text>
+      </komorka>
+      <komorka>
+        <wiersz>103</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>agencyjnej</text>
+      </komorka>
+      <komorka>
+        <wiersz>103</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>95</text>
+      </komorka>
+      <komorka>
+        <wiersz>104</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>przewozu</text>
+      </komorka>
+      <komorka>
+        <wiersz>104</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>96</text>
+      </komorka>
+      <komorka>
+        <wiersz>105</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>spedycji</text>
+      </komorka>
+      <komorka>
+        <wiersz>105</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>97</text>
+      </komorka>
+      <komorka>
+        <wiersz>106</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>składu</text>
+      </komorka>
+      <komorka>
+        <wiersz>106</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>98</text>
+      </komorka>
+      <komorka>
+        <wiersz>107</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>poręczenia</text>
+      </komorka>
+      <komorka>
+        <wiersz>107</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>99</text>
+      </komorka>
+      <komorka>
+        <wiersz>108</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>renty lub dożywocia</text>
+      </komorka>
+      <komorka>
+        <wiersz>108</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>100</text>
+      </komorka>
+      <komorka>
+        <wiersz>109</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>z weksla</text>
+      </komorka>
+      <komorka>
+        <wiersz>109</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>087</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>110</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O uznanie za niegodnego dziedziczenia</text>
+      </komorka>
+      <komorka>
+        <wiersz>110</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>320</text>
+      </komorka>
+      <komorka>
+        <wiersz>111</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O odszkodowanie za bezumowne korzystanie z lokalu mieszkalnego</text>
+      </komorka>
+      <komorka>
+        <wiersz>111</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>305m</text>
+      </komorka>
+      <komorka>
+        <wiersz>112</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O odszkodowanie za bezumowne korzystanie z lokalu użytkowego</text>
+      </komorka>
+      <komorka>
+        <wiersz>112</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>305u</text>
+      </komorka>
+      <komorka>
+        <wiersz>113</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Żądanie odmowy wykonania tytułu wykonawczego</text>
+      </komorka>
+      <komorka>
+        <wiersz>113</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>316</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>114</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O uchylenie, stwierdzenie nieważności albo o ustalenie nieistnienia uchwał organów osób prawnych  lub jednostek organizacyjnych niebędących osobami prawnymi, którym ustawa przyznaje zdolność prawną (art. 17 pkt 42 kpc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>114</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>321</text>
+      </komorka>
+      <komorka>
+        <wiersz>115</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O zobowiązanie do złożenia oświadczenia woli</text>
+      </komorka>
+      <komorka>
+        <wiersz>115</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>317</text>
+      </komorka>
+      <komorka>
+        <wiersz>116</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O ustalenie wstąpienia w stosunek najmu</text>
+      </komorka>
+      <komorka>
+        <wiersz>116</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>318</text>
+      </komorka>
+      <komorka>
+        <wiersz>117</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O ustalenie opłaty z tytułu użytkowania wieczystego</text>
+      </komorka>
+      <komorka>
+        <wiersz>117</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>319</text>
+      </komorka>
+      <komorka>
+        <wiersz>118</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O roszczenia z tytułu naruszenia prawa konkurencji wniesione zgodnie z ustawą z 21.04.2017 o roszczeniach o naprawienie szkody wyrządzonej przez naruszenie prawa konkurencji (Dz.U. 2017r. poz. 1132)</text>
+      </komorka>
+      <komorka>
+        <wiersz>118</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text></text>
+      </komorka>
+      <komorka>
+        <wiersz>119</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Inne bez symbolu i o symbolu wyżej niewymienionym </text>
+      </komorka>
+      <komorka>
+        <wiersz>119</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>–</text>
+      </komorka>
+      <komorka>
+        <wiersz>120</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>CG-G szkody geologiczne i gór­nicze (razem wiersze 121 do 126)</text>
+      </komorka>
+      <komorka>
+        <wiersz>120</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text> </text>
+      </komorka>
+      <komorka>
+        <wiersz>121</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>5</rowspan>
+        <style> wciecie </style>
+        <text>Sprawy o napra-wienie szkód w</text>
+      </komorka>
+      <komorka>
+        <wiersz>121</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text> budynkach  i lokalach</text>
+      </komorka>
+      <komorka>
+        <wiersz>121</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>350</text>
+      </komorka>
+      <komorka>
+        <wiersz>122</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>obiektach budowlanych i infrastrukturze technicznej (z wyłączeniem budynków i lokali)</text>
+      </komorka>
+      <komorka>
+        <wiersz>122</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>351</text>
+      </komorka>
+      <komorka>
+        <wiersz>123</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>gruncie i zasobach wodnych (z wyłączeniem gruntów rolnych i leśnych)</text>
+      </komorka>
+      <komorka>
+        <wiersz>123</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>352</text>
+      </komorka>
+      <komorka>
+        <wiersz>124</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>plonach</text>
+      </komorka>
+      <komorka>
+        <wiersz>124</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>353</text>
+      </komorka>
+      <komorka>
+        <wiersz>125</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>gruntach rolnych i leśnych</text>
+      </komorka>
+      <komorka>
+        <wiersz>125</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>354</text>
+      </komorka>
+      <komorka>
+        <wiersz>126</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text> Inne roszczenia </text>
+      </komorka>
+      <komorka>
+        <wiersz>126</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>355</text>
+      </komorka>
+      <komorka>
+        <wiersz>127</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Ns (nieprocesowe) </text>
+      </komorka>
+      <komorka>
+        <wiersz>127</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>–</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>128</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O separację na podstawie zgodnego żądania małżonków</text>
+      </komorka>
+      <komorka>
+        <wiersz>128</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>233</text>
+      </komorka>
+      <komorka>
+        <wiersz>129</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Ubezwłasnowolnienie </text>
+      </komorka>
+      <komorka>
+        <wiersz>129</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>232</text>
+      </komorka>
+      <komorka>
+        <wiersz>130</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Zniesienie separacji</text>
+      </komorka>
+      <komorka>
+        <wiersz>130</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>234</text>
+      </komorka>
+      <komorka>
+        <wiersz>131</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O uchylenie ubezwłasnowolnienia</text>
+      </komorka>
+      <komorka>
+        <wiersz>131</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>232a</text>
+      </komorka>
+      <komorka>
+        <wiersz>132</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Sprawy w trybie wyborczym (wybory prezydenckie)</text>
+      </komorka>
+      <komorka>
+        <wiersz>132</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>290</text>
+      </komorka>
+      <komorka>
+        <wiersz>133</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Sprawy w trybie wyborczym (wybory parlamentarne)</text>
+      </komorka>
+      <komorka>
+        <wiersz>133</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>291</text>
+      </komorka>
+      <komorka>
+        <wiersz>134</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Sprawy w trybie wyborczym (wybory samorządowe)</text>
+      </komorka>
+      <komorka>
+        <wiersz>134</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>292</text>
+      </komorka>
+      <komorka>
+        <wiersz>135</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>wydanie wypisu aktu notarialnego (art. 110 § 2 ustawy z dnia 14 lutego 1991 r. - Prawo o notariacie)</text>
+      </komorka>
+      <komorka>
+        <wiersz>135</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>294</text>
+      </komorka>
+      <komorka>
+        <wiersz>136</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Nakazanie powrotu osoby podlegającej władzy rodzicielskiej lub pozostającej pod opieką za granicę w sprawie prowadzonej na podstawie Konwencji dotyczącej cywilnych aspektów uprowadzenia dziecka za granicę, sporządzonej                     w Hadze dnia 25 października 1980 r.</text>
+      </komorka>
+      <komorka>
+        <wiersz>136</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>295</text>
+      </komorka>
+      <komorka>
+        <wiersz>137</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Przymusowe odebrania osoby podlegającej władzy rodzicielskiej lub pozostającej pod opieką za granicę w sprawie prowadzonej na podstawie Konwencji dotyczącej cywilnych aspektów uprowadzenia dziecka za granicę, sporządzonej w Hadze dnia 25 października  1980 r.</text>
+      </komorka>
+      <komorka>
+        <wiersz>137</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>296</text>
+      </komorka>
+      <komorka>
+        <wiersz>138</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Inne bez symbolu i o symbolu wyżej niewymienionym </text>
+      </komorka>
+      <komorka>
+        <wiersz>138</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>–</text>
+      </komorka>
+      <komorka>
+        <wiersz>139</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>5</rowspan>
+        <style> wciecie </style>
+        <text>Ns-Rej.</text>
+      </komorka>
+      <komorka>
+        <wiersz>139</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>razem (w. 110 do 143)</text>
+      </komorka>
+      <komorka>
+        <wiersz>139</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>–</text>
+      </komorka>
+      <komorka>
+        <wiersz>140</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Prasa f)</text>
+      </komorka>
+      <komorka>
+        <wiersz>140</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>–</text>
+      </komorka>
+      <komorka>
+        <wiersz>141</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Partie f)</text>
+      </komorka>
+      <komorka>
+        <wiersz>141</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>–</text>
+      </komorka>
+      <komorka>
+        <wiersz>142</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Fundusze Emerytalne f)</text>
+      </komorka>
+      <komorka>
+        <wiersz>142</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>–</text>
+      </komorka>
+      <komorka>
+        <wiersz>143</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Fundusze Inwestycyjne f)</text>
+      </komorka>
+      <komorka>
+        <wiersz>143</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>–</text>
+      </komorka>
+      <komorka>
+        <wiersz>144</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Nc (nakazowe, upominawcze i europejskie postępowanie nakazowe)(suma w. 145 do 184)</text>
+      </komorka>
+      <komorka>
+        <wiersz>144</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>-</text>
+      </komorka>
+      <komorka>
+        <wiersz>145</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Odszkodowania z tytułu wypadków komunikacyjnych</text>
+      </komorka>
+      <komorka>
+        <wiersz>145</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>14</text>
+      </komorka>
+      <komorka>
+        <wiersz>144</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Nc (nakazowe, upominawcze i europejskie postępowanie nakazowe)(suma w. 145 do 184)</text>
+      </komorka>
+      <komorka>
+        <wiersz>144</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>-</text>
+      </komorka>
+      <komorka>
+        <wiersz>145</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Odszkodowania z tytułu wypadków komunikacyjnych</text>
+      </komorka>
+      <komorka>
+        <wiersz>145</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>14</text>
+      </komorka>
+      <komorka>
+        <wiersz>146</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style> wciecie </style>
+        <text>Odszkodowania z tytułu wypadków komunikacyjnych</text>
+      </komorka>
+      <komorka>
+        <wiersz>146</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>z wyłączeniem spraw o symbolu 325, 014oc i 014pz</text>
+      </komorka>
+      <komorka>
+        <wiersz>146</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>014wk</text>
+      </komorka>
+      <komorka>
+        <wiersz>147</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>spory na tle ubezpieczeń OC posiadaczy pojazdów mechanicznych  z wyłączeniem spraw o symbolu 014pz</text>
+      </komorka>
+      <komorka>
+        <wiersz>147</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>014oc</text>
+      </komorka>
+      <komorka>
+        <wiersz>148</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>roszczenia z tytułu zwrotu kosztów najmu pojazdu zastępczego przeciwko ubezpieczycielowi OC posiadacza pojazdu mechanicznego</text>
+      </komorka>
+      <komorka>
+        <wiersz>148</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>014pz</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>149</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia związane z rękojmią i gwarancją (dotyczy wszystkich rodzajów umów)</text>
+      </komorka>
+      <komorka>
+        <wiersz>149</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>18</text>
+      </komorka>
+      <komorka>
+        <wiersz>150</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia z tytułu umów kontraktacji</text>
+      </komorka>
+      <komorka>
+        <wiersz>150</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>19</text>
+      </komorka>
+      <komorka>
+        <wiersz>151</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Spory na tle waloryzacji (art. 3581 kc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>151</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>43</text>
+      </komorka>
+      <komorka>
+        <wiersz>152</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style> wciecie </style>
+        <text>Spory na tle obrotu</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>152</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>akcjami</text>
+      </komorka>
+      <komorka>
+        <wiersz>152</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>044a</text>
+      </komorka>
+      <komorka>
+        <wiersz>153</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>innymi papierami wartościowymi</text>
+      </komorka>
+      <komorka>
+        <wiersz>153</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>44</text>
+      </komorka>
+      <komorka>
+        <wiersz>154</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia z umowy spółki cywilnej</text>
+      </komorka>
+      <komorka>
+        <wiersz>154</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>46</text>
+      </komorka>
+      <komorka>
+        <wiersz>155</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia z umów ubezpieczenia, z wyłączeniem    spraw o symbolu 014wk, 014oc, 014pz</text>
+      </komorka>
+      <komorka>
+        <wiersz>155</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>47</text>
+      </komorka>
+      <komorka>
+        <wiersz>156</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia z umowy komisu</text>
+      </komorka>
+      <komorka>
+        <wiersz>156</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>48</text>
+      </komorka>
+      <komorka>
+        <wiersz>157</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia z umów bankowych, z wyłączeniem spraw o symbolu 049c i 049cf</text>
+      </komorka>
+      <komorka>
+        <wiersz>157</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>poręczenia</text>
+      </komorka>
+      <komorka>
+        <wiersz>157</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>049a</text>
+      </komorka>
+      <komorka>
+        <wiersz>158</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>gwarancje bankowe i akredytywy</text>
+      </komorka>
+      <komorka>
+        <wiersz>158</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>049b</text>
+      </komorka>
+      <komorka>
+        <wiersz>159</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>innych</text>
+      </komorka>
+      <komorka>
+        <wiersz>159</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>49</text>
+      </komorka>
+      <komorka>
+        <wiersz>160</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia z umów bankowych</text>
+      </komorka>
+      <komorka>
+        <wiersz>160</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>waloryzowanych/ denominowanych /indeksowanych do waluty innej niż waluta polska z wyłączeniem denominowanych /indeksowanych do franka szwajcarskiego</text>
+      </komorka>
+      <komorka>
+        <wiersz>160</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>049c</text>
+      </komorka>
+      <komorka>
+        <wiersz>161</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>denominowanych /indeksowanych do franka szwajcarskiego</text>
+      </komorka>
+      <komorka>
+        <wiersz>161</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>49 cf</text>
+      </komorka>
+      <komorka>
+        <wiersz>162</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text> Roszczenia z umowy darowizny</text>
+      </komorka>
+      <komorka>
+        <wiersz>162</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>53</text>
+      </komorka>
+      <komorka>
+        <wiersz>163</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text> Roszczenia o zachowek</text>
+      </komorka>
+      <komorka>
+        <wiersz>163</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>54</text>
+      </komorka>
+      <komorka>
+        <wiersz>164</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia z walutowych transakcji instrumentami pochodnymi (opcje walutowe, swapy walutowe, CIRS, forward i inne)</text>
+      </komorka>
+      <komorka>
+        <wiersz>164</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>75</text>
+      </komorka>
+      <komorka>
+        <wiersz>165</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O odszkodowanie z tytułu odpowiedzialności za szkodę wynikłą z niewykonania lub nienależytego wykonania zobowiązania</text>
+      </komorka>
+      <komorka>
+        <wiersz>165</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>304</text>
+      </komorka>
+      <komorka>
+        <wiersz>166</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O naprawienie szkody wynikłej z czynu niedozwolonego, z wyłączeniem spraw o symbolach 014wk, 014oc, 014pz,  026, 027, 027a, 027b, 028, 029, 030, 050, 050z, 055, 056, 056s, 059, 060, 060a, 061, 062, 062a, 068, 069, 063, 064</text>
+      </komorka>
+      <komorka>
+        <wiersz>166</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>302</text>
+      </komorka>
+      <komorka>
+        <wiersz>167</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>15</rowspan>
+        <style> wciecie </style>
+        <text>Roszczenia</text>
+      </komorka>
+      <komorka>
+        <wiersz>167</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>14</rowspan>
+        <style> wciecie </style>
+        <text>z umowy</text>
+      </komorka>
+      <komorka>
+        <wiersz>167</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>sprzedaży</text>
+      </komorka>
+      <komorka>
+        <wiersz>167</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>88</text>
+      </komorka>
+      <komorka>
+        <wiersz>168</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>dostawy</text>
+      </komorka>
+      <komorka>
+        <wiersz>168</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>89</text>
+      </komorka>
+      <komorka>
+        <wiersz>169</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>o dzieło</text>
+      </komorka>
+      <komorka>
+        <wiersz>169</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>90</text>
+      </komorka>
+      <komorka>
+        <wiersz>170</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>o roboty budowlane</text>
+      </komorka>
+      <komorka>
+        <wiersz>170</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>91</text>
+      </komorka>
+      <komorka>
+        <wiersz>171</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>deweloperskiej art. 9 ustawy z 16 września 2011 r. o ochronie praw nabywcy lokalu mieszkalnego lub domu jednorodzinnego(Dz.U. z 2017r. poz. 1468)</text>
+      </komorka>
+      <komorka>
+        <wiersz>171</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>091a</text>
+      </komorka>
+      <komorka>
+        <wiersz>172</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Najmu</text>
+      </komorka>
+      <komorka>
+        <wiersz>172</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>92</text>
+      </komorka>
+      <komorka>
+        <wiersz>173</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>pożyczki</text>
+      </komorka>
+      <komorka>
+        <wiersz>173</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>93</text>
+      </komorka>
+      <komorka>
+        <wiersz>174</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>zlecenia</text>
+      </komorka>
+      <komorka>
+        <wiersz>174</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>94</text>
+      </komorka>
+      <komorka>
+        <wiersz>175</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>agencyjnej</text>
+      </komorka>
+      <komorka>
+        <wiersz>175</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>95</text>
+      </komorka>
+      <komorka>
+        <wiersz>176</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>przewozu</text>
+      </komorka>
+      <komorka>
+        <wiersz>176</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>96</text>
+      </komorka>
+      <komorka>
+        <wiersz>177</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Spedycji</text>
+      </komorka>
+      <komorka>
+        <wiersz>177</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>97</text>
+      </komorka>
+      <komorka>
+        <wiersz>178</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Składu</text>
+      </komorka>
+      <komorka>
+        <wiersz>178</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>98</text>
+      </komorka>
+      <komorka>
+        <wiersz>179</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>poręczenia</text>
+      </komorka>
+      <komorka>
+        <wiersz>179</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>99</text>
+      </komorka>
+      <komorka>
+        <wiersz>180</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Renty</text>
+      </komorka>
+      <komorka>
+        <wiersz>180</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>100</text>
+      </komorka>
+      <komorka>
+        <wiersz>181</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>z weksla</text>
+      </komorka>
+      <komorka>
+        <wiersz>181</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>087</text>
+      </komorka>
+      <komorka>
+        <wiersz>182</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O odszkodowanie za bezumowne korzystanie z lokalu mieszkalnego</text>
+      </komorka>
+      <komorka>
+        <wiersz>182</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>305m</text>
+      </komorka>
+      <komorka>
+        <wiersz>183</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O odszkodowanie za bezumowne korzystanie z lokalu użytkowego</text>
+      </komorka>
+      <komorka>
+        <wiersz>183</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>305u</text>
+      </komorka>
+      <komorka>
+        <wiersz>184</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Inne bez symbolu i o symbolu wyżej niewymienionym </text>
+      </komorka>
+      <komorka>
+        <wiersz>184</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>–</text>
+      </komorka>
+      <komorka>
+        <wiersz>185</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Co ogólne  (razem wiersze 186 do 201)</text>
+      </komorka>
+      <komorka>
+        <wiersz>185</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>–</text>
+      </komorka>
+      <komorka>
+        <wiersz>186</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style> center </style>
+        <text>O nadanie klauzuli wykonalności</text>
+      </komorka>
+      <komorka>
+        <wiersz>186</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>z wyłączeniem spraw o symbolach 104n, 104m i 104p</text>
+      </komorka>
+      <komorka>
+        <wiersz>186</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>104</text>
+      </komorka>
+      <komorka>
+        <wiersz>187</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>przeciwko małżonkowi dłużnika (art. 787, 7871 kpc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>187</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>104m</text>
+      </komorka>
+      <komorka>
+        <wiersz>188</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>wobec przejścia uprawnień lub obowiązków (art. 788 kpc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>188</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>104p</text>
+      </komorka>
+      <komorka>
+        <wiersz>189</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O zwolnienie od kosztów sądowych i/lub ustanowienie radcy prawnego , adwokata</text>
+      </komorka>
+      <komorka>
+        <wiersz>189</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>105</text>
+      </komorka>
+      <komorka>
+        <wiersz>190</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Uznanie orzeczenia sądu państwa obcego</text>
+      </komorka>
+      <komorka>
+        <wiersz>190</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>107</text>
+      </komorka>
+      <komorka>
+        <wiersz>191</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O wyznaczenie sądu</text>
+      </komorka>
+      <komorka>
+        <wiersz>191</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>108</text>
+      </komorka>
+      <komorka>
+        <wiersz>192</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O wyłączenie sędziego</text>
+      </komorka>
+      <komorka>
+        <wiersz>192</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>109</text>
+      </komorka>
+      <komorka>
+        <wiersz>193</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text> O odtworzenie akt </text>
+      </komorka>
+      <komorka>
+        <wiersz>193</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>111</text>
+      </komorka>
+      <komorka>
+        <wiersz>194</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O udzielenie zabezpieczenia</text>
+      </komorka>
+      <komorka>
+        <wiersz>194</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>131</text>
+      </komorka>
+      <komorka>
+        <wiersz>195</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O udzielenie zabezpieczenia w trybie rozporządzenia Parlamentu Europejskiego i Rady (UE) NR 655/2014 z dnia 15 maja 2014 r. ustanawiającego procedurę europejskiego nakazu zabezpieczenia na rachunku bankowym w celu ułatwienia transgranicznego dochodzenia wierzytelności w sprawach cywilnych i handlowych</text>
+      </komorka>
+      <komorka>
+        <wiersz>195</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>131a</text>
+      </komorka>
+      <komorka>
+        <wiersz>196</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O uchylenie lub zmianę prawomocnego postanowienia o udzieleniu zabezpieczenia</text>
+      </komorka>
+      <komorka>
+        <wiersz>196</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>132</text>
+      </komorka>
+      <komorka>
+        <wiersz>197</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O ponowne wydanie tytułu wykonawczego zamiast utraconego (art. 794 kpc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>197</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>125</text>
+      </komorka>
+      <komorka>
+        <wiersz>198</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O zabezpieczenie dowodu</text>
+      </komorka>
+      <komorka>
+        <wiersz>198</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>129</text>
+      </komorka>
+      <komorka>
+        <wiersz>199</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O stwierdzenie wykonalności orzeczenia sądu zagranicznego (art. 1151 kpc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>199</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>133</text>
+      </komorka>
+      <komorka>
+        <wiersz>200</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O nadanie klauzuli wykonalności tytułom egzekucyjnym określonym w rozporządzeniu Rady (WE) nr 4/2009 z dn. 18 grudnia 2008 r. w sprawie jurysdykcji, prawa właściwego, uznawania i wykonywania orzeczeń oraz współpracy w zakresie zobowiązań alimentacyjnych (art. 11511 kpc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>200</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>141</text>
+      </komorka>
+      <komorka>
+        <wiersz>201</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Inne bez symbolu i o symbolu wyżej niewymienionym </text>
+      </komorka>
+      <komorka>
+        <wiersz>201</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>–</text>
+      </komorka>
+      <komorka>
+        <wiersz>202</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>WSC (skarga o stwierdzenie niezgodności z prawem) – I instancja</text>
+      </komorka>
+      <komorka>
+        <wiersz>202</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text></text>
+      </komorka>
+      <komorka>
+        <wiersz>203</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>WSNc (skarga nadzwyczajna) – I instancja</text>
+      </komorka>
+      <komorka>
+        <wiersz>203</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>–</text>
+      </komorka>
+    </tablaBoczna>
+  </tabela>
+</komorki>
