@@ -48,14 +48,7 @@ namespace Statystyki_2018
         private string getColumnName(int i)
         {
             string txt = string.Empty;
-            if (i < 10)
-            {
-                txt = "d_0" + i.ToString().Trim();
-            }
-            else
-            {
-                txt = "d_" + i.ToString().Trim();
-            }
+            txt = i < 10 ? "d_0" + i.ToString().Trim() : "d_" + i.ToString().Trim();
             return txt;
         }
 
@@ -175,7 +168,7 @@ namespace Statystyki_2018
             }
             catch (Exception ex)
             {
-                Common.log.Error("popup pod_tabela " + ex.Message );
+                Common.log.Error("popup pod_tabela " + ex.Message);
                 conn.Close();
             }
 
@@ -363,6 +356,56 @@ namespace Statystyki_2018
             return "1";
         }// end of generuj_dane_do_tabeli
 
+        public DataTable generuj_dane_do_tabeli_wierszy(DateTime poczatek, DateTime koniec, string id_dzialu, int id_tabeli, int iloscWierszy, int iloscKolumn, string tenPlik)
+
+        {
+            DataTable tabelaWyjsciowa = new DataTable();
+            tabelaWyjsciowa.Columns.Add("id_", typeof(int));
+            tabelaWyjsciowa.Columns.Add("id_tabeli", typeof(int));
+            tabelaWyjsciowa.Columns.Add("opis", typeof(string));
+            for (int i = 1; i < iloscKolumn; i++)
+            {
+                tabelaWyjsciowa.Columns.Add(getColumnName(i), typeof(string));
+            }
+            string kwerenda = string.Empty;
+            DataSet dsMenu = new DataSet();
+            string opis = string.Empty;
+            try
+            {
+                // int ilosc_wierszy = PodajIloscWierszy(int.ps(id_dzialu), id_tabeli);
+                for (int i = 1; i <= iloscWierszy; i++) //po wierszach
+                {
+                    // tworz wiersz z tabeli
+                    DataRow wiersz = tabelaWyjsciowa.NewRow();
+                    wiersz["id_"] = i.ToString();
+                    for (int j = 0; j <= iloscKolumn; j++)
+                    {
+                        try
+                        {
+                            string dana = wyciagnijDane(int.Parse(id_dzialu), i, j, poczatek, koniec, id_tabeli, tenPlik);
+                            if (string.IsNullOrEmpty(dana.Trim()) == true) continue;
+                            switch (j)
+                            {
+                                case 0:
+                                    wiersz["opis"] = dana.Trim();
+                                    break;
+                                default:
+                                    wiersz[getColumnName(i)] = dana.Trim();
+                                    break;
+                            }
+                        }
+                        catch
+                        { } // end of try
+                    }
+                    tabelaWyjsciowa.Rows.Add(wiersz);
+                }
+            }
+            catch (Exception ex)
+            { }
+
+            return tabelaWyjsciowa;
+        }// end of generuj_dane_do_tabeli
+
         public DataTable generuj_dane_do_tabeli_wierszy_przestawnych1(DateTime poczatek, DateTime koniec, string id_dzialu, int id_tabeli, int id_pozycji, string tenPlik)
         {
             // DataSet dsMenu = new DataSet();
@@ -540,6 +583,136 @@ namespace Statystyki_2018
                                             {
                                                 DataRow newRow = tab_1000.NewRow();
                                                 for (int i = 0; i < 8; i++)
+                                                {
+                                                    newRow[i] = row[i];
+                                                }
+                                                // newRow = row;
+                                                tab_1000.Rows.Remove(row);// wywala rowa
+
+                                                //   newRow.BeginEdit();
+                                                newRow[int.Parse(id_kol) + 1] = dR[0].ToString().Trim();
+                                                newRow["id_tabeli"] = id_tabeli;
+                                                // newRow.AcceptChanges();
+                                                tab_1000.Rows.Add(newRow);
+                                            }
+                                        }
+                                        catch
+                                        { }
+
+                                        //++++++++++++++++++
+                                    }
+                                    break;
+                            }
+                        }
+                    }
+                }
+#pragma warning disable CS0168 // The variable 'ex' is declared but never used
+                catch (Exception ex)
+#pragma warning restore CS0168 // The variable 'ex' is declared but never used
+                { }//end of try
+            }// end of if
+
+            return tab_1000;
+        }// end of generuj_dane_do_tabeli_3
+
+        public DataTable generuj_dane_do_tabeli_przestawnych(int id_dzialu, int id_tabeli, int iloscKolumn, DateTime poczatek, DateTime koniec, string tenPlik)
+        {
+            DataTable tab_1000 = new DataTable();
+            //      tab_1000.Columns.Add("id_sedziego", typeof(int));
+            tab_1000.Columns.Add("opis", typeof(String));
+            for (int i = 1; i < iloscKolumn; i++)
+            {
+                DataColumn aa = new DataColumn
+                {
+                    DataType = typeof(int),
+                    DefaultValue = 0,
+                    ColumnName = "d_0" + i.ToString()
+                };
+                tab_1000.Columns.Add(aa);
+            }
+
+            tab_1000.Columns.Add("id_tabeli", typeof(int));
+
+            string status = string.Empty;
+            status = status + "pompowanie danch do tabeli: " + id_tabeli.ToString() + "<br>";
+            var conn = new SqlConnection(con_str);
+            string kwerenda = string.Empty;
+            DataTable parameters = Common.makeParameterTable();
+
+            parameters.Rows.Add("@id_dzialu", id_dzialu);
+            parameters.Rows.Add("@id_tabeli", id_tabeli);
+
+            DataTable ddT = Common.getDataTable("SELECT distinct id_kolumny,[kwerenda] FROM [kwerendy] where id_tabeli=@id_tabeli and id_wydzial=@id_dzialu order by id_kolumny", con_str, parameters, tenPlik);
+            int il_wierszy = 0;
+            try
+            {
+                il_wierszy = ddT.Rows.Count;
+            }
+            catch { }
+            string cs = podajConnectionString(id_dzialu);
+            if (il_wierszy == 0)
+            {
+                // brak kwerend odcztującch
+                status = status + "brak kwerend odcztujących" + "<br>";
+            }
+            else
+            {
+                // sa kwerendy
+                status = status + "są kwerendy odcztujące, il: " + ddT.Rows.Count.ToString() + "<br>";
+                //getTable
+                int rowId = 0;
+                try
+                {
+                    foreach (DataRow dRow in ddT.Rows)
+                    {
+                        rowId++;
+                        string id_kol = dRow[0].ToString().Trim();
+                        string kwe = dRow[1].ToString().Trim();
+
+                        ////############################################  ladowanie danych tabela 2 ##############################
+                        // odczyt sedziów
+                        parameters = Common.makeParameterTable();
+
+                        parameters.Rows.Add("@id_dzialu", id_dzialu);
+                        parameters.Rows.Add("@id_tabeli", id_tabeli);
+                        parameters.Rows.Add("@data_1", KonwertujDate(poczatek));
+                        parameters.Rows.Add("@data_2", KonwertujDate(koniec));
+
+                        ddT = Common.getDataTable(kwe, cs, parameters, tenPlik);
+                        //pętla ładująca dane dane sedzw
+                        int lp = 0;
+                        foreach (DataRow dR in ddT.Rows)
+                        {
+                            switch (id_kol)
+                            {
+                                case "0":
+                                    {
+                                        lp++;
+                                        DataRow dRN = tab_1000.NewRow();
+
+                                        dRN[1] = dR[1].ToString().Trim() + " " + dR[2].ToString().Trim();
+                                        dRN[0] = dR[0].ToString().Trim();
+                                        for (int i = 2; i < 10; i++)
+                                        {
+                                            dRN[i] = 0;
+                                        }
+
+                                        dRN[9] = id_tabeli;
+                                        tab_1000.Rows.Add(dRN);
+                                        // załadowanie danych do pierwszych kolumn
+                                    }
+                                    break;
+
+                                default:
+                                    {
+                                        //++++++++++++++++
+                                        try
+                                        {
+                                            DataRow[] result = tab_1000.Select("id_sedziego = " + dR[1].ToString().Trim());
+                                            foreach (DataRow row in result)
+                                            {
+                                                DataRow newRow = tab_1000.NewRow();
+                                                for (int i = 0; i < iloscKolumn - 1; i++)
                                                 {
                                                     newRow[i] = row[i];
                                                 }

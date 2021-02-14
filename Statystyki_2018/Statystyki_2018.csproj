@@ -145,6 +145,13 @@
     <Content Include="akrg.aspx" />
     <Content Include="akrp.aspx" />
     <Content Include="akrk.aspx" />
+    <None Include="Connected Services\ServiceReference2\SerwisWymiany.disco" />
+    <None Include="Connected Services\ServiceReference2\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReference2\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReference2\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="oczc.aspx" />
     <Content Include="oczc2.aspx" />
     <Content Include="mp.aspx" />
@@ -153,9 +160,14 @@
     <Content Include="mss10e.aspx" />
     <Content Include="oglk2.aspx" />
     <Content Include="okrcN.aspx" />
+    <Content Include="SerwisWymiany.asmx" />
+    <Content Include="Wymiana1.aspx" />
     <Content Include="XMLHeaders\MSS1o.xml" />
     <Content Include="XMLHeaders\oczc1.xml" />
     <Content Include="XMLHeaders\MSS10r.xml" />
+    <Content Include="XMLHeaders\otrr1.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="XMLHeaders\okrc.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -326,6 +338,10 @@
     <Content Include="XMLHeaders\oopc.xml" />
     <Content Include="XMLHeaders\okt2.xml" />
     <Content Include="libman.json" />
+    <None Include="Connected Services\ServiceReference2\SerwisWymiany.wsdl" />
+    <Content Include="Connected Services\ServiceReference2\stat2018.ServiceReference2.DaneWXmlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -497,6 +513,11 @@
     </Compile>
     <Compile Include="akrk.aspx.designer.cs">
       <DependentUpon>akrk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceReference2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="oczc.aspx.cs">
       <DependentUpon>oczc.aspx</DependentUpon>
@@ -798,6 +819,10 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SerwisWymiany.asmx.cs">
+      <DependentUpon>SerwisWymiany.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="template.aspx.cs">
       <DependentUpon>template.aspx</DependentUpon>
@@ -1254,6 +1279,13 @@
     <Compile Include="wizc.aspx.designer.cs">
       <DependentUpon>wizc.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Wymiana1.aspx.cs">
+      <DependentUpon>Wymiana1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wymiana1.aspx.designer.cs">
+      <DependentUpon>Wymiana1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="wyszukiwarka.cs" />
     <Compile Include="wyszukiwarkaspraw.aspx.cs">
       <DependentUpon>wyszukiwarkaspraw.aspx</DependentUpon>
@@ -1268,6 +1300,7 @@
     <Folder Include="App_GlobalResources\" />
     <Folder Include="classes\App_LocalResources\" />
     <Folder Include="enums\" />
+    <Folder Include="NewFolder1\" />
     <Folder Include="Wymiana\Temp\" />
     <Folder Include="Wymiana\Tmp\" />
   </ItemGroup>
@@ -1282,10 +1315,13 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WebReferences Include="Web References\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceReference2\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

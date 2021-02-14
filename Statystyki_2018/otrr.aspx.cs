@@ -3,7 +3,7 @@ using System;
 using System.Data;
 using System.Globalization;
 using System.IO;
-using System.Web.UI;
+using System.Text;
 using System.Web.UI.WebControls;
 
 namespace Statystyki_2018
@@ -14,6 +14,7 @@ namespace Statystyki_2018
         public tabele tb = new tabele();
         public common cm = new common();
         public dataReaders dr = new dataReaders();
+        public XMLHeaders xMLHeaders = new XMLHeaders();
 
         private const string fileId = "otrr";
         private const string tenPlik = "otrr.aspx";
@@ -51,15 +52,7 @@ namespace Statystyki_2018
             cm.log.Info(tenPlik + ": data początku okresy statystycznego w sesji dla popupów " + (string)Session["data_1"]);
             Session["data_2"] = Date2.Date.Year.ToString() + "-" + Date2.Date.Month.ToString("D2") + "-" + Date2.Date.Day.ToString("D2");
             cm.log.Info(tenPlik + ": data początku okresy statystycznego w sesji dla popupów " + (string)Session["data_"]);
-            Session["tabelka001"] = null;
-            Session["tabelka002"] = null;
-            Session["tabelka003"] = null;
-            Session["tabelka004"] = null;
-            Session["tabelka005"] = null;
-            Session["tabelka006"] = null;
-            Session["tabelka007"] = null;
-            Session["tabelka008"] = null;
-            clearHedersSession();
+
             try
             {
                 string user = (string)Session["userIdNum"];
@@ -76,108 +69,55 @@ namespace Statystyki_2018
                         var fileContents = System.IO.File.ReadAllText(Server.MapPath(@"~//version.txt"));    // file read with version
                         this.Title = "Statystyki " + fileContents.ToString().Trim();
                         odswiez();
-                        makeLabels();
+                        //makeLabels();
                     }
                 }
             }
             catch
             {
-             //   Server.Transfer("default.aspx");
+                //   Server.Transfer("default.aspx");
             }
         }// end of Page_Load
-
-        protected void clearHedersSession()
-        {
-            Session["header_01"] = null;
-            Session["header_02"] = null;
-            Session["header_03"] = null;
-            Session["header_04"] = null;
-            Session["header_05"] = null;
-            Session["header_06"] = null;
-            Session["header_07"] = null;
-            Session["header_08"] = null;
-        }
 
         protected void odswiez()
         {
             string idDzialu = (string)Session["id_dzialu"];
             id_dzialu.Text = (string)Session["txt_dzialu"];
-            string txt = string.Empty; //
-            txt = txt + cl.clear_maim_db();
-
-            txt = txt + cl.generuj_dane_do_tabeli_wierszy(Date1.Date, Date2.Date, idDzialu, 1,tenPlik);
-            GridView2.DataBind();
 
             try
             {
-                Session["tabelka002"] = dr.tworzTabele(int.Parse(idDzialu), 2, Date1.Date, Date2.Date, 19, GridView1, tenPlik);
-                Session["tabelka003"] = dr.tworzTabele(int.Parse(idDzialu), 3, Date1.Date, Date2.Date, 20, GridView3, tenPlik);
-                Session["tabelka004"] = dr.tworzTabele(int.Parse(idDzialu), 4, Date1.Date, Date2.Date, 20, GridView4, tenPlik);
+                DataTable Tabela1 = cl.generuj_dane_do_tabeli_wierszy(Date1.Date, Date2.Date, idDzialu, 1, 12, 17, tenPlik);
 
+                Session["tabelka001"] = Tabela1;
+                GridView2.DataSource = null;
+                GridView2.DataSourceID = null;
+                GridView2.DataSource = Tabela1;
+                GridView2.DataBind();
+            }
+            catch (Exception ex)
+            {
+            }
 
-               
+            try
+            {
+                Session["tabelka002"] = dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse(idDzialu), 2, Date1.Date, Date2.Date, 17, tenPlik);
+                Session["tabelka003"] = dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse(idDzialu), 3, Date1.Date, Date2.Date, 17, tenPlik);
+                Session["tabelka004"] = dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse(idDzialu), 4, Date1.Date, Date2.Date, 17, tenPlik);
+                string path = Server.MapPath("XMLHeaders") + "\\" + "otrr1.xml";
+                StringBuilder Tabele = new StringBuilder();
+                Tabele.Append(xMLHeaders.TabelaSedziowskaXML(path, int.Parse(idDzialu), "2", (DataTable)Session["tabelka002"], true, true, true, true, tenPlik));
+                Tabele.Append(xMLHeaders.TabelaSedziowskaXML(path, int.Parse(idDzialu), "3", (DataTable)Session["tabelka003"], true, true, true, true, tenPlik));
+                Tabele.Append(xMLHeaders.TabelaSedziowskaXML(path, int.Parse(idDzialu), "4", (DataTable)Session["tabelka004"], true, true, true, true, tenPlik));
+
+                tablePlaceHolder01.Controls.Add(new Label { Text = Tabele.ToString(), ID = "id1" });
             }
             catch
             {
             }
-            // dopasowanie opisów
-            makeLabels();
-            GridView1.DataBind();
-            GridView3.DataBind();
-            GridView4.DataBind();
-            Label11.Visible = cl.debug(int.Parse(idDzialu));
-          
+
+            //     makeLabels();
+
             Label3.Text = cl.nazwaSadu((string)Session["id_dzialu"]);
-        }
-
-        protected void makeLabels()
-        {
-            try
-            {
-                string User_id = string.Empty;
-                string domain = string.Empty;
-                try
-                {
-                    User_id = (string)Session["user_id"];
-                    domain = (string)Session["damain"];
-                }
-                catch
-                { }
-                Label3.Text = cl.nazwaSadu((string)Session["id_dzialu"]);
-                id_dzialu.Text = (string)Session["txt_dzialu"];
-                Label28.Text = cl.podajUzytkownika(User_id, domain);
-                Label29.Text = DateTime.Now.ToLongDateString();
-                string strMonthName = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(Date2.Date.Month);
-                int last_day = DateTime.DaysInMonth(Date2.Date.Year, Date2.Date.Month);
-                if (((Date1.Date.Day == 1) && (Date2.Date.Day == last_day)) && ((Date1.Date.Month == Date2.Date.Month)))
-                {
-                    // cały miesiąc
-                    Label19.Text = "Załatwienia za miesiąc " + strMonthName + " " + Date2.Date.Year.ToString() + " roku.";
-                    Label17.Text = "Wyznaczenia za miesiąc " + strMonthName + " " + Date2.Date.Year.ToString() + " roku.";
-                    //Stan referatów sędziów na koniec miesiąca
-                    Label15.Text = "Stan referatów sędziów na koniec miesiąca " + strMonthName + " " + Date2.Date.Year.ToString() + " roku.";
-                    //Informacje o ruchu sprawa za miesiąc: 
-                    Label5.Text = "Informacje o ruchu sprawa za miesiąc:  " + strMonthName + " " + Date2.Date.Year.ToString() + " roku.";
-                    Label27.Text = "za miesiąc:  " + strMonthName + " " + Date2.Date.Year.ToString() + " roku.";
-                }
-                else
-                {
-                    Label19.Text = "Załatwienia za okres od " + Date1.Text + " do  " + Date2.Text;
-                    Label17.Text = "Wyznaczenia za okres od" + Date1.Text + " do  " + Date2.Text;
-                    Label15.Text = "Stan referatów sędziów za okres od " + Date1.Text + " do  " + Date2.Text;
-                    Label5.Text = "Informacje o ruchu sprawa za okres od:  " + Date1.Text + " do  " + Date2.Text;
-                    Label27.Text = "za okres od:  " + Date1.Text + " do  " + Date2.Text;
-                }
-                Label29.Text = DateTime.Now.ToShortDateString();
-                try
-                {
-                    Label28.Text = cl.podajUzytkownika(User_id, domain);
-                }
-                catch
-                { }
-            }
-            catch
-            { }
         }
 
         #region "nagłowki tabel"
@@ -186,533 +126,41 @@ namespace Statystyki_2018
         {
             if (e.Row.RowType == DataControlRowType.Header)
             {
-                // najnizszy
-                GridView HeaderGrid = (GridView)sender;
-                GridViewRow HeaderGridRow = new GridViewRow(0, 0, DataControlRowType.Header, DataControlRowState.Insert);
-                HeaderGridRow.Font.Size = 7;
-                HeaderGridRow.HorizontalAlign = HorizontalAlign.Center;
-                HeaderGridRow.VerticalAlign = VerticalAlign.Top;
-
-                TableCell HeaderCell = new TableCell();
-
-                HeaderCell = new TableCell();
-
-                HeaderCell.Text = "RC";
-
-                HeaderCell.RowSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "RNs";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-
-                GridView2.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Nsm";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView2.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "RNc";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView2.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "RCo";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView2.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Nmo";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView2.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "RCps";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView2.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "WSC";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView2.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Nkd";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView2.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Łącznie";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView2.Controls[0].Controls.AddAt(0, HeaderGridRow);
-                ////  drugi wiersz
-
-                //W tym      nieusprawiedliwione
-
-                HeaderGrid = (GridView)sender;
-                HeaderGridRow = new GridViewRow(0, 0, DataControlRowType.Header, DataControlRowState.Insert);
-                HeaderGridRow.HorizontalAlign = HorizontalAlign.Center;
-                HeaderGridRow.VerticalAlign = VerticalAlign.Top;
-                HeaderGridRow.Font.Size = 10;
-                HeaderCell = new TableCell();
-
-                HeaderCell.Text = "Ruch spraw";
-                HeaderCell.RowSpan = 2;
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Sprawy według repetoriów i wykazów";
-                HeaderCell.ColumnSpan = 10;
-
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView2.Controls[0].Controls.AddAt(0, HeaderGridRow);
+                tb.makeHeader(NaglowekTabeli1(), GridView2);
             }
         }
 
-        protected void grvMergeHeader_RowCreated(object sender, GridViewRowEventArgs e)
+        private DataTable NaglowekTabeli1()
         {
-            if (e.Row.RowType == DataControlRowType.Header)
-            {
-                GridView HeaderGrid = (GridView)sender;
-                GridViewRow HeaderGridRow = new GridViewRow(0, 0, DataControlRowType.Header, DataControlRowState.Insert);
-                HeaderGridRow.Font.Size = 7;
-                HeaderGridRow.HorizontalAlign = HorizontalAlign.Center;
-                HeaderGridRow.VerticalAlign = VerticalAlign.Top;
-                TableCell HeaderCell = new TableCell();
+            DataTable dT_01 = new DataTable();
+            dT_01.Columns.Clear();
+            dT_01.Columns.Add("Column1", typeof(string));
+            dT_01.Columns.Add("Column2", typeof(string));
+            dT_01.Columns.Add("Column3", typeof(string));
+            dT_01.Columns.Add("Column4", typeof(string));
 
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "rozprawy";
-                HeaderCell.ColumnSpan = 1;
-                HeaderCell.RowSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
+            dT_01.Clear();
+            dT_01.Rows.Add(new Object[] { "1", "RC", "1", "1" });
+            dT_01.Rows.Add(new Object[] { "1", "RNs", "1", "1" });
+            dT_01.Rows.Add(new Object[] { "1", "Nsm", "1", "1" });
+            dT_01.Rows.Add(new Object[] { "1", "RNc", "1", "1" });
+            dT_01.Rows.Add(new Object[] { "1", "RCo", "1", "1" });
+            dT_01.Rows.Add(new Object[] { "1", "Nmo", "1", "1" });
+            dT_01.Rows.Add(new Object[] { "1", "WSC", "1", "1" });
+            dT_01.Rows.Add(new Object[] { "1", "RCz", "1", "1" });
+            dT_01.Rows.Add(new Object[] { "1", "Nkd", "1", "1" });
 
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "posiedzenia";
-                HeaderCell.ColumnSpan = 1;
-                HeaderCell.RowSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "RC";
-                HeaderCell.ColumnSpan = 1;
-                HeaderCell.RowSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "RNs";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Nsm";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "RNc";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "RCo";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Nmo";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "RCps";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "WSC";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Nkd";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Razem";
-                HeaderCell.ColumnSpan = 1;
-
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Urlopy";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Zwolnienia";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                ////  drugi wiersz
-
-                HeaderGrid = (GridView)sender;
-                HeaderGridRow = new GridViewRow(0, 0, DataControlRowType.Header, DataControlRowState.Insert);
-                HeaderGridRow.Font.Size = 7;
-                HeaderGridRow.HorizontalAlign = HorizontalAlign.Center;
-                HeaderGridRow.VerticalAlign = VerticalAlign.Top;
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "L.p.";
-                HeaderCell.ColumnSpan = 1;
-                HeaderCell.RowSpan = 2;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Funkcja";
-                HeaderCell.ColumnSpan = 1;
-                HeaderCell.RowSpan = 2;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Stanowisko";
-                HeaderCell.RowSpan = 2;
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Imię i nazwisko";
-                HeaderCell.ColumnSpan = 1;
-                HeaderCell.RowSpan = 2;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Liczba sesji";
-                HeaderCell.ColumnSpan = 2;
-                HeaderCell.RowSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Załatwienia";
-                HeaderCell.ColumnSpan = 10;
-                HeaderCell.RowSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Il. sporządzonych uzasadnień";
-                HeaderCell.ColumnSpan = 1;
-                HeaderCell.RowSpan = 2;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Nieobecności";
-                HeaderCell.ColumnSpan = 2;
-                HeaderCell.RowSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
-            }
-        }
-
-        protected void GridView3_RowCreated(object sender, GridViewRowEventArgs e)
-        {
-            if (e.Row.RowType == DataControlRowType.Header)
-            {
-                GridView HeaderGrid = (GridView)sender;
-                GridViewRow HeaderGridRow = new GridViewRow(0, 0, DataControlRowType.Header, DataControlRowState.Insert);
-                HeaderGridRow.Font.Size = 7;
-                HeaderGridRow.HorizontalAlign = HorizontalAlign.Center;
-                HeaderGridRow.VerticalAlign = VerticalAlign.Top;
-                TableCell HeaderCell = new TableCell();
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "RC";
-                HeaderCell.ColumnSpan = 1;
-                HeaderCell.RowSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView3.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "RNs";
-                HeaderCell.ColumnSpan = 1;
-                HeaderCell.RowSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView3.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Nsm";
-                HeaderCell.ColumnSpan = 1;
-                HeaderCell.RowSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView3.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "RNc";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView3.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "RCo";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView3.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Nmo";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView3.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "RCps";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView3.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "WSC";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView3.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Nkd";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView3.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Razem";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView3.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                ////  drugi wiersz
-
-                HeaderGrid = (GridView)sender;
-                HeaderGridRow = new GridViewRow(0, 0, DataControlRowType.Header, DataControlRowState.Insert);
-                HeaderGridRow.Font.Size = 7;
-                HeaderGridRow.HorizontalAlign = HorizontalAlign.Center;
-                HeaderGridRow.VerticalAlign = VerticalAlign.Top;
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "L.p.";
-                HeaderCell.ColumnSpan = 1;
-                HeaderCell.RowSpan = 2;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView3.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Funkcja";
-                HeaderCell.ColumnSpan = 1;
-                HeaderCell.RowSpan = 2;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView3.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Stanowisko";
-                HeaderCell.RowSpan = 2;
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView3.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Imię i nazwisko";
-                HeaderCell.ColumnSpan = 1;
-                HeaderCell.RowSpan = 2;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView3.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Wyznaczenia";
-                HeaderCell.ColumnSpan = 10;
-                HeaderCell.RowSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView3.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Odroczenia liczba spraw odroczonych";
-                HeaderCell.ColumnSpan = 1;
-                HeaderCell.RowSpan = 2;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView3.Controls[0].Controls.AddAt(0, HeaderGridRow);
-            }
-        }
-
-        protected void GridView4_RowCreated(object sender, GridViewRowEventArgs e)
-        {
-            if (e.Row.RowType == DataControlRowType.Header)
-            {
-                GridView HeaderGrid = (GridView)sender;
-                GridViewRow HeaderGridRow = new GridViewRow(0, 0, DataControlRowType.Header, DataControlRowState.Insert);
-                HeaderGridRow.Font.Size = 7;
-                HeaderGridRow.HorizontalAlign = HorizontalAlign.Center;
-                HeaderGridRow.VerticalAlign = VerticalAlign.Top;
-                TableCell HeaderCell = new TableCell();
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "RC";
-                HeaderCell.ColumnSpan = 1;
-                HeaderCell.RowSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView4.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "RNs";
-                HeaderCell.ColumnSpan = 1;
-                HeaderCell.RowSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView4.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Nsm";
-                HeaderCell.ColumnSpan = 1;
-                HeaderCell.RowSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView4.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "RNc";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView4.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "RCo";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView4.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Nmo";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView4.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "RCps";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView4.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "WSC";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView4.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Nkd";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView4.Controls[0].Controls.AddAt(0, HeaderGridRow);
-                HeaderCell = new TableCell();
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Razem";
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView4.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                ////  drugi wiersz
-
-                HeaderGrid = (GridView)sender;
-                HeaderGridRow = new GridViewRow(0, 0, DataControlRowType.Header, DataControlRowState.Insert);
-                HeaderGridRow.Font.Size = 7;
-                HeaderGridRow.HorizontalAlign = HorizontalAlign.Center;
-                HeaderGridRow.VerticalAlign = VerticalAlign.Top;
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "L.p.";
-                HeaderCell.ColumnSpan = 1;
-                HeaderCell.RowSpan = 2;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView4.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Funkcja";
-                HeaderCell.ColumnSpan = 1;
-                HeaderCell.RowSpan = 2;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView4.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Stanowisko";
-                HeaderCell.RowSpan = 2;
-                HeaderCell.ColumnSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView4.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Imię i nazwisko";
-                HeaderCell.ColumnSpan = 1;
-                HeaderCell.RowSpan = 2;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView4.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
-                HeaderCell = new TableCell();
-                HeaderCell.Text = "Pozostało w referatach spraw kategorii";
-                HeaderCell.ColumnSpan = 10;
-                HeaderCell.RowSpan = 1;
-                HeaderGridRow.Cells.Add(HeaderCell);
-                GridView4.Controls[0].Controls.AddAt(0, HeaderGridRow);
-            }
+            dT_01.Rows.Add(new Object[] { "1", "Łącznie", "1", "1" });
+            dT_01.Rows.Add(new Object[] { "2", "Ruch spraw", "1", "2" });
+            dT_01.Rows.Add(new Object[] { "2", "sprawy wg. repertoriów lub wykazów", "10", "1" });
+            return dT_01;
         }
 
         #endregion "nagłowki tabel"
 
-        #region "obsługa oncommand  tabel z nazwiskami"
-
-        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //    Label8.Text = GridView1.SelectedDataKey[1].ToString() + " " + GridView1.SelectedDataKey[2].ToString();
-        }
-
-        #endregion "obsługa oncommand  tabel z nazwiskami"
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            Session["date_1"] = Date1.Text.Trim();
-            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print", "window.open('raport_01_print.aspx', '')", true);
-        }
-
         protected void Button3_Click(object sender, EventArgs e)
         {
             // execel begin
-          
 
             string path = Server.MapPath("Template") + "\\otrr.xlsx";
             FileInfo existingFile = new FileInfo(path);
@@ -726,28 +174,35 @@ namespace Statystyki_2018
                 // pierwsza
 
                 ExcelWorksheet MyWorksheet1 = MyExcel.Workbook.Worksheets[1];
-                DataView view = (DataView)dane_do_tabeli_1.Select(DataSourceSelectArguments.Empty);
-                DataTable table = view.ToTable();
 
-                for (int i = 0; i < 14; i++)
+                DataTable table = (DataTable)Session["tabelka001"];
+                table.Columns.Remove("Id_");
+                try
                 {
-                    for (int j = 0; j < 10; j++)
+                    for (int i = 1; i < 14; i++)
                     {
-                        try
+                        for (int j = 0; j < 10; j++)
                         {
-                            MyWorksheet1.Cells[4 + j, i].Style.ShrinkToFit = true;
-                            MyWorksheet1.Cells[4 + j, i].Style.Border.BorderAround(OfficeOpenXml.Style.ExcelBorderStyle.Thin, System.Drawing.Color.Black);
-                            MyWorksheet1.Cells[4 + j, i].Value = table.Rows[j][i].ToString();
+                            try
+                            {
+                                MyWorksheet1.Cells[4 + j, i].Style.ShrinkToFit = true;
+                                MyWorksheet1.Cells[4 + j, i].Style.Border.BorderAround(OfficeOpenXml.Style.ExcelBorderStyle.Thin, System.Drawing.Color.Black);
+                                MyWorksheet1.Cells[4 + j, i].Value = table.Rows[j][i - 2].ToString();
+                            }
+                            catch (Exception)
+                            {
+                            }
                         }
-                        catch
-                        { }
                     }
+                }
+                catch (Exception ex)
+                {
                 }
 
                 // druga
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 19, 0, 6, true, false, true, true, true);
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 15, 0, 3, true, false, true, true, true);
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 14, 0, 3, true, false, true, true, true);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 16, 0, 6, true, false, true, true, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 12, 0, 4, true, false, true, true, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 12, 0, 4, true, false, true, true, false);
 
                 try
                 {
@@ -770,14 +225,5 @@ namespace Statystyki_2018
         {
             odswiez();
         }
-
-        protected void LinkButton55_Click(object sender, EventArgs e)
-        {
-            makeLabels();
-            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print2", "JavaScript: window.print();", true);
-            makeLabels();
-        }
-
-       
     }
 }

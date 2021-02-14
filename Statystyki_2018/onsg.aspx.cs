@@ -165,7 +165,7 @@ namespace Statystyki_2018
 
 
             Session["header_02"] = dT_02;
-            // makeHeader1(sn, dT_02);
+          
             #endregion
 
             #region tabela  3 ()

@@ -10,10 +10,8 @@ using System.Web.UI.WebControls;
 
 namespace Statystyki_2018
 {
-  
-     public partial class oksr : System.Web.UI.Page
+    public partial class oksr : System.Web.UI.Page
     {
-
         public Class1 cl = new Class1();
         public pdfTables pdfT = new pdfTables();
         private HSSFWorkbook hssfworkbook;
@@ -49,7 +47,6 @@ namespace Statystyki_2018
                     Session["data_1"] = Date1.Date.ToShortDateString();
                     Session["data_2"] = Date2.Date.ToShortDateString();
 
-
                     if (!IsPostBack)
                     {
                         var fileContents = System.IO.File.ReadAllText(Server.MapPath(@"~//version.txt"));    // file read with version
@@ -67,7 +64,6 @@ namespace Statystyki_2018
             }
         }// end of Page_Load
 
-
         protected void clearHedersSession()
         {
             Session["header_01"] = null;
@@ -80,17 +76,15 @@ namespace Statystyki_2018
             Session["header_08"] = null;
         }
 
-
         protected void odswiez()
         {
-           
             string yyx = (string)Session["id_dzialu"];
             //id_dzialu.Text = (string)Session["txt_dzialu"];
             string txt = string.Empty; //
             txt = "File name: <b>oksr.aspx</b></br>";
 
-            txt = txt + cl.generuj_dane_do_tabeli_wierszy(Date1.Date, Date2.Date, yyx, 1,tenPlik);
-            txt = txt + cl.generuj_dane_do_tabeli_wierszy(Date1.Date, Date2.Date, yyx, 6,tenPlik);
+            txt = txt + cl.generuj_dane_do_tabeli_wierszy(Date1.Date, Date2.Date, yyx, 1, tenPlik);
+            txt = txt + cl.generuj_dane_do_tabeli_wierszy(Date1.Date, Date2.Date, yyx, 6, tenPlik);
             GridView2.DataBind();
             GridView7.DataBind();
             txt = txt + cl.clear_maim_db();
@@ -131,7 +125,6 @@ namespace Statystyki_2018
 
         protected void GridView2_RowCreated(object sender, GridViewRowEventArgs e)
         {
-
             //pierwsza wierszowa tabela
             if (e.Row.RowType == DataControlRowType.Header)
             {
@@ -151,14 +144,11 @@ namespace Statystyki_2018
                 HeaderCell.RowSpan = 1;
                 HeaderGridRow.Cells.Add(HeaderCell);
 
-
-
                 HeaderCell = new TableCell();
                 HeaderCell.Text = "Ns";
                 HeaderCell.ColumnSpan = 1;
                 HeaderGridRow.Cells.Add(HeaderCell);
                 GridView2.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
 
                 HeaderCell = new TableCell();
                 HeaderCell.Text = "Nsm";
@@ -184,7 +174,6 @@ namespace Statystyki_2018
                 HeaderGridRow.Cells.Add(HeaderCell);
                 GridView2.Controls[0].Controls.AddAt(0, HeaderGridRow);
                 HeaderCell = new TableCell();
-
 
                 HeaderCell.Text = "Nkd";
                 HeaderCell.ColumnSpan = 1;
@@ -219,17 +208,10 @@ namespace Statystyki_2018
                 HeaderGridRow.Cells.Add(HeaderCell);
                 GridView2.Controls[0].Controls.AddAt(0, HeaderGridRow);
             }
-
-
-
-
         }
-
-
 
         protected void grvMergeHeader_RowCreated(object sender, GridViewRowEventArgs e)
         {
-
             // druga tabela
 
             TableCell HeaderCell = new TableCell();
@@ -292,14 +274,7 @@ namespace Statystyki_2018
                     HeaderGridRow.Cells.Add(HeaderCell);
                     GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
                 }
-
             }
-
-
-
-
-
-
         }
 
         protected void GridView3_RowCreated(object sender, GridViewRowEventArgs e)
@@ -337,8 +312,6 @@ namespace Statystyki_2018
             dT.Rows.Add(new Object[] { "3", "Imie i Nazwisko", "1", "3" });
             dT.Rows.Add(new Object[] { "3", "Wpływ", "9", "1" });
 
-
-
             int row = 0;
             if (e.Row.RowType == DataControlRowType.Header)
             {
@@ -364,16 +337,11 @@ namespace Statystyki_2018
                     HeaderGridRow.Cells.Add(HeaderCell);
                     GridView3.Controls[0].Controls.AddAt(0, HeaderGridRow);
                 }
-
             }
-
-
-
         }
 
         protected void GridView4_RowCreated(object sender, GridViewRowEventArgs e)
         {
-
             TableCell HeaderCell = new TableCell();
             GridViewRow HeaderGridRow = null;
 
@@ -453,10 +421,7 @@ namespace Statystyki_2018
                     HeaderGridRow.Cells.Add(HeaderCell);
                     GridView4.Controls[0].Controls.AddAt(0, HeaderGridRow);
                 }
-
             }
-
-
         }
 
         protected void GridView6_RowCreated(object sender, GridViewRowEventArgs e)
@@ -520,14 +485,11 @@ namespace Statystyki_2018
                     HeaderGridRow.Cells.Add(HeaderCell);
                     GridView6.Controls[0].Controls.AddAt(0, HeaderGridRow);
                 }
-
             }
-
         }
 
         protected void GridView7_RowCreated(object sender, GridViewRowEventArgs e)
         {
-
             TableCell HeaderCell = new TableCell();
             GridViewRow HeaderGridRow = null;
 
@@ -584,17 +546,8 @@ namespace Statystyki_2018
                     HeaderGridRow.Cells.Add(HeaderCell);
                     GridView7.Controls[0].Controls.AddAt(0, HeaderGridRow);
                 }
-
             }
-
-
-
-
-
-
-
         }
-
 
         protected void GridView8_RowCreated(object sender, GridViewRowEventArgs e)
         {
@@ -615,8 +568,6 @@ namespace Statystyki_2018
             dT.Columns.Add(k2);
             dT.Columns.Add(k3);
             dT.Columns.Add(k4);
-
-
 
             dT.Rows.Add(new Object[] { "1", "wyznaczonych", "1", "1" });
             dT.Rows.Add(new Object[] { "1", "odroczonych", "1", "1" });
@@ -662,22 +613,16 @@ namespace Statystyki_2018
                     HeaderGridRow.Cells.Add(HeaderCell);
                     GridView8.Controls[0].Controls.AddAt(0, HeaderGridRow);
                 }
-
             }
         }
 
         #endregion "nagłowki tabel"
 
-
-
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             //Label8.Text = GridView1.SelectedDataKey[1].ToString() + " " + GridView1.SelectedDataKey[2].ToString();
             makeLabels();
         }
-
-
 
         protected void makeLabels()
         {
@@ -694,7 +639,6 @@ namespace Statystyki_2018
                 { }
                 Label3.Text = cl.nazwaSadu((string)Session["id_dzialu"]);
 
-
                 //id_dzialu.Text = (string)Session["txt_dzialu"];
                 Label28.Text = cl.podajUzytkownika(User_id, domain);
                 Label29.Text = DateTime.Now.ToLongDateString();
@@ -704,7 +648,6 @@ namespace Statystyki_2018
                 }
                 catch
                 { }
-
 
                 string strMonthName = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(Date2.Date.Month);
                 int last_day = DateTime.DaysInMonth(Date2.Date.Year, Date2.Date.Month);
@@ -732,21 +675,17 @@ namespace Statystyki_2018
             }
             catch
             {
-
             }
-
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-
             ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print2", "JavaScript: window.print();", true);
             // ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print", "window.open('raport_01_print.aspx', '')", true);
         }
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-
             // execel begin
             string filename = "statystykiWydzialCywilny.xls";
             Response.ContentType = "application/vnd.ms-excel";
@@ -761,7 +700,6 @@ namespace Statystyki_2018
             Response.End();
         }
 
-
         private void InitializeWorkbook()
         {
             hssfworkbook = new HSSFWorkbook();
@@ -771,8 +709,6 @@ namespace Statystyki_2018
             si.Title = "statystyki";
             hssfworkbook.SummaryInformation = si;
         }
-
-
 
         private MemoryStream WriteToStream()
         {
@@ -787,13 +723,9 @@ namespace Statystyki_2018
         {
             ISheet sheet0 = hssfworkbook.CreateSheet("Ruch spraw");
 
-
             DataView view = (DataView)dane_do_tabeli_1.Select(DataSourceSelectArguments.Empty);
 
             DataTable table = view.ToTable();
-
-
-
 
             IRow row0 = sheet0.CreateRow(0);
             table.TableName = "Załatwienia";
@@ -806,8 +738,6 @@ namespace Statystyki_2018
             sheet0.AddMergedRegion(crs);
             crs = new NPOI.SS.Util.CellRangeAddress(0, 0, 1, 8);
             sheet0.AddMergedRegion(crs);
-
-
 
             row0 = sheet0.CreateRow(1);
 
@@ -1133,9 +1063,6 @@ namespace Statystyki_2018
             makeLabels();
         }
 
-
-
-
         protected void LinkButton58_Click(object sender, EventArgs e)
         {
             //ooooooooooooo
@@ -1161,10 +1088,6 @@ namespace Statystyki_2018
             Response.Clear();
 
             Response.End();
-
-
         }
-
-
     }
 }

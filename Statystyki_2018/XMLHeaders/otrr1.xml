@@ -1,0 +1,824 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<komorki xmlns="urn:tabeleMSS">
+
+  <tabela id="1">
+    <daneTabeli>
+
+      <iloscWierszy>3</iloscWierszy>
+      <tekstNadTabela>Ewidencja spraw z zakresu prawa pracy i ubezpieczeń społecznych – ogółem</tekstNadTabela>
+      <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>0</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>11</iloscKolumnPoIteracji>
+      <lp>0</lp>
+      <identyfikatorTabeli>1</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>4</rowspan>
+        <style>center col_30</style>
+        <text> L.p</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_120</style>
+        <text>funkcja</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_120</style>
+        <text> stanowisko </text>
+      </komorka>
+     
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>4</rowspan>
+        <style>center col_120</style>
+        <text>Imie Nazwisko</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>10</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_120</style>
+        <text>Wyznaczenia</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_120</style>
+        <text>Odroczenia liczba spraw odroczonych</text>
+      </komorka>
+     
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>Rc </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>RNs </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>Nsm </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>RNc </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>RCo </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>Co </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_120</style>
+        <text>Cps </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_120</style>
+        <text>Cz </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>9</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_120</style>
+        <text>WSC </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>10</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_120</style>
+        <text>Razem </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_120</style>
+        <text>Urlopy</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_120</style>
+        <text>Zwolnienia</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_120</style>
+        <text>Razem</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_120</style>
+        <text>w terminie ustawowym</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_120</style>
+        <text>po upływie terminu ustawowego</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_120</style>
+        <text>w tym nieusprawiedliwione</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_120</style>
+        <text>Razem</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_120</style>
+        <text>w terminie ustawowym</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>9</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_120</style>
+        <text>po upływie terminu ustawowego</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>10</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_120</style>
+        <text>w tym nieusprawiedliwione</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>11</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_120</style>
+        <text></text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>12</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>w tym</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>13</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_120</style>
+        <text></text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>14</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>w tym</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>merytoryczne</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>stare</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>merytoryczne</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>stare</text>
+      </komorka>
+    </naglowek>
+  </tabela>
+  <tabela id="2">
+    <daneTabeli>
+
+      <iloscWierszy>3</iloscWierszy>
+      <tekstNadTabela>Zaøatwienia</tekstNadTabela>
+      <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>0</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>16</iloscKolumnPoIteracji>
+      <lp>0</lp>
+      <identyfikatorTabeli>1</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_30</style>
+        <text> L.p</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_60</style>
+        <text>funkcja</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_60</style>
+        <text> stanowisko </text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_60</style>
+        <text>Imie Nazwisko</text>
+      </komorka>
+      
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>Liczba sesji</text>
+      </komorka>
+        <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>11</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>Załatwienia</text>
+      </komorka>
+ <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center </style>
+        <text>Ilość sporządzonych uzasadnień</text>
+      </komorka>
+    <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>Nieobecności (Ilość dni)</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Rozprawy </text>
+      </komorka>
+      
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Posiedzenia </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Rc </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>RNs </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Nsm </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>RNc </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>RCo </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Nmo </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>9</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>RCps </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>10</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>WSC </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>11</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>RCz </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>12</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Nkd </text>
+      </komorka>
+     <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>13</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Razem </text>
+      </komorka>
+     <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>14</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Urlopy </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>15</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Zwolnienia </text>
+      </komorka>
+    </naglowek>
+  </tabela>
+ <tabela id="3">
+    <daneTabeli>
+
+      <iloscWierszy>3</iloscWierszy>
+      <tekstNadTabela>Wyznaczenia</tekstNadTabela>
+      <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>0</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>12</iloscKolumnPoIteracji>
+      <lp>0</lp>
+      <identyfikatorTabeli>1</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_30</style>
+        <text> L.p</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_60</style>
+        <text>funkcja</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_60</style>
+        <text> stanowisko </text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_60</style>
+        <text>Imie Nazwisko</text>
+      </komorka>
+      
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>11</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>Wyznaczenia</text>
+      </komorka>
+ <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center </style>
+        <text>Odroczenia - liczba spraw odroczonych</text>
+      </komorka>
+    
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Rc </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>RNs </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Nsm </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>RNc </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>RCo </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Nmo </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>RCps </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>WSC </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>9</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>RCz </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>10</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Nkd </text>
+      </komorka>
+     <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>11</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Razem </text>
+      </komorka>
+     <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>10</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Razem </text>
+      </komorka>
+    </naglowek>
+  </tabela>
+<tabela id="4">
+    <daneTabeli>
+
+      <iloscWierszy>3</iloscWierszy>
+      <tekstNadTabela>Stan referatów sedziów</tekstNadTabela>
+      <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>0</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>11</iloscKolumnPoIteracji>
+      <lp>0</lp>
+      <identyfikatorTabeli>1</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_30</style>
+        <text> L.p</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_60</style>
+        <text>funkcja</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_60</style>
+        <text> stanowisko </text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_60</style>
+        <text>Imie Nazwisko</text>
+      </komorka>
+      
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>11</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>Pozostało  w referatach soraw kategorii</text>
+      </komorka>
+ 
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Rc </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>RNs </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Nsm </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>RNc </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>RCo </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Nmo </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>RCps </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>WSC </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>9</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>RCz </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>10</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Nkd </text>
+      </komorka>
+     <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>11</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Razem </text>
+      </komorka>
+     <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>10</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Razem </text>
+      </komorka>
+    </naglowek>
+  </tabela>
+</komorki>

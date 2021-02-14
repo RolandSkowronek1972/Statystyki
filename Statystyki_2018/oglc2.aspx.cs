@@ -26,6 +26,7 @@ namespace Statystyki_2018
             {
                 if (idWydzial == null)
                 {
+                    Server.Transfer("default.aspx");
                     return;
                 }
                 bool dost = cm.dostep(idWydzial, (string)Session["identyfikatorUzytkownika"]);
@@ -100,7 +101,7 @@ namespace Statystyki_2018
                 Session["tabelka003"] = dr.tworzTabele(int.Parse(dzial), 3, Date1.Date, Date2.Date, 17, GridView2, tenPlik);
                 GridView2.DataBind();
                 //cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 4");
-              
+
                 Session["tabelka004"] = dr.tworzTabele(int.Parse(dzial), 4, Date1.Date, Date2.Date, 30, GridView3, tenPlik);
                 GridView3.DataBind();
                 Session["tabelka006"] = dr.tworzTabele(int.Parse(dzial), 6, Date1.Date, Date2.Date, 30, GridView4, tenPlik);
@@ -124,7 +125,6 @@ namespace Statystyki_2018
                 tab_04_w01_c6.Text = tabelka04.Rows[0][6].ToString().Trim();
                 tab_04_w01_c7.Text = tabelka04.Rows[0][7].ToString().Trim();
                 //cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 6");
-
             }
             catch (Exception ex)
             {
@@ -414,57 +414,28 @@ namespace Statystyki_2018
                 MyWorksheet1.Cells[rowik + 7, 1].Value = "Zaległość z poprzedniego miesiąca";
                 MyWorksheet1.Cells[rowik + 8, 1, rowik + 8, 4].Merge = true;
                 MyWorksheet1.Cells[rowik + 8, 1].Value = "Wpływ";
+
                 MyWorksheet1.Cells[rowik + 9, 1, rowik + 9, 4].Merge = true;
-                MyWorksheet1.Cells[rowik + 9, 1].Value = "Wpływ";
+                MyWorksheet1.Cells[rowik + 9, 1].Value = "Załatwienia";
+
                 MyWorksheet1.Cells[rowik + 10, 1, rowik + 10, 4].Merge = true;
-                MyWorksheet1.Cells[rowik + 10, 1].Value = "Załatwienia";
-                MyWorksheet1.Cells[rowik + 11, 1, rowik + 11, 4].Merge = true;
-                MyWorksheet1.Cells[rowik + 11, 1].Value = " Pozostało na następny miesiąc";
-                MyWorksheet1.Cells[rowik + 12, 1, rowik + 17, 4].Merge = true;
-                MyWorksheet1.Cells[rowik + 12, 1].Value = " Zaległość";
-                MyWorksheet1.Cells[rowik + 12, 2].Value = " 0-3 miesiący";
-                MyWorksheet1.Cells[rowik + 13, 2].Value = " 3-6 miesięcy";
-                MyWorksheet1.Cells[rowik + 14, 2].Value = " 6-12 miesięcy";
+                MyWorksheet1.Cells[rowik + 10, 1].Value = " Pozostało na następny miesiąc";
+                MyWorksheet1.Cells[rowik + 11, 1, rowik + 16, 1].Merge = true;
+                MyWorksheet1.Cells[rowik + 11, 1].Value = " w tym";
+                MyWorksheet1.Cells[rowik + 11, 2].Value = " 0-3 miesiący";
+                MyWorksheet1.Cells[rowik + 12, 2].Value = " 3-6 miesięcy";
+                MyWorksheet1.Cells[rowik + 13, 2].Value = " 6-12 miesięcy";
 
-                MyWorksheet1.Cells[rowik + 15, 2].Value = " 12-24 miesięcy (do 2 lat)";
-                MyWorksheet1.Cells[rowik + 16, 2].Value = " 36-60 miesięcy (3-5 lat)";
+                MyWorksheet1.Cells[rowik + 14, 2].Value = " 12-24 miesięcy (do 2 lat)";
+                MyWorksheet1.Cells[rowik + 15, 2].Value = " 36-60 miesięcy (3-5 lat)";
 
-                MyWorksheet1.Cells[rowik + 17, 2].Value = " Powyżej 60 miesięcy (powyżej 5 lat)";
+                MyWorksheet1.Cells[rowik + 16, 2].Value = " Powyżej 60 miesięcy (powyżej 5 lat)";
                 DataTable tabelka001 = (DataTable)Session["tabelka002"];
-
-                foreach (DataRow dR in tabelka001.Rows)
-                {
-                    for (int i = 2; i < 16; i++)
-                    {
-                        try
-                        {
-                            MyWorksheet1.Cells[rowik + 7, i + 3].Value = double.Parse(dR[i - 1].ToString().Trim());
-                        }
-                        catch
-                        {
-                            MyWorksheet1.Cells[rowik + 7, i + 3].Value = dR[i - 1].ToString().Trim();
-                        }
-
-                        MyWorksheet1.Cells[rowik + 7, i + 3].Style.ShrinkToFit = true;
-                        MyWorksheet1.Cells[rowik + 7, i + 3].Style.Border.BorderAround(OfficeOpenXml.Style.ExcelBorderStyle.Thin, System.Drawing.Color.Black);
-                    }
-                    rowik++;
-                }
-                 // trzecia
-
-                ExcelWorksheet MyWorksheet2 = MyExcel.Workbook.Worksheets[2];
-                DataTable table2 = (DataTable)Session["tabelka003"];
-                MyWorksheet2 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], table2, 8, 0, 3, false, false, false, false, false);
-
-                // czwarta
-
-                ExcelWorksheet MyWorksheet5 = MyExcel.Workbook.Worksheets[3];
-
-                DataTable table4 = (DataTable)Session["tabelka004"];
-                MyWorksheet2 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], table4, 17, 0, 4, false, false, false, false, false);
-
-                DataTable table6 = (DataTable)Session["tabelka006"];
-                MyWorksheet2 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[5], table6, 10, 0, 4, false, false, false, false, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka002"], 10, 14, 4, rowik + 7, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka003"], 8, 0, 3, false, true, false, false, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka004"], 17, 0, 3, false, true, false, false, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka005"], 1, 12, 0, 9 , false);
+                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[5], (DataTable)Session["tabelka006"], 11, 0, 11, false, true, false, false, false);
 
                 try
                 {
@@ -489,8 +460,6 @@ namespace Statystyki_2018
         {
             odswiez();
         }
-
-       
 
         protected void GridView1_RowCreated(object sender, GridViewRowEventArgs e)
         {
@@ -539,7 +508,7 @@ namespace Statystyki_2018
             if (e.Row.RowType == DataControlRowType.Footer)
             {
                 DataTable table = (DataTable)Session["tabelka004"];
-             //   tabela.makeSumRow(table, e,2);
+                //   tabela.makeSumRow(table, e,2);
             }
         }
 
@@ -556,7 +525,7 @@ namespace Statystyki_2018
         {
             if (e.Row.RowType == DataControlRowType.Footer)
             {
-                tabela.makeSumRow((DataTable)Session["tabelka006"], e,1);
+                tabela.makeSumRow((DataTable)Session["tabelka006"], e, 1);
             }
         }
 

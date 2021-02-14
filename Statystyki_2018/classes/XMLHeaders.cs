@@ -55,7 +55,7 @@ namespace Statystyki_2018
                     ilosckolunPoIteracji = int.Parse(informacjeOtabeli.ChildNodes[4].InnerText);
                     naglowek = wygenerujTabele(node.ChildNodes[(int)pola.naglowek]);
 
-                    tabelaGlowna.AppendLine(tworztabeleSedziowskaXML(idTabeli, naglowek, tabelaDanych, iloscWieszyNaglowka, iloscWierszy, ilosckolunPoIteracji, idDzialu, lp, tekstNadTabela, true, true, false, tenPlik));
+                    tabelaGlowna.AppendLine(tworztabeleSedziowskaXML(idTabeli, naglowek, tabelaDanych, iloscWieszyNaglowka, iloscWierszy, ilosckolunPoIteracji, idDzialu, lp, tekstNadTabela, funkcja, stanowisko, imeInazwiskoRazem, tenPlik));
                 }
             }
             catch (Exception ex)
@@ -81,45 +81,7 @@ namespace Statystyki_2018
             {
                 kodStony.AppendLine("<tr>");
                 //pierwsza kolumna nagłówka
-                /*
-                try
-                {
-                    DataRow wiersz = wyciagnijWartosc(naglowek, " nrWiersza ='" + i.ToString() + "' and nrKolumny='1'", tenPlik);
-                    log.Info(tenPlik + " tabela : " + idTabeli + " NAGØÓWEK - nrWiersza ='" + i.ToString() + "' and nrKolumny='1'");
-                    if (wiersz != null)
-                    {
-                        int colspan = int.Parse(wiersz["colspan"].ToString().Trim());
-                        string style = wiersz["style"].ToString().Trim();
-                        string tekst = "";
-                        try
-                        {
-                            tekst = wiersz["text"].ToString().Trim();
-                        }
-                        catch (Exception ex)
-                        {
-                            log.Error(tenPlik + " naglowek Error: " + ex.Message);
-                        }
-                        string sekcjaColspan = string.Empty;
-                        string sekcjaStyle = string.Empty;
-                        if (colspan > 0)
-                        {
-                            sekcjaColspan = "colspan ='" + colspan.ToString() + "' ";
-                        }
-
-                        if (!string.IsNullOrEmpty(style))
-                        {
-                            sekcjaStyle = " " + style + " ";
-                        }
-
-                            sekcjaColspan = "colspan ='" + (colspan + 1).ToString() + "' ";
-                            kodStony.AppendLine("<td  class ='borderAll  " + sekcjaStyle + "'" + sekcjaColspan + rowSpanPart(int.Parse(wiersz["rowspan"].ToString().Trim())) + ">" + tekst + "</td>");
-                    }
-                }
-                catch (Exception ex)
-                {
-                    log.Error(tenPlik + " naglowek LinqError: " + ex.Message);
-                }
-                */
+           
                 for (int j = 1; j <= iloscKolumnPoIteracji + 1; j++)
                 {
                     try

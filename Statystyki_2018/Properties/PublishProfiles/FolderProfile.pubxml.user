@@ -841,10 +841,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/08/2019 12:40:59</publishTime>
     </File>
     <File Include="bin/stat2018.dll">
-      <publishTime>02/10/2021 23:24:36</publishTime>
+      <publishTime>02/14/2021 12:58:12</publishTime>
     </File>
     <File Include="bin/stat2018.pdb">
-      <publishTime>02/10/2021 23:24:36</publishTime>
+      <publishTime>02/14/2021 12:58:12</publishTime>
     </File>
     <File Include="bin/stat2018.XmlSerializers.dll">
       <publishTime>01/13/2021 22:48:59</publishTime>
@@ -911,6 +911,24 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Connected Services/ServiceReference1/stat2018.ServiceReference1.DaneWXmlResponse.datasource">
       <publishTime>01/18/2021 12:38:10</publishTime>
+    </File>
+    <File Include="Connected Services/ServiceReference2/configuration.svcinfo">
+      <publishTime>02/11/2021 22:04:59</publishTime>
+    </File>
+    <File Include="Connected Services/ServiceReference2/configuration91.svcinfo">
+      <publishTime>02/11/2021 22:04:59</publishTime>
+    </File>
+    <File Include="Connected Services/ServiceReference2/Reference.svcmap">
+      <publishTime>02/11/2021 22:04:59</publishTime>
+    </File>
+    <File Include="Connected Services/ServiceReference2/SerwisWymiany.disco">
+      <publishTime>02/11/2021 22:04:59</publishTime>
+    </File>
+    <File Include="Connected Services/ServiceReference2/SerwisWymiany.wsdl">
+      <publishTime>02/11/2021 22:04:59</publishTime>
+    </File>
+    <File Include="Connected Services/ServiceReference2/stat2018.ServiceReference2.DaneWXmlResponse.datasource">
+      <publishTime>02/11/2021 22:05:00</publishTime>
     </File>
     <File Include="default.aspx">
       <publishTime>02/06/2021 19:57:53</publishTime>
@@ -1126,7 +1144,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/29/2020 22:17:36</publishTime>
     </File>
     <File Include="mss1o.aspx">
-      <publishTime>02/06/2021 19:57:55</publishTime>
+      <publishTime>02/11/2021 21:21:13</publishTime>
     </File>
     <File Include="mss1o.aspx.cs">
       <publishTime>08/13/2020 14:05:38</publishTime>
@@ -1258,7 +1276,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/29/2020 11:07:18</publishTime>
     </File>
     <File Include="oglc2.aspx">
-      <publishTime>02/06/2021 19:57:58</publishTime>
+      <publishTime>02/11/2021 07:22:47</publishTime>
     </File>
     <File Include="oglc2.aspx.cs">
       <publishTime>03/30/2020 14:52:32</publishTime>
@@ -1669,7 +1687,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/06/2020 19:19:19</publishTime>
     </File>
     <File Include="otrr.aspx">
-      <publishTime>02/06/2021 19:58:05</publishTime>
+      <publishTime>02/13/2021 22:40:40</publishTime>
     </File>
     <File Include="otrr.aspx.cs">
       <publishTime>04/05/2020 09:02:27</publishTime>
@@ -1699,7 +1717,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/10/2018 16:29:38</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>02/10/2021 23:24:41</publishTime>
+      <publishTime>02/14/2021 12:58:15</publishTime>
     </File>
     <File Include="Properties/AssemblyInfo.cs">
       <publishTime>03/03/2020 13:38:12</publishTime>
@@ -1819,7 +1837,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/07/2020 19:59:58</publishTime>
     </File>
     <File Include="SerwisWymiany.asmx">
-      <publishTime>12/25/2020 21:10:38</publishTime>
+      <publishTime>02/11/2021 21:48:09</publishTime>
     </File>
     <File Include="Site1.Master">
       <publishTime>02/06/2021 19:58:06</publishTime>
@@ -1831,10 +1849,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/11/2018 22:25:28</publishTime>
     </File>
     <File Include="Statystyki_2018.csproj">
-      <publishTime>02/08/2021 22:34:18</publishTime>
+      <publishTime>02/12/2021 17:55:19</publishTime>
     </File>
     <File Include="Statystyki_2018.csproj.user">
-      <publishTime>02/10/2021 23:24:23</publishTime>
+      <publishTime>02/14/2021 12:58:00</publishTime>
     </File>
     <File Include="style/login.css">
       <publishTime>12/18/2018 20:51:16</publishTime>
@@ -1972,7 +1990,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/08/2020 13:39:42</publishTime>
     </File>
     <File Include="Template/oglc2.xlsx">
-      <publishTime>03/03/2018 05:48:58</publishTime>
+      <publishTime>02/11/2021 07:33:34</publishTime>
     </File>
     <File Include="Template/oglc3.xlsx">
       <publishTime>02/04/2019 20:06:55</publishTime>
@@ -2083,7 +2101,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/05/2020 13:27:34</publishTime>
     </File>
     <File Include="Template/otrr.xlsx">
-      <publishTime>08/29/2019 21:06:29</publishTime>
+      <publishTime>02/14/2021 12:24:12</publishTime>
     </File>
     <File Include="Template/RaportCywilny01.xlsx">
       <publishTime>01/10/2018 18:29:12</publishTime>
@@ -2155,7 +2173,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/19/2019 18:44:09</publishTime>
     </File>
     <File Include="version.txt">
-      <publishTime>02/10/2021 23:24:23</publishTime>
+      <publishTime>02/14/2021 12:58:01</publishTime>
     </File>
     <File Include="wab.aspx">
       <publishTime>02/06/2021 19:58:07</publishTime>
@@ -2176,7 +2194,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/25/2020 21:27:05</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>02/10/2021 23:24:36</publishTime>
+      <publishTime>02/11/2021 22:20:06</publishTime>
     </File>
     <File Include="Web.Debug.config">
       <publishTime>02/07/2019 12:05:14</publishTime>
@@ -2212,7 +2230,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/08/2019 17:39:27</publishTime>
     </File>
     <File Include="Wymiana1.aspx">
-      <publishTime>02/04/2021 06:47:14</publishTime>
+      <publishTime>02/11/2021 21:21:13</publishTime>
     </File>
     <File Include="wyszukiwarka.cs">
       <publishTime>09/22/2019 12:55:33</publishTime>
@@ -2275,7 +2293,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/29/2020 22:17:50</publishTime>
     </File>
     <File Include="XMLHeaders/MSS1o.xml">
-      <publishTime>02/04/2021 21:32:37</publishTime>
+      <publishTime>02/11/2021 21:05:20</publishTime>
     </File>
     <File Include="XMLHeaders/MSS1r.xml">
       <publishTime>09/02/2020 20:30:10</publishTime>
@@ -2309,6 +2327,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="XMLHeaders/oopc.xml">
       <publishTime>09/18/2020 15:17:43</publishTime>
+    </File>
+    <File Include="XMLHeaders/otrr1.xml">
+      <publishTime>02/13/2021 12:39:17</publishTime>
     </File>
     <File Include="XMLHeaders/test.xml">
       <publishTime>11/26/2019 07:03:14</publishTime>

@@ -187,8 +187,7 @@ namespace Statystyki_2018
                 {
                     string path = Server.MapPath("XMLHeaders") + "\\okt2.xml";
                     xMLHeaders.getHeaderFromXML(path, gwTabela2);
-                    //tb.makeHeaderXML("C:\\myProjects\\prv\\Statystyki_2018Test\\Statystyki_2018\\XMLHeaders\\codebeautify.xml", gwTabela2, tenPlik);
-                    //  tb.makeHeaderFromXML(dTable, gwTabela2);
+                   
                 }
             }
         }
@@ -201,7 +200,7 @@ namespace Statystyki_2018
                 tb.makeSumRow((DataTable)Session["tabelka001"], e, 0);
             }
         }
-
+        /*
         private DataTable makeheader02()
         {
             #region tabela  2 ()
@@ -241,6 +240,6 @@ namespace Statystyki_2018
             return dT_01;
 
             #endregion tabela  2 ()
-        }
+        }*/
     }
 }
