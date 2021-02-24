@@ -334,82 +334,36 @@ namespace Statystyki_2018
 
             using (ExcelPackage MyExcel = new ExcelPackage(existingFile))
             {
-                // pierwsza
+               
 
                 int rowik = 0;
 
                 ExcelWorksheet MyWorksheet1 = MyExcel.Workbook.Worksheets[1];
 
                 DataTable table = (DataTable)Session["tabelka001"];
-
+                rowik = table.Rows.Count - 2;
                 MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], table, 18, 0, 5, false, false, false, false, false, false);
 
-                rowik = table.Rows.Count ;
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka002"], 12, 16, 2, rowik + 7, false);
 
-                // pod tabela z tebeli nr 2
+                tb.komorkaExcela(MyExcel.Workbook.Worksheets[1], rowik + 7, 1, "Zaległość z poprzedniego miesiąca", true, 0, 1);
+                tb.komorkaExcela(MyExcel.Workbook.Worksheets[1], rowik + 8, 1, "Wpływ", true, 0, 1);
+                tb.komorkaExcela(MyExcel.Workbook.Worksheets[1], rowik + 9, 1, "Załatwienia", true, 0, 1);
+                tb.komorkaExcela(MyExcel.Workbook.Worksheets[1], rowik + 10, 1, "Pozostało na następny miesiąc", true, 0, 1);
+                tb.komorkaExcela(MyExcel.Workbook.Worksheets[1], rowik + 11, 1, "Zaległość", true, 7, 1);
+                tb.komorkaExcela(MyExcel.Workbook.Worksheets[1], rowik + 11, 2, "Odroczono", false, 0, 0);
+                tb.komorkaExcela(MyExcel.Workbook.Worksheets[1], rowik + 12, 2, " 0-3 miesiący", false, 0, 0);
+                tb.komorkaExcela(MyExcel.Workbook.Worksheets[1], rowik + 13, 2, " 3-6 miesięcy", false, 0, 0);
+                tb.komorkaExcela(MyExcel.Workbook.Worksheets[1], rowik + 14, 2, " 6-12 miesięcy", false, 0, 0);
+                tb.komorkaExcela(MyExcel.Workbook.Worksheets[1], rowik + 15, 2, " 12-24 miesięcy (do 2 lat)", false, 0, 0);
+                tb.komorkaExcela(MyExcel.Workbook.Worksheets[1], rowik + 16, 2, " 24-36 miesięcy (do 2-3 lat)", false, 0, 0);
+                tb.komorkaExcela(MyExcel.Workbook.Worksheets[1], rowik + 17, 2, " 36-60 miesięcy (3-5 lat)", false, 0, 0);
+                tb.komorkaExcela(MyExcel.Workbook.Worksheets[1], rowik + 18, 2, " Powyżej 60 miesięcy (powyżej 5 lat)", false, 0, 0);
+
               
-                DataTable  table2x = (DataTable)Session["tabelka002"];
-                for (int row2 = rowik; row2 < rowik + 10; row2++)
-                {
-                    for (int i = 2; i < 19; i++)
-                    {
-                        MyWorksheet1.Cells[row2 + 7, i].Style.ShrinkToFit = true;
-                        MyWorksheet1.Cells[row2 + 7, i].Style.Border.BorderAround(OfficeOpenXml.Style.ExcelBorderStyle.Thin, System.Drawing.Color.Black);
-                        try
-                        {
-                            MyWorksheet1.Cells[row2 + 7, i].Value = table2x.Rows[row2-5][i-2].ToString();
-
-                        }
-                        catch 
-                        {
-                        }
-                    }
-                }
-                //------------
-                for (int row2 = rowik; row2 < rowik + 10; row2++)
-                {
-                    for (int i = 1; i < 9; i++)
-                    {
-                        MyWorksheet1.Cells[row2 + 7, i].Style.ShrinkToFit = true;
-                        MyWorksheet1.Cells[row2 + 7, i].Style.Border.BorderAround(OfficeOpenXml.Style.ExcelBorderStyle.Thin, System.Drawing.Color.Black);
-                     
-                    }
-                }
-                MyWorksheet1.Cells[rowik + 7, 1, rowik + 7, 2].Merge = true;
-                MyWorksheet1.Cells[rowik + 7, 1].Value = "Zaległość z poprzedniego miesiąca";
-                MyWorksheet1.Cells[rowik + 8, 1, rowik + 8, 2].Merge = true;
-                MyWorksheet1.Cells[rowik + 8, 1].Value = "Wpływ";
-                MyWorksheet1.Cells[rowik + 9, 1, rowik + 9, 2].Merge = true;
-                MyWorksheet1.Cells[rowik + 9, 1].Value = "Załatwienia";
-              
-                MyWorksheet1.Cells[rowik + 10, 1, rowik + 10, 2].Merge = true;
-                MyWorksheet1.Cells[rowik + 10, 1].Value = " Pozostało na następny miesiąc";
-                MyWorksheet1.Cells[rowik + 11, 1, rowik + 16, 1].Merge = true;
-                MyWorksheet1.Cells[rowik + 11, 1].Value = " Zaległość";
-                MyWorksheet1.Cells[rowik + 11, 2, rowik + 11, 2].Merge = true;
-                MyWorksheet1.Cells[rowik + 11, 2].Value = " 0-3 miesiący";
-                MyWorksheet1.Cells[rowik + 12, 2, rowik + 12, 2].Merge = true;
-                MyWorksheet1.Cells[rowik + 12, 2].Value = " 3-6 miesięcy";
-                MyWorksheet1.Cells[rowik + 13, 2, rowik + 13, 2].Merge = true;
-                MyWorksheet1.Cells[rowik + 13, 2].Value = " 6-12 miesięcy";
-                MyWorksheet1.Cells[rowik + 14, 2, rowik + 14, 2].Merge = true;
-                MyWorksheet1.Cells[rowik + 14, 2].Value = " 12-24 miesięcy (do 2 lat)";
-                MyWorksheet1.Cells[rowik + 15, 2, rowik + 15, 2].Merge = true;
-                MyWorksheet1.Cells[rowik + 15, 2].Value = " 36-60 miesięcy (3-5 lat)";
-                MyWorksheet1.Cells[rowik + 16, 2, rowik + 16, 2].Merge = true;
-                MyWorksheet1.Cells[rowik + 16, 2].Value = " Powyżej 60 miesięcy (powyżej 5 lat)";
-                DataTable tabelka001 = (DataTable)Session["tabelka002"];
-
-                // druga
 
                 MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka003"], 33, 0, 7, false, true, false, false, false, false);
-                try
-                {
-                    MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka004"], 5, 0, 6,true, true, false, false, false, false);
-                }
-                catch
-                {
-                }
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka004"], 5, 0, 6, true, true, false, false, false, false);
 
                 try
                 {
@@ -490,7 +444,6 @@ namespace Statystyki_2018
 
             string idtabeli = "2";
 
-            //   DataTable cos = tb.makeSumRow(tabelka01, 18);
             // nowy wiersz
             int idWiersza = 1;
 
@@ -509,27 +462,31 @@ namespace Statystyki_2018
 
             // nowy wiersz
             idWiersza = 5;
-            GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeli(tabelka01, 17, idWiersza, idtabeli, "Odroczono", 1, 1, "normal", "borderTopLeft col_60", "Zaległość", 7, 2, "borderTopLeft col_60"));
+            GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeli(tabelka01, 17, idWiersza, idtabeli, "Odroczono", 1, 1, "normal", "borderTopLeft col_60", "Zaległość", 8, 2, "borderTopLeft col_60"));
 
             // nowy wiersz
             idWiersza = 6;
-            GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeli(tabelka01, 17, idWiersza, idtabeli, "3-6  miesięcy ", 1, 1, "normal", "borderTopLeft "));
+            GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeli(tabelka01, 17, idWiersza, idtabeli, "0-3  miesięcy ", 1, 1, "normal", "borderTopLeft "));
 
             // nowy wiersz
             idWiersza = 7;
-            GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeli(tabelka01, 17, idWiersza, idtabeli, "6-12  miesięcy ", 1, 1, "normal", "borderTopLeft "));
+            GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeli(tabelka01, 17, idWiersza, idtabeli, "3-6  miesięcy ", 1, 1, "normal", "borderTopLeft "));
 
             // nowy wiersz
             idWiersza = 8;
+            GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeli(tabelka01, 17, idWiersza, idtabeli, "6-12  miesięcy ", 1, 1, "normal", "borderTopLeft "));
+
+            // nowy wiersz
+            idWiersza = 9;
             GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeli(tabelka01, 17, idWiersza, idtabeli, "12-24  miesięcy (do 2 lat)", 1, 1, "normal", "borderTopLeft "));
 
-            idWiersza = 9;
+            idWiersza = 10;
             GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeli(tabelka01, 17, idWiersza, idtabeli, "24-36  miesięcy (2-3 lat))", 1, 1, "normal", "borderTopLeft "));
 
-            idWiersza = 10;
+            idWiersza = 11;
             GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeli(tabelka01, 17, idWiersza, idtabeli, "36-60  miesięcy (3-5 lat)", 1, 1, "normal", "borderTopLeft "));
 
-            idWiersza = 11;
+            idWiersza = 12;
             GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeli(tabelka01, 17, idWiersza, idtabeli, "Powyżej 60 miesięcy (powyżej 5 lat)", 1, 1, "normal", "borderTopLeft "));
         }
     }

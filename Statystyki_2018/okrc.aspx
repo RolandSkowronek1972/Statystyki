@@ -22,9 +22,9 @@
             }
 
             .horizont {
-                transform: translate(-55mm, 0) scale(0.6);
-                -webkit-transform: translate(-55mm, 0) scale(0.6);
-                -moz-transform: translate(-55mm, 0) scale(0.6);
+                transform: translate(-70mm, 0) scale(0.50);
+                -webkit-transform: translate(-70mm, 0) scale(0.50);
+                -moz-transform: translate(-70mm, 0) scale(0.50);
             }
         }
     </style>

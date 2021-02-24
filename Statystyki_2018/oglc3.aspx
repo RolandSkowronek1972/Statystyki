@@ -13,6 +13,18 @@
                 left: 0;
                 right: 0;
             }
+        @media print {
+            @page {
+                size: 29cm 21.7cm;
+                margin: 0mm 0mm 0mm 0mm;
+            }
+
+            .horizont {
+                transform: translate(-40mm, 0) scale(0.65);
+                -webkit-transform: translate(-40mm, 0) scale(0.65);
+                -moz-transform: translate(-40mm, 0) scale(0.65);
+            }
+        }
     </style>
 
     <div id="menu" class="manu_back noprint" style="height: 40px;">
@@ -57,7 +69,7 @@
             &nbsp;&nbsp;&nbsp;
            <asp:Label ID="infoLabel1" runat="server" Text="tabela  1" Visible="False"></asp:Label>
             <br />
-            <div id="TABELA1" class="page-break">
+            <div id="TABELA1" >
                 <table style="width: 100%;">
                     <tr>
                         <td class="borderAll center" rowspan="3">okres statystyczny</td>

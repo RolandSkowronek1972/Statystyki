@@ -145,10 +145,10 @@
     <Content Include="akrg.aspx" />
     <Content Include="akrp.aspx" />
     <Content Include="akrk.aspx" />
-    <None Include="Connected Services\ServiceReference2\SerwisWymiany.disco" />
-    <None Include="Connected Services\ServiceReference2\configuration91.svcinfo" />
-    <None Include="Connected Services\ServiceReference2\configuration.svcinfo" />
-    <None Include="Connected Services\ServiceReference2\Reference.svcmap">
+    <None Include="Connected Services\ServiceReference3\SerwisWymiany.disco" />
+    <None Include="Connected Services\ServiceReference3\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReference3\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReference3\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -160,11 +160,15 @@
     <Content Include="mss10e.aspx" />
     <Content Include="oglk2.aspx" />
     <Content Include="okrcN.aspx" />
+    <Content Include="otrp.aspx" />
     <Content Include="SerwisWymiany.asmx" />
     <Content Include="Wymiana1.aspx" />
     <Content Include="XMLHeaders\MSS1o.xml" />
     <Content Include="XMLHeaders\oczc1.xml" />
     <Content Include="XMLHeaders\MSS10r.xml" />
+    <Content Include="XMLHeaders\otrp.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="XMLHeaders\otrr1.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -298,7 +302,7 @@
     <Content Include="otrk.aspx" />
     <Content Include="otrkd.aspx" />
     <Content Include="otrkr.aspx" />
-    <Content Include="otrp.aspx" />
+    <Content Include="otrpOLD.aspx" />
     <Content Include="otrr.aspx" />
     <Content Include="packages.config" />
     <Content Include="popup.aspx" />
@@ -338,10 +342,8 @@
     <Content Include="XMLHeaders\oopc.xml" />
     <Content Include="XMLHeaders\okt2.xml" />
     <Content Include="libman.json" />
-    <None Include="Connected Services\ServiceReference2\SerwisWymiany.wsdl" />
-    <Content Include="Connected Services\ServiceReference2\stat2018.ServiceReference2.DaneWXmlResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
+    <None Include="Connected Services\ServiceReference3\SerwisWymiany.wsdl" />
+    <Content Include="Properties\DataSources\System.Data.DataTable.datasource" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -435,6 +437,7 @@
     <Content Include="Template\oczc.xlsx" />
     <Content Include="Template\mp.xlsx" />
     <Content Include="Template\oglk2.xlsx" />
+    <Content Include="Template\otrp.xlsx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -514,7 +517,7 @@
     <Compile Include="akrk.aspx.designer.cs">
       <DependentUpon>akrk.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Connected Services\ServiceReference2\Reference.cs">
+    <Compile Include="Connected Services\ServiceReference3\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -807,6 +810,13 @@
     </Compile>
     <Compile Include="mss19o.aspx.designer.cs">
       <DependentUpon>mss19o.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="otrp.aspx.cs">
+      <DependentUpon>otrp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="otrp.aspx.designer.cs">
+      <DependentUpon>otrp.aspx</DependentUpon>
     </Compile>
     <Compile Include="passwordPopup.aspx.cs">
       <DependentUpon>passwordPopup.aspx</DependentUpon>
@@ -1194,12 +1204,12 @@
     <Compile Include="otrkr.aspx.designer.cs">
       <DependentUpon>otrkr.aspx</DependentUpon>
     </Compile>
-    <Compile Include="otrp.aspx.cs">
-      <DependentUpon>otrp.aspx</DependentUpon>
+    <Compile Include="otrpOLD.aspx.cs">
+      <DependentUpon>otrpOLD.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="otrp.aspx.designer.cs">
-      <DependentUpon>otrp.aspx</DependentUpon>
+    <Compile Include="otrpOLD.aspx.designer.cs">
+      <DependentUpon>otrpOLD.aspx</DependentUpon>
     </Compile>
     <Compile Include="otrr.aspx.cs">
       <DependentUpon>otrr.aspx</DependentUpon>
@@ -1321,7 +1331,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\ServiceReference2\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceReference3\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

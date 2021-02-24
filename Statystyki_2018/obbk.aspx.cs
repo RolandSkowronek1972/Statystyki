@@ -399,7 +399,7 @@ namespace Statystyki_2018
             // nowy wiersz
             idWiersza = 7;
 
-            GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeli(tabelka01, 7, idWiersza, idtabeli, "Powyżej 112 miesięcy", 2, 0, "", "borderAll center"));
+            GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeli(tabelka01, 7, idWiersza, idtabeli, "Powyżej 12 miesięcy", 2, 0, "", "borderAll center"));
         }
     }
 }

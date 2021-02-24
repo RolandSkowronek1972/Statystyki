@@ -14,6 +14,18 @@
                 left: 0;
                 right: 0;
             }
+              @media print {
+            @page {
+                size: 29cm 21.7cm;
+                margin: 0mm 0mm 0mm 0mm;
+            }
+
+                .horizont {
+                    transform: translate(-60mm, 0) scale(0.60);
+                    -webkit-transform: translate(-60mm, 0) scale(0.60);
+                    -moz-transform: translate(-60mm, 0) scale(0.60);
+                }
+            }
     </style>
     <script src="Scripts/rls.js"></script>
     <div class="noprint">
@@ -38,11 +50,8 @@
                             <asp:LinkButton ID="LinkButton54" runat="server" class="ax_box" OnClick="LinkButton54_Click">  Odśwież</asp:LinkButton>
                         </td>
                         <td style="width: auto; padding-left: 5px;">
-                            <asp:LinkButton ID="LinkButton55" runat="server" class="ax_box" OnClick="LinkButton55_Click" CssClass="ax_box"> Drukuj </asp:LinkButton>
-                        </td>
-                        <td style="width: auto; padding-left: 5px;">
+                            <input id="Button1" class="ax_box" style="border-style: none; padding: 0px" type="button" onclick="JavaScript: window.print();" value="Drukuj" />
 
-                            <asp:LinkButton ID="LinkButton56" runat="server" OnClick="Button1_Click" CssClass="ax_box" Visible="False">DRUKUJ</asp:LinkButton>
                         </td>
                         <td style="width: auto; padding-left: 5px;">
                             <asp:LinkButton ID="LinkButton57" runat="server" CssClass="ax_box" OnClick="Button3_Click">Zapisz do Excel</asp:LinkButton>
@@ -61,7 +70,7 @@
                 <br />
             </div>
         </div>
-        <div id="zalatwienia" class="page-break">
+        <div id="zalatwienia" class="horizont">
             <br />
 
             <asp:Label ID="tabela2Label" runat="server"></asp:Label>

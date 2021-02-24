@@ -14,6 +14,18 @@
                 left: 0;
                 right: 0;
             }
+        @media print {
+            @page {
+                size: 29cm 21.7cm;
+                margin: 0mm 0mm 0mm 0mm;
+            }
+
+            .horizont {
+                transform: translate(-40mm, 0) scale(0.65);
+                -webkit-transform: translate(-40mm, 0) scale(0.65);
+                -moz-transform: translate(-40mm, 0) scale(0.65);
+            }
+        }
     </style>
 
     <script src="Scripts/rls.js"></script>
@@ -64,7 +76,7 @@
 
             <br />
        
-        <div id="zalatwienia" >
+        <div id="zalatwienia" class="horizont" >
             <br />
 
             <asp:Label ID="tabela2Label" runat="server"></asp:Label>

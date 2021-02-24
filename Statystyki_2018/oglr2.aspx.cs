@@ -509,13 +509,6 @@ namespace Statystyki_2018
             }
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            odswiez();
-            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print2", "JavaScript: window.print();", true);
-            // ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print", "window.open('raport_01_print.aspx', '')", true);
-        }
-
         protected void Button3_Click(object sender, EventArgs e)
         {
             string path = Server.MapPath("Template") + "\\oglr2.xlsx";
@@ -538,7 +531,7 @@ namespace Statystyki_2018
                 table.Columns.Remove("stanowisko");
                 table.Columns.Remove("funkcja");
                 table.Columns.Remove("id_tabeli");
-                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], table, 32, 1, 5, false, false, false, false, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], table, 32, 0, 5, false,true, false, false, false);
 
                 //druga
 
@@ -551,7 +544,7 @@ namespace Statystyki_2018
                 table.Columns.Remove("funkcja");
                 table.Columns.Remove("id_tabeli");
 
-                MyWorksheet2 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], table, 7, 1, 4, false, false, false, false, false);
+                MyWorksheet2 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], table, 6, 0, 4, false, true, false, false, false);
 
                 //traeci
 
@@ -564,39 +557,14 @@ namespace Statystyki_2018
                 table.Columns.Remove("funkcja");
                 table.Columns.Remove("id_tabeli");
 
-                MyWorksheet3 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], table, 12, 1, 5, false, false, false, false, false);
+                MyWorksheet3 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], table, 11, 0, 5, false, true, false, false, false);
 
                 // czwarta statyczna
-                DataTable dane = (DataTable)Session["tabelka005"];
-                ExcelWorksheet MyWorksheet4 = MyExcel.Workbook.Worksheets[4];
-                try
-                {
-                    MyWorksheet4.Cells[1, 7].Style.Border.BorderAround(OfficeOpenXml.Style.ExcelBorderStyle.Thin, System.Drawing.Color.Black);
-                    MyWorksheet4.Cells[1, 7].Value = dane.Rows[0][0];
-                    MyWorksheet4.Cells[2, 7].Style.Border.BorderAround(OfficeOpenXml.Style.ExcelBorderStyle.Thin, System.Drawing.Color.Black);
-                    MyWorksheet4.Cells[2, 7].Value = dane.Rows[0][1];
-                    MyWorksheet4.Cells[3, 7].Style.Border.BorderAround(OfficeOpenXml.Style.ExcelBorderStyle.Thin, System.Drawing.Color.Black);
-                    MyWorksheet4.Cells[3, 7].Value = dane.Rows[0][2];
-                    MyWorksheet4.Cells[4, 7].Style.Border.BorderAround(OfficeOpenXml.Style.ExcelBorderStyle.Thin, System.Drawing.Color.Black);
-                    MyWorksheet4.Cells[4, 7].Value = dane.Rows[0][4];
-                }
-                catch (Exception)
-                {
-                }
+
+                tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 1, 7, 0, 6, false);
 
                 //piata statyczna
-                DataTable dane2 = (DataTable)Session["tabelka005"];
-                ExcelWorksheet MyWorksheet5 = MyExcel.Workbook.Worksheets[5];
-                try
-                {
-                    MyWorksheet5.Cells[3, 2].Value = dane2.Rows[0][0];
-                    MyWorksheet5.Cells[4, 2].Value = dane2.Rows[0][1];
-                    MyWorksheet5.Cells[5, 2].Value = dane2.Rows[0][2];
-                    MyWorksheet5.Cells[6, 2].Value = dane2.Rows[0][4];
-                }
-                catch (Exception)
-                {
-                }
+                tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[5], (DataTable)Session["tabelka005"], 7, 1, 2, 2, false);
 
                 // szósta
 
@@ -609,7 +577,7 @@ namespace Statystyki_2018
                 table.Columns.Remove("funkcja");
                 table.Columns.Remove("id_tabeli");
 
-                MyWorksheet6 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[6], table, 18, 1, 5, false, true, false, false, false);
+                MyWorksheet6 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[6], table, 17, 0, 4, false, true, false, false, false);
 
                 // siódma
 
@@ -622,7 +590,7 @@ namespace Statystyki_2018
                 table.Columns.Remove("funkcja");
                 table.Columns.Remove("id_tabeli");
 
-                MyWorksheet7 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[7], table, 9, 1, 3, false, false, false, false, false);
+                MyWorksheet7 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[7], table, 8, 0, 3, false, false, false, false, false);
 
                 // ósma
 

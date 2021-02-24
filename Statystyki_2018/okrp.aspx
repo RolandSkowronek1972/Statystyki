@@ -14,59 +14,60 @@
                 left: 0;
                 right: 0;
             }
-              @media print {
-              @page {
-                 
-                 
-                 size: 29cm 21.7cm;
-                  margin: 0mm 0mm 0mm 0mm;
-               
-              }
 
-              div {
-                  transform: translate(0, 0);
-                  -webkit-transform: translate(0, 0 ); /* Saf3.1+, Chrome */
-                  -moz-transform: translate(0, 0); /* FF3.5+ */
-                
-              }
-          }
+        @media print {
+            @page {
+                size: 29cm 21.7cm;
+                margin: 0mm 0mm 0mm 0mm;
+            }
+
+            .horizont {
+                transform: translate(-55mm, 0) scale(0.60);
+                -webkit-transform: translate(-55mm, 0) scale(0.60);
+                -moz-transform: translate(-55mm, 0) scale(0.60);
+            }
+
+            div {
+                transform: translate(0, 0);
+                -webkit-transform: translate(0, 0 ); /* Saf3.1+, Chrome */
+                -moz-transform: translate(0, 0); /* FF3.5+ */
+            }
+        }
     </style>
     <script src="Scripts/jquery-1.8.3.js"></script>
 
     <script src="Scripts/rls.js"></script>
 
-    
-        <div id="menu" style="background-color: #f7f7f7; z-index: 9999" class="noprint">
-            <div class="manu_back" style="height: 40px; margin: 0 auto 0 auto; position: relative; width: 1050px; left: 0px;">
-                <table>
-                    <tr>
-                        <td style="width: auto; padding-left: 5px;">
-                            <asp:Label ID="Label4" runat="server" Text="Proszę wybrać zakres:"></asp:Label>
-                        </td>
-                        <td style="width: auto; padding-left: 5px;">
+    <div id="menu" style="background-color: #f7f7f7; z-index: 9999" class="noprint">
+        <div class="manu_back" style="height: 40px; margin: 0 auto 0 auto; position: relative; width: 1050px; left: 0px;">
+            <table>
+                <tr>
+                    <td style="width: auto; padding-left: 5px;">
+                        <asp:Label ID="Label4" runat="server" Text="Proszę wybrać zakres:"></asp:Label>
+                    </td>
+                    <td style="width: auto; padding-left: 5px;">
 
-                            <dx:ASPxDateEdit ID="Date1" runat="server" Theme="Moderno">
-                            </dx:ASPxDateEdit>
-                        </td>
-                        <td style="width: auto; padding-left: 5px;">
+                        <dx:ASPxDateEdit ID="Date1" runat="server" Theme="Moderno">
+                        </dx:ASPxDateEdit>
+                    </td>
+                    <td style="width: auto; padding-left: 5px;">
 
-                            <dx:ASPxDateEdit ID="Date2" runat="server" Theme="Moderno">
-                            </dx:ASPxDateEdit>
-                        </td>
-                        <td style="width: auto; padding-left: 5px;">
-                            <asp:LinkButton ID="LinkButton54" runat="server" class="ax_box" OnClick="LinkButton54_Click">  Odśwież</asp:LinkButton>
-                        </td>
-                        <td style="width: auto; padding-left: 5px;">
-                            <input id="Button1" class="ax_box" style="border-style: none; padding: 0px" type="button" onclick="JavaScript: window.print();" value="Drukuj" /></td>
+                        <dx:ASPxDateEdit ID="Date2" runat="server" Theme="Moderno">
+                        </dx:ASPxDateEdit>
+                    </td>
+                    <td style="width: auto; padding-left: 5px;">
+                        <asp:LinkButton ID="LinkButton54" runat="server" class="ax_box" OnClick="LinkButton54_Click">  Odśwież</asp:LinkButton>
+                    </td>
+                    <td style="width: auto; padding-left: 5px;">
+                        <input id="Button1" class="ax_box" style="border-style: none; padding: 0px" type="button" onclick="JavaScript: window.print();" value="Drukuj" /></td>
 
-                        <td style="width: auto; padding-left: 5px;">
-                            <asp:LinkButton ID="LinkButton57" runat="server" CssClass="ax_box" OnClick="Button3_Click">Zapisz do Excel</asp:LinkButton>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+                    <td style="width: auto; padding-left: 5px;">
+                        <asp:LinkButton ID="LinkButton57" runat="server" CssClass="ax_box" OnClick="Button3_Click">Zapisz do Excel</asp:LinkButton>
+                    </td>
+                </tr>
+            </table>
         </div>
-   
+    </div>
 
     <div style="width: 1150px; margin: 0 auto 0 auto; position: relative; top: 60px;">
 
@@ -75,10 +76,8 @@
                 <asp:Label ID="Label3" runat="server" Text="Sąd " Style="font-weight: 700"></asp:Label>
                 <br />
             </div>
-
-          
         </div>
-        <div id="zalatwienia" >
+        <div id="zalatwienia" class="horizont">
             <br />
 
             <asp:Label ID="tabela2Label" runat="server"></asp:Label>
@@ -130,7 +129,7 @@
                     <asp:TemplateField HeaderText="d_03" SortExpression="d_01">
                         <ItemTemplate>
                             <a href="javascript:openPopup('popup.aspx?sesja=<%# Eval("id_sedziego")+ "!"+Eval("id_tabeli") +"!3!6"%>')">
-                                <asp:Textbox ID="Label_Gridview1103" runat="server" Text='<%# Eval("d_03")%>' CssClass="normal center col_40"></asp:Textbox>
+                                <asp:TextBox ID="Label_Gridview1103" runat="server" Text='<%# Eval("d_03")%>' CssClass="normal center col_40"></asp:TextBox>
                             </a>
                         </ItemTemplate>
                         <ItemStyle CssClass="col_40" />
@@ -138,7 +137,7 @@
                     <asp:TemplateField HeaderText="d_04" SortExpression="d_01">
                         <ItemTemplate>
                             <a href="javascript:openPopup('popup.aspx?sesja=<%# Eval("id_sedziego")+ "!"+Eval("id_tabeli") +"!4!6"%>')">
-                                <asp:Textbox ID="Label_Gridview1104"  runat="server" Text='<%# Eval("d_04")%>' CssClass="normal center col_40"></asp:Textbox>
+                                <asp:TextBox ID="Label_Gridview1104" runat="server" Text='<%# Eval("d_04")%>' CssClass="normal center col_40"></asp:TextBox>
                             </a>
                         </ItemTemplate>
                         <ItemStyle CssClass="col_40" />
@@ -247,7 +246,7 @@
                         </ItemTemplate>
                         <ItemStyle CssClass="col_40" />
                     </asp:TemplateField>
-                         <asp:TemplateField HeaderText="d_17" SortExpression="d_01">
+                    <asp:TemplateField HeaderText="d_17" SortExpression="d_01">
                         <ItemTemplate>
                             <a href="javascript:openPopup('popup.aspx?sesja=<%# Eval("id_sedziego")+ "!"+Eval("id_tabeli") +"!18!6"%>')">
                                 <asp:Label ID="Label_Gridview1118" runat="server" Text='<%# Eval("d_18")%>' CssClass="normal"></asp:Label>
@@ -255,8 +254,8 @@
                         </ItemTemplate>
                         <ItemStyle CssClass="col_40" />
                     </asp:TemplateField>
-                   
-                         <asp:TemplateField HeaderText="d_17" SortExpression="d_01">
+
+                    <asp:TemplateField HeaderText="d_17" SortExpression="d_01">
                         <ItemTemplate>
                             <a href="javascript:openPopup('popup.aspx?sesja=<%# Eval("id_sedziego")+ "!"+Eval("id_tabeli") +"!19!6"%>')">
                                 <asp:Label ID="Label_Gridview1119" runat="server" Text='<%# Eval("d_19")%>' CssClass="normal"></asp:Label>
@@ -264,7 +263,7 @@
                         </ItemTemplate>
                         <ItemStyle CssClass="col_40" />
                     </asp:TemplateField>
-                        <asp:TemplateField HeaderText="d_17" SortExpression="d_01">
+                    <asp:TemplateField HeaderText="d_17" SortExpression="d_01">
                         <ItemTemplate>
                             <a href="javascript:openPopup('popup.aspx?sesja=<%# Eval("id_sedziego")+ "!"+Eval("id_tabeli") +"!20!6"%>')">
                                 <asp:Label ID="Label_Gridview1120" runat="server" Text='<%# Eval("d_20")%>' CssClass="normal"></asp:Label>
@@ -272,7 +271,7 @@
                         </ItemTemplate>
                         <ItemStyle CssClass="col_40" />
                     </asp:TemplateField>
-                        <asp:TemplateField HeaderText="d_17" SortExpression="d_01">
+                    <asp:TemplateField HeaderText="d_17" SortExpression="d_01">
                         <ItemTemplate>
                             <a href="javascript:openPopup('popup.aspx?sesja=<%# Eval("id_sedziego")+ "!"+Eval("id_tabeli") +"!21!6"%>')">
                                 <asp:Label ID="Label_Gridview1121" runat="server" Text='<%# Eval("d_21")%>' CssClass="normal"></asp:Label>
@@ -280,7 +279,7 @@
                         </ItemTemplate>
                         <ItemStyle CssClass="col_40" />
                     </asp:TemplateField>
-                        <asp:TemplateField HeaderText="d_17" SortExpression="d_01">
+                    <asp:TemplateField HeaderText="d_17" SortExpression="d_01">
                         <ItemTemplate>
                             <a href="javascript:openPopup('popup.aspx?sesja=<%# Eval("id_sedziego")+ "!"+Eval("id_tabeli") +"!22!6"%>')">
                                 <asp:Label ID="Label_Gridview1122" runat="server" Text='<%# Eval("d_22")%>' CssClass="normal"></asp:Label>
@@ -288,8 +287,8 @@
                         </ItemTemplate>
                         <ItemStyle CssClass="col_40" />
                     </asp:TemplateField>
-                     
-                        <asp:TemplateField HeaderText="d_17" SortExpression="d_01">
+
+                    <asp:TemplateField HeaderText="d_17" SortExpression="d_01">
                         <ItemTemplate>
                             <a href="javascript:openPopup('popup.aspx?sesja=<%# Eval("id_sedziego")+ "!"+Eval("id_tabeli") +"!23!6"%>')">
                                 <asp:Label ID="Label_Gridview1123" runat="server" Text='<%# Eval("d_23")%>' CssClass="normal"></asp:Label>
@@ -297,8 +296,8 @@
                         </ItemTemplate>
                         <ItemStyle CssClass="col_40 " />
                     </asp:TemplateField>
-                    
-                      <asp:TemplateField HeaderText="d_17" SortExpression="d_01">
+
+                    <asp:TemplateField HeaderText="d_17" SortExpression="d_01">
                         <ItemTemplate>
                             <a href="javascript:openPopup('popup.aspx?sesja=<%# Eval("id_sedziego")+ "!"+Eval("id_tabeli") +"!24!6"%>')">
                                 <asp:Label ID="Label_Gridview1124" runat="server" Text='<%# Eval("d_24")%>' CssClass="normal"></asp:Label>
@@ -306,7 +305,7 @@
                         </ItemTemplate>
                         <ItemStyle CssClass="col_40 " />
                     </asp:TemplateField>
-                      <asp:TemplateField HeaderText="d_17" SortExpression="d_01">
+                    <asp:TemplateField HeaderText="d_17" SortExpression="d_01">
                         <ItemTemplate>
                             <a href="javascript:openPopup('popup.aspx?sesja=<%# Eval("id_sedziego")+ "!"+Eval("id_tabeli") +"!25!6"%>')">
                                 <asp:Label ID="Label_Gridview1125" runat="server" Text='<%# Eval("d_25")%>' CssClass="normal"></asp:Label>
@@ -315,16 +314,12 @@
                         <ItemStyle CssClass="col_40 gray" />
                     </asp:TemplateField>
 
-
                     <asp:TemplateField HeaderText="d_18" SortExpression="d_01">
                         <ItemTemplate>
                             <asp:TextBox ID="TextBox29" runat="server"></asp:TextBox>
                         </ItemTemplate>
                         <ItemStyle CssClass="col_40" />
                     </asp:TemplateField>
-
-
-
                 </Columns>
             </asp:GridView>
             <asp:SqlDataSource ID="tabela_1" runat="server"

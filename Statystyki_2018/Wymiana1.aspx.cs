@@ -1,8 +1,16 @@
 ﻿using System;
 using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
+using System.Text;
 using System.Web.UI;
 using System.Xml;
+
+
+
 
 namespace Statystyki_2018
 {
@@ -66,7 +74,7 @@ namespace Statystyki_2018
             string host = string.Empty;
             TextBox1.Text = "";
 
-            stat2018.ServiceReference2.SerwisWymianySoapClient serwisWymianySoapClient = new stat2018.ServiceReference2.SerwisWymianySoapClient();
+            stat2018.ServiceReference3.SerwisWymianySoapClient serwisWymianySoapClient = new stat2018.ServiceReference3.SerwisWymianySoapClient();
 
             rodzaj = lbRodzajSprawy.SelectedItem.Text.ToString();
             connection = lbRodzajSprawy.SelectedItem.Value.ToString();
@@ -115,12 +123,13 @@ namespace Statystyki_2018
             string CSkwerendyZapytujacej = zestawZapytujacy.Rows[0][1].ToString();
 
             //  serwisWymianySoapClient.Endpoint.Address = endpointAddress;
-            string wynik = string.Empty;
+            // string wynik = string.Empty;
+            DataTable wynik = new DataTable();
             try
             {
                 wynik = serwisWymianySoapClient.DaneWXml(TBNrWydzialu.Text.Trim(), TBRepertorium.Text.Trim(), int.Parse(TBNrSprawy.Text.Trim()), rodzaj, CSkwerendyZapytujacej, int.Parse(lbRok.SelectedItem.Text.Trim()), kwerendaZapytujaca);
                 //                              DaneWXml(string NrWydzialu       , string repertorium       , int nrSprawy                     , string rodzaj,  string connection, int rok, string kwerendaZapytujaca)
-                TextBox1.Text = wynik;
+              //  TextBox1.Text = wynik;
             }
             catch (Exception ex)
             {
@@ -155,46 +164,50 @@ namespace Statystyki_2018
             string CSkwerendyZapisującej = kwerendaZapisujaca.Rows[0][1].ToString();
             string repertorium = string.Empty;
             string numer = string.Empty;
-            string rok=  string.Empty;
-            string dataOrzeczenia= string.Empty;
-            string msword = string.Empty;
+            string rok = string.Empty;
+            string dataOrzeczenia = string.Empty;
+            Image msword = new Bitmap(16, 16, PixelFormat.Format32bppArgb);
+           
+          
             string rodzajOdp = string.Empty;
+            int il = xdoc.ChildNodes.Count;
 
-            try
+            SqlConnection Newconnection =
+                     new SqlConnection(CSkwerendyZapisującej);
+            using (SqlBulkCopy bulkCopy = new SqlBulkCopy(Newconnection))
             {
-                for (int i = 0; i <= xdoc.ChildNodes.Count - 1; i++)
-                {
-                    repertorium = xdoc.ChildNodes[i].ChildNodes.Item(0).InnerText.Trim();
-                    numer = xdoc.ChildNodes[i].ChildNodes.Item(1).InnerText.Trim();
-                    rok = xdoc.ChildNodes[i].ChildNodes.Item(2).InnerText.Trim();
-                    dataOrzeczenia = xdoc.ChildNodes[i].ChildNodes.Item(3).InnerText.Trim();
-                    msword = xdoc.ChildNodes[i].ChildNodes.Item(4).InnerText.Trim();
-                    rodzajOdp = xdoc.ChildNodes[i].ChildNodes.Item(5).InnerText.Trim();
-                    parametry = Common.makeParameterTable();
-                    parametry.Rows.Add("@d_orzeczenia", dataOrzeczenia);
-                    parametry.Rows.Add("@msword", msword);
-                    parametry.Rows.Add("@typ_orzeczenia", rodzajOdp);
-                    parametry.Rows.Add("@rok", rok);
-                    parametry.Rows.Add("@numer", numer);
-                    parametry.Rows.Add("@rep", repertorium);
+                Newconnection.Open();
+                bulkCopy.DestinationTableName =
+                    "dbo.orzeczenie";
 
-                    Common.runQuerry(kwerendaZapisująca, CSkwerendyZapisującej, parametry, "Wymiana");
-                    
+                SqlBulkCopyColumnMapping mapID =
+                  new SqlBulkCopyColumnMapping("ProductID", "ProdID");
+                bulkCopy.ColumnMappings.Add(mapID);
+
+
+                try
+                {
+                    // Write from the source to the destination.
+                    bulkCopy.WriteToServer(wynik);
+                    Newconnection.Close();
+                }
+                catch (Exception ex)
+                {
+                    Newconnection.Close();
+                    TextBox1.Text = TextBox1.Text + ex.Message;
                 }
             }
-            catch (Exception ex)
-            {
 
-                log.Error("Wymiana odczyt danych: Błąd odczytu danych z XML "+ ex.Message);
-                TextBox1.Text = TextBox1.Text + "Wymiana odczyt danych: Błąd odczytu danych z XML " + ex.Message + Environment.NewLine;
-                return;
-            }
+
+
+
+
            
+          
         }
 
         protected void citiesTabPage_ActiveTabChanged(object source, DevExpress.Web.TabControlEventArgs e)
         {
-
         }
 
         protected void AnulujInstancja2Klik(object sender, EventArgs e)
@@ -214,5 +227,41 @@ namespace Statystyki_2018
             TBNrWydzialu.Text = "";
             TBRepertorium.Text = "";
         }
+
+        public static void DodajWpis(string kwerenda,  string rep,  string numer,  string rok,  DateTime d_orzeczenia,  string msword,  string typ_orzeczenia,  string connectionString)
+        {
+            using (SqlConnection connection = new SqlConnection( connectionString))
+            {
+                Image im = stringToImage(msword.Trim());
+               
+                SqlCommand command = new SqlCommand(kwerenda, connection);
+
+                command.Parameters.Add("@rep", SqlDbType.NVarChar, 20).Value = rep;
+                command.Parameters.Add("@numer", SqlDbType.NVarChar, 10).Value = numer;
+                command.Parameters.Add("@rok", SqlDbType.NVarChar, 30).Value = rok;
+                command.Parameters.Add("@d_orzeczenia", SqlDbType.DateTime).Value = d_orzeczenia;
+                command.Parameters.Add("@typ_orzeczenia", SqlDbType.Int).Value = typ_orzeczenia;
+
+                command.Parameters.Add("@msword",
+                    SqlDbType.Image).Value = im; 
+
+                connection.Open();
+                command.ExecuteNonQuery();
+
+
+            }
+          
+        }
+
+        public static Image stringToImage(string inputString)
+        {
+            byte[] NewBytes = Convert.FromBase64String(inputString);
+            MemoryStream ms1 = new MemoryStream(NewBytes);
+            Image NewImage = Image.FromStream(ms1);
+
+            return NewImage;
+        }
+
+
     }
 }

@@ -747,7 +747,7 @@ namespace Statystyki_2018
                 tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 11, 1, "Powyżej 6 - 12 miesięcy", true, 0, 2);
                 tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 12, 1, "Powyżej 12 do 24 miesiący", true, 0, 2);
                 tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 13, 1, "Powyżej 2 lat do 3 lat", true, 0, 2);
-                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 14, 1, "WpPowyżej 3 lat do 5 latływ", true, 0, 2);
+                tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 14, 1, "Powyżej 3 lat do 5 lat", true, 0, 2);
                 tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 15, 1, "Powyżej 5 lat do 8 lat", true, 0, 2);
                 tb.komorkaExcela(MyWorksheet1, ((DataTable)Session["tabelka001"]).Rows.Count + 16, 1, "Powyżej 8 lat", true, 0, 2);
                 //  DataTable tabelka02 = dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse((string)Session["id_wydzial"]), 100, Date1.Date, Date2.Date, 4, tenPlik);

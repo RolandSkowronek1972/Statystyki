@@ -187,7 +187,7 @@ namespace Statystyki_2018
                             {
                                 MyWorksheet1.Cells[4 + j, i].Style.ShrinkToFit = true;
                                 MyWorksheet1.Cells[4 + j, i].Style.Border.BorderAround(OfficeOpenXml.Style.ExcelBorderStyle.Thin, System.Drawing.Color.Black);
-                                MyWorksheet1.Cells[4 + j, i].Value = table.Rows[j][i - 2].ToString();
+                                MyWorksheet1.Cells[4 + j, i].Value = table.Rows[j][i ].ToString();
                             }
                             catch (Exception)
                             {

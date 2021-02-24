@@ -526,12 +526,14 @@ namespace Statystyki_2018
             }
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            odswiez();
-            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print2", "JavaScript: window.print();", true);
-            // ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print", "window.open('raport_01_print.aspx', '')", true);
-        }
+        /*
+                protected void Button1_Click(object sender, EventArgs e)
+                {
+                    odswiez();
+                    ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print2", "JavaScript: window.print();", true);
+                    // ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print", "window.open('raport_01_print.aspx', '')", true);
+                }
+                */
 
         protected void Button3_Click(object sender, EventArgs e)
         {
@@ -622,37 +624,19 @@ namespace Statystyki_2018
 
                 // trzecia
 
-                ExcelWorksheet MyWorksheet2 = MyExcel.Workbook.Worksheets[2];
-
-                DataTable table2 = (DataTable)Session["tabelka003"];
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], table2, 7, 0, 5, false, false, false, false, false);
-                rowik = 2;
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka003"], 7, 0, 5, false, true, false, false, false);
 
                 // czwarta
 
                 ExcelWorksheet MyWorksheet4 = MyExcel.Workbook.Worksheets[3];
                 MyWorksheet4.Cells[1, 1].Value = "Ewidencja spraw odroczonych  ";
-
-                DataTable czwarta = (DataTable)Session["tabelka004"];
-                for (int ii = 0; ii < 2; ii++)
-                {
-                    for (int jj = 0; jj < 10; jj++)
-                    {
-                        try
-                        {
-                            MyWorksheet4.Cells[3 + jj, 4 + ii].Value = czwarta.Rows[ii][jj + 1].ToString();
-                        }
-                        catch (Exception)
-                        { }
-                    }
-                }
+                MyWorksheet4 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka004"], 10, 2, 3, 3, false);
 
                 // piąta
 
                 ExcelWorksheet MyWorksheet5 = MyExcel.Workbook.Worksheets[4];
 
-                DataTable table4 = (DataTable)Session["tabelka005"];
-                MyWorksheet5 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], table4, 29, 0, 3, false, true, false, false, false);
+                MyWorksheet5 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka005"], 29, 0, 3, false, true, false, false, false);
 
                 try
                 {

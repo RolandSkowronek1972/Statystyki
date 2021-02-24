@@ -86,8 +86,6 @@ namespace Statystyki_2018
             txt = txt + cl.clear_maim_db();
             try
             {
-                //cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 2");
-
                 DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 2, 20, 20, tenPlik);
                 Session["tabelka002"] = tabelka01;
             }
@@ -410,31 +408,33 @@ namespace Statystyki_2018
 
                 MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 18, 0, 4, false, false, false, false, false);
                 rowik = table.Rows.Count - 3;
-                MyWorksheet1.Cells[rowik + 7, 1, rowik + 7, 4].Merge = true;
+                MyWorksheet1.Cells[rowik + 7, 1, rowik + 7, 2].Merge = true;
                 MyWorksheet1.Cells[rowik + 7, 1].Value = "Zaległość z poprzedniego miesiąca";
-                MyWorksheet1.Cells[rowik + 8, 1, rowik + 8, 4].Merge = true;
+                MyWorksheet1.Cells[rowik + 8, 1, rowik + 8, 2].Merge = true;
                 MyWorksheet1.Cells[rowik + 8, 1].Value = "Wpływ";
 
-                MyWorksheet1.Cells[rowik + 9, 1, rowik + 9, 4].Merge = true;
+                MyWorksheet1.Cells[rowik + 9, 1, rowik + 9, 2].Merge = true;
                 MyWorksheet1.Cells[rowik + 9, 1].Value = "Załatwienia";
 
-                MyWorksheet1.Cells[rowik + 10, 1, rowik + 10, 4].Merge = true;
+                MyWorksheet1.Cells[rowik + 10, 1, rowik + 10, 2].Merge = true;
                 MyWorksheet1.Cells[rowik + 10, 1].Value = " Pozostało na następny miesiąc";
-                MyWorksheet1.Cells[rowik + 11, 1, rowik + 16, 1].Merge = true;
+                MyWorksheet1.Cells[rowik + 11, 1, rowik + 17, 1].Merge = true;
                 MyWorksheet1.Cells[rowik + 11, 1].Value = " w tym";
                 MyWorksheet1.Cells[rowik + 11, 2].Value = " 0-3 miesiący";
                 MyWorksheet1.Cells[rowik + 12, 2].Value = " 3-6 miesięcy";
                 MyWorksheet1.Cells[rowik + 13, 2].Value = " 6-12 miesięcy";
 
                 MyWorksheet1.Cells[rowik + 14, 2].Value = " 12-24 miesięcy (do 2 lat)";
-                MyWorksheet1.Cells[rowik + 15, 2].Value = " 36-60 miesięcy (3-5 lat)";
-
-                MyWorksheet1.Cells[rowik + 16, 2].Value = " Powyżej 60 miesięcy (powyżej 5 lat)";
+                MyWorksheet1.Cells[rowik + 15, 2].Value = " 24 - 36 miesięcy </ br > (2 - 3 lat))";
+                
+                MyWorksheet1.Cells[rowik + 16, 2].Value = " 36-60 miesięcy (3-5 lat)";
+            
+                MyWorksheet1.Cells[rowik + 17, 2].Value = " Powyżej 60 miesięcy (powyżej 5 lat)";
                 DataTable tabelka001 = (DataTable)Session["tabelka002"];
-                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka002"], 10, 14, 4, rowik + 7, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka002"], 11, 16, 2, rowik + 7, false);
                 MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka003"], 8, 0, 3, false, true, false, false, false);
-                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka004"], 17, 0, 3, false, true, false, false, false);
-                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka005"], 1, 12, 0, 9 , false);
+                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka004"], 17, 0, 4, false, true, false, false, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka005"], 1, 7, 0, 9, false);
                 MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[5], (DataTable)Session["tabelka006"], 11, 0, 11, false, true, false, false, false);
 
                 try

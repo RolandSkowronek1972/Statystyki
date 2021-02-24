@@ -534,7 +534,6 @@ namespace Statystyki_2018
 
             using (ExcelPackage MyExcel = new ExcelPackage(existingFile))
             {
-                // pierwsza
                 ExcelWorksheet MyWorksheet = MyExcel.Workbook.Worksheets[1];
 
                 DataTable table1 = (DataTable)Session["tabelka001"];
@@ -543,7 +542,7 @@ namespace Statystyki_2018
 
                 //podtabel
                 int przesuniecieWdol = table1.Rows.Count;
-                tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 10, 1, "Razem", true, 10, 2,true,true);
+                tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 10, 1, "Razem", true, 10, 2, true, true);
                 tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 10, 4, "Zaległości z poprzedniego miesiąca", true, 0, 14);
                 tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 11, 4, "wpływ", true, 0, 14);
                 tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 12, 4, "załatwienia", true, 0, 14);
@@ -552,39 +551,38 @@ namespace Statystyki_2018
                 tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 15, 4, "powyżej 6 do 12 miesięcy", true, 0, 14);
                 tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 16, 4, "powyżej 12 miesięcy", true, 0, 14);
 
-                tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 17, 4, "w tym", true, 3, 1, true,true);
+                tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 17, 4, "w tym", true, 3, 1, true, true);
                 tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 17, 6, "powyżej 12 miesięcy - 2 lat", true, 0, 12);
                 tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 18, 6, "powyżej 2 lat - 3 lat", true, 0, 12);
                 tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 19, 6, "powyżej 3 lat - 5 lat", true, 0, 12);
                 tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 20, 6, "powyżej 5 lat", true, 0, 12);
-
-                for (int i = 0; i < 11; i++)//wirsze
+                try
                 {
-                    for (int j = 0; j < 4; j++)// kolunmny
+                    for (int i = 0; i < 11; i++)//wiersze
                     {
-                        tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 10 + i, j + 19, tabelka001.Rows[i][j + 1].ToString(), false, 0, 0,true,false);
-                    }
-                    tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 10 + i, 22,"", true, 11, 1, true, true);
+                        for (int j = 0; j < 4; j++)// kolunmny
+                        {
+                            tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 10 + i, j + 19, tabelka001.Rows[i][j + 1].ToString(), false, 0, 0, true, false);
+                        }
+                        tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 10 + i, 22, "", true, 11, 1, true, true);
 
-                    for (int j = 6; j < 19; j++)// kolunmny
-                    {
-                        tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 10 + i, j + 18, tabelka001.Rows[i][j + 1].ToString(), false, 0, 0, true, false);
+                        for (int j = 6; j < 19; j++)// kolunmny
+                        {
+                            tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 10 + i, j + 18, tabelka001.Rows[i][j + 1].ToString(), false, 0, 0, true, false);
+                        }
                     }
                 }
+                catch (Exception ex)
+                {
+                    cm.log.Error(tenPlik + " Generwanie pod tabeli " + ex.Message);
+                }
 
-                //ExcelWorksheet MyWorksheet2 = MyExcel.Workbook.Worksheets[2];
                 DataTable table2 = (DataTable)Session["tabelka003"];
                 ExcelWorksheet MyWorksheet2 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], table2, 11, 0, 9, true, true, true, true, true);
 
-                // trzecia
-
-                //ExcelWorksheet MyWorksheet3 = MyExcel.Workbook.Worksheets[3];
                 DataTable table3 = (DataTable)Session["tabelka004"];
                 ExcelWorksheet MyWorksheet3 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], table3, 26, 0, 5, true, false, false, false, false);
 
-                // czwarta
-
-                //ExcelWorksheet MyWorksheet4 = MyExcel.Workbook.Worksheets[4];
                 DataTable table4 = (DataTable)Session["tabelka005"];
                 ExcelWorksheet MyWorksheet4 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[5], table4, 17, 0, 4, true, false, false, false, false);
 
@@ -630,7 +628,6 @@ namespace Statystyki_2018
                 if (!flaga)
                 {
                     e.Row.Cells[30].ColumnSpan = 4;
-                 
                 }
             }
         }

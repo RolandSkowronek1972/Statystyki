@@ -103,10 +103,9 @@ namespace Statystyki_2018
                 infoLabel12.Visible = cl.debug(int.Parse(idDzialu));
                 infoLabel13.Visible = cl.debug(int.Parse(idDzialu));
                 infoLabel14.Visible = cl.debug(int.Parse(idDzialu));
-              
+
                 infoLabel16.Visible = cl.debug(int.Parse(idDzialu));
                 infoLabel17.Visible = cl.debug(int.Parse(idDzialu));
-              
             }
             catch
             {
@@ -114,7 +113,6 @@ namespace Statystyki_2018
                 infoLabel1.Visible = false;
                 infoLabel5.Visible = false;
                 infoLabel2.Visible = false;
-
             }
         }
 
@@ -169,36 +167,26 @@ namespace Statystyki_2018
 
             FileInfo fNewFile = new FileInfo(download + "_.xlsx");
 
-            // pierwsza tabelka
-
             using (ExcelPackage MyExcel = new ExcelPackage(existingFile))
             {
                 ExcelWorksheet MyWorksheet1 = MyExcel.Workbook.Worksheets[1];
 
-                // pierwsza
-                MyWorksheet1 =tb. tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 4, 2, 3, 1, false);
-               // MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 13, 0, 5, false, false, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 4, 20, 3, 4, false);
                 MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 12, 0, 5, false, true, false, false, false);
-                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 16, 2, 3, 1, false);
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 17, 3, 3, 3, false);
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 16, 4, 3, 3, false);
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[5], (DataTable)Session["tabelka005"], 7, 3, 1, 3, false);
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[6], (DataTable)Session["tabelka006"], 1, 9, 0, 10, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[7], (DataTable)Session["tabelka007"], 14, 0, 4, false, true, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[8], (DataTable)Session["tabelka008"], 14, 0, 4, false, true, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[9], (DataTable)Session["tabelka009"], 1, 9, 0, 4, false);
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[10], (DataTable)Session["tabelka010"], 1, 9, 1, 5, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[11], (DataTable)Session["tabelka0011"], 5, 0, 3, false, false, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[12], (DataTable)Session["tabelka012"], 6, 0, 3, false, true, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[13], (DataTable)Session["tabelka013"], 1, 4, 0, 5, false);
 
-                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 16, 2, 3, 1, false);
-                //    MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 13, 0, 5, false, false, false, false, false);
-                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[5], (DataTable)Session["tabelka005"], 8, 2, 3, 1, false);
-                //  MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 14, 0, 4, false, false, false, false, false);
-                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[6], (DataTable)Session["tabelka006"], 6, 9, 3, 1, false);
-                //  MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[5], (DataTable)Session["tabelka005"], 4, 0, 3, false, false, false, false, false);
-              //  MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[6], (DataTable)Session["tabelka006"], 4, 0, 3, false, false, false, false, false);
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[7], (DataTable)Session["tabelka007"],13, 0, 4, false, false, false, false, false);
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[8], (DataTable)Session["tabelka008"], 13, 0, 4, false, false, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[14], (DataTable)Session["tabelka0014"], 1, 5, 0, 5, false);
 
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[9], (DataTable)Session["tabelka0009"], 8, 0, 3, false, true, false, false, false);
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[11], (DataTable)Session["tabelka0011"], 12, 0, 3, false, false, false, false, false);
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[12], (DataTable)Session["tabelka011"], 8, 0, 2, false, true, false, false, false);
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[13], (DataTable)Session["tabelka013"], 8, 0, 4, false, false, false, false, false);
-
-
-                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[10], (DataTable)Session["tabelka0013"], 1, 5, 2, 2, false);
-              
                 try
                 {
                     MyExcel.SaveAs(fNewFile);
@@ -341,7 +329,7 @@ namespace Statystyki_2018
                 cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 10");
             }
 
-            DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 10, 2,12, tenPlik);
+            DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 10, 2, 12, tenPlik);
             Session["tabelka010"] = tabelka01;
             pisz("tab_10_", 1, 12, tabelka01);
         }
@@ -395,7 +383,7 @@ namespace Statystyki_2018
             {
                 cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 14");
             }
-            DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 14, 8, 7  , tenPlik);
+            DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 14, 8, 7, tenPlik);
             Session["tabelka014"] = tabelka01;
             pisz("tab_14_", 8, 6, tabelka01);
         }
@@ -427,6 +415,7 @@ namespace Statystyki_2018
             cm.log.Info(tenPlik + ": rozpoczęcie tworzenia HTML 16");
             tworztabelkeHTML3("K2", 10, 16, tabelka01);
         }
+
         protected void tabela_17()
         {
             string idDzialu = (string)Session["id_dzialu"];
@@ -441,6 +430,7 @@ namespace Statystyki_2018
             gwTabela16.DataSource = tabelka01;
             gwTabela16.DataBind();
         }
+
         protected void tabela_18()
         {
             string idDzialu = (string)Session["id_dzialu"];
@@ -455,8 +445,6 @@ namespace Statystyki_2018
             gwTabela17.DataSource = tabelka01;
             gwTabela17.DataBind();
         }
-
-
 
         protected void tworztabelkeHTML3(string idKontrolki, int idWydzialu, int idtabeli, DataTable dane)
         {
@@ -635,7 +623,6 @@ namespace Statystyki_2018
             }
         }
 
-
         protected void naglowekTabeli_gwTabela16(object sender, GridViewRowEventArgs e)
         {
             if (e.Row.RowType == DataControlRowType.Header)
@@ -644,6 +631,7 @@ namespace Statystyki_2018
                 tb.makeHeader(dT, gwTabela16);
             }
         }
+
         protected void naglowekTabeli_gwTabela17(object sender, GridViewRowEventArgs e)
         {
             if (e.Row.RowType == DataControlRowType.Header)
@@ -651,7 +639,6 @@ namespace Statystyki_2018
                 DataTable dT = tb.naglowek(path, 8);
                 tb.makeHeader(dT, gwTabela17);
             }
-
         }
 
         protected void stopkaTabeli_gwTabela14(object sender, GridViewRowEventArgs e)
@@ -1181,7 +1168,5 @@ namespace Statystyki_2018
                 tb.makeSumRow(table, e, 0);
             }
         }
-
-       
     }
 }

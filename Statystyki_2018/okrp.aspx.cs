@@ -347,12 +347,14 @@ namespace Statystyki_2018
             }
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            odswiez();
-            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print2", "JavaScript: window.print();", true);
-            // ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print", "window.open('raport_01_print.aspx', '')", true);
-        }
+        /*
+                protected void Button1_Click(object sender, EventArgs e)
+                {
+                    odswiez();
+                    ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print2", "JavaScript: window.print();", true);
+                    // ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print", "window.open('raport_01_print.aspx', '')", true);
+                }
+        */
 
         protected void Button3_Click(object sender, EventArgs e)
         {
@@ -374,7 +376,6 @@ namespace Statystyki_2018
                 DataTable table = (DataTable)Session["tabelka001"];
 
                 MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], table, 29, 0, 4, true, false, true, true, true);
-                // pod tabela z tebeli nr 2
 
                 int rowik = table.Rows.Count;
 
@@ -393,21 +394,28 @@ namespace Statystyki_2018
                 tb.komorkaExcela(MyWorksheet1, rowik + 14, 5, "Ponad 5 lat", true, 0, 14);
 
                 DataTable tabelka001 = (DataTable)Session["tabelka002"];
-
-                foreach (DataRow dR in tabelka001.Rows)
+                try
                 {
-                    for (int i = 2; i < 12; i++)
+                    foreach (DataRow dR in tabelka001.Rows)
                     {
-                        try
+                        for (int i = 2; i < 12; i++)
                         {
-                            tb.komorkaExcela(MyWorksheet1, rowik + 4, i + 17, dR[i - 2].ToString().Trim(), true, 0, 1);
+                            try
+                            {
+                                tb.komorkaExcela(MyWorksheet1, rowik + 4, i + 17, dR[i - 2].ToString().Trim(), true, 0, 1);
+                            }
+                            catch
+                            { }
                         }
-                        catch
-                        { }
+                        tb.komorkaExcela(MyWorksheet1, rowik + 4, 13 + 17, dR[13].ToString().Trim(), false, 0, 0);
+                        rowik++;
                     }
-                    tb.komorkaExcela(MyWorksheet1, rowik + 4, 13 + 17, dR[13].ToString().Trim(), false, 0, 0);
-                    rowik++;
                 }
+                catch (Exception ex)
+                {
+                    cm.log.Error(tenPlik + " generowanie podtabeli " + ex.Message);
+                }
+
                 ExcelWorksheet MyWorksheet2 = MyExcel.Workbook.Worksheets[2];
 
                 DataTable table2 = (DataTable)Session["tabelka003"];

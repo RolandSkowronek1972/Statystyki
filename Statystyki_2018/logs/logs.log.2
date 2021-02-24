@@ -1,12 +1,513 @@
-2021-02-14 13:56:29,711  INFO Statystyki_2018.log_4_net - wymiana cleint: kwerendaWaliduj¹ca getDataTable - parametetr name= @rodzaj wartosc: cywilny
-2021-02-14 13:56:29,749  INFO Statystyki_2018.log_4_net - Brak spraw z repetytoriu, Co, Wydzia³u X, o numerze 1 z roku 2021
-2021-02-14 13:56:42,380  INFO Statystyki_2018.log_4_net - wymiana cleint: kwerendaWaliduj¹ca getDataTable - parametetr name= @rodzaj wartosc: cywilny
-2021-02-14 13:56:42,386  INFO Statystyki_2018.log_4_net - wymiana cleint: kwerendaWaliduj¹ca getDataTable - parametetr name= @rodzaj wartosc: cywilny
-2021-02-14 13:56:43,258  INFO Statystyki_2018.log_4_net - wymiana serwer getDataTable - parametetr name= @wydzial wartosc: X
-2021-02-14 13:56:43,259  INFO Statystyki_2018.log_4_net - wymiana serwer getDataTable - parametetr name= @rep wartosc: Co
-2021-02-14 13:56:43,259  INFO Statystyki_2018.log_4_net - wymiana serwer getDataTable - parametetr name= @numer wartosc: 1
-2021-02-14 13:56:43,259  INFO Statystyki_2018.log_4_net - wymiana serwer getDataTable - parametetr name= @rok wartosc: 2009
-2021-02-14 13:56:43,332  INFO Statystyki_2018.log_4_net - wymiana serwer Kwerenda: SELECT rtrim(k.oznaczenie) as 'wydzial', rtrim(rep.symbol) as 'repertorium', s.numer, s.rok, o.d_orzecz, o.msword, o.rodzaj from sprawa s join repertorium rep on s.repertorium=rep.numer join orzeczenie o on o.id_sprawy=s.ident, konfig k where s.czyus=0 and k.czyus=0 and o.czyus=0 and @rok = s.rok and @numer=s.numer and @rep like rtrim(rep.symbol) and (select rtrim(oznaczenie) from konfig where czyus=0)=@wydzial and o.rodzaj is not null and o.msword is not null Error getDataTable : Invalid object name 'orzeczenie'.
-2021-02-14 13:56:43,332  INFO Statystyki_2018.log_4_net - Wymiana serwer: Brak wyników kwerendy zapytania
-2021-02-14 13:56:43,466  INFO Statystyki_2018.log_4_net - Wymiana odczyt danych: Data at the root level is invalid. Line 1, position 1.
-2021-02-14 13:56:43,466  INFO Statystyki_2018.log_4_net - wymiana cleint: kwerendaWaliduj¹ca getDataTable - parametetr name= @rodzaj wartosc: cywilny
+2021-02-24 14:36:48,193  INFO Statystyki_2018.log_4_net - uruchomienie logowania
+2021-02-24 14:36:48,201  INFO Statystyki_2018.log_4_net - rozpoczecie logowania 14:36:48
+2021-02-24 14:36:48,262  INFO Statystyki_2018.log_4_net - uruchomienie logowania
+2021-02-24 14:36:48,262  INFO Statystyki_2018.log_4_net - rozpoczecie logowania 14:36:48
+2021-02-24 14:36:48,661  INFO Statystyki_2018.log_4_net - b³ad logowania domenowego  14:36:48
+2021-02-24 14:36:48,662  INFO Statystyki_2018.log_4_net - próba logowania z bazy  14:36:48
+2021-02-24 14:36:48,665  INFO Statystyki_2018.log_4_net - b³ad logowania domenowego  14:36:48
+2021-02-24 14:36:48,666  INFO Statystyki_2018.log_4_net - próba logowania z bazy  14:36:48
+2021-02-24 14:36:48,855  INFO Statystyki_2018.log_4_net - Logowanie: identyfikator u¿ytkownika: test to 6
+2021-02-24 14:36:48,856  INFO Statystyki_2018.log_4_net - logowania z bazy poprawne  14:36:48
+2021-02-24 14:36:48,857  INFO Statystyki_2018.log_4_net - Logowanie: identyfikator u¿ytkownika: test to 6
+2021-02-24 14:36:48,857  INFO Statystyki_2018.log_4_net - logowania z bazy poprawne  14:36:48
+2021-02-24 14:36:48,857  INFO Statystyki_2018.log_4_net - uruchomienie  redirector.aspx 14:36:48
+2021-02-24 14:36:48,858  INFO Statystyki_2018.log_4_net - uruchomienie  redirector.aspx 14:36:48
+2021-02-24 14:36:48,937  INFO Statystyki_2018.log_4_net - start redirektora  14:36:48
+2021-02-24 14:36:48,938  INFO Statystyki_2018.log_4_net - start redirektora  14:36:48
+2021-02-24 14:36:48,939  INFO Statystyki_2018.log_4_net - start tworzenia Ste1   14:36:48
+2021-02-24 14:36:48,939  INFO Statystyki_2018.log_4_net - start tworzenia menu  daneDoManuMiesieczne  14:36:48
+2021-02-24 14:36:48,940  INFO Statystyki_2018.log_4_net - start tworzenia Ste1   14:36:48
+2021-02-24 14:36:48,940  INFO Statystyki_2018.log_4_net - start tworzenia menu  daneDoManuMiesieczne  14:36:48
+2021-02-24 14:36:48,941  INFO Statystyki_2018.log_4_net -  getDataTable - parametetr name= @identyfikatorUzytkownika wartosc: 6
+2021-02-24 14:36:48,941  INFO Statystyki_2018.log_4_net -  getDataTable - parametetr name= @identyfikatorUzytkownika wartosc: 6
+2021-02-24 14:36:48,946  INFO Statystyki_2018.log_4_net - start tworzenia menu  daneDoManuKontrolek 14:36:48
+2021-02-24 14:36:48,946  INFO Statystyki_2018.log_4_net - start tworzenia menu  daneDoManuKontrolek 14:36:48
+2021-02-24 14:36:48,947  INFO Statystyki_2018.log_4_net - naglowek getDataTable - parametetr name= @identyfikatorUzytkownika wartosc: 6
+2021-02-24 14:36:48,947  INFO Statystyki_2018.log_4_net - naglowek getDataTable - parametetr name= @identyfikatorUzytkownika wartosc: 6
+2021-02-24 14:36:48,948  INFO Statystyki_2018.log_4_net - start tworzenia menu  daneDoManuMSS 14:36:48
+2021-02-24 14:36:48,948  INFO Statystyki_2018.log_4_net - start tworzenia menu  daneDoManuMSS 14:36:48
+2021-02-24 14:36:48,949  INFO Statystyki_2018.log_4_net - Naglowki getDataTable - parametetr name= @identyfikatorUzytkownika wartosc: 6
+2021-02-24 14:36:48,950  INFO Statystyki_2018.log_4_net - Naglowki getDataTable - parametetr name= @identyfikatorUzytkownika wartosc: 6
+2021-02-24 14:36:48,952  INFO Statystyki_2018.log_4_net - start tworzenia menu daneDoManuInne  14:36:48
+2021-02-24 14:36:48,952  INFO Statystyki_2018.log_4_net - start tworzenia menu daneDoManuInne  14:36:48
+2021-02-24 14:36:48,955  INFO Statystyki_2018.log_4_net - start tworzenia menu wyloguj  14:36:48
+2021-02-24 14:36:48,955  INFO Statystyki_2018.log_4_net - start tworzenia menu wyloguj  14:36:48
+2021-02-24 14:36:48,956  INFO Statystyki_2018.log_4_net - Header: Rozpoczêcie procedury tworzenia elementów menu wyloguj
+2021-02-24 14:36:48,956  INFO Statystyki_2018.log_4_net - Header: Rozpoczêcie procedury tworzenia elementów menu wyloguj
+2021-02-24 14:36:48,958  INFO Statystyki_2018.log_4_net - koniec tworzenia manu   14:36:48
+2021-02-24 14:36:48,958  INFO Statystyki_2018.log_4_net - koniec tworzenia manu   14:36:48
+2021-02-24 14:36:51,612  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @id_wydzial wartosc: 12
+2021-02-24 14:36:51,612  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @id_tabeli wartosc: 2
+2021-02-24 14:36:51,634  INFO Statystyki_2018.log_4_net - oglc.aspx: rozpoczêcie tworzenia tabeli 1
+2021-02-24 14:36:51,636  INFO Statystyki_2018.log_4_net - oglc.aspx :Generowanie tabeli danych: Wyci¹dniêcie kwerend dla tabeli :1
+2021-02-24 14:36:51,636  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @id_tabeli wartosc: 1
+2021-02-24 14:36:51,636  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @id_dzialu wartosc: 12
+2021-02-24 14:36:51,640  INFO Statystyki_2018.log_4_net - oglc.aspx :Generowanie tabeli danych: Wpisywanie danych sedziów dla tabeli : 1
+2021-02-24 14:36:51,640  INFO Statystyki_2018.log_4_net - oglc.aspx :Generowanie tabeli danych: Wpisywanie danych sedziów dla tabeli -> parametr data_1: 2021-01-01
+2021-02-24 14:36:51,640  INFO Statystyki_2018.log_4_net - oglc.aspx :Generowanie tabeli danych: Wpisywanie danych sedziów dla tabeli -> parametr data_2: 2021-01-31
+2021-02-24 14:36:51,640  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:51,640  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:51,731  INFO Statystyki_2018.log_4_net - oglc.aspx :Generowanie tabeli danych: Wpisywanie danych dla tabeli : 1 Input string was not in a correct format.
+2021-02-24 14:36:51,737  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:51,738  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:51,745  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:51,745  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:51,747  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:51,747  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:51,749  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:51,749  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:51,762  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:51,763  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:51,767  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:51,767  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:51,774  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:51,775  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:51,777  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:51,777  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:51,780  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:51,780  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:51,784  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:51,784  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:51,787  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:51,788  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:51,958  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:51,958  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:52,134  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:52,134  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:52,311  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:52,311  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:52,503  INFO Statystyki_2018.log_4_net - oglc.aspx: rozpoczêcie tworzenia tabeli 3
+2021-02-24 14:36:52,504  INFO Statystyki_2018.log_4_net - oglc.aspx :Generowanie tabeli danych: Wyci¹dniêcie kwerend dla tabeli :3
+2021-02-24 14:36:52,504  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @id_tabeli wartosc: 3
+2021-02-24 14:36:52,504  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @id_dzialu wartosc: 12
+2021-02-24 14:36:52,505  INFO Statystyki_2018.log_4_net - oglc.aspx :Generowanie tabeli danych: Wpisywanie danych sedziów dla tabeli : 3
+2021-02-24 14:36:52,505  INFO Statystyki_2018.log_4_net - oglc.aspx :Generowanie tabeli danych: Wpisywanie danych sedziów dla tabeli -> parametr data_1: 2021-01-01
+2021-02-24 14:36:52,506  INFO Statystyki_2018.log_4_net - oglc.aspx :Generowanie tabeli danych: Wpisywanie danych sedziów dla tabeli -> parametr data_2: 2021-01-31
+2021-02-24 14:36:52,506  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:52,506  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:52,592  INFO Statystyki_2018.log_4_net - oglc.aspx :Generowanie tabeli danych: Wpisywanie danych dla tabeli : 3 Input string was not in a correct format.
+2021-02-24 14:36:52,594  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:52,594  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:52,598  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:52,598  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:52,599  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:52,599  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:52,599  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:52,600  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:52,603  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:52,604  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:52,714  INFO Statystyki_2018.log_4_net - sumowanie w stopce : Specified argument was out of the range of valid values.
+Parameter name: index
+2021-02-24 14:36:52,717  INFO Statystyki_2018.log_4_net - oglc.aspx: rozpoczêcie tworzenia tabeli 4
+2021-02-24 14:36:52,718  INFO Statystyki_2018.log_4_net - oglc.aspx :Generowanie tabeli danych: Wyci¹dniêcie kwerend dla tabeli :4
+2021-02-24 14:36:52,718  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @id_tabeli wartosc: 4
+2021-02-24 14:36:52,719  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @id_dzialu wartosc: 12
+2021-02-24 14:36:52,722  INFO Statystyki_2018.log_4_net - oglc.aspx :Generowanie tabeli danych: Wpisywanie danych sedziów dla tabeli : 4
+2021-02-24 14:36:52,723  INFO Statystyki_2018.log_4_net - oglc.aspx :Generowanie tabeli danych: Wpisywanie danych sedziów dla tabeli -> parametr data_1: 2021-01-01
+2021-02-24 14:36:52,723  INFO Statystyki_2018.log_4_net - oglc.aspx :Generowanie tabeli danych: Wpisywanie danych sedziów dla tabeli -> parametr data_2: 2021-01-31
+2021-02-24 14:36:52,723  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:52,724  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:52,824  INFO Statystyki_2018.log_4_net - oglc.aspx :Generowanie tabeli danych: Wpisywanie danych dla tabeli : 4 Input string was not in a correct format.
+2021-02-24 14:36:52,827  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:52,827  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:52,837  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:52,837  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:52,838  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:52,838  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:52,838  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_1 wartosc: 2021-01-01
+2021-02-24 14:36:52,839  INFO Statystyki_2018.log_4_net - oglc.aspx getDataTable - parametetr name= @data_2 wartosc: 2021-01-31
+2021-02-24 14:36:52,936  INFO Statystyki_2018.log_4_net - sumowanie w stopce : Specified argument was out of the range of valid values.
+Parameter name: index
+2021-02-24 14:36:52,944  INFO Statystyki_2018.log_4_net - start tworzenia Ste1   14:36:52
+2021-02-24 14:36:52,945  INFO Statystyki_2018.log_4_net - start tworzenia menu   14:36:52
+2021-02-24 14:36:52,946  INFO Statystyki_2018.log_4_net - koniec tworzenia manu   14:36:52
+2021-02-24 14:36:54,906  INFO Statystyki_2018.log_4_net - start tworzenia Ste1   14:36:54
+2021-02-24 14:36:55,037  INFO Statystyki_2018.log_4_net - Excell ilosc wierszy 12
+2021-02-24 14:36:55,037  INFO Statystyki_2018.log_4_net - Excell ilosc Kolumn 16
+2021-02-24 14:36:55,037  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna1 wartosc  111
+2021-02-24 14:36:55,038  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna2 wartosc  0
+2021-02-24 14:36:55,038  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna3 wartosc  0
+2021-02-24 14:36:55,038  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna4 wartosc  24,1
+2021-02-24 14:36:55,039  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna5 wartosc  0
+2021-02-24 14:36:55,039  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna6 wartosc  123,321
+2021-02-24 14:36:55,040  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna7 wartosc  0
+2021-02-24 14:36:55,040  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna8 wartosc  0
+2021-02-24 14:36:55,040  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna9 wartosc  0
+2021-02-24 14:36:55,041  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna10 wartosc  0
+2021-02-24 14:36:55,041  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna11 wartosc  0
+2021-02-24 14:36:55,042  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna12 wartosc  0
+2021-02-24 14:36:55,042  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna13 wartosc  0
+2021-02-24 14:36:55,043  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna14 wartosc  0
+2021-02-24 14:36:55,043  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna15 wartosc  0
+2021-02-24 14:36:55,043  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna16 wartosc  0
+2021-02-24 14:36:55,044  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna1 wartosc  0
+2021-02-24 14:36:55,044  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna2 wartosc  22
+2021-02-24 14:36:55,044  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna3 wartosc  0
+2021-02-24 14:36:55,045  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna4 wartosc  0
+2021-02-24 14:36:55,045  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna5 wartosc  4,99
+2021-02-24 14:36:55,045  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna6 wartosc  c6 w2
+2021-02-24 14:36:55,045  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna7 wartosc  0
+2021-02-24 14:36:55,046  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna8 wartosc  0
+2021-02-24 14:36:55,046  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna9 wartosc  0
+2021-02-24 14:36:55,046  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna10 wartosc  0
+2021-02-24 14:36:55,047  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna11 wartosc  0
+2021-02-24 14:36:55,047  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna12 wartosc  0
+2021-02-24 14:36:55,047  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna13 wartosc  0
+2021-02-24 14:36:55,047  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna14 wartosc  0
+2021-02-24 14:36:55,048  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna15 wartosc  0
+2021-02-24 14:36:55,048  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna16 wartosc  0
+2021-02-24 14:36:55,048  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna1 wartosc  123.15
+2021-02-24 14:36:55,049  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna2 wartosc  0
+2021-02-24 14:36:55,049  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna3 wartosc  124
+2021-02-24 14:36:55,049  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna4 wartosc  0
+2021-02-24 14:36:55,049  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna5 wartosc  c5 w3
+2021-02-24 14:36:55,050  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna6 wartosc  0
+2021-02-24 14:36:55,050  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna7 wartosc  0
+2021-02-24 14:36:55,050  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna8 wartosc  0
+2021-02-24 14:36:55,051  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna9 wartosc  0
+2021-02-24 14:36:55,051  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna10 wartosc  0
+2021-02-24 14:36:55,051  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna11 wartosc  0
+2021-02-24 14:36:55,051  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna12 wartosc  0
+2021-02-24 14:36:55,052  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna13 wartosc  0
+2021-02-24 14:36:55,052  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna14 wartosc  0
+2021-02-24 14:36:55,052  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna15 wartosc  0
+2021-02-24 14:36:55,052  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna16 wartosc  0
+2021-02-24 14:36:55,053  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna1 wartosc  0
+2021-02-24 14:36:55,053  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna2 wartosc  0
+2021-02-24 14:36:55,053  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna3 wartosc  0
+2021-02-24 14:36:55,054  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna4 wartosc  0
+2021-02-24 14:36:55,054  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna5 wartosc  0
+2021-02-24 14:36:55,054  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna6 wartosc  c6 w4
+2021-02-24 14:36:55,054  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna7 wartosc  0
+2021-02-24 14:36:55,055  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna8 wartosc  0
+2021-02-24 14:36:55,055  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna9 wartosc  0
+2021-02-24 14:36:55,055  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna10 wartosc  1012,334
+2021-02-24 14:36:55,055  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna11 wartosc  0
+2021-02-24 14:36:55,056  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna12 wartosc  0
+2021-02-24 14:36:55,056  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna13 wartosc  0
+2021-02-24 14:36:55,056  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna14 wartosc  0
+2021-02-24 14:36:55,057  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna15 wartosc  0
+2021-02-24 14:36:55,057  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna16 wartosc  0
+2021-02-24 14:36:55,057  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna1 wartosc  0
+2021-02-24 14:36:55,058  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna2 wartosc  0
+2021-02-24 14:36:55,058  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna3 wartosc  c3 w5
+2021-02-24 14:36:55,059  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna4 wartosc  c4 w5
+2021-02-24 14:36:55,059  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna5 wartosc  0
+2021-02-24 14:36:55,059  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna6 wartosc  c6 w5
+2021-02-24 14:36:55,059  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna7 wartosc  0
+2021-02-24 14:36:55,060  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna8 wartosc  0
+2021-02-24 14:36:55,060  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna9 wartosc  0
+2021-02-24 14:36:55,060  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna10 wartosc  0
+2021-02-24 14:36:55,060  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna11 wartosc  0
+2021-02-24 14:36:55,061  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna12 wartosc  0
+2021-02-24 14:36:55,061  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna13 wartosc  0
+2021-02-24 14:36:55,061  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna14 wartosc  0
+2021-02-24 14:36:55,061  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna15 wartosc  0
+2021-02-24 14:36:55,062  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna16 wartosc  0
+2021-02-24 14:36:55,062  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna1 wartosc  0
+2021-02-24 14:36:55,062  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna2 wartosc  0
+2021-02-24 14:36:55,062  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna3 wartosc  0
+2021-02-24 14:36:55,063  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna4 wartosc  4,606
+2021-02-24 14:36:55,063  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna5 wartosc  5666,66
+2021-02-24 14:36:55,063  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna6 wartosc  0
+2021-02-24 14:36:55,063  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna7 wartosc  0
+2021-02-24 14:36:55,064  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna8 wartosc  0
+2021-02-24 14:36:55,064  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna9 wartosc  0
+2021-02-24 14:36:55,064  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna10 wartosc  0
+2021-02-24 14:36:55,064  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna11 wartosc  0
+2021-02-24 14:36:55,065  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna12 wartosc  0
+2021-02-24 14:36:55,065  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna13 wartosc  0
+2021-02-24 14:36:55,065  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna14 wartosc  0
+2021-02-24 14:36:55,065  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna15 wartosc  0
+2021-02-24 14:36:55,065  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna16 wartosc  0
+2021-02-24 14:36:55,065  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna1 wartosc  0
+2021-02-24 14:36:55,065  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna2 wartosc  0
+2021-02-24 14:36:55,066  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna3 wartosc  0
+2021-02-24 14:36:55,066  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna4 wartosc  0
+2021-02-24 14:36:55,066  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna5 wartosc  0
+2021-02-24 14:36:55,066  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna6 wartosc  0
+2021-02-24 14:36:55,067  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna7 wartosc  c7 w7
+2021-02-24 14:36:55,067  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna8 wartosc  0
+2021-02-24 14:36:55,067  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna9 wartosc  0
+2021-02-24 14:36:55,068  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna10 wartosc  0
+2021-02-24 14:36:55,069  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna11 wartosc  0
+2021-02-24 14:36:55,069  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna12 wartosc  0
+2021-02-24 14:36:55,069  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna13 wartosc  0
+2021-02-24 14:36:55,070  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna14 wartosc  0
+2021-02-24 14:36:55,070  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna15 wartosc  0
+2021-02-24 14:36:55,070  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna16 wartosc  0
+2021-02-24 14:36:55,070  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna1 wartosc  sierpien
+2021-02-24 14:36:55,071  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna2 wartosc  0
+2021-02-24 14:36:55,071  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna3 wartosc  0
+2021-02-24 14:36:55,071  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna4 wartosc  0
+2021-02-24 14:36:55,071  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna5 wartosc  0
+2021-02-24 14:36:55,072  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna6 wartosc  0
+2021-02-24 14:36:55,072  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna7 wartosc  0
+2021-02-24 14:36:55,072  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna8 wartosc  0
+2021-02-24 14:36:55,072  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna9 wartosc  0
+2021-02-24 14:36:55,073  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna10 wartosc  0
+2021-02-24 14:36:55,073  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna11 wartosc  0
+2021-02-24 14:36:55,074  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna12 wartosc  0
+2021-02-24 14:36:55,074  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna13 wartosc  0
+2021-02-24 14:36:55,074  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna14 wartosc  0
+2021-02-24 14:36:55,075  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna15 wartosc  0
+2021-02-24 14:36:55,075  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna16 wartosc  0
+2021-02-24 14:36:55,075  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna1 wartosc  0
+2021-02-24 14:36:55,075  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna2 wartosc  0
+2021-02-24 14:36:55,076  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna3 wartosc  c3 w9
+2021-02-24 14:36:55,076  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna4 wartosc  c4 w9
+2021-02-24 14:36:55,076  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna5 wartosc  0
+2021-02-24 14:36:55,076  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna6 wartosc  c6 w9
+2021-02-24 14:36:55,077  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna7 wartosc  0
+2021-02-24 14:36:55,077  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna8 wartosc  0
+2021-02-24 14:36:55,077  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna9 wartosc  0
+2021-02-24 14:36:55,078  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna10 wartosc  0
+2021-02-24 14:36:55,078  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna11 wartosc  0
+2021-02-24 14:36:55,078  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna12 wartosc  0
+2021-02-24 14:36:55,078  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna13 wartosc  0
+2021-02-24 14:36:55,079  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna14 wartosc  0
+2021-02-24 14:36:55,079  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna15 wartosc  0
+2021-02-24 14:36:55,079  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna16 wartosc  0
+2021-02-24 14:36:55,080  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna1 wartosc  0
+2021-02-24 14:36:55,080  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna2 wartosc  0
+2021-02-24 14:36:55,080  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna3 wartosc  0
+2021-02-24 14:36:55,080  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna4 wartosc  0
+2021-02-24 14:36:55,081  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna5 wartosc  0
+2021-02-24 14:36:55,081  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna6 wartosc  0
+2021-02-24 14:36:55,081  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna7 wartosc  0
+2021-02-24 14:36:55,081  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna8 wartosc  0
+2021-02-24 14:36:55,082  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna9 wartosc  0
+2021-02-24 14:36:55,082  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna10 wartosc  0
+2021-02-24 14:36:55,082  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna11 wartosc  0
+2021-02-24 14:36:55,083  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna12 wartosc  0
+2021-02-24 14:36:55,083  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna13 wartosc  0
+2021-02-24 14:36:55,083  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna14 wartosc  0
+2021-02-24 14:36:55,084  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna15 wartosc  15
+2021-02-24 14:36:55,084  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna16 wartosc  0
+2021-02-24 14:36:55,084  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna1 wartosc  0
+2021-02-24 14:36:55,085  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna2 wartosc  0
+2021-02-24 14:36:55,085  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna3 wartosc  0
+2021-02-24 14:36:55,085  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna4 wartosc  0
+2021-02-24 14:36:55,085  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna5 wartosc  0
+2021-02-24 14:36:55,086  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna6 wartosc  0
+2021-02-24 14:36:55,086  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna7 wartosc  0
+2021-02-24 14:36:55,086  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna8 wartosc  0
+2021-02-24 14:36:55,087  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna9 wartosc  0
+2021-02-24 14:36:55,087  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna10 wartosc  0
+2021-02-24 14:36:55,087  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna11 wartosc  0
+2021-02-24 14:36:55,088  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna12 wartosc  0
+2021-02-24 14:36:55,088  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna13 wartosc  0
+2021-02-24 14:36:55,088  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna14 wartosc  0
+2021-02-24 14:36:55,089  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna15 wartosc  2666,66
+2021-02-24 14:36:55,089  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna16 wartosc  123,324
+2021-02-24 14:36:55,089  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna1 wartosc  0
+2021-02-24 14:36:55,090  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna2 wartosc  0
+2021-02-24 14:36:55,090  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna3 wartosc  0
+2021-02-24 14:36:55,091  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna4 wartosc  0
+2021-02-24 14:36:55,091  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna5 wartosc  0
+2021-02-24 14:36:55,092  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna6 wartosc  0
+2021-02-24 14:36:55,092  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna7 wartosc  0
+2021-02-24 14:36:55,092  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna8 wartosc  0
+2021-02-24 14:36:55,093  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna9 wartosc  0
+2021-02-24 14:36:55,093  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna10 wartosc  0
+2021-02-24 14:36:55,093  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna11 wartosc  0
+2021-02-24 14:36:55,094  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna12 wartosc  0
+2021-02-24 14:36:55,094  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna13 wartosc  0
+2021-02-24 14:36:55,094  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna14 wartosc  0
+2021-02-24 14:36:55,095  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna15 wartosc  0
+2021-02-24 14:36:55,095  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna16 wartosc  0
+2021-02-24 14:37:27,819  INFO Statystyki_2018.log_4_net - start tworzenia Ste1   14:37:27
+2021-02-24 14:37:27,850  INFO Statystyki_2018.log_4_net - Excell ilosc wierszy 12
+2021-02-24 14:37:27,850  INFO Statystyki_2018.log_4_net - Excell ilosc Kolumn 16
+2021-02-24 14:37:27,850  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna1 wartosc  111
+2021-02-24 14:37:27,851  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna2 wartosc  0
+2021-02-24 14:37:27,851  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna3 wartosc  0
+2021-02-24 14:37:27,852  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna4 wartosc  24,1
+2021-02-24 14:37:27,852  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna5 wartosc  0
+2021-02-24 14:37:27,852  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna6 wartosc  123,321
+2021-02-24 14:37:27,853  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna7 wartosc  0
+2021-02-24 14:37:27,853  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna8 wartosc  0
+2021-02-24 14:37:27,853  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna9 wartosc  0
+2021-02-24 14:37:27,854  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna10 wartosc  0
+2021-02-24 14:37:27,854  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna11 wartosc  0
+2021-02-24 14:37:27,855  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna12 wartosc  0
+2021-02-24 14:37:27,855  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna13 wartosc  0
+2021-02-24 14:37:27,855  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna14 wartosc  0
+2021-02-24 14:37:27,856  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna15 wartosc  0
+2021-02-24 14:37:27,856  INFO Statystyki_2018.log_4_net - wiersz: 0 kolumna16 wartosc  0
+2021-02-24 14:37:27,856  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna1 wartosc  0
+2021-02-24 14:37:27,856  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna2 wartosc  22
+2021-02-24 14:37:27,857  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna3 wartosc  0
+2021-02-24 14:37:27,857  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna4 wartosc  0
+2021-02-24 14:37:27,857  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna5 wartosc  4,99
+2021-02-24 14:37:27,857  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna6 wartosc  c6 w2
+2021-02-24 14:37:27,858  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna7 wartosc  0
+2021-02-24 14:37:27,858  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna8 wartosc  0
+2021-02-24 14:37:27,858  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna9 wartosc  0
+2021-02-24 14:37:27,859  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna10 wartosc  0
+2021-02-24 14:37:27,860  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna11 wartosc  0
+2021-02-24 14:37:27,861  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna12 wartosc  0
+2021-02-24 14:37:27,861  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna13 wartosc  0
+2021-02-24 14:37:27,862  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna14 wartosc  0
+2021-02-24 14:37:27,862  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna15 wartosc  0
+2021-02-24 14:37:27,862  INFO Statystyki_2018.log_4_net - wiersz: 1 kolumna16 wartosc  0
+2021-02-24 14:37:27,863  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna1 wartosc  123.15
+2021-02-24 14:37:27,863  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna2 wartosc  0
+2021-02-24 14:37:27,863  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna3 wartosc  124
+2021-02-24 14:37:27,864  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna4 wartosc  0
+2021-02-24 14:37:27,864  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna5 wartosc  c5 w3
+2021-02-24 14:37:27,864  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna6 wartosc  0
+2021-02-24 14:37:27,865  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna7 wartosc  0
+2021-02-24 14:37:27,865  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna8 wartosc  0
+2021-02-24 14:37:27,865  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna9 wartosc  0
+2021-02-24 14:37:27,866  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna10 wartosc  0
+2021-02-24 14:37:27,866  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna11 wartosc  0
+2021-02-24 14:37:27,867  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna12 wartosc  0
+2021-02-24 14:37:27,867  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna13 wartosc  0
+2021-02-24 14:37:27,867  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna14 wartosc  0
+2021-02-24 14:37:27,867  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna15 wartosc  0
+2021-02-24 14:37:27,868  INFO Statystyki_2018.log_4_net - wiersz: 2 kolumna16 wartosc  0
+2021-02-24 14:37:27,868  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna1 wartosc  0
+2021-02-24 14:37:27,868  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna2 wartosc  0
+2021-02-24 14:37:27,868  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna3 wartosc  0
+2021-02-24 14:37:27,868  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna4 wartosc  0
+2021-02-24 14:37:27,869  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna5 wartosc  0
+2021-02-24 14:37:27,869  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna6 wartosc  c6 w4
+2021-02-24 14:37:27,869  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna7 wartosc  0
+2021-02-24 14:37:27,870  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna8 wartosc  0
+2021-02-24 14:37:27,870  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna9 wartosc  0
+2021-02-24 14:37:27,870  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna10 wartosc  1012,334
+2021-02-24 14:37:27,871  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna11 wartosc  0
+2021-02-24 14:37:27,871  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna12 wartosc  0
+2021-02-24 14:37:27,871  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna13 wartosc  0
+2021-02-24 14:37:27,872  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna14 wartosc  0
+2021-02-24 14:37:27,872  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna15 wartosc  0
+2021-02-24 14:37:27,872  INFO Statystyki_2018.log_4_net - wiersz: 3 kolumna16 wartosc  0
+2021-02-24 14:37:27,873  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna1 wartosc  0
+2021-02-24 14:37:27,873  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna2 wartosc  0
+2021-02-24 14:37:27,873  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna3 wartosc  c3 w5
+2021-02-24 14:37:27,874  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna4 wartosc  c4 w5
+2021-02-24 14:37:27,875  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna5 wartosc  0
+2021-02-24 14:37:27,875  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna6 wartosc  c6 w5
+2021-02-24 14:37:27,875  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna7 wartosc  0
+2021-02-24 14:37:27,875  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna8 wartosc  0
+2021-02-24 14:37:27,876  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna9 wartosc  0
+2021-02-24 14:37:27,876  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna10 wartosc  0
+2021-02-24 14:37:27,877  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna11 wartosc  0
+2021-02-24 14:37:27,877  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna12 wartosc  0
+2021-02-24 14:37:27,877  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna13 wartosc  0
+2021-02-24 14:37:27,878  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna14 wartosc  0
+2021-02-24 14:37:27,878  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna15 wartosc  0
+2021-02-24 14:37:27,878  INFO Statystyki_2018.log_4_net - wiersz: 4 kolumna16 wartosc  0
+2021-02-24 14:37:27,879  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna1 wartosc  0
+2021-02-24 14:37:27,879  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna2 wartosc  0
+2021-02-24 14:37:27,879  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna3 wartosc  0
+2021-02-24 14:37:27,880  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna4 wartosc  4,606
+2021-02-24 14:37:27,880  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna5 wartosc  5666,66
+2021-02-24 14:37:27,880  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna6 wartosc  0
+2021-02-24 14:37:27,881  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna7 wartosc  0
+2021-02-24 14:37:27,881  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna8 wartosc  0
+2021-02-24 14:37:27,881  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna9 wartosc  0
+2021-02-24 14:37:27,882  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna10 wartosc  0
+2021-02-24 14:37:27,882  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna11 wartosc  0
+2021-02-24 14:37:27,882  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna12 wartosc  0
+2021-02-24 14:37:27,883  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna13 wartosc  0
+2021-02-24 14:37:27,883  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna14 wartosc  0
+2021-02-24 14:37:27,883  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna15 wartosc  0
+2021-02-24 14:37:27,884  INFO Statystyki_2018.log_4_net - wiersz: 5 kolumna16 wartosc  0
+2021-02-24 14:37:27,884  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna1 wartosc  0
+2021-02-24 14:37:27,884  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna2 wartosc  0
+2021-02-24 14:37:27,885  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna3 wartosc  0
+2021-02-24 14:37:27,885  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna4 wartosc  0
+2021-02-24 14:37:27,885  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna5 wartosc  0
+2021-02-24 14:37:27,886  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna6 wartosc  0
+2021-02-24 14:37:27,886  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna7 wartosc  c7 w7
+2021-02-24 14:37:27,886  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna8 wartosc  0
+2021-02-24 14:37:27,886  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna9 wartosc  0
+2021-02-24 14:37:27,887  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna10 wartosc  0
+2021-02-24 14:37:27,887  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna11 wartosc  0
+2021-02-24 14:37:27,887  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna12 wartosc  0
+2021-02-24 14:37:27,888  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna13 wartosc  0
+2021-02-24 14:37:27,888  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna14 wartosc  0
+2021-02-24 14:37:27,888  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna15 wartosc  0
+2021-02-24 14:37:27,889  INFO Statystyki_2018.log_4_net - wiersz: 6 kolumna16 wartosc  0
+2021-02-24 14:37:27,889  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna1 wartosc  sierpien
+2021-02-24 14:37:27,889  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna2 wartosc  0
+2021-02-24 14:37:27,889  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna3 wartosc  0
+2021-02-24 14:37:27,890  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna4 wartosc  0
+2021-02-24 14:37:27,890  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna5 wartosc  0
+2021-02-24 14:37:27,890  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna6 wartosc  0
+2021-02-24 14:37:27,891  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna7 wartosc  0
+2021-02-24 14:37:27,891  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna8 wartosc  0
+2021-02-24 14:37:27,891  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna9 wartosc  0
+2021-02-24 14:37:27,891  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna10 wartosc  0
+2021-02-24 14:37:27,892  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna11 wartosc  0
+2021-02-24 14:37:27,892  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna12 wartosc  0
+2021-02-24 14:37:27,892  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna13 wartosc  0
+2021-02-24 14:37:27,893  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna14 wartosc  0
+2021-02-24 14:37:27,893  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna15 wartosc  0
+2021-02-24 14:37:27,893  INFO Statystyki_2018.log_4_net - wiersz: 7 kolumna16 wartosc  0
+2021-02-24 14:37:27,893  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna1 wartosc  0
+2021-02-24 14:37:27,894  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna2 wartosc  0
+2021-02-24 14:37:27,894  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna3 wartosc  c3 w9
+2021-02-24 14:37:27,894  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna4 wartosc  c4 w9
+2021-02-24 14:37:27,895  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna5 wartosc  0
+2021-02-24 14:37:27,895  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna6 wartosc  c6 w9
+2021-02-24 14:37:27,895  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna7 wartosc  0
+2021-02-24 14:37:27,895  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna8 wartosc  0
+2021-02-24 14:37:27,896  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna9 wartosc  0
+2021-02-24 14:37:27,896  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna10 wartosc  0
+2021-02-24 14:37:27,896  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna11 wartosc  0
+2021-02-24 14:37:27,897  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna12 wartosc  0
+2021-02-24 14:37:27,897  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna13 wartosc  0
+2021-02-24 14:37:27,897  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna14 wartosc  0
+2021-02-24 14:37:27,898  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna15 wartosc  0
+2021-02-24 14:37:27,898  INFO Statystyki_2018.log_4_net - wiersz: 8 kolumna16 wartosc  0
+2021-02-24 14:37:27,898  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna1 wartosc  0
+2021-02-24 14:37:27,899  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna2 wartosc  0
+2021-02-24 14:37:27,899  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna3 wartosc  0
+2021-02-24 14:37:27,899  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna4 wartosc  0
+2021-02-24 14:37:27,900  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna5 wartosc  0
+2021-02-24 14:37:27,900  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna6 wartosc  0
+2021-02-24 14:37:27,900  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna7 wartosc  0
+2021-02-24 14:37:27,900  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna8 wartosc  0
+2021-02-24 14:37:27,901  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna9 wartosc  0
+2021-02-24 14:37:27,901  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna10 wartosc  0
+2021-02-24 14:37:27,901  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna11 wartosc  0
+2021-02-24 14:37:27,902  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna12 wartosc  0
+2021-02-24 14:37:27,902  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna13 wartosc  0
+2021-02-24 14:37:27,902  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna14 wartosc  0
+2021-02-24 14:37:27,903  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna15 wartosc  15
+2021-02-24 14:37:27,903  INFO Statystyki_2018.log_4_net - wiersz: 9 kolumna16 wartosc  0
+2021-02-24 14:37:27,903  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna1 wartosc  0
+2021-02-24 14:37:27,904  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna2 wartosc  0
+2021-02-24 14:37:27,904  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna3 wartosc  0
+2021-02-24 14:37:27,904  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna4 wartosc  0
+2021-02-24 14:37:27,905  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna5 wartosc  0
+2021-02-24 14:37:27,905  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna6 wartosc  0
+2021-02-24 14:37:27,905  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna7 wartosc  0
+2021-02-24 14:37:27,905  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna8 wartosc  0
+2021-02-24 14:37:27,906  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna9 wartosc  0
+2021-02-24 14:37:27,906  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna10 wartosc  0
+2021-02-24 14:37:27,906  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna11 wartosc  0
+2021-02-24 14:37:27,907  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna12 wartosc  0
+2021-02-24 14:37:27,907  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna13 wartosc  0
+2021-02-24 14:37:27,908  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna14 wartosc  0
+2021-02-24 14:37:27,908  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna15 wartosc  2666,66
+2021-02-24 14:37:27,908  INFO Statystyki_2018.log_4_net - wiersz: 10 kolumna16 wartosc  123,324
+2021-02-24 14:37:27,908  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna1 wartosc  0
+2021-02-24 14:37:27,909  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna2 wartosc  0
+2021-02-24 14:37:27,909  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna3 wartosc  0
+2021-02-24 14:37:27,909  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna4 wartosc  0
+2021-02-24 14:37:27,910  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna5 wartosc  0
+2021-02-24 14:37:27,910  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna6 wartosc  0
+2021-02-24 14:37:27,910  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna7 wartosc  0
+2021-02-24 14:37:27,911  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna8 wartosc  0
+2021-02-24 14:37:27,911  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna9 wartosc  0
+2021-02-24 14:37:27,911  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna10 wartosc  0
+2021-02-24 14:37:27,912  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna11 wartosc  0
+2021-02-24 14:37:27,912  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna12 wartosc  0
+2021-02-24 14:37:27,912  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna13 wartosc  0
+2021-02-24 14:37:27,912  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna14 wartosc  0
+2021-02-24 14:37:27,913  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna15 wartosc  0
+2021-02-24 14:37:27,914  INFO Statystyki_2018.log_4_net - wiersz: 11 kolumna16 wartosc  0
