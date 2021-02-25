@@ -566,7 +566,7 @@ namespace Statystyki_2018
                         }
                         tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 10 + i, 22, "", true, 11, 1, true, true);
 
-                        for (int j = 6; j < 19; j++)// kolunmny
+                        for (int j = 6; j < 20; j++)// kolunmny
                         {
                             tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 10 + i, j + 18, tabelka001.Rows[i][j + 1].ToString(), false, 0, 0, true, false);
                         }

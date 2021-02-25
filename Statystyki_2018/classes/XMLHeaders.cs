@@ -136,21 +136,19 @@ namespace Statystyki_2018
                 kodStony.AppendLine("</tr>");
             }
             kodStony.AppendLine("<tr>");
-
-            //tabela główna
-            for (int i = 0; i < dane.Rows.Count; i++)
+            int index = 0;
+            foreach (DataRow wierszDanych in dane.Rows)
             {
                 kodStony.AppendLine("<tr>");
-
                 if (lp)
                 {
-                    kodStony.AppendLine("<td class='center borderAll'>" + (i + 1).ToString() + "</td>");
+                    kodStony.AppendLine("<td class='center borderAll'>" + (index + 1).ToString() + "</td>");
                 }
                 if (stanowisko)
                 {
                     try
                     {
-                        string Stanowisko = dane.Rows[i]["stanowisko"].ToString();
+                        string Stanowisko = wierszDanych["stanowisko"].ToString();
                         kodStony.AppendLine("<td class='center borderAll'>" + Stanowisko + "</td>");
                     }
                     catch
@@ -160,7 +158,7 @@ namespace Statystyki_2018
                 {
                     try
                     {
-                        string Funkcja = dane.Rows[i]["funkcja"].ToString();
+                        string Funkcja = wierszDanych["funkcja"].ToString();
                         kodStony.AppendLine("<td class='center borderAll'>" + Funkcja + "</td>");
                     }
                     catch
@@ -170,8 +168,8 @@ namespace Statystyki_2018
                 {
                     try
                     {
-                        string Imie = dane.Rows[i]["imie"].ToString();
-                        string Nazwisko = dane.Rows[i]["nazwisko"].ToString();
+                        string Imie = wierszDanych["imie"].ToString();
+                        string Nazwisko = wierszDanych["nazwisko"].ToString();
                         kodStony.AppendLine("<td class='center borderAll'>" + Imie + " " + Nazwisko + "</td>");
                     }
                     catch
@@ -181,8 +179,8 @@ namespace Statystyki_2018
                 {
                     try
                     {
-                        string Imie = dane.Rows[i]["imie"].ToString();
-                        string Nazwisko = dane.Rows[i]["nazwisko"].ToString();
+                        string Imie = wierszDanych["imie"].ToString();
+                        string Nazwisko = wierszDanych["nazwisko"].ToString();
 
                         kodStony.AppendLine("<td class='center borderAll'>" + Nazwisko + "</td>");
                         kodStony.AppendLine("<td class='center borderAll'>" + Imie + "</td>");
@@ -190,14 +188,21 @@ namespace Statystyki_2018
                     catch
                     { }
                 }
+
                 for (int j = 1; j < iloscKolumnPoIteracji + 1; j++)
                 {
-                    string txt = dr.wyciagnijWartosc(dane, "idWydzial=" + idWydzialu + " and idTabeli='" + idTabeli + "' and idWiersza ='" + i.ToString() + "' and idkolumny='" + j.ToString() + "'", tenPlik);
-                    string txt2 = "<a Class=\"normal\" href=\"javascript: openPopup('popup.aspx?sesja=" + i.ToString().ToString() + "!" + idTabeli + "!" + j.ToString() + "!7')\">" + txt + " </a>";
+                    string nazwaKolumny = "d_" + j.ToString("D2");
+                    string txt = wierszDanych[nazwaKolumny].ToString(); //dr.wyciagnijWartosc(dane, "idWydzial=" + idWydzialu + " and idTabeli='" + idTabeli + "' and idWiersza ='" + index.ToString() + "' and idkolumny='" + j.ToString() + "'", tenPlik);
+                    string txt2 = "<a Class=\"normal\" href=\"javascript: openPopup('popup.aspx?sesja=" + index.ToString().ToString() + "!" + idTabeli + "!" + j.ToString() + "!7')\">" + txt + " </a>";
                     kodStony.AppendLine("<td class='center borderAll'>" + txt2 + "</td>");
                 }
+
+
+
                 kodStony.AppendLine("</tr>");
             }
+            //tabela główna
+          
             kodStony.AppendLine("</tr>");
 
             kodStony.AppendLine("</table>");

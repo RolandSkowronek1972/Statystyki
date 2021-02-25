@@ -163,13 +163,9 @@ namespace Statystyki_2018
 
             FileInfo fNewFile = new FileInfo(download + "_.xlsx");
 
-            // pierwsza tabelka
-
             using (ExcelPackage MyExcel = new ExcelPackage(existingFile))
             {
                 ExcelWorksheet MyWorksheet1 = MyExcel.Workbook.Worksheets[1];
-
-                // pierwsza
 
                 MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 13, 0, 5, false, true, false, false, false);
                 MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 13, 0, 5, false, true, false, false, false);
@@ -184,7 +180,7 @@ namespace Statystyki_2018
                 MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[10], (DataTable)Session["tabelka010"], 1, 11, 0, 6, false);
 
                 MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[11], (DataTable)Session["tabelka011"], 5, 4, 1, 4, false);
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[12], (DataTable)Session["tabelka012"], 6, 0, 4, false, true, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[12], (DataTable)Session["tabelka012"], 8, 0, 4, false, true, false, false, false);
                 MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[13], (DataTable)Session["tabelka013"], 6, 0, 4, false, true, false, false, false);
                 MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[14], (DataTable)Session["tabelka014"], 7, 0, 4, false, true, false, false, false);
                 try
@@ -468,20 +464,30 @@ namespace Statystyki_2018
 
         protected void stopkaTabeli_gwTabela15(object sender, GridViewRowEventArgs e)
         {
-            if (e.Row.RowType == DataControlRowType.Footer) tb.makeSumRow((DataTable)Session["tabelka015"], e, 0);
+          
+            if (e.Row.RowType == DataControlRowType.Footer)
+            {
+                DataTable table = (DataTable)Session["tabelka014"];
+                tb.makeSumRow(table, e, 0);
+            }
         }
 
         protected void stopkaTabeli_gwTabela14(object sender, GridViewRowEventArgs e)
         {
-            if (e.Row.RowType == DataControlRowType.Footer) tb.makeSumRow((DataTable)Session["tabelka014"], e, 0);
+         
+            if (e.Row.RowType == DataControlRowType.Footer)
+            {
+                DataTable table = (DataTable)Session["tabelka013"];
+                tb.makeSumRow(table, e, 0);
+            }
         }
 
         protected void stopkaTabeli_gwTabela13(object sender, GridViewRowEventArgs e)
         {
-            //podsumowanie tab 13
+          
             if (e.Row.RowType == DataControlRowType.Footer)
             {
-                DataTable table = (DataTable)Session["tabelka013"];
+                DataTable table = (DataTable)Session["tabelka012"];
                 tb.makeSumRow(table, e, 0);
             }
         }

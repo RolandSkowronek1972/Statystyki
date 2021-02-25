@@ -737,7 +737,7 @@ namespace Statystyki_2018
                 DataView view = (DataView)dane_do_tabeli_1.Select(DataSourceSelectArguments.Empty);
                 DataTable table = view.ToTable();
 
-                for (int i = 0; i < 10; i++)
+                for (int i = 0; i < 11; i++)
                 {
                     for (int j = 0; j < 10; j++)
                     {
@@ -752,9 +752,9 @@ namespace Statystyki_2018
                     }
                 }
                 // druga
-                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 20, 0, 4, true, false, true, true, true);
-                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 10, 0, 3, true, false, true, true, true);
-                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 9, 0, 3, true, false, true, true, true);
+                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 21, 0, 4, true, false, true, true, true);
+                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 12, 0, 3, true, false, true, true, true);
+                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 11, 0, 3, true, false, true, true, true);
 
                 try
                 {

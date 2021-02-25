@@ -564,7 +564,7 @@ namespace Statystyki_2018
                 tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 1, 7, 0, 6, false);
 
                 //piata statyczna
-                tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[5], (DataTable)Session["tabelka005"], 7, 1, 2, 2, false);
+                tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[5], (DataTable)Session["tabelka005"], 7, 1, 1, 3, false);
 
                 // szósta
 
@@ -617,7 +617,7 @@ namespace Statystyki_2018
         {
             odswiez();
         }
-
+        /*
         protected void LinkButton55_Click(object sender, EventArgs e)
         {
             makeLabels();
@@ -625,7 +625,7 @@ namespace Statystyki_2018
             ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print2", "JavaScript: window.print();", true);
             makeLabels();
         }
-
+      
         protected void makeSumRow(DataTable table, GridViewRowEventArgs e)
         {
             object sumObject;
@@ -642,14 +642,14 @@ namespace Statystyki_2018
                 { }
             }
         }
-
+  */
         protected void Gridview1_RowDataBound(object sender, GridViewRowEventArgs e)
         {
             if (e.Row.RowType == DataControlRowType.Footer)
             {
                 DataTable table = (DataTable)Session["tabelka001"];
-
-                makeSumRow(table, e);
+                tabela.makeSumRow(table, e);
+               
             }
             if (e.Row.RowType == DataControlRowType.DataRow)
             {

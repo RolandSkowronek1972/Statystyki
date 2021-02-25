@@ -14,6 +14,7 @@
                 left: 0;
                 right: 0;
             }
+
         @media print {
             @page {
                 size: 29cm 21.7cm;
@@ -30,53 +31,48 @@
 
     <script src="Scripts/rls.js"></script>
 
-   
-        <div id="menu" style="background-color: #f7f7f7; z-index: 9999" class="noprint">
-            <div class="manu_back" style="height: 40px; margin: 0 auto 0 auto; position: relative; width: 1050px; left: 0px;">
-                <table>
-                    <tr>
-                        <td style="width: auto; padding-left: 5px;">
-                            <asp:Label ID="Label4" runat="server" Text="Proszę wybrać zakres:"></asp:Label>
-                        </td>
-                        <td style="width: auto; padding-left: 5px;">
+    <div id="menu" style="background-color: #f7f7f7; z-index: 9999" class="noprint">
+        <div class="manu_back" style="height: 40px; margin: 0 auto 0 auto; position: relative; width: 1050px; left: 0px;">
+            <table>
+                <tr>
+                    <td style="width: auto; padding-left: 5px;">
+                        <asp:Label ID="Label4" runat="server" Text="Proszę wybrać zakres:"></asp:Label>
+                    </td>
+                    <td style="width: auto; padding-left: 5px;">
 
-                            <dx:ASPxDateEdit ID="Date1" runat="server" Theme="Moderno">
-                            </dx:ASPxDateEdit>
-                        </td>
-                        <td style="width: auto; padding-left: 5px;">
+                        <dx:ASPxDateEdit ID="Date1" runat="server" Theme="Moderno">
+                        </dx:ASPxDateEdit>
+                    </td>
+                    <td style="width: auto; padding-left: 5px;">
 
-                            <dx:ASPxDateEdit ID="Date2" runat="server" Theme="Moderno">
-                            </dx:ASPxDateEdit>
-                        </td>
-                        <td style="width: auto; padding-left: 5px;">
-                            <asp:LinkButton ID="LinkButton54" runat="server" class="ax_box" OnClick="LinkButton54_Click">  Odśwież</asp:LinkButton>
-                        </td>
-                        <td style="width: auto; padding-left: 5px;">
-                            <asp:LinkButton ID="LinkButton55" runat="server" class="ax_box" OnClick="LinkButton55_Click" CssClass="ax_box"> Drukuj </asp:LinkButton>
-                        </td>
-                       
-                        <td style="width: auto; padding-left: 5px;">
-                            <asp:LinkButton ID="LinkButton57" runat="server" CssClass="ax_box" OnClick="Button3_Click">Zapisz do Excel</asp:LinkButton>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+                        <dx:ASPxDateEdit ID="Date2" runat="server" Theme="Moderno">
+                        </dx:ASPxDateEdit>
+                    </td>
+                    <td style="width: auto; padding-left: 5px;">
+                        <asp:LinkButton ID="LinkButton54" runat="server" class="ax_box" OnClick="LinkButton54_Click">  Odśwież</asp:LinkButton>
+                    </td>
+                    <td style="width: auto; padding-left: 5px;">
+                        <input id="Button1" class="ax_box" style="border-style: none; padding: 0px" type="button" onclick="JavaScript: window.print();" value="Drukuj" />
+                    </td>
+
+                    <td style="width: auto; padding-left: 5px;">
+                        <asp:LinkButton ID="LinkButton57" runat="server" CssClass="ax_box" OnClick="Button3_Click">Zapisz do Excel</asp:LinkButton>
+                    </td>
+                </tr>
+            </table>
         </div>
-   
+    </div>
 
     <div style="width: 1150px; margin: 0 auto 0 auto; position: relative; top: 60px;">
 
-       
-
-       
-            <div style="margin-left: auto; margin-right: auto; text-align: center; width: auto;z-index: 10;">
-                <asp:Label ID="Label3" runat="server" Text="Sąd " Style="font-weight: 700"></asp:Label>
-                <br />
-            </div>
-
+        <div style="margin-left: auto; margin-right: auto; text-align: center; width: auto; z-index: 10;">
+            <asp:Label ID="Label3" runat="server" Text="Sąd " Style="font-weight: 700"></asp:Label>
             <br />
-       
-        <div id="zalatwienia" class="horizont" >
+        </div>
+
+        <br />
+
+        <div id="zalatwienia" class="horizont">
             <br />
 
             <asp:Label ID="tabela2Label" runat="server"></asp:Label>
@@ -687,7 +683,7 @@
             </asp:GridView>
             <br />
         </div>
-       
+
         <div id="debag">
             <br />
             <br />

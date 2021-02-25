@@ -3,7 +3,6 @@ using System;
 using System.Data;
 using System.Globalization;
 using System.IO;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace Statystyki_2018
@@ -519,13 +518,6 @@ namespace Statystyki_2018
             }
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            odswiez();
-            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print2", "JavaScript: window.print();", true);
-            // ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print", "window.open('raport_01_print.aspx', '')", true);
-        }
-
         protected void Button3_Click(object sender, EventArgs e)
         {
             string path = Server.MapPath("Template") + "\\oglk2.xlsx";
@@ -535,30 +527,25 @@ namespace Statystyki_2018
 
             FileInfo fNewFile = new FileInfo(download + "_.xlsx");
 
-            // pierwsza tabelka
-
             DataTable tabelka001 = (DataTable)Session["tabelka001"];
 
             using (ExcelPackage MyExcel = new ExcelPackage(existingFile))
             {
-                // pierwsza
-
                 ExcelWorksheet MyWorksheet1 = MyExcel.Workbook.Worksheets[1];
 
-                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 7, 0, 7, false, true, false, false, false);
-                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 1, 0, 7, false, true, false, false, false);
-                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 3, 1, 5, false, true, false, false, false);
-                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 2, 4, 4, 2, false);
-
-            //    MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 3, 1, 5, false, true, false, false, false);
-             //   MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[5], (DataTable)Session["tabelka005"], 6, 1, 5, false, true, false, false, false);
-             //   MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[6], (DataTable)Session["tabelka006"], 2, 4, 4, 2, false);
-            //   MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[7], (DataTable)Session["tabelka007"], 1, 12, 2, 5, false);
-             //   MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[8], (DataTable)Session["tabelka008"], 1, 12, 2, 5, false);
-            //    MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[9], (DataTable)Session["tabelka009"], 3, 4, 2, 7, false);
-            //    MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[10], (DataTable)Session["tabelka010"], 7, 1, 5, false, true, false, false, false);
-            //    MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[11], (DataTable)Session["tabelka011"], 7, 1, 5, false, true, false, false, false);
-           //     MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[12], (DataTable)Session["tabelka012"], 7, 1, 5, false, true, false, false, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 8, 0, 3, false, true, false, false, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 2, 0, 3, false, true, false, false, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 4, 0, 3, false, true, false, false, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 1, 4, 0, 4, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[5], (DataTable)Session["tabelka005"], 1, 8, 0, 4, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[6], (DataTable)Session["tabelka006"], 7, 0, 5, false, true, false, false, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[7], (DataTable)Session["tabelka007"], 4, 2, 1, 3, false);//
+                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[8], (DataTable)Session["tabelka008"], 4, 3, 1, 4, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[9], (DataTable)Session["tabelka009"], 3, 3, 1, 3, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[10], (DataTable)Session["tabelka010"], 16, 6, 2, 4, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[11], (DataTable)Session["tabelka011"], 5, 7, 1, 4, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[12], (DataTable)Session["tabelka012"], 4, 3, 1, 3, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[13], (DataTable)Session["tabelka013"], 16, 9, 2, 5, false);
 
                 try
                 {
@@ -582,14 +569,6 @@ namespace Statystyki_2018
         protected void LinkButton54_Click(object sender, EventArgs e)
         {
             odswiez();
-        }
-
-        protected void LinkButton55_Click(object sender, EventArgs e)
-        {
-            makeLabels();
-            odswiez();
-            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print2", "JavaScript: window.print();", true);
-            makeLabels();
         }
 
         protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)

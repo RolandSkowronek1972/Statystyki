@@ -436,8 +436,8 @@
     <Content Include="Template\aglg.xlsx" />
     <Content Include="Template\oczc.xlsx" />
     <Content Include="Template\mp.xlsx" />
-    <Content Include="Template\oglk2.xlsx" />
     <Content Include="Template\otrp.xlsx" />
+    <Content Include="Template\oglk2.xlsx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

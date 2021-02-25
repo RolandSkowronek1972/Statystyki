@@ -350,7 +350,7 @@ namespace Statystyki_2018
                 tb.komorkaExcela(MyExcel.Workbook.Worksheets[1], rowik + 8, 1, "Wpływ", true, 0, 1);
                 tb.komorkaExcela(MyExcel.Workbook.Worksheets[1], rowik + 9, 1, "Załatwienia", true, 0, 1);
                 tb.komorkaExcela(MyExcel.Workbook.Worksheets[1], rowik + 10, 1, "Pozostało na następny miesiąc", true, 0, 1);
-                tb.komorkaExcela(MyExcel.Workbook.Worksheets[1], rowik + 11, 1, "Zaległość", true, 7, 1);
+                tb.komorkaExcela(MyExcel.Workbook.Worksheets[1], rowik + 11, 1, "Zaległość", true, 7, 0);
                 tb.komorkaExcela(MyExcel.Workbook.Worksheets[1], rowik + 11, 2, "Odroczono", false, 0, 0);
                 tb.komorkaExcela(MyExcel.Workbook.Worksheets[1], rowik + 12, 2, " 0-3 miesiący", false, 0, 0);
                 tb.komorkaExcela(MyExcel.Workbook.Worksheets[1], rowik + 13, 2, " 3-6 miesięcy", false, 0, 0);

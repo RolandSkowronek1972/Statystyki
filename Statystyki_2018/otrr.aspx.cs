@@ -179,7 +179,7 @@ namespace Statystyki_2018
                 table.Columns.Remove("Id_");
                 try
                 {
-                    for (int i = 1; i < 14; i++)
+                    for (int i = 1; i < 13; i++)
                     {
                         for (int j = 0; j < 10; j++)
                         {
@@ -200,9 +200,9 @@ namespace Statystyki_2018
                 }
 
                 // druga
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 16, 0, 6, true, false, true, true, false);
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 12, 0, 4, true, false, true, true, false);
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 12, 0, 4, true, false, true, true, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 17, 0, 6, true, false, true, true, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 14, 0, 4, true, false, true, true, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 14, 0, 4, true, false, true, true, false);
 
                 try
                 {
