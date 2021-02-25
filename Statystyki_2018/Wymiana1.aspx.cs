@@ -2,27 +2,22 @@
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Drawing.Imaging;
-using System.IO;
 using System.Text;
 using System.Web.UI;
 using System.Xml;
-
-
-
 
 namespace Statystyki_2018
 {
     public partial class Wymiana1 : System.Web.UI.Page
     {
         public ServiceReference test = new ServiceReference();
-        public common Common = new common();
+        public common cm = new common();
         public Class1 cl = new Class1();
         private dataReaders dR = new dataReaders();
         public string con_str = ConfigurationManager.ConnectionStrings["wap"].ConnectionString;
         public string con_str_wcyw = ConfigurationManager.ConnectionStrings["wcywConnectionString"].ConnectionString;
         public log_4_net log = new log_4_net();
+        public tabele Tabele = new tabele();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -37,9 +32,9 @@ namespace Statystyki_2018
                     lbRok2.Items.Add(i.ToString());
                 }
                 lbRok.SelectedIndex = 0;
-                DataTable parameters = Common.makeParameterTable();
+                DataTable parameters = cm.makeParameterTable();
 
-                DataTable dT1 = Common.getDataTable("SELECT distinct [wartosc], [ConnectionString] FROM [konfig] WHERE ([klucz] = 'KonfigRodzajSprawy') ORDER BY wartosc", con_str, parameters, "Wymiana");
+                DataTable dT1 = cm.getDataTable("SELECT distinct [wartosc], [ConnectionString] FROM [konfig] WHERE ([klucz] = 'KonfigRodzajSprawy') ORDER BY wartosc", con_str, parameters, "Wymiana");
                 lbRodzajSprawy.Items.Clear();
                 foreach (DataRow item in dT1.Rows)
                 {
@@ -80,9 +75,9 @@ namespace Statystyki_2018
             connection = lbRodzajSprawy.SelectedItem.Value.ToString();
             // walidacja po stronie clienta
 
-            DataTable parametry = Common.makeParameterTable();
+            DataTable parametry = cm.makeParameterTable();
             parametry.Rows.Add("@rodzaj", rodzaj);
-            DataTable kwerendaWalidująca = Common.getDataTable("SELECT distinct kwerendaOdczytujaca,  connection FROM wymiana where rodzaj = @rodzaj and typ=0", Common.con_str, parametry, "wymiana cleint: kwerendaWalidująca");
+            DataTable kwerendaWalidująca = cm.getDataTable("SELECT distinct kwerendaOdczytujaca,  connection FROM wymiana where rodzaj = @rodzaj and typ=0", cm.con_str, parametry, "wymiana cleint: kwerendaWalidująca");
             if (kwerendaWalidująca == null)
             {
                 log.Error("Wymiana odczyt danych: Brak kwerendy walidującej zapytanie po stronie klienta - rodzaj=0");
@@ -92,12 +87,12 @@ namespace Statystyki_2018
             string kwerendaSprawdzajaca = kwerendaWalidująca.Rows[0][0].ToString();
             string CSkwerendySprawdzajacej = kwerendaWalidująca.Rows[0][1].ToString();
 
-            parametry = Common.makeParameterTable();
+            parametry = cm.makeParameterTable();
             parametry.Rows.Add("@numer", TBNrSprawy.Text.Trim());
             parametry.Rows.Add("@rok", lbRok.SelectedItem.Text.Trim());
             parametry.Rows.Add("@rep", TBRepertorium.Text.Trim());
             parametry.Rows.Add("@wydzial", TBNrWydzialu.Text.Trim());
-            string wynikWalidacji = Common.getQuerryValue(kwerendaSprawdzajaca, CSkwerendySprawdzajacej, parametry, "wymiana cleint");
+            string wynikWalidacji = cm.getQuerryValue(kwerendaSprawdzajaca, CSkwerendySprawdzajacej, parametry, "wymiana cleint");
             try
             {
                 if (int.Parse(wynikWalidacji) == 0)
@@ -115,9 +110,9 @@ namespace Statystyki_2018
             }
             // wyciągnięcie kwerendy i CS zapytujących
 
-            parametry = Common.makeParameterTable();
+            parametry = cm.makeParameterTable();
             parametry.Rows.Add("@rodzaj", rodzaj);
-            DataTable zestawZapytujacy = Common.getDataTable("SELECT distinct kwerendaOdczytujaca,  connection FROM wymiana where rodzaj = @rodzaj and typ=1", Common.con_str, parametry, "wymiana cleint: kwerendaWalidująca");
+            DataTable zestawZapytujacy = cm.getDataTable("SELECT distinct kwerendaOdczytujaca,  connection FROM wymiana where rodzaj = @rodzaj and typ=1", cm.con_str, parametry, "wymiana cleint: kwerendaWalidująca");
 
             string kwerendaZapytujaca = zestawZapytujacy.Rows[0][0].ToString();
             string CSkwerendyZapytujacej = zestawZapytujacy.Rows[0][1].ToString();
@@ -129,7 +124,7 @@ namespace Statystyki_2018
             {
                 wynik = serwisWymianySoapClient.DaneWXml(TBNrWydzialu.Text.Trim(), TBRepertorium.Text.Trim(), int.Parse(TBNrSprawy.Text.Trim()), rodzaj, CSkwerendyZapytujacej, int.Parse(lbRok.SelectedItem.Text.Trim()), kwerendaZapytujaca);
                 //                              DaneWXml(string NrWydzialu       , string repertorium       , int nrSprawy                     , string rodzaj,  string connection, int rok, string kwerendaZapytujaca)
-              //  TextBox1.Text = wynik;
+                //  TextBox1.Text = wynik;
             }
             catch (Exception ex)
             {
@@ -137,12 +132,43 @@ namespace Statystyki_2018
                 TextBox1.Text = TextBox1.Text + ex.Message + Environment.NewLine;
                 return;
             }
+            // rozkodować tabele;
+            StringBuilder plikXml = new StringBuilder();
+
+            StringBuilder stringBuilder = new StringBuilder();
+
+            stringBuilder.AppendLine("<Odpowiedz>");
+            foreach (DataRow item in wynik.Rows)
+            {
+                var cos2 = (Byte[])item[5];
+
+                StringBuilder cos4 = new StringBuilder();
+                foreach (var bajt in cos2)
+                {
+                    var cos5 = bajt.ToString("X");
+                    cos4.Append(cos5);
+                }
+
+                //File.ReadAllBytes
+                stringBuilder.AppendLine("<row>");
+                stringBuilder.AppendLine("<wydzial>" + item[0] + "</wydzial>");
+                stringBuilder.AppendLine("<repertorium>" + item[1] + "</repertorium>");
+
+                stringBuilder.AppendLine("<numer>" + item[2] + " </numer>");
+                stringBuilder.AppendLine("<rok> " + item[3] + " </rok>");
+                stringBuilder.AppendLine("<dataOrzeczenia> " + item[4] + " </dataOrzeczenia>");
+                stringBuilder.AppendLine("<msword> " + cos4 + " </msword>");
+                stringBuilder.AppendLine("<rodzaj> " + item[6] + " </rodzaj>");
+
+                stringBuilder.AppendLine("</row>");
+            }
+            stringBuilder.AppendLine("</Odpowiedz>");
 
             string path = Server.MapPath("Wymiana\\Tmp\\odpowiedz") + DateTime.Now.ToString().Replace(" ", "_").Replace(".", "_").Replace(":", "_") + ".xml";
             XmlDocument xdoc = new XmlDocument();
             try
             {
-                xdoc.LoadXml(wynik.ToString());
+                xdoc.LoadXml(stringBuilder.ToString());
                 xdoc.Save(path);
             }
             catch (Exception ex)
@@ -151,9 +177,9 @@ namespace Statystyki_2018
                 TextBox1.Text = TextBox1.Text + ex.Message;
             }
             // zapis do bazy
-            parametry = Common.makeParameterTable();
+            parametry = cm.makeParameterTable();
             parametry.Rows.Add("@rodzaj", rodzaj);
-            DataTable kwerendaZapisujaca = Common.getDataTable("SELECT distinct kwerendaOdczytujaca,  connection FROM wymiana where rodzaj = @rodzaj and typ=2", Common.con_str, parametry, "wymiana cleint: kwerendaWalidująca");
+            DataTable kwerendaZapisujaca = cm.getDataTable("SELECT distinct kwerendaOdczytujaca,  connection FROM wymiana where rodzaj = @rodzaj and typ=2", cm.con_str, parametry, "wymiana cleint: kwerendaWalidująca");
             if (kwerendaWalidująca == null)
             {
                 log.Error("Wymiana odczyt danych: Brak kwerendy Zapisującej zapytanie po stronie klienta - rodzaj=2");
@@ -162,48 +188,65 @@ namespace Statystyki_2018
             }
             string kwerendaZapisująca = kwerendaZapisujaca.Rows[0][0].ToString();
             string CSkwerendyZapisującej = kwerendaZapisujaca.Rows[0][1].ToString();
-            string repertorium = string.Empty;
-            string numer = string.Empty;
-            string rok = string.Empty;
-            string dataOrzeczenia = string.Empty;
-            Image msword = new Bitmap(16, 16, PixelFormat.Format32bppArgb);
-           
-          
-            string rodzajOdp = string.Empty;
-            int il = xdoc.ChildNodes.Count;
 
-            SqlConnection Newconnection =
-                     new SqlConnection(CSkwerendyZapisującej);
-            using (SqlBulkCopy bulkCopy = new SqlBulkCopy(Newconnection))
+            foreach (DataRow pojedynczyWiersz in wynik.Rows)
             {
-                Newconnection.Open();
-                bulkCopy.DestinationTableName =
-                    "dbo.orzeczenie";
+                var wydzial = pojedynczyWiersz["wydzial"];
+                var repertorium = pojedynczyWiersz["repertorium"];
+                var numerW = pojedynczyWiersz["numer"];
+                var rok = pojedynczyWiersz["rok"];
+                var d_orzecz = pojedynczyWiersz["d_orzecz"];
+                var msword = pojedynczyWiersz["msword"];
+                var rodzajw = pojedynczyWiersz["rodzaj"];
 
-                SqlBulkCopyColumnMapping mapID =
-                  new SqlBulkCopyColumnMapping("ProductID", "ProdID");
-                bulkCopy.ColumnMappings.Add(mapID);
+                var cos2 = (Byte[])msword;
 
+                string base64String = Convert.ToBase64String(cos2);
 
-                try
+                byte[] outputData = Convert.FromBase64String(base64String);
+
+                parametry = cm.makeParameterTable();
+                parametry.Rows.Add("@d_orzeczenia", d_orzecz.ToString());
+                parametry.Rows.Add("@msword", outputData);
+                parametry.Rows.Add("@typ_orzeczenia", rodzajw.ToString());
+                parametry.Rows.Add("@rok", rok.ToString());
+                parametry.Rows.Add("@numer", numerW.ToString());
+                parametry.Rows.Add("@rep", repertorium.ToString());
+
+                var conn = new SqlConnection(CSkwerendyZapisującej);
+                using (SqlCommand sqlCmd = new SqlCommand(kwerendaZapisująca, conn))
                 {
-                    // Write from the source to the destination.
-                    bulkCopy.WriteToServer(wynik);
-                    Newconnection.Close();
-                }
-                catch (Exception ex)
-                {
-                    Newconnection.Close();
-                    TextBox1.Text = TextBox1.Text + ex.Message;
+                    try
+                    {
+                        //log.Info("Open DB connection");
+                        conn.Open();
+                        //log.Info("DB connection is open");
+                        SqlParameter photoParam = new SqlParameter("@msword", SqlDbType.Image);
+                        photoParam.Value = outputData;
+                        sqlCmd.Parameters.Add(photoParam);
+                        sqlCmd.Parameters.Add("@d_orzeczenia", d_orzecz.ToString());
+                        sqlCmd.Parameters.Add("@typ_orzeczenia", rodzajw.ToString());
+                        sqlCmd.Parameters.Add("@rok", rok.ToString());
+                        sqlCmd.Parameters.Add("@numer", numerW.ToString());
+                        sqlCmd.Parameters.Add("@rep", repertorium.ToString());
+
+                        //log.Info("Start querry execution");
+                        sqlCmd.ExecuteScalar();
+                        //log.Info("Execution done. ");
+                        conn.Close();
+                        //log.Info("Close DB connection");
+                    }
+                    catch (Exception ex)
+                    {
+                        TextBox1.Text = TextBox1.Text + "Wymiana odczyt danych: Bład podczas zapisu odpowiedzi do bazy danych  po stronie klienta - rodzaj=2: "+ex.Message + Environment.NewLine;
+
+                        conn.Close();
+                    }
+                    //      cm.runQuerry(kwerendaZapisująca, CSkwerendyZapisującej, parametry, "Wymiana");
                 }
             }
 
-
-
-
-
-           
-          
+            TextBox1.Text = TextBox1.Text + " KOniec przekazywania danych";
         }
 
         protected void citiesTabPage_ActiveTabChanged(object source, DevExpress.Web.TabControlEventArgs e)
@@ -227,41 +270,5 @@ namespace Statystyki_2018
             TBNrWydzialu.Text = "";
             TBRepertorium.Text = "";
         }
-
-        public static void DodajWpis(string kwerenda,  string rep,  string numer,  string rok,  DateTime d_orzeczenia,  string msword,  string typ_orzeczenia,  string connectionString)
-        {
-            using (SqlConnection connection = new SqlConnection( connectionString))
-            {
-                Image im = stringToImage(msword.Trim());
-               
-                SqlCommand command = new SqlCommand(kwerenda, connection);
-
-                command.Parameters.Add("@rep", SqlDbType.NVarChar, 20).Value = rep;
-                command.Parameters.Add("@numer", SqlDbType.NVarChar, 10).Value = numer;
-                command.Parameters.Add("@rok", SqlDbType.NVarChar, 30).Value = rok;
-                command.Parameters.Add("@d_orzeczenia", SqlDbType.DateTime).Value = d_orzeczenia;
-                command.Parameters.Add("@typ_orzeczenia", SqlDbType.Int).Value = typ_orzeczenia;
-
-                command.Parameters.Add("@msword",
-                    SqlDbType.Image).Value = im; 
-
-                connection.Open();
-                command.ExecuteNonQuery();
-
-
-            }
-          
-        }
-
-        public static Image stringToImage(string inputString)
-        {
-            byte[] NewBytes = Convert.FromBase64String(inputString);
-            MemoryStream ms1 = new MemoryStream(NewBytes);
-            Image NewImage = Image.FromStream(ms1);
-
-            return NewImage;
-        }
-
-
     }
 }

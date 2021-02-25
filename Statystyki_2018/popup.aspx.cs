@@ -340,7 +340,7 @@ namespace Statystyki_2018
                 tytul = "";
                 Label2.Text = tytul;
             }
-            Label2.Text = tytul + "Id sedziego:"+ id_sedziego.ToString();
+            Label2.Text = tytul;
 
             if ((DataTable)Session["tabelka001"] == null)
             {
