@@ -1,6 +1,6 @@
 ﻿/*
 Last Update:
-    - version 1.181121
+    - version 1.210301
 Creation date: 2018-11-21
 
 */
@@ -138,16 +138,16 @@ namespace Statystyki_2018
                 int rowik = table1.Rows.Count - 4;
 
                 tb.komorkaExcela(MyWorksheet1, rowik + 7, 1, "Zaległość z poprzedniego miesiąca", true, 0, 1);
-                tb.komorkaExcela(MyWorksheet1, rowik + 8, 1, "Wpływ", true, 0, 1);
-                tb.komorkaExcela(MyWorksheet1, rowik + 9, 1, "Załatwienia", true, 0, 1);
+                tb.komorkaExcela(MyWorksheet1, rowik + 8, 1, "Wpłynęło", true, 0, 1);
+                tb.komorkaExcela(MyWorksheet1, rowik + 9, 1, "Załatwiono", true, 0, 1);
                 tb.komorkaExcela(MyWorksheet1, rowik + 10, 1, "Pozostało na następny miesiąc", true, 0, 1);
-                tb.komorkaExcela(MyWorksheet1, rowik + 11, 1, "3-6 miesięcy", true, 0, 1);
-                tb.komorkaExcela(MyWorksheet1, rowik + 12, 1, "6-12 miesięcy", true, 0, 1);
+                tb.komorkaExcela(MyWorksheet1, rowik + 11, 1, "Powyżej 3-6 miesięcy", true, 0, 1);
+                tb.komorkaExcela(MyWorksheet1, rowik + 12, 1, "Powyżej 6-12 miesięcy", true, 0, 1);
                 tb.komorkaExcela(MyWorksheet1, rowik + 13, 1, "Powyżej 12 miesięcy", true, 0, 1);
-
-                DataTable tabelka001 = (DataTable)Session["tabelka002"];
-
-                foreach (DataRow dR in tabelka001.Rows)
+              
+                  DataTable tabelka001 = (DataTable)Session["tabelka002"];
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[1], tabelka001, 7, 6, 2, rowik + 7, false);
+             /*     foreach (DataRow dR in tabelka001.Rows)
                 {
                     for (int i = 2; i < 8; i++)
                     {
@@ -169,7 +169,7 @@ namespace Statystyki_2018
                         break;
                     }
                 }
-
+                */
                 DataTable table2 = (DataTable)Session["tabelka003"];
                 MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], table2, 6, 0, 3, false, false, false, false, false);
 

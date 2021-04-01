@@ -79,8 +79,16 @@ namespace Statystyki_2018
             string stanowisko = Common.getQuerryValue("SELECT distinct  (COALESCE( stanowisko ,'') ) as sedzia  FROM tbl_statystyki_tbl_x5 where id_sedziego=@id_sedziego ", con_str, parameters);
 
             return sedzia + " " + stanowisko;
-        }// end of wyciagnij_kwerende
+        }// end of wyciagnij_sedziegoXXL
+        public string wyciagnij_sedziegoXXL(string id_sedziego,string sc)
+        {
+            DataTable parameters = Common.makeParameterTable();
+            parameters.Rows.Add("@ident", id_sedziego.Trim());
+            string sedzia = Common.getQuerryValue("SELECT distinct    imie +' '+ nazwisko as tensedzia FROM         sedzia where ident=@ident", sc, parameters);
 
+           
+            return sedzia ;
+        }// end of wyciagnij_kwewyciagnij_sedziegoXXLrende
         public string wyciagnij_tytul(string tabela, string kolumna, string id_dzialu)
         {
             DataTable parameters = Common.makeParameterTable();
@@ -378,6 +386,7 @@ namespace Statystyki_2018
                     // tworz wiersz z tabeli
                     DataRow wiersz = tabelaWyjsciowa.NewRow();
                     wiersz["id_"] = i.ToString();
+                    wiersz["id_tabeli"] = id_tabeli;
                     for (int j = 0; j <= iloscKolumn; j++)
                     {
                         try
@@ -390,7 +399,7 @@ namespace Statystyki_2018
                                     wiersz["opis"] = dana.Trim();
                                     break;
                                 default:
-                                    wiersz[getColumnName(i)] = dana.Trim();
+                                    wiersz[getColumnName(j)] = dana.Trim();
                                     break;
                             }
                         }
@@ -888,126 +897,7 @@ namespace Statystyki_2018
             return status;
         }// end of generuj_dane_do_tabeli_3
 
-        /*
-        public string generuj_dane_do_tabeli_XXL(int id_dzialu, int id_tabeli, DateTime poczatek, DateTime koniec, string tenPlik)
-        {
-            string status = string.Empty;
-            status = status + "pompowanie danch do tabeli: " + id_tabeli.ToString() + "<br>";
-            var conn = new SqlConnection(con_str);
-            SqlCommand sqlCmd;
-
-            string kwerenda = string.Empty;
-            DataSet dsKwerendy = new DataSet();
-            string opis = string.Empty;
-            // kwerenda + cs do datasetu
-
-            //dsKwerendy = new DataSet();
-            DataTable parameters = Common.makeParameterTable();
-            parameters.Rows.Add("@id_dzialu", id_dzialu);
-            parameters.Rows.Add("@id_tabeli", id_tabeli);
-
-            DataTable dT1 = Common.getDataTable("SELECT id_kolumny,[kwerenda] FROM [kwerendy] where id_tabeli=@id_tabeli and id_wydzial=@id_dzialu order by id_kolumny", con_str, parameters, tenPlik);
-
-            // zaladowanie do tabeli
-            int il_wierszy = 0;
-            try
-            {
-                il_wierszy = dT1.Rows.Count;//dsKwerendy.Tables[0].Rows.Count;
-            }
-            catch { }
-
-            if (il_wierszy == 0)
-            {
-                // brak kwerend odcztującch
-                status = status + "brak kwerend odcztujących" + "<br>";
-            }
-            else
-            {
-                // sa kwerendy
-                status = status + "są kwerendy odcztujące, il: " + dT1.Rows.Count.ToString() + "<br>";
-
-                try
-                {
-                    foreach (DataRow dRow in dT1.Rows)
-                    {
-                        string id_kol = dRow[0].ToString().Trim();
-                        string kwe = dRow[1].ToString().Trim();
-                        string cs = podajConnectionString(id_dzialu);
-
-                        ////############################################  ladowanie danych tabela 2 ##############################
-
-                        parameters = Common.makeParameterTable();
-
-                        parameters.Rows.Add("@id_dzialu", id_dzialu);
-                        parameters.Rows.Add("@id_tabeli", id_tabeli);
-                        parameters.Rows.Add("@data_1", KonwertujDate(poczatek));
-                        parameters.Rows.Add("@data_2", KonwertujDate(koniec));
-
-                        DataTable ddT = Common.getDataTable(kwe, cs, parameters, tenPlik);
-
-                        //pętla ładująca dane dane sedzw
-
-                        foreach (DataRow dR in ddT.Rows)
-                        {
-                            switch (id_kol)
-                            {
-                                case "0":
-                                    {
-                                        parameters = Common.makeParameterTable();
-
-                                        parameters.Rows.Add("@imie", dR[1].ToString().Trim());
-                                        parameters.Rows.Add("@nazwisko", dR[2].ToString().Trim());
-                                        parameters.Rows.Add("@funkcja", dR[3].ToString().Trim());
-                                        parameters.Rows.Add("@stanowisko", dR[4].ToString().Trim());
-                                        parameters.Rows.Add("@id_sedziego", dR[0].ToString().Trim());
-                                        parameters.Rows.Add("@id_tabeli", id_tabeli);
-                                        parameters.Rows.Add("@id_dzialu", id_dzialu);
-
-                                        Common.runQuerry("insert into tbl_statystyki_tbl_x5 (imie,nazwisko,funkcja,stanowisko,id_sedziego,id_dzialu) values (@imie,@nazwisko,@funkcja,@stanowisko,@id_sedziego,@id_dzialu)", con_str, parameters);
-
-                                        // załadowanie danych do pierwszych kolumn
-                                    }
-                                    break;
-
-                                default:
-                                    {
-                                        string txt = getColumnName(int.Parse(id_kol));
-                                        // załadowanie danych do pierwszych kolumn
-                                        using (sqlCmd = new SqlCommand())
-                                        {
-                                            status = status + "wpisywanie danych do kolumny " + id_kol.ToString() + "<br>";
-                                            sqlCmd = new SqlCommand("update tbl_statystyki_tbl_x5 set " + txt + "=@value  where id_sedziego=@id_  and id_dzialu=@id_dzialu", conn);
-                                            try
-                                            {
-                                                conn.Open();
-                                                string tvxt = dR[0].ToString().Trim();
-                                                string tvxts = dR[1].ToString().Trim();
-                                                sqlCmd.Parameters.AddWithValue("@value", dR[0].ToString().Trim());
-                                                sqlCmd.Parameters.AddWithValue("@id_", dR[1].ToString().Trim());
-                                                sqlCmd.Parameters.AddWithValue("@id_dzialu", id_dzialu);
-                                                sqlCmd.ExecuteScalar();
-                                                status = status + "Wpidano dane kolumny " + id_kol.Trim() + "dla sedziego nr " + dR[1].ToString().Trim() + "<br>";
-                                                conn.Close();
-                                            }
-                                            catch (Exception ex)
-                                            {
-                                                conn.Close();
-                                                status = status + "Bład wpisywania danych " + "<br>" + ex.Message + "<br>";
-                                            }
-                                        } // end of using
-                                    }
-                                    break;
-                            }
-                        }
-                    }
-                }
-                catch
-                { }//end of try
-            }// end of if
-
-            return status;
-        }// end of generuj_dane_do_tabeli_5
-        */
+        
         //================================================================================================
 
         public DataTable generuj_dane_do_tabeli_mss2(int id_dzialu, DateTime poczatek, DateTime koniec, int il_kolumn, string tenPlik)

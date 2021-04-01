@@ -207,9 +207,14 @@ namespace Statystyki_2018
             {
                 cm.log.Error(tenPlik + " " + ex.Message);
             }
+         
+            string idDzialu = (string)Session["id_dzialu"];
+          
             try
             {
-                txt = txt + cl.generuj_dane_do_tabeli_(int.Parse((string)Session["id_dzialu"]), 1, Date1.Date, Date2.Date);
+                //cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 1");
+                Session["tabelka002"] = dr.tworzTabele(int.Parse(idDzialu), 1, Date1.Date, Date2.Date, 32, GridView1, tenPlik);
+                GridView1.DataBind();
             }
             catch (Exception ex)
             {
@@ -456,10 +461,7 @@ namespace Statystyki_2018
 
             DataTable tabelka001 = (DataTable)Session["tabelka002"];
 
-            using (ExcelPackage MyExcel = new ExcelPackage(existingFile))
-            {
-            }//end of using
-
+           
             using (ExcelPackage MyExcel = new ExcelPackage(existingFile))
             {
                 // pierwsza
@@ -467,69 +469,8 @@ namespace Statystyki_2018
 
                 //   MyWorksheeCells[4, 3].Value = "Informacja statystyczna z ruchu spraw cywilnych za okres od " + Date1.Text + " do " + Date2.Text;
                 int rowik = 4;
-                foreach (DataRow dR in tabelka001.Rows)
-                {
-                    MyWorksheet.Cells[rowik, 1].Value = (rowik - 3).ToString();
-                    MyWorksheet.Cells[rowik, 2].Value = dR[5].ToString().Trim() + " " + dR[4].ToString().Trim() + " " + dR[3].ToString().Trim();
-
-                    MyWorksheet.Cells[rowik, 1].Style.Border.Top.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-                    MyWorksheet.Cells[rowik, 1].Style.Border.Left.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-                    MyWorksheet.Cells[rowik, 1].Style.Border.Right.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-                    MyWorksheet.Cells[rowik, 1].Style.Border.Bottom.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-
-                    MyWorksheet.Cells[rowik, 2].Style.Border.Top.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-                    MyWorksheet.Cells[rowik, 2].Style.Border.Left.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-                    MyWorksheet.Cells[rowik, 2].Style.Border.Right.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-                    MyWorksheet.Cells[rowik, 2].Style.Border.Bottom.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-
-                    for (int i = 8; i < 20; i++)
-                    {
-                        MyWorksheet.Cells[rowik, i - 5].Value = dR[i - 1].ToString().Trim();
-                        MyWorksheet.Cells[rowik, i - 5].Style.ShrinkToFit = true;
-
-                        MyWorksheet.Cells[rowik, i - 5].Style.Border.Top.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-                        MyWorksheet.Cells[rowik, i - 5].Style.Border.Left.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-                        MyWorksheet.Cells[rowik, i - 5].Style.Border.Right.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-                        MyWorksheet.Cells[rowik, i - 5].Style.Border.Bottom.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-                    }
-                    rowik++;
-                }
-
-                MyWorksheet.Cells[rowik, 2].Value = "Razem";
-                for (int i = 1; i < 13; i++)
-                {
-                    object sumObject;
-                    string txt = "d_";
-                    string digit = i.ToString("D2");
-                    string result = "";
-                    txt = txt + digit;
-                    try
-                    {
-                        sumObject = tabelka001.Compute("Sum(" + txt + ")", "");
-                        result = sumObject.ToString();
-                    }
-                    catch (Exception ex)
-                    {
-                        cm.log.Error(tenPlik + " " + ex.Message);
-                    }
-
-                    MyWorksheet.Cells[rowik, i + 2].Value = result;
-                    MyWorksheet.Cells[rowik, i + 2].Style.Border.Top.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-                    MyWorksheet.Cells[rowik, i + 2].Style.Border.Left.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-                    MyWorksheet.Cells[rowik, i + 2].Style.Border.Right.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-                    MyWorksheet.Cells[rowik, i + 2].Style.Border.Bottom.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-
-                    MyWorksheet.Cells[rowik, 1].Style.Border.Top.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-                    MyWorksheet.Cells[rowik, 1].Style.Border.Left.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-                    MyWorksheet.Cells[rowik, 1].Style.Border.Right.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-                    MyWorksheet.Cells[rowik, 1].Style.Border.Bottom.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-
-                    MyWorksheet.Cells[rowik, 2].Style.Border.Top.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-                    MyWorksheet.Cells[rowik, 2].Style.Border.Left.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-                    MyWorksheet.Cells[rowik, 2].Style.Border.Right.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-                    MyWorksheet.Cells[rowik, 2].Style.Border.Bottom.Style = OfficeOpenXml.Style.ExcelBorderStyle.Thin;
-                }
-
+                MyWorksheet = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], tabelka001, 13, 0, 4, true, true, false, false, false);
+      
                 // druga
 
                 ExcelWorksheet MyWorksheet2 = MyExcel.Workbook.Worksheets[2];
@@ -596,9 +537,9 @@ namespace Statystyki_2018
         {
             if (e.Row.RowType == DataControlRowType.Header)
             {
-                System.Web.UI.WebControls.GridView sn = new System.Web.UI.WebControls.GridView();
+                
                 DataTable dT = (DataTable)Session["header_02"];
-                tb.makeHeader(sn, dT, GridView1);
+                tb.makeHeader( dT, GridView1);
             }
         }
 
@@ -606,10 +547,8 @@ namespace Statystyki_2018
         {
             if (e.Row.RowType == DataControlRowType.Footer)
             {
-                DataView view = (DataView)tabela_1.Select(DataSourceSelectArguments.Empty);
-                //tabela_1
-                DataTable table = view.ToTable();// (DataTable)Session["tabelka001"];
-                tb.makeSumRow(table, e, 1);
+               
+                tb.makeSumRow((DataTable)Session["tabelka002"], e, 1);
             }
         }
 

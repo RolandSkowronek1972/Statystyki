@@ -41,7 +41,7 @@
                 </td>
 
                 <td style="width: auto; padding-left: 5px;">
-                    <asp:LinkButton ID="LinkButton57" runat="server" CssClass="ax_box" OnClick="tworzPlikExcell">Zapisz do Excel</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton57" runat="server" CssClass="ax_box" OnClick="tworzPlikExcell" Visible="False">Zapisz do Excel</asp:LinkButton>
                 </td>
             </tr>
         </table>
@@ -53,7 +53,7 @@
             <asp:Label ID="Label3" runat="server"></asp:Label>
             <br />
             <br />
-            <br />
+          
 
             <asp:Label ID="infoLabel01" runat="server" Text="dział 1 \/\/\/" Visible="False"></asp:Label>
             <br />
@@ -71,7 +71,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="col_500 wciecie borderAll">1.4. Osoba/osoby przeprowadzająca/e wizytacjęI.2. Prezes sądu odpowiedzialny za przeprowadzenie wizytacji</td>
+                    <td class="col_500 wciecie borderAll">I.2. Prezes sądu odpowiedzialny za przeprowadzenie wizytacji</td>
                     <td class="borderAll wciecie">
                         <asp:TextBox ID="tab_1_w02_c01" runat="server" Rows="4" Width="90%" BorderStyle="None" Height="60px" TextMode="MultiLine">0</asp:TextBox>
                     </td>
@@ -179,9 +179,7 @@
 
         <div class="page-break">
 
-            <asp:Label ID="Label6" runat="server" Text="III.2. Referendarze sądowi (wg objaśnień: w zestawieniu należy uwzględnić także referendarzy sądowych delegowanych)"></asp:Label>
-            &nbsp;&nbsp;&nbsp;
-           <asp:Label ID="infoLabel6" runat="server" Text="tabela  6 \/\/\/" Visible="True"></asp:Label>
+            &nbsp;<asp:Label ID="infoLabel6" runat="server" Text="tabela  6 \/\/\/" Visible="True"></asp:Label>
             <br />
             <asp:PlaceHolder runat="server" ID="PlaceHolderTB6"></asp:PlaceHolder>
             <br />

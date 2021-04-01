@@ -58,9 +58,11 @@ namespace Statystyki_2018
                             Session["manu3"] = naglowek.daneDoManuMSS(IdentyfikatorUzytkownika);
                             cm.log.Info("start tworzenia menu daneDoManuInne  " + DateTime.Now.ToLongTimeString());
                             Session["manu4"] = naglowek.daneDoManuInne(IdentyfikatorUzytkownika);
-
+                            cm.log.Info("start tworzenia menu daneDoManuWymiana  " + DateTime.Now.ToLongTimeString());
+                            Session["manu5"] = naglowek.daneDoManuWymiana(IdentyfikatorUzytkownika);
+                            //daneDoManuWymiana
                             cm.log.Info("start tworzenia menu wyloguj  " + DateTime.Now.ToLongTimeString());
-                            Session["manu5"] = naglowek.wyloguj();
+                            Session["manu6"] = naglowek.wyloguj();
                             wypelnijMenu();
                             cm.log.Info("koniec tworzenia manu   " + DateTime.Now.ToLongTimeString());
                         }
@@ -83,6 +85,7 @@ namespace Statystyki_2018
             ASPxPopupMenu1.RootItem.Items.Add((DevExpress.Web.MenuItem)Session["manu2"]);
             ASPxPopupMenu1.RootItem.Items.Add((DevExpress.Web.MenuItem)Session["manu3"]);
             ASPxPopupMenu1.RootItem.Items.Add((DevExpress.Web.MenuItem)Session["manu4"]);
+            ASPxPopupMenu1.RootItem.Items.Add((DevExpress.Web.MenuItem)Session["manu5"]);
             try
             {
                 string identyfikatorUzytkownika = (string)Session["identyfikatorUzytkownika"];
@@ -104,7 +107,7 @@ namespace Statystyki_2018
                 catch
                 { }
 
-                ASPxPopupMenu1.RootItem.Items.Add((DevExpress.Web.MenuItem)Session["manu5"]);
+                ASPxPopupMenu1.RootItem.Items.Add((DevExpress.Web.MenuItem)Session["manu6"]);
             }
             catch (Exception)
             {

@@ -71,7 +71,7 @@ namespace Statystyki_2018
         {
             string idDzialu = (string)Session["id_dzialu"];
             string idWydzialu = (string)Session["id_dzialu"];
-            //    string id_dzialu.Text = (string)Session["txt_dzialu"];
+           
             string txt = string.Empty;
             int idWydzialuNumerycznie = int.Parse((string)Session["id_dzialu"]);
             try
@@ -87,8 +87,8 @@ namespace Statystyki_2018
 
                 string path = Server.MapPath("XMLHeaders") + "\\" + "okrc.xml";
 
-                string txtN = xMLHeaders.TabelaSedziowskaXML(path, idWydzialuNumerycznie, "1", tabelaDanych1, true, true, true, true, tenPlik);
-                string txtN2 = xMLHeaders.TabelaSedziowskaXML(path, idWydzialuNumerycznie, "2", tabelaDanych2, true, true, true, true, tenPlik);
+                string txtN = xMLHeaders.TabelaSedziowskaXML(path, idWydzialuNumerycznie, "1", tabelaDanych1, true, true, true, true,"", tenPlik);
+                string txtN2 = xMLHeaders.TabelaSedziowskaXML(path, idWydzialuNumerycznie, "2", tabelaDanych2, true, true, true, true,"", tenPlik);
 
                 tablePlaceHolder01.Controls.Add(new Label { Text = txtN+ txtN2, ID = "id1" });
 
@@ -102,17 +102,7 @@ namespace Statystyki_2018
             // dopasowanie opisów
             makeLabels();
 
-            try
-            {
-                //           Label11.Visible = cl.debug(int.Parse(yyx));
-            }
-            catch
-            {
-                //         Label11.Visible = false;
-            }
-
-            //Label11.Text = txt;
-            //Label3.Text = ms.nazwaSadu((string)Session["id_dzialu"]);
+           
         }
 
         protected void pisz(string Template, int iloscWierszy, int iloscKolumn, DataTable dane, string idTabeli, string idWydzialu)

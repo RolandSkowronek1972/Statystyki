@@ -92,7 +92,7 @@ namespace Statystyki_2018
 
             try
             {
-                DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 1, 30, 12, tenPlik);
+                DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 1, 30, 12, false, tenPlik);
                 Session["tabelka001"] = tabelka01;
                 pisz("tab_1_", 30, 12, tabelka01);
             }

@@ -67,7 +67,7 @@ namespace Statystyki_2018
                     }
                 }
             }
-            catch (Exception ex)
+            catch 
             {
                 //   Server.Transfer("default.aspx");
             }
@@ -95,7 +95,7 @@ namespace Statystyki_2018
             try
             {
                 //cm.log.Info(tenPlik+ "ładowanie danych do tabeli 2");
-                DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 2, 20, 20, tenPlik);
+                DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 2, 20, 20, false, tenPlik);
                 Session["tabelka002"] = tabelka01;
             }
             catch (Exception ex)
@@ -108,7 +108,7 @@ namespace Statystyki_2018
 
             try
             {
-                DataTable tabelka04 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, ((string)Session["id_dzialu"]), 4, 10, 2, tenPlik);
+                DataTable tabelka04 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, ((string)Session["id_dzialu"]), 4, 10, 2, false, tenPlik);
                 Session["tabelka004"] = tabelka04;
 
                 // wypełnianie danych labeli
@@ -206,7 +206,7 @@ namespace Statystyki_2018
             {
                 cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 5");
             }
-            Session["tabelka005"] = dr.tworzTabele(int.Parse(idDzialu), 5, Date1.Date, Date2.Date, 35, GridView5, tenPlik);
+            Session["tabelka005"] = dr.tworzTabele(int.Parse(idDzialu), 5, Date1.Date, Date2.Date, 40, GridView5, tenPlik);
             GridView5.DataBind();
         }
 
@@ -427,6 +427,13 @@ namespace Statystyki_2018
             dT_05.Rows.Add(new Object[] { "1", "W", "1", "1", "h" });
             dT_05.Rows.Add(new Object[] { "1", "Razem", "1", "1", "h" });
 
+            dT_05.Rows.Add(new Object[] { "1", "K", "1", "1", "h" });
+            dT_05.Rows.Add(new Object[] { "1", "Kop", "1", "1", "h" });
+            dT_05.Rows.Add(new Object[] { "1", "Ko", "1", "1", "h" });
+            dT_05.Rows.Add(new Object[] { "1", "Kp", "1", "1", "h" });
+            dT_05.Rows.Add(new Object[] { "1", "W", "1", "1", "h" });
+            dT_05.Rows.Add(new Object[] { "1", "Razem", "1", "1", "h" });
+
             dT_05.Rows.Add(new Object[] { "2", "L.p.", "1", "2", "h" });
             dT_05.Rows.Add(new Object[] { "2", "Imie i nazwisko sędziego", "1", "2", "h" });
             dT_05.Rows.Add(new Object[] { "2", "Efektywny okres oczekiwania", "1", "2", "h" });
@@ -438,7 +445,7 @@ namespace Statystyki_2018
             dT_05.Rows.Add(new Object[] { "2", "Załatwienia ", "6", "1", "H" });
             dT_05.Rows.Add(new Object[] { "2", "Średnio miesię- cznie ", "1", "2", "H" });
             dT_05.Rows.Add(new Object[] { "2", "Średnio miesię- cznie K", "1", "2", "H" });
-
+            dT_05.Rows.Add(new Object[] { "2", "Stan referatów ", "6", "1", "H" });
             Session["header_05"] = dT_05;
 
             dT_06.Clear();
@@ -526,15 +533,7 @@ namespace Statystyki_2018
             }
         }
 
-        /*
-                protected void Button1_Click(object sender, EventArgs e)
-                {
-                    odswiez();
-                    ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print2", "JavaScript: window.print();", true);
-                    // ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print", "window.open('raport_01_print.aspx', '')", true);
-                }
-                */
-
+     
         protected void Button3_Click(object sender, EventArgs e)
         {
             string path = Server.MapPath("Template") + "\\oglk.xlsx";
@@ -581,14 +580,12 @@ namespace Statystyki_2018
                 MyWorksheet1.Cells[rowik + 11, 1].Value = " Pozostało na następny miesiąc";
                 MyWorksheet1.Cells[rowik + 12, 1, rowik + 17, 1].Merge = true;
                 MyWorksheet1.Cells[rowik + 12, 1].Value = " Zaległość";
-
                 MyWorksheet1.Cells[rowik + 12, 2, rowik + 12, 5].Merge = true;
                 MyWorksheet1.Cells[rowik + 12, 2].Value = " 0-3 miesiący";
                 MyWorksheet1.Cells[rowik + 13, 2, rowik + 13, 5].Merge = true;
                 MyWorksheet1.Cells[rowik + 13, 2].Value = " 3-6 miesięcy";
                 MyWorksheet1.Cells[rowik + 14, 2, rowik + 14, 5].Merge = true;
                 MyWorksheet1.Cells[rowik + 14, 2].Value = " 6-12 miesięcy";
-
                 MyWorksheet1.Cells[rowik + 15, 2, rowik + 15, 5].Merge = true;
                 MyWorksheet1.Cells[rowik + 15, 2].Value = " 12-24 miesięcy (do 2 lat)";
 
@@ -624,19 +621,13 @@ namespace Statystyki_2018
 
                 // trzecia
 
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka003"], 7, 0, 5, false, true, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka003"], 7, 0, 5, false, true, false, false, false,false);
 
-                // czwarta
+                
+            //    MyWorksheet1.Cells[1, 1].Value = "Ewidencja spraw odroczonych  ";
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka004"], 10, 2, 3, 3, false);
 
-                ExcelWorksheet MyWorksheet4 = MyExcel.Workbook.Worksheets[3];
-                MyWorksheet4.Cells[1, 1].Value = "Ewidencja spraw odroczonych  ";
-                MyWorksheet4 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka004"], 10, 2, 3, 3, false);
-
-                // piąta
-
-                ExcelWorksheet MyWorksheet5 = MyExcel.Workbook.Worksheets[4];
-
-                MyWorksheet5 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka005"], 29, 0, 3, false, true, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka005"], 29 , 0, 3, false, true, false, false, false,false);
 
                 try
                 {
@@ -714,7 +705,7 @@ namespace Statystyki_2018
             if (e.Row.RowType == DataControlRowType.Footer)
             {
                 DataTable table = (DataTable)Session["tabelka005"];
-                tb.makeSumRow(table, e, 2);
+                tb.makeSumRow(table, e, 1);
             }
         }
 

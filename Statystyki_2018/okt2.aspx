@@ -13,6 +13,18 @@
                 left: 0;
                 right: 0;
             }
+              @media print {
+            @page {
+                size: 29cm 21.7cm;
+                margin: 0mm 0mm 0mm 0mm;
+            }
+
+            .horizont {
+                transform: translate(-10mm, 0) scale(0.75);
+                -webkit-transform: translate(-10mm, 0) scale(0.75);
+                -moz-transform: translate(-10mm, 0) scale(0.75);
+            }
+        }
     </style>
 
     <div id="menu" class="manu_back noprint" style="height: 40px;">
@@ -56,13 +68,13 @@
             &nbsp;&nbsp;&nbsp;&nbsp;
             <br />
                 <br />
-                <div class="page-break">
+                <div class="horizont">
                     &nbsp;<asp:Label ID="Label7" runat="server" Text="Terminowość sporządzania uzasadnień"></asp:Label>
                     &nbsp;&nbsp;&nbsp;
            <asp:Label ID="infoLabel2" runat="server" Text="tabela 1 \/\/" Visible="False"></asp:Label>
                     <br />
 
-                    <asp:GridView ID="gwTabela2" runat="server" OnRowCreated="naglowekTabeli_gwTabela2" AutoGenerateColumns="False" OnRowDataBound="stopkaTabeli_gwTabela2" Width="100%" ShowHeader="False" ShowFooter="True">
+                    <asp:GridView ID="gwTabela2" runat="server" OnRowCreated="naglowekTabeli_gwTabela2" AutoGenerateColumns="False" OnRowDataBound="stopkaTabeli_gwTabela2" Width="99%" ShowHeader="False" ShowFooter="True">
                         <Columns>
 
                             <asp:TemplateField HeaderText="imie" SortExpression="imie">

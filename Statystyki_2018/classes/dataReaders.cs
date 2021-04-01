@@ -59,6 +59,86 @@ namespace Statystyki_2018
 
             //Common.log.Info(tenPlik + kod +"-> : rozpoczęcie tworzenia tabeli z danymi");
             DataTable outputTable = new DataTable();
+
+            for (int i = 1; i <= iloscKolumn + 1; i++)
+            {
+                outputTable.Columns.Add("d_" + i.ToString("D2").Trim(), typeof(string));
+                outputTable.Columns["d_" + i.ToString("D2").Trim()].DefaultValue = "0";
+            }
+
+            DataTable kwerendy = new DataTable();
+            DataTable parameters = Common.makeParameterTable();
+
+            DataRow parametrRow = parameters.NewRow();
+            parameters.Rows.Add("@id_wydzial", id_dzialu);
+            parameters.Rows.Add("@id_tabeli", id_tabeli);
+
+            //Common.log.Info(tenPlik + kod + "-> : odczyt kwerend");dR[
+            DataTable ddT = Common.getDataTable("SELECT id_wiersza, id_kolumny, kwerenda  FROM kwerendy  where id_wiersza>0 and id_kolumny>0 and id_wydzial=@id_wydzial and  id_tabeli=@id_tabeli", con_str, parameters, tenPlik);
+            if (ddT.Rows.Count == 0)
+            {
+                Common.log.Info(tenPlik + kod + "-> : odczyt kwerend: brak kwerend do doczytu danych");
+                return null;
+            }
+            string cs = cl.podajConnectionString(int.Parse(id_dzialu));
+            string kw = string.Empty;
+            for (int i = 1; i <= iloscWierszy; i++) //po wierszach
+            {
+                DataRow dR = outputTable.NewRow();
+
+                for (int j = 1; j <= iloscKolumn; j++)//po kolumnach
+                {
+                    try
+                    {
+                        string selectString = "id_wiersza=" + i + " and " + "id_kolumny=" + j;
+                        DataRow[] foundRows;
+                        foundRows = ddT.Select(selectString);
+                        if (foundRows.Count() != 0)
+                        {
+                            DataRow dr = foundRows[0];
+                            kw = dr[2].ToString();
+                            //wpisanie danych
+                            try
+                            {
+                                string nazwaKolumny = "d_" + j.ToString("D2");
+                                dR[nazwaKolumny] = wyciagnijDaneNt(kw, poczatek, koniec, cs, tenPlik);
+                            }
+                            catch (Exception ex)
+                            {
+                                Common.log.Error(tenPlik + " Kwerenda: " + kw + " bład " + kod + " " + ex.Message);
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Common.log.Error(kod + " " + ex.Message);
+                        dR[j] = "0";
+                    }//end of try
+                }
+
+                outputTable.Rows.Add(dR);
+            }
+            return outputTable;
+        }// end of generuj_dane_do_tabeli
+
+        public DataTable generuj_dane_do_tabeli_wierszy2018(DateTime poczatek, DateTime koniec, string id_dzialu, int id_tabeli, int iloscWierszy, int iloscKolumn, bool opis, string tenPlik)
+
+        {
+            /*roznica w stosunku do wersji bez NT polega na tym ze wszystkie kwerendy są zaczytywane jednocześnie a potem tylko
+            zaciągane z datasetu
+            struktura datasetu
+            - wiersz, kolumna, kwerenda
+            - kwerenda: SELECT id_wiersza, id_kolumny, kwerenda  FROM kwerendy  where id_wydzial=@id_wydzial and  id_tabeli=@id_tabeli
+            */
+
+            const string kod = " DR0003";
+
+            //Common.log.Info(tenPlik + kod +"-> : rozpoczęcie tworzenia tabeli z danymi");
+            DataTable outputTable = new DataTable();
+            outputTable.Columns.Add("opis", typeof(string));
+            outputTable.Columns.Add("id_tabeli", typeof(string));
+            outputTable.Columns.Add("id_", typeof(string));
+
             for (int i = 1; i <= iloscKolumn + 1; i++)
             {
                 outputTable.Columns.Add("d_" + i.ToString("D2").Trim(), typeof(string));
@@ -84,6 +164,24 @@ namespace Statystyki_2018
             for (int i = 1; i <= iloscWierszy; i++) //po wierszach
             {
                 DataRow dR = outputTable.NewRow();
+                if (opis)
+                {
+                    try
+                    {
+                        DataTable parametry = Common.makeParameterTable();
+                        parametry.Rows.Add("@id_wydzial", id_dzialu);
+                        parametry.Rows.Add("@id_tabeli", id_tabeli);
+                        parametry.Rows.Add("@idWiersza", i);
+                        string opisTxtKwerenda = Common.getQuerryValue("select kwerenda FROM kwerendy  where id_wiersza=@idWiersza and id_kolumny=0 and id_wydzial=@id_wydzial and  id_tabeli=@id_tabeli", con_str, parametry, tenPlik);
+                        string opisTxt = Common.getQuerryValue(opisTxtKwerenda, con_str, null, tenPlik);
+                        dR["opis"] = opisTxt;
+                    }
+                    catch (Exception ex)
+                    {
+                        Common.log.Error(kod + " " + ex.Message);
+                        dR["opis"] = "";
+                    }//end of try
+                }
                 for (int j = 1; j <= iloscKolumn; j++)//po kolumnach
                 {
                     try
@@ -98,7 +196,8 @@ namespace Statystyki_2018
                             //wpisanie danych
                             try
                             {
-                                dR[j] = wyciagnijDaneNt(kw, poczatek, koniec, cs, tenPlik);
+                                string nazwaKolumny = "d_" + j.ToString("D2");
+                                dR[nazwaKolumny] = wyciagnijDaneNt(kw, poczatek, koniec, cs, tenPlik);
                             }
                             catch (Exception ex)
                             {
@@ -112,6 +211,8 @@ namespace Statystyki_2018
                         dR[j] = "0";
                     }//end of try
                 }
+                dR["id_tabeli"] = id_tabeli;
+                dR["id_"] = i.ToString();
                 outputTable.Rows.Add(dR);
             }
             return outputTable;
@@ -378,7 +479,7 @@ namespace Statystyki_2018
                     parametry.Rows.Add("@data_2", KonwertujDate(koniec));
                     //con_str_wcyw
                     DataTable tabelaSedziow = Common.getDataTable(kwerendaSedziego, cs, parametry, tenPlik);
-                   
+
                     foreach (DataRow Sedzia in tabelaSedziow.Rows)
                     {
                         try
@@ -400,6 +501,7 @@ namespace Statystyki_2018
                             string exx = ex.Message;
                             Common.log.Error(tenPlik + " :Generowanie tabeli danych: Wpisywanie danych dla tabeli : " + id_tabeli + " " + ex.Message);
                         }
+                       
                     }
                 }
             }
@@ -456,8 +558,6 @@ namespace Statystyki_2018
             catch
             { }
 
-            
-
             return dTable;
         }// end of generuj_dane_do_tabeli_5
 
@@ -496,6 +596,7 @@ namespace Statystyki_2018
 
             return napis;
         }// end of generuj_dane_do_tabeli_5
+
         public DataTable generuj_naglowki_nad_tabelaMK(int id_dzialu, int id_tabeli, string tenPlik)
         {
             string napis = string.Empty;
@@ -503,9 +604,8 @@ namespace Statystyki_2018
             parameters.Rows.Add("@id_tabeli", id_tabeli);
             parameters.Rows.Add("@id_dzialu", id_dzialu);
             return Common.getDataTable("SELECT kwerenda,id_kolumny FROM kwerendy WHERE (id_tabeli = @id_tabeli) AND (id_wiersza =-1) AND (id_wydzial = @id_dzialu)", con_str, parameters, tenPlik);
-
-
         }// end of  generuj_naglowki_nad_tabelaMK
+
         public string wyciagnijWartosc(DataTable ddT, string selectString, string tenPlik)
         {
             if ((string.IsNullOrEmpty(selectString)) || (ddT == null))
@@ -529,6 +629,7 @@ namespace Statystyki_2018
             }
             return result;
         }
+
         public string wyciagnijWartoscMK(DataTable ddT, string selectString, string tenPlik)
         {
             if ((string.IsNullOrEmpty(selectString)) || (ddT == null))
@@ -585,6 +686,7 @@ namespace Statystyki_2018
             }
             return 0;
         }
+
         public int iloscKolumn(int idTabeli, int idWydzialu, string tenPlik)
         {
             try
@@ -603,6 +705,7 @@ namespace Statystyki_2018
             }
             return 0;
         }
+
         public int iloscWierszy(int idTabeli, int idWydzialu, string tenPlik)
         {
             try
@@ -629,7 +732,7 @@ namespace Statystyki_2018
             }
             return foundRows;
         }
-       
+
         private DataTable tabelaSedziowska(int il_kolumn)
         {
             DataTable dTable = new DataTable();
@@ -672,7 +775,7 @@ namespace Statystyki_2018
                 column.DefaultValue = "0";
                 dTable.Columns.Add(column);
             }
-           
+
             return dTable;
         }
     } // end of class

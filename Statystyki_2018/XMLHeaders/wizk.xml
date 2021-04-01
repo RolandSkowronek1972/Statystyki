@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<komorki xmlns="urn:tabeleMSS">
+
+  <tabela id="3">
+    <daneTabeli>
+
+      <iloscWierszy>3</iloscWierszy>
+      <tekstNadTabela>Sędziowie (wg objaśnień: w zestawieniu należy uwzględnić także sędziów delegowanych) </tekstNadTabela>
+      <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>0</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>11</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>1</identyfikatorTabeli>
+      <przelamanie>0</przelamanie>
+      <horizont>1</horizont>
+    </daneTabeli>
+    <naglowek>
+    
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_36</style>
+        <text>L.p.</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_120</style>
+        <text>Imie Nazwisko</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_100</style>
+        <text>okres pracy w wydziale</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_100</style>
+        <text>pełniona funkcja</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_100</style>
+        <text>okres pełnienia funkcji</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_100</style>
+        <text>wymiar czasu pracy w wydziale wg podziału czynności</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_100</style>
+        <text>efektywny czas pracy (w miesiącach)</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>6</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_100</style>
+        <text>Wyznaczone sesje (jawne/niejawne)</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_100</style>
+        <text>Liczba wyznaczonych sesji na rozprawy </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_100</style>
+        <text>Liczba wyznaczonych sesji na posiedzaniach </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_100 </style>
+        <text>Liczba sesji jawnych i niejawnych OGÓŁEM</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_100</style>
+        <text>
+          średnia liczba sesji OGÓŁEM miesięcznie w efektywnym czasie pracy
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_100</style>
+        <text>średnia liczba sesji jawnych miesięcznie w efektywnym czasie pracy </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_100</style>
+        <text>średnia liczba sesji niejawnych miesięcznie w efektywnym czasie pracy </text>
+      </komorka>
+    </naglowek>
+    <stylKolumny>
+    </stylKolumny>
+  </tabela>
+  <tabela id="4">
+    <daneTabeli>
+
+      <iloscWierszy>4</iloscWierszy>
+      <tekstNadTabela>Sędziowie (wg objaśnień: w zestawieniu należy uwzględnić także sędziów delegowanych) </tekstNadTabela>
+      <iloscWierszyNaglowka>1</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>0</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>5</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>4</identyfikatorTabeli>
+      <przelamanie>0</przelamanie>
+      <horizont>1</horizont>
+    </daneTabeli>
+    <naglowek>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_36</style>
+        <text>L.p.</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>Imie Nazwisko</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_100</style>
+        <text>okres pracy w wydziale</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_100</style>
+        <text>pełniona funkcja</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_100</style>
+        <text>okres pełnienia funkcji</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_100</style>
+        <text>wymiar czasu pracy w wydziale wg podziału czynności</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_100</style>
+        <text>średnia liczba sesji miesięcznie w efektywnym czasie pracy</text>
+      </komorka>
+    
+    </naglowek>
+    <stylKolumny>
+    </stylKolumny>
+  </tabela>
+  <tabela id="6">
+    <daneTabeli>
+
+      <iloscWierszy>4</iloscWierszy>
+      <tekstNadTabela>III.2. Referendarze sądowi (wg objaśnień: w zestawieniu należy uwzględnić także referendarzy sądowych delegowanych)  </tekstNadTabela>
+      <iloscWierszyNaglowka>1</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>0</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>5</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>4</identyfikatorTabeli>
+      <przelamanie>0</przelamanie>
+      <horizont>1</horizont>
+    </daneTabeli>
+    <naglowek>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_36</style>
+        <text>L.p.</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>Imie Nazwisko</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_100</style>
+        <text>okres pracy w wydziale</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_100</style>
+        <text>pełniona funkcja</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_100</style>
+        <text>okres pełnienia funkcji</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_100</style>
+        <text>wymiar czasu pracy w wydziale wg podziału czynności</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_100</style>
+        <text>średnia liczba sesji miesięcznie w efektywnym czasie pracy</text>
+      </komorka>
+
+    </naglowek>
+    <stylKolumny>
+    </stylKolumny>
+  </tabela>
+</komorki>

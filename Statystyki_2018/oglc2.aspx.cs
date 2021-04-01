@@ -86,7 +86,7 @@ namespace Statystyki_2018
             txt = txt + cl.clear_maim_db();
             try
             {
-                DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 2, 20, 20, tenPlik);
+                DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 2, 20, 20, false, tenPlik);
                 Session["tabelka002"] = tabelka01;
             }
             catch
@@ -112,7 +112,7 @@ namespace Statystyki_2018
             try
             {
                 //cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 5");
-                DataTable tabelka04 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 5, 20, 20, tenPlik);
+                DataTable tabelka04 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 5, 20, 20, false, tenPlik);
                 Session["tabelka005"] = tabelka04;
 
                 tab_04_w01_c01.Text = tabelka04.Rows[0][1].ToString().Trim();

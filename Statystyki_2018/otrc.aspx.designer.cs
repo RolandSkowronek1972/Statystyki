@@ -49,24 +49,6 @@ namespace Statystyki_2018 {
         protected global::System.Web.UI.WebControls.LinkButton LinkButton54;
         
         /// <summary>
-        /// LinkButton55 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton55;
-        
-        /// <summary>
-        /// LinkButton56 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton56;
-        
-        /// <summary>
         /// LinkButton57 control.
         /// </summary>
         /// <remarks>

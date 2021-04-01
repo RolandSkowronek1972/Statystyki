@@ -26,6 +26,7 @@ namespace Statystyki_2018
             }
             else
             {
+                Server.Transfer("default.aspx");
                 return;
             }
             CultureInfo newCulture = (CultureInfo)CultureInfo.CurrentCulture.Clone();
@@ -61,10 +62,7 @@ namespace Statystyki_2018
                         Session["tabelka002"] = null;
                         Session["tabelka003"] = null;
                         Session["tabelka004"] = null;
-                        Session["tabelka005"] = null;
-                        Session["tabelka006"] = null;
-                        Session["tabelka007"] = null;
-                        Session["tabelka008"] = null;
+                      
                         odswiez();
                         makeLabels();
                     }
@@ -75,6 +73,10 @@ namespace Statystyki_2018
                 Server.Transfer("default.aspx");
             }
         }// end of Page_Load
+
+
+
+
 
         protected void clearHedersSession()
         {
@@ -88,10 +90,19 @@ namespace Statystyki_2018
         {
             string idDzialu = (string)Session["id_dzialu"];
             id_dzialu.Text = (string)Session["txt_dzialu"];
-            string txt = string.Empty;
-            txt = txt + cl.clear_maim_db();
-            txt = txt + cl.generuj_dane_do_tabeli_wierszy(Date1.Date, Date2.Date, idDzialu, 1, tenPlik);
-            GridView2.DataBind();
+         
+            try
+            {
+                Session["tabelka001"] = dr.generuj_dane_do_tabeli_wierszy2018( Date1.Date, Date2.Date, idDzialu, 1,6,6, true, tenPlik);
+                GridView2.DataSource = null;
+                GridView2.DataSourceID = null;
+                GridView2.DataSource = (DataTable)Session["tabelka001"];
+                GridView2.DataBind();
+            }
+            catch (Exception ex)
+            {
+                cm.log.Error(tenPlik + ": id wydzialu=" + idDzialu + " tabela 2 błąd: " + ex.Message);
+            }
             try
             {
                 Session["tabelka002"] = dr.tworzTabele(int.Parse(idDzialu), 2, Date1.Date, Date2.Date, 19, GridView1, tenPlik);
@@ -123,10 +134,33 @@ namespace Statystyki_2018
 
             makeLabels();
 
-            Label11.Visible = cl.debug(int.Parse(idDzialu));
-            Label11.Text = txt;
+           
+          
             Label3.Text = cl.nazwaSadu((string)Session["id_dzialu"]);
         }
+
+        private void tabela_01()
+        {
+            DataTable tabela01 = dr.generuj_dane_do_tabeli_wierszy2018(DateTime.Parse(Date1.Text), DateTime.Parse(Date2.Text), (string)Session["id_dzialu"], 1, 6, 18, true, tenPlik);
+            Session["tabelka001"] = tabela01;
+            try
+            {
+                GridView1.DataSource = null;
+                GridView1.DataSourceID = null;
+
+
+                GridView1.DataSource = tabela01;
+                GridView1.DataBind();
+            }
+            catch (Exception ex)
+            {
+                cm.log.Error(tenPlik + " generowanie tabeli wierszy 01  " + ex.Message);
+            }
+
+        }
+
+
+
 
         protected void makeLabels()
         {
@@ -603,19 +637,6 @@ namespace Statystyki_2018
 
         #endregion "nagłowki tabel"
 
-        #region "obsługa oncommand  tabel z nazwiskami"
-
-        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
-
-        #endregion "obsługa oncommand  tabel z nazwiskami"
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            Session["date_1"] = Date1.Text.Trim();
-            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print", "window.open('raport_01_print.aspx', '')", true);
-        }
 
         protected void Button3_Click(object sender, EventArgs e)
         {
@@ -628,42 +649,13 @@ namespace Statystyki_2018
 
             using (ExcelPackage MyExcel = new ExcelPackage(existingFile))
             {
-                // pierwsza
-
+             
                 ExcelWorksheet MyWorksheet1 = MyExcel.Workbook.Worksheets[1];
-                DataView view = (DataView)dane_do_tabeli_1.Select(DataSourceSelectArguments.Empty);
-                DataTable table = view.ToTable();
-
-                DataTable dane = (DataTable)Session["tabelkaGW002"];
-                for (int i = 0; i < 10; i++)
-                {
-                    for (int j = 0; j < 10; j++)
-                    {
-                        try
-                        {
-                            MyWorksheet1.Cells[3 + j, i].Style.ShrinkToFit = true;
-                            MyWorksheet1.Cells[3 + j, i].Style.Border.BorderAround(OfficeOpenXml.Style.ExcelBorderStyle.Thin, System.Drawing.Color.Black);
-
-                            MyWorksheet1.Cells[3 + j, i].Value = table.Rows[j][i].ToString();
-                        }
-                        catch
-                        { }
-                    }
-                }
-
-                // druga
-
-                DataTable table2 = (DataTable)Session["tabelka002"];
-                MyWorksheet1 = tb.tworzArkuszwExcelPrzestawiony(MyExcel.Workbook.Worksheets[2], table2, 20, 0, 4, true, false, true, true, true);
-
-                // trzecia
-                DataTable table3 = (DataTable)Session["tabelka003"];
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], table3, 10, 0, 3, true, false, true, true, true);
-
-                // czwarta
-
-                DataTable table4 = (DataTable)Session["tabelka004"];
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], table4, 9, 0, 3, true, false, true, true, true);
+            
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziowZopisem(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 6, 6, 1, 4, true);             
+                MyWorksheet1 = tb.tworzArkuszwExcelPrzestawiony(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 12, 0, 4, true, true, true, true, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 8, 0, 4, true, true, true, true, false);            
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 8, 0, 4, true, true, true, true, false);
 
                 try
                 {
@@ -687,11 +679,6 @@ namespace Statystyki_2018
             odswiez();
         }
 
-        protected void LinkButton55_Click(object sender, EventArgs e)
-        {
-            makeLabels();
-            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print2", "JavaScript: window.print();", true);
-            makeLabels();
-        }
+      
     }
 }

@@ -3271,24 +3271,6 @@ namespace Statystyki_2018 {
         protected global::System.Web.UI.WebControls.Label tab_13_w16_c09;
         
         /// <summary>
-        /// tab_13_w17_c04 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label tab_13_w17_c04;
-        
-        /// <summary>
-        /// tab_13_w18_c04 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label tab_13_w18_c04;
-        
-        /// <summary>
         /// lbTabela14 control.
         /// </summary>
         /// <remarks>

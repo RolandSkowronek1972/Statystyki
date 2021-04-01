@@ -2,13 +2,37 @@
 
 <%@ Register Assembly="DevExpress.Web.v17.1, Version=17.1.17.0,  Culture=neutral,  PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
 
-<%@ Register Src="UserControlls/PopupLinkButtom.ascx" TagName="PopupLinkButtom" TagPrefix="uc1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <script src="Scripts/jquery-1.8.3.js"></script>
 
     <script src="Scripts/rls.js"></script>
+      <style>
+        #menu {
+            position: relative;
+        }
+
+            #menu.scrolling {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+
+        @media print {
+            @page {
+                size: 29cm 21.7cm;
+                margin: 5mm 5mm 5mm 5mm; /* change the margins as you want them to be. */
+            }
+            /*
+            .horizont {
+                transform: translate(-70mm, 0) scale(0.8);
+                -webkit-transform: translate(-70mm, 0) scale(0.5);
+                -moz-transform: translate(-70mm, 0) scale(0.5);
+            }*/
+        }
+    </style>
 
     <div id="menu" class="manu_back noprint" style="height: 40px;">
 
@@ -28,7 +52,7 @@
                     </dx:ASPxDateEdit>
                 </td>
                 <td style="width: auto; padding-left: 5px;">
-                    <asp:LinkButton ID="LinkButton54" runat="server" class="ax_box" OnClick="LinkButton54_Click">  Odśwież</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton54" runat="server" class="ax_box" OnClick="Odswiezanie">  Odśwież</asp:LinkButton>
                 </td>
                 <td style="width: auto; padding-left: 5px;">
                     <input id="Button1" class="ax_box" style="border-style: none; padding: 0px" type="button" onclick="JavaScript: window.print();" value="Drukuj" /></td>
@@ -55,8 +79,8 @@
             &nbsp;<asp:Label ID="Label5" runat="server"></asp:Label>
 
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False"
-                OnRowCreated="GridView2_RowCreated" DataSourceID="dane_do_tabeli_1"
-                Width="100%" ShowHeader="False" DataKeyNames="opis,d_01,d_02,d_03,d_04,d_05,d_06,d_07,d_08,d_09,d_10,d_11,d_12,d_13,d_14,d_15,id_tabeli">
+                OnRowCreated="GridView2_RowCreated"
+                Width="99%" ShowHeader="False" DataKeyNames="opis,d_01,d_02,d_03,d_04,d_05,d_06,d_07,d_08,d_09,d_10,d_11,d_12,d_13,d_14,d_15,id_tabeli">
                 <Columns>
                     <asp:TemplateField HeaderText="opis" SortExpression="opis">
                         <EditItemTemplate>
@@ -208,9 +232,8 @@ ORDER BY id_">
             <br />
 
             <asp:Label ID="Label19" runat="server"></asp:Label>
-            <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False"
-                DataSourceID="dane_do_tabeli2" OnRowCreated="grvMergeHeader_RowCreated"
-                Width="100%" ShowHeader="False">
+            <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" OnRowCreated="grvMergeHeader_RowCreated"
+                Width="99%" ShowHeader="False" OnRowDataBound="stopkaTabeli02" ShowFooter="True">
                 <Columns>
                     <asp:BoundField DataField="id" HeaderText="L.p." SortExpression="id">
                         <ItemStyle Width="15px" />
@@ -359,7 +382,7 @@ ORDER BY id_">
                                 <asp:Label ID="Label215" runat="server" Text='<%# Eval("d_15")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="t2_d2" BackColor="#CCCCCC" />
+                        <ItemStyle CssClass="t2_d2"  />
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="d_11" SortExpression="d_11">
@@ -377,7 +400,7 @@ ORDER BY id_">
                                 <asp:Label ID="Label217" runat="server" Text='<%# Eval("d_17")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="t2_d2" />
+                        <ItemStyle CssClass="t2_d2" BackColor="#CCCCCC"/>
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="d_11" SortExpression="d_11">
@@ -406,19 +429,12 @@ ORDER BY id_">
                         <ItemStyle CssClass="t2_d4" />
                     </asp:TemplateField>
                 </Columns>
+                <FooterStyle BackColor="#CCCCCC" />
             </asp:GridView>
-            <asp:SqlDataSource ID="dane_do_tabeli2" runat="server"
-                ConnectionString="<%$ ConnectionStrings:wap %>"
-                SelectCommand="SELECT ROW_NUMBER() OVER( ORDER BY ident ) AS id, ident, imie, nazwisko, funkcja, stanowisko, d_01, d_02, d_03, d_04, d_05, d_06, d_07, d_08, d_09, d_10, d_11, d_12, d_13, d_14, d_15, d_16, d_17, d_18, d_19, d_20, d_21, d_22, sesja, id_sedziego, id_dzialu, id_tabeli FROM tbl_statystyki_tbl_02 WHERE (id_tabeli = 2) AND (id_dzialu = @id_dzialu) ORDER BY id">
-                <SelectParameters>
-                    <asp:SessionParameter Name="id_dzialu" SessionField="id_dzialu" />
-                </SelectParameters>
-            </asp:SqlDataSource>
         </div>
         <div id="wyznaczenia" class="page-break">
             &nbsp;<asp:Label ID="Label17" runat="server"></asp:Label>
-            <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False"
-                DataSourceID="tabela_3" OnRowCreated="GridView3_RowCreated" Width="100%" ShowHeader="False">
+            <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False" OnRowCreated="GridView3_RowCreated" Width="99%" ShowHeader="False" OnRowDataBound="stopkaTabeli03" ShowFooter="True">
                 <Columns>
                     <asp:BoundField DataField="id" HeaderText="L.p." SortExpression="id">
                         <ItemStyle Width="15px" />
@@ -573,14 +589,8 @@ ORDER BY id_">
                         <ItemStyle CssClass="t3_d1" />
                     </asp:TemplateField>
                 </Columns>
+                <FooterStyle BackColor="#CCCCCC" />
             </asp:GridView>
-            <asp:SqlDataSource ID="tabela_3" runat="server"
-                ConnectionString="<%$ ConnectionStrings:wap %>"
-                SelectCommand="SELECT ROW_NUMBER() OVER( ORDER BY ident ) AS id,  ident, imie, nazwisko, funkcja, stanowisko, d_01, d_02, d_03, d_04, d_05, d_06, d_07, d_08, d_09, d_10, d_11, d_12, d_13, d_14, d_15, d_16, d_17, d_18, d_19, d_20, d_21, d_22, sesja, id_sedziego, id_dzialu, id_tabeli FROM tbl_statystyki_tbl_02 WHERE (id_tabeli = 3) AND (id_dzialu = @id_dzialu) ORDER BY id">
-                <SelectParameters>
-                    <asp:SessionParameter Name="id_dzialu" SessionField="id_dzialu" />
-                </SelectParameters>
-            </asp:SqlDataSource>
         </div>
 
         <br />
@@ -588,8 +598,7 @@ ORDER BY id_">
             &nbsp;<asp:Label ID="Label15" runat="server"></asp:Label>
             &nbsp;
     &nbsp;
-            <asp:GridView ID="GridView4" runat="server" AutoGenerateColumns="False"
-                DataSourceID="tabela_4" OnRowCreated="GridView4_RowCreated" Width="100%" ShowHeader="False">
+            <asp:GridView ID="GridView4" runat="server" AutoGenerateColumns="False" OnRowCreated="GridView4_RowCreated" Width="99%" ShowHeader="False" OnRowDataBound="stopkaTabelo04" ShowFooter="True">
                 <Columns>
                     <asp:BoundField DataField="id" HeaderText="L.p." SortExpression="id">
                         <ItemStyle Width="15px" />
@@ -749,14 +758,8 @@ ORDER BY id_">
                         <ItemStyle CssClass="t4_d1" BackColor="#CCCCCC" />
                     </asp:TemplateField>
                 </Columns>
+                <FooterStyle BackColor="#CCCCCC" />
             </asp:GridView>
-            <asp:SqlDataSource ID="tabela_4" runat="server"
-                ConnectionString="<%$ ConnectionStrings:wap %>"
-                SelectCommand="SELECT ROW_NUMBER() OVER( ORDER BY ident ) AS id, ident, imie, nazwisko, funkcja, stanowisko, id_tabeli, d_01, d_02, d_03, d_04, d_05, d_06, d_07, d_08, d_09, d_10, d_11, d_12, d_13, d_14, d_15, d_16, d_17, d_18, d_19, d_20, d_21, d_22, sesja, id_sedziego FROM tbl_statystyki_tbl_02 WHERE  (id_tabeli = 4) AND (id_dzialu = @id_dzialu) ORDER BY id">
-                <SelectParameters>
-                    <asp:SessionParameter Name="id_dzialu" SessionField="id_dzialu" />
-                </SelectParameters>
-            </asp:SqlDataSource>
             Raport statystyczny
                     <asp:Label ID="Label27" runat="server"></asp:Label>
             &nbsp;Sporzadzone dn.
@@ -764,7 +767,7 @@ ORDER BY id_">
             &nbsp;&nbsp;
             <asp:Label ID="Label28" runat="server" Text="Label"></asp:Label>
             &nbsp;<asp:Label ID="Label30" runat="server" Text="Label"></asp:Label>
-            <uzytkownik.imie><uzytkownik.nazwisko>
+         
         </div>
         <div id="debag">
             <asp:Label ID="Label11" runat="server"></asp:Label>

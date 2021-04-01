@@ -132,7 +132,7 @@ namespace Statystyki_2018
             cl.clear_maim_db();
             try
             {
-                DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 2, 20, 30, tenPlik);
+                DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 2, 20, 30, false, tenPlik);
                 Session["tabelka002"] = tabelka01;
                 //cm.log.Info(tenPlik + " : Wygenerowano dal tabeli 2" + tabelka01.Rows.Count.ToString() + " wierszy");
             }

@@ -113,20 +113,19 @@ namespace Statystyki_2018
 
             DevExpress.Web.MenuItem mm1 = new DevExpress.Web.MenuItem("Inne");
             DevExpress.Web.MenuItem mm2 = new DevExpress.Web.MenuItem();
-            //sprawdzenie czy sa uprawnienia do oceny 
+            //sprawdzenie czy sa uprawnienia do oceny
             DataTable parametry = makeParameterTable();
             parametry.Rows.Add("@identyfikatorUzytkownika", identyfikatorUzytkownika);
-            int iloscUprawnienOceny = int.Parse(getQuerryValue ("SELECT COUNT(*) FROM  uprawnienia WHERE (rodzaj = 6) and id_uzytkownika=@identyfikatorUzytkownika",con_str,parametry,"Header - sprawdzanie oceny pracownika"));
-            if (iloscUprawnienOceny>0)
+            int iloscUprawnienOceny = int.Parse(getQuerryValue("SELECT COUNT(*) FROM  uprawnienia WHERE (rodzaj = 6) and id_uzytkownika=@identyfikatorUzytkownika", con_str, parametry, "Header - sprawdzanie oceny pracownika"));
+            if (iloscUprawnienOceny > 0)
             {
                 mm2 = new DevExpress.Web.MenuItem("Ocena pracownika Nowa", "", "", "ocenaPracownika.aspx", "_self");
                 mm2.ItemStyle.Width = 300;
                 mm2.ItemStyle.Paddings.PaddingLeft = 30;
                 mm1.Items.Add(mm2);
-
             }
             int iloscUprawnienKOF = int.Parse(getQuerryValue("SELECT COUNT(*) FROM  uprawnienia WHERE (rodzaj = 4) and id_uzytkownika=@identyfikatorUzytkownika", con_str, parametry, "Header - sprawdzanie oceny pracownika"));
-            if (iloscUprawnienKOF>0)
+            if (iloscUprawnienKOF > 0)
             {
                 mm2 = new DevExpress.Web.MenuItem("Kontrolka KOF", "", "", "kof.aspx", "_self");
                 mm2.ItemStyle.Width = 300;
@@ -138,6 +137,28 @@ namespace Statystyki_2018
             mm2.ItemStyle.Width = 300;
             mm2.ItemStyle.Paddings.PaddingLeft = 30;
             mm1.Items.Add(mm2);
+
+            return mm1;
+        }
+
+        public DevExpress.Web.MenuItem daneDoManuWymiana(string identyfikatorUzytkownika)
+        {
+            //czy admin
+          
+
+            DevExpress.Web.MenuItem mm1 = new DevExpress.Web.MenuItem("Wymiana");
+            DevExpress.Web.MenuItem mm2 = new DevExpress.Web.MenuItem();
+            //sprawdzenie czy sa uprawnienia do wymiany
+            DataTable parametry = makeParameterTable();
+            parametry.Rows.Add("@identyfikatorUzytkownika", identyfikatorUzytkownika);
+            int iloscUprawnienWymiana = int.Parse(getQuerryValue("SELECT COUNT(*) FROM  uprawnienia WHERE (rodzaj = 7) and id_uzytkownika=@identyfikatorUzytkownika", con_str, parametry, "Header - sprawdzanie wymiany "));
+            if (iloscUprawnienWymiana > 0)
+            {
+                mm2 = new DevExpress.Web.MenuItem("Wymiana", "", "", "Wymiana1.aspx", "_self");
+                mm2.ItemStyle.Width = 300;
+                mm2.ItemStyle.Paddings.PaddingLeft = 30;
+                mm1.Items.Add(mm2);
+            }
 
             return mm1;
         }

@@ -31,6 +31,7 @@ namespace Statystyki_2018
             {
                 if (idWydzial == null)
                 {
+                    Server.Transfer("default.aspx");
                     return;
                 }
                 Session["id_dzialu"] = idWydzial;
@@ -64,6 +65,7 @@ namespace Statystyki_2018
                 return;
             }
             int idWydzial = int.Parse((string)Session["id_dzialu"]);
+            PlaceHolderTB3.Controls.Clear();
             PlaceHolderTB4.Controls.Clear();
             PlaceHolderTB5.Controls.Clear();
             PlaceHolderTB6.Controls.Clear();
@@ -129,13 +131,13 @@ namespace Statystyki_2018
                 cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 1");
             }
 
-            DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, idWydzialu.ToString(), idtabeli, 6, 1, tenPlik);
+            DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, idWydzialu.ToString(), idtabeli, 6, 1, false, tenPlik);
             Session["tabelka001"] = tabelka01;
             try
             {
                 tab_1_w01_c01.Text = tabelka01.Rows[0][1].ToString().Trim();
                 tab_1_w02_c01.Text = tabelka01.Rows[1][1].ToString().Trim();
-                tab_1_w03_c01.Text = tabelka01.Rows[2][1].ToString().Trim();
+                tab_1_w04_c01.Text = tabelka01.Rows[2][1].ToString().Trim();
                 tab_1_w04_c01.Text = tabelka01.Rows[3][1].ToString().Trim();
                 tab_1_w05_c01.Text = tabelka01.Rows[4][1].ToString().Trim();
                 tab_1_w06_c01.Text = tabelka01.Rows[5][1].ToString().Trim();
@@ -153,13 +155,13 @@ namespace Statystyki_2018
                 cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 2");
             }
 
-            DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, idWydzialu.ToString(), idtabeli, 6, 1, tenPlik);
+            DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, idWydzialu.ToString(), idtabeli, 6, 1, false, tenPlik);
             Session["tabelka002"] = tabelka01;
             try
             {
                 tab_2_w01_c01.Text = tabelka01.Rows[0][1].ToString().Trim();
                 tab_2_w02_c01.Text = tabelka01.Rows[1][1].ToString().Trim();
-                tab_2_w03_c01.Text = tabelka01.Rows[2][1].ToString().Trim();
+                tab_2_w04_c01.Text = tabelka01.Rows[2][1].ToString().Trim();
                 tab_2_w04_c01.Text = tabelka01.Rows[3][1].ToString().Trim();
                 tab_2_w05_c01.Text = tabelka01.Rows[4][1].ToString().Trim();
                 tab_2_w06_c01.Text = tabelka01.Rows[5][1].ToString().Trim();
@@ -264,7 +266,7 @@ namespace Statystyki_2018
             {
                 cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 9");
             }
-            DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, idDzialu.ToString(), 9, 8, 40, tenPlik);
+            DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, idDzialu.ToString(), 9, 8, 18, tenPlik);
             if (tabelka01 == null)
             {
                 cm.log.Error(tenPlik + " Brak danych dla tabeli 9!");
@@ -273,69 +275,69 @@ namespace Statystyki_2018
             //  wiersz 1
             try
             {
-                tab_9_w01_c01.Text = tabelka01.Rows[0][1].ToString().Trim();
-                tab_9_w01_c02.Text = tabelka01.Rows[0][2].ToString().Trim();
-                tab_9_w01_c03.Text = tabelka01.Rows[0][3].ToString().Trim();
-                tab_9_w01_c04.Text = tabelka01.Rows[0][4].ToString().Trim();
-                tab_9_w01_c05.Text = tabelka01.Rows[0][5].ToString().Trim();
-                tab_9_w01_c06.Text = tabelka01.Rows[0][6].ToString().Trim();
-                tab_9_w01_c07.Text = tabelka01.Rows[0][7].ToString().Trim();
-                tab_9_w01_c08.Text = tabelka01.Rows[0][8].ToString().Trim();
-                tab_9_w01_c09.Text = tabelka01.Rows[0][9].ToString().Trim();
-                tab_9_w01_c10.Text = tabelka01.Rows[0][10].ToString().Trim();
-                tab_9_w01_c11.Text = tabelka01.Rows[0][11].ToString().Trim();
-                tab_9_w01_c12.Text = tabelka01.Rows[0][12].ToString().Trim();
-                tab_9_w01_c13.Text = tabelka01.Rows[0][13].ToString().Trim();
-                tab_9_w01_c14.Text = tabelka01.Rows[0][14].ToString().Trim();
-                tab_9_w01_c15.Text = tabelka01.Rows[0][15].ToString().Trim();
+                tab_9_w01_c01.Text = tabelka01.Rows[0]["d_01"].ToString().Trim();
+                tab_9_w01_c02.Text = tabelka01.Rows[0]["d_02"].ToString().Trim();
+                tab_9_w01_c03.Text = tabelka01.Rows[0]["d_03"].ToString().Trim();
+                tab_9_w01_c04.Text = tabelka01.Rows[0]["d_04"].ToString().Trim();
+                tab_9_w01_c05.Text = tabelka01.Rows[0]["d_05"].ToString().Trim();
+                tab_9_w01_c06.Text = tabelka01.Rows[0]["d_06"].ToString().Trim();
+                tab_9_w01_c07.Text = tabelka01.Rows[0]["d_07"].ToString().Trim();
+                tab_9_w01_c08.Text = tabelka01.Rows[0]["d_08"].ToString().Trim();
+                tab_9_w01_c09.Text = tabelka01.Rows[0]["d_09"].ToString().Trim();
+                tab_9_w01_c10.Text = tabelka01.Rows[0]["d_10"].ToString().Trim();
+                tab_9_w01_c11.Text = tabelka01.Rows[0]["d_11"].ToString().Trim();
+                tab_9_w01_c12.Text = tabelka01.Rows[0]["d_12"].ToString().Trim();
+                tab_9_w01_c13.Text = tabelka01.Rows[0]["d_13"].ToString().Trim();
+                tab_9_w01_c14.Text = tabelka01.Rows[0]["d_14"].ToString().Trim();
+                tab_9_w01_c15.Text = tabelka01.Rows[0]["d_15"].ToString().Trim();
                 //  wiersz 2
-                tab_9_w02_c01.Text = tabelka01.Rows[1][1].ToString().Trim();
-                tab_9_w02_c02.Text = tabelka01.Rows[1][2].ToString().Trim();
-                tab_9_w02_c03.Text = tabelka01.Rows[1][3].ToString().Trim();
-                tab_9_w02_c04.Text = tabelka01.Rows[1][4].ToString().Trim();
-                tab_9_w02_c05.Text = tabelka01.Rows[1][5].ToString().Trim();
-                tab_9_w02_c06.Text = tabelka01.Rows[1][6].ToString().Trim();
-                tab_9_w02_c07.Text = tabelka01.Rows[1][7].ToString().Trim();
-                tab_9_w02_c08.Text = tabelka01.Rows[1][8].ToString().Trim();
-                tab_9_w02_c09.Text = tabelka01.Rows[1][9].ToString().Trim();
-                tab_9_w02_c10.Text = tabelka01.Rows[1][10].ToString().Trim();
-                tab_9_w02_c11.Text = tabelka01.Rows[1][11].ToString().Trim();
-                tab_9_w02_c12.Text = tabelka01.Rows[1][12].ToString().Trim();
-                tab_9_w02_c13.Text = tabelka01.Rows[1][13].ToString().Trim();
-                tab_9_w02_c14.Text = tabelka01.Rows[1][14].ToString().Trim();
-                tab_9_w02_c15.Text = tabelka01.Rows[1][15].ToString().Trim();
+                tab_9_w02_c01.Text = tabelka01.Rows[1]["d_01"].ToString().Trim();
+                tab_9_w02_c02.Text = tabelka01.Rows[1]["d_02"].ToString().Trim();
+                tab_9_w02_c03.Text = tabelka01.Rows[1]["d_03"].ToString().Trim();
+                tab_9_w02_c04.Text = tabelka01.Rows[1]["d_04"].ToString().Trim();
+                tab_9_w02_c05.Text = tabelka01.Rows[1]["d_05"].ToString().Trim();
+                tab_9_w02_c06.Text = tabelka01.Rows[1]["d_06"].ToString().Trim();
+                tab_9_w02_c07.Text = tabelka01.Rows[1]["d_07"].ToString().Trim();
+                tab_9_w02_c08.Text = tabelka01.Rows[1]["d_08"].ToString().Trim();
+                tab_9_w02_c09.Text = tabelka01.Rows[1]["d_09"].ToString().Trim();
+                tab_9_w02_c10.Text = tabelka01.Rows[1]["d_10"].ToString().Trim();
+                tab_9_w02_c11.Text = tabelka01.Rows[1]["d_11"].ToString().Trim();
+                tab_9_w02_c12.Text = tabelka01.Rows[1]["d_12"].ToString().Trim();
+                tab_9_w02_c13.Text = tabelka01.Rows[1]["d_13"].ToString().Trim();
+                tab_9_w02_c14.Text = tabelka01.Rows[1]["d_14"].ToString().Trim();
+                tab_9_w02_c15.Text = tabelka01.Rows[1]["d_15"].ToString().Trim();
                 //  wiersz 3
-                tab_9_w03_c01.Text = tabelka01.Rows[2][1].ToString().Trim();
-                tab_9_w03_c02.Text = tabelka01.Rows[2][2].ToString().Trim();
-                tab_9_w03_c03.Text = tabelka01.Rows[2][3].ToString().Trim();
-                tab_9_w03_c04.Text = tabelka01.Rows[2][4].ToString().Trim();
-                tab_9_w03_c05.Text = tabelka01.Rows[2][5].ToString().Trim();
-                tab_9_w03_c06.Text = tabelka01.Rows[2][6].ToString().Trim();
-                tab_9_w03_c07.Text = tabelka01.Rows[2][7].ToString().Trim();
-                tab_9_w03_c08.Text = tabelka01.Rows[2][8].ToString().Trim();
-                tab_9_w03_c09.Text = tabelka01.Rows[2][9].ToString().Trim();
-                tab_9_w03_c10.Text = tabelka01.Rows[2][10].ToString().Trim();
-                tab_9_w03_c11.Text = tabelka01.Rows[2][11].ToString().Trim();
-                tab_9_w03_c12.Text = tabelka01.Rows[2][12].ToString().Trim();
-                tab_9_w03_c13.Text = tabelka01.Rows[2][13].ToString().Trim();
-                tab_9_w03_c14.Text = tabelka01.Rows[2][14].ToString().Trim();
-                tab_9_w03_c15.Text = tabelka01.Rows[2][15].ToString().Trim();
+                tab_9_w04_c01.Text = tabelka01.Rows[2]["d_01"].ToString().Trim();
+                tab_9_w04_c02.Text = tabelka01.Rows[2]["d_02"].ToString().Trim();
+                tab_9_w04_c03.Text = tabelka01.Rows[2]["d_03"].ToString().Trim();
+                tab_9_w04_c04.Text = tabelka01.Rows[2]["d_04"].ToString().Trim();
+                tab_9_w04_c05.Text = tabelka01.Rows[2]["d_05"].ToString().Trim();
+                tab_9_w04_c06.Text = tabelka01.Rows[2]["d_06"].ToString().Trim();
+                tab_9_w04_c07.Text = tabelka01.Rows[2]["d_07"].ToString().Trim();
+                tab_9_w04_c08.Text = tabelka01.Rows[2]["d_08"].ToString().Trim();
+                tab_9_w04_c09.Text = tabelka01.Rows[2]["d_09"].ToString().Trim();
+                tab_9_w04_c10.Text = tabelka01.Rows[2]["d_10"].ToString().Trim();
+                tab_9_w04_c11.Text = tabelka01.Rows[2]["d_11"].ToString().Trim();
+                tab_9_w04_c12.Text = tabelka01.Rows[2]["d_12"].ToString().Trim();
+                tab_9_w04_c13.Text = tabelka01.Rows[2]["d_13"].ToString().Trim();
+                tab_9_w04_c14.Text = tabelka01.Rows[2]["d_14"].ToString().Trim();
+                tab_9_w04_c15.Text = tabelka01.Rows[2]["d_15"].ToString().Trim();
                 //  wiersz 4
-                tab_9_w04_c01.Text = tabelka01.Rows[3][1].ToString().Trim();
-                tab_9_w04_c02.Text = tabelka01.Rows[3][2].ToString().Trim();
-                tab_9_w04_c03.Text = tabelka01.Rows[3][3].ToString().Trim();
-                tab_9_w04_c04.Text = tabelka01.Rows[3][4].ToString().Trim();
-                tab_9_w04_c05.Text = tabelka01.Rows[3][5].ToString().Trim();
-                tab_9_w04_c06.Text = tabelka01.Rows[3][6].ToString().Trim();
-                tab_9_w04_c07.Text = tabelka01.Rows[3][7].ToString().Trim();
-                tab_9_w04_c08.Text = tabelka01.Rows[3][8].ToString().Trim();
-                tab_9_w04_c09.Text = tabelka01.Rows[3][9].ToString().Trim();
-                tab_9_w04_c10.Text = tabelka01.Rows[3][10].ToString().Trim();
-                tab_9_w04_c11.Text = tabelka01.Rows[3][11].ToString().Trim();
-                tab_9_w04_c12.Text = tabelka01.Rows[3][12].ToString().Trim();
-                tab_9_w04_c13.Text = tabelka01.Rows[3][13].ToString().Trim();
-                tab_9_w04_c14.Text = tabelka01.Rows[3][14].ToString().Trim();
-                tab_9_w04_c15.Text = tabelka01.Rows[3][15].ToString().Trim();
+                tab_9_w04_c01.Text = tabelka01.Rows[3]["d_01"].ToString().Trim();
+                tab_9_w04_c02.Text = tabelka01.Rows[3]["d_02"].ToString().Trim();
+                tab_9_w04_c03.Text = tabelka01.Rows[3]["d_03"].ToString().Trim();
+                tab_9_w04_c04.Text = tabelka01.Rows[3]["d_04"].ToString().Trim();
+                tab_9_w04_c05.Text = tabelka01.Rows[3]["d_05"].ToString().Trim();
+                tab_9_w04_c06.Text = tabelka01.Rows[3]["d_06"].ToString().Trim();
+                tab_9_w04_c07.Text = tabelka01.Rows[3]["d_07"].ToString().Trim();
+                tab_9_w04_c08.Text = tabelka01.Rows[3]["d_08"].ToString().Trim();
+                tab_9_w04_c09.Text = tabelka01.Rows[3]["d_09"].ToString().Trim();
+                tab_9_w04_c10.Text = tabelka01.Rows[3]["d_10"].ToString().Trim();
+                tab_9_w04_c11.Text = tabelka01.Rows[3]["d_11"].ToString().Trim();
+                tab_9_w04_c12.Text = tabelka01.Rows[3]["d_12"].ToString().Trim();
+                tab_9_w04_c13.Text = tabelka01.Rows[3]["d_13"].ToString().Trim();
+                tab_9_w04_c14.Text = tabelka01.Rows[3]["d_14"].ToString().Trim();
+                tab_9_w04_c15.Text = tabelka01.Rows[3]["d_15"].ToString().Trim();
             }
             catch
             {
@@ -356,11 +358,11 @@ namespace Statystyki_2018
                 return;
             }
             //  wiersz 1
-            tab_10_w01_c01.Text = tabelka01.Rows[0][1].ToString().Trim();
+            tab_10_w01_c01.Text = tabelka01.Rows[0][0].ToString().Trim();
             //  wiersz 2
-            tab_10_w02_c01.Text = tabelka01.Rows[1][1].ToString().Trim();
+            tab_10_w02_c01.Text = tabelka01.Rows[1][0].ToString().Trim();
             //  wiersz 3
-            tab_10_w03_c01.Text = tabelka01.Rows[2][1].ToString().Trim();
+            tab_10_w03_c01.Text = tabelka01.Rows[2][0].ToString().Trim();
         }
 
         protected void tabela_11()
@@ -377,285 +379,312 @@ namespace Statystyki_2018
                 return;
             }
             //  wiersz 1
-            try
-            {
-                pisz("tab_11_", 22, 12, tabelka01);
-            }
-            catch (Exception)
-            {
-            }
-            /*
-            tab_11_w01_c01.Text = tabelka01.Rows[0][1].ToString().Trim();
-            tab_11_w01_c02.Text = tabelka01.Rows[0][2].ToString().Trim();
-            tab_11_w01_c03.Text = tabelka01.Rows[0][3].ToString().Trim();
-            tab_11_w01_c04.Text = tabelka01.Rows[0][4].ToString().Trim();
-            tab_11_w01_c05.Text = tabelka01.Rows[0][5].ToString().Trim();
-            tab_11_w01_c06.Text = tabelka01.Rows[0][6].ToString().Trim();
-            tab_11_w01_c07.Text = tabelka01.Rows[0][7].ToString().Trim();
-            tab_11_w01_c08.Text = tabelka01.Rows[0][8].ToString().Trim();
-            tab_11_w01_c09.Text = tabelka01.Rows[0][9].ToString().Trim();
-            tab_11_w01_c10.Text = tabelka01.Rows[0][10].ToString().Trim();
-            tab_11_w01_c11.Text = tabelka01.Rows[0][11].ToString().Trim();
-            tab_11_w01_c12.Text = tabelka01.Rows[0][12].ToString().Trim();
-            tab_11_w01_c13.Text = tabelka01.Rows[0][13].ToString().Trim();
-            tab_11_w01_c14.Text = tabelka01.Rows[0][14].ToString().Trim();
-            tab_11_w01_c15.Text = tabelka01.Rows[0][15].ToString().Trim();
-            tab_11_w01_c16.Text = tabelka01.Rows[0][16].ToString().Trim();
-            tab_11_w01_c17.Text = tabelka01.Rows[0][17].ToString().Trim();
-            tab_11_w01_c18.Text = tabelka01.Rows[0][18].ToString().Trim();
-            tab_11_w01_c19.Text = tabelka01.Rows[0][19].ToString().Trim();
-            tab_11_w01_c20.Text = tabelka01.Rows[0][20].ToString().Trim();
-            tab_11_w01_c21.Text = tabelka01.Rows[0][21].ToString().Trim();
-            tab_11_w01_c22.Text = tabelka01.Rows[0][22].ToString().Trim();
-            tab_11_w01_c23.Text = tabelka01.Rows[0][23].ToString().Trim();
-            tab_11_w01_c24.Text = tabelka01.Rows[0][24].ToString().Trim();
-            tab_11_w01_c25.Text = tabelka01.Rows[0][25].ToString().Trim();
-            tab_11_w01_c26.Text = tabelka01.Rows[0][26].ToString().Trim();
-            tab_11_w01_c27.Text = tabelka01.Rows[0][27].ToString().Trim();
-            tab_11_w01_c28.Text = tabelka01.Rows[0][28].ToString().Trim();
-            tab_11_w01_c29.Text = tabelka01.Rows[0][29].ToString().Trim();
-            tab_11_w01_c30.Text = tabelka01.Rows[0][30].ToString().Trim();
-            tab_11_w01_c31.Text = tabelka01.Rows[0][31].ToString().Trim();
-            tab_11_w01_c32.Text = tabelka01.Rows[0][32].ToString().Trim();
-            tab_11_w01_c33.Text = tabelka01.Rows[0][33].ToString().Trim();
-            tab_11_w01_c34.Text = tabelka01.Rows[0][34].ToString().Trim();
-            tab_11_w01_c35.Text = tabelka01.Rows[0][35].ToString().Trim();
-            tab_11_w01_c36.Text = tabelka01.Rows[0][36].ToString().Trim();
+
+            tab_11_w01_c01.Text = tabelka01.Rows[0]["d_01"].ToString().Trim();
+            tab_11_w01_c02.Text = tabelka01.Rows[0]["d_02"].ToString().Trim();
+            tab_11_w01_c03.Text = tabelka01.Rows[0]["d_03"].ToString().Trim();
+            tab_11_w01_c04.Text = tabelka01.Rows[0]["d_04"].ToString().Trim();
+            tab_11_w01_c05.Text = tabelka01.Rows[0]["d_05"].ToString().Trim();
+            tab_11_w01_c06.Text = tabelka01.Rows[0]["d_06"].ToString().Trim();
+            tab_11_w01_c07.Text = tabelka01.Rows[0]["d_07"].ToString().Trim();
+            tab_11_w01_c08.Text = tabelka01.Rows[0]["d_08"].ToString().Trim();
+            tab_11_w01_c09.Text = tabelka01.Rows[0]["d_09"].ToString().Trim();
+            tab_11_w01_c10.Text = tabelka01.Rows[0]["d_10"].ToString().Trim();
+            tab_11_w01_c11.Text = tabelka01.Rows[0]["d_11"].ToString().Trim();
+            tab_11_w01_c12.Text = tabelka01.Rows[0]["d_12"].ToString().Trim();
+
             //  wiersz 2
-            tab_11_w02_c01.Text = tabelka01.Rows[1][1].ToString().Trim();
-            tab_11_w02_c02.Text = tabelka01.Rows[1][2].ToString().Trim();
-            tab_11_w02_c03.Text = tabelka01.Rows[1][3].ToString().Trim();
-            tab_11_w02_c04.Text = tabelka01.Rows[1][4].ToString().Trim();
-            tab_11_w02_c05.Text = tabelka01.Rows[1][5].ToString().Trim();
-            tab_11_w02_c06.Text = tabelka01.Rows[1][6].ToString().Trim();
-            tab_11_w02_c07.Text = tabelka01.Rows[1][7].ToString().Trim();
-            tab_11_w02_c08.Text = tabelka01.Rows[1][8].ToString().Trim();
-            tab_11_w02_c09.Text = tabelka01.Rows[1][9].ToString().Trim();
-            tab_11_w02_c10.Text = tabelka01.Rows[1][10].ToString().Trim();
-            tab_11_w02_c11.Text = tabelka01.Rows[1][11].ToString().Trim();
-            tab_11_w02_c12.Text = tabelka01.Rows[1][12].ToString().Trim();
-            tab_11_w02_c13.Text = tabelka01.Rows[1][13].ToString().Trim();
-            tab_11_w02_c14.Text = tabelka01.Rows[1][14].ToString().Trim();
-            tab_11_w02_c15.Text = tabelka01.Rows[1][15].ToString().Trim();
-            tab_11_w02_c16.Text = tabelka01.Rows[1][16].ToString().Trim();
-            tab_11_w02_c17.Text = tabelka01.Rows[1][17].ToString().Trim();
-            tab_11_w02_c18.Text = tabelka01.Rows[1][18].ToString().Trim();
-            tab_11_w02_c19.Text = tabelka01.Rows[1][19].ToString().Trim();
-            tab_11_w02_c20.Text = tabelka01.Rows[1][20].ToString().Trim();
-            tab_11_w02_c21.Text = tabelka01.Rows[1][21].ToString().Trim();
-            tab_11_w02_c22.Text = tabelka01.Rows[1][22].ToString().Trim();
-            tab_11_w02_c23.Text = tabelka01.Rows[1][23].ToString().Trim();
-            tab_11_w02_c24.Text = tabelka01.Rows[1][24].ToString().Trim();
-            tab_11_w02_c25.Text = tabelka01.Rows[1][25].ToString().Trim();
-            tab_11_w02_c26.Text = tabelka01.Rows[1][26].ToString().Trim();
-            tab_11_w02_c27.Text = tabelka01.Rows[1][27].ToString().Trim();
-            tab_11_w02_c28.Text = tabelka01.Rows[1][28].ToString().Trim();
-            tab_11_w02_c29.Text = tabelka01.Rows[1][29].ToString().Trim();
-            tab_11_w02_c30.Text = tabelka01.Rows[1][30].ToString().Trim();
-            tab_11_w02_c31.Text = tabelka01.Rows[1][31].ToString().Trim();
-            tab_11_w02_c32.Text = tabelka01.Rows[1][32].ToString().Trim();
-            tab_11_w02_c33.Text = tabelka01.Rows[1][33].ToString().Trim();
-            tab_11_w02_c34.Text = tabelka01.Rows[1][34].ToString().Trim();
-            tab_11_w02_c35.Text = tabelka01.Rows[1][35].ToString().Trim();
-            tab_11_w02_c36.Text = tabelka01.Rows[1][36].ToString().Trim();
+            tab_11_w02_c01.Text = tabelka01.Rows[1]["d_01"].ToString().Trim();
+            tab_11_w02_c02.Text = tabelka01.Rows[1]["d_02"].ToString().Trim();
+            tab_11_w02_c03.Text = tabelka01.Rows[1]["d_03"].ToString().Trim();
+            tab_11_w02_c04.Text = tabelka01.Rows[1]["d_04"].ToString().Trim();
+            tab_11_w02_c05.Text = tabelka01.Rows[1]["d_05"].ToString().Trim();
+            tab_11_w02_c06.Text = tabelka01.Rows[1]["d_06"].ToString().Trim();
+            tab_11_w02_c07.Text = tabelka01.Rows[1]["d_07"].ToString().Trim();
+            tab_11_w02_c08.Text = tabelka01.Rows[1]["d_08"].ToString().Trim();
+            tab_11_w02_c09.Text = tabelka01.Rows[1]["d_09"].ToString().Trim();
+            tab_11_w02_c10.Text = tabelka01.Rows[1]["d_10"].ToString().Trim();
+            tab_11_w02_c11.Text = tabelka01.Rows[1]["d_11"].ToString().Trim();
+            tab_11_w02_c12.Text = tabelka01.Rows[1]["d_12"].ToString().Trim();
+
             //  wiersz 3
-            tab_11_w03_c01.Text = tabelka01.Rows[2][1].ToString().Trim();
-            tab_11_w03_c02.Text = tabelka01.Rows[2][2].ToString().Trim();
-            tab_11_w03_c03.Text = tabelka01.Rows[2][3].ToString().Trim();
-            tab_11_w03_c04.Text = tabelka01.Rows[2][4].ToString().Trim();
-            tab_11_w03_c05.Text = tabelka01.Rows[2][5].ToString().Trim();
-            tab_11_w03_c06.Text = tabelka01.Rows[2][6].ToString().Trim();
-            tab_11_w03_c07.Text = tabelka01.Rows[2][7].ToString().Trim();
-            tab_11_w03_c08.Text = tabelka01.Rows[2][8].ToString().Trim();
-            tab_11_w03_c09.Text = tabelka01.Rows[2][9].ToString().Trim();
-            tab_11_w03_c10.Text = tabelka01.Rows[2][10].ToString().Trim();
-            tab_11_w03_c11.Text = tabelka01.Rows[2][11].ToString().Trim();
-            tab_11_w03_c12.Text = tabelka01.Rows[2][12].ToString().Trim();
-            tab_11_w03_c13.Text = tabelka01.Rows[2][13].ToString().Trim();
-            tab_11_w03_c14.Text = tabelka01.Rows[2][14].ToString().Trim();
-            tab_11_w03_c15.Text = tabelka01.Rows[2][15].ToString().Trim();
-            tab_11_w03_c16.Text = tabelka01.Rows[2][16].ToString().Trim();
-            tab_11_w03_c17.Text = tabelka01.Rows[2][17].ToString().Trim();
-            tab_11_w03_c18.Text = tabelka01.Rows[2][18].ToString().Trim();
-            tab_11_w03_c19.Text = tabelka01.Rows[2][19].ToString().Trim();
-            tab_11_w03_c20.Text = tabelka01.Rows[2][20].ToString().Trim();
-            tab_11_w03_c21.Text = tabelka01.Rows[2][21].ToString().Trim();
-            tab_11_w03_c22.Text = tabelka01.Rows[2][22].ToString().Trim();
-            tab_11_w03_c23.Text = tabelka01.Rows[2][23].ToString().Trim();
-            tab_11_w03_c24.Text = tabelka01.Rows[2][24].ToString().Trim();
-            tab_11_w03_c25.Text = tabelka01.Rows[2][25].ToString().Trim();
-            tab_11_w03_c26.Text = tabelka01.Rows[2][26].ToString().Trim();
-            tab_11_w03_c27.Text = tabelka01.Rows[2][27].ToString().Trim();
-            tab_11_w03_c28.Text = tabelka01.Rows[2][28].ToString().Trim();
-            tab_11_w03_c29.Text = tabelka01.Rows[2][29].ToString().Trim();
-            tab_11_w03_c30.Text = tabelka01.Rows[2][30].ToString().Trim();
-            tab_11_w03_c31.Text = tabelka01.Rows[2][31].ToString().Trim();
-            tab_11_w03_c32.Text = tabelka01.Rows[2][32].ToString().Trim();
-            tab_11_w03_c33.Text = tabelka01.Rows[2][33].ToString().Trim();
-            tab_11_w03_c34.Text = tabelka01.Rows[2][34].ToString().Trim();
-            tab_11_w03_c35.Text = tabelka01.Rows[2][35].ToString().Trim();
-            tab_11_w03_c36.Text = tabelka01.Rows[2][36].ToString().Trim();
+
+            tab_11_w04_c01.Text = tabelka01.Rows[2]["d_01"].ToString().Trim();
+            tab_11_w04_c02.Text = tabelka01.Rows[2]["d_02"].ToString().Trim();
+            tab_11_w04_c03.Text = tabelka01.Rows[2]["d_03"].ToString().Trim();
+            tab_11_w04_c04.Text = tabelka01.Rows[2]["d_04"].ToString().Trim();
+            tab_11_w04_c05.Text = tabelka01.Rows[2]["d_05"].ToString().Trim();
+            tab_11_w04_c06.Text = tabelka01.Rows[2]["d_06"].ToString().Trim();
+            tab_11_w04_c07.Text = tabelka01.Rows[2]["d_07"].ToString().Trim();
+            tab_11_w04_c08.Text = tabelka01.Rows[2]["d_08"].ToString().Trim();
+            tab_11_w04_c09.Text = tabelka01.Rows[2]["d_09"].ToString().Trim();
+            tab_11_w04_c10.Text = tabelka01.Rows[2]["d_10"].ToString().Trim();
+            tab_11_w04_c11.Text = tabelka01.Rows[2]["d_11"].ToString().Trim();
+            tab_11_w04_c12.Text = tabelka01.Rows[2]["d_12"].ToString().Trim();
+
             //  wiersz 4
-            tab_11_w04_c01.Text = tabelka01.Rows[3][1].ToString().Trim();
-            tab_11_w04_c02.Text = tabelka01.Rows[3][2].ToString().Trim();
-            tab_11_w04_c03.Text = tabelka01.Rows[3][3].ToString().Trim();
-            tab_11_w04_c04.Text = tabelka01.Rows[3][4].ToString().Trim();
-            tab_11_w04_c05.Text = tabelka01.Rows[3][5].ToString().Trim();
-            tab_11_w04_c06.Text = tabelka01.Rows[3][6].ToString().Trim();
-            tab_11_w04_c07.Text = tabelka01.Rows[3][7].ToString().Trim();
-            tab_11_w04_c08.Text = tabelka01.Rows[3][8].ToString().Trim();
-            tab_11_w04_c09.Text = tabelka01.Rows[3][9].ToString().Trim();
-            tab_11_w04_c10.Text = tabelka01.Rows[3][10].ToString().Trim();
-            tab_11_w04_c11.Text = tabelka01.Rows[3][11].ToString().Trim();
-            tab_11_w04_c12.Text = tabelka01.Rows[3][12].ToString().Trim();
-            tab_11_w04_c13.Text = tabelka01.Rows[3][13].ToString().Trim();
-            tab_11_w04_c14.Text = tabelka01.Rows[3][14].ToString().Trim();
-            tab_11_w04_c15.Text = tabelka01.Rows[3][15].ToString().Trim();
-            tab_11_w04_c16.Text = tabelka01.Rows[3][16].ToString().Trim();
-            tab_11_w04_c17.Text = tabelka01.Rows[3][17].ToString().Trim();
-            tab_11_w04_c18.Text = tabelka01.Rows[3][18].ToString().Trim();
-            tab_11_w04_c19.Text = tabelka01.Rows[3][19].ToString().Trim();
-            tab_11_w04_c20.Text = tabelka01.Rows[3][20].ToString().Trim();
-            tab_11_w04_c21.Text = tabelka01.Rows[3][21].ToString().Trim();
-            tab_11_w04_c22.Text = tabelka01.Rows[3][22].ToString().Trim();
-            tab_11_w04_c23.Text = tabelka01.Rows[3][23].ToString().Trim();
-            tab_11_w04_c24.Text = tabelka01.Rows[3][24].ToString().Trim();
-            tab_11_w04_c25.Text = tabelka01.Rows[3][25].ToString().Trim();
-            tab_11_w04_c26.Text = tabelka01.Rows[3][26].ToString().Trim();
-            tab_11_w04_c27.Text = tabelka01.Rows[3][27].ToString().Trim();
-            tab_11_w04_c28.Text = tabelka01.Rows[3][28].ToString().Trim();
-            tab_11_w04_c29.Text = tabelka01.Rows[3][29].ToString().Trim();
-            tab_11_w04_c30.Text = tabelka01.Rows[3][30].ToString().Trim();
-            tab_11_w04_c31.Text = tabelka01.Rows[3][31].ToString().Trim();
-            tab_11_w04_c32.Text = tabelka01.Rows[3][32].ToString().Trim();
-            tab_11_w04_c33.Text = tabelka01.Rows[3][33].ToString().Trim();
-            tab_11_w04_c34.Text = tabelka01.Rows[3][34].ToString().Trim();
-            tab_11_w04_c35.Text = tabelka01.Rows[3][35].ToString().Trim();
-            tab_11_w04_c36.Text = tabelka01.Rows[3][36].ToString().Trim();
+
+            tab_11_w04_c01.Text = tabelka01.Rows[3]["d_01"].ToString().Trim();
+            tab_11_w04_c02.Text = tabelka01.Rows[3]["d_02"].ToString().Trim();
+            tab_11_w04_c03.Text = tabelka01.Rows[3]["d_03"].ToString().Trim();
+            tab_11_w04_c04.Text = tabelka01.Rows[3]["d_04"].ToString().Trim();
+            tab_11_w04_c05.Text = tabelka01.Rows[3]["d_05"].ToString().Trim();
+            tab_11_w04_c06.Text = tabelka01.Rows[3]["d_06"].ToString().Trim();
+            tab_11_w04_c07.Text = tabelka01.Rows[3]["d_07"].ToString().Trim();
+            tab_11_w04_c08.Text = tabelka01.Rows[3]["d_08"].ToString().Trim();
+            tab_11_w04_c09.Text = tabelka01.Rows[3]["d_09"].ToString().Trim();
+            tab_11_w04_c10.Text = tabelka01.Rows[3]["d_10"].ToString().Trim();
+            tab_11_w04_c11.Text = tabelka01.Rows[3]["d_11"].ToString().Trim();
+            tab_11_w04_c12.Text = tabelka01.Rows[3]["d_12"].ToString().Trim();
+
             //  wiersz 5
-            tab_11_w05_c01.Text = tabelka01.Rows[4][1].ToString().Trim();
-            tab_11_w05_c02.Text = tabelka01.Rows[4][2].ToString().Trim();
-            tab_11_w05_c03.Text = tabelka01.Rows[4][3].ToString().Trim();
-            tab_11_w05_c04.Text = tabelka01.Rows[4][4].ToString().Trim();
-            tab_11_w05_c05.Text = tabelka01.Rows[4][5].ToString().Trim();
-            tab_11_w05_c06.Text = tabelka01.Rows[4][6].ToString().Trim();
-            tab_11_w05_c07.Text = tabelka01.Rows[4][7].ToString().Trim();
-            tab_11_w05_c08.Text = tabelka01.Rows[4][8].ToString().Trim();
-            tab_11_w05_c09.Text = tabelka01.Rows[4][9].ToString().Trim();
-            tab_11_w05_c10.Text = tabelka01.Rows[4][10].ToString().Trim();
-            tab_11_w05_c11.Text = tabelka01.Rows[4][11].ToString().Trim();
-            tab_11_w05_c12.Text = tabelka01.Rows[4][12].ToString().Trim();
-            tab_11_w05_c13.Text = tabelka01.Rows[4][13].ToString().Trim();
-            tab_11_w05_c14.Text = tabelka01.Rows[4][14].ToString().Trim();
-            tab_11_w05_c15.Text = tabelka01.Rows[4][15].ToString().Trim();
-            tab_11_w05_c16.Text = tabelka01.Rows[4][16].ToString().Trim();
-            tab_11_w05_c17.Text = tabelka01.Rows[4][17].ToString().Trim();
-            tab_11_w05_c18.Text = tabelka01.Rows[4][18].ToString().Trim();
-            tab_11_w05_c19.Text = tabelka01.Rows[4][19].ToString().Trim();
-            tab_11_w05_c20.Text = tabelka01.Rows[4][20].ToString().Trim();
-            tab_11_w05_c21.Text = tabelka01.Rows[4][21].ToString().Trim();
-            tab_11_w05_c22.Text = tabelka01.Rows[4][22].ToString().Trim();
-            tab_11_w05_c23.Text = tabelka01.Rows[4][23].ToString().Trim();
-            tab_11_w05_c24.Text = tabelka01.Rows[4][24].ToString().Trim();
-            tab_11_w05_c25.Text = tabelka01.Rows[4][25].ToString().Trim();
-            tab_11_w05_c26.Text = tabelka01.Rows[4][26].ToString().Trim();
-            tab_11_w05_c27.Text = tabelka01.Rows[4][27].ToString().Trim();
-            tab_11_w05_c28.Text = tabelka01.Rows[4][28].ToString().Trim();
-            tab_11_w05_c29.Text = tabelka01.Rows[4][29].ToString().Trim();
-            tab_11_w05_c30.Text = tabelka01.Rows[4][30].ToString().Trim();
-            tab_11_w05_c31.Text = tabelka01.Rows[4][31].ToString().Trim();
-            tab_11_w05_c32.Text = tabelka01.Rows[4][32].ToString().Trim();
-            tab_11_w05_c33.Text = tabelka01.Rows[4][33].ToString().Trim();
-            tab_11_w05_c34.Text = tabelka01.Rows[4][34].ToString().Trim();
-            tab_11_w05_c35.Text = tabelka01.Rows[4][35].ToString().Trim();
-            tab_11_w05_c36.Text = tabelka01.Rows[4][36].ToString().Trim();
+
+            tab_11_w05_c01.Text = tabelka01.Rows[4]["d_01"].ToString().Trim();
+            tab_11_w05_c02.Text = tabelka01.Rows[4]["d_02"].ToString().Trim();
+            tab_11_w05_c03.Text = tabelka01.Rows[4]["d_03"].ToString().Trim();
+            tab_11_w05_c04.Text = tabelka01.Rows[4]["d_04"].ToString().Trim();
+            tab_11_w05_c05.Text = tabelka01.Rows[4]["d_05"].ToString().Trim();
+            tab_11_w05_c06.Text = tabelka01.Rows[4]["d_06"].ToString().Trim();
+            tab_11_w05_c07.Text = tabelka01.Rows[4]["d_07"].ToString().Trim();
+            tab_11_w05_c08.Text = tabelka01.Rows[4]["d_08"].ToString().Trim();
+            tab_11_w05_c09.Text = tabelka01.Rows[4]["d_09"].ToString().Trim();
+            tab_11_w05_c10.Text = tabelka01.Rows[4]["d_10"].ToString().Trim();
+            tab_11_w05_c11.Text = tabelka01.Rows[4]["d_11"].ToString().Trim();
+            tab_11_w05_c12.Text = tabelka01.Rows[4]["d_12"].ToString().Trim();
+
             //  wiersz 6
-            tab_11_w06_c01.Text = tabelka01.Rows[5][1].ToString().Trim();
-            tab_11_w06_c02.Text = tabelka01.Rows[5][2].ToString().Trim();
-            tab_11_w06_c03.Text = tabelka01.Rows[5][3].ToString().Trim();
-            tab_11_w06_c04.Text = tabelka01.Rows[5][4].ToString().Trim();
-            tab_11_w06_c05.Text = tabelka01.Rows[5][5].ToString().Trim();
-            tab_11_w06_c06.Text = tabelka01.Rows[5][6].ToString().Trim();
-            tab_11_w06_c07.Text = tabelka01.Rows[5][7].ToString().Trim();
-            tab_11_w06_c08.Text = tabelka01.Rows[5][8].ToString().Trim();
-            tab_11_w06_c09.Text = tabelka01.Rows[5][9].ToString().Trim();
-            tab_11_w06_c10.Text = tabelka01.Rows[5][10].ToString().Trim();
-            tab_11_w06_c11.Text = tabelka01.Rows[5][11].ToString().Trim();
-            tab_11_w06_c12.Text = tabelka01.Rows[5][12].ToString().Trim();
-            tab_11_w06_c13.Text = tabelka01.Rows[5][13].ToString().Trim();
-            tab_11_w06_c14.Text = tabelka01.Rows[5][14].ToString().Trim();
-            tab_11_w06_c15.Text = tabelka01.Rows[5][15].ToString().Trim();
-            tab_11_w06_c16.Text = tabelka01.Rows[5][16].ToString().Trim();
-            tab_11_w06_c17.Text = tabelka01.Rows[5][17].ToString().Trim();
-            tab_11_w06_c18.Text = tabelka01.Rows[5][18].ToString().Trim();
-            tab_11_w06_c19.Text = tabelka01.Rows[5][19].ToString().Trim();
-            tab_11_w06_c20.Text = tabelka01.Rows[5][20].ToString().Trim();
-            tab_11_w06_c21.Text = tabelka01.Rows[5][21].ToString().Trim();
-            tab_11_w06_c22.Text = tabelka01.Rows[5][22].ToString().Trim();
-            tab_11_w06_c23.Text = tabelka01.Rows[5][23].ToString().Trim();
-            tab_11_w06_c24.Text = tabelka01.Rows[5][24].ToString().Trim();
-            tab_11_w06_c25.Text = tabelka01.Rows[5][25].ToString().Trim();
-            tab_11_w06_c26.Text = tabelka01.Rows[5][26].ToString().Trim();
-            tab_11_w06_c27.Text = tabelka01.Rows[5][27].ToString().Trim();
-            tab_11_w06_c28.Text = tabelka01.Rows[5][28].ToString().Trim();
-            tab_11_w06_c29.Text = tabelka01.Rows[5][29].ToString().Trim();
-            tab_11_w06_c30.Text = tabelka01.Rows[5][30].ToString().Trim();
-            tab_11_w06_c31.Text = tabelka01.Rows[5][31].ToString().Trim();
-            tab_11_w06_c32.Text = tabelka01.Rows[5][32].ToString().Trim();
-            tab_11_w06_c33.Text = tabelka01.Rows[5][33].ToString().Trim();
-            tab_11_w06_c34.Text = tabelka01.Rows[5][34].ToString().Trim();
-            tab_11_w06_c35.Text = tabelka01.Rows[5][35].ToString().Trim();
-            tab_11_w06_c36.Text = tabelka01.Rows[5][36].ToString().Trim();
+
+            tab_11_w06_c01.Text = tabelka01.Rows[5]["d_01"].ToString().Trim();
+            tab_11_w06_c02.Text = tabelka01.Rows[5]["d_02"].ToString().Trim();
+            tab_11_w06_c03.Text = tabelka01.Rows[5]["d_03"].ToString().Trim();
+            tab_11_w06_c04.Text = tabelka01.Rows[5]["d_04"].ToString().Trim();
+            tab_11_w06_c05.Text = tabelka01.Rows[5]["d_05"].ToString().Trim();
+            tab_11_w06_c06.Text = tabelka01.Rows[5]["d_06"].ToString().Trim();
+            tab_11_w06_c07.Text = tabelka01.Rows[5]["d_07"].ToString().Trim();
+            tab_11_w06_c08.Text = tabelka01.Rows[5]["d_08"].ToString().Trim();
+            tab_11_w06_c09.Text = tabelka01.Rows[5]["d_09"].ToString().Trim();
+            tab_11_w06_c10.Text = tabelka01.Rows[5]["d_10"].ToString().Trim();
+            tab_11_w06_c11.Text = tabelka01.Rows[5]["d_11"].ToString().Trim();
+            tab_11_w06_c12.Text = tabelka01.Rows[5]["d_12"].ToString().Trim();
+
             //  wiersz 7
-            tab_11_w07_c01.Text = tabelka01.Rows[6][1].ToString().Trim();
-            tab_11_w07_c02.Text = tabelka01.Rows[6][2].ToString().Trim();
-            tab_11_w07_c03.Text = tabelka01.Rows[6][3].ToString().Trim();
-            tab_11_w07_c04.Text = tabelka01.Rows[6][4].ToString().Trim();
-            tab_11_w07_c05.Text = tabelka01.Rows[6][5].ToString().Trim();
-            tab_11_w07_c06.Text = tabelka01.Rows[6][6].ToString().Trim();
-            tab_11_w07_c07.Text = tabelka01.Rows[6][7].ToString().Trim();
-            tab_11_w07_c08.Text = tabelka01.Rows[6][8].ToString().Trim();
-            tab_11_w07_c09.Text = tabelka01.Rows[6][9].ToString().Trim();
-            tab_11_w07_c10.Text = tabelka01.Rows[6][10].ToString().Trim();
-            tab_11_w07_c11.Text = tabelka01.Rows[6][11].ToString().Trim();
-            tab_11_w07_c12.Text = tabelka01.Rows[6][12].ToString().Trim();
-            tab_11_w07_c13.Text = tabelka01.Rows[6][13].ToString().Trim();
-            tab_11_w07_c14.Text = tabelka01.Rows[6][14].ToString().Trim();
-            tab_11_w07_c15.Text = tabelka01.Rows[6][15].ToString().Trim();
-            tab_11_w07_c16.Text = tabelka01.Rows[6][16].ToString().Trim();
-            tab_11_w07_c17.Text = tabelka01.Rows[6][17].ToString().Trim();
-            tab_11_w07_c18.Text = tabelka01.Rows[6][18].ToString().Trim();
-            tab_11_w07_c19.Text = tabelka01.Rows[6][19].ToString().Trim();
-            tab_11_w07_c20.Text = tabelka01.Rows[6][20].ToString().Trim();
-            tab_11_w07_c21.Text = tabelka01.Rows[6][21].ToString().Trim();
-            tab_11_w07_c22.Text = tabelka01.Rows[6][22].ToString().Trim();
-            tab_11_w07_c23.Text = tabelka01.Rows[6][23].ToString().Trim();
-            tab_11_w07_c24.Text = tabelka01.Rows[6][24].ToString().Trim();
-            tab_11_w07_c25.Text = tabelka01.Rows[6][25].ToString().Trim();
-            tab_11_w07_c26.Text = tabelka01.Rows[6][26].ToString().Trim();
-            tab_11_w07_c27.Text = tabelka01.Rows[6][27].ToString().Trim();
-            tab_11_w07_c28.Text = tabelka01.Rows[6][28].ToString().Trim();
-            tab_11_w07_c29.Text = tabelka01.Rows[6][29].ToString().Trim();
-            tab_11_w07_c30.Text = tabelka01.Rows[6][30].ToString().Trim();
-            tab_11_w07_c31.Text = tabelka01.Rows[6][31].ToString().Trim();
-            tab_11_w07_c32.Text = tabelka01.Rows[6][32].ToString().Trim();
-            tab_11_w07_c33.Text = tabelka01.Rows[6][33].ToString().Trim();
-            tab_11_w07_c34.Text = tabelka01.Rows[6][34].ToString().Trim();
-            tab_11_w07_c35.Text = tabelka01.Rows[6][35].ToString().Trim();
-            tab_11_w07_c36.Text = tabelka01.Rows[6][36].ToString().Trim();
+
+            tab_11_w07_c01.Text = tabelka01.Rows[6]["d_01"].ToString().Trim();
+            tab_11_w07_c02.Text = tabelka01.Rows[6]["d_02"].ToString().Trim();
+            tab_11_w07_c03.Text = tabelka01.Rows[6]["d_03"].ToString().Trim();
+            tab_11_w07_c04.Text = tabelka01.Rows[6]["d_04"].ToString().Trim();
+            tab_11_w07_c05.Text = tabelka01.Rows[6]["d_05"].ToString().Trim();
+            tab_11_w07_c06.Text = tabelka01.Rows[6]["d_06"].ToString().Trim();
+            tab_11_w07_c07.Text = tabelka01.Rows[6]["d_07"].ToString().Trim();
+            tab_11_w07_c08.Text = tabelka01.Rows[6]["d_08"].ToString().Trim();
+            tab_11_w07_c09.Text = tabelka01.Rows[6]["d_09"].ToString().Trim();
+            tab_11_w07_c10.Text = tabelka01.Rows[6]["d_10"].ToString().Trim();
+            tab_11_w07_c11.Text = tabelka01.Rows[6]["d_11"].ToString().Trim();
+            tab_11_w07_c12.Text = tabelka01.Rows[6]["d_12"].ToString().Trim();
+
             //  wiersz 8
-            tab_11_w08_c01.Text = tabelka01.Rows[7][1].ToString().Trim();
-            tab_11_w08_c02.Text = tabelka01.Rows[7][2].ToString().Trim();
-            tab_11_w08_c03.Text = tabelka01.Rows[7][3].ToString().Trim();
-            tab_11_w08_c04.Text = tabelka01.Rows[7][4].ToString().Trim();
-            tab_11_w08_c05.Text = tabelka01.Rows[7][5].ToString().Trim();
-            tab_11_w08_c06.Text = tabelka01.Rows[7][6].ToString().Trim();
-            tab_11_w08_c07.Text = tabelka01.Rows[7][7].ToString().Trim();
-            tab_11_w08_c08.Text = tabelka01.Rows[7][8].ToString().Trim();
-            tab_11_w08_c09.Text = tabelka01.Rows[7][9].ToString().Trim();
-            tab_11_w08_c10.Text = tabelka01.Rows[7][10].ToString().Trim();
-            tab_11_w08_c11.Text = tabelka01.Rows[7][11].ToString().Trim();
-            tab_11_w08_c12.Text = tabelka01.Rows[7][12].ToString().Trim();*/
+
+            tab_11_w08_c01.Text = tabelka01.Rows[7]["d_01"].ToString().Trim();
+            tab_11_w08_c02.Text = tabelka01.Rows[7]["d_02"].ToString().Trim();
+            tab_11_w08_c03.Text = tabelka01.Rows[7]["d_03"].ToString().Trim();
+            tab_11_w08_c04.Text = tabelka01.Rows[7]["d_04"].ToString().Trim();
+            tab_11_w08_c05.Text = tabelka01.Rows[7]["d_05"].ToString().Trim();
+            tab_11_w08_c06.Text = tabelka01.Rows[7]["d_06"].ToString().Trim();
+            tab_11_w08_c07.Text = tabelka01.Rows[7]["d_07"].ToString().Trim();
+            tab_11_w08_c08.Text = tabelka01.Rows[7]["d_08"].ToString().Trim();
+            tab_11_w08_c09.Text = tabelka01.Rows[7]["d_09"].ToString().Trim();
+            tab_11_w08_c10.Text = tabelka01.Rows[7]["d_10"].ToString().Trim();
+            tab_11_w08_c11.Text = tabelka01.Rows[7]["d_11"].ToString().Trim();
+            tab_11_w08_c12.Text = tabelka01.Rows[7]["d_12"].ToString().Trim();
+            int id_ = 8;
+            tab_11_w09_c01.Text = tabelka01.Rows[id_]["d_01"].ToString().Trim();
+            tab_11_w09_c02.Text = tabelka01.Rows[id_]["d_02"].ToString().Trim();
+            tab_11_w09_c03.Text = tabelka01.Rows[id_]["d_03"].ToString().Trim();
+            tab_11_w09_c04.Text = tabelka01.Rows[id_]["d_04"].ToString().Trim();
+            tab_11_w09_c05.Text = tabelka01.Rows[id_]["d_05"].ToString().Trim();
+            tab_11_w09_c06.Text = tabelka01.Rows[id_]["d_06"].ToString().Trim();
+            tab_11_w09_c07.Text = tabelka01.Rows[id_]["d_07"].ToString().Trim();
+            tab_11_w09_c08.Text = tabelka01.Rows[id_]["d_08"].ToString().Trim();
+            tab_11_w09_c09.Text = tabelka01.Rows[id_]["d_09"].ToString().Trim();
+            tab_11_w09_c10.Text = tabelka01.Rows[id_]["d_10"].ToString().Trim();
+            tab_11_w09_c11.Text = tabelka01.Rows[id_]["d_11"].ToString().Trim();
+            tab_11_w09_c12.Text = tabelka01.Rows[id_]["d_12"].ToString().Trim();
+            id_ = 9;
+            tab_11_w10_c01.Text = tabelka01.Rows[id_]["d_01"].ToString().Trim();
+            tab_11_w10_c02.Text = tabelka01.Rows[id_]["d_02"].ToString().Trim();
+            tab_11_w10_c03.Text = tabelka01.Rows[id_]["d_03"].ToString().Trim();
+            tab_11_w10_c04.Text = tabelka01.Rows[id_]["d_04"].ToString().Trim();
+            tab_11_w10_c05.Text = tabelka01.Rows[id_]["d_05"].ToString().Trim();
+            tab_11_w10_c06.Text = tabelka01.Rows[id_]["d_06"].ToString().Trim();
+            tab_11_w10_c07.Text = tabelka01.Rows[id_]["d_07"].ToString().Trim();
+            tab_11_w10_c08.Text = tabelka01.Rows[id_]["d_08"].ToString().Trim();
+            tab_11_w10_c09.Text = tabelka01.Rows[id_]["d_09"].ToString().Trim();
+            tab_11_w10_c10.Text = tabelka01.Rows[id_]["d_10"].ToString().Trim();
+            tab_11_w10_c11.Text = tabelka01.Rows[id_]["d_11"].ToString().Trim();
+            tab_11_w10_c12.Text = tabelka01.Rows[id_]["d_12"].ToString().Trim();
+
+            id_ = 10;
+            tab_11_w11_c01.Text = tabelka01.Rows[id_]["d_01"].ToString().Trim();
+            tab_11_w11_c02.Text = tabelka01.Rows[id_]["d_02"].ToString().Trim();
+            tab_11_w11_c03.Text = tabelka01.Rows[id_]["d_03"].ToString().Trim();
+            tab_11_w11_c04.Text = tabelka01.Rows[id_]["d_04"].ToString().Trim();
+            tab_11_w11_c05.Text = tabelka01.Rows[id_]["d_05"].ToString().Trim();
+            tab_11_w11_c06.Text = tabelka01.Rows[id_]["d_06"].ToString().Trim();
+            tab_11_w11_c07.Text = tabelka01.Rows[id_]["d_07"].ToString().Trim();
+            tab_11_w11_c08.Text = tabelka01.Rows[id_]["d_08"].ToString().Trim();
+            tab_11_w11_c09.Text = tabelka01.Rows[id_]["d_09"].ToString().Trim();
+            tab_11_w11_c10.Text = tabelka01.Rows[id_]["d_10"].ToString().Trim();
+            tab_11_w11_c11.Text = tabelka01.Rows[id_]["d_11"].ToString().Trim();
+            tab_11_w11_c12.Text = tabelka01.Rows[id_]["d_12"].ToString().Trim();
+            id_ = 11;
+            tab_11_w12_c01.Text = tabelka01.Rows[id_]["d_01"].ToString().Trim();
+            tab_11_w12_c02.Text = tabelka01.Rows[id_]["d_02"].ToString().Trim();
+            tab_11_w12_c03.Text = tabelka01.Rows[id_]["d_03"].ToString().Trim();
+            tab_11_w12_c04.Text = tabelka01.Rows[id_]["d_04"].ToString().Trim();
+            tab_11_w12_c05.Text = tabelka01.Rows[id_]["d_05"].ToString().Trim();
+            tab_11_w12_c06.Text = tabelka01.Rows[id_]["d_06"].ToString().Trim();
+            tab_11_w12_c07.Text = tabelka01.Rows[id_]["d_07"].ToString().Trim();
+            tab_11_w12_c08.Text = tabelka01.Rows[id_]["d_08"].ToString().Trim();
+            tab_11_w12_c09.Text = tabelka01.Rows[id_]["d_09"].ToString().Trim();
+            tab_11_w12_c10.Text = tabelka01.Rows[id_]["d_10"].ToString().Trim();
+            tab_11_w12_c11.Text = tabelka01.Rows[id_]["d_11"].ToString().Trim();
+            tab_11_w12_c12.Text = tabelka01.Rows[id_]["d_12"].ToString().Trim();
+
+            id_ = 12;
+            tab_11_w13_c01.Text = tabelka01.Rows[id_]["d_01"].ToString().Trim();
+            tab_11_w13_c02.Text = tabelka01.Rows[id_]["d_02"].ToString().Trim();
+            tab_11_w13_c03.Text = tabelka01.Rows[id_]["d_03"].ToString().Trim();
+            tab_11_w13_c04.Text = tabelka01.Rows[id_]["d_04"].ToString().Trim();
+            tab_11_w13_c05.Text = tabelka01.Rows[id_]["d_05"].ToString().Trim();
+            tab_11_w13_c06.Text = tabelka01.Rows[id_]["d_06"].ToString().Trim();
+            tab_11_w13_c07.Text = tabelka01.Rows[id_]["d_07"].ToString().Trim();
+            tab_11_w13_c08.Text = tabelka01.Rows[id_]["d_08"].ToString().Trim();
+            tab_11_w13_c09.Text = tabelka01.Rows[id_]["d_09"].ToString().Trim();
+            tab_11_w13_c10.Text = tabelka01.Rows[id_]["d_10"].ToString().Trim();
+            tab_11_w13_c11.Text = tabelka01.Rows[id_]["d_11"].ToString().Trim();
+            tab_11_w13_c12.Text = tabelka01.Rows[id_]["d_12"].ToString().Trim();
+
+            id_ = 13;
+            tab_11_w14_c01.Text = tabelka01.Rows[id_]["d_01"].ToString().Trim();
+            tab_11_w14_c02.Text = tabelka01.Rows[id_]["d_02"].ToString().Trim();
+            tab_11_w14_c03.Text = tabelka01.Rows[id_]["d_03"].ToString().Trim();
+            tab_11_w14_c04.Text = tabelka01.Rows[id_]["d_04"].ToString().Trim();
+            tab_11_w14_c05.Text = tabelka01.Rows[id_]["d_05"].ToString().Trim();
+            tab_11_w14_c06.Text = tabelka01.Rows[id_]["d_06"].ToString().Trim();
+            tab_11_w14_c07.Text = tabelka01.Rows[id_]["d_07"].ToString().Trim();
+            tab_11_w14_c08.Text = tabelka01.Rows[id_]["d_08"].ToString().Trim();
+            tab_11_w14_c09.Text = tabelka01.Rows[id_]["d_09"].ToString().Trim();
+            tab_11_w14_c10.Text = tabelka01.Rows[id_]["d_10"].ToString().Trim();
+            tab_11_w14_c11.Text = tabelka01.Rows[id_]["d_11"].ToString().Trim();
+            tab_11_w14_c12.Text = tabelka01.Rows[id_]["d_12"].ToString().Trim();
+            id_ = 14;
+            tab_11_w15_c01.Text = tabelka01.Rows[id_]["d_01"].ToString().Trim();
+            tab_11_w15_c02.Text = tabelka01.Rows[id_]["d_02"].ToString().Trim();
+            tab_11_w15_c03.Text = tabelka01.Rows[id_]["d_03"].ToString().Trim();
+            tab_11_w15_c04.Text = tabelka01.Rows[id_]["d_04"].ToString().Trim();
+            tab_11_w15_c05.Text = tabelka01.Rows[id_]["d_05"].ToString().Trim();
+            tab_11_w15_c06.Text = tabelka01.Rows[id_]["d_06"].ToString().Trim();
+            tab_11_w15_c07.Text = tabelka01.Rows[id_]["d_07"].ToString().Trim();
+            tab_11_w15_c08.Text = tabelka01.Rows[id_]["d_08"].ToString().Trim();
+            tab_11_w15_c09.Text = tabelka01.Rows[id_]["d_09"].ToString().Trim();
+            tab_11_w15_c10.Text = tabelka01.Rows[id_]["d_10"].ToString().Trim();
+            tab_11_w15_c11.Text = tabelka01.Rows[id_]["d_11"].ToString().Trim();
+            tab_11_w15_c12.Text = tabelka01.Rows[id_]["d_12"].ToString().Trim();
+
+            id_ = 15;
+            tab_11_w16_c01.Text = tabelka01.Rows[id_]["d_01"].ToString().Trim();
+            tab_11_w16_c02.Text = tabelka01.Rows[id_]["d_02"].ToString().Trim();
+            tab_11_w16_c03.Text = tabelka01.Rows[id_]["d_03"].ToString().Trim();
+            tab_11_w16_c04.Text = tabelka01.Rows[id_]["d_04"].ToString().Trim();
+            tab_11_w16_c05.Text = tabelka01.Rows[id_]["d_05"].ToString().Trim();
+            tab_11_w16_c06.Text = tabelka01.Rows[id_]["d_06"].ToString().Trim();
+            tab_11_w16_c07.Text = tabelka01.Rows[id_]["d_07"].ToString().Trim();
+            tab_11_w16_c08.Text = tabelka01.Rows[id_]["d_08"].ToString().Trim();
+            tab_11_w16_c09.Text = tabelka01.Rows[id_]["d_09"].ToString().Trim();
+            tab_11_w16_c10.Text = tabelka01.Rows[id_]["d_10"].ToString().Trim();
+            tab_11_w16_c11.Text = tabelka01.Rows[id_]["d_11"].ToString().Trim();
+            tab_11_w16_c12.Text = tabelka01.Rows[id_]["d_12"].ToString().Trim();
+            id_ = 16;
+            tab_11_w17_c01.Text = tabelka01.Rows[id_]["d_01"].ToString().Trim();
+            tab_11_w17_c02.Text = tabelka01.Rows[id_]["d_02"].ToString().Trim();
+            tab_11_w17_c03.Text = tabelka01.Rows[id_]["d_03"].ToString().Trim();
+            tab_11_w17_c04.Text = tabelka01.Rows[id_]["d_04"].ToString().Trim();
+            tab_11_w17_c05.Text = tabelka01.Rows[id_]["d_05"].ToString().Trim();
+            tab_11_w17_c06.Text = tabelka01.Rows[id_]["d_06"].ToString().Trim();
+            tab_11_w17_c07.Text = tabelka01.Rows[id_]["d_07"].ToString().Trim();
+            tab_11_w17_c08.Text = tabelka01.Rows[id_]["d_08"].ToString().Trim();
+            tab_11_w17_c09.Text = tabelka01.Rows[id_]["d_09"].ToString().Trim();
+            tab_11_w17_c10.Text = tabelka01.Rows[id_]["d_10"].ToString().Trim();
+            tab_11_w17_c11.Text = tabelka01.Rows[id_]["d_11"].ToString().Trim();
+            tab_11_w17_c12.Text = tabelka01.Rows[id_]["d_12"].ToString().Trim();
+            id_ = 17;
+            tab_11_w18_c01.Text = tabelka01.Rows[id_]["d_01"].ToString().Trim();
+            tab_11_w18_c02.Text = tabelka01.Rows[id_]["d_02"].ToString().Trim();
+            tab_11_w18_c03.Text = tabelka01.Rows[id_]["d_03"].ToString().Trim();
+            tab_11_w18_c04.Text = tabelka01.Rows[id_]["d_04"].ToString().Trim();
+            tab_11_w18_c05.Text = tabelka01.Rows[id_]["d_05"].ToString().Trim();
+            tab_11_w18_c06.Text = tabelka01.Rows[id_]["d_06"].ToString().Trim();
+            tab_11_w18_c07.Text = tabelka01.Rows[id_]["d_07"].ToString().Trim();
+            tab_11_w18_c08.Text = tabelka01.Rows[id_]["d_08"].ToString().Trim();
+            tab_11_w18_c09.Text = tabelka01.Rows[id_]["d_09"].ToString().Trim();
+            tab_11_w18_c10.Text = tabelka01.Rows[id_]["d_10"].ToString().Trim();
+            tab_11_w18_c11.Text = tabelka01.Rows[id_]["d_11"].ToString().Trim();
+            tab_11_w18_c12.Text = tabelka01.Rows[id_]["d_12"].ToString().Trim();
+
+            id_ = 18;
+            tab_11_w19_c01.Text = tabelka01.Rows[id_]["d_01"].ToString().Trim();
+            tab_11_w19_c02.Text = tabelka01.Rows[id_]["d_02"].ToString().Trim();
+            tab_11_w19_c03.Text = tabelka01.Rows[id_]["d_03"].ToString().Trim();
+            tab_11_w19_c04.Text = tabelka01.Rows[id_]["d_04"].ToString().Trim();
+            tab_11_w19_c05.Text = tabelka01.Rows[id_]["d_05"].ToString().Trim();
+            tab_11_w19_c06.Text = tabelka01.Rows[id_]["d_06"].ToString().Trim();
+            tab_11_w19_c07.Text = tabelka01.Rows[id_]["d_07"].ToString().Trim();
+            tab_11_w19_c08.Text = tabelka01.Rows[id_]["d_08"].ToString().Trim();
+            tab_11_w19_c09.Text = tabelka01.Rows[id_]["d_09"].ToString().Trim();
+            tab_11_w19_c10.Text = tabelka01.Rows[id_]["d_10"].ToString().Trim();
+            tab_11_w19_c11.Text = tabelka01.Rows[id_]["d_11"].ToString().Trim();
+            tab_11_w19_c12.Text = tabelka01.Rows[id_]["d_12"].ToString().Trim();
+
+            id_ = 19;
+            tab_11_w20_c01.Text = tabelka01.Rows[id_]["d_01"].ToString().Trim();
+            tab_11_w20_c02.Text = tabelka01.Rows[id_]["d_02"].ToString().Trim();
+            tab_11_w20_c03.Text = tabelka01.Rows[id_]["d_03"].ToString().Trim();
+            tab_11_w20_c04.Text = tabelka01.Rows[id_]["d_04"].ToString().Trim();
+            tab_11_w20_c05.Text = tabelka01.Rows[id_]["d_05"].ToString().Trim();
+            tab_11_w20_c06.Text = tabelka01.Rows[id_]["d_06"].ToString().Trim();
+            tab_11_w20_c07.Text = tabelka01.Rows[id_]["d_07"].ToString().Trim();
+            tab_11_w20_c08.Text = tabelka01.Rows[id_]["d_08"].ToString().Trim();
+            tab_11_w20_c09.Text = tabelka01.Rows[id_]["d_09"].ToString().Trim();
+            tab_11_w20_c10.Text = tabelka01.Rows[id_]["d_10"].ToString().Trim();
+            tab_11_w20_c11.Text = tabelka01.Rows[id_]["d_11"].ToString().Trim();
+            tab_11_w20_c12.Text = tabelka01.Rows[id_]["d_12"].ToString().Trim();
+            id_ = 20;
+            tab_11_w21_c01.Text = tabelka01.Rows[id_]["d_01"].ToString().Trim();
+            tab_11_w21_c02.Text = tabelka01.Rows[id_]["d_02"].ToString().Trim();
+            tab_11_w21_c03.Text = tabelka01.Rows[id_]["d_03"].ToString().Trim();
+            tab_11_w21_c04.Text = tabelka01.Rows[id_]["d_04"].ToString().Trim();
+            tab_11_w21_c05.Text = tabelka01.Rows[id_]["d_05"].ToString().Trim();
+            tab_11_w21_c06.Text = tabelka01.Rows[id_]["d_06"].ToString().Trim();
+            tab_11_w21_c07.Text = tabelka01.Rows[id_]["d_07"].ToString().Trim();
+            tab_11_w21_c08.Text = tabelka01.Rows[id_]["d_08"].ToString().Trim();
+            tab_11_w21_c09.Text = tabelka01.Rows[id_]["d_09"].ToString().Trim();
+            tab_11_w21_c10.Text = tabelka01.Rows[id_]["d_10"].ToString().Trim();
+            tab_11_w21_c11.Text = tabelka01.Rows[id_]["d_11"].ToString().Trim();
+            tab_11_w21_c12.Text = tabelka01.Rows[id_]["d_12"].ToString().Trim();
+
+            id_ = 21;
+            tab_11_w22_c01.Text = tabelka01.Rows[id_]["d_01"].ToString().Trim();
+            tab_11_w22_c02.Text = tabelka01.Rows[id_]["d_02"].ToString().Trim();
+            tab_11_w22_c03.Text = tabelka01.Rows[id_]["d_03"].ToString().Trim();
+            tab_11_w22_c04.Text = tabelka01.Rows[id_]["d_04"].ToString().Trim();
+            tab_11_w22_c05.Text = tabelka01.Rows[id_]["d_05"].ToString().Trim();
+            tab_11_w22_c06.Text = tabelka01.Rows[id_]["d_06"].ToString().Trim();
+            tab_11_w22_c07.Text = tabelka01.Rows[id_]["d_07"].ToString().Trim();
+            tab_11_w22_c08.Text = tabelka01.Rows[id_]["d_08"].ToString().Trim();
+            tab_11_w22_c09.Text = tabelka01.Rows[id_]["d_09"].ToString().Trim();
+            tab_11_w22_c10.Text = tabelka01.Rows[id_]["d_10"].ToString().Trim();
+            tab_11_w22_c11.Text = tabelka01.Rows[id_]["d_11"].ToString().Trim();
+            tab_11_w22_c12.Text = tabelka01.Rows[id_]["d_12"].ToString().Trim();
         }
 
         protected void tabela_12()
@@ -700,7 +729,7 @@ namespace Statystyki_2018
             {
                 cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 14");
             }
-            DataTable tabelka01 = dr.generuj_dane_do_tabeli_sedziowskiej_2019(idDzialu, 14, Date1.Date, Date2.Date, 460, tenPlik);
+            DataTable tabelka01 = dr.generuj_dane_do_tabeli_sedziowskiej_2019(idDzialu, 14, Date1.Date, Date2.Date, 73, tenPlik);
             if (tabelka01 == null)
             {
                 cm.log.Error(tenPlik + " Brak danych dla tabeli 14!");
@@ -726,314 +755,338 @@ namespace Statystyki_2018
             //  wiersz 1
             try
             {
-                tab_15_w01_c01.Text = tabelka01.Rows[0][1].ToString().Trim();
-                tab_15_w01_c02.Text = tabelka01.Rows[0][2].ToString().Trim();
-                tab_15_w01_c03.Text = tabelka01.Rows[0][3].ToString().Trim();
-                tab_15_w01_c04.Text = tabelka01.Rows[0][4].ToString().Trim();
-                tab_15_w01_c05.Text = tabelka01.Rows[0][5].ToString().Trim();
-                tab_15_w01_c06.Text = tabelka01.Rows[0][6].ToString().Trim();
-                tab_15_w01_c07.Text = tabelka01.Rows[0][7].ToString().Trim();
-                tab_15_w01_c08.Text = tabelka01.Rows[0][8].ToString().Trim();
-                tab_15_w01_c09.Text = tabelka01.Rows[0][9].ToString().Trim();
-                tab_15_w01_c10.Text = tabelka01.Rows[0][10].ToString().Trim();
-                tab_15_w01_c11.Text = tabelka01.Rows[0][11].ToString().Trim();
-                tab_15_w01_c12.Text = tabelka01.Rows[0][12].ToString().Trim();
-                tab_15_w01_c13.Text = tabelka01.Rows[0][13].ToString().Trim();
+                tab_15_w01_c01.Text = tabelka01.Rows[0]["d_01"].ToString().Trim();
+                tab_15_w01_c02.Text = tabelka01.Rows[0]["d_02"].ToString().Trim();
+                tab_15_w01_c03.Text = tabelka01.Rows[0]["d_03"].ToString().Trim();
+                tab_15_w01_c04.Text = tabelka01.Rows[0]["d_04"].ToString().Trim();
+                tab_15_w01_c05.Text = tabelka01.Rows[0]["d_05"].ToString().Trim();
+                tab_15_w01_c06.Text = tabelka01.Rows[0]["d_06"].ToString().Trim();
+                tab_15_w01_c07.Text = tabelka01.Rows[0]["d_07"].ToString().Trim();
+                tab_15_w01_c08.Text = tabelka01.Rows[0]["d_08"].ToString().Trim();
+                tab_15_w01_c09.Text = tabelka01.Rows[0]["d_09"].ToString().Trim();
+                tab_15_w01_c10.Text = tabelka01.Rows[0]["d_10"].ToString().Trim();
+                tab_15_w01_c11.Text = tabelka01.Rows[0]["d_11"].ToString().Trim();
+                tab_15_w01_c12.Text = tabelka01.Rows[0]["d_12"].ToString().Trim();
+                tab_15_w01_c13.Text = tabelka01.Rows[0]["d_13"].ToString().Trim();
 
                 //  wiersz 2
-                tab_15_w02_c01.Text = tabelka01.Rows[1][1].ToString().Trim();
-                tab_15_w02_c02.Text = tabelka01.Rows[1][2].ToString().Trim();
-                tab_15_w02_c03.Text = tabelka01.Rows[1][3].ToString().Trim();
-                tab_15_w02_c04.Text = tabelka01.Rows[1][4].ToString().Trim();
-                tab_15_w02_c05.Text = tabelka01.Rows[1][5].ToString().Trim();
-                tab_15_w02_c06.Text = tabelka01.Rows[1][6].ToString().Trim();
-                tab_15_w02_c07.Text = tabelka01.Rows[1][7].ToString().Trim();
-                tab_15_w02_c08.Text = tabelka01.Rows[1][8].ToString().Trim();
-                tab_15_w02_c09.Text = tabelka01.Rows[1][9].ToString().Trim();
-                tab_15_w02_c10.Text = tabelka01.Rows[1][10].ToString().Trim();
-                tab_15_w02_c11.Text = tabelka01.Rows[1][11].ToString().Trim();
-                tab_15_w02_c12.Text = tabelka01.Rows[1][12].ToString().Trim();
-                tab_15_w02_c13.Text = tabelka01.Rows[1][13].ToString().Trim();
+                int id_wiersza = 1;
+                tab_15_w02_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_15_w02_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_15_w02_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_15_w02_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_15_w02_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_15_w02_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_15_w02_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_15_w02_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_15_w02_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_15_w02_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_15_w02_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
+                tab_15_w02_c12.Text = tabelka01.Rows[id_wiersza]["d_12"].ToString().Trim();
+                tab_15_w02_c13.Text = tabelka01.Rows[id_wiersza]["d_13"].ToString().Trim();
+
                 //  wiersz 3
-                tab_15_w03_c01.Text = tabelka01.Rows[2][1].ToString().Trim();
-                tab_15_w03_c02.Text = tabelka01.Rows[2][2].ToString().Trim();
-                tab_15_w03_c03.Text = tabelka01.Rows[2][3].ToString().Trim();
-                tab_15_w03_c04.Text = tabelka01.Rows[2][4].ToString().Trim();
-                tab_15_w03_c05.Text = tabelka01.Rows[2][5].ToString().Trim();
-                tab_15_w03_c06.Text = tabelka01.Rows[2][6].ToString().Trim();
-                tab_15_w03_c07.Text = tabelka01.Rows[2][7].ToString().Trim();
-                tab_15_w03_c08.Text = tabelka01.Rows[2][8].ToString().Trim();
-                tab_15_w03_c09.Text = tabelka01.Rows[2][9].ToString().Trim();
-                tab_15_w03_c10.Text = tabelka01.Rows[2][10].ToString().Trim();
-                tab_15_w03_c11.Text = tabelka01.Rows[2][11].ToString().Trim();
-                tab_15_w03_c12.Text = tabelka01.Rows[2][12].ToString().Trim();
-                tab_15_w03_c13.Text = tabelka01.Rows[2][13].ToString().Trim();
+                id_wiersza = 2;
+                tab_15_w04_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_15_w04_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_15_w04_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_15_w04_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_15_w04_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_15_w04_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_15_w04_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_15_w04_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_15_w04_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_15_w04_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_15_w04_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
+                tab_15_w04_c12.Text = tabelka01.Rows[id_wiersza]["d_12"].ToString().Trim();
+                tab_15_w04_c13.Text = tabelka01.Rows[id_wiersza]["d_13"].ToString().Trim();
+
                 //  wiersz 4
-                tab_15_w04_c01.Text = tabelka01.Rows[3][1].ToString().Trim();
-                tab_15_w04_c02.Text = tabelka01.Rows[3][2].ToString().Trim();
-                tab_15_w04_c03.Text = tabelka01.Rows[3][3].ToString().Trim();
-                tab_15_w04_c04.Text = tabelka01.Rows[3][4].ToString().Trim();
-                tab_15_w04_c05.Text = tabelka01.Rows[3][5].ToString().Trim();
-                tab_15_w04_c06.Text = tabelka01.Rows[3][6].ToString().Trim();
-                tab_15_w04_c07.Text = tabelka01.Rows[3][7].ToString().Trim();
-                tab_15_w04_c08.Text = tabelka01.Rows[3][8].ToString().Trim();
-                tab_15_w04_c09.Text = tabelka01.Rows[3][9].ToString().Trim();
-                tab_15_w04_c10.Text = tabelka01.Rows[3][10].ToString().Trim();
-                tab_15_w04_c11.Text = tabelka01.Rows[3][11].ToString().Trim();
-                tab_15_w04_c12.Text = tabelka01.Rows[3][12].ToString().Trim();
-                tab_15_w04_c13.Text = tabelka01.Rows[3][13].ToString().Trim();
+                id_wiersza = 3;
+                tab_15_w04_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_15_w04_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_15_w04_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_15_w04_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_15_w04_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_15_w04_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_15_w04_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_15_w04_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_15_w04_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_15_w04_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_15_w04_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
+                tab_15_w04_c12.Text = tabelka01.Rows[id_wiersza]["d_12"].ToString().Trim();
+                tab_15_w04_c13.Text = tabelka01.Rows[id_wiersza]["d_13"].ToString().Trim();
                 //  wiersz 5
-                tab_15_w05_c01.Text = tabelka01.Rows[4][1].ToString().Trim();
-                tab_15_w05_c02.Text = tabelka01.Rows[4][2].ToString().Trim();
-                tab_15_w05_c03.Text = tabelka01.Rows[4][3].ToString().Trim();
-                tab_15_w05_c04.Text = tabelka01.Rows[4][4].ToString().Trim();
-                tab_15_w05_c05.Text = tabelka01.Rows[4][5].ToString().Trim();
-                tab_15_w05_c06.Text = tabelka01.Rows[4][6].ToString().Trim();
-                tab_15_w05_c07.Text = tabelka01.Rows[4][7].ToString().Trim();
-                tab_15_w05_c08.Text = tabelka01.Rows[4][8].ToString().Trim();
-                tab_15_w05_c09.Text = tabelka01.Rows[4][9].ToString().Trim();
-                tab_15_w05_c10.Text = tabelka01.Rows[4][10].ToString().Trim();
-                tab_15_w05_c11.Text = tabelka01.Rows[4][11].ToString().Trim();
-                tab_15_w05_c12.Text = tabelka01.Rows[4][12].ToString().Trim();
-                tab_15_w05_c13.Text = tabelka01.Rows[4][13].ToString().Trim();
+                id_wiersza = 4;
+                tab_15_w05_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_15_w05_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_15_w05_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_15_w05_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_15_w05_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_15_w05_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_15_w05_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_15_w05_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_15_w05_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_15_w05_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_15_w05_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
+                tab_15_w05_c12.Text = tabelka01.Rows[id_wiersza]["d_12"].ToString().Trim();
+                tab_15_w05_c13.Text = tabelka01.Rows[id_wiersza]["d_13"].ToString().Trim();
                 //  wiersz 6
-                tab_15_w06_c01.Text = tabelka01.Rows[5][1].ToString().Trim();
-                tab_15_w06_c02.Text = tabelka01.Rows[5][2].ToString().Trim();
-                tab_15_w06_c03.Text = tabelka01.Rows[5][3].ToString().Trim();
-                tab_15_w06_c04.Text = tabelka01.Rows[5][4].ToString().Trim();
-                tab_15_w06_c05.Text = tabelka01.Rows[5][5].ToString().Trim();
-                tab_15_w06_c06.Text = tabelka01.Rows[5][6].ToString().Trim();
-                tab_15_w06_c07.Text = tabelka01.Rows[5][7].ToString().Trim();
-                tab_15_w06_c08.Text = tabelka01.Rows[5][8].ToString().Trim();
-                tab_15_w06_c09.Text = tabelka01.Rows[5][9].ToString().Trim();
-                tab_15_w06_c10.Text = tabelka01.Rows[5][10].ToString().Trim();
-                tab_15_w06_c11.Text = tabelka01.Rows[5][11].ToString().Trim();
-                tab_15_w06_c12.Text = tabelka01.Rows[5][12].ToString().Trim();
-                tab_15_w06_c13.Text = tabelka01.Rows[5][13].ToString().Trim();
+                id_wiersza = 5;
+                tab_15_w06_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_15_w06_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_15_w06_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_15_w06_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_15_w06_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_15_w06_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_15_w06_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_15_w06_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_15_w06_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_15_w06_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_15_w06_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
+                tab_15_w06_c12.Text = tabelka01.Rows[id_wiersza]["d_12"].ToString().Trim();
+                tab_15_w06_c13.Text = tabelka01.Rows[id_wiersza]["d_13"].ToString().Trim();
                 //  wiersz 7
-                tab_15_w07_c01.Text = tabelka01.Rows[6][1].ToString().Trim();
-                tab_15_w07_c02.Text = tabelka01.Rows[6][2].ToString().Trim();
-                tab_15_w07_c03.Text = tabelka01.Rows[6][3].ToString().Trim();
-                tab_15_w07_c04.Text = tabelka01.Rows[6][4].ToString().Trim();
-                tab_15_w07_c05.Text = tabelka01.Rows[6][5].ToString().Trim();
-                tab_15_w07_c06.Text = tabelka01.Rows[6][6].ToString().Trim();
-                tab_15_w07_c07.Text = tabelka01.Rows[6][7].ToString().Trim();
-                tab_15_w07_c08.Text = tabelka01.Rows[6][8].ToString().Trim();
-                tab_15_w07_c09.Text = tabelka01.Rows[6][9].ToString().Trim();
-                tab_15_w07_c10.Text = tabelka01.Rows[6][10].ToString().Trim();
-                tab_15_w07_c11.Text = tabelka01.Rows[6][11].ToString().Trim();
-                tab_15_w07_c12.Text = tabelka01.Rows[6][12].ToString().Trim();
-                tab_15_w07_c13.Text = tabelka01.Rows[6][13].ToString().Trim();
+                id_wiersza = 6;
+                tab_15_w07_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_15_w07_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_15_w07_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_15_w07_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_15_w07_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_15_w07_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_15_w07_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_15_w07_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_15_w07_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_15_w07_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_15_w07_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
+                tab_15_w07_c12.Text = tabelka01.Rows[id_wiersza]["d_12"].ToString().Trim();
+                tab_15_w07_c13.Text = tabelka01.Rows[id_wiersza]["d_13"].ToString().Trim();
                 //  wiersz 8
-                tab_15_w08_c01.Text = tabelka01.Rows[7][1].ToString().Trim();
-                tab_15_w08_c02.Text = tabelka01.Rows[7][2].ToString().Trim();
-                tab_15_w08_c03.Text = tabelka01.Rows[7][3].ToString().Trim();
-                tab_15_w08_c04.Text = tabelka01.Rows[7][4].ToString().Trim();
-                tab_15_w08_c05.Text = tabelka01.Rows[7][5].ToString().Trim();
-                tab_15_w08_c06.Text = tabelka01.Rows[7][6].ToString().Trim();
-                tab_15_w08_c07.Text = tabelka01.Rows[7][7].ToString().Trim();
-                tab_15_w08_c08.Text = tabelka01.Rows[7][8].ToString().Trim();
-                tab_15_w08_c09.Text = tabelka01.Rows[7][9].ToString().Trim();
-                tab_15_w08_c10.Text = tabelka01.Rows[7][10].ToString().Trim();
-                tab_15_w08_c11.Text = tabelka01.Rows[7][11].ToString().Trim();
-                tab_15_w08_c12.Text = tabelka01.Rows[7][12].ToString().Trim();
-                tab_15_w08_c13.Text = tabelka01.Rows[7][13].ToString().Trim();
+                id_wiersza = 7;
+                tab_15_w08_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_15_w08_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_15_w08_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_15_w08_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_15_w08_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_15_w08_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_15_w08_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_15_w08_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_15_w08_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_15_w08_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_15_w08_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
+                tab_15_w08_c12.Text = tabelka01.Rows[id_wiersza]["d_12"].ToString().Trim();
+                tab_15_w08_c13.Text = tabelka01.Rows[id_wiersza]["d_13"].ToString().Trim();
                 //  wiersz 9
-                tab_15_w09_c01.Text = tabelka01.Rows[8][1].ToString().Trim();
-                tab_15_w09_c02.Text = tabelka01.Rows[8][2].ToString().Trim();
-                tab_15_w09_c03.Text = tabelka01.Rows[8][3].ToString().Trim();
-                tab_15_w09_c04.Text = tabelka01.Rows[8][4].ToString().Trim();
-                tab_15_w09_c05.Text = tabelka01.Rows[8][5].ToString().Trim();
-                tab_15_w09_c06.Text = tabelka01.Rows[8][6].ToString().Trim();
-                tab_15_w09_c07.Text = tabelka01.Rows[8][7].ToString().Trim();
-                tab_15_w09_c08.Text = tabelka01.Rows[8][8].ToString().Trim();
-                tab_15_w09_c09.Text = tabelka01.Rows[8][9].ToString().Trim();
-                tab_15_w09_c10.Text = tabelka01.Rows[8][10].ToString().Trim();
-                tab_15_w09_c11.Text = tabelka01.Rows[8][11].ToString().Trim();
-                tab_15_w09_c12.Text = tabelka01.Rows[8][12].ToString().Trim();
-                tab_15_w09_c13.Text = tabelka01.Rows[8][13].ToString().Trim();
+                id_wiersza = 8;
+                tab_15_w09_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_15_w09_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_15_w09_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_15_w09_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_15_w09_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_15_w09_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_15_w09_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_15_w09_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_15_w09_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_15_w09_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_15_w09_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
+                tab_15_w09_c12.Text = tabelka01.Rows[id_wiersza]["d_12"].ToString().Trim();
+                tab_15_w09_c13.Text = tabelka01.Rows[id_wiersza]["d_13"].ToString().Trim();
                 //  wiersz 10
-                tab_15_w10_c01.Text = tabelka01.Rows[9][1].ToString().Trim();
-                tab_15_w10_c02.Text = tabelka01.Rows[9][2].ToString().Trim();
-                tab_15_w10_c03.Text = tabelka01.Rows[9][3].ToString().Trim();
-                tab_15_w10_c04.Text = tabelka01.Rows[9][4].ToString().Trim();
-                tab_15_w10_c05.Text = tabelka01.Rows[9][5].ToString().Trim();
-                tab_15_w10_c06.Text = tabelka01.Rows[9][6].ToString().Trim();
-                tab_15_w10_c07.Text = tabelka01.Rows[9][7].ToString().Trim();
-                tab_15_w10_c08.Text = tabelka01.Rows[9][8].ToString().Trim();
-                tab_15_w10_c09.Text = tabelka01.Rows[9][9].ToString().Trim();
-                tab_15_w10_c10.Text = tabelka01.Rows[9][10].ToString().Trim();
-                tab_15_w10_c11.Text = tabelka01.Rows[9][11].ToString().Trim();
-                tab_15_w10_c12.Text = tabelka01.Rows[9][12].ToString().Trim();
-                tab_15_w10_c13.Text = tabelka01.Rows[9][13].ToString().Trim();
+                id_wiersza = 9;
+                tab_15_w10_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_15_w10_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_15_w10_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_15_w10_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_15_w10_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_15_w10_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_15_w10_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_15_w10_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_15_w10_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_15_w10_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_15_w10_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
+                tab_15_w10_c12.Text = tabelka01.Rows[id_wiersza]["d_12"].ToString().Trim();
+                tab_15_w10_c13.Text = tabelka01.Rows[id_wiersza]["d_13"].ToString().Trim();
                 //  wiersz 11
-                tab_15_w11_c01.Text = tabelka01.Rows[10][1].ToString().Trim();
-                tab_15_w11_c02.Text = tabelka01.Rows[10][2].ToString().Trim();
-                tab_15_w11_c03.Text = tabelka01.Rows[10][3].ToString().Trim();
-                tab_15_w11_c04.Text = tabelka01.Rows[10][4].ToString().Trim();
-                tab_15_w11_c05.Text = tabelka01.Rows[10][5].ToString().Trim();
-                tab_15_w11_c06.Text = tabelka01.Rows[10][6].ToString().Trim();
-                tab_15_w11_c07.Text = tabelka01.Rows[10][7].ToString().Trim();
-                tab_15_w11_c08.Text = tabelka01.Rows[10][8].ToString().Trim();
-                tab_15_w11_c09.Text = tabelka01.Rows[10][9].ToString().Trim();
-                tab_15_w11_c10.Text = tabelka01.Rows[10][10].ToString().Trim();
-                tab_15_w11_c11.Text = tabelka01.Rows[10][11].ToString().Trim();
-                tab_15_w11_c12.Text = tabelka01.Rows[10][12].ToString().Trim();
-                tab_15_w11_c13.Text = tabelka01.Rows[10][13].ToString().Trim();
+                id_wiersza = 10;
+                tab_15_w11_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_15_w11_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_15_w11_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_15_w11_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_15_w11_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_15_w11_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_15_w11_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_15_w11_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_15_w11_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_15_w11_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_15_w11_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
+                tab_15_w11_c12.Text = tabelka01.Rows[id_wiersza]["d_12"].ToString().Trim();
+                tab_15_w11_c13.Text = tabelka01.Rows[id_wiersza]["d_13"].ToString().Trim();
                 //  wiersz 12
-                tab_15_w12_c01.Text = tabelka01.Rows[11][1].ToString().Trim();
-                tab_15_w12_c02.Text = tabelka01.Rows[11][2].ToString().Trim();
-                tab_15_w12_c03.Text = tabelka01.Rows[11][3].ToString().Trim();
-                tab_15_w12_c04.Text = tabelka01.Rows[11][4].ToString().Trim();
-                tab_15_w12_c05.Text = tabelka01.Rows[11][5].ToString().Trim();
-                tab_15_w12_c06.Text = tabelka01.Rows[11][6].ToString().Trim();
-                tab_15_w12_c07.Text = tabelka01.Rows[11][7].ToString().Trim();
-                tab_15_w12_c08.Text = tabelka01.Rows[11][8].ToString().Trim();
-                tab_15_w12_c09.Text = tabelka01.Rows[11][9].ToString().Trim();
-                tab_15_w12_c10.Text = tabelka01.Rows[11][10].ToString().Trim();
-                tab_15_w12_c11.Text = tabelka01.Rows[11][11].ToString().Trim();
-                tab_15_w12_c12.Text = tabelka01.Rows[11][12].ToString().Trim();
-                tab_15_w12_c13.Text = tabelka01.Rows[11][13].ToString().Trim();
+                id_wiersza = 11;
+                tab_15_w12_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_15_w12_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_15_w12_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_15_w12_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_15_w12_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_15_w12_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_15_w12_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_15_w12_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_15_w12_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_15_w12_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_15_w12_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
+                tab_15_w12_c12.Text = tabelka01.Rows[id_wiersza]["d_12"].ToString().Trim();
+                tab_15_w12_c13.Text = tabelka01.Rows[id_wiersza]["d_13"].ToString().Trim();
                 //  wiersz 13
-                tab_15_w13_c01.Text = tabelka01.Rows[12][1].ToString().Trim();
-                tab_15_w13_c02.Text = tabelka01.Rows[12][2].ToString().Trim();
-                tab_15_w13_c03.Text = tabelka01.Rows[12][3].ToString().Trim();
-                tab_15_w13_c04.Text = tabelka01.Rows[12][4].ToString().Trim();
-                tab_15_w13_c05.Text = tabelka01.Rows[12][5].ToString().Trim();
-                tab_15_w13_c06.Text = tabelka01.Rows[12][6].ToString().Trim();
-                tab_15_w13_c07.Text = tabelka01.Rows[12][7].ToString().Trim();
-                tab_15_w13_c08.Text = tabelka01.Rows[12][8].ToString().Trim();
-                tab_15_w13_c09.Text = tabelka01.Rows[12][9].ToString().Trim();
-                tab_15_w13_c10.Text = tabelka01.Rows[12][10].ToString().Trim();
-                tab_15_w13_c11.Text = tabelka01.Rows[12][11].ToString().Trim();
-                tab_15_w13_c12.Text = tabelka01.Rows[12][12].ToString().Trim();
-                tab_15_w13_c13.Text = tabelka01.Rows[12][13].ToString().Trim();
+                id_wiersza = 12;
+                tab_15_w13_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_15_w13_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_15_w13_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_15_w13_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_15_w13_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_15_w13_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_15_w13_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_15_w13_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_15_w13_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_15_w13_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_15_w13_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
+                tab_15_w13_c12.Text = tabelka01.Rows[id_wiersza]["d_12"].ToString().Trim();
+                tab_15_w13_c13.Text = tabelka01.Rows[id_wiersza]["d_13"].ToString().Trim();
                 //  wiersz 14
-                tab_15_w14_c01.Text = tabelka01.Rows[13][1].ToString().Trim();
-                tab_15_w14_c02.Text = tabelka01.Rows[13][2].ToString().Trim();
-                tab_15_w14_c03.Text = tabelka01.Rows[13][3].ToString().Trim();
-                tab_15_w14_c04.Text = tabelka01.Rows[13][4].ToString().Trim();
-                tab_15_w14_c05.Text = tabelka01.Rows[13][5].ToString().Trim();
-                tab_15_w14_c06.Text = tabelka01.Rows[13][6].ToString().Trim();
-                tab_15_w14_c07.Text = tabelka01.Rows[13][7].ToString().Trim();
-                tab_15_w14_c08.Text = tabelka01.Rows[13][8].ToString().Trim();
-                tab_15_w14_c09.Text = tabelka01.Rows[13][9].ToString().Trim();
-                tab_15_w14_c10.Text = tabelka01.Rows[13][10].ToString().Trim();
-                tab_15_w14_c11.Text = tabelka01.Rows[13][11].ToString().Trim();
-                tab_15_w14_c12.Text = tabelka01.Rows[13][12].ToString().Trim();
-                tab_15_w14_c13.Text = tabelka01.Rows[13][13].ToString().Trim();
+
+                id_wiersza = 13;
+                tab_15_w14_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_15_w14_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_15_w14_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_15_w14_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_15_w14_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_15_w14_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_15_w14_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_15_w14_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_15_w14_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_15_w14_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_15_w14_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
+                tab_15_w14_c12.Text = tabelka01.Rows[id_wiersza]["d_12"].ToString().Trim();
+                tab_15_w14_c13.Text = tabelka01.Rows[id_wiersza]["d_13"].ToString().Trim();
                 //  wiersz 15
-                tab_15_w15_c01.Text = tabelka01.Rows[14][1].ToString().Trim();
-                tab_15_w15_c02.Text = tabelka01.Rows[14][2].ToString().Trim();
-                tab_15_w15_c03.Text = tabelka01.Rows[14][3].ToString().Trim();
-                tab_15_w15_c04.Text = tabelka01.Rows[14][4].ToString().Trim();
-                tab_15_w15_c05.Text = tabelka01.Rows[14][5].ToString().Trim();
-                tab_15_w15_c06.Text = tabelka01.Rows[14][6].ToString().Trim();
-                tab_15_w15_c07.Text = tabelka01.Rows[14][7].ToString().Trim();
-                tab_15_w15_c08.Text = tabelka01.Rows[14][8].ToString().Trim();
-                tab_15_w15_c09.Text = tabelka01.Rows[14][9].ToString().Trim();
-                tab_15_w15_c10.Text = tabelka01.Rows[14][10].ToString().Trim();
-                tab_15_w15_c11.Text = tabelka01.Rows[14][11].ToString().Trim();
-                tab_15_w15_c12.Text = tabelka01.Rows[14][12].ToString().Trim();
-                tab_15_w15_c13.Text = tabelka01.Rows[14][13].ToString().Trim();
+                id_wiersza = 14;
+                tab_15_w15_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_15_w15_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_15_w15_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_15_w15_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_15_w15_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_15_w15_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_15_w15_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_15_w15_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_15_w15_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_15_w15_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_15_w15_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
+                tab_15_w15_c12.Text = tabelka01.Rows[id_wiersza]["d_12"].ToString().Trim();
+                tab_15_w15_c13.Text = tabelka01.Rows[id_wiersza]["d_13"].ToString().Trim();
                 //  wiersz 16
-                tab_15_w16_c01.Text = tabelka01.Rows[15][1].ToString().Trim();
-                tab_15_w16_c02.Text = tabelka01.Rows[15][2].ToString().Trim();
-                tab_15_w16_c03.Text = tabelka01.Rows[15][3].ToString().Trim();
-                tab_15_w16_c04.Text = tabelka01.Rows[15][4].ToString().Trim();
-                tab_15_w16_c05.Text = tabelka01.Rows[15][5].ToString().Trim();
-                tab_15_w16_c06.Text = tabelka01.Rows[15][6].ToString().Trim();
-                tab_15_w16_c07.Text = tabelka01.Rows[15][7].ToString().Trim();
-                tab_15_w16_c08.Text = tabelka01.Rows[15][8].ToString().Trim();
-                tab_15_w16_c09.Text = tabelka01.Rows[15][9].ToString().Trim();
-                tab_15_w16_c10.Text = tabelka01.Rows[15][10].ToString().Trim();
-                tab_15_w16_c11.Text = tabelka01.Rows[15][11].ToString().Trim();
-                tab_15_w16_c12.Text = tabelka01.Rows[15][12].ToString().Trim();
-                tab_15_w16_c13.Text = tabelka01.Rows[15][13].ToString().Trim();
+                id_wiersza = 15;
+                tab_15_w16_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_15_w16_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_15_w16_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_15_w16_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_15_w16_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_15_w16_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_15_w16_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_15_w16_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_15_w16_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_15_w16_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_15_w16_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
+                tab_15_w16_c12.Text = tabelka01.Rows[id_wiersza]["d_12"].ToString().Trim();
+                tab_15_w16_c13.Text = tabelka01.Rows[id_wiersza]["d_13"].ToString().Trim();
                 //  wiersz 17
-                tab_15_w17_c01.Text = tabelka01.Rows[16][1].ToString().Trim();
-                tab_15_w17_c02.Text = tabelka01.Rows[16][2].ToString().Trim();
-                tab_15_w17_c03.Text = tabelka01.Rows[16][3].ToString().Trim();
-                tab_15_w17_c04.Text = tabelka01.Rows[16][4].ToString().Trim();
-                tab_15_w17_c05.Text = tabelka01.Rows[16][5].ToString().Trim();
-                tab_15_w17_c06.Text = tabelka01.Rows[16][6].ToString().Trim();
-                tab_15_w17_c07.Text = tabelka01.Rows[16][7].ToString().Trim();
-                tab_15_w17_c08.Text = tabelka01.Rows[16][8].ToString().Trim();
-                tab_15_w17_c09.Text = tabelka01.Rows[16][9].ToString().Trim();
-                tab_15_w17_c10.Text = tabelka01.Rows[16][10].ToString().Trim();
-                tab_15_w17_c11.Text = tabelka01.Rows[16][11].ToString().Trim();
-                tab_15_w17_c12.Text = tabelka01.Rows[16][12].ToString().Trim();
-                tab_15_w17_c13.Text = tabelka01.Rows[16][13].ToString().Trim();
+                id_wiersza = 16;
+                tab_15_w17_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_15_w17_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_15_w17_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_15_w17_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_15_w17_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_15_w17_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_15_w17_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_15_w17_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_15_w17_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_15_w17_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_15_w17_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
+                tab_15_w17_c12.Text = tabelka01.Rows[id_wiersza]["d_12"].ToString().Trim();
+                tab_15_w17_c13.Text = tabelka01.Rows[id_wiersza]["d_13"].ToString().Trim();
                 //  wiersz 18
-                tab_15_w18_c01.Text = tabelka01.Rows[17][1].ToString().Trim();
-                tab_15_w18_c02.Text = tabelka01.Rows[17][2].ToString().Trim();
-                tab_15_w18_c03.Text = tabelka01.Rows[17][3].ToString().Trim();
-                tab_15_w18_c04.Text = tabelka01.Rows[17][4].ToString().Trim();
-                tab_15_w18_c05.Text = tabelka01.Rows[17][5].ToString().Trim();
-                tab_15_w18_c06.Text = tabelka01.Rows[17][6].ToString().Trim();
-                tab_15_w18_c07.Text = tabelka01.Rows[17][7].ToString().Trim();
-                tab_15_w18_c08.Text = tabelka01.Rows[17][8].ToString().Trim();
-                tab_15_w18_c09.Text = tabelka01.Rows[17][9].ToString().Trim();
-                tab_15_w18_c10.Text = tabelka01.Rows[17][10].ToString().Trim();
-                tab_15_w18_c11.Text = tabelka01.Rows[17][11].ToString().Trim();
-                tab_15_w18_c12.Text = tabelka01.Rows[17][12].ToString().Trim();
-                tab_15_w18_c13.Text = tabelka01.Rows[17][13].ToString().Trim();
+                id_wiersza = 17;
+                tab_15_w18_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_15_w18_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_15_w18_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_15_w18_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_15_w18_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_15_w18_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_15_w18_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_15_w18_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_15_w18_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_15_w18_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_15_w18_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
+                tab_15_w18_c12.Text = tabelka01.Rows[id_wiersza]["d_12"].ToString().Trim();
+                tab_15_w18_c13.Text = tabelka01.Rows[id_wiersza]["d_13"].ToString().Trim();
                 //  wiersz 19
-                tab_15_w19_c01.Text = tabelka01.Rows[18][1].ToString().Trim();
-                tab_15_w19_c02.Text = tabelka01.Rows[18][2].ToString().Trim();
-                tab_15_w19_c03.Text = tabelka01.Rows[18][3].ToString().Trim();
-                tab_15_w19_c04.Text = tabelka01.Rows[18][4].ToString().Trim();
-                tab_15_w19_c05.Text = tabelka01.Rows[18][5].ToString().Trim();
-                tab_15_w19_c06.Text = tabelka01.Rows[18][6].ToString().Trim();
-                tab_15_w19_c07.Text = tabelka01.Rows[18][7].ToString().Trim();
-                tab_15_w19_c08.Text = tabelka01.Rows[18][8].ToString().Trim();
-                tab_15_w19_c09.Text = tabelka01.Rows[18][9].ToString().Trim();
-                tab_15_w19_c10.Text = tabelka01.Rows[18][10].ToString().Trim();
-                tab_15_w19_c11.Text = tabelka01.Rows[18][11].ToString().Trim();
-                tab_15_w19_c12.Text = tabelka01.Rows[18][12].ToString().Trim();
-                tab_15_w19_c13.Text = tabelka01.Rows[18][13].ToString().Trim();
+                id_wiersza = 18;
+                tab_15_w19_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_15_w19_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_15_w19_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_15_w19_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_15_w19_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_15_w19_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_15_w19_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_15_w19_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_15_w19_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_15_w19_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_15_w19_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
+                tab_15_w19_c12.Text = tabelka01.Rows[id_wiersza]["d_12"].ToString().Trim();
+                tab_15_w19_c13.Text = tabelka01.Rows[id_wiersza]["d_13"].ToString().Trim();
                 //  wiersz 20
-                tab_15_w20_c01.Text = tabelka01.Rows[19][1].ToString().Trim();
-                tab_15_w20_c02.Text = tabelka01.Rows[19][2].ToString().Trim();
-                tab_15_w20_c03.Text = tabelka01.Rows[19][3].ToString().Trim();
-                tab_15_w20_c04.Text = tabelka01.Rows[19][4].ToString().Trim();
-                tab_15_w20_c05.Text = tabelka01.Rows[19][5].ToString().Trim();
-                tab_15_w20_c06.Text = tabelka01.Rows[19][6].ToString().Trim();
-                tab_15_w20_c07.Text = tabelka01.Rows[19][7].ToString().Trim();
-                tab_15_w20_c08.Text = tabelka01.Rows[19][8].ToString().Trim();
-                tab_15_w20_c09.Text = tabelka01.Rows[19][9].ToString().Trim();
-                tab_15_w20_c10.Text = tabelka01.Rows[19][10].ToString().Trim();
-                tab_15_w20_c11.Text = tabelka01.Rows[19][11].ToString().Trim();
-                tab_15_w20_c12.Text = tabelka01.Rows[19][12].ToString().Trim();
-                tab_15_w20_c13.Text = tabelka01.Rows[19][13].ToString().Trim();
+                id_wiersza = 19;
+                tab_15_w20_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_15_w20_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_15_w20_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_15_w20_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_15_w20_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_15_w20_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_15_w20_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_15_w20_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_15_w20_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_15_w20_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_15_w20_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
+                tab_15_w20_c12.Text = tabelka01.Rows[id_wiersza]["d_12"].ToString().Trim();
+                tab_15_w20_c13.Text = tabelka01.Rows[id_wiersza]["d_13"].ToString().Trim();
                 //  wiersz 21
-                tab_15_w21_c01.Text = tabelka01.Rows[20][1].ToString().Trim();
-                tab_15_w21_c02.Text = tabelka01.Rows[20][2].ToString().Trim();
-                tab_15_w21_c03.Text = tabelka01.Rows[20][3].ToString().Trim();
-                tab_15_w21_c04.Text = tabelka01.Rows[20][4].ToString().Trim();
-                tab_15_w21_c05.Text = tabelka01.Rows[20][5].ToString().Trim();
-                tab_15_w21_c06.Text = tabelka01.Rows[20][6].ToString().Trim();
-                tab_15_w21_c07.Text = tabelka01.Rows[20][7].ToString().Trim();
-                tab_15_w21_c08.Text = tabelka01.Rows[20][8].ToString().Trim();
-                tab_15_w21_c09.Text = tabelka01.Rows[20][9].ToString().Trim();
-                tab_15_w21_c10.Text = tabelka01.Rows[20][10].ToString().Trim();
-                tab_15_w21_c11.Text = tabelka01.Rows[20][11].ToString().Trim();
-                tab_15_w21_c12.Text = tabelka01.Rows[20][12].ToString().Trim();
-                tab_15_w21_c13.Text = tabelka01.Rows[20][13].ToString().Trim();
+                id_wiersza = 20;
+                tab_15_w21_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_15_w21_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_15_w21_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_15_w21_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_15_w21_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_15_w21_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_15_w21_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_15_w21_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_15_w21_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_15_w21_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_15_w21_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
+                tab_15_w21_c12.Text = tabelka01.Rows[id_wiersza]["d_12"].ToString().Trim();
+                tab_15_w21_c13.Text = tabelka01.Rows[id_wiersza]["d_13"].ToString().Trim();
                 //  wiersz 22
-                tab_15_w22_c01.Text = tabelka01.Rows[21][1].ToString().Trim();
-                tab_15_w22_c02.Text = tabelka01.Rows[21][2].ToString().Trim();
-                tab_15_w22_c03.Text = tabelka01.Rows[21][3].ToString().Trim();
-                tab_15_w22_c04.Text = tabelka01.Rows[21][4].ToString().Trim();
-                tab_15_w22_c05.Text = tabelka01.Rows[21][5].ToString().Trim();
-                tab_15_w22_c06.Text = tabelka01.Rows[21][6].ToString().Trim();
-                tab_15_w22_c07.Text = tabelka01.Rows[21][7].ToString().Trim();
-                tab_15_w22_c08.Text = tabelka01.Rows[21][8].ToString().Trim();
-                tab_15_w22_c09.Text = tabelka01.Rows[21][9].ToString().Trim();
-                tab_15_w22_c10.Text = tabelka01.Rows[21][10].ToString().Trim();
-                tab_15_w22_c11.Text = tabelka01.Rows[21][11].ToString().Trim();
-                tab_15_w22_c12.Text = tabelka01.Rows[21][12].ToString().Trim();
-                tab_15_w22_c13.Text = tabelka01.Rows[21][13].ToString().Trim();
+                id_wiersza = 21;
+                tab_15_w22_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_15_w22_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_15_w22_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_15_w22_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_15_w22_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_15_w22_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_15_w22_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_15_w22_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_15_w22_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_15_w22_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_15_w22_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
+                tab_15_w22_c12.Text = tabelka01.Rows[id_wiersza]["d_12"].ToString().Trim();
+                tab_15_w22_c13.Text = tabelka01.Rows[id_wiersza]["d_13"].ToString().Trim();
             }
             catch
             {
@@ -1158,18 +1211,18 @@ namespace Statystyki_2018
                 tab_19_w02_c11.Text = tabela017.Rows[1][11].ToString().Trim();
                 tab_19_w02_c12.Text = tabela017.Rows[1][12].ToString().Trim();
                 //  wiersz 3
-                tab_19_w03_c01.Text = tabela017.Rows[2][1].ToString().Trim();
-                tab_19_w03_c02.Text = tabela017.Rows[2][2].ToString().Trim();
-                tab_19_w03_c03.Text = tabela017.Rows[2][3].ToString().Trim();
-                tab_19_w03_c04.Text = tabela017.Rows[2][4].ToString().Trim();
-                tab_19_w03_c05.Text = tabela017.Rows[2][5].ToString().Trim();
-                tab_19_w03_c06.Text = tabela017.Rows[2][6].ToString().Trim();
-                tab_19_w03_c07.Text = tabela017.Rows[2][7].ToString().Trim();
-                tab_19_w03_c08.Text = tabela017.Rows[2][8].ToString().Trim();
-                tab_19_w03_c09.Text = tabela017.Rows[2][9].ToString().Trim();
-                tab_19_w03_c10.Text = tabela017.Rows[2][10].ToString().Trim();
-                tab_19_w03_c11.Text = tabela017.Rows[2][11].ToString().Trim();
-                tab_19_w03_c12.Text = tabela017.Rows[2][12].ToString().Trim();
+                tab_19_w04_c01.Text = tabela017.Rows[2][1].ToString().Trim();
+                tab_19_w04_c02.Text = tabela017.Rows[2][2].ToString().Trim();
+                tab_19_w04_c03.Text = tabela017.Rows[2][3].ToString().Trim();
+                tab_19_w04_c04.Text = tabela017.Rows[2][4].ToString().Trim();
+                tab_19_w04_c05.Text = tabela017.Rows[2][5].ToString().Trim();
+                tab_19_w04_c06.Text = tabela017.Rows[2][6].ToString().Trim();
+                tab_19_w04_c07.Text = tabela017.Rows[2][7].ToString().Trim();
+                tab_19_w04_c08.Text = tabela017.Rows[2][8].ToString().Trim();
+                tab_19_w04_c09.Text = tabela017.Rows[2][9].ToString().Trim();
+                tab_19_w04_c10.Text = tabela017.Rows[2][10].ToString().Trim();
+                tab_19_w04_c11.Text = tabela017.Rows[2][11].ToString().Trim();
+                tab_19_w04_c12.Text = tabela017.Rows[2][12].ToString().Trim();
                 //  wiersz 4
                 tab_19_w04_c01.Text = tabela017.Rows[3][1].ToString().Trim();
                 tab_19_w04_c02.Text = tabela017.Rows[3][2].ToString().Trim();
@@ -1511,7 +1564,7 @@ namespace Statystyki_2018
                 //  wiersz 2
                 tab_24_w02_c01.Text = tabela023.Rows[1][1].ToString().Trim();
                 //  wiersz 3
-                tab_24_w03_c01.Text = tabela023.Rows[2][1].ToString().Trim();
+                tab_24_w04_c01.Text = tabela023.Rows[2][1].ToString().Trim();
                 //  wiersz 4
                 tab_24_w04_c01.Text = tabela023.Rows[3][1].ToString().Trim();
             }
@@ -1527,7 +1580,7 @@ namespace Statystyki_2018
             {
                 cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 25");
             }
-            DataTable tabela024 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, idDzialu.ToString(), 25,9,15, tenPlik);
+            DataTable tabela024 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, idDzialu.ToString(), 25, 9, 15, tenPlik);
             if (tabela024 == null)
             {
                 cm.log.Error(tenPlik + " Brak danych dla tabeli 25!");
@@ -1583,7 +1636,6 @@ namespace Statystyki_2018
             }
         }
 
-
         protected void tabela_28()
         {
             int idDzialu = int.Parse((string)Session["id_dzialu"]);
@@ -1614,8 +1666,8 @@ namespace Statystyki_2018
             {
                 cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 29");
             }
-            DataTable tabela028 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, idDzialu.ToString(), 29, 8, 11, tenPlik);
-            if (tabela028 == null)
+            DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, idDzialu.ToString(), 29, 8, 11, tenPlik);
+            if (tabelka01 == null)
             {
                 cm.log.Error(tenPlik + " Brak danych dla tabeli 29!");
                 return;
@@ -1624,89 +1676,98 @@ namespace Statystyki_2018
             try
             {
                 //  wiersz 1
-                tab_29_w01_c01.Text = tabela028.Rows[0][1].ToString().Trim();
-                tab_29_w01_c02.Text = tabela028.Rows[0][2].ToString().Trim();
-                tab_29_w01_c03.Text = tabela028.Rows[0][3].ToString().Trim();
-                tab_29_w01_c04.Text = tabela028.Rows[0][4].ToString().Trim();
-                tab_29_w01_c05.Text = tabela028.Rows[0][5].ToString().Trim();
-                tab_29_w01_c06.Text = tabela028.Rows[0][6].ToString().Trim();
-                tab_29_w01_c07.Text = tabela028.Rows[0][7].ToString().Trim();
-                tab_29_w01_c08.Text = tabela028.Rows[0][8].ToString().Trim();
-                tab_29_w01_c09.Text = tabela028.Rows[0][9].ToString().Trim();
-                tab_29_w01_c10.Text = tabela028.Rows[0][10].ToString().Trim();
-                tab_29_w01_c11.Text = tabela028.Rows[0][11].ToString().Trim();
+                int id_wiersza = 0;
+                tab_29_w01_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_29_w01_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_29_w01_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_29_w01_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_29_w01_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_29_w01_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_29_w01_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_29_w01_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_29_w01_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_29_w01_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_29_w01_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
+
                 //  wiersz 2
-                tab_29_w02_c01.Text = tabela028.Rows[1][1].ToString().Trim();
-                tab_29_w02_c02.Text = tabela028.Rows[1][2].ToString().Trim();
-                tab_29_w02_c03.Text = tabela028.Rows[1][3].ToString().Trim();
-                tab_29_w02_c04.Text = tabela028.Rows[1][4].ToString().Trim();
-                tab_29_w02_c05.Text = tabela028.Rows[1][5].ToString().Trim();
-                tab_29_w02_c06.Text = tabela028.Rows[1][6].ToString().Trim();
-                tab_29_w02_c07.Text = tabela028.Rows[1][7].ToString().Trim();
-                tab_29_w02_c08.Text = tabela028.Rows[1][8].ToString().Trim();
-                tab_29_w02_c09.Text = tabela028.Rows[1][9].ToString().Trim();
-                tab_29_w02_c10.Text = tabela028.Rows[1][10].ToString().Trim();
-                tab_29_w02_c11.Text = tabela028.Rows[1][11].ToString().Trim();
+                id_wiersza = 1;
+                tab_29_w02_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_29_w02_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_29_w02_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_29_w02_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_29_w02_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_29_w02_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_29_w02_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_29_w02_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_29_w02_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_29_w02_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_29_w02_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
+
                 //  wiersz 3
-                tab_29_w03_c01.Text = tabela028.Rows[2][1].ToString().Trim();
-                tab_29_w03_c02.Text = tabela028.Rows[2][2].ToString().Trim();
-                tab_29_w03_c03.Text = tabela028.Rows[2][3].ToString().Trim();
-                tab_29_w03_c04.Text = tabela028.Rows[2][4].ToString().Trim();
-                tab_29_w03_c05.Text = tabela028.Rows[2][5].ToString().Trim();
-                tab_29_w03_c06.Text = tabela028.Rows[2][6].ToString().Trim();
-                tab_29_w03_c07.Text = tabela028.Rows[2][7].ToString().Trim();
-                tab_29_w03_c08.Text = tabela028.Rows[2][8].ToString().Trim();
-                tab_29_w03_c09.Text = tabela028.Rows[2][9].ToString().Trim();
-                tab_29_w03_c10.Text = tabela028.Rows[2][10].ToString().Trim();
-                tab_29_w03_c11.Text = tabela028.Rows[2][11].ToString().Trim();
+                id_wiersza = 2;
+                tab_29_w04_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_29_w04_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_29_w04_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_29_w04_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_29_w04_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_29_w04_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_29_w04_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_29_w04_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_29_w04_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_29_w04_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_29_w04_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
                 //  wiersz 4
-                tab_29_w04_c01.Text = tabela028.Rows[3][1].ToString().Trim();
-                tab_29_w04_c02.Text = tabela028.Rows[3][2].ToString().Trim();
-                tab_29_w04_c03.Text = tabela028.Rows[3][3].ToString().Trim();
-                tab_29_w04_c04.Text = tabela028.Rows[3][4].ToString().Trim();
-                tab_29_w04_c05.Text = tabela028.Rows[3][5].ToString().Trim();
-                tab_29_w04_c06.Text = tabela028.Rows[3][6].ToString().Trim();
-                tab_29_w04_c07.Text = tabela028.Rows[3][7].ToString().Trim();
-                tab_29_w04_c08.Text = tabela028.Rows[3][8].ToString().Trim();
-                tab_29_w04_c09.Text = tabela028.Rows[3][9].ToString().Trim();
-                tab_29_w04_c10.Text = tabela028.Rows[3][10].ToString().Trim();
-                tab_29_w04_c11.Text = tabela028.Rows[3][11].ToString().Trim();
+                id_wiersza = 3;
+                tab_29_w04_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_29_w04_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_29_w04_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_29_w04_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_29_w04_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_29_w04_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_29_w04_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_29_w04_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_29_w04_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_29_w04_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_29_w04_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
                 //  wiersz 5
-                tab_29_w05_c01.Text = tabela028.Rows[4][1].ToString().Trim();
-                tab_29_w05_c02.Text = tabela028.Rows[4][2].ToString().Trim();
-                tab_29_w05_c03.Text = tabela028.Rows[4][3].ToString().Trim();
-                tab_29_w05_c04.Text = tabela028.Rows[4][4].ToString().Trim();
-                tab_29_w05_c05.Text = tabela028.Rows[4][5].ToString().Trim();
-                tab_29_w05_c06.Text = tabela028.Rows[4][6].ToString().Trim();
-                tab_29_w05_c07.Text = tabela028.Rows[4][7].ToString().Trim();
-                tab_29_w05_c08.Text = tabela028.Rows[4][8].ToString().Trim();
-                tab_29_w05_c09.Text = tabela028.Rows[4][9].ToString().Trim();
-                tab_29_w05_c10.Text = tabela028.Rows[4][10].ToString().Trim();
-                tab_29_w05_c11.Text = tabela028.Rows[4][11].ToString().Trim();
+                id_wiersza = 4;
+                tab_29_w05_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_29_w05_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_29_w05_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_29_w05_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_29_w05_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_29_w05_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_29_w05_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_29_w05_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_29_w05_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_29_w05_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_29_w05_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
                 //  wiersz 6
-                tab_29_w06_c01.Text = tabela028.Rows[5][1].ToString().Trim();
-                tab_29_w06_c02.Text = tabela028.Rows[5][2].ToString().Trim();
-                tab_29_w06_c03.Text = tabela028.Rows[5][3].ToString().Trim();
-                tab_29_w06_c04.Text = tabela028.Rows[5][4].ToString().Trim();
-                tab_29_w06_c05.Text = tabela028.Rows[5][5].ToString().Trim();
-                tab_29_w06_c06.Text = tabela028.Rows[5][6].ToString().Trim();
-                tab_29_w06_c07.Text = tabela028.Rows[5][7].ToString().Trim();
-                tab_29_w06_c08.Text = tabela028.Rows[5][8].ToString().Trim();
-                tab_29_w06_c09.Text = tabela028.Rows[5][9].ToString().Trim();
-                tab_29_w06_c10.Text = tabela028.Rows[5][10].ToString().Trim();
-                tab_29_w06_c11.Text = tabela028.Rows[5][11].ToString().Trim();
+                id_wiersza = 5;
+                tab_29_w06_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_29_w06_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_29_w06_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_29_w06_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_29_w06_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_29_w06_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_29_w06_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_29_w06_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_29_w06_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_29_w06_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_29_w06_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
                 //  wiersz 7
-                tab_29_w07_c01.Text = tabela028.Rows[6][1].ToString().Trim();
-                tab_29_w07_c02.Text = tabela028.Rows[6][2].ToString().Trim();
-                tab_29_w07_c03.Text = tabela028.Rows[6][3].ToString().Trim();
-                tab_29_w07_c04.Text = tabela028.Rows[6][4].ToString().Trim();
-                tab_29_w07_c05.Text = tabela028.Rows[6][5].ToString().Trim();
-                tab_29_w07_c06.Text = tabela028.Rows[6][6].ToString().Trim();
-                tab_29_w07_c07.Text = tabela028.Rows[6][7].ToString().Trim();
-                tab_29_w07_c08.Text = tabela028.Rows[6][8].ToString().Trim();
-                tab_29_w07_c09.Text = tabela028.Rows[6][9].ToString().Trim();
-                tab_29_w07_c10.Text = tabela028.Rows[6][10].ToString().Trim();
-                tab_29_w07_c11.Text = tabela028.Rows[6][11].ToString().Trim();
+                id_wiersza = 6;
+                tab_29_w07_c01.Text = tabelka01.Rows[id_wiersza]["d_01"].ToString().Trim();
+                tab_29_w07_c02.Text = tabelka01.Rows[id_wiersza]["d_02"].ToString().Trim();
+                tab_29_w07_c03.Text = tabelka01.Rows[id_wiersza]["d_03"].ToString().Trim();
+                tab_29_w07_c04.Text = tabelka01.Rows[id_wiersza]["d_04"].ToString().Trim();
+                tab_29_w07_c05.Text = tabelka01.Rows[id_wiersza]["d_05"].ToString().Trim();
+                tab_29_w07_c06.Text = tabelka01.Rows[id_wiersza]["d_06"].ToString().Trim();
+                tab_29_w07_c07.Text = tabelka01.Rows[id_wiersza]["d_07"].ToString().Trim();
+                tab_29_w07_c08.Text = tabelka01.Rows[id_wiersza]["d_08"].ToString().Trim();
+                tab_29_w07_c09.Text = tabelka01.Rows[id_wiersza]["d_09"].ToString().Trim();
+                tab_29_w07_c10.Text = tabelka01.Rows[id_wiersza]["d_10"].ToString().Trim();
+                tab_29_w07_c11.Text = tabelka01.Rows[id_wiersza]["d_11"].ToString().Trim();
             }
             catch (Exception ex)
             {
@@ -1815,6 +1876,7 @@ namespace Statystyki_2018
             Session["tabelka035"] = tabelka01;
             tworztabelkeHTMLTabela35(idDzialu, 35, tabelka01);
         }
+
         protected void tabela_36()
         {
             int idDzialu = int.Parse((string)Session["id_dzialu"]);
@@ -1837,6 +1899,7 @@ namespace Statystyki_2018
                 cm.log.Error(tenPlik + ": bład podczas  tworzenia tabeli 36 " + ex.Message);
             }
         }
+
         protected void tabela_37()
         {
             int idDzialu = int.Parse((string)Session["id_dzialu"]);
@@ -1844,7 +1907,7 @@ namespace Statystyki_2018
             {
                 cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 37");
             }
-            DataTable tabela036 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, idDzialu.ToString(), 37, 10, 10, tenPlik);
+            DataTable tabela036 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, idDzialu.ToString(), 37, 10, 10, false, tenPlik);
             if (tabela036 == null)
             {
                 cm.log.Error(tenPlik + " Brak danych dla tabeli 37!");
@@ -1859,6 +1922,7 @@ namespace Statystyki_2018
                 cm.log.Error(tenPlik + ": bład podczas  tworzenia tabeli 37 " + ex.Message);
             }
         }
+
         protected void tabela_38()
         {
             int idDzialu = int.Parse((string)Session["id_dzialu"]);
@@ -1881,6 +1945,7 @@ namespace Statystyki_2018
                 cm.log.Error(tenPlik + ": bład podczas  tworzenia tabeli 38 " + ex.Message);
             }
         }
+
         protected void tabela_39()
         {
             int idDzialu = int.Parse((string)Session["id_dzialu"]);
@@ -1926,59 +1991,21 @@ namespace Statystyki_2018
                 return;
             }
 
-            StringBuilder builder = new StringBuilder();
-            builder.AppendLine("<p>III.1. Sędziowie (wg objaśnień: w zestawieniu należy uwzględnić także sędziów delegowanych)</p>");
-            if (cl.debug(idWydzialu))
-            {
-                builder.AppendLine("<p>Tabela 3 </p>");
-            }
-            builder.AppendLine("<table style='width: 1150px;'>");
-            //header
-            builder.AppendLine("<tr>");
-            builder.AppendLine("<td class='borderAll center col_36' rowspan='2'>L.p.</td>");
-            builder.AppendLine("<td class='borderAll center col_100' rowspan='2'>imię i nazwisko</td>");
-            builder.AppendLine("<td class='borderAll center col_100' rowspan='2'>okres pracy w wydziale</td>");
-            builder.AppendLine("<td class='borderAll center col_100' rowspan='2'>pełniona funkcja</td>");
-            builder.AppendLine("<td class='borderAll center col_100' rowspan='2'>okres pełnienia funkcji</td>");
-            builder.AppendLine("<td class='borderAll center col_100' rowspan='2'>wymiar czasu pracy w wydziale wg podziału czynności</td>");
-            builder.AppendLine("<td class='borderAll center col_100' rowspan='2'>efektywny czas pracy (w miesiącach) </td>");
-            builder.AppendLine("<td class='borderAll center' colspan='6'>Wyznaczone sesje (jawne/niejawne)</td>");
-            builder.AppendLine("	</tr>");
-            builder.AppendLine("<td class='borderAll center col_100'>Liczba wyznaczonych sesji na rozprawy</td>");
-            builder.AppendLine("<td class='borderAll center col_100' >Liczba wyznaczonych sesji na posiedzaniach </td>");
-            builder.AppendLine("<td class='borderAll center col_100' >Liczba sesji jawnych i niejawnych OGÓŁEM</td>");
-            builder.AppendLine("<td class='borderAll center col_100' >średnia liczba sesji OGÓŁEM miesięcznie w efektywnym czasie pracy</td>");
-            builder.AppendLine("<td class='borderAll center col_100' >średnia liczba sesji jawnych miesięcznie w efektywnym czasie pracy</td>");
-            builder.AppendLine("<td class='borderAll center col_100' >średnia liczba sesji niejawnych  miesięcznie w efektywnym czasie pracy</td>");
-            builder.AppendLine("	</tr>");
-
-            //ilosc sedziów
-            int licznik = 1;
-            foreach (DataRow wierszZtabeli in dane.Rows)
-            {
-                builder.AppendLine("<tr>");
-                builder.Append(tb.komorkaHTML(licznik.ToString(), 0, 0, "borderAll center col_36"));
-                builder.Append(tb.komorkaHTML(wierszZtabeli["imie"].ToString() + " " + wierszZtabeli["nazwisko"].ToString(), 0, 0, "borderAll center col_100"));
-
-                for (int i = 1; i < 12; i++)
-                {
-                    string txt = "<a Class=\"normal\" href=\"javascript: openPopup('popup.aspx?sesja=" + wierszZtabeli["id_sedziego"].ToString() + "!" + idtabeli + "!" + i.ToString() + "!2')\">" + wierszZtabeli["D_" + i.ToString("D2")].ToString() + " </a>";
-                    builder.AppendLine(tb.komorkaHTML(txt, 0, 0, "borderAll center col_50"));
-                }
-                builder.AppendLine("</tr>");
-                licznik++;
-            }
-
-            builder.Append(sumaTabeli(dane, 6, 12, 13, "Razem", 2));
-            builder.Append("</table>");
-
-            Label tblControl = new Label
-            {
-                Text = builder.ToString()
-            };
-            PlaceHolderTB3.Controls.Add(tblControl);
-
             PlaceHolderTB3.Dispose();
+
+            try
+            {
+                string path = Server.MapPath("XMLHeaders") + "\\wizk.xml";
+                StringBuilder Tabele = new StringBuilder();
+                Tabele.Append(XMLHeaders.TabelaSedziowskaXML(path, idWydzialu, idtabeli.ToString(), dane, true, false, false, true, "", tenPlik));
+
+                PlaceHolderTB3.Controls.Add(new Label { Text = Tabele.ToString(), ID = idKontrolki });
+            }
+            catch (Exception ex)
+            {
+                string exx = ex.Message;
+                cm.log.Error(tenPlik + " :Generowanie tabeli danych:  " + ex.Message + " " + tenPlik);
+            }
         }
 
         protected void tworztabelkeHTMLTabela4(string idKontrolki, int idWydzialu, int idtabeli, DataTable dane)
@@ -1988,48 +2015,21 @@ namespace Statystyki_2018
                 return;
             }
 
-            StringBuilder builder = new StringBuilder();
-            builder.AppendLine("<p>III.1. Sędziowie (wg objaśnień: w zestawieniu należy uwzględnić także sędziów delegowanych)</p>");
-            if (cl.debug(idWydzialu))
+            try
             {
-                builder.AppendLine("<p>Tabela 4 </p>");
+                string idDzialu = (string)Session["id_dzialu"];
+
+                string path = Server.MapPath("XMLHeaders") + "\\wizk.xml";
+                StringBuilder Tabele = new StringBuilder();
+                Tabele.Append(XMLHeaders.TabelaSedziowskaXML(path, int.Parse(idDzialu), idtabeli.ToString(), dane, true, false, false, true, "", tenPlik));
+
+                PlaceHolderTB3.Controls.Add(new Label { Text = Tabele.ToString(), ID = idKontrolki });
             }
-            builder.AppendLine("<table style='width: 1150px;'>");
-            //header
-            builder.AppendLine("<tr>");
-            builder.AppendLine("<td class='borderAll center col_36' >L.p.</td>");
-            builder.AppendLine("<td class='borderAll center col_100' >imię i nazwisko</td>");
-            builder.AppendLine("<td class='borderAll center col_100' >okres pracy w wydziale</td>");
-            builder.AppendLine("<td class='borderAll center col_100' >pełniona funkcja</td>");
-            builder.AppendLine("<td class='borderAll center col_100' >okres pełnienia funkcji</td>");
-            builder.AppendLine("<td class='borderAll center col_100' >wymiar czasu pracy w wydziale wg podziału czynności</td>");
-            builder.AppendLine("<td class='borderAll center col_100' >średnia liczba sesji miesięcznie w efektywnym czasie pracy </td>");
-
-            builder.AppendLine("	</tr>");
-
-            //ilosc sedziów
-            int licznik = 1;
-            foreach (DataRow wierszZtabeli in dane.Rows)
+            catch (Exception ex)
             {
-                builder.AppendLine("<tr>");
-                builder.Append(tb.komorkaHTML(licznik.ToString(), 0, 0, "borderAll center col_36"));
-                builder.Append(tb.komorkaHTML(wierszZtabeli["imie"].ToString() + " " + wierszZtabeli["nazwisko"].ToString(), 0, 0, "borderAll center col_100"));
-
-                for (int i = 1; i < 6; i++)
-                {
-                    string txt = "<a Class=\"normal\" href=\"javascript: openPopup('popup.aspx?sesja=" + wierszZtabeli["id_sedziego"].ToString() + "!" + idtabeli + "!" + i.ToString() + "!2')\">" + wierszZtabeli["D_" + i.ToString("D2")].ToString() + " </a>";
-                    builder.AppendLine(tb.komorkaHTML(txt, 0, 0, "borderAll center col_50"));
-                }
-                builder.AppendLine("</tr>");
-                licznik++;
+                string exx = ex.Message;
+                cm.log.Error(tenPlik + " :Generowanie tabeli danych:  " + ex.Message + " " + tenPlik);
             }
-            builder.Append(sumaTabeli(dane, 2, 6, idtabeli, "Razem", 2));
-            builder.Append("</table>");
-
-            Label tblControl = new Label();
-            tblControl.Text = builder.ToString();
-            PlaceHolderTB4.Controls.Add(tblControl);
-            PlaceHolderTB3.Dispose();
         }
 
         protected void tworztabelkeHTMLTabela5(string idKontrolki, int idWydzialu, int idtabeli, DataTable dane)
@@ -2073,7 +2073,7 @@ namespace Statystyki_2018
                 licznik++;
                 builder.AppendLine("</tr>");
             }
-            builder.Append(sumaTabeli(dane, 2, 11, idtabeli, "Razem", 2));
+            builder.Append(sumaTabeli(dane, 12, idtabeli, "Razem", 2));
             builder.Append("</table>");
 
             Label tblControl = new Label { Text = builder.ToString() };
@@ -2089,39 +2089,21 @@ namespace Statystyki_2018
                 return;
             }
 
-            StringBuilder builder = new StringBuilder();
-            builder.AppendLine("<table style='width: 1150px;'>");
-            //header
-            builder.AppendLine("<tr>");
-            builder.AppendLine("<td class='borderAll center col_36' rowspan='1'>L.p.</td>");
-            builder.AppendLine("<td class='borderAll center col_100' rowspan='1'>imię i nazwisko</td>");
-            builder.AppendLine("<td class='borderAll center col_100' rowspan='1' >okres pracy w wydziale</td>");
-            builder.AppendLine("<td class='borderAll center col_100' rowspan='1' >pełniona funkcja</td>");
-            builder.AppendLine("<td class='borderAll center col_100' rowspan='1' >okres pełnienia funkcji</td>");
-            builder.AppendLine("<td class='borderAll center col_100' rowspan='1' >wymiar czasu pracy w wydziale wg podziału czynności</td>");
-            builder.AppendLine("<td class='borderAll center col_100' rowspan='1' >efektywny czas pracy (w miesiącach) </td>");
-            builder.AppendLine("<td class='borderAll center col_100' rowspan='1' >średnia liczba sesji  miesięcznie w efektywnym czasie pracy</td>");
-            builder.AppendLine("</tr>");
-
-            //ilosc sedziów
-            int licznik = 1;
-            foreach (DataRow wierszZtabeli in dane.Rows)
+            try
             {
-                builder.AppendLine("<tr>");
-                builder.Append(tb.komorkaHTML(licznik.ToString(), 0, 1, "borderAll center col_36"));
-                builder.Append(tb.komorkaHTML(wierszZtabeli["imie"].ToString() + " " + wierszZtabeli["nazwisko"].ToString(), 0, 1, "borderAll center col_100"));
+                string idDzialu = (string)Session["id_dzialu"];
 
-                builder.Append(tworzPodSekcje(1, 7, wierszZtabeli, idtabeli.ToString()));
-                licznik++;
-                builder.AppendLine("</tr>");
+                string path = Server.MapPath("XMLHeaders") + "\\wizk.xml";
+                StringBuilder Tabele = new StringBuilder();
+                Tabele.Append(XMLHeaders.TabelaSedziowskaXML(path, int.Parse(idDzialu), idtabeli.ToString(), dane, true, false, false, true, "", tenPlik));
+                PlaceHolderTB6.Controls.Clear();
+                PlaceHolderTB6.Controls.Add(new Label { Text = Tabele.ToString(), ID = idKontrolki });
             }
-            builder.Append(sumaTabeli(dane, 1, 7, 6, "Razem", 2));
-            builder.Append("</table>");
-
-            Label tblControl = new Label { Text = builder.ToString() };
-            PlaceHolderTB6.Controls.Add(tblControl);
-
-            PlaceHolderTB6.Dispose();
+            catch (Exception ex)
+            {
+                string exx = ex.Message;
+                cm.log.Error(tenPlik + " :Generowanie tabeli danych:  " + ex.Message + " " + tenPlik);
+            }
         }
 
         protected void tworztabelkeHTMLTabela71(string idKontrolki, int idWydzialu, int idtabeli, DataTable dane)
@@ -2169,7 +2151,6 @@ namespace Statystyki_2018
             PlaceHolderTB71.Dispose();
         }
 
-       
         protected void tworztabelkeHTMLTabela12(string idKontrolki, int idWydzialu, int idtabeli, DataTable dane, string tytul)
         {
             if (dane == null)
@@ -2312,12 +2293,11 @@ namespace Statystyki_2018
             {
                 int step = 12;
                 builder.Append(TabelaWewnetrzna(step, licznik, idtabeli, wierszZtabeli));
-                
-                licznik++;
-                // builder.AppendLine("</tr>");
-            }
 
-            builder.Append(sumaTabeli(dane, 6, 14, idtabeli));
+                licznik++;
+            }
+            //  builder.Append(sumaTabeliX(dane, 6, 13, idtabeli,"  ",2,true));
+            builder.Append(sumaTabeli(dane, 6, 13, idtabeli, "Razem", 5));
 
             builder.Append("</table>");
 
@@ -2347,7 +2327,7 @@ namespace Statystyki_2018
                 builder.AppendLine("<tr>");
                 builder.Append(tb.komorkaHTMLbezP(licznik.ToString(), 0, 6, "borderAll center col_36"));
                 builder.Append(tb.komorkaHTMLbezP(wierszZtabeli["imie"].ToString() + " " + wierszZtabeli["nazwisko"].ToString(), 0, 6, "borderAll center col_100"));
-                builder.Append(tb.komorkaHTMLbezP(wierszZtabeli["id_sedziego"].ToString(), 0, 6, "borderAll center col_100"));
+                builder.Append(tb.komorkaHTMLbezP(wierszZtabeli["funkcja"].ToString(), 0, 6, "borderAll center col_100"));
                 builder.Append(tb.komorkaHTMLbezP(wierszZtabeli["d_01"].ToString(), 0, 6, "borderAll center col_100"));
                 int step = 12;
                 builder.Append(tb.komorkaHTMLbezP("K", 0, 1, "borderAll center col_100"));
@@ -2364,8 +2344,8 @@ namespace Statystyki_2018
                 builder.Append(tworzPodSekcjeBezTRiP((step * 5) + 1, (step * 6) + 1, wierszZtabeli, idtabeli.ToString(), 0));
                 licznik++;
             }
-            builder.Append(sumaTabeli(dane, 6, 14, idtabeli));
 
+            builder.Append(sumaTabeliX(dane, 72, 12, idtabeli, "Razem", 5,0));
             builder.Append("</table>");
             Label tblControl = new Label { Text = builder.ToString() };
             PlaceHolderTB15.Controls.Clear();
@@ -2393,7 +2373,7 @@ namespace Statystyki_2018
                 builder.AppendLine("<tr>");
                 builder.Append(tb.komorkaHTMLbezP(licznik.ToString(), 0, 6, "borderAll center col_36"));
                 builder.Append(tb.komorkaHTMLbezP(wierszZtabeli["imie"].ToString() + " " + wierszZtabeli["nazwisko"].ToString(), 0, 6, "borderAll center col_100"));
-                builder.Append(tb.komorkaHTMLbezP(wierszZtabeli["id_sedziego"].ToString(), 0, 6, "borderAll center col_100"));
+                builder.Append(tb.komorkaHTMLbezP(wierszZtabeli["funkcja"].ToString(), 0, 6, "borderAll center col_100"));
                 builder.Append(tb.komorkaHTMLbezP(wierszZtabeli["d_02"].ToString(), 0, 6, "borderAll center col_100"));
                 int step = 12;
                 builder.Append(tb.komorkaHTMLbezP("K", 0, 1, "borderAll center col_100"));
@@ -2411,7 +2391,6 @@ namespace Statystyki_2018
                 licznik++;
             }
 
-            
             builder.Append(sumaTabeli(dane, 6, 14, idtabeli, "Razem", 4));
             builder.Append("</table>");
 
@@ -2446,7 +2425,7 @@ namespace Statystyki_2018
                 builder.AppendLine("<tr>");
                 builder.Append(tb.komorkaHTMLbezP(licznik.ToString(), 0, 6, "borderAll center col_36"));
                 builder.Append(tb.komorkaHTMLbezP(wierszZtabeli["imie"].ToString() + " " + wierszZtabeli["nazwisko"].ToString(), 0, 6, "borderAll center col_100"));
-                builder.Append(tb.komorkaHTMLbezP(wierszZtabeli["id_sedziego"].ToString(), 0, 6, "borderAll center col_100"));
+                builder.Append(tb.komorkaHTMLbezP(wierszZtabeli["funkcja"].ToString(), 0, 6, "borderAll center col_100"));
                 builder.Append(tb.komorkaHTMLbezP(wierszZtabeli["d_02"].ToString(), 0, 6, "borderAll center col_100"));
                 int step = 12;
                 builder.Append(tb.komorkaHTMLbezP("K", 0, 1, "borderAll center col_100"));
@@ -2464,7 +2443,7 @@ namespace Statystyki_2018
                 licznik++;
                 // builder.AppendLine("</tr>");
             }
-            builder.Append(sumaTabeli(dane, 6, 14,idtabeli , "Razem", 4));
+            builder.Append(sumaTabeli(dane, 6, 14, idtabeli, "Razem", 4));
             builder.Append("</table>");
 
             Label tblControl = new Label { Text = builder.ToString() };
@@ -2498,7 +2477,7 @@ namespace Statystyki_2018
             foreach (DataRow wierszZtabeli in dane.Rows)
             {
                 builder.Append(TabelaWewnetrzna(12, licznik, idtabeli, wierszZtabeli));
-              
+
                 licznik++;
                 builder.AppendLine("</tr>");
             }
@@ -2536,11 +2515,12 @@ namespace Statystyki_2018
             foreach (DataRow wierszZtabeli in dane.Rows)
             {
                 builder.Append(TabelaWewnetrzna(12, licznik, idtabeli, wierszZtabeli));
-              
+
                 licznik++;
                 builder.AppendLine("</tr>");
             }
-            builder.Append(sumaTabeli(dane, 7, 13, idtabeli, "Razem", 5));
+            //     builder.Append(sumaTabeli(dane, 7, 13, idtabeli, "Razem", 5));
+            builder.Append(sumaTabeliX(dane, 72, 12, idtabeli, "Razem", 5,1));
             builder.Append("</table>");
 
             Label tblControl = new Label { Text = builder.ToString() };
@@ -2576,7 +2556,7 @@ namespace Statystyki_2018
             foreach (DataRow wierszZtabeli in dane.Rows)
             {
                 builder.Append(TabelaWewnetrzna(14, licznik, idtabeli, wierszZtabeli));
-           
+
                 licznik++;
                 builder.AppendLine("</tr>");
             }
@@ -2587,6 +2567,7 @@ namespace Statystyki_2018
             PlaceHolderTB25.Controls.Add(tblControl);
             PlaceHolderTB25.Dispose();
         }
+
         protected void tworztabelkeHTMLTabela30(string idKontrolki, int idWydzialu, int idtabeli, DataTable dane)
         {
             if (dane == null)
@@ -2792,7 +2773,7 @@ namespace Statystyki_2018
             builder.AppendLine("</tr>");
             //ilosc sedziów
             int licznik = 1;
-            
+
             foreach (DataRow wierszZtabeli in dane.Rows)
             {
                 builder.Append(TabelaWewnetrzna(12, licznik, idtabeli, wierszZtabeli)); licznik++;
@@ -2804,10 +2785,9 @@ namespace Statystyki_2018
             PlaceHolderTB29.Controls.Add(tblControl);
             PlaceHolderTB29.Dispose();
         }
-      
+
         private string sumaTabeli(DataTable dane, int iloscWierszy, int dlugoscLinii, int idtabeli)
         {
-          
             StringBuilder builder = new StringBuilder();
             string sumaKoncowa = string.Empty;
             double[] wierszSumujacy = new double[dlugoscLinii];
@@ -2825,13 +2805,8 @@ namespace Statystyki_2018
 
             int dlugosc = 0;
 
-           
-
-
-
-                for (int i = 0; i < (iloscWierszy * dlugoscLinii); i++)
+            for (int i = 0; i < (iloscWierszy * dlugoscLinii); i++)
             {
-                
                 try
                 {
                     wierszSumujacy[dlugosc] = wierszSumujacy[dlugosc] + double.Parse(suma.Rows[0][i + 1].ToString());
@@ -2866,13 +2841,12 @@ namespace Statystyki_2018
             return builder.ToString();
         }
 
-        private string sumaTabeli(DataTable dane, int iloscWierszy, int dlugoscLinii, int idtabeli, string tekst, int złaczenieRazem)
+        private string sumaTabeli(DataTable dane, int iloscWierszy, int dlugoscLinii, int idtabeli, int przesunięcie)
         {
-            //   List<double> items = new List<double>();
             StringBuilder builder = new StringBuilder();
             string sumaKoncowa = string.Empty;
             double[] wierszSumujacy = new double[dlugoscLinii];
-            for (int i = 0; i < dlugoscLinii ; i++)
+            for (int i = 0; i < dlugoscLinii - 1; i++)
             {
                 wierszSumujacy[i] = 0;
             }
@@ -2888,7 +2862,63 @@ namespace Statystyki_2018
 
             for (int i = 0; i < (iloscWierszy * dlugoscLinii); i++)
             {
-              
+                try
+                {
+                    string nazwaKolumny = "d_" + (i + przesunięcie).ToString("D2");
+                    wierszSumujacy[dlugosc] = wierszSumujacy[dlugosc] + double.Parse(suma.Rows[0][nazwaKolumny].ToString());
+                }
+                catch (Exception ex)
+                {
+                    cm.log.Error("Bład wizk sumowanie : " + ex.Message);
+                }
+                if (dlugosc == dlugoscLinii)
+                {
+                    dlugosc = 0;
+                }
+                dlugosc++;
+            }
+            builder.AppendLine("<tr>");
+            builder.AppendLine(tb.komorkaHTML("Razem", 5, 0, "borderAll center col_100 gray"));
+
+            for (int j = 0; j < dlugoscLinii - 1; j++)
+            {
+                if ((j < 5) ^ (j > 7))
+                {
+                    builder.Append(tb.komorkaHTML(wierszSumujacy[j].ToString(), 0, 0, "borderAll center col_100 gray"));
+                }
+                else
+                {
+                    builder.Append(tb.komorkaHTML("", 0, 0, "borderAll center col_100"));
+                }
+            }
+
+            builder.AppendLine("</tr>");
+
+            return builder.ToString();
+        }
+
+        private string sumaTabeli(DataTable dane, int iloscWierszy, int dlugoscLinii, int idtabeli, string tekst, int złaczenieRazem)
+        {
+            //   List<double> items = new List<double>();
+            StringBuilder builder = new StringBuilder();
+            string sumaKoncowa = string.Empty;
+            double[] wierszSumujacy = new double[dlugoscLinii];
+            for (int i = 0; i < dlugoscLinii; i++)
+            {
+                wierszSumujacy[i] = 0;
+            }
+
+            DataTable suma = tb.makeSumRow(dane, iloscWierszy * dlugoscLinii);
+            if (suma == null)
+            {
+                cm.log.Error(tenPlik + " bład w sumowaniu tabeli " + idtabeli.ToString());
+                return "";
+            }
+
+            int dlugosc = 0;
+
+            for (int i = 0; i < (iloscWierszy * dlugoscLinii); i++)
+            {
                 try
                 {
                     wierszSumujacy[dlugosc] = wierszSumujacy[dlugosc] + double.Parse(suma.Rows[0][i + 1].ToString());
@@ -2899,7 +2929,7 @@ namespace Statystyki_2018
                 }
                 if (dlugosc == dlugoscLinii)
                 {
-                    dlugosc =0 ;
+                    dlugosc = 0;
                 }
                 dlugosc++;
             }
@@ -2909,6 +2939,72 @@ namespace Statystyki_2018
             for (int j = 0; j < dlugoscLinii - 1; j++)
             {
                 builder.Append(tb.komorkaHTML(wierszSumujacy[j + 1].ToString(), 0, 0, "borderAll center col_100 gray"));
+            }
+
+            builder.AppendLine("</tr>");
+
+            return builder.ToString();
+        }
+
+        private string sumaTabeli(DataTable dane, int dlugoscLinii, int idtabeli, string tekst, int złaczenieRazem)
+        {
+            //   List<double> items = new List<double>();
+            StringBuilder builder = new StringBuilder();
+            string sumaKoncowa = string.Empty;
+            double[] wierszSumujacy = new double[dlugoscLinii];
+
+            DataTable suma = tb.makeSumRow(dane, dlugoscLinii);
+            if (suma == null)
+            {
+                cm.log.Error(tenPlik + " bład w sumowaniu tabeli " + idtabeli.ToString());
+                return "";
+            }
+
+            builder.AppendLine("<tr>");
+            builder.AppendLine(tb.komorkaHTML(tekst, złaczenieRazem, 0, "borderAll center col_100 gray"));
+            DataRow wierszDanych = suma.Rows[0];
+            for (int j = 1; j < dlugoscLinii; j++)
+            {
+                string nazwaKolumny = "d_" + j.ToString("D2");
+                string wartoscdanej = wierszDanych[nazwaKolumny].ToString();
+
+                builder.Append(tb.komorkaHTML(wartoscdanej, 0, 0, "borderAll center col_100 gray"));
+            }
+
+            builder.AppendLine("</tr>");
+
+            return builder.ToString();
+        }
+
+        private string sumaTabeliX(DataTable dane, int iloscKolumn, int dlugoscLinii, int idtabeli, string tekst, int złaczenieRazem,int przesuniecie)
+        {
+            StringBuilder builder = new StringBuilder();
+            string sumaKoncowa = string.Empty;
+            double[] wierszSumujacy = new double[dlugoscLinii];
+
+            DataTable suma = tb.makeSumRow(dane, iloscKolumn, dlugoscLinii);
+            if (suma == null)
+            {
+                cm.log.Error(tenPlik + " bład w sumowaniu tabeli " + idtabeli.ToString());
+                return "";
+            }
+
+            builder.AppendLine("<tr>");
+            builder.AppendLine(tb.komorkaHTML(tekst, złaczenieRazem, 0, "borderAll center col_100 gray"));
+            DataRow wierszDanych = suma.Rows[0];
+            for (int j = 1+przesuniecie; j <= dlugoscLinii+przesuniecie; j++)
+            {
+                string wartoscdanej = "0";
+                try
+                {
+                    string nazwaKolumny = "d_" + j.ToString("D2");
+                    wartoscdanej = wierszDanych[nazwaKolumny].ToString();
+                }
+                catch
+                {
+                }
+
+                builder.Append(tb.komorkaHTML(wartoscdanej, 0, 0, "borderAll center col_100 gray"));
             }
 
             builder.AppendLine("</tr>");
@@ -2959,6 +3055,7 @@ namespace Statystyki_2018
             result.AppendLine("</tr>");
             return result.ToString();
         }
+
         private string tworzPodSekcjebezP(int poczatek, int koniec, DataRow wierszZtabeli, string idtabeli, int indexPoczatkowy)
         {
             StringBuilder result = new StringBuilder();
@@ -2971,20 +3068,8 @@ namespace Statystyki_2018
             result.AppendLine("</tr>");
             return result.ToString();
         }
-        /*
-        private string tworzPodSekcjeBezTR(int poczatek, int koniec, DataRow wierszZtabeli, string idtabeli, int indexPoczatkowy)
-        {
-            StringBuilder result = new StringBuilder();
 
-            for (int i = poczatek; i < koniec; i++)
-            {
-                string txt = "<a Class=\"normal\" href=\"javascript: openPopup('popup.aspx?sesja=" + wierszZtabeli["id_sedziego"].ToString() + "!" + idtabeli + "!" + (i + indexPoczatkowy).ToString() + "!2')\">" + wierszZtabeli["d_" + (i + indexPoczatkowy).ToString("D2")].ToString() + " </a>";
-                result.AppendLine(tb.komorkaHTML(txt, 0, 0, "borderAll center col_50"));
-            }
-            result.AppendLine("</tr>");
-            return result.ToString();
-        }
-        */
+      
         private string tworzPodSekcjeBezTRiP(int poczatek, int koniec, DataRow wierszZtabeli, string idtabeli, int indexPoczatkowy)
         {
             StringBuilder result = new StringBuilder();
@@ -2997,20 +3082,9 @@ namespace Statystyki_2018
             result.AppendLine("</tr>");
             return result.ToString();
         }
-        /*
-        private string tworzSekcje(int poczatek, int koniec, DataRow wierszZtabeli, string idtabeli)
-        {
-            StringBuilder result = new StringBuilder();
-            result.AppendLine("<tr>");
-            for (int i = poczatek; i < koniec; i++)
-            {
-                string txt = "<a Class=\"normal\" href=\"javascript: openPopup('popup.aspx?sesja=" + wierszZtabeli["id_sedziego"].ToString() + "!" + idtabeli + "!" + i.ToString() + "!2')\">" + wierszZtabeli["d_" + i.ToString("D2")].ToString() + " </a>";
-                result.AppendLine(tb.komorkaHTML(txt, 0, 0, "borderAll center col_50"));
-            }
-            result.AppendLine("</tr>");
-            return result.ToString();
-        }
-        */
+
+      
+
         private string tworzPodSekcje(int poczatek, int koniec, DataRow wierszZtabeli, string idtabeli)
         {
             StringBuilder result = new StringBuilder();
@@ -3024,21 +3098,9 @@ namespace Statystyki_2018
             //result.AppendLine("</tr>");
             return result.ToString();
         }
-        /*
-        private string tworzPodSekcjeTR(int poczatek, int koniec, DataRow wierszZtabeli, string idtabeli)
-        {
-            StringBuilder result = new StringBuilder();
-            result.AppendLine("<tr>");
-            for (int i = poczatek; i < koniec; i++)
-            {
-                string wartosc = wierszZtabeli["d_" + i.ToString("D2")].ToString();
-                string txt = "<a Class=\"normal\" href=\"javascript: openPopup('popup.aspx?sesja=" + wierszZtabeli["id_sedziego"].ToString() + "!" + idtabeli + "!" + i.ToString() + "!2')\">" + wierszZtabeli["d_" + i.ToString("D2")].ToString() + " </a>";
-                result.AppendLine(tb.komorkaHTML(txt, 0, 0, "borderAll center col_50"));
-            }
-            result.AppendLine("</tr>");
-            return result.ToString();
-        }
-        */
+
+       
+
         private string tworzPodSekcjeTR(int poczatek, int koniec, DataRow wierszZtabeli, string idtabeli, string komorka)
         {
             StringBuilder result = new StringBuilder();
@@ -3073,7 +3135,7 @@ namespace Statystyki_2018
         private string tworzSekcjeTR(int poczatek, int dlugoscLinii, int koniec, DataRow wierszZtabeli, string idtabeli)
         {
             StringBuilder result = new StringBuilder();
-  
+
             result.AppendLine(tworzPodSekcjeTR(1, 16, wierszZtabeli, idtabeli, tb.komorkaHTMLbezP("Liczba / % spraw na dzień rozpoczęcia poprzedniej wizytacji albo na dzień utworzenia referatu –dla sędziów przydzielonych do wydziału po tym dniu", 0, 0, "borderAll center col_250 smallFt")));
 
             result.AppendLine(tworzPodSekcjeTR(16, 31, wierszZtabeli, idtabeli, tb.komorkaHTMLbezP("Liczba / % spraw na dzień rozpoczęcia wizytacji albo na dzień zamknięcia referatu – dla sędziów przydzielonych do innych wydziałów przed tym dniem", 0, 0, "borderAll center col_250 smallFt")));
@@ -3096,6 +3158,7 @@ namespace Statystyki_2018
 
             return result.ToString();
         }
+
         private string tworzSekcjebezP(int poczatek, int dlugoscLinii, int koniec, DataRow wierszZtabeli, string idtabeli, int indexPoczatkowy)
         {
             StringBuilder result = new StringBuilder();
@@ -3103,7 +3166,7 @@ namespace Statystyki_2018
             for (int i = poczatek; i < koniec; i++)
             {
                 if (i == dlugoscLinii)
-                { 
+                {
                     result.AppendLine(tworzPodSekcjebezP(i - ilosc + 1, dlugoscLinii, wierszZtabeli, idtabeli, indexPoczatkowy));
 
                     dlugoscLinii = dlugoscLinii + ilosc - 1;
@@ -3112,6 +3175,7 @@ namespace Statystyki_2018
 
             return result.ToString();
         }
+
         private void pisz(string Template, int iloscWierszy, int iloscKolumn, DataTable dane)
         {
             for (int wiersz = 1; wiersz <= iloscWierszy; wiersz++)
@@ -3173,15 +3237,16 @@ namespace Statystyki_2018
                 }
             }
         }// end of pisz
-        private string TabelaWewnetrzna(int step, int licznik,int idtabeli ,DataRow wierszZtabeli)
+
+        private string TabelaWewnetrzna(int step, int licznik, int idtabeli, DataRow wierszZtabeli)
         {
-            StringBuilder builder = new StringBuilder(); 
+            StringBuilder builder = new StringBuilder();
             builder.AppendLine("<tr>");
             builder.Append(tb.komorkaHTML(licznik.ToString(), 0, 6, "borderAll center col_36"));
             builder.Append(tb.komorkaHTML(wierszZtabeli["imie"].ToString() + " " + wierszZtabeli["nazwisko"].ToString(), 0, 6, "borderAll center col_100"));
             builder.Append(tb.komorkaHTML(wierszZtabeli["funkcja"].ToString(), 0, 6, "borderAll center col_100"));
             builder.Append(tb.komorkaHTML(wierszZtabeli["d_01"].ToString(), 0, 6, "borderAll center col_100"));
-            
+
             builder.Append(tb.komorkaHTMLbezP("K", 0, 1, "borderAll center col_100"));
             builder.Append(tworzPodSekcjeBezTRiP(1, step + 1, wierszZtabeli, idtabeli.ToString(), 1));
             builder.Append(tb.komorkaHTMLbezP("Kp", 0, 1, "borderAll center col_100"));
@@ -3194,14 +3259,12 @@ namespace Statystyki_2018
             builder.Append(tworzPodSekcjeBezTRiP((step * 4) + 1, (step * 5) + 1, wierszZtabeli, idtabeli.ToString(), 0));
             builder.Append(tb.komorkaHTMLbezP("", 0, 0, "borderAll center col_100"));
             builder.Append(tworzPodSekcjeBezTRiP((step * 5) + 1, (step * 6) + 1, wierszZtabeli, idtabeli.ToString(), 0));
-            
-            return builder.ToString();
 
+            return builder.ToString();
         }
 
         protected void Textbox1_TextChanged(object sender, EventArgs e)
         {
-
         }
     }
 }

@@ -1,6 +1,5 @@
-﻿using NPOI.HPSF;
-using NPOI.HSSF.UserModel;
-using NPOI.SS.UserModel;
+﻿using NPOI.HSSF.UserModel;
+using OfficeOpenXml;
 using System;
 using System.Data;
 using System.Globalization;
@@ -67,7 +66,6 @@ namespace Statystyki_2018
             }
             catch
             {
-               
             }
         }// end of Page_Load
 
@@ -85,46 +83,123 @@ namespace Statystyki_2018
 
         protected void odswiez()
         {
-            Session["sesja"] = "s3030";
-           
             Session["data_1"] = Date1.Text;
             Session["data_2"] = Date2.Text;
-            string yyx = (string)Session["id_dzialu"];
+            string idDzialu = (string)Session["id_dzialu"];
             id_dzialu.Text = (string)Session["txt_dzialu"];
-            string txt = string.Empty;
-            txt = txt + cl.clear_maim_db();
-            txt = txt + cl.generuj_dane_do_tabeli_wierszy(DateTime.Parse(Date1.Text), DateTime.Parse(Date2.Text), yyx, 1, tenPlik);
-            GridView1.DataBind();
+          
+            Label11.Visible = cl.debug(int.Parse(idDzialu));
+          
+            Label3.Text = cl.nazwaSadu((string)Session["id_dzialu"]);
+            tabela_01();
+            tabela_02();
+            tabela_03();
+            tabela_04();
+        }
 
+        private void tabela_01()
+        {
+            DataTable tabela01 = dr.generuj_dane_do_tabeli_wierszy2018(DateTime.Parse(Date1.Text), DateTime.Parse(Date2.Text), (string)Session["id_dzialu"], 1, 6, 18, true, tenPlik);
+            Session["tabelka001"] = tabela01;
             try
             {
-                txt = txt + cl.generuj_dane_do_tabeli_(int.Parse((string)Session["id_dzialu"]), 2, DateTime.Parse(Date1.Text), DateTime.Parse(Date2.Text));
-                txt = txt + cl.generuj_dane_do_tabeli_(int.Parse((string)Session["id_dzialu"]), 3, DateTime.Parse(Date1.Text), DateTime.Parse(Date2.Text));
-                txt = txt + cl.generuj_dane_do_tabeli_(int.Parse((string)Session["id_dzialu"]), 4, DateTime.Parse(Date1.Text), DateTime.Parse(Date2.Text));
-                txt = txt + cl.uzupelnij_statusy();
+                GridView1.DataSource = null;
+                GridView1.DataSourceID = null;
+
+                GridView1.DataSource = tabela01;
+                GridView1.DataBind();
             }
-            catch
+            catch (Exception ex)
             {
+                cm.log.Error(tenPlik + " generowanie tabeli wierszy 01  " + ex.Message);
             }
-            // dopasowanie opisów
-            makeLabels();
-            GridView2.DataBind();
-            GridView3.DataBind();
-            GridView4.DataBind();
-
-            Label11.Visible = cl.debug(int.Parse(yyx));
-            Label11.Text = txt;
-            Label3.Text = cl.nazwaSadu((string)Session["id_dzialu"]);
         }
-        private void tabela_2()
+
+        private void tabela_02()
         {
+            Session["tabelka002"] = dr.tworzTabele(int.Parse((string)Session["id_dzialu"]), 2, Date1.Date, Date2.Date, 25, GridView2, tenPlik);
+            GridView2.DataBind();
+        }
 
-            Session["tabelka002"] = dr.tworzTabele(int.Parse ((string)Session["id_dzialu"]), 2, Date1.Date, Date2.Date, 19, GridView1, tenPlik);
+        private void tabela_03()
+        {
+            Session["tabelka003"] = dr.tworzTabele(int.Parse((string)Session["id_dzialu"]), 3, Date1.Date, Date2.Date, 19, GridView3, tenPlik);
+            GridView3.DataBind();
+        }
 
-
+        private void tabela_04()
+        {
+            Session["tabelka004"] = dr.tworzTabele(int.Parse((string)Session["id_dzialu"]), 4, Date1.Date, Date2.Date, 19, GridView4, tenPlik);
+            GridView4.DataBind();
         }
 
         #region "nagłowki tabel"
+
+        private DataTable naglowekTabeli01()
+        {
+            DataTable dT_01 = new DataTable();
+            dT_01.Columns.Clear();
+            dT_01.Columns.Add("Column1", typeof(string));
+            dT_01.Columns.Add("Column2", typeof(string));
+            dT_01.Columns.Add("Column3", typeof(string));
+            dT_01.Columns.Add("Column4", typeof(string));
+            dT_01.Columns.Add("Column5", typeof(string));
+            dT_01.Columns.Add("Column6", typeof(string));
+            dT_01.Clear();
+            dT_01.Rows.Add(new Object[] { "1", "Meryto-<br>ryczne", "1", "1" });
+            dT_01.Rows.Add(new Object[] { "1", "Stare", "1", "1" });
+            dT_01.Rows.Add(new Object[] { "1", "Meryto-<br>ryczne", "1", "1" });
+            dT_01.Rows.Add(new Object[] { "1", "Stare", "1", "1" });
+
+            dT_01.Rows.Add(new Object[] { "2", "Razem", "1", "2" });
+
+            dT_01.Rows.Add(new Object[] { "2", "w tym", "2", "1" });
+            dT_01.Rows.Add(new Object[] { "2", "Razem", "1", "2" });
+
+            dT_01.Rows.Add(new Object[] { "2", "w tym", "2", "1" });
+
+            dT_01.Rows.Add(new Object[] { "3", "Urlopy", "1", "3" });
+            dT_01.Rows.Add(new Object[] { "3", "Zwol<br/>-nienia", "1", "3" });
+            dT_01.Rows.Add(new Object[] { "3", "Razem", "1", "3" });
+            dT_01.Rows.Add(new Object[] { "3", "w terminie ustawowym", "1", "3" });
+            dT_01.Rows.Add(new Object[] { "3", "po upływie terminu ustawowego", "1", "3" });
+            dT_01.Rows.Add(new Object[] { "3", "w tym nieuspra-<br/>wiedliwione", "1", "3" });
+            dT_01.Rows.Add(new Object[] { "3", "Razem", "1", "3" });
+            dT_01.Rows.Add(new Object[] { "3", "w terminie ustawowym", "1", "3" });
+            dT_01.Rows.Add(new Object[] { "3", "po upływie terminu ustawowego", "1", "3" });
+            dT_01.Rows.Add(new Object[] { "3", "w tym nieuspra-<br/>wiedliwione", "1", "3" });
+            dT_01.Rows.Add(new Object[] { "3", "C", "3", "1" });
+            dT_01.Rows.Add(new Object[] { "3", "Cgg", "1", "3" });
+            dT_01.Rows.Add(new Object[] { "3", "Ns", "3", "1" });
+            dT_01.Rows.Add(new Object[] { "3", "N", "1", "3" });
+
+            dT_01.Rows.Add(new Object[] { "3", "Nc", "1", "3" });
+            dT_01.Rows.Add(new Object[] { "3", "Co", "1", "3" });
+            dT_01.Rows.Add(new Object[] { "3", "Cps", "1", "3" });
+            dT_01.Rows.Add(new Object[] { "3", "Cz", "1", "3" });
+            dT_01.Rows.Add(new Object[] { "3", "WSC", "1", "3" });
+            dT_01.Rows.Add(new Object[] { "3", "Razem", "1", "3" });
+
+            //4
+            dT_01.Rows.Add(new Object[] { "4", "L.p.", "1", "4" });
+            dT_01.Rows.Add(new Object[] { "4", "Funkcja", "1", "4" });
+            dT_01.Rows.Add(new Object[] { "4", "Stanowisko", "1", "4" });
+
+            dT_01.Rows.Add(new Object[] { "4", "Imie i nazwisko", "1", "4" });
+
+            dT_01.Rows.Add(new Object[] { "4", "Liczba sesji", "1", "4" });
+            dT_01.Rows.Add(new Object[] { "4", "Etat ", "1", "4" });
+            dT_01.Rows.Add(new Object[] { "4", "Nieobecność", "2", "1" });
+            dT_01.Rows.Add(new Object[] { "4", "Terminowość sporządzania uzasadnień ", "4", "1" });
+            dT_01.Rows.Add(new Object[] { "4", "Uzasadnienia <br/>wygłoszone ", "1", "4" });
+            dT_01.Rows.Add(new Object[] { "4", "Terminowość sporządzania uzasadnień orzeczeń merytorycznych C i NS ", "4", "1" });
+            dT_01.Rows.Add(new Object[] { "4", "Uzasadnienia <br/>wygłoszone ", "1", "4" });
+
+            dT_01.Rows.Add(new Object[] { "4", "ZAŁATWIENIA ", "14", "1" });
+            dT_01.Rows.Add(new Object[] { "4", "Uwagi ", "1", "4" });
+
+            return dT_01;
+        }
 
         protected void GridView2_RowCreated(object sender, GridViewRowEventArgs e)
         {
@@ -820,433 +895,74 @@ namespace Statystyki_2018
             }
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void tworzPlikExcel(object sender, EventArgs e)
         {
-            Session["date_1"] = Date1.Text.Trim();
-            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print", "window.open('raport_01_print.aspx', '')", true);
-        }
+            string path = Server.MapPath("Template") + "\\otrg.xlsx";
+            FileInfo existingFile = new FileInfo(path);
+            string download = Server.MapPath("Template") + @"\otrg";
+            FileInfo fNewFile = new FileInfo(download + "_.xlsx");
 
-        protected void Button3_Click(object sender, EventArgs e)
-        {
-            // execel begin
-            string filename = "statystykiWydzialGospodarczy.xls";
-            Response.ContentType = "application/vnd.ms-excel";
-            Response.AddHeader("Content-Disposition", string.Format("attachment;filename={0}", filename));
-
-            Response.Clear();
-
-            InitializeWorkbook();
-            generate_my_data();
-            Response.BinaryWrite(WriteToStream().GetBuffer());
-
-            Response.End();
-        }
-
-        private void InitializeWorkbook()
-        {
-            hssfworkbook = new HSSFWorkbook();
-
-            SummaryInformation si = PropertySetFactory.CreateSummaryInformation();
-            si.Subject = "";
-            si.Title = "statystyki";
-            hssfworkbook.SummaryInformation = si;
-        }
-
-        private MemoryStream WriteToStream()
-        {
-            //Write the stream data of workbook to the root directory
-            MemoryStream file = new MemoryStream();
-
-            hssfworkbook.Write(file);
-            return file;
-        }
-
-        private void generate_my_data()
-        {
-            ISheet sheet0 = hssfworkbook.CreateSheet("Ruch spraw");
-
-            DataView view = (DataView)dane_do_tabeli_1.Select(DataSourceSelectArguments.Empty);
-
-            DataTable table = view.ToTable();
-
-            IRow row0 = sheet0.CreateRow(0);
-            table.TableName = "Załatwienia";
-            table.Columns.Remove("id_");
-
-            row0.CreateCell(0).SetCellValue("Opis");
-            row0.CreateCell(1).SetCellValue("Sprawy według repetoriów i wykazów");
-
-            var crs = new NPOI.SS.Util.CellRangeAddress(0, 1, 0, 0);
-            sheet0.AddMergedRegion(crs);
-            crs = new NPOI.SS.Util.CellRangeAddress(0, 0, 1, 14);
-            sheet0.AddMergedRegion(crs);
-
-            row0 = sheet0.CreateRow(1);
-
-            row0.CreateCell(1).SetCellValue("GC");
-            row0.CreateCell(2).SetCellValue("GNs");
-            row0.CreateCell(3).SetCellValue("GNc");
-            row0.CreateCell(4).SetCellValue("GCo");
-            row0.CreateCell(5).SetCellValue("GCps");
-            row0.CreateCell(6).SetCellValue("WSC");
-            row0.CreateCell(7).SetCellValue("GU");
-            row0.CreateCell(8).SetCellValue("GUp");
-            row0.CreateCell(9).SetCellValue("GN");
-            row0.CreateCell(10).SetCellValue("Gzd");
-            row0.CreateCell(11).SetCellValue("GUo");
-            row0.CreateCell(12).SetCellValue("GUz");
-            row0.CreateCell(13).SetCellValue("GUk");
-            row0.CreateCell(14).SetCellValue("Łącznie");
-
-            int rol = 2;
-            foreach (DataRow rowik in table.Rows)
+            DataTable table = (DataTable)Session["tabelka001"];
+            using (ExcelPackage MyExcel = new ExcelPackage(existingFile))
             {
-                row0 = sheet0.CreateRow(rol);
-                for (int i = 0; i < 15; i++)
+                // pierwsza
+                DataView view = (DataView)dane_do_tabeli_1.Select(DataSourceSelectArguments.Empty);
+
+                table = view.ToTable();
+                ExcelWorksheet MyWorksheet1 = MyExcel.Workbook.Worksheets[1];
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziowZopisem(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 9, 15, 1, 3, true);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 21, 0, 3, true, true, true, true, true);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 17, 0, 3, true, true, true, true, true);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 16, 0, 3, true, true, true, true, true);
+                try
                 {
-                    try
-                    {
-                        int ji = int.Parse(rowik[i].ToString().Trim());
-                        ICellStyle cellStyle = hssfworkbook.CreateCellStyle();
-                        cellStyle.DataFormat = HSSFDataFormat.GetBuiltinFormat("0");
-                        row0.CreateCell(i).SetCellValue(ji);
-                        row0.Cells[i].CellStyle = cellStyle;
-                    }
-                    catch (Exception)
-                    {
-                        row0.CreateCell(i).SetCellValue(rowik[i].ToString().Trim());
-                    }
+                    MyExcel.SaveAs(fNewFile);
+
+                    this.Response.Clear();
+                    this.Response.ContentType = "application/vnd.ms-excel";
+                    this.Response.AddHeader("Content-Disposition", "attachment;filename=" + fNewFile.Name);
+                    this.Response.WriteFile(fNewFile.FullName);
+                    this.Response.End();
                 }
-                rol++;
-            }// end foreach
-
-            // druga tabela
-            view = (DataView)dane_do_tabeli2.Select(DataSourceSelectArguments.Empty);
-
-            table = view.ToTable();
-
-            table = view.ToTable();
-            table.TableName = "Załatwienia";
-            table.Columns.Remove("ident");
-            table.Columns.Remove("sesja");
-            table.Columns.Remove("id_sedziego");
-            table.Columns.Remove("id_tabeli");
-            table.Columns.Remove("id_dzialu");
-            //table.Columns.Remove("d_13");
-            //table.Columns.Remove("d_14");
-            // table.Columns.Remove("d_15");
-            //table.Columns.Remove("d_16");
-            //table.Columns.Remove("d_17");
-            //table.Columns.Remove("d_18");
-            //table.Columns.Remove("d_19");
-            //table.Columns.Remove("d_20");
-            table.Columns.Remove("d_21");
-            table.Columns.Remove("d_22");
-            //
-            //robienie
-            int ro = 2;
-
-            //-----------------
-
-            IDataFormat format = hssfworkbook.CreateDataFormat();
-
-            //-----------------
-
-            ISheet sheet1 = hssfworkbook.CreateSheet("Załatwienia");
-
-            IRow row2 = sheet1.CreateRow(0);
-            row2.CreateCell(0).SetCellValue("L.p.");
-            crs = new NPOI.SS.Util.CellRangeAddress(0, 1, 0, 0);
-            sheet1.AddMergedRegion(crs);
-
-            row2.CreateCell(1).SetCellValue("Nazwisko");
-            crs = new NPOI.SS.Util.CellRangeAddress(0, 1, 1, 1);
-            sheet1.AddMergedRegion(crs);
-
-            row2.CreateCell(2).SetCellValue("Imię");
-            crs = new NPOI.SS.Util.CellRangeAddress(0, 1, 2, 2);
-            sheet1.AddMergedRegion(crs);
-
-            row2.CreateCell(3).SetCellValue("Funkcja");
-            crs = new NPOI.SS.Util.CellRangeAddress(0, 1, 3, 3);
-            sheet1.AddMergedRegion(crs);
-
-            row2.CreateCell(4).SetCellValue("Stanowisko");
-            crs = new NPOI.SS.Util.CellRangeAddress(0, 1, 4, 4);
-            sheet1.AddMergedRegion(crs);
-
-            row2.CreateCell(5).SetCellValue("Liczba sesji");
-            crs = new NPOI.SS.Util.CellRangeAddress(0, 0, 5, 6);
-
-            sheet1.AddMergedRegion(crs);
-
-            row2.CreateCell(7).SetCellValue("Załatwienia");
-            crs = new NPOI.SS.Util.CellRangeAddress(0, 0, 7, 21);
-            sheet1.AddMergedRegion(crs);
-
-            row2.CreateCell(22).SetCellValue("Il. sporządzonych uzasadnień");
-            crs = new NPOI.SS.Util.CellRangeAddress(0, 1, 22, 22);
-            sheet1.AddMergedRegion(crs);
-
-            row2.CreateCell(23).SetCellValue("Nieobecności");
-            crs = new NPOI.SS.Util.CellRangeAddress(0, 0, 23, 24);
-            sheet1.AddMergedRegion(crs);
-
-            row2 = sheet1.CreateRow(1);
-
-            row2.CreateCell(5).SetCellValue("rozprawy");
-            row2.CreateCell(6).SetCellValue("posiedzenia");
-            row2.CreateCell(7).SetCellValue("GC");
-            row2.CreateCell(8).SetCellValue("GNs");
-            row2.CreateCell(9).SetCellValue("GNc");
-            row2.CreateCell(10).SetCellValue("GCo");
-            row2.CreateCell(11).SetCellValue("GCps");
-            row2.CreateCell(12).SetCellValue("WSC");
-            row2.CreateCell(13).SetCellValue("GU");
-            row2.CreateCell(14).SetCellValue("GUp");
-            row2.CreateCell(15).SetCellValue("GN");
-            row2.CreateCell(16).SetCellValue("Gzd");
-            row2.CreateCell(17).SetCellValue("GUo");
-            row2.CreateCell(18).SetCellValue("GUu");
-            row2.CreateCell(19).SetCellValue("GUz");
-            row2.CreateCell(20).SetCellValue("GUk");
-            row2.CreateCell(21).SetCellValue("Razem");
-            row2.CreateCell(23).SetCellValue("Urlopy");
-            row2.CreateCell(24).SetCellValue("Zwolnienia");
-
-            foreach (DataRow rowik in table.Rows)
-            {
-                row2 = sheet1.CreateRow(ro);
-                for (int i = 0; i < rowik.ItemArray.Length; i++)
+                catch (Exception ex)
                 {
-                    try
-                    {
-                        int ji = int.Parse(rowik[i].ToString().Trim());
-                        ICellStyle cellStyle = hssfworkbook.CreateCellStyle();
-                        cellStyle.DataFormat = HSSFDataFormat.GetBuiltinFormat("0");
-                        row2.CreateCell(i).SetCellValue(ji);
-                        row2.Cells[i].CellStyle = cellStyle;
-                    }
-                    catch (Exception)
-                    {
-                        row2.CreateCell(i).SetCellValue(rowik[i].ToString().Trim());
-                    }
+                    cm.log.Error(tenPlik + " " + ex.Message);
                 }
-                ro++;
-            }// end foreach
-             // trzeci sheet
+            }//end of using
 
-            view = (DataView)tabela_3.Select(DataSourceSelectArguments.Empty);
-
-            table = view.ToTable();
-
-            table.Columns.Remove("ident");
-            table.Columns.Remove("sesja");
-            table.Columns.Remove("id_sedziego");
-            table.Columns.Remove("id_tabeli");
-            table.Columns.Remove("id_dzialu");
-            // table.Columns.Remove("d_10");
-            // table.Columns.Remove("d_11");
-            // table.Columns.Remove("d_12");
-            /* table.Columns.Remove("d_13");
-             table.Columns.Remove("d_14");
-             table.Columns.Remove("d_15");
-             table.Columns.Remove("d_16");*/
-            table.Columns.Remove("d_17");
-            table.Columns.Remove("d_18");
-            table.Columns.Remove("d_19");
-            table.Columns.Remove("d_20");
-            table.Columns.Remove("d_21");
-            table.Columns.Remove("d_22");
-
-            sheet1.AutoSizeColumn(0, true);
-            sheet1.AutoSizeColumn(1, true);
-
-            ISheet sheet2 = hssfworkbook.CreateSheet("Wyznaczenia");
-
-            row2 = sheet2.CreateRow(0);
-            row2.CreateCell(0).SetCellValue("L.p.");
-            row2.CreateCell(1).SetCellValue("Nazwisko");
-            row2.CreateCell(2).SetCellValue("Imię");
-            row2.CreateCell(3).SetCellValue("Funkcja");
-            row2.CreateCell(4).SetCellValue("Stanowisko");
-
-            crs = new NPOI.SS.Util.CellRangeAddress(0, 1, 0, 0);
-            sheet2.AddMergedRegion(crs);
-            crs = new NPOI.SS.Util.CellRangeAddress(0, 1, 1, 1);
-            sheet2.AddMergedRegion(crs);
-            crs = new NPOI.SS.Util.CellRangeAddress(0, 1, 2, 2);
-            sheet2.AddMergedRegion(crs);
-            crs = new NPOI.SS.Util.CellRangeAddress(0, 1, 3, 3);
-            sheet2.AddMergedRegion(crs);
-            crs = new NPOI.SS.Util.CellRangeAddress(0, 1, 4, 4);
-            sheet2.AddMergedRegion(crs);
-
-            row2.CreateCell(5).SetCellValue("Wyznaczenia");
-            crs = new NPOI.SS.Util.CellRangeAddress(0, 0, 5, 19);
-            sheet2.AddMergedRegion(crs);
-            row2.CreateCell(20).SetCellValue("Odroczenia liczba spraw odroczonych");
-            crs = new NPOI.SS.Util.CellRangeAddress(0, 1, 20, 20);
-            sheet2.AddMergedRegion(crs);
-
-            row2 = sheet2.CreateRow(1);
-
-            row2.CreateCell(5).SetCellValue("GC");
-            row2.CreateCell(6).SetCellValue("GNs");
-            row2.CreateCell(7).SetCellValue("GNc");
-            row2.CreateCell(8).SetCellValue("GCo");
-            row2.CreateCell(9).SetCellValue("GCps");
-            row2.CreateCell(10).SetCellValue("WSC");
-            row2.CreateCell(11).SetCellValue("GU");
-            row2.CreateCell(12).SetCellValue("GUp");
-            row2.CreateCell(13).SetCellValue("GN");
-            row2.CreateCell(14).SetCellValue("Gzd");
-            row2.CreateCell(15).SetCellValue("GUo");
-            row2.CreateCell(16).SetCellValue("GUu");
-            row2.CreateCell(17).SetCellValue("GUz");
-            row2.CreateCell(18).SetCellValue("GUk");
-            row2.CreateCell(19).SetCellValue("Razem");
-
-            ro = 2;
-
-            foreach (DataRow rowik in table.Rows)
-            {
-                row2 = sheet2.CreateRow(ro);
-                for (int i = 0; i < rowik.ItemArray.Length; i++)
-                {
-                    try
-                    {
-                        int ji = int.Parse(rowik[i].ToString().Trim());
-                        ICellStyle cellStyle = hssfworkbook.CreateCellStyle();
-                        cellStyle.DataFormat = HSSFDataFormat.GetBuiltinFormat("0");
-                        row2.CreateCell(i).SetCellValue(ji);
-                        row2.Cells[i].CellStyle = cellStyle;
-                    }
-                    catch (Exception)
-                    {
-                        row2.CreateCell(i).SetCellValue(rowik[i].ToString().Trim());
-                    }
-                }
-                ro++;
-            }// end foreach
-
-            // czwarty sheet
-
-            view = (DataView)tabela_4.Select(DataSourceSelectArguments.Empty);
-
-            table = view.ToTable();
-
-            table.Columns.Remove("ident");
-            table.Columns.Remove("sesja");
-            table.Columns.Remove("id_sedziego");
-            //        table.Columns.Remove("id_tabeli");
-            //       table.Columns.Remove("id_dzialu");
-            /*table.Columns.Remove("d_09");
-            table.Columns.Remove("d_10");
-            table.Columns.Remove("d_11");
-            table.Columns.Remove("d_12");
-            table.Columns.Remove("d_13");
-            table.Columns.Remove("d_14");
-            table.Columns.Remove("d_15");*/
-            table.Columns.Remove("d_16");
-            table.Columns.Remove("d_17");
-            table.Columns.Remove("d_18");
-            table.Columns.Remove("d_19");
-            table.Columns.Remove("d_20");
-            table.Columns.Remove("d_21");
-            table.Columns.Remove("d_22");
-
-            ISheet sheet3 = hssfworkbook.CreateSheet("Stan referatów sędziów");
-
-            row2 = sheet3.CreateRow(0);
-            row2.CreateCell(0).SetCellValue("L.p.");
-            row2.CreateCell(1).SetCellValue("Nazwisko");
-            row2.CreateCell(2).SetCellValue("Imię");
-            row2.CreateCell(3).SetCellValue("Funkcja");
-            row2.CreateCell(4).SetCellValue("Stanowisko");
-
-            crs = new NPOI.SS.Util.CellRangeAddress(0, 1, 0, 0);
-            sheet3.AddMergedRegion(crs);
-            crs = new NPOI.SS.Util.CellRangeAddress(0, 1, 1, 1);
-            sheet3.AddMergedRegion(crs);
-            crs = new NPOI.SS.Util.CellRangeAddress(0, 1, 2, 2);
-            sheet3.AddMergedRegion(crs);
-            crs = new NPOI.SS.Util.CellRangeAddress(0, 1, 3, 3);
-            sheet3.AddMergedRegion(crs);
-            crs = new NPOI.SS.Util.CellRangeAddress(0, 1, 4, 4);
-            sheet3.AddMergedRegion(crs);
-
-            row2.CreateCell(5).SetCellValue("Pozostało w referatach spraw kategorii");
-            crs = new NPOI.SS.Util.CellRangeAddress(0, 0, 5, 19);
-            sheet3.AddMergedRegion(crs);
-
-            row2 = sheet3.CreateRow(1);
-
-            row2.CreateCell(5).SetCellValue("GC");
-            row2.CreateCell(6).SetCellValue("GNs");
-            row2.CreateCell(7).SetCellValue("GNc");
-            row2.CreateCell(8).SetCellValue("GCo");
-            row2.CreateCell(9).SetCellValue("GCps");
-            row2.CreateCell(10).SetCellValue("WSC");
-            row2.CreateCell(11).SetCellValue("GU");
-            row2.CreateCell(12).SetCellValue("GUp");
-            row2.CreateCell(13).SetCellValue("GN");
-            row2.CreateCell(14).SetCellValue("Gzd");
-            row2.CreateCell(15).SetCellValue("GUo");
-            row2.CreateCell(16).SetCellValue("GUu");
-            row2.CreateCell(17).SetCellValue("GUz");
-            row2.CreateCell(18).SetCellValue("GUk");
-            row2.CreateCell(19).SetCellValue("Razem");
-            ro = 2;
-
-            foreach (DataRow rowik in table.Rows)
-            {
-                row2 = sheet3.CreateRow(ro);
-                for (int i = 0; i < rowik.ItemArray.Length; i++)
-                {
-                    try
-                    {
-                        int ji = int.Parse(rowik[i].ToString().Trim());
-                        ICellStyle cellStyle = hssfworkbook.CreateCellStyle();
-                        cellStyle.DataFormat = HSSFDataFormat.GetBuiltinFormat("0");
-                        row2.CreateCell(i).SetCellValue(ji);
-                        row2.Cells[i].CellStyle = cellStyle;
-                    }
-                    catch (Exception)
-                    {
-                        row2.CreateCell(i).SetCellValue(rowik[i].ToString().Trim());
-                    }
-                }
-                ro++;
-            }// end foreach
+            odswiez();
         }
 
-        protected void LinkButton54_Click(object sender, EventArgs e)
+        protected void Odswiezanie(object sender, EventArgs e)
         {
             odswiez();
         }
 
-        protected void LinkButton55_Click(object sender, EventArgs e)
+        protected void stopkaTabeli02(object sender, GridViewRowEventArgs e)
         {
-            makeLabels();
-            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print2", "JavaScript: window.print();", true);
-            makeLabels();
+            if (e.Row.RowType == DataControlRowType.Footer)
+            {
+                DataTable table = (DataTable)Session["tabelka002"];
+                tb. makeSumRow(table, e, 3);
+            }
         }
 
-        protected void tworzPlikExcel(object sender, EventArgs e)
+        protected void stopkaTabeli03(object sender, GridViewRowEventArgs e)
         {
-            // execel begin
-            string filename = "statystykiWydzialGospodarczy.xls";
-            Response.ContentType = "application/vnd.ms-excel";
-            Response.AddHeader("Content-Disposition", string.Format("attachment;filename={0}", filename));
+            if (e.Row.RowType == DataControlRowType.Footer)
+            {
+                DataTable table = (DataTable)Session["tabelka003"];
+                tb.makeSumRow(table, e, 3);
+            }
+        }
 
-            Response.Clear();
-
-            InitializeWorkbook();
-            generate_my_data();
-            Response.BinaryWrite(WriteToStream().GetBuffer());
-
-            Response.End();
+        protected void stopkaTabelo04(object sender, GridViewRowEventArgs e)
+        {
+            if (e.Row.RowType == DataControlRowType.Footer)
+            {
+                DataTable table = (DataTable)Session["tabelka004"];
+                tb.makeSumRow(table, e, 3);
+            }
         }
     }
 }

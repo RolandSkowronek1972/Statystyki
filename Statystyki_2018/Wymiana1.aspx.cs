@@ -32,6 +32,7 @@ namespace Statystyki_2018
                     lbRok2.Items.Add(i.ToString());
                 }
                 lbRok.SelectedIndex = 0;
+                lbRok2.SelectedIndex = 0;
                 DataTable parameters = cm.makeParameterTable();
 
                 DataTable dT1 = cm.getDataTable("SELECT distinct [wartosc], [ConnectionString] FROM [konfig] WHERE ([klucz] = 'KonfigRodzajSprawy') ORDER BY wartosc", con_str, parameters, "Wymiana");
@@ -68,22 +69,29 @@ namespace Statystyki_2018
             string url = string.Empty;
             string host = string.Empty;
             TextBox1.Text = "";
-
+            log.Error("Wymiana odczyt danych:Start odczytu");
             stat2018.ServiceReference3.SerwisWymianySoapClient serwisWymianySoapClient = new stat2018.ServiceReference3.SerwisWymianySoapClient();
-
+            log.Info("Wymiana odczyt danych: Deklaracja połaczenia.");
             rodzaj = lbRodzajSprawy.SelectedItem.Text.ToString();
             connection = lbRodzajSprawy.SelectedItem.Value.ToString();
-            // walidacja po stronie clienta
+            TextBox1.Text = TextBox1.Text + "connection "+ connection + Environment.NewLine;
+            log.Info("Wymiana odczyt danych: Ro:dzaj Sprawy: "+rodzaj+" połaczenia.");
+            // walidacja po stronie clientaconnection
 
             DataTable parametry = cm.makeParameterTable();
             parametry.Rows.Add("@rodzaj", rodzaj);
-            DataTable kwerendaWalidująca = cm.getDataTable("SELECT distinct kwerendaOdczytujaca,  connection FROM wymiana where rodzaj = @rodzaj and typ=0", cm.con_str, parametry, "wymiana cleint: kwerendaWalidująca");
+            TextBox1.Text = TextBox1.Text + "Wymiana odczyt danych: Odczyt kwerendy danych:connection string " + connection + Environment.NewLine;
+            log.Info("Wymiana odczyt danych: Odczyt kwerendy danych:connection string " + connection);
+            DataTable kwerendaWalidująca = cm.getDataTable("SELECT distinct kwerendaOdczytujaca,  connection FROM wymiana where rodzaj = @rodzaj and typ=0", cm.con_str, parametry, "wymiana client: kwerendaWalidująca");
             if (kwerendaWalidująca == null)
             {
                 log.Error("Wymiana odczyt danych: Brak kwerendy walidującej zapytanie po stronie klienta - rodzaj=0");
                 TextBox1.Text = TextBox1.Text + "Wymiana odczyt danych: Brak kwerendy walidującej zapytanie po stronie klienta - rodzaj=0" + Environment.NewLine;
                 return;
             }
+            log.Error("Wymiana odczyt danych: Brak kwerenda walidująca odczytana");
+            TextBox1.Text = TextBox1.Text + "Wymiana odczyt danych: Brak kwerenda walidująca odczytana" + Environment.NewLine;
+
             string kwerendaSprawdzajaca = kwerendaWalidująca.Rows[0][0].ToString();
             string CSkwerendySprawdzajacej = kwerendaWalidująca.Rows[0][1].ToString();
 
@@ -92,7 +100,8 @@ namespace Statystyki_2018
             parametry.Rows.Add("@rok", lbRok.SelectedItem.Text.Trim());
             parametry.Rows.Add("@rep", TBRepertorium.Text.Trim());
             parametry.Rows.Add("@wydzial", TBNrWydzialu.Text.Trim());
-            string wynikWalidacji = cm.getQuerryValue(kwerendaSprawdzajaca, CSkwerendySprawdzajacej, parametry, "wymiana cleint");
+            string wynikWalidacji = cm.getQuerryValue(kwerendaSprawdzajaca, CSkwerendySprawdzajacej, parametry, "wymiana client - walidacja ");
+
             try
             {
                 if (int.Parse(wynikWalidacji) == 0)
@@ -136,6 +145,14 @@ namespace Statystyki_2018
             StringBuilder plikXml = new StringBuilder();
 
             StringBuilder stringBuilder = new StringBuilder();
+            if (wynik.Rows.Count==0)
+            {
+                log.Error("Wymiana odczyt danych: Brak danych z odpowiedzi na zapytanie" );
+                TextBox1.Text = TextBox1.Text + "Wymiana odczyt danych: Brak danych z odpowiedzi na zapytanie" + Environment.NewLine;
+                return;
+            }
+            log.Info("Wymiana odczyt danych: Ilość rekordów z odpowiedzią: "+ wynik.Rows.Count.ToString());
+            TextBox1.Text = TextBox1.Text + "Wymiana odczyt danych: Ilość rekordów z odpowiedzią: " + wynik.Rows.Count.ToString() + Environment.NewLine;
 
             stringBuilder.AppendLine("<Odpowiedz>");
             foreach (DataRow item in wynik.Rows)
@@ -186,65 +203,91 @@ namespace Statystyki_2018
                 TextBox1.Text = TextBox1.Text + "Wymiana odczyt danych: Brak kwerendy Zapisującej zapytanie po stronie klienta - rodzaj=2" + Environment.NewLine;
                 return;
             }
-            string kwerendaZapisująca = kwerendaZapisujaca.Rows[0][0].ToString();
-            string CSkwerendyZapisującej = kwerendaZapisujaca.Rows[0][1].ToString();
-
-            foreach (DataRow pojedynczyWiersz in wynik.Rows)
+            string kwerendaZapisująca = string.Empty;
+            try
             {
-                var wydzial = pojedynczyWiersz["wydzial"];
-                var repertorium = pojedynczyWiersz["repertorium"];
-                var numerW = pojedynczyWiersz["numer"];
-                var rok = pojedynczyWiersz["rok"];
-                var d_orzecz = pojedynczyWiersz["d_orzecz"];
-                var msword = pojedynczyWiersz["msword"];
-                var rodzajw = pojedynczyWiersz["rodzaj"];
+                 kwerendaZapisująca = kwerendaZapisujaca.Rows[0][0].ToString();
+            }
+            catch (Exception ex)
+            {
 
-                var cos2 = (Byte[])msword;
+                log.Error("Wymiana odczyt danych: Blad odczytu  kwerendy Zapisującej zapytanie po stronie klienta - rodzaj=2");
+                TextBox1.Text = TextBox1.Text + "Wymiana odczyt danych: Blad odczytu kwerendy Zapisującej zapytanie po stronie klienta - rodzaj=2 "+ ex.Message + Environment.NewLine;
+                return;
+            }
+           
+            string CSkwerendyZapisującej = string.Empty;
+            try
+            {
+                CSkwerendyZapisującej = kwerendaZapisujaca.Rows[0][1].ToString();
+            }
+            catch (Exception ex)
+            {
 
-                string base64String = Convert.ToBase64String(cos2);
-
-                byte[] outputData = Convert.FromBase64String(base64String);
-
-                parametry = cm.makeParameterTable();
-                parametry.Rows.Add("@d_orzeczenia", d_orzecz.ToString());
-                parametry.Rows.Add("@msword", outputData);
-                parametry.Rows.Add("@typ_orzeczenia", rodzajw.ToString());
-                parametry.Rows.Add("@rok", rok.ToString());
-                parametry.Rows.Add("@numer", numerW.ToString());
-                parametry.Rows.Add("@rep", repertorium.ToString());
-
-                var conn = new SqlConnection(CSkwerendyZapisującej);
-                using (SqlCommand sqlCmd = new SqlCommand(kwerendaZapisująca, conn))
+                log.Error("Wymiana odczyt danych: Blad odczytu  connectionString kwerendy Zapisującej zapytanie po stronie klienta - rodzaj=2");
+                TextBox1.Text = TextBox1.Text + "Wymiana odczyt danych: Blad odczytu connectionString kwerendy Zapisującej zapytanie po stronie klienta - rodzaj=2 " + ex.Message + Environment.NewLine;
+                return;
+            }
+            try
+            {
+                foreach (DataRow pojedynczyWiersz in wynik.Rows)
                 {
-                    try
-                    {
-                        //log.Info("Open DB connection");
-                        conn.Open();
-                        //log.Info("DB connection is open");
-                        SqlParameter photoParam = new SqlParameter("@msword", SqlDbType.Image);
-                        photoParam.Value = outputData;
-                        sqlCmd.Parameters.Add(photoParam);
-                        sqlCmd.Parameters.Add("@d_orzeczenia", d_orzecz.ToString());
-                        sqlCmd.Parameters.Add("@typ_orzeczenia", rodzajw.ToString());
-                        sqlCmd.Parameters.Add("@rok", rok.ToString());
-                        sqlCmd.Parameters.Add("@numer", numerW.ToString());
-                        sqlCmd.Parameters.Add("@rep", repertorium.ToString());
+                    var wydzial = pojedynczyWiersz["wydzial"];
+                    var repertorium = pojedynczyWiersz["repertorium"];
+                    var numerW = pojedynczyWiersz["numer"];
+                    var rok = pojedynczyWiersz["rok"];
+                    var d_orzecz = pojedynczyWiersz["d_orzecz"];
+                    var msword = pojedynczyWiersz["msword"];
+                    var rodzajw = pojedynczyWiersz["rodzaj"];
 
-                        //log.Info("Start querry execution");
-                        sqlCmd.ExecuteScalar();
-                        //log.Info("Execution done. ");
-                        conn.Close();
-                        //log.Info("Close DB connection");
-                    }
-                    catch (Exception ex)
-                    {
-                        TextBox1.Text = TextBox1.Text + "Wymiana odczyt danych: Bład podczas zapisu odpowiedzi do bazy danych  po stronie klienta - rodzaj=2: "+ex.Message + Environment.NewLine;
+                    var cos2 = (Byte[])msword;
 
-                        conn.Close();
+                    string base64String = Convert.ToBase64String(cos2);
+
+                    byte[] outputData = Convert.FromBase64String(base64String);
+
+               
+                    var conn = new SqlConnection(CSkwerendyZapisującej);
+                    using (SqlCommand sqlCmd = new SqlCommand(kwerendaZapisująca, conn))
+                    {
+                        try
+                        {
+                            //log.Info("Open DB connection");
+                            conn.Open();
+                            //log.Info("DB connection is open");
+                            SqlParameter photoParam = new SqlParameter("@msword", SqlDbType.Image);
+                            photoParam.Value = outputData;
+                            sqlCmd.Parameters.Add(photoParam);
+                            sqlCmd.Parameters.Add("@d_orzeczenia", DateTime.Parse(d_orzecz.ToString()));
+                            sqlCmd.Parameters.Add("@typ_orzeczenia", rodzajw.ToString());
+                            sqlCmd.Parameters.Add("@rok", rok.ToString());
+                            sqlCmd.Parameters.Add("@numer", numerW.ToString());
+                            sqlCmd.Parameters.Add("@rep", repertorium.ToString());
+                            sqlCmd.Parameters.Add("@wydzial", wydzial.ToString());
+                            //log.Info("Start querry execution");
+                            sqlCmd.ExecuteScalar();
+                            //log.Info("Execution done. ");
+                            conn.Close();
+                            //log.Info("Close DB connection");
+                        }
+                        catch (Exception ex)
+                        {
+                            TextBox1.Text = TextBox1.Text + "Wymiana odczyt danych: Bład podczas zapisu odpowiedzi do bazy danych  po stronie klienta - rodzaj=2: " + ex.Message + Environment.NewLine;
+                            log.Error("Wymiana odczyt danych: Bład podczas zapisu odpowiedzi do bazy danych  po stronie klienta - rodzaj=2: ");
+                            conn.Close();
+                        }
+                        
                     }
-                    //      cm.runQuerry(kwerendaZapisująca, CSkwerendyZapisującej, parametry, "Wymiana");
                 }
             }
+            catch (Exception ex)
+            {
+
+                log.Error("Wymiana odczyt danych: Blad podczas zapisu  kwerendy Zapisującej zapytanie po stronie klienta - rodzaj=2");
+                TextBox1.Text = TextBox1.Text + "Wymiana odczyt danych: Blad podczas zapisu  kwerendy Zapisującej kwerendy Zapisującej zapytanie po stronie klienta - rodzaj=2 " + ex.Message + Environment.NewLine;
+                return;
+            }
+           
 
             TextBox1.Text = TextBox1.Text + " KOniec przekazywania danych";
         }

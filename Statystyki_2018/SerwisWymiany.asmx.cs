@@ -78,38 +78,40 @@ namespace Statystyki_2018
                 cm.log.Error("Wymiana serwer: Brak wyników kwerendy zapytania");
               //  return "Wymiana serwer: Brak wyników kwerendy zapytania";
             }
+            cm.log.Info("Wymiana serwer: Ilość rekodrów odczytanych: "+ odpowiedz.Rows.Count.ToString ());
+
+            /*  StringBuilder stringBuilder = new StringBuilder();
+
+              stringBuilder.AppendLine("<Odpowiedz>");
+              foreach (DataRow item in odpowiedz.Rows)
+              {
+                  var cos2 = (Byte[])item[5];
+
+                  StringBuilder cos4 = new StringBuilder();
+                  foreach (var bajt in cos2)
+                  {
+                      var cos5 = bajt.ToString("X");
+                      cos4.Append(cos5);
+                  }
+
+                  //File.ReadAllBytes
+                  stringBuilder.AppendLine("<row>");
+                  stringBuilder.AppendLine("<wydzial>" + item[0] + "</wydzial>");
+                  stringBuilder.AppendLine("<repertorium>" + item[1] + "</repertorium>");
+
+                  stringBuilder.AppendLine("<numer>" + item[2] + " </numer>");
+                  stringBuilder.AppendLine("<rok> " + item[3] + " </rok>");
+                  stringBuilder.AppendLine("<dataOrzeczenia> " + item[4] + " </dataOrzeczenia>");
+                  stringBuilder.AppendLine("<msword> " + cos4 + " </msword>");
+                  stringBuilder.AppendLine("<rodzaj> " + item[6] + " </rodzaj>");
+
+                  stringBuilder.AppendLine("</row>");
+              }
+              stringBuilder.AppendLine("</Odpowiedz>");
+
+              return stringBuilder.ToString();
+              */
             return odpowiedz;
-          /*  StringBuilder stringBuilder = new StringBuilder();
-
-            stringBuilder.AppendLine("<Odpowiedz>");
-            foreach (DataRow item in odpowiedz.Rows)
-            {
-                var cos2 = (Byte[])item[5];
-
-                StringBuilder cos4 = new StringBuilder();
-                foreach (var bajt in cos2)
-                {
-                    var cos5 = bajt.ToString("X");
-                    cos4.Append(cos5);
-                }
-
-                //File.ReadAllBytes
-                stringBuilder.AppendLine("<row>");
-                stringBuilder.AppendLine("<wydzial>" + item[0] + "</wydzial>");
-                stringBuilder.AppendLine("<repertorium>" + item[1] + "</repertorium>");
-
-                stringBuilder.AppendLine("<numer>" + item[2] + " </numer>");
-                stringBuilder.AppendLine("<rok> " + item[3] + " </rok>");
-                stringBuilder.AppendLine("<dataOrzeczenia> " + item[4] + " </dataOrzeczenia>");
-                stringBuilder.AppendLine("<msword> " + cos4 + " </msword>");
-                stringBuilder.AppendLine("<rodzaj> " + item[6] + " </rodzaj>");
-
-                stringBuilder.AppendLine("</row>");
-            }
-            stringBuilder.AppendLine("</Odpowiedz>");
-
-            return stringBuilder.ToString();
-            */
         }
         /*
         public string DaneWXml(string NrWydzialu, string repertorium, int nrSprawy, string rodzaj, string connection, int rok, string kwerendaZapytujaca)

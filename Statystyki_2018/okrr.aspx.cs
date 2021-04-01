@@ -538,7 +538,7 @@ namespace Statystyki_2018
 
                 DataTable table1 = (DataTable)Session["tabelka001"];
 
-                MyWorksheet = tabela.tworzArkuszwExcleOKRR(MyExcel.Workbook.Worksheets[1], table1, 34, 0, 10, true, false, true, true, true);
+                MyWorksheet = tabela.tworzArkuszwExcleOKRR(MyExcel.Workbook.Worksheets[1], table1, 33, 0, 10, true, false, true, true, true);
 
                 //podtabel
                 int przesuniecieWdol = table1.Rows.Count;
@@ -564,11 +564,11 @@ namespace Statystyki_2018
                         {
                             tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 10 + i, j + 19, tabelka001.Rows[i][j + 1].ToString(), false, 0, 0, true, false);
                         }
-                        tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 10 + i, 22, "", true, 11, 1, true, true);
+                        tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 10 + i, 22, "", true, 10, 1, true, true);
 
-                        for (int j = 6; j < 20; j++)// kolunmny
+                        for (int j = 4; j < 18; j++)// kolunmny
                         {
-                            tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 10 + i, j + 18, tabelka001.Rows[i][j + 1].ToString(), false, 0, 0, true, false);
+                            tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 10 + i, j + 20, tabelka001.Rows[i][j + 1].ToString(), false, 0, 0, true, false);
                         }
                     }
                 }
@@ -581,10 +581,10 @@ namespace Statystyki_2018
                 ExcelWorksheet MyWorksheet2 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], table2, 11, 0, 9, true, true, true, true, true);
 
                 DataTable table3 = (DataTable)Session["tabelka004"];
-                ExcelWorksheet MyWorksheet3 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], table3, 26, 0, 5, true, false, false, false, false);
+                ExcelWorksheet MyWorksheet3 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], table3, 26, 0, 5, true, true, false, false, false);
 
                 DataTable table4 = (DataTable)Session["tabelka005"];
-                ExcelWorksheet MyWorksheet4 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[5], table4, 17, 0, 4, true, false, false, false, false);
+                ExcelWorksheet MyWorksheet4 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[5], table4, 17, 0, 4, true, true, false, false, false);
 
                 try
                 {
@@ -661,7 +661,7 @@ namespace Statystyki_2018
         //private mathods
         private DataTable Tabela01(int id_dzialu)
         {
-            return dr.generuj_dane_do_tabeli_sedziowskiej_2019(id_dzialu, 1, Date1.Date, Date2.Date, 29, tenPlik);
+            return dr.generuj_dane_do_tabeli_sedziowskiej_2019(id_dzialu, 1, Date1.Date, Date2.Date, 40, tenPlik);
         }
 
         private DataTable Tabela03(int id_dzialu)

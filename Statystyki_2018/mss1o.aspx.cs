@@ -63,7 +63,7 @@ namespace Statystyki_2018
 
         protected void odswiez()
         {
-            Session["sesja"] = "s3030";
+           
 
             string idWydzialu = "'" + (string)Session["id_dzialu"] + "'";
             //id_dzialu.Text = (string)Session["txt_dzialu"];

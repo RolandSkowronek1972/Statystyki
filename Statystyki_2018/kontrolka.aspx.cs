@@ -152,8 +152,8 @@ namespace Statystyki_2018
             string connectionString = (string)Session["cs"];
 
             DataTable parameters = cm.makeParameterTable();
-            parameters.Rows.Add("@data_1", data1.Text);
-            parameters.Rows.Add("@data_2", data2.Text);
+            parameters.Rows.Add("@data_1", cl.KonwertujDate(data1.Date));
+            parameters.Rows.Add("@data_2", cl.KonwertujDate(data2.Date));
             DataTable dT = cm.getDataTable(kwerenda, connectionString, parameters, "wyszukiwarka");
 
             Session["data1"] = data1.Text.Trim();

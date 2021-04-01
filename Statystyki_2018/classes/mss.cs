@@ -1087,7 +1087,30 @@ namespace Statystyki_2018
                     log.Info(tenPlik + " odczytXML : odczytywanie informacji o tabeli bocznej");
                     tabelaBoczna = wygenerujTabele(node.ChildNodes[(int)pola.tabelaBoczna]);
                     log.Info(tenPlik + " odczytXML : wypełnianie tabeli");
-                    tabelaGlowna.AppendLine(tworztabeleMSS(idTabeli, naglowek, tabelaBoczna, tabelaDanych, iloscWieszyNaglowka, iloscWierszy, ilosckolunPrzedIteracja, ilosckolunPoIteracji, idDzialu, lp, tekstNadTabela, "test"));
+                    string wyswietlNaglowek = "1";
+                    try
+                    {
+                        wyswietlNaglowek = informacjeOtabeli.ChildNodes[6].InnerText;
+                        if ((wyswietlNaglowek.Length==1)&&(wyswietlNaglowek!="0"))
+                        {
+                            wyswietlNaglowek = "0";
+                        }
+                    }
+                    catch 
+                    {
+
+                       
+                    }
+                    if (wyswietlNaglowek != "0")
+                    {
+                        tabelaGlowna.AppendLine(tworztabeleMSS(idTabeli, naglowek, tabelaBoczna, tabelaDanych, iloscWieszyNaglowka, iloscWierszy, ilosckolunPrzedIteracja, ilosckolunPoIteracji, idDzialu, lp, tekstNadTabela, "test"));
+
+                    }
+                    else
+                    {
+                        tabelaGlowna.AppendLine(tworztabeleMSS(idTabeli, tabelaBoczna, tabelaDanych, iloscWierszy, idDzialu, "", tenPlik));
+                    }
+                    //tabelaGlowna.AppendLine(tworztabeleMSS(idTabeli, naglowek, tabelaBoczna, tabelaDanych, iloscWieszyNaglowka, iloscWierszy, ilosckolunPrzedIteracja, ilosckolunPoIteracji, idDzialu, lp, tekstNadTabela, "test"));
                 }
             }
             catch (Exception ex)
@@ -1146,20 +1169,18 @@ namespace Statystyki_2018
                         continue;
                     }
 
-                    //  st.AppendLine(" ####################################################    ");
-                    //   st.AppendLine(" id Tabeli " + idTabeli);
+                   
                     iloscWierszy = int.Parse(informacjeOtabeli.ChildNodes[0].InnerText);
-                    //  st.AppendLine(" iloscWierszy " + iloscWierszy.ToString());
+                   
                     tekstNadTabela = informacjeOtabeli.ChildNodes[1].InnerText;
-                    //  st.AppendLine(" tekstNadTabela " + tekstNadTabela.ToString());
-                    //informacjeOtabeli
+                   
                     iloscWieszyNaglowka = int.Parse(informacjeOtabeli.ChildNodes[2].InnerText);
-                    //iloscWieszyNaglowka = int.Parse(informacjeOtabeli[]);
+                  
                     ilosckolunPrzedIteracja = int.Parse(informacjeOtabeli.ChildNodes[3].InnerText);
-                    //  st.AppendLine(" ilosckolunPrzedIteracja " + ilosckolunPrzedIteracja.ToString());
+                    
 
                     ilosckolunPoIteracji = int.Parse(informacjeOtabeli.ChildNodes[4].InnerText);
-                    //  st.AppendLine(" ilosc kolun Po Iteracji " + ilosckolunPoIteracji.ToString());
+                  
 
                     Lp = int.Parse(informacjeOtabeli.ChildNodes[5].InnerText);
                     //  lp = (Lp == 0);

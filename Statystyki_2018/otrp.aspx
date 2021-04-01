@@ -15,6 +15,23 @@
                 left: 0;
                 right: 0;
             }
+              @media print {
+
+            @page {
+                font-size: 7.5pt;
+                size: 29cm 21.7cm;
+                margin: 5mm 5mm 5mm 5mm;
+            }
+
+            .horizont {
+                transform: translate(-40mm, 0) scale(0.70);
+                -webkit-transform: translate(-40mm, 0) scale(0.70);
+                -moz-transform: translate(-40mm, 0) scale(0.70);
+                break-after: column;
+            }
+
+           
+        }
     </style>
 
     <script src="Scripts/rls.js"></script>
@@ -53,7 +70,7 @@
     </div>
 
     <div style="width: 1150px; margin: 0 auto 0 auto; position: relative; top: 60px;">
-        <div id="Div2" style="z-index: 10;">
+        <div id="Div2" style="z-index: 10;" class="horizont">
             <div style="margin-left: auto; margin-right: auto; text-align: center; width: auto;">
                 <asp:Label ID="Label3" runat="server" Text="Sąd " Style="font-weight: 700"></asp:Label>
             </div>
@@ -64,7 +81,7 @@
 
             <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False"
                 OnRowCreated="GridView2_RowCreated"
-                Width="100%" ShowHeader="False" DataKeyNames="opis,d_01,d_02,d_03,d_04,d_05,d_06,d_07,d_08,d_09,d_10,d_11,d_12,d_13,d_14,d_15,id_tabeli">
+                Width="100%" ShowHeader="False" DataKeyNames="opis,d_01,d_02,d_03,d_04,d_05,d_06,d_07,d_08,d_09,d_10,d_11,d_12,d_13,d_14,d_15,id_,id_tabeli">
                 <Columns>
                     <asp:TemplateField HeaderText="opis" SortExpression="opis">
                         <ItemTemplate>
@@ -150,7 +167,7 @@
             </asp:GridView>
         </div>
 
-        <div style="width: 1150px; margin: 0 auto 0 auto; position: relative; left: 0px; display: block">
+        <div style="width: 1150px; margin: 0 auto 0 auto; position: relative; left: 0px; display: block" >
             &nbsp;<asp:PlaceHolder runat="server" ID="tablePlaceHolder01"></asp:PlaceHolder>
             <br />
         </div>

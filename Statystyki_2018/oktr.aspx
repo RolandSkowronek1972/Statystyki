@@ -14,6 +14,19 @@
                 left: 0;
                 right: 0;
             }
+
+             @media print {
+            @page {
+                size: 29cm 21.7cm;
+                margin: 0mm 0mm 0mm 0mm;
+            }
+
+            .horizont {
+                transform: translate(-40mm, 0) scale(0.65);
+                -webkit-transform: translate(-40mm, 0) scale(0.65);
+                -moz-transform: translate(-40mm, 0) scale(0.65);
+            }
+        }
     </style>
     <script src="Scripts/jquery-1.8.3.js"></script>
 
@@ -63,14 +76,14 @@
 
             <br />
         </div>
-        <div id="wplyw">
+        <div id="wplyw" class="horizont">
             <br />
 
             <asp:Label ID="tabela2Label" runat="server"></asp:Label>
             &nbsp;&nbsp;&nbsp;&nbsp;
        <asp:Label ID="infoLabel2" runat="server" Text="Tabela 1\/" Visible="False"></asp:Label>
             <br />
-            <asp:GridView ID="Tabela1" runat="server" OnRowCreated="naglowekTabeli_Tabela1" AutoGenerateColumns="False" OnRowDataBound="stopkaTabeli_Tabela1" Width="100%" ShowHeader="False">
+            <asp:GridView ID="Tabela1" runat="server" OnRowCreated="naglowekTabeli_Tabela1" AutoGenerateColumns="False" OnRowDataBound="stopkaTabeli_Tabela1" Width="99%" ShowHeader="False">
                 <Columns>
                     <asp:BoundField DataField="id" HeaderText="L.p." SortExpression="id">
                         <ItemStyle Width="15px" />
@@ -199,12 +212,12 @@
             <br />
         </div>
 
-        <div id="wyznaczenia0" class="page-break">
+        <div id="wyznaczenia0" class="page-break horizont">
             <asp:Label ID="lbTabela3Title" runat="server"></asp:Label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Label ID="infoLabel4" runat="server" Text="Tabela 3 \/" Visible="False"></asp:Label>
             <br />
-            <asp:GridView ID="Gridview3" runat="server" AutoGenerateColumns="False" Width="100%" ShowHeader="False" ShowFooter="True" OnRowCreated="naglowekTabela3" OnRowDataBound="Gridview3_RowDataBound">
+            <asp:GridView ID="Gridview3" runat="server" AutoGenerateColumns="False" Width="99%" ShowHeader="False" ShowFooter="True" OnRowCreated="naglowekTabela3" OnRowDataBound="Gridview3_RowDataBound">
                 <Columns>
                     <asp:BoundField DataField="id" HeaderText="L.p." SortExpression="id">
                         <ItemStyle Width="15px" />
@@ -295,7 +308,7 @@
             <br />
         </div>
 
-        <br />
+     
 
         <div id="debag">
             <br />

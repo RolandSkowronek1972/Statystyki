@@ -7291,6 +7291,7 @@
       <iloscKolumnPrzedIteracja>3</iloscKolumnPrzedIteracja>
       <iloscKolumnPoIteracji>11</iloscKolumnPoIteracji>
       <lp>1</lp>
+      <wyswietlNaglowek>0</wyswietlNaglowek>
       <identyfikatorTabeli>2.1.1.a</identyfikatorTabeli>
     </daneTabeli>
     <naglowek>

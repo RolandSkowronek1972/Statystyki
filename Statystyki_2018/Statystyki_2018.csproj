@@ -136,6 +136,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="adm.aspx" />
+    <Content Include="aktc2.aspx" />
+    <Content Include="aktg2.aspx" />
+    <Content Include="aktr.aspx" />
+    <Content Include="aktg.aspx" />
     <Content Include="aktpe.aspx" />
     <Content Include="aktk2.aspx" />
     <Content Include="aktk.aspx" />
@@ -145,6 +149,7 @@
     <Content Include="akrg.aspx" />
     <Content Include="akrp.aspx" />
     <Content Include="akrk.aspx" />
+    <Content Include="aktc.xlsx" />
     <None Include="Connected Services\ServiceReference3\SerwisWymiany.disco" />
     <None Include="Connected Services\ServiceReference3\configuration91.svcinfo" />
     <None Include="Connected Services\ServiceReference3\configuration.svcinfo" />
@@ -158,15 +163,41 @@
     <Content Include="aopg.aspx" />
     <Content Include="mk.aspx" />
     <Content Include="mss10e.aspx" />
+    <Content Include="oktc.aspx" />
     <Content Include="oglk2.aspx" />
     <Content Include="okrcN.aspx" />
     <Content Include="otrp.aspx" />
+    <Content Include="aktc.aspx" />
     <Content Include="SerwisWymiany.asmx" />
     <Content Include="Wymiana1.aspx" />
+    <Content Include="XMLHeaders\wizk.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLHeaders\wizc.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLHeaders\aktc2.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLHeaders\aktg2.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLHeaders\aktr.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLHeaders\aktg.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="XMLHeaders\MSS1o.xml" />
     <Content Include="XMLHeaders\oczc1.xml" />
     <Content Include="XMLHeaders\MSS10r.xml" />
     <Content Include="XMLHeaders\otrp.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLHeaders\otrc.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLHeaders\aktc.xml">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="XMLHeaders\otrr1.xml">
@@ -179,7 +210,9 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="XMLHeaders\MSS5r.xml" />
-    <Content Include="XMLHeaders\MSS19o.xml" />
+    <Content Include="XMLHeaders\MSS19o.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="XMLHeaders\MSS19r.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -283,7 +316,6 @@
     <Content Include="oglk.aspx" />
     <Content Include="oglr.aspx" />
     <Content Include="oktk.aspx" />
-    <Content Include="oktc.aspx" />
     <Content Include="oksr.aspx" />
     <Content Include="onsc.aspx" />
     <Content Include="onsg.aspx" />
@@ -302,7 +334,6 @@
     <Content Include="otrk.aspx" />
     <Content Include="otrkd.aspx" />
     <Content Include="otrkr.aspx" />
-    <Content Include="otrpOLD.aspx" />
     <Content Include="otrr.aspx" />
     <Content Include="packages.config" />
     <Content Include="popup.aspx" />
@@ -324,7 +355,9 @@
     <Content Include="XMLHeaders\onsu2.xml" />
     <Content Include="XMLHeaders\akrp2.xml" />
     <Content Include="XMLHeaders\mss.xml" />
-    <Content Include="XMLHeaders\MSS5o.xml" />
+    <Content Include="XMLHeaders\MSS5o.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="XMLHeaders\test.xml" />
     <Content Include="XMLHeaders\ansa.xml" />
     <Content Include="XMLHeaders\wizk_1_25.xml" />
@@ -438,6 +471,21 @@
     <Content Include="Template\mp.xlsx" />
     <Content Include="Template\otrp.xlsx" />
     <Content Include="Template\oglk2.xlsx" />
+    <Content Include="Template\otrk.xlsx" />
+    <Content Include="Template\otrg.xlsx" />
+    <Content Include="Template\aktg.xlsx" />
+    <Content Include="Template\aktr.xlsx" />
+    <Content Include="Template\aktg2.xlsx" />
+    <Content Include="Template\aktc2.xlsx" />
+    <None Include="Web.config-stary">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Debug.config-stary">
+      <DependentUpon>Web.config-stary</DependentUpon>
+    </None>
+    <None Include="Web.Release.config-stary">
+      <DependentUpon>Web.config-stary</DependentUpon>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -460,6 +508,34 @@
     </Compile>
     <Compile Include="adm.aspx.designer.cs">
       <DependentUpon>adm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aktc2.aspx.cs">
+      <DependentUpon>aktc2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aktc2.aspx.designer.cs">
+      <DependentUpon>aktc2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aktg2.aspx.cs">
+      <DependentUpon>aktg2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aktg2.aspx.designer.cs">
+      <DependentUpon>aktg2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aktr.aspx.cs">
+      <DependentUpon>aktr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aktr.aspx.designer.cs">
+      <DependentUpon>aktr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aktg.aspx.cs">
+      <DependentUpon>aktg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aktg.aspx.designer.cs">
+      <DependentUpon>aktg.aspx</DependentUpon>
     </Compile>
     <Compile Include="aktpe.aspx.cs">
       <DependentUpon>aktpe.aspx</DependentUpon>
@@ -565,6 +641,13 @@
       <DependentUpon>mss10e.aspx</DependentUpon>
     </Compile>
     <Compile Include="Employee.cs" />
+    <Compile Include="oktc.aspx.cs">
+      <DependentUpon>oktc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oktc.aspx.designer.cs">
+      <DependentUpon>oktc.aspx</DependentUpon>
+    </Compile>
     <Compile Include="oglk2.aspx.cs">
       <DependentUpon>oglk2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -817,6 +900,13 @@
     </Compile>
     <Compile Include="otrp.aspx.designer.cs">
       <DependentUpon>otrp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aktc.aspx.cs">
+      <DependentUpon>aktc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aktc.aspx.designer.cs">
+      <DependentUpon>aktc.aspx</DependentUpon>
     </Compile>
     <Compile Include="passwordPopup.aspx.cs">
       <DependentUpon>passwordPopup.aspx</DependentUpon>
@@ -1085,13 +1175,6 @@
     <Compile Include="oktk.aspx.designer.cs">
       <DependentUpon>oktk.aspx</DependentUpon>
     </Compile>
-    <Compile Include="oktc.aspx.cs">
-      <DependentUpon>oktc.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="oktc.aspx.designer.cs">
-      <DependentUpon>oktc.aspx</DependentUpon>
-    </Compile>
     <Compile Include="oksr.aspx.cs">
       <DependentUpon>oksr.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1204,13 +1287,6 @@
     <Compile Include="otrkr.aspx.designer.cs">
       <DependentUpon>otrkr.aspx</DependentUpon>
     </Compile>
-    <Compile Include="otrpOLD.aspx.cs">
-      <DependentUpon>otrpOLD.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="otrpOLD.aspx.designer.cs">
-      <DependentUpon>otrpOLD.aspx</DependentUpon>
-    </Compile>
     <Compile Include="otrr.aspx.cs">
       <DependentUpon>otrr.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1310,7 +1386,6 @@
     <Folder Include="App_GlobalResources\" />
     <Folder Include="classes\App_LocalResources\" />
     <Folder Include="enums\" />
-    <Folder Include="NewFolder1\" />
     <Folder Include="Wymiana\Temp\" />
     <Folder Include="Wymiana\Tmp\" />
   </ItemGroup>

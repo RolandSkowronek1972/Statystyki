@@ -1,6 +1,6 @@
 ﻿/*
 Last Update:
-    - version 1.160417
+    - version 1.210311
 Creation date: 2018-12-11
 
 */
@@ -10,7 +10,6 @@ using System;
 using System.Data;
 using System.Globalization;
 using System.IO;
-using System.Text;
 using System.Web.UI.WebControls;
 
 namespace Statystyki_2018
@@ -103,9 +102,6 @@ namespace Statystyki_2018
                 infoLabel12.Visible = cl.debug(int.Parse(idDzialu));
                 infoLabel13.Visible = cl.debug(int.Parse(idDzialu));
                 infoLabel14.Visible = cl.debug(int.Parse(idDzialu));
-
-                infoLabel16.Visible = cl.debug(int.Parse(idDzialu));
-                infoLabel17.Visible = cl.debug(int.Parse(idDzialu));
             }
             catch
             {
@@ -127,7 +123,7 @@ namespace Statystyki_2018
             {
                 return;
             }
-            //makeHeader();
+
             //odswiezenie danych
             tabela_1();
             tabela_2();
@@ -143,10 +139,7 @@ namespace Statystyki_2018
             tabela_12();
             tabela_13();
             tabela_14();
-            tabela_15();
-            tabela_16();
-            tabela_17();
-            tabela_18();
+
             dateLabel01.Text = Date1.Date.ToShortDateString() + " - " + Date2.Date.ToShortDateString();
             dateLabel02.Text = Date1.Date.ToShortDateString() + " - " + Date2.Date.ToShortDateString();
             dateLabel3.Text = Date1.Date.ToShortDateString() + " - " + Date2.Date.ToShortDateString();
@@ -171,21 +164,21 @@ namespace Statystyki_2018
             {
                 ExcelWorksheet MyWorksheet1 = MyExcel.Workbook.Worksheets[1];
 
-                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 4, 20, 3, 4, false);
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 12, 0, 5, false, true, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 4, 12, 2, 4, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 12, 0, 6, false, true, false, false, false);
                 MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 17, 3, 3, 3, false);
                 MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 16, 4, 3, 3, false);
                 MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[5], (DataTable)Session["tabelka005"], 7, 3, 1, 3, false);
-                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[6], (DataTable)Session["tabelka006"], 1, 9, 0, 10, false);
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[6], (DataTable)Session["tabelka006"], 6, 8, 0, 10, false);
                 MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[7], (DataTable)Session["tabelka007"], 14, 0, 4, false, true, false, false, false);
                 MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[8], (DataTable)Session["tabelka008"], 14, 0, 4, false, true, false, false, false);
                 MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[9], (DataTable)Session["tabelka009"], 1, 9, 0, 4, false);
-                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[10], (DataTable)Session["tabelka010"], 1, 9, 1, 5, false);
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[11], (DataTable)Session["tabelka0011"], 5, 0, 3, false, false, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[10], (DataTable)Session["tabelka010"], 1, 9, 1, 6, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[11], (DataTable)Session["tabelka011"], 6, 0, 3, false, false, false, false, false);
                 MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[12], (DataTable)Session["tabelka012"], 6, 0, 3, false, true, false, false, false);
-                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[13], (DataTable)Session["tabelka013"], 1, 4, 0, 5, false);
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[13], (DataTable)Session["tabelka013"], 8, 5, 0, 5, false);
 
-                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[14], (DataTable)Session["tabelka0014"], 1, 5, 0, 5, false);
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[14], (DataTable)Session["tabelka014"], 8, 6, 0, 5, false);
 
                 try
                 {
@@ -261,7 +254,7 @@ namespace Statystyki_2018
             {
                 cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 5");
             }
-            DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 5, 7, 4, tenPlik);
+            DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 5, 8, 4, tenPlik);
             Session["tabelka005"] = tabelka01;
             pisz("tab_5_", 7, 3, tabelka01);
         }
@@ -388,166 +381,6 @@ namespace Statystyki_2018
             pisz("tab_14_", 8, 6, tabelka01);
         }
 
-        protected void tabela_15()
-        {
-            string idDzialu = (string)Session["id_dzialu"];
-            if (cl.debug(int.Parse(idDzialu)))
-            {
-                cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 15");
-            }
-            DataTable tabelka01 = dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse(idDzialu), 15, Date1.Date, Date2.Date, 10, tenPlik);
-            Session["tabelka015"] = tabelka01;
-            gwTabela15.DataSource = null;
-            gwTabela15.DataSourceID = null;
-            gwTabela15.DataSource = tabelka01;
-            gwTabela15.DataBind();
-        }
-
-        protected void tabela_16()
-        {
-            string idDzialu = (string)Session["id_dzialu"];
-            if (cl.debug(int.Parse(idDzialu)))
-            {
-                cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 16");
-            }
-            DataTable tabelka01 = dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse(idDzialu), 16, Date1.Date, Date2.Date, 500, tenPlik);
-            Session["tabelka016"] = tabelka01;
-            cm.log.Info(tenPlik + ": rozpoczęcie tworzenia HTML 16");
-            tworztabelkeHTML3("K2", 10, 16, tabelka01);
-        }
-
-        protected void tabela_17()
-        {
-            string idDzialu = (string)Session["id_dzialu"];
-            if (cl.debug(int.Parse(idDzialu)))
-            {
-                cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 17");
-            }
-            DataTable tabelka01 = dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse(idDzialu), 17, Date1.Date, Date2.Date, 23, tenPlik);
-            Session["tabelka017"] = tabelka01;
-            gwTabela16.DataSource = null;
-            gwTabela16.DataSourceID = null;
-            gwTabela16.DataSource = tabelka01;
-            gwTabela16.DataBind();
-        }
-
-        protected void tabela_18()
-        {
-            string idDzialu = (string)Session["id_dzialu"];
-            if (cl.debug(int.Parse(idDzialu)))
-            {
-                cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 18");
-            }
-            DataTable tabelka01 = dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse(idDzialu), 18, Date1.Date, Date2.Date, 23, tenPlik);
-            Session["tabelka018"] = tabelka01;
-            gwTabela17.DataSource = null;
-            gwTabela17.DataSourceID = null;
-            gwTabela17.DataSource = tabelka01;
-            gwTabela17.DataBind();
-        }
-
-        protected void tworztabelkeHTML3(string idKontrolki, int idWydzialu, int idtabeli, DataTable dane)
-        {
-            if (dane == null)
-            {
-                cm.log.Info(tenPlik + ": Brak danych do tworzenia tabeli 16");
-                return;
-            }
-
-            Label tblControl = new Label { ID = idKontrolki };
-            tblControl.Width = 1150;
-
-            StringBuilder builder = new StringBuilder();
-            builder.AppendLine("<br/><table style='width: 1150px;'>");
-
-            //ilosc sedziów
-            int licznik = 1;
-            foreach (DataRow wierszZtabeli in dane.Rows)
-            {
-                builder.AppendLine("<tr>");
-                builder.AppendLine("<td class='borderAll center col_100' colspan='9' ><br/> SSR " + wierszZtabeli["imie"].ToString() + " " + wierszZtabeli["nazwisko"].ToString() + " - wyznaczenie pierszej rozprawy (od daty wpływu do dnia, w którym odbyła się pierwsza rozprawa) w okresie od " + Date1.Date.ToLongDateString() + " do " + Date2.Date.ToLongDateString());
-                builder.AppendLine("</tr>");
-                builder.AppendLine("<tr>");
-                builder.AppendLine("<td class='borderAll center col_100'>Repertorium</td>");
-                builder.AppendLine("<td class='borderAll center col_100'>do 1 miesiąca</td>");
-                builder.AppendLine("<td class='borderAll center col_100'>pow. 1 do 2 miesięcy</td>");
-                builder.AppendLine("<td class='borderAll center col_100'>pow. 2 do 3 miesięcy</td>");
-                builder.AppendLine("<td class='borderAll center col_100'>pow.3 do 4 miesięcy</td>");
-                builder.AppendLine("<td class='borderAll center col_100'>pow. 4 do 6 miesięcy	</td>");
-                builder.AppendLine("<td class='borderAll center col_100'>pow.6 do 12 miesięcy </td>");
-                builder.AppendLine("<td class='borderAll center col_100 '>ponad 12 miesięcy</td>");
-                builder.AppendLine("<td class='borderAll center col_100'>RAZEM</td>");
-                builder.AppendLine("</tr>");
-                builder.AppendLine("<tr>");
-                builder.Append(tb.komorkaHTML("C", 0, 0, "borderAll center col_100"));
-                int index = 1;
-                int ilKolumn = 8;
-                int bierzący = 0;
-                try
-                {
-                    for (int i = index; i < ilKolumn + index; i++)
-                    {
-                        string txt = "<a Class=\"normal\" href=\"javascript: openPopup('popup.aspx?sesja=" + wierszZtabeli["id_sedziego"].ToString() + "!" + idtabeli + "!" + i.ToString() + "!2')\">" + wierszZtabeli["D_" + i.ToString("D2")].ToString() + " </a>";
-                        builder.AppendLine(tb.komorkaHTML(txt, 0, 0, "borderAll center col_50"));
-                        bierzący = i;
-                    }
-                    builder.AppendLine("</tr>");
-                    builder.AppendLine("<tr>");
-
-                    builder.Append(tb.komorkaHTML("NS", 0, 0, "borderAll center col_100"));
-                    index = bierzący + 1;
-                    for (int i = index; i < ilKolumn + index; i++)
-                    {
-                        string txt = "<a Class=\"normal\" href=\"javascript: openPopup('popup.aspx?sesja=" + wierszZtabeli["id_sedziego"].ToString() + "!" + idtabeli + "!" + i.ToString() + "!2')\">" + wierszZtabeli["D_" + i.ToString("D2")].ToString() + " </a>";
-                        builder.AppendLine(tb.komorkaHTML(txt, 0, 0, "borderAll center col_50"));
-                        bierzący = i;
-                    }
-                    builder.AppendLine("</tr>");
-                    builder.AppendLine("<tr>");
-                    builder.Append(tb.komorkaHTML("Co", 0, 0, "borderAll center col_100"));
-                    index = bierzący + 1;
-
-                    for (int i = index; i < ilKolumn + index; i++)
-                    {
-                        string txt = "<a Class=\"normal\" href=\"javascript: openPopup('popup.aspx?sesja=" + wierszZtabeli["id_sedziego"].ToString() + "!" + idtabeli + "!" + i.ToString() + "!2')\">" + wierszZtabeli["D_" + i.ToString("D2")].ToString() + " </a>";
-                        builder.AppendLine(tb.komorkaHTML(txt, 0, 0, "borderAll center col_50"));
-                        bierzący = i;
-                    }
-                    builder.AppendLine("</tr>");
-                    builder.AppendLine("<tr>");
-                    builder.Append(tb.komorkaHTML("Cps", 0, 0, "borderAll center col_100"));
-                    index = bierzący + 1;
-
-                    for (int i = index; i < ilKolumn + index; i++)
-                    {
-                        string txt = "<a Class=\"normal\" href=\"javascript: openPopup('popup.aspx?sesja=" + wierszZtabeli["id_sedziego"].ToString() + "!" + idtabeli + "!" + i.ToString() + "!2')\">" + wierszZtabeli["D_" + i.ToString("D2")].ToString() + " </a>";
-                        builder.AppendLine(tb.komorkaHTML(txt, 0, 0, "borderAll center col_50"));
-                        bierzący = i;
-                    }
-                    builder.AppendLine("</tr>");
-                    builder.AppendLine("<tr>");
-                    builder.Append(tb.komorkaHTML("RAZEM", 0, 0, "borderAll center col_100"));
-                    index = bierzący + 1;
-
-                    for (int i = index; i < ilKolumn + index; i++)
-                    {
-                        string txt = "<a Class=\"normal\" href=\"javascript: openPopup('popup.aspx?sesja=" + wierszZtabeli["id_sedziego"].ToString() + "!" + idtabeli + "!" + i.ToString() + "!2')\">" + wierszZtabeli["D_" + i.ToString("D2")].ToString() + " </a>";
-                        builder.AppendLine(tb.komorkaHTML(txt, 0, 0, "borderAll center col_50"));
-                    }
-                    builder.AppendLine("</tr>");
-                    licznik++;
-                }
-                catch (Exception ex)
-                {
-                    cm.log.Error("tworztabelkeHTML3: " + ex.Message);
-                } // end of try
-            }
-            builder.Append("</table>");
-            cm.log.Info(tenPlik + ": Koniec tworzenia tabeli 16");
-            tblControl.Text = builder.ToString();
-            tablePlaceHolder.Controls.Add(tblControl);
-        }
-
         protected void naglowekTabeli_gwTabela2(object sender, GridViewRowEventArgs e)
         {
             if (e.Row.RowType == DataControlRowType.Header)
@@ -620,24 +453,6 @@ namespace Statystyki_2018
             {
                 DataTable dT = tb.naglowek(path, 12);
                 tb.makeHeader(dT, gwTabela12);
-            }
-        }
-
-        protected void naglowekTabeli_gwTabela16(object sender, GridViewRowEventArgs e)
-        {
-            if (e.Row.RowType == DataControlRowType.Header)
-            {
-                DataTable dT = tb.naglowek(path, 8);
-                tb.makeHeader(dT, gwTabela16);
-            }
-        }
-
-        protected void naglowekTabeli_gwTabela17(object sender, GridViewRowEventArgs e)
-        {
-            if (e.Row.RowType == DataControlRowType.Header)
-            {
-                DataTable dT = tb.naglowek(path, 8);
-                tb.makeHeader(dT, gwTabela17);
             }
         }
 
@@ -721,16 +536,6 @@ namespace Statystyki_2018
             }
         }
 
-        protected void stopkaTabeli_gwTabela5(object sender, GridViewRowEventArgs e)
-        {
-            if (e.Row.RowType == DataControlRowType.Footer)
-            {
-                cm.log.Info(tenPlik + ": rozpoczęcie tworzenia stopki tabeli 5");
-                DataTable table = (DataTable)Session["tabelka005"];
-                tb.makeSumRow(table, e, 0);
-            }
-        }
-
         protected void stopkaTabeli_gwTabela4(object sender, GridViewRowEventArgs e)
         {
             if (e.Row.RowType == DataControlRowType.Footer)
@@ -782,7 +587,9 @@ namespace Statystyki_2018
                     {
                         try
                         {
-                            tb.Text = dane.Rows[wiersz - 1][kolumna].ToString().Trim();
+                            string nazwaKolumny = "d_" + kolumna.ToString("D2");
+                            DataRow wierszDanych = dane.Rows[wiersz - 1];
+                            tb.Text = wierszDanych[nazwaKolumny].ToString().Trim();
                         }
                         catch
                         {
@@ -805,9 +612,13 @@ namespace Statystyki_2018
                     {
                         try
                         {
-                            tb.Text = dane.Rows[wiersz - 1][kolumna].ToString().Trim();
+                            string nazwaKolumny = "d_" + kolumna.ToString("D2");
+                            DataRow wierszDanych = dane.Rows[wiersz - 1];
+                            tb.Text = wierszDanych[nazwaKolumny].ToString().Trim();
                         }
-                        catch { }
+                        catch
+                        {
+                        }
                         //tb.Text = dr.wyciagnijWartosc(dane, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza ='" + wiersz + "' and idkolumny='" + kolumna + "'", tenPlik);
                     }
                 }
@@ -1129,14 +940,6 @@ namespace Statystyki_2018
             Session["header_05"] = dT_05;
 
             #endregion tabela  5 ()
-        }
-
-        protected void naglowekTabeli_gwTabela15(object sender, GridViewRowEventArgs e)
-        {
-            if (e.Row.RowType == DataControlRowType.Header)
-            {
-                tb.makeHeader(header_15(), gwTabela15);
-            }
         }
 
         protected void stopkaTabeli_gwTabela15(object sender, GridViewRowEventArgs e)

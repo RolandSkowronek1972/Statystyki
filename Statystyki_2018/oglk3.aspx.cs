@@ -1,6 +1,6 @@
 ﻿/*
 Last Update:
-    - version 1.190129
+    - version 1.210228
 Creation date: 2018-12-11
 
 */
@@ -284,7 +284,7 @@ namespace Statystyki_2018
                 cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 8");
             }
 
-            DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 8, 4, 2, tenPlik);
+            DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 8, 4, 2, false, tenPlik);
             Session["tabelka008"] = tabelka01;
             pisztb("tab_8_", 4, 2, tabelka01);
         }
@@ -297,7 +297,7 @@ namespace Statystyki_2018
                 cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 9");
             }
 
-            DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 9, 1, 12, tenPlik);
+            DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 9, 1, 12, false, tenPlik);
             Session["tabelka009"] = tabelka01;
             pisz("tab_9_", 1, 12, tabelka01);
         }
@@ -309,7 +309,7 @@ namespace Statystyki_2018
             {
                 cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 10");
             }
-            DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, idDzialu, 10, 1, 11, tenPlik);
+            DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, idDzialu, 10, 1, 11, false, tenPlik);
             Session["tabelka010"] = tabelka01;
             pisz("tab_10_", 1, 11, tabelka01);
         }
@@ -321,7 +321,7 @@ namespace Statystyki_2018
             {
                 cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 11");
             }
-            DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, idDzialu, 11, 4, 4, tenPlik);
+            DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, idDzialu, 11, 4, 4, false, tenPlik);
             Session["tabelka011"] = tabelka01;
             pisz("tab_12_", 4, 4, tabelka01);
         }
@@ -510,16 +510,7 @@ namespace Statystyki_2018
             }
         }
 
-        /* protected void stopkaTabeli_gwTabela10(object sender, GridViewRowEventArgs e)
-         {
-             if (e.Row.RowType == DataControlRowType.Footer)
-             {
-                 DataTable table = (DataTable)Session["tabelka010"];
-                 tb.makeSumRow(table, e, 0);
-             }
-         }
-         */
-
+       
         protected void stopkaTabeli_gwTabela8(object sender, GridViewRowEventArgs e)
         {
             if (e.Row.RowType == DataControlRowType.Footer)

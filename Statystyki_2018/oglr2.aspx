@@ -330,7 +330,7 @@
         <asp:Label ID="infoLabel3" runat="server" Text="Tabela 2 \/" Visible="False"></asp:Label>
             <br />
 
-            <asp:GridView ID="Gridview2" runat="server" AutoGenerateColumns="False" DataSourceID="" Width="100%" ShowHeader="False" ShowFooter="True" OnRowCreated="naglowekTabeli2" OnRowDataBound="stopkaTabeli2">
+            <asp:GridView ID="Gridview2" runat="server" AutoGenerateColumns="False" DataSourceID="" Width="95%" ShowHeader="False" ShowFooter="True" OnRowCreated="naglowekTabeli2" OnRowDataBound="stopkaTabeli2">
                 <Columns>
                     <asp:BoundField DataField="id" HeaderText="L.p." SortExpression="id">
                         <ItemStyle Width="15px" />
@@ -348,7 +348,7 @@
                                 <asp:Label ID="Label_Gridview2101" runat="server" Text='<%# Eval("d_01")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_200" />
+                        <ItemStyle CssClass="col_120" />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_02" SortExpression="d_01">
                         <ItemTemplate>
@@ -356,7 +356,7 @@
                                 <asp:Label ID="Label_Gridview2102" runat="server" Text='<%# Eval("d_02")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_200" />
+                        <ItemStyle CssClass="col_120" />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_03" SortExpression="d_01">
                         <ItemTemplate>
@@ -364,7 +364,7 @@
                                 <asp:Label ID="Label_Gridview2103" runat="server" Text='<%# Eval("d_03")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_200" />
+                        <ItemStyle CssClass="col_120" />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_04" SortExpression="d_01">
                         <ItemTemplate>
@@ -372,7 +372,7 @@
                                 <asp:Label ID="Label_Gridview2104" runat="server" Text='<%# Eval("d_04")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_200" />
+                        <ItemStyle CssClass="col_120" />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_05" SortExpression="d_01">
                         <ItemTemplate>
@@ -380,7 +380,7 @@
                                 <asp:Label ID="Label_Gridview2105" runat="server" Text='<%# Eval("d_05")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_200" />
+                        <ItemStyle CssClass="col_120" />
                     </asp:TemplateField>
                 </Columns>
             </asp:GridView>
@@ -400,7 +400,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Label ID="infoLabel4" runat="server" Text="Tabela 3 \/" Visible="False"></asp:Label>
             <br />
-            <asp:GridView ID="Gridview3" runat="server" AutoGenerateColumns="False" Width="100%" ShowHeader="False" ShowFooter="True" OnRowCreated="naglowekTabela3" OnRowDataBound="Gridview3_RowDataBound">
+            <asp:GridView ID="Gridview3" runat="server" AutoGenerateColumns="False" Width="95%" ShowHeader="False" ShowFooter="True" OnRowCreated="naglowekTabela3" OnRowDataBound="Gridview3_RowDataBound">
                 <Columns>
                     <asp:BoundField DataField="id" HeaderText="L.p." SortExpression="id">
                         <ItemStyle Width="15px" />
@@ -516,7 +516,7 @@
                     <td class="borderAll center" colspan="7">Ilość spraw przedstawionych II instancji (w czasie liczonym od daty orzeczenia)</td>
                 </tr>
                 <tr>
-                    <td class="borderAll center col_200" rowspan="2">ogółem</td>
+                    <td class="borderAll center col_120" rowspan="2">ogółem</td>
                     <td class="borderAll center" colspan="2">do 3 miesięcy </td>
                     <td class="borderAll center" colspan="2">od 3 do 5 miesięcy</td>
                     <td class="borderAll center" colspan="2">powyżej 5 miesięcy</td>
@@ -644,7 +644,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Label ID="infoLabel7" runat="server" Text="Tabela 6 \/" Visible="False"></asp:Label>
             <br />
-            <asp:GridView ID="Gridview6" runat="server" AutoGenerateColumns="False" Width="100%" ShowHeader="False" ShowFooter="True" OnRowCreated="NaglowekTabela7" OnRowDataBound="Gridview6_RowDataBound">
+            <asp:GridView ID="Gridview6" runat="server" AutoGenerateColumns="False" Width="95%" ShowHeader="False" ShowFooter="True" OnRowCreated="NaglowekTabela7" OnRowDataBound="Gridview6_RowDataBound">
                 <Columns>
                     <asp:BoundField DataField="id" HeaderText="L.p." SortExpression="id">
                         <ItemStyle Width="15px" />
@@ -794,7 +794,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Label ID="infoLabel8" runat="server" Text="Tabela 7 \/" Visible="False"></asp:Label>
             <br />
-            <asp:GridView ID="Gridview7" runat="server" AutoGenerateColumns="False" Width="100%" ShowHeader="False" ShowFooter="True" OnRowCreated="naglowekTabeli8" OnRowDataBound="stopkaTabeli8">
+            <asp:GridView ID="Gridview7" runat="server" AutoGenerateColumns="False" Width="95%" ShowHeader="False" ShowFooter="True" OnRowCreated="naglowekTabeli8" OnRowDataBound="stopkaTabeli8">
                 <Columns>
                     <asp:BoundField DataField="id" HeaderText="L.p." SortExpression="id">
                         <ItemStyle Width="15px" />

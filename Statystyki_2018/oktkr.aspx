@@ -14,7 +14,21 @@
                 left: 0;
                 right: 0;
             }
+              @media print {
 
+            @page {
+                font-size: 7.5pt;
+                size: 29cm 21.7cm;
+                margin: 5mm 5mm 5mm 5mm;
+            }
+
+         
+             .horizontZ {
+                transform: translate(-60mm, 0) scale(0.55);
+                -webkit-transform: translate(-60mm, 0) scale(0.55);
+                -moz-transform: translate(-60mm, 0) scale(0.55);
+            }
+        }
        
     </style>
     <link href="style/oktkr.css" rel="stylesheet" />
@@ -22,8 +36,8 @@
     
     <script src="Scripts/rls.js"></script>
 
-    <div class="noprint">
-        <div id="menu" style="background-color: #f7f7f7; z-index: 9999">
+    
+        <div id="menu" style="background-color: #f7f7f7; z-index: 9999" class="noprint">
             <div class="manu_back" style="height: 40px; margin: 0 auto 0 auto; position: relative; width: 1050px; left: 0px;">
                 <table>
                     <tr>
@@ -43,13 +57,8 @@
                         <td style="width: auto; padding-left: 5px;">
                             <asp:LinkButton ID="LinkButton54" runat="server" CssClass="ax_box" OnClick="LinkButton54_Click">  Odśwież</asp:LinkButton>
                         </td>
-                        <td style="width: auto; padding-left: 5px;">
-                            <asp:LinkButton ID="LinkButton55" runat="server" OnClick="LinkButton55_Click"> Drukuj </asp:LinkButton>
-                        </td>
-                        <td style="width: auto; padding-left: 5px;">
-
-                            <asp:LinkButton ID="LinkButton56" runat="server" OnClick="Button1_Click" CssClass="ax_box" Visible="False">DRUKUJ</asp:LinkButton>
-                        </td>
+                         <td style="width: auto; padding-left: 5px;">
+                    <input id="Button1" class="ax_box" style="border-style: none; padding: 0px" type="button" onclick="JavaScript: window.print();" value="Drukuj" /></td>
                         <td style="width: auto; padding-left: 5px;">
                             <asp:LinkButton ID="LinkButton57" runat="server" CssClass="ax_box" OnClick="Button3_Click">Zapisz do Excel</asp:LinkButton>
                         </td>
@@ -57,7 +66,7 @@
                 </table>
             </div>
         </div>
-    </div>
+   
 
     <div style="width: 1150px; margin: 0 auto 0 auto; position: relative; top: 60px;">
 
@@ -67,14 +76,14 @@
                 <br />
             </div>
         </div>
-        <div id="zalatwienia" class="tabela1">
+        <div id="zalatwienia" >
             <br />
 
             <asp:Label ID="tabela1Label" runat="server"></asp:Label>
             &nbsp;&nbsp;&nbsp;&nbsp;
        <asp:Label ID="infoLabel2" runat="server" Text="Tabela 1\/" Visible="False"></asp:Label>
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" OnRowCreated="GridView1_RowCreated"
-                Width="1150px" ShowHeader="False" OnRowDataBound="GridView1_RowDataBound" ShowFooter="True">
+                Width="99%" ShowHeader="False" OnRowDataBound="GridView1_RowDataBound" ShowFooter="True">
                 <Columns>
                     <asp:BoundField DataField="id" HeaderText="L.p." SortExpression="id">
                         <ItemStyle CssClass="col_25" />
@@ -234,14 +243,14 @@
             <br />
         </div>
 
-        <div id="tab2" class="tabela2 page-break ">
+        <div id="tab2" class="page-break ">
             <br />
 
             <asp:Label ID="tabela2Label" runat="server"></asp:Label>
             &nbsp;&nbsp;&nbsp;&nbsp;
        <asp:Label ID="Label5" runat="server" Text="Tabela 2\/" Visible="False"></asp:Label>
             <br />
-            <asp:GridView ID="tabela_2" runat="server" OnRowCreated="naglowekTabeli_tabela_2" AutoGenerateColumns="False" OnRowDataBound="stopkaTabeli_tabela_2" Width="100%" ShowHeader="False" ShowFooter="True">
+            <asp:GridView ID="tabela_2" runat="server" OnRowCreated="naglowekTabeli_tabela_2" AutoGenerateColumns="False" OnRowDataBound="stopkaTabeli_tabela_2" Width="99%" ShowHeader="False" ShowFooter="True">
                 <Columns>
                     <asp:BoundField DataField="id" HeaderText="L.p." SortExpression="id">
                         <ItemStyle Width="15px" />
@@ -388,7 +397,7 @@
         </div>
     </div>
 
-    <div id="tab3" class="page-break horizont" style="padding-left: 20px; padding-top: 30px;top: 50px;">
+    <div id="tab3" class="page-break horizontZ" style="padding-left: 20px; padding-top: 30px;top: 50px;">
         <br />
 
         <asp:Label ID="tabela3Label" runat="server"></asp:Label>

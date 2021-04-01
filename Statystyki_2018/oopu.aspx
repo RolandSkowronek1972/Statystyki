@@ -66,8 +66,7 @@
         <div id="zalatwienia" style="clear: both;">
 
             <asp:Label ID="Label19" runat="server"></asp:Label>
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False"
-                DataSourceID="statystyki" OnRowCreated="grvMergeHeader_RowCreated" ShowHeader="False" Width="100%" CssClass="GridView1" ShowFooter="True" OnRowDataBound="GridView1_RowDataBound">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" OnRowCreated="grvMergeHeader_RowCreated" ShowHeader="False" Width="100%" CssClass="GridView1" ShowFooter="True" OnRowDataBound="GridView1_RowDataBound">
                 <Columns>
                     <asp:BoundField DataField="id" HeaderText="L.p." SortExpression="id">
                         <ItemStyle Width="15px" />
@@ -163,7 +162,7 @@
                                 <asp:Label ID="Label1009" runat="server" Text='<%# Eval("d_09")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="tx_d1" />
+                        <ItemStyle CssClass="tx_d1" BackColor="#CCCCCC"  />
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="d_10" SortExpression="d_10">
@@ -184,7 +183,7 @@
                                 <asp:Label ID="Label1011" runat="server" Text='<%# Eval("d_11")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="tx_d1" BackColor="#CCCCCC" />
+                        <ItemStyle CssClass="tx_d1"/>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_12" SortExpression="d_12">
                         <ItemTemplate>
@@ -300,7 +299,7 @@
                                 <asp:Label ID="Label1024" runat="server" Text='<%# Eval("d_24")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="tx_d1" BackColor="#CCCCCC" />
+                        <ItemStyle CssClass="tx_d1" />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_25" SortExpression="d_25">
                         <ItemTemplate>
@@ -317,7 +316,7 @@
                                 <asp:Label ID="Label1026" runat="server" Text='<%# Eval("d_26")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="tx_d1" />
+                        <ItemStyle CssClass="tx_d1"  BackColor="#CCCCCC" />
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="d_27" SortExpression="d_27">
@@ -423,7 +422,7 @@
                                 <asp:Label ID="Label1038" runat="server" Text='<%# Eval("d_38")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="tx_d1" BackColor="#ccccccc" />
+                        <ItemStyle CssClass="tx_d1" />
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="d_39" SortExpression="d_39">
@@ -451,7 +450,7 @@
                                 <asp:Label ID="Label1041" runat="server" Text='<%# Eval("d_41")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="tx_d1" />
+                        <ItemStyle CssClass="tx_d1" BackColor="#ccccccc"  />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_32" SortExpression="d_32">
                         <ItemTemplate>
@@ -502,7 +501,7 @@
                                 <asp:Label ID="Label1047" runat="server" Text='<%# Eval("d_47")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="tx_d1" BackColor="#ccccccc" />
+                        <ItemStyle CssClass="tx_d1"  />
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="d_38" SortExpression="d_38">
@@ -520,7 +519,7 @@
                                 <asp:Label ID="Label1049" runat="server" Text='<%# Eval("d_49")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="tx_d1" />
+                        <ItemStyle CssClass="tx_d1" BackColor="#ccccccc" />
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="d_50" SortExpression="d_50">
@@ -529,7 +528,7 @@
                                 <asp:Label ID="Label1050" runat="server" Text='<%# Eval("d_50")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="tx_d1" BackColor="#cccccc" />
+                        <ItemStyle CssClass="tx_d1" />
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="d_51" SortExpression="d_51">
@@ -547,7 +546,7 @@
                                 <asp:Label ID="Label1052" runat="server" Text='<%# Eval("d_52")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="tx_d1" />
+                        <ItemStyle CssClass="tx_d1" BackColor="#cccccc"  />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_53" SortExpression="d_53">
                         <ItemTemplate>
@@ -573,7 +572,7 @@
                                 <asp:Label ID="Label1055" runat="server" Text='<%# Eval("d_55")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="tx_d1" BackColor="#cccccc" />
+                        <ItemStyle CssClass="tx_d1"  />
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="d_56" SortExpression="d_56">
@@ -582,7 +581,7 @@
                                 <asp:Label ID="Label1056" runat="server" Text='<%# Eval("d_56")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="tx_d1" BackColor="#cccccc" />
+                        <ItemStyle CssClass="tx_d1"  />
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="d_57" SortExpression="d_57">
@@ -618,7 +617,7 @@
                                 <asp:Label ID="Label1060" runat="server" Text='<%# Eval("d_60")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="tx_d1" />
+                        <ItemStyle CssClass="tx_d1" BackColor="#cccccc"/>
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="d_51" SortExpression="d_51">
@@ -628,7 +627,7 @@
                                 <asp:Label ID="Label1061" runat="server" Text='<%# Eval("d_61")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="tx_d1" />
+                        <ItemStyle CssClass="tx_d1" BackColor="#cccccc"/>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_52" SortExpression="d_52">
                         <ItemTemplate>
@@ -662,7 +661,7 @@
                                 <asp:Label ID="Label1065" runat="server" Text='<%# Eval("d_65")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="tx_d1" BackColor="#cccccc" />
+                        <ItemStyle CssClass="tx_d1"  />
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="d_56" SortExpression="d_56">
@@ -698,7 +697,7 @@
                                 <asp:Label ID="Label1069" runat="server" Text='<%# Eval("d_69")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="tx_d1" />
+                        <ItemStyle CssClass="tx_d1" BackColor="#cccccc"/>
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="d_50" SortExpression="d_50">
@@ -778,7 +777,7 @@
                                 <asp:Label ID="Label1078" runat="server" Text='<%# Eval("d_78")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="tx_d1" />
+                        <ItemStyle CssClass="tx_d1" BackColor="#cccccc"/>
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="d_59" SortExpression="d_59">
@@ -796,7 +795,7 @@
                                 <asp:Label ID="Label1080" runat="server" Text='<%# Eval("d_80")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="tx_d1" BackColor="#cccccc" />
+                        <ItemStyle CssClass="tx_d1"  />
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="d_51" SortExpression="d_51">
@@ -876,7 +875,7 @@
                                 <asp:Label ID="Label1089" runat="server" Text='<%# Eval("d_89")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="tx_d1" />
+                        <ItemStyle CssClass="tx_d1" BackColor="#cccccc" />
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="d_90" SortExpression="d_90">
@@ -1012,134 +1011,17 @@
                         </ItemTemplate>
                         <ItemStyle CssClass="tx_d1" />
                     </asp:TemplateField>
+                                 <asp:TemplateField HeaderText="d_104" SortExpression="d_104">
+                        <ItemTemplate>
+                            <a href="javascript:openPopup('popup.aspx?sesja=<%# Eval("id_sedziego")+ "!5!105!5"%>')">
+                                <asp:Label ID="Label1105" runat="server" Text='<%# Eval("d_105")%>' CssClass="normal"></asp:Label>
+                            </a>
+                        </ItemTemplate>
+                        <ItemStyle CssClass="tx_d1" />
+                    </asp:TemplateField>
                 </Columns>
                 <FooterStyle HorizontalAlign="Center" />
             </asp:GridView>
-            <asp:SqlDataSource ID="statystyki" runat="server"
-                ConnectionString="<%$ ConnectionStrings:wap %>"
-                SelectCommand="
-	SELECT ROW_NUMBER() OVER( ORDER BY ident ) AS id,
-	 [ident]
-      ,[imie]
-      ,[nazwisko]
-      ,[funkcja]
-      ,[stanowisko]
-      ,[id_sedziego]
-      ,[d_01]
-      ,[d_02]
-      ,[d_03]
-      ,[d_04]
-      ,[d_05]
-      ,[d_06]
-      ,[d_07]
-      ,[d_08]
-      ,[d_09]
-      ,[d_10]
-      ,[d_11]
-      ,[d_12]
-      ,[d_13]
-      ,[d_14]
-      ,[d_15]
-      ,[d_16]
-      ,[d_17]
-      ,[d_18]
-      ,[d_19]
-      ,[d_20]
-      ,[d_21]
-      ,[d_22]
-      ,[d_23]
-      ,[d_24]
-      ,[d_25]
-      ,[d_26]
-      ,[d_27]
-      ,[d_28]
-      ,[d_29]
-      ,[d_30]
-      ,[d_31]
-      ,[d_32]
-      ,[d_33]
-      ,[d_34]
-      ,[d_35]
-      ,[d_36]
-      ,[d_37]
-      ,[d_38]
-      ,[d_39]
-      ,[d_40]
-      ,[d_41]
-      ,[d_42]
-      ,[d_43]
-      ,[d_44]
-      ,[d_45]
-      ,[d_46]
-      ,[d_47]
-      ,[d_48]
-      ,[d_49]
-      ,[d_50]
-      ,[d_51]
-      ,[d_52]
-      ,[d_53]
-      ,[d_54]
-      ,[d_55]
-      ,[d_56]
-      ,[d_57]
-      ,[d_58]
-      ,[d_59]
-      ,[d_60]
-      ,[d_61]
-      ,[d_62]
-      ,[d_63]
-      ,[d_64]
-      ,[d_65]
-      ,[d_66]
-      ,[d_67]
-      ,[d_68]
-      ,[d_69]
-      ,[d_70]
-      ,[d_71]
-      ,[d_72]
-      ,[d_73]
-      ,[d_74]
-      ,[d_75]
-      ,[d_76]
-      ,[d_77]
-      ,[d_78]
-      ,[d_79]
-      ,[d_80]
-      ,[d_81]
-      ,[d_82]
-      ,[d_83]
-      ,[d_84]
-      ,[d_85]
-      ,[d_86]
-      ,[d_87]
-      ,[d_88]
-      ,[d_89]
-      ,[d_90]
-      ,[d_91]
-      ,[d_92]
-      ,[d_93]
-      ,[d_94]
-      ,[d_95]
-      ,[d_96]
-      ,[d_97]
-      ,[d_98]
-      ,[d_99]
-      ,[d_100]
-      ,[d_101]
-      ,[d_102]
-      ,[d_103]
-      ,[d_104]
-      ,[d_105]
-      ,[d_106]
-      ,[d_107]
-      ,[d_108]
-      ,[d_109]
-  FROM tbl_statystyki_tbl_x5
-   WHERE (id_dzialu = @id_dzialu) ORDER BY id">
-                <SelectParameters>
-                    <asp:SessionParameter Name="id_dzialu" SessionField="id_dzialu" DefaultValue="" />
-                </SelectParameters>
-            </asp:SqlDataSource>
         </div>
 
         <br />

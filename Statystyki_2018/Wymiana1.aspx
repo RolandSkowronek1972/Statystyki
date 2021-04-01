@@ -16,7 +16,7 @@
         &nbsp;</p>
     <form id="form1" runat="server">
       
-           <dx:ASPxPageControl ID="citiesTabPage" Width="100%" runat="server" CssClass="dxtcFixed" ActiveTabIndex="0" EnableHierarchyRecreation="True" OnActiveTabChanged="citiesTabPage_ActiveTabChanged" >
+           <dx:ASPxPageControl ID="citiesTabPage" Width="100%" runat="server" CssClass="dxtcFixed" ActiveTabIndex="0" OnActiveTabChanged="citiesTabPage_ActiveTabChanged" >
         <TabPages>
             <dx:TabPage Text="I instancja">
                 <ContentCollection>
@@ -61,7 +61,6 @@
                                 <td>
                                        <dx:ASPxComboBox ID="lbRok" runat="server" Theme="Moderno">
                                        </dx:ASPxComboBox>
-                                       <br />
                                 </td>
                               
                             </tr>
@@ -70,7 +69,6 @@
                                 <td>
                                     <dx:ASPxComboBox ID="lbRodzajSprawy" runat="server" Theme="Moderno">
                                     </dx:ASPxComboBox>
-                                    <br />
                                  </td>
                               
                             </tr>
@@ -90,7 +88,7 @@
                     </dx:ContentControl>
                 </ContentCollection>
             </dx:TabPage>
-            <dx:TabPage Text="I instancja">
+            <dx:TabPage Text="II instancja">
                 <ContentCollection>
                     <dx:ContentControl ID="ContentControl2" runat="server">
                        

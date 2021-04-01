@@ -20,7 +20,7 @@ namespace Statystyki_2018
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            string idWydzial =Request.QueryString["w"];
+            string idWydzial = Request.QueryString["w"];
             if (idWydzial != null)
             {
                 Session["id_dzialu"] = idWydzial;
@@ -43,15 +43,15 @@ namespace Statystyki_2018
                 //cm.log.Debug("otwarcie formularza: " + tenPlik);
                 try
                 {
-                    // file read with version
+                 
                     var fileContents = System.IO.File.ReadAllText(Server.MapPath(@"~//version.txt"));
                     this.Title = "Statystyki " + fileContents.ToString().Trim();
                 }
-#pragma warning disable CS0168 // The variable 'ex' is declared but never used
-                catch (Exception ex)
-#pragma warning restore CS0168 // The variable 'ex' is declared but never used
+
+                catch 
+
                 {
-                    Server.Transfer("default.aspx");
+                   
                 }
             }
             CultureInfo newCulture = (CultureInfo)CultureInfo.CurrentCulture.Clone();
@@ -64,7 +64,7 @@ namespace Statystyki_2018
             Session["data_1"] = Date1.Date.ToShortDateString();
             Session["data_2"] = Date2.Date.ToShortDateString();
             odswiez();
-            makeLabels();
+           
         }// end of Page_Load
 
         protected void pisz(string Template, int iloscWierszy, int iloscKolumn, DataTable dane, string idTabeli, string idWydzialu)
@@ -78,7 +78,7 @@ namespace Statystyki_2018
                 for (int kolumna = 1; kolumna <= iloscKolumn; kolumna++)
                 {
                     string controlName = Template + "w" + wiersz.ToString("D2") + "_c" + kolumna.ToString("D2");
-                   
+
                     Label tb = (Label)this.Master.FindControl("ContentPlaceHolder1").FindControl(controlName);
                     if (tb != null)
                     {
@@ -106,53 +106,36 @@ namespace Statystyki_2018
                 try
                 {
                     string path = Server.MapPath("XMLHeaders") + "\\" + "MSS5o.xml";
-                    Label tblControl = new Label { ID = "kod01" };
-                    tblControl.Width = 1150;
-                    Label tblControl2 = new Label { ID = "kod02" };
-                    tblControl2.Width = 1150;
-                    Label tblControl3 = new Label { ID = "kod03" };
-                    tblControl3.Width = 1150;
-                    StringBuilder tabelaGlowna = new StringBuilder();
-                    tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.1", tabelaDanych, tenPlik));
-                    tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.1.a", tabelaDanych, tenPlik, false));
-                    tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.1.b", tabelaDanych, tenPlik));
-                    tblControl.Text = tabelaGlowna.ToString();
+                    string yyx = (string)Session["id_dzialu"];
+                    int idWydzialuNumerycznie = int.Parse((string)Session["id_dzialu"]);
+                  
+
+                    string[] numeryTabel00 = new string[] { "1.1","1.1.a","1.1.b","1.1.1","1.1.1.a","1.1.2" };
+                    string[] numeryTabel01 = new string[] { "1.4.1", "1.4.2" , "2.1.1" , "2.1.1.a" , "2.1.2" };
+                    string[] numeryTabel02 = new string[] { "9.1.3", "9.2", "9.3" , "9.3.2", "9.3.3", "9.4" };
+                    string[] numeryTabel03 = new string[] { "13.1", "13.1.a", "13.1.b", "13.1.c","13.2" };
+                    string[] numeryTabel04 = new string[] { "14.1.a", "14.2", "15.1", "15.2", "15.3" };
                     tablePlaceHolder.Controls.Clear();
-                    tablePlaceHolder.Controls.Add(tblControl);
-
-                    tabelaGlowna.Clear();
-                    tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "15.3", tabelaDanych, tenPlik));
-                    tblControl2.Text = tabelaGlowna.ToString();
+                    TablePlaceHolder1.Controls.Clear();
+                    TablePlaceHolder10.Controls.Clear();
                     tablePlaceHolder2.Controls.Clear();
-                    tablePlaceHolder2.Controls.Add(tblControl2);
-                    tabelaGlowna.Clear();
 
-                    
+                    ms.TworzTabelizListy(numeryTabel00, tablePlaceHolder, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
+                    ms.TworzTabelizListy(numeryTabel01, TablePlaceHolder1, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
+                    ms.TworzTabelizListy(numeryTabel02, TablePlaceHolder10, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
+                    ms.TworzTabelizListy(numeryTabel03, TablePlaceHolder8, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
+                    ms.TworzTabelizListy(numeryTabel04, TablePlaceHolder9, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
 
-                    tablePlaceHolder6.Controls.Add(new Label { Text = ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.1.1.a", tabelaDanych, tenPlik), Width = 1150, ID = "extraCode01" });
+                    StringBuilder tabelaGlowna = new StringBuilder();
+                   
 
-                    TablePlaceHolder7.Controls.Add(new Label { Text = ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "13.1", tabelaDanych, tenPlik), Width = 1150, ID = "extraCode1" });
-
-                    TablePlaceHolder8.Controls.Add(new Label { Text = ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "13.2", tabelaDanych, tenPlik), Width = 1150, ID = "extraCode2" });
-                    TablePlaceHolder9.Controls.Add(new Label { Text = ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "14.2", tabelaDanych, tenPlik) + ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "15.1", tabelaDanych, tenPlik), Width = 1150, ID = "extraCode3" });
+                   
                 }
                 catch (Exception ex)
 
                 {
                     cm.log.Error("MSS5o bład w wyświetlaniu tabel generowanych dynamicznie " + ex.Message);
                 }
-
-                #region "1.1.1";
-
-                pisz("tab_111_", 36, 9, tabelaDanych, "'1.1.1'", idWydzialu);
-
-                #endregion "1.1.1";
-
-                #region "1.1.2";
-
-                pisz("tab_112_", 29, 9, tabelaDanych, "'1.1.2'", idWydzialu);
-
-                #endregion "1.1.2";
 
                 #region "1.1.2.c";
 
@@ -250,30 +233,7 @@ namespace Statystyki_2018
 
                 #endregion "1.3.2";
 
-                #region "1.4";
-
-                pisz("tab_14_", 19, 14, tabelaDanych, "'1.4'", idWydzialu);
-
-                #endregion "1.4";
-
-                #region "2.1.1";
-
-                pisz("tab_211_", 17, 11, tabelaDanych, "'2.1.1'", idWydzialu);
-
-                #endregion "2.1.1";
-
-                #region "2.1.1.a";
-
-                pisz("tab_211a_", 17, 11, tabelaDanych, "'2.1.1.a'", idWydzialu);
-
-                #endregion "2.1.1.a";
-
-                #region "2.1.2";
-
-                pisz("tab_212_", 17, 11, tabelaDanych, "'2.1.2'", idWydzialu);
-
-                #endregion "2.1.2";
-
+      
                 #region "2.2";
 
                 pisz("tab_22_", 31, 9, tabelaDanych, "'2.2'", idWydzialu);
@@ -465,74 +425,10 @@ namespace Statystyki_2018
                 cm.log.Error("MSS5o bład w całej procedurze wyświetlania " + ex.Message);
             }
 
-            // dopasowanie opisów
-            makeLabels();
-
-            Label11.Visible = false;
-            try
-            {
-                Label11.Visible = cl.debug(int.Parse(idWydzialu));
-            }
-            catch
-            { }
-
-            Label11.Text = txt;
+ 
         }
 
-        protected void makeLabels()
-        {
-            try
-            {
-                string User_id = string.Empty;
-                string domain = string.Empty;
-                try
-                {
-                    User_id = (string)Session["user_id"];
-                    domain = (string)Session["damain"];
-                }
-                catch
-                { }
-
-                id_dzialu.Text = (string)Session["txt_dzialu"];
-                Label28.Text = cl.podajUzytkownika(User_id, domain);
-                //Label29.Text = DateTime.Now.ToLongDateString();
-                try
-                {
-                    Label30.Text = System.IO.File.ReadAllText(Server.MapPath(@"~//version.txt")).ToString().Trim();
-                }
-                catch
-                { }
-
-                string strMonthName = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(Date2.Date.Month);
-                int last_day = DateTime.DaysInMonth(Date2.Date.Year, Date2.Date.Month);
-                if (((Date1.Date.Day == 1) && (Date2.Date.Day == last_day)) && ((Date1.Date.Month == Date2.Date.Month)))
-                {
-                    // cały miesiąc
-                    //       tabela1Label.Text = "Dział 1.1.1.a.1 Liczba spraw o umieszczenie w szpitalu psychiatrycznym bez zgody, w którym natąpiło przekroczenie terminu 14 dni od dnia wpływu wniosku lub zawiadomienia o przyjęciu do szpitala psychiatrycznego osoby chorej psychicznie lub z zaburzeniami psychicznymi wymaganego w celu odbycia rozprawy [art. 45 ust. 1 ustawy z dnia 19 sierpnia 1994 r. o ochronie zdrowia psychicznego (Dz. U. z 2016 r., poz. 546 )] za miesiąc " + strMonthName + " " + Date2.Date.Year.ToString() + " roku.";
-                    //      tabela2Label.Text = "Dział 1.1.1.a.2. Liczba spraw o umieszczenie w szpitalu psychiatrycznym bez zgody, w których wydano zarządzenie o doprowadzeniu osoby pozostającej w szpitalu, a której postępowanie bezpośrednio dotyczy na rozprawę, stosownie do możliwości przewidzianej w przepisie art. 46 ust. 1a ustawy z dnia 19 sierpnia 1994 r. o ochronie zdrowia psychicznego (Dz. U. z 2016 r., poz. 546) za miesiąc " + strMonthName + " " + Date2.Date.Year.ToString() + " roku.";
-                    //    tabela3Label.Text = "Dział 4.1. Terminowość postępowania międzyinstancyjnego w pierwszej instancji za miesiąc " + strMonthName + " " + Date2.Date.Year.ToString() + " roku.";
-                    //     tabela4Label.Text = "Dział 2.2.a. Czas trwania postępowania sądowego od dnia pierwszej rejestracji do dnia uprawomocnienia się sprawy merytorycznie zakończonej (wyrokiem, orzeczeniem) w I instancji (łącznie z czasem trwania mediacji) za miesiąc " + strMonthName + " " + Date2.Date.Year.ToString() + " roku.";
-
-                    //   tabela5Label.Text = "Dział 11.1. Terminowość postępowania międzyinstancyjnego  w pierwszej instancji za miesiąc " + strMonthName + " " + Date2.Date.Year.ToString() + " roku.";
-                    //Informacje o ruchu sprawa za miesiąc: 
-
-                    //Pozostało z ubieglego miesiąca
-                }
-                else
-                {
-                    // tabela1Label.Text = "Dział 1.1.1.a.1 Liczba spraw o umieszczenie w szpitalu psychiatrycznym bez zgody, w którym natąpiło przekroczenie terminu 14 dni od dnia wpływu wniosku lub zawiadomienia o przyjęciu do szpitala psychiatrycznego osoby chorej psychicznie wymaganego w celu odbycia rozprawy [art. 45 ust. 1 ustawy z dnia 19 sierpnia 1994 r. o ochronie zdrowia psychicznego (Dz. U. z 2016 r., poz. 546 )] za okres od:  " + Date1.Text + " do  " + Date2.Text;
-                    //       tabela2Label.Text = "Dział 1.1.1.a.2. Liczba spraw o umieszczenie w szpitalu psychiatrycznym bez zgody, w których wydano zarządzenie o doprowadzeniu osoby pozostającej w szpitalu, a której postępowanie bezpośrednio dotyczy na rozprawę, stosownie do możliwości przewidzianej w przepisie art. 46 ust. 1a ustawy z dnia 19 sierpnia 1994 r. o ochronie zdrowia psychicznego (Dz. U. z 2016 r., poz. 546) za okres od " + Date1.Text + " do  " + Date2.Text;
-                    //     tabela3Label.Text = "Dział 4.1. Terminowość postępowania międzyinstancyjnego w pierwszej instancji za okres od" + Date1.Text + " do  " + Date2.Text;
-
-                    //   tabela4Label.Text = "Dział 2.2.a. Czas trwania postępowania sądowego od dnia pierwszej rejestracji do dnia uprawomocnienia się sprawy merytorycznie zakończonej (wyrokiem, orzeczeniem) w I instancji (łącznie z czasem trwania mediacji) za okres od " + Date1.Text + " do  " + Date2.Text;
-
-                    // tabela5Label.Text = "Dział 11.1. Terminowość postępowania międzyinstancyjnego  w pierwszej instancji za okres od " + Date1.Text + " do  " + Date2.Text;
-                }
-            }
-            catch
-            {
-            }
-        }
+      
 
         protected void LinkButton54_Click(object sender, EventArgs e)
         {

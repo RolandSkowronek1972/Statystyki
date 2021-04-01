@@ -22,6 +22,7 @@ namespace Statystyki_2018
             {
                 if (idWydzial == null)
                 {
+                    Server.Transfer("default.aspx");
                     return;
                 }
                 bool dost = cm.dostep(idWydzial, (string)Session["identyfikatorUzytkownika"]);
@@ -541,12 +542,12 @@ namespace Statystyki_2018
                 MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[6], (DataTable)Session["tabelka006"], 7, 0, 5, false, true, false, false, false);
                 MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[7], (DataTable)Session["tabelka007"], 4, 2, 1, 3, false);//
                 MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[8], (DataTable)Session["tabelka008"], 4, 3, 1, 4, false);
-                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[9], (DataTable)Session["tabelka009"], 3, 3, 1, 3, false);
-                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[10], (DataTable)Session["tabelka010"], 16, 6, 2, 4, false);
-                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[11], (DataTable)Session["tabelka011"], 5, 7, 1, 4, false);
-                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[12], (DataTable)Session["tabelka012"], 4, 3, 1, 3, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[9], (DataTable)Session["tabelka009"], 3,2, 2, 3, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[10], (DataTable)Session["tabelka010"], 17, 6, 2, 4, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[11], (DataTable)Session["tabelka011"], 5, 6, 2, 4, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[12], (DataTable)Session["tabelka012"], 4, 2, 2, 3, false);
                 MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[13], (DataTable)Session["tabelka013"], 16, 9, 2, 5, false);
-
+                MyWorksheet1 = tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[14], (DataTable)Session["tabelka014"], 16, 6, 2, 5, false);
                 try
                 {
                     MyExcel.SaveAs(fNewFile);
@@ -640,18 +641,21 @@ namespace Statystyki_2018
                             var typKontrolki = kontrolka.GetType();
                             var nazwaTypu = typKontrolki.Name;
                             cm.log.Info(tenPlik + " nazwaTypu " + nazwaTypu);
+                            DataRow wierszDanych = dane.Rows[wiersz - 1];
+                            string nazwaKolumny = "d_" + kolumna.ToString("D2");
+                            string wartosc = wierszDanych[nazwaKolumny].ToString().Trim();
                             if (string.Equals(nazwaTypu.ToString(), "Label"))
                             {
                                 cm.log.Info(tenPlik + " Typ Label ");
                                 Label tb = (Label)this.Master.FindControl("ContentPlaceHolder1").FindControl(controlName);
-                                tb.Text = dane.Rows[wiersz - 1][kolumna].ToString().Trim();
+                                tb.Text = wartosc;//dane.Rows[wiersz - 1][kolumna].ToString().Trim();
                             }
                             else
                             {
                                 cm.log.Info(tenPlik + " Typ textbox ");
 
                                 TextBox tbx = (TextBox)this.Master.FindControl("ContentPlaceHolder1").FindControl(controlName);
-                                tbx.Text = dane.Rows[wiersz - 1][kolumna].ToString().Trim();
+                                tbx.Text = wartosc;// dane.Rows[wiersz - 1][kolumna].ToString().Trim();
                             }
                         }
                     }
@@ -659,30 +663,7 @@ namespace Statystyki_2018
                     {
                         cm.log.Error(tenPlik + " pisz " + ex.Message);
                     }
-                    /*
-                    try
-                    {
-                        Label tb = (Label)this.Master.FindControl("ContentPlaceHolder1").FindControl(controlName);
-                        if (tb != null)
-                        {
-                            tb.Text = dane.Rows[wiersz - 1][kolumna].ToString().Trim();
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                    }
-                    try
-                    {
-                        TextBox tbx = (TextBox)this.Master.FindControl("ContentPlaceHolder1").FindControl(controlName);
-                        if (tbx != null)
-                        {
-                            tbx.Text = dane.Rows[wiersz - 1][kolumna].ToString().Trim();
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                    }
-                    */
+                  
                 }
             }
         }// end of pisz

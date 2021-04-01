@@ -85,7 +85,7 @@ namespace Statystyki_2018
                 bool debug = cl.debug(int.Parse(idDzialu));
                 cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 2", debug);
 
-                DataTable tabelka02 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 2, 11, 22, tenPlik);
+                DataTable tabelka02 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 2, 11, 22, false, tenPlik);
                 Session["tabelka002"] = tabelka02;
 
                 cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 1", debug);

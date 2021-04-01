@@ -94,6 +94,8 @@ namespace Statystyki_2018
                 cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 5");
 
                 Session["tabelka001"] = dr.tworzTabele(int.Parse(dzial), 5, Date1.Date, Date2.Date, 130, GridView1, tenPlik);
+            
+                GridView1.DataSource = (DataTable)Session["tabelka001"];
                 GridView1.DataBind();
             }
             catch (Exception ex)
@@ -103,7 +105,7 @@ namespace Statystyki_2018
 
             // dopasowanie opisów
             makeLabels();
-            GridView1.DataBind();
+           
             Label11.Visible = false;
             try
             {
@@ -1209,7 +1211,13 @@ namespace Statystyki_2018
                 HeaderGridRow.Cells.Add(HeaderCell);
                 HeaderCell.BackColor = System.Drawing.Color.LightGray;
                 GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
+                HeaderCell = new TableCell();
+                HeaderCell.Text = "zaległość z roku poprzedniego";
+                HeaderCell.ColumnSpan = 1;
+                HeaderCell.RowSpan = 5;
+                HeaderGridRow.Cells.Add(HeaderCell);
+                HeaderCell.BackColor = System.Drawing.Color.LightGray;
+                GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
                 HeaderCell = new TableCell();
                 HeaderCell.Text = "WPŁYW";
                 HeaderCell.ColumnSpan = 8;
@@ -1421,7 +1429,7 @@ namespace Statystyki_2018
 
                     DataTable table = (DataTable)Session["tabelka001"];
 
-                    MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], table, 116, 0, 5, true, true, false, false, false);
+                    MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], table, 106, 0, 7, true, true, false, false, true);
                 }
                 catch 
                 {

@@ -14,6 +14,21 @@
                 left: 0;
                 right: 0;
             }
+             @media print {
+
+            @page {
+                font-size: 7.5pt;
+                size: 29cm 21.7cm;
+                margin: 5mm 5mm 5mm 5mm;
+            }
+
+         
+             .horizont {
+                transform: translate(-80mm, 0) scale(0.45);
+                -webkit-transform: translate(-80mm, 0) scale(0.45);
+                -moz-transform: translate(-80mm, 0) scale(0.45);
+            }
+        }
     </style>
 
     <script src="Scripts/rls.js"></script>
@@ -64,14 +79,17 @@
             <asp:Label ID="Label5" runat="server"></asp:Label>
 
             <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False"
-                OnRowCreated="GridView2_RowCreated" DataSourceID="dane_do_tabeli_1"
-                Width="100%" ShowHeader="False" DataKeyNames="opis,d_01,d_02,d_03,d_04,d_05,d_06,d_07,d_08,d_09,d_10,d_11,d_12,d_13,d_14,d_15,id_tabeli">
+                OnRowCreated="GridView2_RowCreated"
+                Width="99%" ShowHeader="False" DataKeyNames="opis,d_01,d_02,d_03,d_04,d_05,d_06,id_tabeli,id_">
                 <Columns>
-                    <asp:TemplateField HeaderText="opis" SortExpression="opis">
+                    
+                      <asp:TemplateField HeaderText="d_01" SortExpression="d_01">
                         <ItemTemplate>
-                            <itemstyle cssclass="t1_opis" />
-                            <asp:Label ID="Label1" runat="server" Text='<%# Bind("opis") %>'></asp:Label>
+                            
+                                <asp:Label ID="Label101" runat="server" Text='<%# Eval("opis")%>' CssClass="normal"></asp:Label>
+                           
                         </ItemTemplate>
+                        <ItemStyle CssClass="t1_d3_r" />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_01" SortExpression="d_01">
                         <ItemTemplate>
@@ -124,24 +142,13 @@
                 </Columns>
             </asp:GridView>
 
-            <asp:SqlDataSource ID="dane_do_tabeli_1" runat="server"
-                ConnectionString="<%$ ConnectionStrings:wap %>"
-                SelectCommand="SELECT DISTINCT id_, opis, d_01, d_02, d_03, d_04, d_05, d_06, d_07, d_08, d_09, d_10, d_11, d_12, d_13, d_14, d_15,id_tabeli
-FROM            tbl_statystyki_tbl_01
-WHERE        (id_dzialu = @id_dzialu) AND (id_tabeli = 1)
-ORDER BY id_">
-                <SelectParameters>
-                    <asp:SessionParameter Name="id_dzialu" SessionField="id_dzialu" />
-                </SelectParameters>
-            </asp:SqlDataSource>
         </div>
         <div id="zalatwienia" class="page-break">
             <br />
 
             <asp:Label ID="Label19" runat="server"></asp:Label>
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" OnRowCreated="grvMergeHeader_RowCreated"
-                OnSelectedIndexChanged="GridView1_SelectedIndexChanged"
-                Width="100%" ShowHeader="False">
+                Width="99%" ShowHeader="False">
                 <Columns>
                     <asp:BoundField DataField="id" HeaderText="id" SortExpression="id" />
                     <asp:BoundField DataField="funkcja" HeaderText="funkcja"
@@ -256,7 +263,7 @@ ORDER BY id_">
         </div>
         <div id="wyznaczenia" class="page-break">
             &nbsp;<asp:Label ID="Label17" runat="server"></asp:Label>
-            <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False" OnRowCreated="GridView3_RowCreated" Width="100%" ShowHeader="False">
+            <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False" OnRowCreated="GridView3_RowCreated" Width="99%" ShowHeader="False">
                 <Columns>
                     <asp:BoundField DataField="id" HeaderText="id" SortExpression="id" />
                     <asp:BoundField DataField="funkcja" HeaderText="funkcja"
@@ -337,7 +344,7 @@ ORDER BY id_">
         </div>
            <div id="cos" class="page-break">
             &nbsp;<asp:Label ID="Label15" runat="server"></asp:Label>
-            <asp:GridView ID="GridView4" runat="server" AutoGenerateColumns="False" OnRowCreated="GridView4_RowCreated" Width="100%" ShowHeader="False">
+            <asp:GridView ID="GridView4" runat="server" AutoGenerateColumns="False" OnRowCreated="GridView4_RowCreated" Width="99%" ShowHeader="False">
                 <Columns>
                     <asp:BoundField DataField="id" HeaderText="id" SortExpression="id" />
                     <asp:BoundField DataField="funkcja" HeaderText="funkcja"

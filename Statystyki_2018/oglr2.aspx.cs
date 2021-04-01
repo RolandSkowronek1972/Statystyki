@@ -92,7 +92,7 @@ namespace Statystyki_2018
             try
             {
                 //cm.log.Info("OGLR2: wczytywanie danych do tabeli 1");
-                tabelkaGW1 = dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse((string)Session["id_dzialu"]), 1, Date1.Date, Date2.Date, 30, tenPlik);
+                tabelkaGW1 = dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse((string)Session["id_dzialu"]), 1, Date1.Date, Date2.Date, 32, tenPlik);
                 Session["tabelka001"] = tabelkaGW1;
                 Tabela1.DataSource = null;
                 Tabela1.DataSourceID = null;
@@ -531,7 +531,7 @@ namespace Statystyki_2018
                 table.Columns.Remove("stanowisko");
                 table.Columns.Remove("funkcja");
                 table.Columns.Remove("id_tabeli");
-                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], table, 32, 0, 5, false,true, false, false, false);
+                MyWorksheet1 = tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], table, 31, 0, 5, false,true, false, false, false);
 
                 //druga
 

@@ -2,6 +2,7 @@
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Globalization;
 
 namespace Statystyki_2018
 {
@@ -10,7 +11,7 @@ namespace Statystyki_2018
         public string con_str = ConfigurationManager.ConnectionStrings["wap"].ConnectionString;
         public string con_str_wcyw = ConfigurationManager.ConnectionStrings["wcywConnectionString"].ConnectionString;
         public log_4_net log = new log_4_net();
-        
+
         public string podajMiesiac(int numerMiesiaca)
         {
             switch (numerMiesiaca)
@@ -154,15 +155,13 @@ namespace Statystyki_2018
         {
             //log.Info("runQuerry is started");
 
-           
-
             var conn = new SqlConnection(connStr);
             using (SqlCommand sqlCmd = new SqlCommand(kwerenda, conn))
             {
                 try
                 {
                     sqlCmd.CommandTimeout = 0;
-                
+
                     //log.Info("Open DB connection");
                     conn.Open();
                     //log.Info("DB connection is open");
@@ -303,26 +302,29 @@ namespace Statystyki_2018
             }
             return false;
         }
+
         public enum pola
         {
             iloscWieszyNaglowka = 0,
             ilosckolunPrzedIteracja = 1,
             ilosckolunPoIteracji = 2,
             lp = 3,
-
+           
             //===============
             informacjeOtabeli = 0,
 
             naglowek = 1,
             tabelaBoczna = 2,
-
+            tabelaStyli = 3,
             //nr noda z komorkami
             nodZkomorkami = 4
         }
+
         internal DataTable PodajListeKwerend(int v1, int id_tabeli, int v2, string tenPlik)
         {
             throw new NotImplementedException();
         }
+
         public DataTable schematTabeli()
         {
             DataTable dT = new DataTable();
@@ -336,6 +338,33 @@ namespace Statystyki_2018
             dT.Columns.Add("pustak", typeof(string));
 
             return dT;
+        }
+
+        public DataTable schematTabeliStyli()
+        {
+            DataTable dT = new DataTable();
+            dT.Columns.Clear();
+            dT.Columns.Add("nrKolumny", typeof(int));
+            dT.Columns.Add("style", typeof(string));
+
+            return dT;
+        }
+        public string tekstNadTabelą(string tekst, DateTime poczatek, DateTime koniec)
+        {
+            string strMonthName = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(koniec.Month);
+            int last_day = DateTime.DaysInMonth(koniec.Year, koniec.Month);
+            string textWyjcciowy = string.Empty;
+            if ((poczatek.Day == 1) && ((koniec.Day == last_day) && (poczatek.Month == koniec.Month)))
+            {
+                // cały miesiąc
+                textWyjcciowy = tekst +" za "+ strMonthName + " " + koniec.Year.ToString() + " roku.";
+            }
+            else
+            {
+                textWyjcciowy = tekst +  " za okres od " + poczatek.ToShortDateString() + " do  " + koniec.ToShortDateString();
+            }
+
+            return textWyjcciowy;
         }
     } // end of common
 }

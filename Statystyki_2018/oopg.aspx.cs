@@ -1,6 +1,6 @@
 ﻿/*
 Last Update:
-    - version 1.191210
+    - version 1.210307
 Creation date: 2018-12-11
 
 */
@@ -144,8 +144,8 @@ namespace Statystyki_2018
             {
                 ExcelWorksheet MyWorksheet1 = MyExcel.Workbook.Worksheets[1];
 
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], tabela, 110, 0, 8, true, true, false, false, false);
-                tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 12, 117, 0, 8, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], tabela, 106, 0, 8, true, true, false, false, false);
+                tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 12, 116, 0, 8, false);
 
                 try
                 {
@@ -236,14 +236,14 @@ namespace Statystyki_2018
             mediacje.Columns.Add(DevExpressXXL.kolumnaDoTabeli("WPŁYW  liczba spraw, w których strony skierowano do mediacji      ", "d_100", idTabeli, "", false, szerokoscKolumny));
             mediacje.Columns.Add(DevExpressXXL.podKolumna(new string[] { "liczba ugód zawartych przed mediatorem", "w tym zatwierdzono ugodę" }, 101, idTabeli, false, szerokoscKolumny, "rozstrzygnięcie"));
             ASPxGridView1.Columns.Add(mediacje);
-            ASPxGridView1.Columns.Add(DevExpressXXL.kolumnaDoTabeli("Uwagi", "d_102", idTabeli, "", false, szerokoscKolumny));
+            ASPxGridView1.Columns.Add(DevExpressXXL.kolumnaDoTabeli("Uwagi", "d_103", idTabeli, "", false, szerokoscKolumny));
 
-            ASPxGridView1.Columns.Add(DevExpressXXL.podKolumna(new string[] { "na rozprawie", "na posiedzeniu" }, 103, idTabeli, false, szerokoscKolumny, "suma kontrolna"));
+            ASPxGridView1.Columns.Add(DevExpressXXL.podKolumna(new string[] { "na rozprawie", "na posiedzeniu" }, 104, idTabeli, false, szerokoscKolumny, "suma kontrolna"));
 
 
             ASPxGridView1.TotalSummary.Clear();
             ASPxGridView1.TotalSummary.Add(DevExpressXXL.komorkaSumujaca("Ogółem"));
-            for (int i = 1; i < 106; i++)
+            for (int i = 1; i < 107; i++)
             {
                 ASPxGridView1.TotalSummary.Add(DevExpressXXL.komorkaSumujaca(i));
             }

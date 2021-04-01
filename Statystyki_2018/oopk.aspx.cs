@@ -334,7 +334,7 @@ namespace Statystyki_2018
             {
                 ExcelWorksheet MyWorksheet = MyExcel.Workbook.Worksheets[1];
 
-                tb.tworzArkuszwExcle(MyWorksheet, (DataTable)Session["tabelka001"], 100, 0,6, true, true, false, false, true);
+                tb.tworzArkuszwExcle(MyWorksheet, (DataTable)Session["tabelka001"], 101, 0,6, true, true, false, false, false);
 
                 try
                 {

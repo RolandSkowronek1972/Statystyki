@@ -8,7 +8,7 @@
       <tekstNadTabela>Ewidencja spraw z zakresu prawa pracy i ubezpieczeń społecznych – ogółem</tekstNadTabela>
       <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>0</iloscKolumnPrzedIteracja>
-      <iloscKolumnPoIteracji>11</iloscKolumnPoIteracji>
+      <iloscKolumnPoIteracji>12</iloscKolumnPoIteracji>
       <lp>0</lp>
       <identyfikatorTabeli>1</identyfikatorTabeli>
     </daneTabeli>
@@ -305,7 +305,7 @@
     <daneTabeli>
 
       <iloscWierszy>3</iloscWierszy>
-      <tekstNadTabela>Zaøatwienia</tekstNadTabela>
+      <tekstNadTabela>Załatwienia</tekstNadTabela>
       <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>0</iloscKolumnPrzedIteracja>
       <iloscKolumnPoIteracji>16</iloscKolumnPoIteracji>
@@ -478,7 +478,7 @@
         <style>center col_60</style>
         <text>Nkd </text>
       </komorka>
-     <komorka>
+      <komorka>
         <wiersz>2</wiersz>
         <kolumna>13</kolumna>
         <colSpan>0</colSpan>
@@ -649,17 +649,9 @@
         <style>center col_60</style>
         <text>Nkd </text>
       </komorka>
-     <komorka>
-        <wiersz>2</wiersz>
+        <komorka>
+       <wiersz>2</wiersz>
         <kolumna>11</kolumna>
-        <colSpan>0</colSpan>
-        <rowspan>0</rowspan>
-        <style>center col_60</style>
-        <text>Razem </text>
-      </komorka>
-     <komorka>
-        <wiersz>2</wiersz>
-        <kolumna>10</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style>center col_60</style>

@@ -94,15 +94,6 @@ namespace Statystyki_2018 {
         protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// tabela_1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource tabela_1;
-        
-        /// <summary>
         /// tabela1Label control.
         /// </summary>
         /// <remarks>

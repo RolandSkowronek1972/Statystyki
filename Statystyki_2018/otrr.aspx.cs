@@ -86,7 +86,7 @@ namespace Statystyki_2018
 
             try
             {
-                DataTable Tabela1 = cl.generuj_dane_do_tabeli_wierszy(Date1.Date, Date2.Date, idDzialu, 1, 12, 17, tenPlik);
+                DataTable Tabela1 = cl.generuj_dane_do_tabeli_wierszy(Date1.Date, Date2.Date, idDzialu, 1, 13, 20, tenPlik);
 
                 Session["tabelka001"] = Tabela1;
                 GridView2.DataSource = null;
@@ -96,6 +96,8 @@ namespace Statystyki_2018
             }
             catch (Exception ex)
             {
+                string exx = ex.Message;
+                cm.log.Error(tenPlik + " :Generowanie tabeli danych nr 1:  " + ex.Message + " " + tenPlik);
             }
 
             try
@@ -105,15 +107,18 @@ namespace Statystyki_2018
                 Session["tabelka004"] = dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse(idDzialu), 4, Date1.Date, Date2.Date, 17, tenPlik);
                 string path = Server.MapPath("XMLHeaders") + "\\" + "otrr1.xml";
                 StringBuilder Tabele = new StringBuilder();
-                Tabele.Append(xMLHeaders.TabelaSedziowskaXML(path, int.Parse(idDzialu), "2", (DataTable)Session["tabelka002"], true, true, true, true, tenPlik));
-                Tabele.Append(xMLHeaders.TabelaSedziowskaXML(path, int.Parse(idDzialu), "3", (DataTable)Session["tabelka003"], true, true, true, true, tenPlik));
-                Tabele.Append(xMLHeaders.TabelaSedziowskaXML(path, int.Parse(idDzialu), "4", (DataTable)Session["tabelka004"], true, true, true, true, tenPlik));
+                Tabele.Append(xMLHeaders.TabelaSedziowskaXML(path, int.Parse(idDzialu), "2", (DataTable)Session["tabelka002"], true, true, true, true,"", tenPlik));
+                Tabele.Append(xMLHeaders.TabelaSedziowskaXML(path, int.Parse(idDzialu), "3", (DataTable)Session["tabelka003"], true, true, true, true,"", tenPlik));
+                Tabele.Append(xMLHeaders.TabelaSedziowskaXML(path, int.Parse(idDzialu), "4", (DataTable)Session["tabelka004"], true, true, true, true,"", tenPlik));
 
                 tablePlaceHolder01.Controls.Add(new Label { Text = Tabele.ToString(), ID = "id1" });
             }
-            catch
+            catch (Exception ex)
             {
+                string exx = ex.Message;
+                cm.log.Error(tenPlik + " :Generowanie tabeli danych:  " + ex.Message+" " + tenPlik);
             }
+        
 
             //     makeLabels();
 
@@ -146,13 +151,14 @@ namespace Statystyki_2018
             dT_01.Rows.Add(new Object[] { "1", "RNc", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "RCo", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "Nmo", "1", "1" });
+            dT_01.Rows.Add(new Object[] { "1", "RCps", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "WSC", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "RCz", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "Nkd", "1", "1" });
 
             dT_01.Rows.Add(new Object[] { "1", "Łącznie", "1", "1" });
             dT_01.Rows.Add(new Object[] { "2", "Ruch spraw", "1", "2" });
-            dT_01.Rows.Add(new Object[] { "2", "sprawy wg. repertoriów lub wykazów", "10", "1" });
+            dT_01.Rows.Add(new Object[] { "2", "sprawy wg. repertoriów lub wykazów", "11", "1" });
             return dT_01;
         }
 
@@ -200,10 +206,10 @@ namespace Statystyki_2018
                 }
 
                 // druga
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 17, 0, 6, true, false, true, true, false);
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 14, 0, 4, true, false, true, true, false);
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 14, 0, 4, true, false, true, true, false);
-
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 17, 0, 6, true, true, true, true, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 12, 0, 4, true, true, true, true, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 12, 0, 4, true, true, true, true, false);
+                
                 try
                 {
                     MyExcel.SaveAs(fNewFile);

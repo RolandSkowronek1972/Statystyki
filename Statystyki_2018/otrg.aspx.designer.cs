@@ -121,15 +121,6 @@ namespace Statystyki_2018 {
         protected global::System.Web.UI.WebControls.GridView GridView2;
         
         /// <summary>
-        /// dane_do_tabeli2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource dane_do_tabeli2;
-        
-        /// <summary>
         /// Label17 control.
         /// </summary>
         /// <remarks>
@@ -148,15 +139,6 @@ namespace Statystyki_2018 {
         protected global::System.Web.UI.WebControls.GridView GridView3;
         
         /// <summary>
-        /// tabela_3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource tabela_3;
-        
-        /// <summary>
         /// Label15 control.
         /// </summary>
         /// <remarks>
@@ -173,15 +155,6 @@ namespace Statystyki_2018 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView4;
-        
-        /// <summary>
-        /// tabela_4 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource tabela_4;
         
         /// <summary>
         /// Label27 control.

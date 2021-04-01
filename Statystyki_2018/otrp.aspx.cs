@@ -69,7 +69,7 @@ namespace Statystyki_2018
                         var fileContents = System.IO.File.ReadAllText(Server.MapPath(@"~//version.txt"));    // file read with version
                         this.Title = "Statystyki " + fileContents.ToString().Trim();
                         odswiez();
-                        //makeLabels();
+                      
                     }
                 }
             }
@@ -96,6 +96,7 @@ namespace Statystyki_2018
             }
             catch (Exception ex)
             {
+                var x = ex.Message;
             }
 
             try
@@ -105,9 +106,9 @@ namespace Statystyki_2018
                 Session["tabelka004"] = dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse(idDzialu), 4, Date1.Date, Date2.Date, 17, tenPlik);
                 string path = Server.MapPath("XMLHeaders") + "\\" + "otrp.xml";
                 StringBuilder Tabele = new StringBuilder();
-                Tabele.Append(xMLHeaders.TabelaSedziowskaXML(path, int.Parse(idDzialu), "2", (DataTable)Session["tabelka002"], true, true, true, true, tenPlik));
-                Tabele.Append(xMLHeaders.TabelaSedziowskaXML(path, int.Parse(idDzialu), "3", (DataTable)Session["tabelka003"], true, true, true, true, tenPlik));
-                Tabele.Append(xMLHeaders.TabelaSedziowskaXML(path, int.Parse(idDzialu), "4", (DataTable)Session["tabelka004"], true, true, true, true, tenPlik));
+                Tabele.Append(xMLHeaders.TabelaSedziowskaXML(path, int.Parse(idDzialu), "2", (DataTable)Session["tabelka002"], true, true, true, true,"", tenPlik));
+                Tabele.Append(xMLHeaders.TabelaSedziowskaXML(path, int.Parse(idDzialu), "3", (DataTable)Session["tabelka003"], true, true, true, true,"", tenPlik));
+                Tabele.Append(xMLHeaders.TabelaSedziowskaXML(path, int.Parse(idDzialu), "4", (DataTable)Session["tabelka004"], true, true, true, true,"", tenPlik));
 
                 tablePlaceHolder01.Controls.Add(new Label { Text = Tabele.ToString(), ID = "id1" });
             }
@@ -199,9 +200,9 @@ namespace Statystyki_2018
                 }
 
                 // druga
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 14, 0, 6, true, false, true, true, false);
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 10, 0, 4, true, false, true, true, false);
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 10, 0, 4, true, false, true, true, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 15, 0, 6, true, true, true, true, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 11, 0, 4, true, true, true, true, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 10, 0, 4, true, true, true, true, false);
 
                 try
                 {

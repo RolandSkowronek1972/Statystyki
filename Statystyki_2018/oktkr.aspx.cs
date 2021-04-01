@@ -341,11 +341,7 @@ namespace Statystyki_2018
             { }
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            odswiez();
-            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print2", "JavaScript: window.print();", true);
-        }
+       
 
         protected void Button3_Click(object sender, EventArgs e)
         {
@@ -368,7 +364,7 @@ namespace Statystyki_2018
 
                 DataTable table2 = (DataTable)Session["tabelka002"];
 
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], table2, 16, 0, 8, true, true, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], table2, 17, 0, 8, true, true, false, false, false);
 
                 //trzecia
 
@@ -400,21 +396,15 @@ namespace Statystyki_2018
             odswiez();
         }
 
-        protected void LinkButton55_Click(object sender, EventArgs e)
-        {
-            makeLabels();
-            odswiez();
-            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print2", "JavaScript: window.print();", true);
-            makeLabels();
-        }
+      
 
         protected void GridView1_RowCreated(object sender, GridViewRowEventArgs e)
         {
             if (e.Row.RowType == DataControlRowType.Header)
             {
-                System.Web.UI.WebControls.GridView sn = new System.Web.UI.WebControls.GridView();
+               
                 DataTable dT = (DataTable)Session["header_01"];
-                tb.makeHeader(sn, dT, GridView1);
+                tb.makeHeader( dT, GridView1);
             }
         }
 
