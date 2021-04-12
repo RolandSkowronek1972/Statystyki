@@ -226,7 +226,17 @@ namespace Statystyki_2018
             return kolumnaWyjsciowa;
         }
 
+        public GridViewBandColumn sesjeSedziegoNew(int przesuniecie, string idTabeli, int szerokoscKolumny)
+        {
+            GridViewBandColumn _sesjeSedziego = GetBoundColumn("sesje odbyte przez sędziego ");
 
+           
+            _sesjeSedziego.Columns.Add(kolumnaDoTabeli("ogółem", "d_" + przesuniecie.ToString("D2"), idTabeli, "", false, szerokoscKolumny));
+            _sesjeSedziego.Columns.Add(podKolumna(new string[] { "rozprawy", "posiedzenia jawne", "posiedzenia niejawne" }, przesuniecie + 1, idTabeli, false, szerokoscKolumny, "z tego "));
+           
+            
+            return _sesjeSedziego;
+        }
         public GridViewBandColumn sesjeSedziego(int przesuniecie, string idTabeli, int szerokoscKolumny)
         {
             GridViewBandColumn _sesjeSedziego = GetBoundColumn("sesje odbyte przez sędziego ");

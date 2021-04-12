@@ -61,3 +61,28 @@
 .center {
     text-align: center;
 }
+.colorKoralowy {
+background-color:coral;
+}
+.colorKoralowyJasny {
+    background-color: #FFCC99;
+    
+}
+.colorFioletowyJasny {
+    background-color: mediumslateblue;
+}
+.colorPomaranczowyJasny {
+    background-color: #FFFF99;
+}
+.colorZoltyJasny {
+    background-color: #fbf7a9;
+}
+.colorZoltyMocnoJasny {
+    background-color: #fbfbc6;
+}
+.colorNiebieskiMocnoJasny {
+    background-color: #deebf7;
+}
+.colorNiebieskiJasny {
+    background-color: #f5dbea;
+}

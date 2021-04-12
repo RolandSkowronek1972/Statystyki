@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<komorki xmlns="urn:tabeleMSS">
+  <tabela id="2">
+    <daneTabeli>
+
+      <iloscWierszy>11</iloscWierszy>
+      <tekstNadTabela>Statystyka miesięczna Wydział Gospodarczy Tabela 2 </tekstNadTabela>
+      <iloscWierszyNaglowka>1</iloscWierszyNaglowka> 
+      <iloscKolumnPrzedIteracja>2</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>7</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>2</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text> Kategoria Spraw</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>
+          Ga
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>
+          Gz
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 </style>
+        <text>Gz p-II </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 </style>
+        <text>
+          GCo
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 </style>
+        <text>S </text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 </style>
+        <text>WSC</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 </style>
+        <text>Razem</text>
+      </komorka>
+    </naglowek>
+    <tablaBoczna>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+          Pozostało z okresu poprzedniego
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+          Wpływ spraw
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+          Załatwienia
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+          Pozostało na okres następny:
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>7</rowspan>
+        <style> wciecie </style>
+        <text>Zaległości </text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Pow.3 – 6 m-cy </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Pow.6-12 m-cy</text>
+      </komorka>
+      <komorka>
+        <wiersz>7</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Pow.12m-cy do 2 lat</text>
+      </komorka>
+      <komorka>
+        <wiersz>8</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Pow.2 do 3 lat</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>9</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Pow.3 do 5 lat</text>
+      </komorka>
+      <komorka>
+        <wiersz>10</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Pow.5 do 8 lat</text>
+      </komorka>
+      <komorka>
+        <wiersz>11</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Ponad 8 lat</text>
+      </komorka>
+    </tablaBoczna>
+    <stylKolumny>
+      <kolumna>
+        <nrKolumny>7</nrKolumny>
+        <styl>gray</styl>
+      </kolumna>
+      <kolumna>
+        <nrKolumny>14</nrKolumny>
+        <styl>gray</styl>
+      </kolumna>
+
+    </stylKolumny>
+  </tabela>
+  <tabela id="1">
+    <daneTabeli>
+
+      <iloscWierszy>3</iloscWierszy>
+      <tekstNadTabela>Statystyka miesięczna Wydział Gospodarczy Tabela 1</tekstNadTabela>
+      <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>0</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>15</iloscKolumnPoIteracji>
+      <lp>0</lp>
+      <identyfikatorTabeli>1</identyfikatorTabeli>
+      <przelamanie>0</przelamanie>
+      <horizont>1</horizont>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_120</style>
+        <text>Imie Nazwisko</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>7</colSpan>
+        <rowspan>1</rowspan>
+        <style>center </style>
+        <text>Wpływ spraw</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>7</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>Załatwienia spraw</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>Sporządzanie uzasadnień</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Ga </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Gz </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60 </style>
+        <text> Gz p-II </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>GCo </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>S </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>WSC </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60 gray</style>
+        <text>Razem </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Ga </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>9</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60 </style>
+        <text>Gz</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>10</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Gz p-II </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>11</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>GCo</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>12</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>S</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>13</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>WSC </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>14</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60 gray</style>
+        <text>Razem </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>15</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>ilość sporządzonych</text>
+      </komorka>
+    
+    
+    </naglowek>
+
+    <stylKolumny>
+      <kolumna>
+        <nrKolumny>7</nrKolumny>
+        <styl>gray</styl>
+      </kolumna>
+      <kolumna>
+        <nrKolumny>14</nrKolumny>
+        <styl>gray</styl>
+      </kolumna>
+    
+    </stylKolumny>
+    
+  </tabela>
+</komorki>

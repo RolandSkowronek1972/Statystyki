@@ -16,6 +16,7 @@ namespace Statystyki_2018
         kof = 4,
         wyszukiwarka = 5,
         pracownik = 6,
+        wymiana=7,
         potwierdzenie = 1
     }
 
@@ -34,16 +35,7 @@ namespace Statystyki_2018
 
         public string con_str = ConfigurationManager.ConnectionStrings["wap"].ConnectionString;
         public string con_str_wcyw = ConfigurationManager.ConnectionStrings["wcywConnectionString"].ConnectionString;
-        /*
-        public string[] splitData(string arg)
-        {
-            string[] stringSeparators = new string[] { "#" };
-            string[] stTab = null;
-            stTab = arg.Split(stringSeparators, StringSplitOptions.None);
-            return stTab;
-        }
-
-            */
+       
 
         private string getColumnName(int i)
         {

@@ -157,6 +157,7 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="aoppN.aspx" />
     <Content Include="oczc.aspx" />
     <Content Include="oczc2.aspx" />
     <Content Include="mp.aspx" />
@@ -170,6 +171,12 @@
     <Content Include="aktc.aspx" />
     <Content Include="SerwisWymiany.asmx" />
     <Content Include="Wymiana1.aspx" />
+    <Content Include="XMLHeaders\aoppN.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLHeaders\aoppe.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="XMLHeaders\wizk.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -449,9 +456,7 @@
     <Content Include="Template\akrp.xlsx" />
     <Content Include="Template\aopg.xlsx" />
     <Content Include="Template\aopp.xlsx" />
-    <Content Include="Template\aoppe.xlsx" />
     <Content Include="Template\aopk2.xlsx" />
-    <Content Include="Template\aopk.xlsx" />
     <Content Include="Template\oglc3.xlsx" />
     <Content Include="Template\oglp.xlsx" />
     <Content Include="Template\otrr.xlsx" />
@@ -477,6 +482,8 @@
     <Content Include="Template\aktr.xlsx" />
     <Content Include="Template\aktg2.xlsx" />
     <Content Include="Template\aktc2.xlsx" />
+    <Content Include="Template\aoppe.xlsx" />
+    <Content Include="Template\aopk.xlsx" />
     <None Include="Web.config-stary">
       <SubType>Designer</SubType>
     </None>
@@ -592,6 +599,13 @@
     </Compile>
     <Compile Include="akrk.aspx.designer.cs">
       <DependentUpon>akrk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aoppN.aspx.cs">
+      <DependentUpon>aoppN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aoppN.aspx.designer.cs">
+      <DependentUpon>aoppN.aspx</DependentUpon>
     </Compile>
     <Compile Include="Connected Services\ServiceReference3\Reference.cs">
       <AutoGen>True</AutoGen>

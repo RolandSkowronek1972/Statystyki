@@ -11,6 +11,7 @@
        document.getElementById('box4').style.display = 'none';
        document.getElementById('box5').style.display = 'none';
        document.getElementById('box6').style.display = 'none';
+           document.getElementById('box7').style.display = 'none';
 
         if   (s.GetValue()==1)
         {
@@ -36,6 +37,10 @@
         {
                 document.getElementById('box6').style.display = 'block';
         }
+           if   (s.GetValue()==7)
+        {
+                document.getElementById('box7').style.display = 'block';
+        }
 }"
         Init="function(s, e) {
 	    document.getElementById('box1').style.display = 'block';
@@ -44,6 +49,7 @@
         document.getElementById('box4').style.display = 'none';
         document.getElementById('box5').style.display = 'none';
         document.getElementById('box6').style.display = 'none';
+          document.getElementById('box7').style.display = 'none';
 
 }" />
 </dx:ASPxComboBox>
@@ -51,7 +57,7 @@
 <style>
     .butn1 {
         background-position: 0% 0%;
-        background-image: linear-gradient(to bottom, #fea004, #D04411) !important !important;
+        background-image: linear-gradient(to bottom, #fea004, #D04411) !important;
        
         -webkit-border-radius: 6px !important;
         -moz-border-radius: 6px !important;
@@ -76,7 +82,7 @@
 
         .butn1:hover {
             background-position: 0% 0%;
-            background-image: linear-gradient(to bottom, #F6D014, #F6450F) !important !important;
+            background-image: linear-gradient(to bottom, #F6D014, #F6450F) !important ;
             text-decoration: none !important;
             background-color: #F6D014 !important;
             background-repeat: repeat !important;
@@ -1324,7 +1330,7 @@
         </Styles>
     </dx:ASPxGridView>
 
-    <asp:SqlDataSource ID="uprawniewnia" runat="server" ConnectionString="<%$ ConnectionStrings:wap %>" SelectCommand="SELECT ident, nazwa, CASE WHEN (SELECT COUNT(*) AS uprawnienia FROM uprawnienia WHERE rodzaj = 1 and (id_uzytkownika = @uzytkownika) AND (id_wydzialu = wydzialy.ident)) >= 1 THEN 1 ELSE 0 END AS uprawnienia FROM wydzialy order by nazwa" UpdateCommand="UPDATE wydzialy SET nazwa= ''  WHERE (nazwa IS NULL) ">
+    <asp:SqlDataSource ID="uprawniewnia" runat="server" ConnectionString="<%$ ConnectionStrings:wap %>" SelectCommand="SELECT distinct ident, nazwa, CASE WHEN (SELECT COUNT(*) AS uprawnienia FROM uprawnienia WHERE rodzaj = 1 and (id_uzytkownika = @uzytkownika) AND (id_wydzialu = wydzialy.ident)) >= 1 THEN 1 ELSE 0 END AS uprawnienia FROM wydzialy order by nazwa" UpdateCommand="UPDATE wydzialy SET nazwa= ''  WHERE (nazwa IS NULL) ">
         <SelectParameters>
             <asp:SessionParameter Name="uzytkownika" SessionField="identyfikatorUzytkownika" />
         </SelectParameters>
@@ -1373,7 +1379,7 @@
         </Styles>
     </dx:ASPxGridView>
 
-    <asp:SqlDataSource ID="uprawniewniaKontrolki" runat="server" ConnectionString="<%$ ConnectionStrings:wap %>" SelectCommand="SELECT ident, opis AS nazwa, CASE WHEN                    (SELECT COUNT(*) AS uprawnienia                     FROM   uprawnienia                     WHERE rodzaj = 3 AND (id_uzytkownika = @uzytkownika) AND (id_wydzialu = konfig.ident)) >= 1 THEN 1 ELSE 0 END AS uprawnienia  FROM  konfig WHERE (klucz = 'kontrolka') order by nazwa" UpdateCommand="UPDATE wydzialy SET nazwa= ''  WHERE (nazwa IS NULL) ">
+    <asp:SqlDataSource ID="uprawniewniaKontrolki" runat="server" ConnectionString="<%$ ConnectionStrings:wap %>" SelectCommand="SELECT distinct ident, opis AS nazwa, CASE WHEN                    (SELECT COUNT(*) AS uprawnienia                     FROM   uprawnienia                     WHERE rodzaj = 3 AND (id_uzytkownika = @uzytkownika) AND (id_wydzialu = konfig.ident)) >= 1 THEN 1 ELSE 0 END AS uprawnienia  FROM  konfig WHERE (klucz = 'kontrolka') order by nazwa" UpdateCommand="UPDATE wydzialy SET nazwa= ''  WHERE (nazwa IS NULL) ">
         <SelectParameters>
             <asp:SessionParameter Name="uzytkownika" SessionField="identyfikatorUzytkownika" />
         </SelectParameters>
@@ -1422,7 +1428,7 @@
         </Styles>
     </dx:ASPxGridView>
 
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:wap %>" SelectCommand="SELECT ident, nazwa, CASE WHEN (SELECT COUNT(*) AS uprawnienia FROM uprawnienia WHERE (id_uzytkownika = @uzytkownika) AND  rodzaj=2 and (id_wydzialu = wydzialy_mss.ident)) >= 1 THEN 1 ELSE 0 END AS uprawnienia FROM wydzialy_mss order by nazwa" UpdateCommand="UPDATE wydzialy SET nazwa= ''  WHERE (nazwa IS NULL) ">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:wap %>" SelectCommand="SELECT distinct ident, nazwa, CASE WHEN (SELECT COUNT(*) AS uprawnienia FROM uprawnienia WHERE (id_uzytkownika = @uzytkownika) AND  rodzaj=2 and (id_wydzialu = wydzialy_mss.ident)) >= 1 THEN 1 ELSE 0 END AS uprawnienia FROM wydzialy_mss order by nazwa" UpdateCommand="UPDATE wydzialy SET nazwa= ''  WHERE (nazwa IS NULL) ">
         <SelectParameters>
             <asp:SessionParameter Name="uzytkownika" SessionField="identyfikatorUzytkownika" />
         </SelectParameters>
@@ -1469,7 +1475,7 @@
         </Styles>
     </dx:ASPxGridView>
 
-    <asp:SqlDataSource ID="uprawniewniaKOF" runat="server" ConnectionString="<%$ ConnectionStrings:wap %>" SelectCommand="SELECT ident, opis AS nazwa, CASE WHEN
+    <asp:SqlDataSource ID="uprawniewniaKOF" runat="server" ConnectionString="<%$ ConnectionStrings:wap %>" SelectCommand="SELECT distinct ident, opis AS nazwa, CASE WHEN
                    (SELECT COUNT(*) AS uprawnienia
                     FROM   uprawnienia
                     WHERE rodzaj = 4 AND (id_uzytkownika = @uzytkownika) AND (id_wydzialu = konfig.ident)) &gt;= 1 THEN 1 ELSE 0 END AS uprawnienia
@@ -1524,7 +1530,7 @@ WHERE (klucz = 'kof') order by nazwa"
         </Styles>
     </dx:ASPxGridView>
 
-    <asp:SqlDataSource ID="uprawniewniaWyszukiwarka" runat="server" ConnectionString="<%$ ConnectionStrings:wap %>" SelectCommand="SELECT ident, opis AS nazwa, CASE WHEN
+    <asp:SqlDataSource ID="uprawniewniaWyszukiwarka" runat="server" ConnectionString="<%$ ConnectionStrings:wap %>" SelectCommand="SELECT distinct ident, opis AS nazwa, CASE WHEN
                    (SELECT COUNT(*) AS uprawnienia
                     FROM   uprawnienia
                     WHERE rodzaj = 5 AND (id_uzytkownika = @uzytkownika) AND (id_wydzialu = konfig.ident)) &gt;= 1 THEN 1 ELSE 0 END AS uprawnienia
@@ -1577,8 +1583,56 @@ WHERE (klucz = 'wyszukiwarka') order by nazwa"
         </Styles>
     </dx:ASPxGridView>
 
-    <asp:SqlDataSource ID="uprawniewniaPracownik" runat="server" ConnectionString="<%$ ConnectionStrings:wap %>" SelectCommand="SELECT ident, opis AS nazwa, CASE WHEN
+    <asp:SqlDataSource ID="uprawniewniaPracownik" runat="server" ConnectionString="<%$ ConnectionStrings:wap %>" SelectCommand="SELECT distinct ident, opis AS nazwa, CASE WHEN
                    (SELECT COUNT(*) AS uprawnienia FROM   uprawnienia WHERE rodzaj = 6 AND (id_uzytkownika = @uzytkownika) AND (id_wydzialu = konfig.ident)) &gt;= 1 THEN 1 ELSE 0 END AS uprawnienia FROM  konfig WHERE (klucz = 'pracownik') order by nazwa"
+        UpdateCommand="UPDATE wydzialy SET nazwa= ''  WHERE (nazwa IS NULL) ">
+        <SelectParameters>
+            <asp:SessionParameter Name="uzytkownika" SessionField="identyfikatorUzytkownika" />
+        </SelectParameters>
+    </asp:SqlDataSource>
+
+    <br />
+</div>
+<div id="box7" style="display: none;">
+    <dx:ASPxGridView ID="ASPxGridView3" runat="server" AutoGenerateColumns="False" KeyFieldName="ident" Theme="Mulberry" EnableTheming="True" OnRowUpdating="EdycjaPracownika" OnStartRowEditing="startEdycji" DataSourceID="uprawniewniaPracownik">
+        <Settings ShowFilterRow="True" />
+        <SettingsCommandButton>
+ <CancelButton Text="Anuluj" Styles-Style-CssClass="butn1">
+                <Styles>
+                    <Style CssClass="butn1"></Style>
+                </Styles>
+            </CancelButton>
+            <UpdateButton Text="Zapisz">
+                 <Styles>
+                    <Style CssClass="butn1"></Style>
+                </Styles>
+            </UpdateButton>
+        </SettingsCommandButton>
+        <SettingsPager PageSize="30">
+        </SettingsPager>
+
+        <SettingsEditing Mode="Batch">
+        </SettingsEditing>
+        <SettingsDataSecurity AllowDelete="False" AllowInsert="False" />
+        <Columns>
+            <dx:GridViewCommandColumn VisibleIndex="0" Width="0px" Visible="False">
+            </dx:GridViewCommandColumn>
+
+            <dx:GridViewDataTextColumn FieldName="ident" VisibleIndex="2" Visible="False">
+            </dx:GridViewDataTextColumn>
+            <dx:GridViewDataTextColumn FieldName="nazwa" ReadOnly="True" VisibleIndex="3" Width="400px">
+            </dx:GridViewDataTextColumn>
+            <dx:GridViewDataCheckColumn FieldName="uprawnienia" VisibleIndex="1" Width="200px">
+            </dx:GridViewDataCheckColumn>
+        </Columns>
+        <Styles>
+            <AlternatingRow BackColor="#CCCCCC">
+            </AlternatingRow>
+        </Styles>
+    </dx:ASPxGridView>
+
+    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:wap %>" SelectCommand="SELECT distinct ident, opis AS nazwa, CASE WHEN
+                   (SELECT COUNT(*) AS uprawnienia FROM   uprawnienia WHERE rodzaj = 7 AND (id_uzytkownika = @uzytkownika) AND (id_wydzialu = konfig.ident)) &gt;= 1 THEN 1 ELSE 0 END AS uprawnienia FROM  konfig WHERE (klucz = 'wymiana') order by nazwa"
         UpdateCommand="UPDATE wydzialy SET nazwa= ''  WHERE (nazwa IS NULL) ">
         <SelectParameters>
             <asp:SessionParameter Name="uzytkownika" SessionField="identyfikatorUzytkownika" />

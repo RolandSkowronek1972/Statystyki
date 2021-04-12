@@ -128,7 +128,7 @@ namespace Statystyki_2018
             using (ExcelPackage MyExcel = new ExcelPackage(existingFile))
             {
                 ExcelWorksheet MyWorksheet1 = MyExcel.Workbook.Worksheets[1];
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 86, 0, 8, true, true, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 68, 0, 9, true, true, false, false, false);
 
                 try
                 {
@@ -182,7 +182,7 @@ namespace Statystyki_2018
         {
             DataTable tabelaNaglowkowa = tb.SchematTabelinaglowkowej();
 
-            for (int i = 1; i < 87; i++)
+            for (int i = 1; i < 67; i++)
             {
                 tabelaNaglowkowa.Rows.Add(new Object[] { "1", i.ToString(), "1", "1" });
             }
@@ -194,40 +194,43 @@ namespace Statystyki_2018
             tabelaNaglowkowa.Rows.Add(new Object[] { "2", "w tym nieusprawiedliwione", "1", "1" });
             tabelaNaglowkowa.Rows.Add(new Object[] { "2", "ponad 3 mies.", "1", "1" });
             tabelaNaglowkowa.Rows.Add(new Object[] { "2", "w tym nieusprawiedliwione", "1", "1" });
-            tabelaNaglowkowa.Rows.Add(new Object[] { "2", "razem", "1", "1" });
-            tabelaNaglowkowa.Rows.Add(new Object[] { "2", "w tym, w których projekt został zaakceptowany przez sędziego", "1", "1" });
-            tabelaNaglowkowa.Rows.Add(new Object[] { "2", "na rozprawie", "1", "1" });
-            tabelaNaglowkowa.Rows.Add(new Object[] { "2", "na posiedzeniu", "1", "1" });
+            tabelaNaglowkowa.Rows.Add(new Object[] { "2", "ogółem", "1", "1" });
+            tabelaNaglowkowa.Rows.Add(new Object[] { "2", "w tym w których wpłynął wniosek o transkrypcję", "1", "1" });
+
+
+
+
+
             tabelaNaglowkowa.Rows.Add(new Object[] { "3", "Ko z rozdziału 58 kpk oraz ustawy z dn.23.02.1991r o uznanie za nieważne orzeczeń wydanych wobec osób represjonowanych ….", "1", "2" });
-            for (int i = 0; i < 12; i++)
+            for (int i = 0; i < 6; i++)
             {
                 tabelaNaglowkowa.Rows.Add(new Object[] { "3", "na rozprawę", "1", "2" });
                 tabelaNaglowkowa.Rows.Add(new Object[] { "3", "na posiedzenie", "1", "2" });
             }
 
             tabelaNaglowkowa.Rows.Add(new Object[] { "3", "rozprawy", "1", "2" });
-            tabelaNaglowkowa.Rows.Add(new Object[] { "3", "posiedzenia", "1", "2" });
-            tabelaNaglowkowa.Rows.Add(new Object[] { "3", "w których wpłynął wniosek o transkrypcję", "1", "2" });
+            tabelaNaglowkowa.Rows.Add(new Object[] { "3", "posiedzenia jawne", "1", "2" });
+            tabelaNaglowkowa.Rows.Add(new Object[] { "3", "posiedzenia niejawne", "1", "2" });
+
+       //     tabelaNaglowkowa.Rows.Add(new Object[] { "3", "w których wpłynął wniosek o transkrypcję", "1", "2" });
             tabelaNaglowkowa.Rows.Add(new Object[] { "3", "ogółem", "1", "2" });
             tabelaNaglowkowa.Rows.Add(new Object[] { "3", "uwzględniono", "1", "2" });
-            tabelaNaglowkowa.Rows.Add(new Object[] { "3", "liczba spraw, w których postępowanie zakończyło się ugodą", "1", "2" });
+
             tabelaNaglowkowa.Rows.Add(new Object[] { "4", "Ogółem", "1", "3" });
             tabelaNaglowkowa.Rows.Add(new Object[] { "4", "K", "1", "3" });
             tabelaNaglowkowa.Rows.Add(new Object[] { "4", "Kp", "1", "3" });
             tabelaNaglowkowa.Rows.Add(new Object[] { "4", "Ko (ogółem)", "1", "3" });
             tabelaNaglowkowa.Rows.Add(new Object[] { "4", "w tym", "1", "1" });
             tabelaNaglowkowa.Rows.Add(new Object[] { "4", "Kop", "1", "3" });
-            tabelaNaglowkowa.Rows.Add(new Object[] { "4", "Pf + nowe wykazy K-opr, K-spr (dot. kontroli operacyjnej)", "1", "3" });
             tabelaNaglowkowa.Rows.Add(new Object[] { "4", "WSNk", "1", "3" });
-            for (int i = 0; i < 2; i++)
-            {
-                tabelaNaglowkowa.Rows.Add(new Object[] { "4", "Ogółem", "2", "1" });
-                tabelaNaglowkowa.Rows.Add(new Object[] { "4", "K", "2", "1" });
-                tabelaNaglowkowa.Rows.Add(new Object[] { "4", "Kp", "2", "1" });
-                tabelaNaglowkowa.Rows.Add(new Object[] { "4", "Ko", "2", "1" });
-                tabelaNaglowkowa.Rows.Add(new Object[] { "4", "Kop", "2", "1" });
-                tabelaNaglowkowa.Rows.Add(new Object[] { "4", "WSNk", "2", "1" });
-            }
+            tabelaNaglowkowa.Rows.Add(new Object[] { "4", "Pf + nowe wykazy K-opr, K-spr (dot. kontroli operacyjnej)", "1", "3" });
+
+            tabelaNaglowkowa.Rows.Add(new Object[] { "4", "Ogółem", "2", "1" });
+            tabelaNaglowkowa.Rows.Add(new Object[] { "4", "K", "2", "1" });
+            tabelaNaglowkowa.Rows.Add(new Object[] { "4", "Kp", "2", "1" });
+            tabelaNaglowkowa.Rows.Add(new Object[] { "4", "Ko", "2", "1" });
+            tabelaNaglowkowa.Rows.Add(new Object[] { "4", "Kop", "2", "1" });
+            tabelaNaglowkowa.Rows.Add(new Object[] { "4", "WSNk", "2", "1" });
 
             tabelaNaglowkowa.Rows.Add(new Object[] { "4", "Ogółem", "1", "3" });
             tabelaNaglowkowa.Rows.Add(new Object[] { "4", "K", "1", "3" });
@@ -237,7 +240,7 @@ namespace Statystyki_2018
             tabelaNaglowkowa.Rows.Add(new Object[] { "4", "WSNk", "1", "3" });
 
             tabelaNaglowkowa.Rows.Add(new Object[] { "4", "ogółem", "1", "3" });
-            tabelaNaglowkowa.Rows.Add(new Object[] { "4", "z tego", "2", "1" });
+            tabelaNaglowkowa.Rows.Add(new Object[] { "4", "z tego", "3", "1" });
 
             tabelaNaglowkowa.Rows.Add(new Object[] { "4", "Ogółem", "1", "3" });
             tabelaNaglowkowa.Rows.Add(new Object[] { "4", "K", "1", "3" });
@@ -258,42 +261,41 @@ namespace Statystyki_2018
             tabelaNaglowkowa.Rows.Add(new Object[] { "4", "ogółem", "1", "3" });
             tabelaNaglowkowa.Rows.Add(new Object[] { "4", "zakreślonych", "1", "3" });
             tabelaNaglowkowa.Rows.Add(new Object[] { "4", "niezakreślonych", "1", "3" });
+
             tabelaNaglowkowa.Rows.Add(new Object[] { "4", "łącznie", "1", "3" });
-            tabelaNaglowkowa.Rows.Add(new Object[] { "4", "w terminie ustawowym 14 dni", "1", "3" });
+            tabelaNaglowkowa.Rows.Add(new Object[] { "4", "w terminie ustawowym 14 dni ", "1", "3" });
             tabelaNaglowkowa.Rows.Add(new Object[] { "4", "razem po terminie ustawowym", "1", "3" });
-            tabelaNaglowkowa.Rows.Add(new Object[] { "4", "nieusprawiedliw.", "1", "3" });
+
+            tabelaNaglowkowa.Rows.Add(new Object[] { "4", "nieusprawiedliwione", "1", "3" });
+
             tabelaNaglowkowa.Rows.Add(new Object[] { "4", "po upływie terminiu ustawowego", "8", "2" });
-            tabelaNaglowkowa.Rows.Add(new Object[] { "4", "ogółem", "1", "3" });
-            tabelaNaglowkowa.Rows.Add(new Object[] { "4", "w tym", "1", "1" });
+            tabelaNaglowkowa.Rows.Add(new Object[] { "4", "uzasadnienia wygłoszone ***", "2", "2" });
             tabelaNaglowkowa.Rows.Add(new Object[] { "4", "wpływ", "1", "3" });
             tabelaNaglowkowa.Rows.Add(new Object[] { "4", "załatwiono", "2", "1" });
             tabelaNaglowkowa.Rows.Add(new Object[] { "4", "pozostałość", "1", "3" });
-            tabelaNaglowkowa.Rows.Add(new Object[] { "4", "liczba mediacji wpisanych w danym miesiącu do Wykazu Med.", "1", "3" });
-            tabelaNaglowkowa.Rows.Add(new Object[] { "4", "liczba spraw z rep. K załatwionych w związku z postępowaniem mediacyjnym", "1", "3" });
-            tabelaNaglowkowa.Rows.Add(new Object[] { "4", "w tym", "1", "1" });
-            //    tabelaNaglowkowa.Rows.Add(new Object[] { "5", "wszystkie sesje sędziego w wydziale", "3", "1" });
-            tabelaNaglowkowa.Rows.Add(new Object[] { "5", "na potrzeby MS-S", "3", "1" });
+
+      //      tabelaNaglowkowa.Rows.Add(new Object[] { "5", "na potrzeby MS-S", "4", "1" });
+            tabelaNaglowkowa.Rows.Add(new Object[] { "5", "od dnia przedłożenia sędziemu akt w celu sporządzenia uzasadnienia     (zgodnie z MS - S5o, dz. 1.4.2) *", "12", "1" });
+            tabelaNaglowkowa.Rows.Add(new Object[] { "5", "od dnia wpływu wniosku do właściwego sądu (zgodnie z MS-S5o, dz. 1.4.1) **", "2", "1" });
+
             tabelaNaglowkowa.Rows.Add(new Object[] { "6", "lp", "1", "6" });
             tabelaNaglowkowa.Rows.Add(new Object[] { "6", "nazwisko i imię sędziego", "1", "6" });
-            tabelaNaglowkowa.Rows.Add(new Object[] { "6", "zaległość z poprzedniego roku", "1", "5" });
+
             tabelaNaglowkowa.Rows.Add(new Object[] { "6", "WPŁYW", "8", "2" });
-            tabelaNaglowkowa.Rows.Add(new Object[] { "6", "Wyznaczono", "12", "2" });
+
             tabelaNaglowkowa.Rows.Add(new Object[] { "6", "Załatwiono", "12", "2" });
             tabelaNaglowkowa.Rows.Add(new Object[] { "6", "ZAŁATWIENIA", "6", "2" });
-            tabelaNaglowkowa.Rows.Add(new Object[] { "6", "sesje odbyte przez sędziego", "3", "1" });
-            //    tabelaNaglowkowa.Rows.Add(new Object[] { "6", "Liczba odroczonych publikacji orzeczeń", "1", "5" });
-            //   tabelaNaglowkowa.Rows.Add(new Object[] { "6", "Liczba odroczonych spraw", "3", "2" });
+            tabelaNaglowkowa.Rows.Add(new Object[] { "6", "sesje odbyte przez sędziego", "4", "2" });
+
             tabelaNaglowkowa.Rows.Add(new Object[] { "6", "POZOSTAŁOŚĆ na następny m-c", "6", "2" });
             tabelaNaglowkowa.Rows.Add(new Object[] { "6", "pozostało spraw starych (wszystkie kategorie spraw)", "9", "2" });
             tabelaNaglowkowa.Rows.Add(new Object[] { "6", "stan spraw zawieszonych <br/> (wszystkie kategorie spraw, zgodnie z MS-S5o)", "3", "2" });
 
-            tabelaNaglowkowa.Rows.Add(new Object[] { "6", "liczba sporządzonych uzasadnień <br/> (zgodnie z MS-S5o, dz. 1.4 - tylko kat. K) *", "12", "2" });
-            tabelaNaglowkowa.Rows.Add(new Object[] { "6", "uzasadnienia wygłoszone", "2", "2" });
-            tabelaNaglowkowa.Rows.Add(new Object[] { "6", "Liczba spraw, w których projekt uzasadnienia orzeczenia sporządził asystent", "2", "4" });
+            tabelaNaglowkowa.Rows.Add(new Object[] { "6", "terminowość sporządzania uzasadnień", "14", "1" });
+
             tabelaNaglowkowa.Rows.Add(new Object[] { "6", "skargi na przewlekłość", "4", "2" });
-            tabelaNaglowkowa.Rows.Add(new Object[] { "6", "mediacje", "3", "2" });
+
             tabelaNaglowkowa.Rows.Add(new Object[] { "6", "UWAGI", "1", "5" });
-            tabelaNaglowkowa.Rows.Add(new Object[] { "6", "Kolumna kontrolna (wyznaczenia>=załatwień)", "2", "4" });
 
             return tabelaNaglowkowa;
         }

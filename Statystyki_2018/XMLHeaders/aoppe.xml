@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<komorki xmlns="urn:tabeleMSS">
+
+  <tabela id="1">
+    <daneTabeli>
+
+      <iloscWierszy>3</iloscWierszy>
+      <tekstNadTabela>Ruch spraw sędziów </tekstNadTabela>
+      <iloscWierszyNaglowka>6</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>0</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>157</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>1</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_30</style>
+        <text> L.p</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest</style>
+        <text>Imie Nazwisko</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>4</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text> Wpływ </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>4</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text>ZAŁATWIENIA</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text>sesje odbyte</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>4</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text>
+          POZOSTAŁOŚĆ na następny miesiąc
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>9</kolumna>
+        <colSpan>9</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text>
+          pozostało spraw starych
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>10</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text>
+          stan spraw zawieszonych (wszystkie kategorie spraw, zgodnie z MS-S5o)
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>11</kolumna>
+        <colSpan>4</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text>
+          skargi
+          na przewlekłość
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>12</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest</style>
+        <text> Uwagi</text>
+      </komorka>
+      
+      
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text>Ogółem </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest</style>
+        <text>Kzw </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text>Kow </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest</style>
+        <text>Pen </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text>Ogółem </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest</style>
+        <text>Kzw </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text>Kow </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest</style>
+        <text>Pen </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>9</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest</style>
+        <text>Ogółem </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>10</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest</style>
+        <text>z tego </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>11</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text>Ogółem </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>12</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest</style>
+        <text>Kzw </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>13</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text>Kow </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>14</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest</style>
+        <text>Pen </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>15</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text>Ogółem </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>16</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text>
+          do 3 m-cy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>17</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text> pow. 3 do 6 m-cy</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>18</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text> pow. 6 do 12 m-cy </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>19</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text>pow. 12 m-cy do 2 lat</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>20</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text> pow. 2 do 3 lat </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>21</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text> pow. 3 do 5 lat</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>22</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text> pow. 5 do 8 lat </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>23</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text>
+          pow. 8 lat
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>24</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text>Ogółem </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>25</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text>zakreślonych </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>26</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text>niezakreślonych </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>27</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text>wpływ  </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>28</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text>załatwiono </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>29</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest </style>
+        <text>pozostałość </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest</style>
+        <text>posiedzenia jawne</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest</style>
+        <text>posiedzenia niejawne</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest</style>
+        <text>ogółem</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest</style>
+        <text>uwzględniono</text>
+      </komorka>
+    </naglowek>
+  </tabela>
+</komorki>

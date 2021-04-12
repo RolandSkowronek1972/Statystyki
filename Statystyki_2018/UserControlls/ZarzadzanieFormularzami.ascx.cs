@@ -79,6 +79,11 @@ namespace Statystyki_2018.UserControlls
                     Text = "Pracownik",
                     Value = (int)Rodzaje.pracownik
                 };
+                listEditItem = new DevExpress.Web.ListEditItem
+                {
+                    Text = "Wymiana",
+                    Value = (int)Rodzaje.wymiana
+                };
                 CBRodzaje.Items.Add(listEditItem);
 
                 CBRodzaje.SelectedIndex = 0;
