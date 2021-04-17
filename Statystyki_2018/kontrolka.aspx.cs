@@ -120,6 +120,8 @@ namespace Statystyki_2018
             DataTable parameters = cm.makeParameterTable();
             parameters.Rows.Add("@data_1", cl.KonwertujDate(data1.Date));
             parameters.Rows.Add("@data_2", cl.KonwertujDate(data2.Date));
+            cm.log.Info("Kontrolka @data_1: " + cl.KonwertujDate(data1.Date));
+            cm.log.Info("Kontrolka @data_2: " + cl.KonwertujDate(data2.Date));
             DataTable dT = cm.getDataTable(kwerenda, connectionString, parameters, "kontrolka");
 
             Session["data1"] = cl.KonwertujDate(data1.Date);

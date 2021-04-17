@@ -67,31 +67,13 @@ namespace Statystyki_2018 {
         protected global::System.Web.UI.WebControls.Label LabelNazwaSadu;
         
         /// <summary>
-        /// Label1 control.
+        /// tablePlaceHolder01 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
-        
-        /// <summary>
-        /// infoLabel1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label infoLabel1;
-        
-        /// <summary>
-        /// gwTabela1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gwTabela1;
+        protected global::System.Web.UI.WebControls.PlaceHolder tablePlaceHolder01;
         
         /// <summary>
         /// Label27 control.

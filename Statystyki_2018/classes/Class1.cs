@@ -159,6 +159,7 @@ namespace Statystyki_2018
                 {
                     SelectCommand = new SqlCommand(kwerenda, conn)
                 };
+
                 daMenu.SelectCommand.Parameters.AddWithValue("@data_1", poczatek);
                 daMenu.SelectCommand.Parameters.AddWithValue("@data_2", koniec);
                 daMenu.SelectCommand.Parameters.AddWithValue("@id_sedziego", id_sedziego);
@@ -184,7 +185,8 @@ namespace Statystyki_2018
 
         private DataTable PodajListeKwerend(int idWydzial, int idTabeli, int typ, string tenPlik)
         {
-            string kwerenda = "SELECT  id_kolumny, id_wiersza, kwerenda, podglad, opis FROM kwerendy WHERE (id_tabeli = @id_tabeli) and id_wydzial=@id_wydzial"; DataTable parametry = Common.makeParameterTable();
+            string kwerenda = "SELECT  id_kolumny, id_wiersza, kwerenda, podglad, opis FROM kwerendy WHERE (id_tabeli = @id_tabeli) and id_wydzial=@id_wydzial";
+            DataTable parametry = Common.makeParameterTable();
             parametry.Rows.Add("@id_wydzial", idWydzial);
             parametry.Rows.Add("@id_tabeli", idTabeli);
             return Common.getDataTable(kwerenda, con_str, parametry, tenPlik);

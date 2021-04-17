@@ -91,18 +91,7 @@ namespace Statystyki_2018
             catch
             { }
 
-            try
-            {
-                string idDzialu = (string)Session["id_dzialu"];
-                infoLabel1.Visible = cl.debug(int.Parse(idDzialu));
-                infoLabel2.Visible = cl.debug(int.Parse(idDzialu));
-            }
-            catch
-            {
-                infoLabel1.Visible = false;
-
-                infoLabel2.Visible = false;
-            }
+           
         }
 
         protected void Odswiez(object sender, EventArgs e)

@@ -157,7 +157,11 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <Content Include="aoppN.aspx" />
+    <Content Include="oopr.aspx" />
+    <Content Include="oopk.aspx" />
+    <Content Include="oopc.aspx" />
+    <Content Include="aopk2.aspx" />
+    <Content Include="aopp.aspx" />
     <Content Include="oczc.aspx" />
     <Content Include="oczc2.aspx" />
     <Content Include="mp.aspx" />
@@ -171,7 +175,19 @@
     <Content Include="aktc.aspx" />
     <Content Include="SerwisWymiany.asmx" />
     <Content Include="Wymiana1.aspx" />
-    <Content Include="XMLHeaders\aoppN.xml">
+    <Content Include="XMLHeaders\oopr.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLHeaders\oopk.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLHeaders\oopc.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLHeaders\aopk2.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLHeaders\aopp.xml">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="XMLHeaders\aoppe.xml">
@@ -235,10 +251,8 @@
     <Content Include="oopg.aspx" />
     <Content Include="aopc.aspx" />
     <Content Include="aopk.aspx" />
-    <Content Include="aopk2.aspx" />
     <Content Include="aopc2.aspx" />
     <Content Include="aoppe.aspx" />
-    <Content Include="aopp.aspx" />
     <Content Include="mss16r.aspx" />
     <Content Include="mss19r.aspx" />
     <Content Include="nowa.aspx" />
@@ -330,9 +344,6 @@
     <Content Include="onsp.aspx" />
     <Content Include="onsr.aspx" />
     <Content Include="onsuOLD.aspx" />
-    <Content Include="oopc.aspx" />
-    <Content Include="oopk.aspx" />
-    <Content Include="oopr.aspx" />
     <Content Include="oopu.aspx" />
     <Content Include="otrc.aspx">
       <BrowseToURL>m</BrowseToURL>
@@ -379,7 +390,6 @@
     <Content Include="XMLHeaders\aktk1.xml" />
     <Content Include="XMLHeaders\aglc3.xml" />
     <Content Include="XMLHeaders\aglc1.xml" />
-    <Content Include="XMLHeaders\oopc.xml" />
     <Content Include="XMLHeaders\okt2.xml" />
     <Content Include="libman.json" />
     <None Include="Connected Services\ServiceReference3\SerwisWymiany.wsdl" />
@@ -600,12 +610,40 @@
     <Compile Include="akrk.aspx.designer.cs">
       <DependentUpon>akrk.aspx</DependentUpon>
     </Compile>
-    <Compile Include="aoppN.aspx.cs">
-      <DependentUpon>aoppN.aspx</DependentUpon>
+    <Compile Include="oopr.aspx.cs">
+      <DependentUpon>oopr.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="aoppN.aspx.designer.cs">
-      <DependentUpon>aoppN.aspx</DependentUpon>
+    <Compile Include="oopr.aspx.designer.cs">
+      <DependentUpon>oopr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oopk.aspx.cs">
+      <DependentUpon>oopk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oopk.aspx.designer.cs">
+      <DependentUpon>oopk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oopc.aspx.cs">
+      <DependentUpon>oopc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oopc.aspx.designer.cs">
+      <DependentUpon>oopc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aopk2.aspx.cs">
+      <DependentUpon>aopk2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aopk2.aspx.designer.cs">
+      <DependentUpon>aopk2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aopp.aspx.cs">
+      <DependentUpon>aopp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aopp.aspx.designer.cs">
+      <DependentUpon>aopp.aspx</DependentUpon>
     </Compile>
     <Compile Include="Connected Services\ServiceReference3\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -713,13 +751,6 @@
     <Compile Include="aopk.aspx.designer.cs">
       <DependentUpon>aopk.aspx</DependentUpon>
     </Compile>
-    <Compile Include="aopk2.aspx.cs">
-      <DependentUpon>aopk2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="aopk2.aspx.designer.cs">
-      <DependentUpon>aopk2.aspx</DependentUpon>
-    </Compile>
     <Compile Include="aopc2.aspx.cs">
       <DependentUpon>aopc2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -733,13 +764,6 @@
     </Compile>
     <Compile Include="aoppe.aspx.designer.cs">
       <DependentUpon>aoppe.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="aopp.aspx.cs">
-      <DependentUpon>aopp.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="aopp.aspx.designer.cs">
-      <DependentUpon>aopp.aspx</DependentUpon>
     </Compile>
     <Compile Include="classes\datyDoMSS.cs" />
     <Compile Include="classes\listaFormularzy.cs" />
@@ -1237,27 +1261,6 @@
     </Compile>
     <Compile Include="onsuOLD.aspx.designer.cs">
       <DependentUpon>onsuOLD.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="oopc.aspx.cs">
-      <DependentUpon>oopc.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="oopc.aspx.designer.cs">
-      <DependentUpon>oopc.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="oopk.aspx.cs">
-      <DependentUpon>oopk.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="oopk.aspx.designer.cs">
-      <DependentUpon>oopk.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="oopr.aspx.cs">
-      <DependentUpon>oopr.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="oopr.aspx.designer.cs">
-      <DependentUpon>oopr.aspx</DependentUpon>
     </Compile>
     <Compile Include="oopu.aspx.cs">
       <DependentUpon>oopu.aspx</DependentUpon>

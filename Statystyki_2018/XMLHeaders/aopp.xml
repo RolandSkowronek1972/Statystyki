@@ -1,0 +1,4111 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<komorki xmlns="urn:tabeleMSS">
+
+  <tabela id="1">
+    <daneTabeli>
+
+      <iloscWierszy>6</iloscWierszy>
+      <tekstNadTabela>Ruch spraw sędziów </tekstNadTabela>
+      <iloscWierszyNaglowka>7</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>0</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>319</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>1</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>6</rowspan>
+        <style>center col_30</style>
+        <text> L.p</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>6</rowspan>
+        <style>center col_80_fest_fest</style>
+        <text>Imie Nazwisko</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>157</colSpan>
+        <rowspan>0</rowspan>
+        <style>center colorKoralowy </style>
+        <text> Sprawy z zakresu ubezpieczeń społecznych </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>162</colSpan>
+        <rowspan>0</rowspan>
+        <style>center colorNiebieskiMocnoJasny </style>
+        <text>Sprawy z zakresu prawa pracy </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>14</colSpan>
+        <rowspan>0</rowspan>
+        <style>center colorKoralowyJasny </style>
+        <text>
+          WPŁYW
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>28</colSpan>
+        <rowspan>0</rowspan>
+        <style>center colorKoralowyJasny</style>
+        <text>
+          Załatwiono
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>14</colSpan>
+        <rowspan>0</rowspan>
+        <style>center colorKoralowyJasny</style>
+        <text>
+          ZAŁATWIENIA
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>4</colSpan>
+        <rowspan>2</rowspan>
+        <style>center colorKoralowyJasny</style>
+        <text>
+          sesje odbyte przez sędziego
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>14</colSpan>
+        <rowspan>0</rowspan>
+        <style>center colorKoralowyJasny </style>
+        <text>
+          POZOSTAŁOŚĆ
+          na następny miesiąc
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>27</colSpan>
+        <rowspan>0</rowspan>
+        <style>center colorKoralowyJasny</style>
+        <text>
+          pozostało spraw starych - wszystkie kategorie spraw (bez czasu trwania mediacji, zgodnie z dz. 2.1.1.1 MS-S11o)
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>9</colSpan>
+        <rowspan>0</rowspan>
+        <style>center colorKoralowyJasny </style>
+        <text>
+          stan spraw zawieszonych (wszystkie kategorie spraw, bez czasu trwania mediacji, zgodnie z MS-S11o)
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>14</colSpan>
+        <rowspan>0</rowspan>
+        <style>center colorKoralowyJasny</style>
+        <text>
+          I + II instancja łącznie
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>9</kolumna>
+        <colSpan>14</colSpan>
+        <rowspan>0</rowspan>
+        <style>center colorKoralowyJasny</style>
+        <text>          I instancja        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>10</kolumna>
+        <colSpan>14</colSpan>
+        <rowspan>0</rowspan>
+        <style>center colorKoralowyJasny</style>
+        <text>          II instancja         </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>11</kolumna>
+        <colSpan>4</colSpan>
+        <rowspan>2</rowspan>
+        <style>center colorKoralowyJasny </style>
+        <text>skargi na przewlekłość</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>12</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>6</rowspan>
+        <style>center colorPomaranczowyJasny</style>
+        <text>
+          UWAGI
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>13</kolumna>
+        <colSpan>15</colSpan>
+        <rowspan>0</rowspan>
+        <style>center colorNiebieskiJasny </style>
+        <text>
+          WPŁYW
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>14</kolumna>
+        <colSpan>30</colSpan>
+        <rowspan>0</rowspan>
+        <style>center colorNiebieskiJasny</style>
+        <text>Załatwiono </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>15</kolumna>
+        <colSpan>15</colSpan>
+        <rowspan>0</rowspan>
+        <style>center colorNiebieskiJasny </style>
+        <text>ZAŁATWIENIA </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>16</kolumna>
+        <colSpan>4</colSpan>
+        <rowspan>2</rowspan>
+        <style>center colorNiebieskiJasny </style>
+        <text>
+          sesje odbyte przez sędziego
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>17</kolumna>
+        <colSpan>15</colSpan>
+        <rowspan>0</rowspan>
+        <style>center colorNiebieskiJasny </style>
+        <text> POZOSTAŁOŚĆ na następny miesiąc</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>18</kolumna>
+        <colSpan>27</colSpan>
+        <rowspan>0</rowspan>
+        <style>center colorNiebieskiJasny </style>
+        <text>pozostało spraw starych - wszystkie kategorie spraw (bez czasu trwania mediacji, zgodnie z dz. 2.1.1.1 MS-S11o) </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>19</kolumna>
+        <colSpan>9</colSpan>
+        <rowspan>0</rowspan>
+        <style>center colorNiebieskiJasny </style>
+        <text>stan spraw zawieszonych (wszystkie kategorie spraw, bez czasu trwania mediacji, zgodnie z MS-S11o)</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>20</kolumna>
+        <colSpan>14</colSpan>
+        <rowspan>0</rowspan>
+        <style>center colorNiebieskiJasny </style>
+        <text>   I + II instancja łącznie </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>21</kolumna>
+        <colSpan>14</colSpan>
+        <rowspan>0</rowspan>
+        <style>center colorNiebieskiJasny </style>
+        <text> I instancja</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>22</kolumna>
+        <colSpan>14</colSpan>
+        <rowspan>0</rowspan>
+        <style>center colorNiebieskiJasny </style>
+        <text> II instancja </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>23</kolumna>
+        <colSpan>4</colSpan>
+        <rowspan>2</rowspan>
+        <style>center colorNiebieskiJasny </style>
+        <text>
+          skargi na przewlekłość
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>24</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>5</rowspan>
+        <style>center colorNiebieskiJasny </style>
+        <text>Uwagi </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>4</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          I + II instancja łącznie
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>5</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorKoralowyJasny</style>
+        <text>
+          I instancja
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>8</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorKoralowyJasny</style>
+        <text>
+          II instancja
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>2</rowspan>
+        <style>center colorPomaranczowyJasny</style>
+        <text>
+          I + II instancja łącznie
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>10</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorKoralowyJasny</style>
+        <text>
+          I instancja
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>16</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorKoralowyJasny</style>
+        <text>
+          II instancja
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>4</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          I + II instancja łącznie
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>9</kolumna>
+        <colSpan>5</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorKoralowyJasny</style>
+        <text>
+          I instancja
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>10</kolumna>
+        <colSpan>8</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorKoralowyJasny</style>
+        <text>
+          II instancja
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>11</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>4</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          I + II instancja łącznie
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>12</kolumna>
+        <colSpan>5</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorKoralowyJasny</style>
+        <text>
+          I instancja
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>13</kolumna>
+        <colSpan>8</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorKoralowyJasny</style>
+        <text>          II instancja        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>15</kolumna>
+        <colSpan>9</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorKoralowyJasny</style>
+        <text>          I instancja         </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>16</kolumna>
+        <colSpan>9</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorKoralowyJasny</style>
+        <text>
+          II instancja
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>17</kolumna>
+        <colSpan>9</colSpan>
+        <rowspan>0</rowspan>
+        <style>center colorKoralowyJasny</style>
+
+        <text>
+          I + II instancja łącznie
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>18</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style>center colorKoralowyJasny</style>
+
+        <text>
+          I + II instancja łącznie
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>19</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorKoralowyJasny</style>
+        <text>          I instancja         </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>20</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorKoralowyJasny</style>
+        <text>
+          II instancja
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>21</kolumna>
+        <colSpan>14</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorKoralowyJasny</style>
+        <text>
+          terminowość sporządzania uzasadnień
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>22</kolumna>
+        <colSpan>14</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorKoralowyJasny</style>
+        <text>
+          terminowość sporządzania uzasadnień
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>23</kolumna>
+        <colSpan>14</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorKoralowyJasny</style>
+        <text>
+          terminowość sporządzania uzasadnień
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>24</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>4</rowspan>
+        <style>center col_80_fest_fest colorKoralowyJasny</style>
+        <text>
+          I + II instancja łącznie
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>25</kolumna>
+        <colSpan>6</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorKoralowyJasny</style>
+        <text>
+          I instancja
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>26</kolumna>
+        <colSpan>8</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorKoralowyJasny</style>
+        <text>
+          II instancja
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>27</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorKoralowyJasny</style>
+        <text>
+          I + II instancja łącznie
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>28</kolumna>
+        <colSpan>12</colSpan>
+        <rowspan>0</rowspan>
+        <style>center  colorKoralowyJasny</style>
+        <text>
+          I instancja
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>29</kolumna>
+        <colSpan>16</colSpan>
+        <rowspan>0</rowspan>
+        <style>center  colorKoralowyJasny</style>
+        <text>
+          II instancja
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>30</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>4</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          I + II instancja łącznie
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>31</kolumna>
+        <colSpan>6</colSpan>
+        <rowspan>0</rowspan>
+        <style>center  colorKoralowyJasny</style>
+        <text>
+          I instancja
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>32</kolumna>
+        <colSpan>8</colSpan>
+        <rowspan>0</rowspan>
+        <style>center  colorKoralowyJasny</style>
+        <text>
+          II instancja
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>33</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>4</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          I + II instancja łącznie
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>34</kolumna>
+        <colSpan>6</colSpan>
+        <rowspan>0</rowspan>
+        <style>center  colorKoralowyJasny</style>
+        <text>
+          I instancja
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>35</kolumna>
+        <colSpan>8</colSpan>
+        <rowspan>0</rowspan>
+        <style>center  colorKoralowyJasny</style>
+        <text>
+          II instancja
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>36</kolumna>
+        <colSpan>9</colSpan>
+        <rowspan>0</rowspan>
+        <style>center  colorKoralowyJasny</style>
+        <text>
+          I + II instancja łącznie
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>37</kolumna>
+        <colSpan>9</colSpan>
+        <rowspan>0</rowspan>
+        <style>center  colorKoralowyJasny</style>
+        <text>
+          I instancja
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>38</kolumna>
+        <colSpan>9</colSpan>
+        <rowspan>0</rowspan>
+        <style>center  colorKoralowyJasny</style>
+        <text>
+          II instancja
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>39</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style>center  colorKoralowyJasny</style>
+        <text>
+          I + II instancja łącznie
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>40</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style>center  colorKoralowyJasny</style>
+        <text>
+          I instancja
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>41</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style>center  colorKoralowyJasny</style>
+        <text>
+          II instancja
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>42</kolumna>
+        <colSpan>14</colSpan>
+        <rowspan>0</rowspan>
+        <style>center  colorKoralowyJasny</style>
+        <text>
+          terminowość sporządzania uzasadnień
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>43</kolumna>
+        <colSpan>14</colSpan>
+        <rowspan>0</rowspan>
+        <style>center  colorKoralowyJasny</style>
+        <text>
+          terminowość sporządzania uzasadnień
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>44</kolumna>
+        <colSpan>14</colSpan>
+        <rowspan>0</rowspan>
+        <style>center  colorKoralowyJasny</style>
+        <text>
+          terminowość sporządzania uzasadnień
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Ogółem
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          U
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Uo
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> WSC skarga o stw. niezg. z pr.</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSNc - I inst.
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Ogółem
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Ua
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>10</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>Uz</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>11</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Uo II inst
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>12</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSC skarga kasacyjna
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>13</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSC skarga o stw. niezg. z pr. II inst.
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>14</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Wykaz S skargi na post. sądowe
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>15</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSNc - II inst.
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>16</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Ogółem
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>17</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>U</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>18</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>Uo</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>19</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSC sk.o stw. niezg. z pr.
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>20</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> WSNc - I inst. </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>21</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>Ogółem</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>22</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>Ua</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>23</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>Uz</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>24</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Uo - II inst.
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>25</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> WSC sk. kasacyjna </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>27</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSC sk.o stw. niezg. z pr. II inst.
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>28</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Wykaz S skargi na post. sądowe
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>29</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSNc - II inst.
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>30</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>ogółem</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>31</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>U</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>32</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>Uo</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>33</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> WSC skarga o stw. niezg. z pr.</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>34</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSNc - I inst.
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>35</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Ogółem
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>36</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>Ua</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>37</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>Uz</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>38</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Uo II inst
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>39</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSC skarga kasacyjna
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>40</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSC skarga o stw. niezg. z pr. II inst.
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>41</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Wykaz S skargi na post. sądowe
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>42</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSNc - II inst.
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>43</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Ogółem
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>44</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>          z tego        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>45</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Ogółem
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>46</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          U
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>47</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Uo
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>48</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> WSC skarga o stw. niezg. z pr.</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>49</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSNc - I inst.
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>50</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Ogółem
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>51</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Ua
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>52</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>Uz</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>53</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Uo II inst
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>54</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSC skarga kasacyjna
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>55</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSC skarga o stw. niezg. z pr. II inst.
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>56</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Wykaz S skargi na post. sądowe
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>57</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSNc - II inst.
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>58</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Ogółem
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>72</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          do 3 m-cy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>73</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 3 do 6 m-cy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>74</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 6 do 12 m-cy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>75</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 12 m-cy do 2 lat
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>76</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 2 do 3 lat
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>77</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 3 do 5 lat
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>78</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 5 do 8 lat
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>79</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 8 lat
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>80</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Ogółem
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>81</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          do 3 m-cy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>82</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 3 do 6 m-cy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>83</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 6 do 12 m-cy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>84</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 12 m-cy do 2 lat
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>85</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 2 do 3 lat
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>86</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 3 do 5 lat
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>87</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 5 do 8 lat
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>88</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 8 lat
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>89</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Ogółem
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>90</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          do 3 m-cy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>91</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 3 do 6 m-cy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>92</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 6 do 12 m-cy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>93</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 12 m-cy do 2 lat
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>94</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 2 do 3 lat
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>95</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 3 do 5 lat
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>96</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 5 do 8 lat
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>97</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 8 lat
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>98</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> ogółem</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>99</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> zakreślonych</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>100</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> niezakreślonych</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>101</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> ogółem</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>102</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> zakreślonych</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>103</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> niezakreślonych</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>104</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> ogółem</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>105</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center  colorPomaranczowyJasny</style>
+        <text> zakreślonych</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>106</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center  colorPomaranczowyJasny</style>
+        <text> niezakreślonych</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>107</kolumna>
+        <colSpan>12</colSpan>
+        <rowspan>0</rowspan>
+        <style>center  colorPomaranczowyJasny</style>
+        <text>
+          od dnia doręczenia sędziemu wniosku do sporządzenia uzasadnienia (zgodnie z MS-S11o, dz. 1.4.2)*
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>108</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          od dnia wpływu wniosku do właściwego sądu (zgodnie z MS-S11o, dz. 1.4.1) **
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>109</kolumna>
+        <colSpan>12</colSpan>
+        <rowspan>0</rowspan>
+        <style>center  colorPomaranczowyJasny</style>
+        <text>
+          od dnia doręczenia sędziemu wniosku do sporządzenia uzasadnienia (zgodnie z MS-S11o, dz. 1.4.2)*
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>110</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          od dnia wpływu wniosku do właściwego sądu (zgodnie z MS-S11o, dz. 1.4.1) **
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>111</kolumna>
+        <colSpan>12</colSpan>
+        <rowspan>0</rowspan>
+        <style>center  colorPomaranczowyJasny</style>
+        <text>
+          od dnia doręczenia sędziemu wniosku do sporządzenia uzasadnienia (zgodnie z MS-S11o, dz. 1.4.2)*
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>112</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          od dnia wpływu wniosku do właściwego sądu (zgodnie z MS-S11o, dz. 1.4.1) **
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>113</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          wpływ
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>114</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          załatwiono
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>115</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pozostałość
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>116</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Ogółem
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>117</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          P
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>118</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Np
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>119</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Po
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>120</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSC skarga o stw. niezg. z pr.
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>121</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSNc - I inst.
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>122</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Ogółem
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>123</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Pa
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>124</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Pz
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>125</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Po II inst.
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>126</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSC skarga kasacyjna
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>127</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSC skarga o stw. niezg. z pr. II inst.
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>128</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Wykaz S skargi na post. sądowe
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>129</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSNc  - II inst.
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>130</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Ogółem
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>131</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          P
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>132</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Np.
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>133</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Po
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>134</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSC sk.o stw. niezg. z pr.
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>135</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSNc - I inst.
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>136</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Ogółem
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>137</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Pa
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>138</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Pz
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>139</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Po - II inst.
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>140</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSC sk. kasacyjna
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>141</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSC sk.o stw. niezg. z pr. II inst.
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>142</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Wykaz S skargi na post. sądowe
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>143</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSNc - II inst.
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>144</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Ogółem
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>145</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          P
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>146</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Np
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>147</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Po
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>148</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSC skarga o stw. niezg. z pr.
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>149</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSNc - I inst.
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>150</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Ogółem
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>151</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Pa
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>152</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Pz
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>153</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Po II inst.
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>154</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSC skarga kasacyjna
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>155</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSC skarga o stw. niezg. z pr. II inst.
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>156</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Wykaz S skargi na post. sądowe
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>157</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSNc  - II inst.
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>158</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          ogółem
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>159</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          z tego
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>160</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Ogółem
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>161</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          P
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>162</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Np
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>163</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Po
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>164</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSC skarga o stw. niezg. z pr.
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>165</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSNc - I inst.
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>166</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Ogółem
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>167</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Pa
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>168</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Pz
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>169</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Po II inst.
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>170</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSC skarga kasacyjna
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>171</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSC skarga o stw. niezg. z pr. II inst.
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>172</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Wykaz S skargi na post. sądowe
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>173</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          WSNc - II inst.
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>174</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Ogółem
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>175</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          do 3 m-cy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>176</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 3 do 6 m-cy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>177</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 6 do 12 m-cy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>178</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 12 m-cy do 2 lat
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>179</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 2 do 3 lat
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>180</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 3 do 5 lat
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>181</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 5 do 8 lat
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>182</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 8 lat
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>183</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Ogółem
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>184</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          do 3 m-cy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>185</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 3 do 6 m-cy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>186</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 6 do 12 m-cy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>187</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 12 m-cy do 2 lat
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>188</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 2 do 3 lat
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>189</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 3 do 5 lat
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>190</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 5 do 8 lat
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>191</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 8 lat
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>192</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          Ogółem
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>193</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          do 3 m-cy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>194</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 3 do 6 m-cy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>195</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 6 do 12 m-cy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>196</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 12 m-cy do 2 lat
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>197</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 2 do 3 lat
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>198</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 3 do 5 lat
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>199</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 5 do 8 lat
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>200</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          pow. 8 lat
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>201</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          ogółem
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>202</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          zakreślonych
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>203</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          niezakreślonych
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>204</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          ogółem
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>205</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          zakreślonych
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>206</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          niezakreślonych
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>207</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          ogółem
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>208</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          zakreślonych
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>209</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          niezakreślonych
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>210</kolumna>
+        <colSpan>12</colSpan>
+        <rowspan>0</rowspan>
+        <style>center  colorPomaranczowyJasny</style>
+        <text>
+          od dnia doręczenia sędziemu wniosku do sporządzenia uzasadnienia (zgodnie z MS-S11o, dz. 1.4.2)*
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>211</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center  colorPomaranczowyJasny</style>
+        <text>
+          od dnia wpływu wniosku do właściwego sądu (zgodnie z MS-S11o, dz. 1.4.1) **
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>212</kolumna>
+        <colSpan>12</colSpan>
+        <rowspan>0</rowspan>
+        <style>center  colorPomaranczowyJasny</style>
+        <text>
+          od dnia doręczenia sędziemu wniosku do sporządzenia uzasadnienia (zgodnie z MS-S11o, dz. 1.4.2)*
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>213</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center  colorPomaranczowyJasny</style>
+        <text>
+          od dnia wpływu wniosku do właściwego sądu (zgodnie z MS-S11o, dz. 1.4.1) **
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>214</kolumna>
+        <colSpan>12</colSpan>
+        <rowspan>0</rowspan>
+        <style>center  colorPomaranczowyJasny</style>
+        <text>
+          od dnia doręczenia sędziemu wniosku do sporządzenia uzasadnienia (zgodnie z MS-S11o, dz. 1.4.2)*
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>215</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center  colorPomaranczowyJasny</style>
+        <text>
+          od dnia wpływu wniosku do właściwego sądu (zgodnie z MS-S11o, dz. 1.4.1) **
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>216</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center  colorPomaranczowyJasny</style>
+        <text>
+          wpływ
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>217</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center  colorPomaranczowyJasny</style>
+        <text>
+          załatwiono
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>218</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center  colorPomaranczowyJasny</style>
+        <text>
+          pozostałość
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>9</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>10</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>11</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>12</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>13</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>14</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>15</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>16</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>17</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>18</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>19</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>20</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>21</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>22</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>23</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>24</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>25</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>26</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>27</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>28</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>29</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>rozprawy</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>30</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>posiedzenia jawne</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>31</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>posiedzenia niejawne</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>32</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>ogółem</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>33</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>
+          w terminie ustawowym 14 dni
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>34</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>razem po terminie ustawowym</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>35</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>nieusprawiedliw.</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>36</kolumna>
+        <colSpan>8</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>po upływie terminiu ustawowego</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>37</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>uzasadnienia wygłoszone ***</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>38</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>ogółem</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>39</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>
+          w terminie ustawowym 14 dni
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>40</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>razem po terminie ustawowym</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>41</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>nieusprawiedliw.</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>42</kolumna>
+        <colSpan>8</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>po upływie terminiu ustawowego</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>43</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>uzasadnienia wygłoszone ***</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>44</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>ogółem</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>45</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>
+          w terminie ustawowym 14 dni
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>46</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>razem po terminie ustawowym</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>47</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>nieusprawiedliw.</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>48</kolumna>
+        <colSpan>8</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>po upływie terminiu ustawowego</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>49</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>uzasadnienia wygłoszone ***</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>50</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>ogółem</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>51</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>uwzględniono</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>52</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>53</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>54</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>55</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>56</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>57</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>58</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>59</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>60</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>61</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>62</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>63</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>64</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>65</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>66</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>67</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>68</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>69</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>70</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>71</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>72</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>73</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>74</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>75</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>76</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>77</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>78</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>79</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>80</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na <![CDATA[<br />]]>rozprawie</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>81</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>na posiedzeniu</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>82</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>rozprawy</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>83</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>posiedzenia jawne</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>84</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>posiedzenia niejawne</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>85</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> łącznie</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>86</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> w terminie ustawowym 14 dni</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>87</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> razem po terminie ustawowym</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>88</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> nieusprawiedliw.</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>89</kolumna>
+        <colSpan>8</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> po upływie terminiu ustawowego.</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>90</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> uzasadnienia wygłoszone ***</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>91</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> łącznie</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>92</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> w terminie ustawowym 14 dni</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>93</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> razem po terminie ustawowym</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>94</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> nieusprawiedliw.</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>95</kolumna>
+        <colSpan>8</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> po upływie terminiu ustawowego.</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>96</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> uzasadnienia wygłoszone ***</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>97</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> łącznie</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>98</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> w terminie ustawowym 14 dni</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>99</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> razem po terminie ustawowym</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>100</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> nieusprawiedliw.</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>101</kolumna>
+        <colSpan>8</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> po upływie terminiu ustawowego.</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>102</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> uzasadnienia wygłoszone ***</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>103</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text> ogółem</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>104</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>uwzględniono</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>1-14 dni </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym nieusprawiedliwione     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>15-30 dni </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym nieusprawiedliwione     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text> powyżej 1 do 3 mies. </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym nieusprawiedliwione     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>9</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text> powyżej 3 mies. </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>10</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym nieusprawiedliwione     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>11</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>ogółem     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>12</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym, w których wpłynął wniosek o transkrypcję     </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>13</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>1-14 dni </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>14</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym nieusprawiedliwione     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>15</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>15-30 dni </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>16</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym nieusprawiedliwione     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>17</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text> powyżej 1 do 3 mies. </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>18</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym nieusprawiedliwione     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>19</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text> powyżej 3 mies. </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>20</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym nieusprawiedliwione     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>21</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>ogółem     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>22</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym, w których wpłynął wniosek o transkrypcję     </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>23</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>1-14 dni </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>24</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym nieusprawiedliwione     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>25</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>15-30 dni </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>26</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym nieusprawiedliwione     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>27</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text> powyżej 1 do 3 mies. </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>28</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym nieusprawiedliwione     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>29</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text> powyżej  3 mies. </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>30</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym nieusprawiedliwione     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>31</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>ogółem     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>32</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym, w których wpłynął wniosek o transkrypcję     </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>33</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>1-14 dni </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>34</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym nieusprawiedliwione     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>35</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>15-30 dni </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>36</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym nieusprawiedliwione     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>37</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text> powyżej 1 do 3 mies. </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>38</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym nieusprawiedliwione     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>39</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text> powyżej 3 mies. </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>40</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym nieusprawiedliwione     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>41</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>ogółem     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>42</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym, w których wpłynął wniosek o transkrypcję     </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>43</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>1-14 dni </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>44</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym nieusprawiedliwione     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>45</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>15-30 dni </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>46</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym nieusprawiedliwione     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>47</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text> powyżej 1 do 3 mies. </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>48</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym nieusprawiedliwione     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>49</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text> powyżej 3 mies. </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>50</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym nieusprawiedliwione     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>51</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>ogółem     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>52</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym, w których wpłynął wniosek o transkrypcję     </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>53</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>1-14 dni </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>54</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym nieusprawiedliwione     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>55</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>15-30 dni </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>56</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym nieusprawiedliwione     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>57</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text> powyżej 1 do 3 mies. </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>58</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym nieusprawiedliwione     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>59</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text> powyżej 3 mies. </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>60</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym nieusprawiedliwione     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>61</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>ogółem     </text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>62</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest_fest colorZoltyMocnoJasny</style>
+        <text>w tym, w których wpłynął wniosek o transkrypcję     </text>
+      </komorka>
+    </naglowek>
+  </tabela>
+</komorki>

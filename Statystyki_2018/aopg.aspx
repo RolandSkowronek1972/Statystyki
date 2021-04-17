@@ -72,7 +72,7 @@
         <div>
             &nbsp;<asp:Label ID="Label1" runat="server" Text="Ruch spraw w referatach sędziów"></asp:Label>
             &nbsp;&nbsp;&nbsp;
-           <asp:Label ID="infoLabel1" runat="server" Text="tabela  1" Visible="False"></asp:Label>
+        
             <br />
             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                 <ContentTemplate>
@@ -115,7 +115,7 @@
         <div class="page-break">
             &nbsp;<asp:Label ID="Label7" runat="server" Text="Wyznaczenia i załatwienia w referatach sędziów" Visible="False"></asp:Label>
             &nbsp;&nbsp;&nbsp;
-           <asp:Label ID="infoLabel2" runat="server" Text="tabela 2" Visible="False"></asp:Label>
+       
             <br />
 
             <dx:ASPxGridView ID="ASPxGridView2" runat="server" AutoGenerateColumns="False" Theme="MetropolisBlue" OnSummaryDisplayText="ASPxGridView2_SummaryDisplayText" Visible="False">
