@@ -29,7 +29,7 @@ namespace Statystyki_2018
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            string idWydzial =   Request.QueryString["w"];
+            string idWydzial = Request.QueryString["w"];
             try
             {
                 if (idWydzial == null)
@@ -42,7 +42,7 @@ namespace Statystyki_2018
                 bool dost = cm.dostep(idWydzial, (string)Session["identyfikatorUzytkownika"]);
                 if (!dost)
                 {
-                   Server.Transfer("default.aspx?info='Użytkownik " + (string)Session["identyfikatorUzytkownika"] + " nie praw do działu nr " + idWydzial + "'");
+                    Server.Transfer("default.aspx?info='Użytkownik " + (string)Session["identyfikatorUzytkownika"] + " nie praw do działu nr " + idWydzial + "'");
                 }
 
                 path = Server.MapPath("~\\Template\\" + tenPlikNazwa + ".xlsx");
@@ -84,8 +84,6 @@ namespace Statystyki_2018
             }
             catch
             { }
-
-          
         }
 
         protected void Odswiez(object sender, EventArgs e)
@@ -121,7 +119,7 @@ namespace Statystyki_2018
             {
                 ExcelWorksheet MyWorksheet1 = MyExcel.Workbook.Worksheets[1];
 
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 77, 0, 7, true, true, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 76, 0, 7, true, true, false, false, false);
 
                 try
                 {
@@ -141,16 +139,16 @@ namespace Statystyki_2018
 
         protected void tabela_1()
         {
+            tablePlaceHolder01.Controls.Clear();
             string idDzialu = (string)Session["id_dzialu"];
             if (cl.debug(int.Parse(idDzialu)))
             {
                 cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 1");
             }
-         //   DataTable tabelka01 = dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse(idDzialu), 1, Date1.Date, Date2.Date, 400, tenPlik);
 
             try
             {
-                Session["tabelka001"] = dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse(idDzialu), 1, Date1.Date, Date2.Date, 350, tenPlik);
+                Session["tabelka001"] = dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse(idDzialu), 5, Date1.Date, Date2.Date, 350, tenPlik);
 
                 string path = Server.MapPath("XMLHeaders") + "\\" + tenPlikNazwa + ".xml";
                 StringBuilder Tabele = new StringBuilder();

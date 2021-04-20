@@ -141,16 +141,17 @@ namespace Statystyki_2018
 
         protected void tabela_1()
         {
+            tablePlaceHolder01.Controls.Clear();
             string idDzialu = (string)Session["id_dzialu"];
             if (cl.debug(int.Parse(idDzialu)))
             {
-                cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 1");
+                cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 5");
             }
          //   DataTable tabelka01 = dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse(idDzialu), 1, Date1.Date, Date2.Date, 400, tenPlik);
 
             try
             {
-                Session["tabelka001"] = dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse(idDzialu), 1, Date1.Date, Date2.Date, 350, tenPlik);
+                Session["tabelka001"] = dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse(idDzialu), 5, Date1.Date, Date2.Date, 350, tenPlik);
 
                 string path = Server.MapPath("XMLHeaders") + "\\" + tenPlikNazwa + ".xml";
                 StringBuilder Tabele = new StringBuilder();

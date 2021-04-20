@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
@@ -589,9 +588,6 @@ namespace Statystyki_2018
             StringBuilder kodStony = new StringBuilder();
             try
             {
-
-               
-
                 string ciagWyjsciowy = string.Empty;
                 if (pageBreak)
                 {
@@ -605,22 +601,17 @@ namespace Statystyki_2018
                 kodStony.AppendLine("<P><b>" + idTabeli + "</b> " + tekstNadTabela + " </P>");
                 kodStony.AppendLine("<table style='width:95%'>");
                 //naglowek
-               
+
                 try
                 {
                     for (int j = 1; j < iloscKolumnPoIteracji + 1; j++)
                     {
-                       
-                        string txt1 = dr.wyciagnijWartoscMK(naglowek, "id_kolumny=" + j.ToString () , tenPlik);
-                         kodStony.AppendLine("<td class='center borderAll'>" + txt1 + "</td>");
+                        string txt1 = dr.wyciagnijWartoscMK(naglowek, "id_kolumny=" + j.ToString(), tenPlik);
+                        kodStony.AppendLine("<td class='center borderAll'>" + txt1 + "</td>");
                     }
                 }
-                catch 
-                {    }
-               
-
-
-
+                catch
+                { }
 
                 for (int i = 1; i < iloscWierszyTabeli + 1; i++)
                 {
@@ -642,25 +633,7 @@ namespace Statystyki_2018
                     }
                 }
                 //tabela główna
-           /*     for (int i = 1; i < iloscWierszyTabeli + 1; i++)
-                {
-                    try
-                    {
-                        kodStony.AppendLine("<tr>");
 
-                        for (int j = 1; j < iloscKolumnPoIteracji + 1; j++)
-                        {
-                            string txt = dr.wyciagnijWartosc(dane, "idWydzial=" + idWydzialu + " and idTabeli='" + idTabeliNum.ToString() + "' and idWiersza ='" + i.ToString() + "' and idkolumny='" + j.ToString() + "'", tenPlik);
-                            string txt2 = "<a Class=\"normal\" href=\"javascript: openPopup('popup.aspx?sesja=" + i.ToString().ToString() + "!" + idTabeliNum.ToString() + "!" + j.ToString() + "!1')\">" + txt + " </a>";
-                            kodStony.AppendLine("<td class='center borderAll'>" + txt2 + "</td>");
-                        }
-                        kodStony.AppendLine("</tr>");
-                    }
-                    catch (Exception ex)
-                    {
-                        log.Error(tenPlik + " tworztabeleMK " + ex);
-                    }
-                }*/
                 kodStony.AppendLine("</tr>");
 
                 kodStony.AppendLine("</table>");
@@ -682,7 +655,7 @@ namespace Statystyki_2018
             kodStony.AppendLine("<P><b>Dział " + idTabeli + "</b> " + tekstNadTabela + " </P>");
             kodStony.AppendLine("<table style='width:100%'>");
             //naglowek
-            //   DataTable header = naglowek;
+
             log.Info(tenPlik = " start generowania naglowka do tabeli  MSS : " + idTabeli);
             for (int i = 1; i < iloscWierszyNaglowka + 1; i++)
 
@@ -717,7 +690,7 @@ namespace Statystyki_2018
                         {
                             sekcjaStyle = " " + style + " ";
                         }
-                        if (iloscKolumnPrzedIteracja>0)
+                        if (iloscKolumnPrzedIteracja > 0)
                         {
                             if (lp)
                             {
@@ -730,7 +703,6 @@ namespace Statystyki_2018
                                 kodStony.AppendLine("<td  class ='borderAll  " + sekcjaStyle + "'" + sekcjaColspan + rowSpanPart(int.Parse(wiersz["rowspan"].ToString().Trim())) + ">" + tekst + "</td>");
                             }
                         }
-                     
                     }
                 }
                 catch (Exception ex)
@@ -781,7 +753,7 @@ namespace Statystyki_2018
                         }
                         else
                         {
-                            log.Error(tenPlik + "id Tabeli: " + idTabeli + " naglowek  MSS  LinqError: wiersz=null");
+                            log.Error(tenPlik + " id Tabeli: " + idTabeli + " naglowek  MSS  LinqError: wiersz=null");
                         }
                     }
                     catch (Exception ex)
@@ -802,19 +774,17 @@ namespace Statystyki_2018
 
                 kodStony.AppendLine(classify);
             }
-                for (int j = 1; j < iloscKolumnPoIteracji + 1; j++)
-                {
-                    kodStony.AppendLine("<td  class='borderAll center'>" + j.ToString() + "</td>");
-                }
-            
-           
+            for (int j = 1; j < iloscKolumnPoIteracji + 1; j++)
+            {
+                kodStony.AppendLine("<td  class='borderAll center'>" + j.ToString() + "</td>");
+            }
 
             //tabela główna
             for (int i = 1; i < iloscWierszyTabeli + 1; i++)
             {
                 kodStony.AppendLine("<tr>");
 
-                if (iloscKolumnPrzedIteracja>0)
+                if (iloscKolumnPrzedIteracja > 0)
                 {
                     for (int j = 1; j < iloscKolumnPrzedIteracja + 1; j++)
                     {
@@ -863,7 +833,7 @@ namespace Statystyki_2018
                 {
                     kodStony.AppendLine("<td class='center borderAll col_26'>" + i.ToString() + "</td>");
                 }
-              
+
                 for (int j = 1; j < iloscKolumnPoIteracji + 1; j++)
                 {
                     string txt = dr.wyciagnijWartosc(dane, "idWydzial=" + idWydzialu + " and idTabeli='" + idTabeli + "' and idWiersza ='" + i.ToString() + "' and idkolumny='" + j.ToString() + "'", tenPlik);
@@ -954,8 +924,6 @@ namespace Statystyki_2018
 
         public string odczytXML(string path, int idDzialu, string tabela, string tenPlik)
         {
-            // string path = Server.MapPath("XMLHeaders") + "\\" + sciezka;
-
             if (!File.Exists(path))
             {
                 log.Error(tenPlik + " bład odczytu pliku: " + path);
@@ -995,12 +963,10 @@ namespace Statystyki_2018
                         continue;
                     }
 
-                    st.AppendLine(" ####################################################    ");
-                    st.AppendLine(" id Tabeli " + idTabeli);
                     iloscWierszy = int.Parse(informacjeOtabeli.ChildNodes[0].InnerText);
-                    st.AppendLine(" iloscWierszy " + iloscWierszy.ToString());
+
                     tekstNadTabela = informacjeOtabeli.ChildNodes[1].InnerText;
-                    st.AppendLine(" tekstNadTabela " + tekstNadTabela.ToString());
+
                     //informacjeOtabeli
                     iloscWieszyNaglowka = int.Parse(informacjeOtabeli.ChildNodes[2].InnerText);
                     //iloscWieszyNaglowka = int.Parse(informacjeOtabeli[]);
@@ -1011,16 +977,17 @@ namespace Statystyki_2018
                     st.AppendLine(" ilosc kolun Po Iteracji " + ilosckolunPoIteracji.ToString());
 
                     Lp = int.Parse(informacjeOtabeli.ChildNodes[5].InnerText);
-                    //  lp = (Lp == 0);
+                    log.Info(tenPlik + " start odczytu danych do nagłówka : " + idDzialu.ToString());
                     naglowek = wygenerujTabele(node.ChildNodes[(int)pola.naglowek]);
-
+                    log.Info(tenPlik + " start odczytu danych do tebeli bocznej : " + idDzialu.ToString());
                     tabelaBoczna = wygenerujTabele(node.ChildNodes[(int)pola.tabelaBoczna]);
-
+                    log.Info(tenPlik + " start generowania tabeli : " + idDzialu.ToString());
                     tabelaGlowna.AppendLine(tworztabeleMSS(idTabeli, naglowek, tabelaBoczna, tabelaDanych, iloscWieszyNaglowka, iloscWierszy, ilosckolunPrzedIteracja, ilosckolunPoIteracji, idDzialu, lp, tekstNadTabela, "test"));
                 }
             }
             catch (Exception ex)
             {
+                log.Error(tenPlik + " bład generowania tabeli dla działu  : " + idDzialu.ToString()+ " " +ex.Message);
                 tabelaGlowna.AppendLine(ex.Message);
             }
 
@@ -1042,7 +1009,7 @@ namespace Statystyki_2018
                 //  return "";
             }
             XmlDocument doc = new XmlDocument();
-            
+
             doc.Load(path);
             StringBuilder st = new StringBuilder();
             string tekstNadTabela = string.Empty;
@@ -1053,7 +1020,7 @@ namespace Statystyki_2018
             int ilosckolunPoIteracji = 0;
             int Lp = 0;
             bool lp = false;
-            log.Info(tenPlik + " odczytXML : rozpoczęcie odczytywania nodów" );
+            log.Info(tenPlik + " odczytXML : rozpoczęcie odczytywania nodów");
 
             StringBuilder tabelaGlowna = new StringBuilder();
             try
@@ -1091,20 +1058,17 @@ namespace Statystyki_2018
                     try
                     {
                         wyswietlNaglowek = informacjeOtabeli.ChildNodes[6].InnerText;
-                        if ((wyswietlNaglowek.Length==1)&&(wyswietlNaglowek!="0"))
+                        if ((wyswietlNaglowek.Length == 1) && (wyswietlNaglowek != "0"))
                         {
                             wyswietlNaglowek = "0";
                         }
                     }
-                    catch 
+                    catch
                     {
-
-                       
                     }
                     if (wyswietlNaglowek != "0")
                     {
                         tabelaGlowna.AppendLine(tworztabeleMSS(idTabeli, naglowek, tabelaBoczna, tabelaDanych, iloscWieszyNaglowka, iloscWierszy, ilosckolunPrzedIteracja, ilosckolunPoIteracji, idDzialu, lp, tekstNadTabela, "test"));
-
                     }
                     else
                     {
@@ -1169,18 +1133,15 @@ namespace Statystyki_2018
                         continue;
                     }
 
-                   
                     iloscWierszy = int.Parse(informacjeOtabeli.ChildNodes[0].InnerText);
-                   
+
                     tekstNadTabela = informacjeOtabeli.ChildNodes[1].InnerText;
-                   
+
                     iloscWieszyNaglowka = int.Parse(informacjeOtabeli.ChildNodes[2].InnerText);
-                  
+
                     ilosckolunPrzedIteracja = int.Parse(informacjeOtabeli.ChildNodes[3].InnerText);
-                    
 
                     ilosckolunPoIteracji = int.Parse(informacjeOtabeli.ChildNodes[4].InnerText);
-                  
 
                     Lp = int.Parse(informacjeOtabeli.ChildNodes[5].InnerText);
                     //  lp = (Lp == 0);
@@ -1300,7 +1261,7 @@ namespace Statystyki_2018
             public int IdWydzial { get; set; }
             public int IdTabeli { get; set; }
             public int IdWiersza { get; set; }
-            public double  IdKolumny { get; set; }
+            public double IdKolumny { get; set; }
             public string Wartosc { get; set; }
         }
     }

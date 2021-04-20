@@ -10,6 +10,7 @@ namespace Statystyki_2018
     {
         public wyszukiwarka w1 = new wyszukiwarka();
         public common cm = new common();
+        public Class1 cl = new Class1();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -98,8 +99,14 @@ namespace Statystyki_2018
             string kw = cm.getQuerryValue("SELECT wartosc FROM            konfig  WHERE        (ident = @ident)", cm.con_str, parameters);
             string cs = cm.getQuerryValue("SELECT ConnectionString FROM            konfig  WHERE        (ident = @ident)", cm.con_str, parameters);
 
-            parameters.Rows.Add("@data_1", dataPoczatkowa);
-            parameters.Rows.Add("@data_2", dataKoncowa);
+            parameters.Rows.Add("@data_1", cl.KonwertujDate(data1.Date));
+            parameters.Rows.Add("@data_2", cl.KonwertujDate(data2.Date));
+
+
+
+
+          //  parameters.Rows.Add("@data_1", dataPoczatkowa);
+         //   parameters.Rows.Add("@data_2", dataKoncowa);
             DataTable dT = new DataTable();
             try
             {
@@ -136,7 +143,7 @@ namespace Statystyki_2018
             {
                 return;
             }
-            DataTable dane = GetTable(data1.Date, data2.Date, ident, "databind");
+            DataTable dane = GetTable(data1.Date, data2.Date, ident, "Kontrolka nowa");
             grid.DataSource = dane;
             try
             {

@@ -8,7 +8,7 @@
       <tekstNadTabela>Ruch spraw sędziów </tekstNadTabela>
       <iloscWierszyNaglowka>5</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>0</iloscKolumnPrzedIteracja>
-      <iloscKolumnPoIteracji>84</iloscKolumnPoIteracji>
+      <iloscKolumnPoIteracji>85</iloscKolumnPoIteracji>
       <lp>1</lp>
       <identyfikatorTabeli>1</identyfikatorTabeli>
     </daneTabeli>
@@ -54,7 +54,7 @@
       <komorka>
         <wiersz>1</wiersz>
         <kolumna>5</kolumna>
-        <colSpan>9</colSpan>
+        <colSpan>10</colSpan>
         <rowspan>0</rowspan>
         <style>center colorKoralowyJasny</style>
         <text>
@@ -369,7 +369,7 @@
         <rowspan>4</rowspan>
         <style>center col_80_fest_fest colorPomaranczowyJasny</style>
         <text>
-          RCo
+          Nsm
         </text>
       </komorka>
       <komorka>
@@ -379,7 +379,7 @@
         <rowspan>4</rowspan>
         <style>center col_80_fest_fest colorPomaranczowyJasny</style>
         <text>
-          Nmo
+          RCo
         </text>
       </komorka>
       <komorka>
@@ -389,12 +389,22 @@
         <rowspan>4</rowspan>
         <style>center col_80_fest_fest colorPomaranczowyJasny</style>
         <text>
-          RCps
+          Nmo
         </text>
       </komorka>
       <komorka>
         <wiersz>2</wiersz>
         <kolumna>29</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>4</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          RCps
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>30</kolumna>
         <colSpan>0</colSpan>
         <rowspan>4</rowspan>
         <style>center col_80_fest_fest colorPomaranczowyJasny</style>
@@ -405,7 +415,7 @@
 
       <komorka>
         <wiersz>2</wiersz>
-        <kolumna>30</kolumna>
+        <kolumna>31</kolumna>
         <colSpan>0</colSpan>
         <rowspan>4</rowspan>
         <style>center col_80_fest_fest colorPomaranczowyJasny</style>
@@ -415,7 +425,7 @@
       </komorka>
       <komorka>
         <wiersz>2</wiersz>
-        <kolumna>31</kolumna>
+        <kolumna>32</kolumna>
         <colSpan>0</colSpan>
         <rowspan>4</rowspan>
         <style>center col_80_fest_fest colorPomaranczowyJasny</style>
@@ -425,7 +435,7 @@
       </komorka>
       <komorka>
         <wiersz>2</wiersz>
-        <kolumna>32</kolumna>
+        <kolumna>33</kolumna>
         <colSpan>0</colSpan>
         <rowspan>4</rowspan>
         <style>center col_80_fest_fest colorPomaranczowyJasny</style>

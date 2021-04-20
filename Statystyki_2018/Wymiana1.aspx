@@ -1,20 +1,12 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Wymiana1.aspx.cs" Inherits="Statystyki_2018.Wymiana1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true"  MasterPageFile="~/Site1.Master" CodeBehind="Wymiana1.aspx.cs" Inherits="Statystyki_2018.Wymiana1" %>
 
 <%@ Register assembly="DevExpress.Web.v17.1, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web" tagprefix="dx" %>
 
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <p>
-        <br />
-    </p>
-    <p>
-        &nbsp;</p>
-    <form id="form1" runat="server">
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    
       
            <dx:ASPxPageControl ID="citiesTabPage" Width="100%" runat="server" CssClass="dxtcFixed" ActiveTabIndex="0" OnActiveTabChanged="citiesTabPage_ActiveTabChanged" >
         <TabPages>
@@ -162,6 +154,5 @@
         </p>
         <div>
         </div>
-    </form>
-</body>
-</html>
+   
+    </asp:Content>

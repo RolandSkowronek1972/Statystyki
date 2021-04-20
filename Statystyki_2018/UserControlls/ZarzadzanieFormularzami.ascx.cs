@@ -136,6 +136,7 @@ namespace Statystyki_2018.UserControlls
                     case 4: Uprawnienia.kof.usun(wydzial, uzytkownik); break;
                     case 5: Uprawnienia.wyszukiwarka.usun(wydzial, uzytkownik); break;
                     case 6: Uprawnienia.pracownik.usun(wydzial, uzytkownik); break;
+                    case 7: Uprawnienia.wymiana.usun(wydzial, uzytkownik); break;
 
                     default:
                         break;
@@ -151,6 +152,7 @@ namespace Statystyki_2018.UserControlls
                     case 4: Uprawnienia.kof.dodaj(wydzial, uzytkownik); break;
                     case 5: Uprawnienia.wyszukiwarka.dodaj(wydzial, uzytkownik); break;
                     case 6: Uprawnienia.pracownik.dodaj(wydzial, uzytkownik); break;
+                    case 7: Uprawnienia.wymiana.dodaj(wydzial, uzytkownik); break;
 
                     default:
                         break;
@@ -177,6 +179,7 @@ namespace Statystyki_2018.UserControlls
             public Kontrolki kontrolki = new Kontrolki();
             public Wyszukiwarka wyszukiwarka = new Wyszukiwarka();
             public Pracownik pracownik = new Pracownik();
+            public Wymiana wymiana = new Wymiana();
         }
 
         public class miesieczne : common
@@ -199,7 +202,26 @@ namespace Statystyki_2018.UserControlls
                 runQuerry(" delete from uprawnienia where  id_wydzialu=@idWydzialu and rodzaj=1 and id_uzytkownika=@id_uzytkownika", con_str, parametry);
             }
         }
+        public class Wymiana : common
+        {
+            public void dodaj(int wydzial, int uzytkownik)
+            {
+                log.Info("dodawanie miesieczne");
+                DataTable parametry = makeParameterTable();
+                parametry.Rows.Add("@idWydzialu", wydzial);
+                parametry.Rows.Add("@id_uzytkownika", uzytkownik);
+                runQuerry(" IF NOT EXISTS(SELECT * FROM uprawnienia WHERE id_wydzialu = @idWydzialu AND rodzaj = 7 AND id_uzytkownika = @id_uzytkownika)    BEGIN       insert INTO uprawnienia (id_wydzialu,rodzaj,id_uzytkownika) VALUES  (@idWydzialu,7,@id_uzytkownika)    END", con_str, parametry);
+            }
 
+            public void usun(int wydzial, int uzytkownik)
+            {
+                log.Info("usuwanie miesieczne");
+                DataTable parametry = makeParameterTable();
+                parametry.Rows.Add("@idWydzialu", wydzial);
+                parametry.Rows.Add("@id_uzytkownika", uzytkownik);
+                runQuerry(" delete from uprawnienia where  id_wydzialu=@idWydzialu and rodzaj=7 and id_uzytkownika=@id_uzytkownika", con_str, parametry);
+            }
+        }
         public class MSS : common
         {
             public void dodaj(int wydzial, int uzytkownik)
