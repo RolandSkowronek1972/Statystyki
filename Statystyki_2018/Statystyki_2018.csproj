@@ -175,6 +175,10 @@
     <Content Include="aktc.aspx" />
     <Content Include="SerwisWymiany.asmx" />
     <Content Include="Wymiana1.aspx" />
+    <Content Include="XMLHeaders\MSS11o.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLHeaders\MSS5o.xml" />
     <Content Include="XMLHeaders\oopr.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -373,9 +377,6 @@
     <Content Include="XMLHeaders\onsu2.xml" />
     <Content Include="XMLHeaders\akrp2.xml" />
     <Content Include="XMLHeaders\mss.xml" />
-    <Content Include="XMLHeaders\MSS5o.xml">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="XMLHeaders\test.xml" />
     <Content Include="XMLHeaders\ansa.xml" />
     <Content Include="XMLHeaders\wizk_1_25.xml" />
@@ -482,7 +483,6 @@
     <Content Include="Template\otrkd.xlsx" />
     <Content Include="Template\okrk.xlsx" />
     <Content Include="Template\aglg.xlsx" />
-    <Content Include="Template\oczc.xlsx" />
     <Content Include="Template\mp.xlsx" />
     <Content Include="Template\otrp.xlsx" />
     <Content Include="Template\oglk2.xlsx" />
@@ -494,6 +494,7 @@
     <Content Include="Template\aktc2.xlsx" />
     <Content Include="Template\aoppe.xlsx" />
     <Content Include="Template\aopk.xlsx" />
+    <Content Include="Template\oczc.xlsx" />
     <None Include="Web.config-stary">
       <SubType>Designer</SubType>
     </None>

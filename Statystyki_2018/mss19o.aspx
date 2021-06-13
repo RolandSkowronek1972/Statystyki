@@ -3,6 +3,7 @@
 <%@ Register Assembly="DevExpress.Web.v17.1, Version=17.1.17.0,  Culture=neutral,  PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <br />
     <style>
         #menu {
             position: relative;
@@ -19,10 +20,7 @@
             height: 2px;
         }
 
-        .auto-style5 {
-            font-family: "Segoe UI";
-        }
-    </style>
+        </style>
 
     <script src="Scripts/rls.js"></script>
 
@@ -118,174 +116,8 @@
         <br />
 
         <br />
-        <strong>Dział 1.1.c. </strong>(dział 1.1.1 wiersz 107  + dział 1.1.2 wiersz 60 kolumna 3 lit. c) skarga o stwierdzenie niezgodności z prawem  łącznie I i II instancja
-        <br />
-        <div id='1.1.c'>
 
-            <table style="width: 100%">
-                <tr>
-                    <td class="borderAll center" colspan="3">Wyszczególnienie </td>
-                    <td class="borderAll center col_110 center borderAll ">Liczby spraw</td>
-                </tr>
-                <tr>
-                    <td class="borderAll wciecie" colspan="2">przekazanych Sądowi Najwyższemu ze skargą o stwierdzenie niezgodności z prawem prawomocnego orzeczenia</td>
-                    <td class="borderAll col_36">1</td>
-                    <td class="borderAll center col_110 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=1!1.1.c!1!4')">
-                        <asp:Label CssClass="normal" ID="tab_1_1_c_w01_c01" runat="server" Text="0"></asp:Label></a></td>
-                </tr>
-                <tr>
-                    <td class="borderAll wciecie" colspan="2">przesłanych z Sądu Najwyższego w okresie sprawozdawczym (w.02 =w. 03 do 07)</td>
-                    <td class="borderAll col_36">2</td>
-                    <td class="borderAll center col_110 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=2!1.1.c!1!4')">
-                        <asp:Label CssClass="normal" ID="tab_1_1_c_w02_c01" runat="server" Text="0"></asp:Label></a></td>
-                </tr>
-                <tr>
-                    <td class="borderAll wciecie" rowspan="5">w których
-        <br />
-                        Sąd Najwyższy </td>
-                    <td class="borderAll wciecie">odmówił przyjęcia skargi do rozpoznania (art.424<sup><span class="auto-style5">9 </span></sup>kpc)</td>
-                    <td class="borderAll col_36">3</td>
-                    <td class="borderAll center col_110 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=3!1.1.c!1!4')">
-                        <asp:Label CssClass="normal" ID="tab_1_1_c_w03_c01" runat="server" Text="0"></asp:Label></a></td>
-                </tr>
-                <tr>
-                    <td class="borderAll wciecie">odrzucił skargę (art.424<sup>8</sup> kpc) </td>
-                    <td class="borderAll col_36">4</td>
-                    <td class="borderAll center col_110 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=4!1.1.c!1!4')">
-                        <asp:Label CssClass="normal" ID="tab_1_1_c_w04_c01" runat="server" Text="0"></asp:Label></a></td>
-                </tr>
-                <tr>
-                    <td class="borderAll wciecie">oddalił skargę (art.424<sup>11</sup> §1 kpc)</td>
-                    <td class="borderAll col_36">5</td>
-                    <td class="borderAll center col_110 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=5!1.1.c!1!4')">
-                        <asp:Label CssClass="normal" ID="tab_1_1_c_w05_c01" runat="server" Text="0"></asp:Label></a></td>
-                </tr>
-                <tr>
-                    <td class="borderAll wciecie">uwzględnił skargę (art.424<sup>11</sup> §2 kpc)</td>
-                    <td class="borderAll col_36">6</td>
-                    <td class="borderAll center col_110 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=6!1.1.c!1!4')">
-                        <asp:Label CssClass="normal" ID="tab_1_1_c_w06_c01" runat="server" Text="0"></asp:Label></a></td>
-                </tr>
-                <tr>
-                    <td class="borderAll wciecie">załatwił w inny sposób</td>
-                    <td class="borderAll col_36">7</td>
-                    <td class="borderAll center col_110 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=7!1.1.c!1!4')">
-                        <asp:Label CssClass="normal" ID="tab_1_1_c_w07_c01" runat="server" Text="0"></asp:Label></a></td>
-                </tr>
-            </table>
-        </div>
-
-        <br />
-
-        <br />
-
-        <div id='1.1.e'>
-            <strong>Dział 1.1.e</strong> (dział 1.1.2 wiersz 57 kolumna 3 lit. e) skarga kasacyjna
-            <table style="width: 100%">
-                <tr>
-                    <td class="borderAll wciecie" colspan="3">Wyszczególnienie</td>
-                    <td class="borderAll center center borderAll ">Liczby spraw</td>
-                </tr>
-                <tr>
-                    <td class="center borderAll" colspan="3">0</td>
-                    <td class="borderAll center center col_110">1</td>
-                </tr>
-                <tr>
-                    <td class="borderAll wciecie" colspan="2">Przekazanych Sądowi Najwyższemu ze skargą kasacyjną w okresie sprawozdawczym</td>
-                    <td class="borderAll col_36">1</td>
-                    <td class="borderAll center center col_110"><a href="javascript:openPopup('popup.aspx?sesja=1!1.1.e!1!4')">
-                        <asp:Label CssClass="normal" ID="tab_1_1_e_w01_c01" runat="server" Text="0"></asp:Label></a></td>
-                </tr>
-                <tr>
-                    <td class="borderAll wciecie" colspan="2">Przesłanych z Sądu Najwyższego w okresie sprawozdawczym (w. 02 = w. 03 do 09)</td>
-                    <td class="borderAll col_36">2</td>
-                    <td class="borderAll center center col_110"><a href="javascript:openPopup('popup.aspx?sesja=2!1.1.e!1!4')">
-                        <asp:Label CssClass="normal" ID="tab_1_1_e_w02_c01" runat="server" Text="0"></asp:Label></a></td>
-                </tr>
-                <tr>
-                    <td class="borderAll wciecie" rowspan="7">w których Sąd Najwyższy </td>
-                    <td class="borderAll wciecie">odmówił przyjęcia skargi do rozpoznania (art. 398<sup>9</sup> kpc)</td>
-                    <td class="borderAll col_36">3</td>
-                    <td class="borderAll center center col_110"><a href="javascript:openPopup('popup.aspx?sesja=3!1.1.e!1!4')">
-                        <asp:Label CssClass="normal" ID="tab_1_1_e_w03_c01" runat="server" Text="0"></asp:Label></a></td>
-                </tr>
-                <tr>
-                    <td class="borderAll wciecie">odrzucił skargę</td>
-                    <td class="borderAll col_36">4</td>
-                    <td class="borderAll center center col_110"><a href="javascript:openPopup('popup.aspx?sesja=4!1.1.e!1!4')">
-                        <asp:Label CssClass="normal" ID="tab_1_1_e_w04_c01" runat="server" Text="0"></asp:Label></a></td>
-                </tr>
-                <tr>
-                    <td class="borderAll wciecie">oddalił skargę (art.398<sup>14</sup> kpc)</td>
-                    <td class="borderAll col_36">5</td>
-                    <td class="borderAll center center col_110"><a href="javascript:openPopup('popup.aspx?sesja=5!1.1.e!1!4')">
-                        <asp:Label CssClass="normal" ID="tab_1_1_e_w05_c01" runat="server" Text="0"></asp:Label></a></td>
-                </tr>
-                <tr>
-                    <td class="borderAll wciecie">uwzględnił skargę poprzez zmianę orzeczenia (art.398<sup>16</sup> kpc)</td>
-                    <td class="borderAll col_36">6</td>
-                    <td class="borderAll center center col_110"><a href="javascript:openPopup('popup.aspx?sesja=6!1.1.e!1!4')">
-                        <asp:Label CssClass="normal" ID="tab_1_1_e_w06_c01" runat="server" Text="0"></asp:Label></a></td>
-                </tr>
-                <tr>
-                    <td class="borderAll wciecie">uchylił orzeczenie i przekazał sprawę sądowi I lub II instancji do ponownego rozpoznania (art.398<sup>15</sup> kpc)</td>
-                    <td class="borderAll col_36">7</td>
-                    <td class="borderAll center center col_110"><a href="javascript:openPopup('popup.aspx?sesja=7!1.1.e!1!4')">
-                        <asp:Label CssClass="normal" ID="tab_1_1_e_w07_c01" runat="server" Text="0"></asp:Label></a></td>
-                </tr>
-                <tr>
-                    <td class="borderAll wciecie">uchylił wydane orzeczenie i odrzucił pozew (art.398<sup>19 </sup>kpc)</td>
-                    <td class="borderAll col_36">8</td>
-                    <td class="borderAll center center col_110"><a href="javascript:openPopup('popup.aspx?sesja=8!1.1.e!1!4')">
-                        <asp:Label CssClass="normal" ID="tab_1_1_e_w08_c01" runat="server" Text="0"></asp:Label></a></td>
-                </tr>
-                <tr>
-                    <td class="borderAll wciecie">załatwił w inny sposób</td>
-                    <td class="borderAll col_36">9</td>
-                    <td class="borderAll center center col_110"><a href="javascript:openPopup('popup.aspx?sesja=9!1.1.e!1!4')">
-                        <asp:Label CssClass="normal" ID="tab_1_1_e_w09_c01" runat="server" Text="0"></asp:Label></a></td>
-                </tr>
-            </table>
-        </div>
-
-        <br />
-        <div id='1.1.f'>
-            <strong>Dział 1.1.f</strong> Ustanowienie pełnomocnika z urzędu
-    <table style="width: 100%;">
-        <tr>
-            <td class="center borderAll" colspan="2">Repertorium lub wykaz</td>
-            <td class="center borderAll">Liczba spraw w których doszło do ustanowienia pełnomocnika z urzędu (radca prawny, adwokat)</td>
-            <td class="center borderAll">Liczba ustanowionych pełnomocników z urzędu (radca prawny, adwokat)</td>
-            <td class="center borderAll">W tym liczba wyznaczonych pełnomocników w wyniku zwolnienia poprzedniego pełnomocnika (od I 2012)</td>
-        </tr>
-        <tr>
-            <td class="center borderAll" colspan="2">0</td>
-            <td class="center borderAll">1</td>
-            <td class="center borderAll">2</td>
-            <td class="center borderAll">3</td>
-        </tr>
-        <tr>
-            <td class="borderAll wciecie col_60">Gc</td>
-            <td class="borderAll col_36">1</td>
-            <td class="borderAll center center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=1!1.1.f!1!4')">
-                <asp:Label CssClass="normal" ID="tab_1_1_f_w01_c01" runat="server" Text="0"></asp:Label></a></td>
-            <td class="borderAll center center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=1!1.1.f!2!4')">
-                <asp:Label CssClass="normal" ID="tab_1_1_f_w01_c02" runat="server" Text="0"></asp:Label></a></td>
-            <td class="borderAll center center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=1!1.1.f!3!4')">
-                <asp:Label CssClass="normal" ID="tab_1_1_f_w01_c03" runat="server" Text="0"></asp:Label></a></td>
-        </tr>
-        <tr>
-            <td class="borderAll wciecie col_60">Ga</td>
-            <td class="borderAll col_36">2</td>
-            <td class="borderAll center center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=2!1.1.f!1!4')">
-                <asp:Label CssClass="normal" ID="tab_1_1_f_w02_c01" runat="server" Text="0"></asp:Label></a></td>
-            <td class="borderAll center center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=2!1.1.f!2!4')">
-                <asp:Label CssClass="normal" ID="tab_1_1_f_w02_c02" runat="server" Text="0"></asp:Label></a></td>
-            <td class="borderAll center center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=2!1.1.f!3!4')">
-                <asp:Label CssClass="normal" ID="tab_1_1_f_w02_c03" runat="server" Text="0"></asp:Label></a></td>
-        </tr>
-    </table>
-        </div>
+     
 
         <br />
         <div id='1.1.g'>
@@ -513,7 +345,7 @@
 
         <br />
         <asp:PlaceHolder runat="server" ID="tablePlaceHolder02"></asp:PlaceHolder>
-
+          
         <br />
         <div id='1.1.k'>
 
@@ -532,88 +364,6 @@
              <asp:PlaceHolder runat="server" ID="tablePlaceHolder03"></asp:PlaceHolder>
         </div>
 
-        <br />
-        <br />
-        <div id="4.1.a">
-            <strong>Dział 4.1.a</strong> Terminowość postępowania międzyinstancyjnego w pierwszej instancji
-            <table>
-                <tr>
-                    <td class="center borderAll" colspan="2" rowspan="2">Środki odwoławcze, które zostały
-                        <br />
-                        przekazane do rozpoznania sądowi II instancji</td>
-                    <td class="center borderAll" rowspan="2">Ogółem (kol. 2 do 7) </td>
-                    <td class="center borderAll" colspan="6">Z tego od daty orzeczenia sądu okręgowego do daty przekazania do sądu II instancji upłynął okres</td>
-                </tr>
-                <tr>
-                    <td class="center borderAll">do 2 mies.</td>
-                    <td class="center borderAll">pow. 2 do 3 mies.</td>
-                    <td class="center borderAll">pow. 3 do 6 mies.</td>
-                    <td class="center borderAll">pow.6 do 12 miesięcy</td>
-                    <td class="center borderAll">pow. 12 mies. do 2 lat</td>
-                    <td class="center borderAll">ponad 2 lata</td>
-                </tr>
-                <tr>
-                    <td class="center borderAll" colspan="2">0</td>
-                    <td class="center borderAll">1</td>
-                    <td class="center borderAll">2</td>
-                    <td class="center borderAll">3</td>
-                    <td class="center borderAll">4</td>
-                    <td class="center borderAll">5</td>
-                    <td class="center borderAll">6</td>
-                    <td class="center borderAll">7</td>
-                </tr>
-                <tr>
-                    <td class="borderAll wciecie">Apelacje</td>
-                    <td class="borderAll col_36">1</td>
-                    <td class="col_90 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=1!4.1.a!1!4')">
-                        <asp:Label ID="tab_4_1_a_w01_c01" runat="server" CssClass="normal" Text="0"></asp:Label>
-                    </a></td>
-                    <td class="col_90 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=1!4.1.a!2!4')">
-                        <asp:Label ID="tab_4_1_a_w01_c02" runat="server" CssClass="normal" Text="0"></asp:Label>
-                    </a></td>
-                    <td class="col_90 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=1!4.1.a!3!4')">
-                        <asp:Label ID="tab_4_1_a_w01_c03" runat="server" CssClass="normal" Text="0"></asp:Label>
-                    </a></td>
-                    <td class="col_90 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=1!4.1.a!4!4')">
-                        <asp:Label ID="tab_4_1_a_w01_c04" runat="server" CssClass="normal" Text="0"></asp:Label>
-                    </a></td>
-                    <td class="col_90 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=1!4.1.a!5!4')">
-                        <asp:Label ID="tab_4_1_a_w01_c05" runat="server" CssClass="normal" Text="0"></asp:Label>
-                    </a></td>
-                    <td class="col_90 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=1!4.1.a!6!4')">
-                        <asp:Label ID="tab_4_1_a_w01_c06" runat="server" CssClass="normal" Text="0"></asp:Label>
-                    </a></td>
-                    <td class="col_90 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=1!4.1.a!7!4')">
-                        <asp:Label ID="tab_4_1_a_w01_c07" runat="server" CssClass="normal" Text="0"></asp:Label>
-                    </a></td>
-                </tr>
-                <tr>
-                    <td class="borderAll wciecie">Zażalenia</td>
-                    <td class="borderAll col_36">2</td>
-                    <td class="col_90 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=2!4.1.a!1!4')">
-                        <asp:Label ID="tab_4_1_a_w02_c01" runat="server" CssClass="normal" Text="0"></asp:Label>
-                    </a></td>
-                    <td class="col_90 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=2!4.1.a!2!4')">
-                        <asp:Label ID="tab_4_1_a_w02_c02" runat="server" CssClass="normal" Text="0"></asp:Label>
-                    </a></td>
-                    <td class="col_90 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=2!4.1.a!3!4')">
-                        <asp:Label ID="tab_4_1_a_w02_c03" runat="server" CssClass="normal" Text="0"></asp:Label>
-                    </a></td>
-                    <td class="col_90 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=2!4.1.a!4!4')">
-                        <asp:Label ID="tab_4_1_a_w02_c04" runat="server" CssClass="normal" Text="0"></asp:Label>
-                    </a></td>
-                    <td class="col_90 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=2!4.1.a!5!4')">
-                        <asp:Label ID="tab_4_1_a_w02_c05" runat="server" CssClass="normal" Text="0"></asp:Label>
-                    </a></td>
-                    <td class="col_90 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=2!4.1.a!6!4')">
-                        <asp:Label ID="tab_4_1_a_w02_c06" runat="server" CssClass="normal" Text="0"></asp:Label>
-                    </a></td>
-                    <td class="col_90 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=2!4.1.a!7!4')">
-                        <asp:Label ID="tab_4_1_a_w02_c07" runat="server" CssClass="normal" Text="0"></asp:Label>
-                    </a></td>
-                </tr>
-            </table>
-        </div>
         <br />
         <div id="4.1.b">
             <strong>Dział 4.1.b</strong> Terminowość obiegu międzyinstancyjnego spraw odwoławczych

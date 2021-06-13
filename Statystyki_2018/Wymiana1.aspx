@@ -8,7 +8,7 @@
 
     
       
-           <dx:ASPxPageControl ID="citiesTabPage" Width="100%" runat="server" CssClass="dxtcFixed" ActiveTabIndex="0" OnActiveTabChanged="citiesTabPage_ActiveTabChanged" >
+           <dx:ASPxPageControl ID="citiesTabPage" Width="100%" runat="server" CssClass="dxtcFixed" ActiveTabIndex="1" OnActiveTabChanged="citiesTabPage_ActiveTabChanged" >
         <TabPages>
             <dx:TabPage Text="I instancja">
                 <ContentCollection>
@@ -132,7 +132,7 @@
                             </tr>
                             <tr>
                                 <td class="wciecie">
-                                    <dx:ASPxButton ID="ASPxButton3" runat="server" OnClick="ASPxButton1_Click" Text="Wyślij zapytanie" Theme="MetropolisBlue">
+                                    <dx:ASPxButton ID="ASPxButton3" runat="server" OnClick="WyślijZapytanie2" Text="Wyślij zapytanie" Theme="MetropolisBlue">
                                     </dx:ASPxButton>
                                 </td>
                                 <td>

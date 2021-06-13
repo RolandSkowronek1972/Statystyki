@@ -1,15 +1,104 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <komorki xmlns="urn:tabeleMSS">
 
-  <tabela id="1">
+
+
+  <tabela id="1a">
     <daneTabeli>
+
       <iloscWierszy>1</iloscWierszy>
-      <tekstNadTabela><![CDATA[<b>Ewidencja spraw – ogółem I i II instancja</b>]]></tekstNadTabela>
+      <tekstNadTabela>
+        Ewidencja spraw – ogółem I i II instancja
+      </tekstNadTabela>
       <iloscWierszyNaglowka>1</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>1</iloscKolumnPrzedIteracja>
       <iloscKolumnPoIteracji>4</iloscKolumnPoIteracji>
       <lp>1</lp>
-      <identyfikatorTabeli>1</identyfikatorTabeli>
+      <wyswietlNaglowek>0</wyswietlNaglowek>
+      <identyfikatorTabeli>0</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_250</style>
+        <text>Wyszczególnienie  </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>Pozostało z ubiegłego roku  </text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>
+          WPŁYNĘŁO razem
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>
+          ZAŁATWIONO
+          razem
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>
+          Pozostało na okres następny
+        </text>
+      </komorka>
+      
+      
+    </naglowek>
+
+    <tablaBoczna>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Ogółem I i II instancja (dz. 1.1.1 w. 01 + dz. 1.1.2. w. 01)</text>
+      </komorka>
+
+   
+    
+    </tablaBoczna>
+  </tabela>
+
+  <tabela id="1">
+    <daneTabeli>
+
+      <iloscWierszy>1</iloscWierszy>
+      <tekstNadTabela>
+        Ewidencja spraw – ogółem I i II instancja
+      </tekstNadTabela>
+      <iloscWierszyNaglowka>1</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>1</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>4</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>1.1.f</identyfikatorTabeli>
     </daneTabeli>
     <naglowek>
 
@@ -17,59 +106,94 @@
         <wiersz>1</wiersz>
         <kolumna>1</kolumna>
         <colSpan>1</colSpan>
-        <rowspan>1</rowspan>
-        <text> Wyszczególnienie</text>
+        <rowspan>0</rowspan>
+        <style>center col_250</style>
+        <text>Wyszczególnienie  </text>
       </komorka>
+
       <komorka>
         <wiersz>1</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
-        <rowspan>1</rowspan>
+        <rowspan>0</rowspan>
         <style>center </style>
-        <text>pozostało z ubiegłego roku</text>
+        <text>       Pozostało z ubiegłego roku      </text>
       </komorka>
       <komorka>
         <wiersz>1</wiersz>
         <kolumna>3</kolumna>
-        <colSpan>1</colSpan>
-        <rowspan>1</rowspan>
-        <style>center</style>
-        <text>WPŁYNĘŁO Razem</text>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>          WPŁYNĘŁO razem        </text>
       </komorka>
       <komorka>
         <wiersz>1</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
-        <rowspan>1</rowspan>
-        <style>center</style>
-        <text>ZAŁATWIONO razem</text>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>
+          ZAŁATWIONO razem
+        </text>
       </komorka>
       <komorka>
         <wiersz>1</wiersz>
         <kolumna>5</kolumna>
-        <colSpan>1</colSpan>
-        <rowspan>1</rowspan>
-        <style>center</style>
-        <text>Pozostało na okres następny</text>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>
+          Pozostało na okres następny
+        </text>
       </komorka>
     </naglowek>
+
     <tablaBoczna>
       <komorka>
         <wiersz>1</wiersz>
         <kolumna>1</kolumna>
-        <colSpan>1</colSpan>
+        <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style> wciecie </style>
-        <text>Ogółem I i II instancja (dz. 1.1.1 w. 01 + dz. 1.1.2. w. 01)</text>
+        <text>Ogółem I i II instancja (dz. 1.1.1 w. 01 + dz. 1.1.2. w. 01) </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Partii</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Funduszy Emerytalnych</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Funduszy Inwestycyjnych</text>
       </komorka>
     </tablaBoczna>
   </tabela>
+ 
   <tabela id="1.1.f">
     <daneTabeli>
 
       <iloscWierszy>4</iloscWierszy>
       <tekstNadTabela>
-       Ns-rej. Stan rejestru i zmiany
+        Ns-rej. Stan rejestru i zmiany
       </tekstNadTabela>
       <iloscWierszyNaglowka>1</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>1</iloscKolumnPrzedIteracja>
@@ -208,7 +332,6 @@
         <style>center </style>
         <text>Nc</text>
       </komorka>
-    
     </naglowek>
 
     <tablaBoczna>
@@ -245,8 +368,6 @@
         <style> wciecie </style>
         <text>w europejskim postępowaniu nakazowym</text>
       </komorka>
-
-     
     </tablaBoczna>
   </tabela>
   <tabela id="1.1.h">
@@ -254,7 +375,7 @@
 
       <iloscWierszy>7</iloscWierszy>
       <tekstNadTabela>
-       (skarga o stwierdzenie niezgodności z prawem łącznie I i II instancja) - (Dział 1.1.1. wiersz 203 + Dział 1.1.2. wiersz 201 kolumna 3 lit. h)
+        (skarga o stwierdzenie niezgodności z prawem łącznie I i II instancja) - (Dział 1.1.1. wiersz 203 + Dział 1.1.2. wiersz 201 kolumna 3 lit. h)
       </tekstNadTabela>
       <iloscWierszyNaglowka>1</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>2</iloscKolumnPrzedIteracja>
@@ -281,8 +402,6 @@
         <style>center </style>
         <text>       Liczby spraw   </text>
       </komorka>
-   
-
     </naglowek>
 
     <tablaBoczna>
@@ -294,7 +413,7 @@
         <style> wciecie </style>
         <text>Przekazanych Sądowi Najwyższemu ze skargą o stwierdzenie niezgodności z prawem prawomocnego orzeczenia</text>
       </komorka>
-     
+
       <komorka>
         <wiersz>2</wiersz>
         <kolumna>1</kolumna>
@@ -312,7 +431,6 @@
         <style> wciecie </style>
         <text>w których Sąd Najwyższy </text>
       </komorka>
-
 
       <komorka>
         <wiersz>3</wiersz>
@@ -357,8 +475,6 @@
     </tablaBoczna>
   </tabela>
 
-
-  
   <tabela id="1.1.j">
     <daneTabeli>
 
@@ -391,8 +507,6 @@
         <style>center </style>
         <text>Liczby spraw   </text>
       </komorka>
-
-
     </naglowek>
 
     <tablaBoczna>
@@ -422,7 +536,6 @@
         <style> wciecie </style>
         <text>w których Sąd Najwyższy </text>
       </komorka>
-
 
       <komorka>
         <wiersz>3</wiersz>
@@ -482,11 +595,11 @@
       </komorka>
     </tablaBoczna>
   </tabela>
-  
+
   <tabela id="1.1.2">
     <daneTabeli>
 
-      <iloscWierszy>203</iloscWierszy>
+      <iloscWierszy>204</iloscWierszy>
       <tekstNadTabela><![CDATA[<b>Ewidencja spraw II instancja</b>]]></tekstNadTabela>
       <iloscWierszyNaglowka>5</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>4</iloscKolumnPrzedIteracja>
@@ -678,7 +791,8 @@
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
         <style> wciecie </style>
-        <text>  <![CDATA[<b>Ogółem II instancja</b><br>]]>
+        <text>
+          <![CDATA[<b>Ogółem II instancja</b><br>]]>
           (wiersze: 02,180, 193, 200 do 203)
         </text>
       </komorka>
@@ -1482,10 +1596,28 @@
         <text>55</text>
       </komorka>
 
-     
-
       <komorka>
         <wiersz>47</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Zadośćuczynienie z tytułu uszkodzenia ciała lub uszczerbku na zdrowiu na podstawie art. 445 kc</text>
+      </komorka>
+      <komorka>
+        <wiersz>47</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>325</text>
+      </komorka>
+      
+      
+      
+      
+      <komorka>
+        <wiersz>48</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>2</rowspan>
@@ -1493,7 +1625,7 @@
         <text>Odszkodowania za naruszenie dóbr osobistych na podstawie art. 448 kc:</text>
       </komorka>
       <komorka>
-        <wiersz>47</wiersz>
+        <wiersz>48</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -1501,7 +1633,7 @@
         <text>zadośćuczynienie za doznaną krzywdę</text>
       </komorka>
       <komorka>
-        <wiersz>47</wiersz>
+        <wiersz>48</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1510,7 +1642,7 @@
       </komorka>
 
       <komorka>
-        <wiersz>48</wiersz>
+        <wiersz>49</wiersz>
         <kolumna>1</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -1518,7 +1650,7 @@
         <text>na cel społeczny</text>
       </komorka>
       <komorka>
-        <wiersz>48</wiersz>
+        <wiersz>49</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1526,16 +1658,16 @@
         <text>056</text>
       </komorka>
       <komorka>
-        <wiersz>49</wiersz>
+        <wiersz>50</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>2</rowspan>
         <style> wciecie </style>
         <text>Odszkodowania za naruszenie zasady równego traktowania (art. 13 ustawy z dnia 3 grudnia 2010 r. o wdrożeniu niektórych przepisów UE w zakresie równego traktowania (Dz. U. z 2016 r., poz. 1219) </text>
       </komorka>
-      
+
       <komorka>
-        <wiersz>49</wiersz>
+        <wiersz>50</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -1543,7 +1675,7 @@
         <text>zadośćuczynienie za doznaną krzywdę</text>
       </komorka>
       <komorka>
-        <wiersz>49</wiersz>
+        <wiersz>50</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1551,7 +1683,7 @@
         <text>056</text>
       </komorka>
       <komorka>
-        <wiersz>50</wiersz>
+        <wiersz>51</wiersz>
         <kolumna>1</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -1559,7 +1691,7 @@
         <text>na cel społeczny</text>
       </komorka>
       <komorka>
-        <wiersz>50</wiersz>
+        <wiersz>51</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1567,7 +1699,7 @@
         <text>056</text>
       </komorka>
       <komorka>
-        <wiersz>51</wiersz>
+        <wiersz>52</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -1575,7 +1707,7 @@
         <text>Roszczenia pieniężne z tytułu naruszenia dóbr osobistych na podstawie art. 24 kc</text>
       </komorka>
       <komorka>
-        <wiersz>51</wiersz>
+        <wiersz>52</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1583,7 +1715,7 @@
         <text>322</text>
       </komorka>
       <komorka>
-        <wiersz>52</wiersz>
+        <wiersz>53</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -1591,7 +1723,7 @@
         <text>Bezpodstawne wzbogacenie (art. 405 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>52</wiersz>
+        <wiersz>53</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1599,7 +1731,7 @@
         <text>057</text>
       </komorka>
       <komorka>
-        <wiersz>53</wiersz>
+        <wiersz>54</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -1607,7 +1739,7 @@
         <text>Roszczenia o przywrócenie stanu zgodnego z prawem i o zaniechanie naruszeń (art. 222 §2 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>53</wiersz>
+        <wiersz>54</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1615,7 +1747,7 @@
         <text>058</text>
       </komorka>
       <komorka>
-        <wiersz>54</wiersz>
+        <wiersz>55</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>3</rowspan>
@@ -1623,7 +1755,7 @@
         <text>Odpowiedzialność za szkodę wyrządzoną przez niezgodne z prawem działanie lub zaniechanie przy wykonywaniu władzy publicznej (art.417§1 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>54</wiersz>
+        <wiersz>55</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -1631,7 +1763,7 @@
         <text>Skarbu Państwa</text>
       </komorka>
       <komorka>
-        <wiersz>54</wiersz>
+        <wiersz>55</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1639,7 +1771,7 @@
         <text>059</text>
       </komorka>
       <komorka>
-        <wiersz>55</wiersz>
+        <wiersz>56</wiersz>
         <kolumna>1</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -1647,7 +1779,7 @@
         <text>jednostki samorządu terytorialnego</text>
       </komorka>
       <komorka>
-        <wiersz>55</wiersz>
+        <wiersz>56</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1655,7 +1787,7 @@
         <text>060</text>
       </komorka>
       <komorka>
-        <wiersz>56</wiersz>
+        <wiersz>57</wiersz>
         <kolumna>1</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -1663,7 +1795,7 @@
         <text>inne osoby prawne</text>
       </komorka>
       <komorka>
-        <wiersz>56</wiersz>
+        <wiersz>57</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1671,7 +1803,7 @@
         <text>062a</text>
       </komorka>
       <komorka>
-        <wiersz>57</wiersz>
+        <wiersz>58</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>3</rowspan>
@@ -1679,7 +1811,7 @@
         <text>Solidarna odpowiedzialność na podstawie porozumienia za wykonywanie zadań z zakresu władzy publicznej (art.417§2 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>57</wiersz>
+        <wiersz>58</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -1687,7 +1819,7 @@
         <text>Skarbu Państwa</text>
       </komorka>
       <komorka>
-        <wiersz>57</wiersz>
+        <wiersz>58</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1695,7 +1827,7 @@
         <text>059</text>
       </komorka>
       <komorka>
-        <wiersz>58</wiersz>
+        <wiersz>59</wiersz>
         <kolumna>1</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -1703,7 +1835,7 @@
         <text>jednostki samorządu terytorialnego</text>
       </komorka>
       <komorka>
-        <wiersz>58</wiersz>
+        <wiersz>59</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1711,7 +1843,7 @@
         <text>060</text>
       </komorka>
       <komorka>
-        <wiersz>59</wiersz>
+        <wiersz>60</wiersz>
         <kolumna>1</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -1719,7 +1851,7 @@
         <text>inne osoby prawne</text>
       </komorka>
       <komorka>
-        <wiersz>59</wiersz>
+        <wiersz>60</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1727,7 +1859,7 @@
         <text>062a</text>
       </komorka>
       <komorka>
-        <wiersz>60</wiersz>
+        <wiersz>61</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -1735,7 +1867,7 @@
         <text>Żądanie naprawienia szkody wyrządzonej na osobie przez zgodne z prawem wykonywanie władzy publicznej gdy okoliczności wskazują, że wymagają tego względy słuszności( art. 4172 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>60</wiersz>
+        <wiersz>61</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1743,7 +1875,7 @@
         <text>68</text>
       </komorka>
       <komorka>
-        <wiersz>61</wiersz>
+        <wiersz>62</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -1751,7 +1883,7 @@
         <text>Żądanie zadośćuczynienia pieniężnego za szkody wyrządzone na osobie przez zgodne z prawem wykonywanie władzy publicznej gdy okoliczności wskazują, że wymagają tego względy słuszności (art. 4172 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>61</wiersz>
+        <wiersz>62</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1759,7 +1891,7 @@
         <text>69</text>
       </komorka>
       <komorka>
-        <wiersz>62</wiersz>
+        <wiersz>63</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -1767,7 +1899,7 @@
         <text>Odpowiedzialność za wydanie aktu norma­tywnego niezgodnego z Konstytucją , ratyfikowaną umową międzynarodową lub ustawą oraz za niewydanie aktu normatywnego, którego obowiązek wydania przewiduje przepis prawa (art.4171§1 i 4  kc)</text>
       </komorka>
       <komorka>
-        <wiersz>62</wiersz>
+        <wiersz>63</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1775,7 +1907,7 @@
         <text>63</text>
       </komorka>
       <komorka>
-        <wiersz>63</wiersz>
+        <wiersz>64</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -1783,7 +1915,7 @@
         <text>Odpowiedzialność za wydanie prawomocnego orzeczenia lub ostatecznej decyzji  oraz za niewydanie orzeczenia lub decyzji, gdy obowiązek ich wydania przewiduje przepis prawa(art.4171§2 i 3  kc)</text>
       </komorka>
       <komorka>
-        <wiersz>63</wiersz>
+        <wiersz>64</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1791,7 +1923,7 @@
         <text>64</text>
       </komorka>
       <komorka>
-        <wiersz>64</wiersz>
+        <wiersz>65</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -1799,7 +1931,7 @@
         <text>Roszczenia wniesione na podstawie art.16 ustawy z dn.17.06.2004r.o skardze na naruszenie prawa strony do rozpoznania sprawy w postępowaniu sądowym bez nieuzasadnionej zwłoki</text>
       </komorka>
       <komorka>
-        <wiersz>64</wiersz>
+        <wiersz>65</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1807,7 +1939,7 @@
         <text>70</text>
       </komorka>
       <komorka>
-        <wiersz>65</wiersz>
+        <wiersz>66</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -1815,7 +1947,7 @@
         <text>Roszczenia z walutowych transakcji instrumentami pochodnymi (opcje walutowe, swapy walutowe, CIRS, forward i inne)</text>
       </komorka>
       <komorka>
-        <wiersz>65</wiersz>
+        <wiersz>66</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1823,7 +1955,7 @@
         <text>75</text>
       </komorka>
       <komorka>
-        <wiersz>66</wiersz>
+        <wiersz>67</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -1831,7 +1963,7 @@
         <text>Skarga na orzeczenia Krajowej Izby Odwoławczej</text>
       </komorka>
       <komorka>
-        <wiersz>66</wiersz>
+        <wiersz>67</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1839,7 +1971,7 @@
         <text>323</text>
       </komorka>
       <komorka>
-        <wiersz>67</wiersz>
+        <wiersz>68</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -1847,7 +1979,7 @@
         <text>O uznanie umowy za bezskuteczną (art. 59 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>67</wiersz>
+        <wiersz>68</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1855,7 +1987,7 @@
         <text>306</text>
       </komorka>
       <komorka>
-        <wiersz>68</wiersz>
+        <wiersz>69</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -1863,7 +1995,7 @@
         <text>O unieważnienie umowy zawartej w wyniku aukcji albo przetargu (art. 705 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>68</wiersz>
+        <wiersz>69</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1871,7 +2003,7 @@
         <text>308</text>
       </komorka>
       <komorka>
-        <wiersz>69</wiersz>
+        <wiersz>70</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -1879,7 +2011,7 @@
         <text>O wydanie rzeczy ruchomej (art. 222 § 1 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>69</wiersz>
+        <wiersz>70</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1887,7 +2019,7 @@
         <text>309</text>
       </komorka>
       <komorka>
-        <wiersz>70</wiersz>
+        <wiersz>71</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -1895,7 +2027,7 @@
         <text>Roszczenia wzajemne między właścicielem a samoistnym posiadaczem rzeczy (art. 229 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>70</wiersz>
+        <wiersz>71</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1903,7 +2035,7 @@
         <text>301</text>
       </komorka>
       <komorka>
-        <wiersz>71</wiersz>
+        <wiersz>72</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -1911,7 +2043,7 @@
         <text>O wstrzymanie budowy (art. 347 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>71</wiersz>
+        <wiersz>72</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1919,7 +2051,7 @@
         <text>310</text>
       </komorka>
       <komorka>
-        <wiersz>72</wiersz>
+        <wiersz>73</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -1927,7 +2059,7 @@
         <text>O rozstrzygnięcie z powodu nadzwyczajnej zmian stosunków (art. 3571 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>72</wiersz>
+        <wiersz>73</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1935,7 +2067,7 @@
         <text>311</text>
       </komorka>
       <komorka>
-        <wiersz>73</wiersz>
+        <wiersz>74</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -1943,7 +2075,7 @@
         <text>Żądania z tytułu wyzysku (art. 388 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>73</wiersz>
+        <wiersz>74</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1951,7 +2083,7 @@
         <text>312</text>
       </komorka>
       <komorka>
-        <wiersz>74</wiersz>
+        <wiersz>75</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -1959,7 +2091,7 @@
         <text>O zawarcie umowy przyrzeczonej (art. 390 § 2 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>74</wiersz>
+        <wiersz>75</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1967,7 +2099,7 @@
         <text>313</text>
       </komorka>
       <komorka>
-        <wiersz>75</wiersz>
+        <wiersz>76</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -1975,7 +2107,7 @@
         <text>O orzeczenie przepadku świadczenia spełnionego w zamian za dokonanie czynu zabronionego przez ustawę lub w celu niegodziwym (art. 412 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>75</wiersz>
+        <wiersz>76</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1983,7 +2115,7 @@
         <text>314</text>
       </komorka>
       <komorka>
-        <wiersz>76</wiersz>
+        <wiersz>77</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -1991,7 +2123,7 @@
         <text>O naprawienie szkody wynikłej z czynu niedozwolonego, z wyłączeniem spraw o symbolach 014wk, 014oc, 014pz,  026, 027, 027a, 027b, 028, 029, 030, 050, 050z, 055, 056, 056s, 059, 060, 060a, 061, 062, 062a, 068, 069, 063, 064</text>
       </komorka>
       <komorka>
-        <wiersz>76</wiersz>
+        <wiersz>77</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -1999,7 +2131,7 @@
         <text>302</text>
       </komorka>
       <komorka>
-        <wiersz>77</wiersz>
+        <wiersz>78</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2007,7 +2139,7 @@
         <text>O naprawienie szkody z tytułu odpowiedzialności za szkodę wyrządzoną przez produkt niebezpieczny</text>
       </komorka>
       <komorka>
-        <wiersz>77</wiersz>
+        <wiersz>78</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2015,7 +2147,7 @@
         <text>303</text>
       </komorka>
       <komorka>
-        <wiersz>78</wiersz>
+        <wiersz>79</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2023,7 +2155,7 @@
         <text>O naprawienie szkody wynikłej z niewykonania lub nienależytego wykonania zobowiązania</text>
       </komorka>
       <komorka>
-        <wiersz>78</wiersz>
+        <wiersz>79</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2031,7 +2163,7 @@
         <text>304</text>
       </komorka>
       <komorka>
-        <wiersz>79</wiersz>
+        <wiersz>80</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2039,7 +2171,7 @@
         <text>O upoważnienie do wykonania zastępczego na koszt dłużnika</text>
       </komorka>
       <komorka>
-        <wiersz>79</wiersz>
+        <wiersz>80</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2048,7 +2180,7 @@
       </komorka>
 
       <komorka>
-        <wiersz>80</wiersz>
+        <wiersz>81</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2056,7 +2188,7 @@
         <text>O uznanie czynności prawnej za bezskuteczną (art. 527 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>80</wiersz>
+        <wiersz>81</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2064,7 +2196,7 @@
         <text>307</text>
       </komorka>
       <komorka>
-        <wiersz>81</wiersz>
+        <wiersz>82</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>15</rowspan>
@@ -2072,7 +2204,7 @@
         <text>Roszczenia</text>
       </komorka>
       <komorka>
-        <wiersz>81</wiersz>
+        <wiersz>82</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>14</rowspan>
@@ -2080,7 +2212,7 @@
         <text>z umowy</text>
       </komorka>
       <komorka>
-        <wiersz>81</wiersz>
+        <wiersz>82</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2088,7 +2220,7 @@
         <text>sprzedaży</text>
       </komorka>
       <komorka>
-        <wiersz>81</wiersz>
+        <wiersz>82</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2096,7 +2228,7 @@
         <text>88</text>
       </komorka>
       <komorka>
-        <wiersz>82</wiersz>
+        <wiersz>83</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2104,7 +2236,7 @@
         <text>dostawy</text>
       </komorka>
       <komorka>
-        <wiersz>82</wiersz>
+        <wiersz>83</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2112,7 +2244,7 @@
         <text>89</text>
       </komorka>
       <komorka>
-        <wiersz>83</wiersz>
+        <wiersz>84</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2120,7 +2252,7 @@
         <text>o dzieło</text>
       </komorka>
       <komorka>
-        <wiersz>83</wiersz>
+        <wiersz>84</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2128,7 +2260,7 @@
         <text>90</text>
       </komorka>
       <komorka>
-        <wiersz>84</wiersz>
+        <wiersz>85</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2136,7 +2268,7 @@
         <text>o roboty budowlane</text>
       </komorka>
       <komorka>
-        <wiersz>84</wiersz>
+        <wiersz>85</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2144,7 +2276,7 @@
         <text>91</text>
       </komorka>
       <komorka>
-        <wiersz>85</wiersz>
+        <wiersz>86</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2152,7 +2284,7 @@
         <text>deweloperskiej art. 9 ustawy z 16 września 2011 r. o ochronie praw nabywcy lokalu mieszkalnego lub domu jednorodzinnego (Dz.U. z 2016r. poz. 555)</text>
       </komorka>
       <komorka>
-        <wiersz>85</wiersz>
+        <wiersz>86</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2160,7 +2292,7 @@
         <text>091a</text>
       </komorka>
       <komorka>
-        <wiersz>86</wiersz>
+        <wiersz>87</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2168,7 +2300,7 @@
         <text>najmu</text>
       </komorka>
       <komorka>
-        <wiersz>86</wiersz>
+        <wiersz>87</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2176,7 +2308,7 @@
         <text>92</text>
       </komorka>
       <komorka>
-        <wiersz>87</wiersz>
+        <wiersz>88</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2184,7 +2316,7 @@
         <text>pożyczki</text>
       </komorka>
       <komorka>
-        <wiersz>87</wiersz>
+        <wiersz>88</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2192,7 +2324,7 @@
         <text>93</text>
       </komorka>
       <komorka>
-        <wiersz>88</wiersz>
+        <wiersz>89</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2200,7 +2332,7 @@
         <text>zlecenia</text>
       </komorka>
       <komorka>
-        <wiersz>88</wiersz>
+        <wiersz>89</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2208,7 +2340,7 @@
         <text>94</text>
       </komorka>
       <komorka>
-        <wiersz>89</wiersz>
+        <wiersz>90</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2216,7 +2348,7 @@
         <text>agencyjnej</text>
       </komorka>
       <komorka>
-        <wiersz>89</wiersz>
+        <wiersz>90</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2224,7 +2356,7 @@
         <text>95</text>
       </komorka>
       <komorka>
-        <wiersz>90</wiersz>
+        <wiersz>91</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2232,7 +2364,7 @@
         <text>przewozu</text>
       </komorka>
       <komorka>
-        <wiersz>90</wiersz>
+        <wiersz>91</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2240,7 +2372,7 @@
         <text>96</text>
       </komorka>
       <komorka>
-        <wiersz>91</wiersz>
+        <wiersz>92</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2248,7 +2380,7 @@
         <text>spedycji</text>
       </komorka>
       <komorka>
-        <wiersz>91</wiersz>
+        <wiersz>92</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2256,7 +2388,7 @@
         <text>97</text>
       </komorka>
       <komorka>
-        <wiersz>92</wiersz>
+        <wiersz>93</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2264,7 +2396,7 @@
         <text>składu</text>
       </komorka>
       <komorka>
-        <wiersz>92</wiersz>
+        <wiersz>93</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2272,7 +2404,7 @@
         <text>98</text>
       </komorka>
       <komorka>
-        <wiersz>93</wiersz>
+        <wiersz>94</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2280,7 +2412,7 @@
         <text>poręczenia</text>
       </komorka>
       <komorka>
-        <wiersz>93</wiersz>
+        <wiersz>94</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2288,7 +2420,7 @@
         <text>99</text>
       </komorka>
       <komorka>
-        <wiersz>94</wiersz>
+        <wiersz>95</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2296,7 +2428,7 @@
         <text>renty lub dożywocia</text>
       </komorka>
       <komorka>
-        <wiersz>94</wiersz>
+        <wiersz>95</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2304,7 +2436,7 @@
         <text>100</text>
       </komorka>
       <komorka>
-        <wiersz>95</wiersz>
+        <wiersz>96</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -2312,7 +2444,7 @@
         <text>z weksla</text>
       </komorka>
       <komorka>
-        <wiersz>95</wiersz>
+        <wiersz>96</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2320,7 +2452,7 @@
         <text>087</text>
       </komorka>
       <komorka>
-        <wiersz>96</wiersz>
+        <wiersz>97</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2328,7 +2460,7 @@
         <text>O uznanie za niegodnego dziedziczenia</text>
       </komorka>
       <komorka>
-        <wiersz>96</wiersz>
+        <wiersz>97</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2336,7 +2468,7 @@
         <text>320</text>
       </komorka>
       <komorka>
-        <wiersz>97</wiersz>
+        <wiersz>98</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2344,7 +2476,7 @@
         <text>O odszkodowanie za bezumowne korzystanie z lokalu mieszkalnego</text>
       </komorka>
       <komorka>
-        <wiersz>97</wiersz>
+        <wiersz>98</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2352,7 +2484,7 @@
         <text>305m</text>
       </komorka>
       <komorka>
-        <wiersz>98</wiersz>
+        <wiersz>99</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2360,7 +2492,7 @@
         <text>O odszkodowanie za bezumowne korzystanie z lokalu użytkowego</text>
       </komorka>
       <komorka>
-        <wiersz>98</wiersz>
+        <wiersz>99</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2368,7 +2500,7 @@
         <text>305u</text>
       </komorka>
       <komorka>
-        <wiersz>99</wiersz>
+        <wiersz>100</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2376,7 +2508,7 @@
         <text>Żądanie odmowy wykonania tytułu wykonawczego (art. 8403 kpc)</text>
       </komorka>
       <komorka>
-        <wiersz>99</wiersz>
+        <wiersz>100</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2384,7 +2516,7 @@
         <text>316</text>
       </komorka>
       <komorka>
-        <wiersz>100</wiersz>
+        <wiersz>101</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2392,7 +2524,7 @@
         <text>O zobowiązanie do złożenia oświadczenia woli</text>
       </komorka>
       <komorka>
-        <wiersz>100</wiersz>
+        <wiersz>101</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2400,7 +2532,7 @@
         <text>317</text>
       </komorka>
       <komorka>
-        <wiersz>101</wiersz>
+        <wiersz>102</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2408,7 +2540,7 @@
         <text>O ustalenie wstąpienia w stosunek najmu</text>
       </komorka>
       <komorka>
-        <wiersz>101</wiersz>
+        <wiersz>102</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2416,7 +2548,7 @@
         <text>318</text>
       </komorka>
       <komorka>
-        <wiersz>102</wiersz>
+        <wiersz>103</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2424,7 +2556,7 @@
         <text>O ustalenie opłaty z tytułu użytkowania wieczystego</text>
       </komorka>
       <komorka>
-        <wiersz>102</wiersz>
+        <wiersz>103</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2432,7 +2564,7 @@
         <text>319</text>
       </komorka>
       <komorka>
-        <wiersz>103</wiersz>
+        <wiersz>104</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2440,7 +2572,7 @@
         <text>Inne bez symbolu i o symbolu wyżej niewymienionym </text>
       </komorka>
       <komorka>
-        <wiersz>103</wiersz>
+        <wiersz>104</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2448,7 +2580,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>104</wiersz>
+        <wiersz>105</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2456,7 +2588,7 @@
         <text><![CDATA[<b>Sprawy wpisywane do rep. CGG (szkody geologiczne i górnicze)</b>]]> – razem (w. 106 do 111)</text>
       </komorka>
       <komorka>
-        <wiersz>104</wiersz>
+        <wiersz>105</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2464,7 +2596,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>105</wiersz>
+        <wiersz>106</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>5</rowspan>
@@ -2472,7 +2604,7 @@
         <text>Sprawy o naprawienie szkód w</text>
       </komorka>
       <komorka>
-        <wiersz>105</wiersz>
+        <wiersz>106</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -2480,7 +2612,7 @@
         <text>budynkach i lokalach</text>
       </komorka>
       <komorka>
-        <wiersz>105</wiersz>
+        <wiersz>106</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2488,7 +2620,7 @@
         <text>350</text>
       </komorka>
       <komorka>
-        <wiersz>106</wiersz>
+        <wiersz>107</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -2496,7 +2628,7 @@
         <text>obiektach budowlanych i infrastrukturze technicznej</text>
       </komorka>
       <komorka>
-        <wiersz>106</wiersz>
+        <wiersz>107</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2505,7 +2637,7 @@
       </komorka>
 
       <komorka>
-        <wiersz>107</wiersz>
+        <wiersz>108</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -2513,7 +2645,7 @@
         <text>gruncie i zasobach wodnych (z wyłączeniem gruntów rolnych i leśnych)</text>
       </komorka>
       <komorka>
-        <wiersz>107</wiersz>
+        <wiersz>108</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2521,7 +2653,7 @@
         <text>352</text>
       </komorka>
       <komorka>
-        <wiersz>108</wiersz>
+        <wiersz>109</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -2529,7 +2661,7 @@
         <text>plonach</text>
       </komorka>
       <komorka>
-        <wiersz>108</wiersz>
+        <wiersz>109</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2537,7 +2669,7 @@
         <text>353</text>
       </komorka>
       <komorka>
-        <wiersz>109</wiersz>
+        <wiersz>110</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -2545,7 +2677,7 @@
         <text>gruntach rolnych i leśnych</text>
       </komorka>
       <komorka>
-        <wiersz>109</wiersz>
+        <wiersz>110</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2553,7 +2685,7 @@
         <text>354</text>
       </komorka>
       <komorka>
-        <wiersz>110</wiersz>
+        <wiersz>111</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2561,7 +2693,7 @@
         <text>Inne roszczenia</text>
       </komorka>
       <komorka>
-        <wiersz>110</wiersz>
+        <wiersz>111</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2569,7 +2701,7 @@
         <text>355</text>
       </komorka>
       <komorka>
-        <wiersz>111</wiersz>
+        <wiersz>112</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2577,7 +2709,7 @@
         <text><![CDATA[<b>Razem sprawy apelacyjne z zakresu spraw rodzinnych RC </b>]]>(wiersze 113 do 122)</text>
       </komorka>
       <komorka>
-        <wiersz>111</wiersz>
+        <wiersz>112</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2585,7 +2717,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>112</wiersz>
+        <wiersz>113</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2593,7 +2725,7 @@
         <text>Ustalenie ojcostwa i roszczenia z tym związane</text>
       </komorka>
       <komorka>
-        <wiersz>112</wiersz>
+        <wiersz>114</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2601,7 +2733,7 @@
         <text>1</text>
       </komorka>
       <komorka>
-        <wiersz>113</wiersz>
+        <wiersz>114</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2609,7 +2741,7 @@
         <text>Zaprzeczenie ojcostwa</text>
       </komorka>
       <komorka>
-        <wiersz>113</wiersz>
+        <wiersz>114</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2617,7 +2749,7 @@
         <text>2</text>
       </komorka>
       <komorka>
-        <wiersz>114</wiersz>
+        <wiersz>115</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2625,7 +2757,7 @@
         <text>Alimenty (orzeczono)</text>
       </komorka>
       <komorka>
-        <wiersz>114</wiersz>
+        <wiersz>115</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2633,7 +2765,7 @@
         <text>3</text>
       </komorka>
       <komorka>
-        <wiersz>115</wiersz>
+        <wiersz>116</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2641,7 +2773,7 @@
         <text>Zmiana orzeczenia w zakresie alimentów</text>
       </komorka>
       <komorka>
-        <wiersz>115</wiersz>
+        <wiersz>116</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2649,7 +2781,7 @@
         <text>003z</text>
       </komorka>
       <komorka>
-        <wiersz>116</wiersz>
+        <wiersz>117</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2657,7 +2789,7 @@
         <text>Ustalenie wygaśnięcia obowiązku alimentacyjnego</text>
       </komorka>
       <komorka>
-        <wiersz>116</wiersz>
+        <wiersz>117</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2665,7 +2797,7 @@
         <text>003w</text>
       </komorka>
       <komorka>
-        <wiersz>117</wiersz>
+        <wiersz>118</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2673,7 +2805,7 @@
         <text>Ustanowienie rozdzielności majątkowej</text>
       </komorka>
       <komorka>
-        <wiersz>117</wiersz>
+        <wiersz>118</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2681,7 +2813,7 @@
         <text>6</text>
       </komorka>
       <komorka>
-        <wiersz>118</wiersz>
+        <wiersz>119</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2689,7 +2821,7 @@
         <text>Ustalenie bezskuteczności uznania ojcostwa</text>
       </komorka>
       <komorka>
-        <wiersz>118</wiersz>
+        <wiersz>119</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2697,7 +2829,7 @@
         <text>7</text>
       </komorka>
       <komorka>
-        <wiersz>119</wiersz>
+        <wiersz>120</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2705,7 +2837,7 @@
         <text>Rozwiązanie przysposobienia - </text>
       </komorka>
       <komorka>
-        <wiersz>119</wiersz>
+        <wiersz>120</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2713,7 +2845,7 @@
         <text>8</text>
       </komorka>
       <komorka>
-        <wiersz>120</wiersz>
+        <wiersz>121</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2721,7 +2853,7 @@
         <text>O zaspokajanie potrzeb rodziny</text>
       </komorka>
       <komorka>
-        <wiersz>120</wiersz>
+        <wiersz>121</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2730,7 +2862,7 @@
       </komorka>
 
       <komorka>
-        <wiersz>121</wiersz>
+        <wiersz>122</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2738,16 +2870,16 @@
         <text>O ustalenie macierzyństwa</text>
       </komorka>
       <komorka>
-        <wiersz>121</wiersz>
+        <wiersz>122</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style> center </style>
         <text>78</text>
       </komorka>
-      
+
       <komorka>
-        <wiersz>122</wiersz>
+        <wiersz>123</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2755,7 +2887,7 @@
         <text>Inne bez symbolu i o symbolu wyżej niewymienionym </text>
       </komorka>
       <komorka>
-        <wiersz>122</wiersz>
+        <wiersz>123</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2763,7 +2895,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>123</wiersz>
+        <wiersz>124</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2771,7 +2903,7 @@
         <text><![CDATA[<b>Razem sprawy nieprocesowe z wyłączeniem rodzinnych </b>]]>(wiersz 124 do 156+161)</text>
       </komorka>
       <komorka>
-        <wiersz>123</wiersz>
+        <wiersz>124</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2779,7 +2911,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>124</wiersz>
+        <wiersz>125</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2787,7 +2919,7 @@
         <text>Złożenie do depozytu</text>
       </komorka>
       <komorka>
-        <wiersz>124</wiersz>
+        <wiersz>125</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2795,7 +2927,7 @@
         <text>216</text>
       </komorka>
       <komorka>
-        <wiersz>125</wiersz>
+        <wiersz>126</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2803,7 +2935,7 @@
         <text>Rozstrzygnięcie co do aktów stanu cywilnego</text>
       </komorka>
       <komorka>
-        <wiersz>125</wiersz>
+        <wiersz>126</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2811,7 +2943,7 @@
         <text>217</text>
       </komorka>
       <komorka>
-        <wiersz>126</wiersz>
+        <wiersz>127</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>2</rowspan>
@@ -2819,7 +2951,7 @@
         <text>Stwierdzenie nabycia spadku</text>
       </komorka>
       <komorka>
-        <wiersz>126</wiersz>
+        <wiersz>127</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -2827,7 +2959,7 @@
         <text>rolne</text>
       </komorka>
       <komorka>
-        <wiersz>126</wiersz>
+        <wiersz>127</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2835,7 +2967,7 @@
         <text>218 rol.</text>
       </komorka>
       <komorka>
-        <wiersz>127</wiersz>
+        <wiersz>128</wiersz>
         <kolumna>1</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -2843,7 +2975,7 @@
         <text>inne</text>
       </komorka>
       <komorka>
-        <wiersz>127</wiersz>
+        <wiersz>128</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2851,7 +2983,7 @@
         <text>218 inne</text>
       </komorka>
       <komorka>
-        <wiersz>128</wiersz>
+        <wiersz>129</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>2</rowspan>
@@ -2859,7 +2991,7 @@
         <text>Dział spadku</text>
       </komorka>
       <komorka>
-        <wiersz>128</wiersz>
+        <wiersz>129</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -2867,7 +2999,7 @@
         <text>rolne</text>
       </komorka>
       <komorka>
-        <wiersz>128</wiersz>
+        <wiersz>129</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2875,7 +3007,7 @@
         <text>219 rol.</text>
       </komorka>
       <komorka>
-        <wiersz>129</wiersz>
+        <wiersz>130</wiersz>
         <kolumna>1</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -2883,7 +3015,7 @@
         <text>inne</text>
       </komorka>
       <komorka>
-        <wiersz>129</wiersz>
+        <wiersz>130</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2891,7 +3023,7 @@
         <text>219 inne</text>
       </komorka>
       <komorka>
-        <wiersz>130</wiersz>
+        <wiersz>131</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>2</rowspan>
@@ -2899,7 +3031,7 @@
         <text>Podział majątku wspólnego</text>
       </komorka>
       <komorka>
-        <wiersz>130</wiersz>
+        <wiersz>131</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -2907,7 +3039,7 @@
         <text>rolne</text>
       </komorka>
       <komorka>
-        <wiersz>130</wiersz>
+        <wiersz>131</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2915,7 +3047,7 @@
         <text>220 rol.</text>
       </komorka>
       <komorka>
-        <wiersz>131</wiersz>
+        <wiersz>132</wiersz>
         <kolumna>1</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -2923,7 +3055,7 @@
         <text>inne</text>
       </komorka>
       <komorka>
-        <wiersz>131</wiersz>
+        <wiersz>132</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2931,7 +3063,7 @@
         <text>220 inne</text>
       </komorka>
       <komorka>
-        <wiersz>132</wiersz>
+        <wiersz>133</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2939,7 +3071,7 @@
         <text>Zasiedzenie</text>
       </komorka>
       <komorka>
-        <wiersz>132</wiersz>
+        <wiersz>133</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2947,7 +3079,7 @@
         <text>222</text>
       </komorka>
       <komorka>
-        <wiersz>133</wiersz>
+        <wiersz>134</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -2955,7 +3087,7 @@
         <text>Ustanowienie drogi koniecznej</text>
       </komorka>
       <komorka>
-        <wiersz>133</wiersz>
+        <wiersz>134</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2963,7 +3095,7 @@
         <text>223</text>
       </komorka>
       <komorka>
-        <wiersz>134</wiersz>
+        <wiersz>135</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>2</rowspan>
@@ -2971,7 +3103,7 @@
         <text>Zniesienie współwłasności</text>
       </komorka>
       <komorka>
-        <wiersz>134</wiersz>
+        <wiersz>135</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -2979,7 +3111,7 @@
         <text>rolne</text>
       </komorka>
       <komorka>
-        <wiersz>134</wiersz>
+        <wiersz>135</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2987,7 +3119,7 @@
         <text>220 rol.</text>
       </komorka>
       <komorka>
-        <wiersz>135</wiersz>
+        <wiersz>136</wiersz>
         <kolumna>1</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -2995,7 +3127,7 @@
         <text>inne</text>
       </komorka>
       <komorka>
-        <wiersz>135</wiersz>
+        <wiersz>136</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3003,7 +3135,7 @@
         <text>220 inne</text>
       </komorka>
       <komorka>
-        <wiersz>136</wiersz>
+        <wiersz>137</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3011,7 +3143,7 @@
         <text>Rozgraniczenie</text>
       </komorka>
       <komorka>
-        <wiersz>136</wiersz>
+        <wiersz>137</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3019,7 +3151,7 @@
         <text>225</text>
       </komorka>
       <komorka>
-        <wiersz>137</wiersz>
+        <wiersz>138</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3027,7 +3159,7 @@
         <text>Uznanie za zmarłego</text>
       </komorka>
       <komorka>
-        <wiersz>137</wiersz>
+        <wiersz>138</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3035,7 +3167,7 @@
         <text>248</text>
       </komorka>
       <komorka>
-        <wiersz>138</wiersz>
+        <wiersz>139</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3043,7 +3175,7 @@
         <text>Stwierdzenie zgonu</text>
       </komorka>
       <komorka>
-        <wiersz>138</wiersz>
+        <wiersz>139</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3051,7 +3183,7 @@
         <text>249</text>
       </komorka>
       <komorka>
-        <wiersz>139</wiersz>
+        <wiersz>140</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3059,7 +3191,7 @@
         <text>Stwierdzenie nabycia własności nieruchomości w inny sposób niż przez zasiedzenie</text>
       </komorka>
       <komorka>
-        <wiersz>139</wiersz>
+        <wiersz>140</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3067,7 +3199,7 @@
         <text>250</text>
       </komorka>
       <komorka>
-        <wiersz>140</wiersz>
+        <wiersz>141</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3075,7 +3207,7 @@
         <text>Przepadek rzeczy na podstawie przepisów prawa celnego (art.6101 kpc)</text>
       </komorka>
       <komorka>
-        <wiersz>140</wiersz>
+        <wiersz>141</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3083,7 +3215,7 @@
         <text>251</text>
       </komorka>
       <komorka>
-        <wiersz>141</wiersz>
+        <wiersz>142</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3091,7 +3223,7 @@
         <text>Przyznanie kompensaty (ustawa z 7 lipca 2005 r. o państwowej kompensacie przysługującej ofiarom niektórych przestępstw) (Dz. U. z 2016 r.,  poz. 325)</text>
       </komorka>
       <komorka>
-        <wiersz>141</wiersz>
+        <wiersz>142</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3099,7 +3231,7 @@
         <text>252</text>
       </komorka>
       <komorka>
-        <wiersz>142</wiersz>
+        <wiersz>143</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3107,7 +3239,7 @@
         <text>O założenie księgi wieczystej</text>
       </komorka>
       <komorka>
-        <wiersz>142</wiersz>
+        <wiersz>143</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3115,7 +3247,7 @@
         <text>280</text>
       </komorka>
       <komorka>
-        <wiersz>143</wiersz>
+        <wiersz>144</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3123,7 +3255,7 @@
         <text>O wpis do księgi wieczystej</text>
       </komorka>
       <komorka>
-        <wiersz>143</wiersz>
+        <wiersz>144</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3131,7 +3263,7 @@
         <text>281</text>
       </komorka>
       <komorka>
-        <wiersz>144</wiersz>
+        <wiersz>145</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3139,7 +3271,7 @@
         <text>O uchylenie postanowienia orzekającego uznanie za zmarłego lub stwierdzenie zgonu</text>
       </komorka>
       <komorka>
-        <wiersz>144</wiersz>
+        <wiersz>145</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3147,7 +3279,7 @@
         <text>260</text>
       </komorka>
       <komorka>
-        <wiersz>145</wiersz>
+        <wiersz>146</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3155,7 +3287,7 @@
         <text>O rozstrzygnięcie w przedmiocie czynności przekraczających zakres zwykłego zarządu rzeczy wspólnej (art. 199 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>145</wiersz>
+        <wiersz>146</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3163,7 +3295,7 @@
         <text>261</text>
       </komorka>
       <komorka>
-        <wiersz>146</wiersz>
+        <wiersz>147</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3171,7 +3303,7 @@
         <text>O upoważnienie do dokonania czynności zwykłego zarządu (art. 201 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>146</wiersz>
+        <wiersz>147</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3179,7 +3311,7 @@
         <text>262</text>
       </komorka>
       <komorka>
-        <wiersz>147</wiersz>
+        <wiersz>148</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3187,7 +3319,7 @@
         <text>O rozstrzygnięcie w przedmiocie prawidłowości zarządu rzeczą wspólną (art. 202 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>147</wiersz>
+        <wiersz>148</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3195,7 +3327,7 @@
         <text>263</text>
       </komorka>
       <komorka>
-        <wiersz>148</wiersz>
+        <wiersz>149</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3203,7 +3335,7 @@
         <text>O uchylenie zarządu związanego ze współwłasnością i użytkowaniem</text>
       </komorka>
       <komorka>
-        <wiersz>148</wiersz>
+        <wiersz>149</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3211,7 +3343,7 @@
         <text>264</text>
       </komorka>
       <komorka>
-        <wiersz>149</wiersz>
+        <wiersz>150</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3219,7 +3351,7 @@
         <text>O wyznaczenie zarządcy rzeczą wspólną</text>
       </komorka>
       <komorka>
-        <wiersz>149</wiersz>
+        <wiersz>150</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3227,7 +3359,7 @@
         <text>265</text>
       </komorka>
       <komorka>
-        <wiersz>150</wiersz>
+        <wiersz>151</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3235,7 +3367,7 @@
         <text>O ustanowienie służebności przesyłu</text>
       </komorka>
       <komorka>
-        <wiersz>150</wiersz>
+        <wiersz>151</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3243,7 +3375,7 @@
         <text>266</text>
       </komorka>
       <komorka>
-        <wiersz>151</wiersz>
+        <wiersz>152</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3251,7 +3383,7 @@
         <text>O ustanowienie kuratora spadku</text>
       </komorka>
       <komorka>
-        <wiersz>151</wiersz>
+        <wiersz>152</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3259,7 +3391,7 @@
         <text>273</text>
       </komorka>
       <komorka>
-        <wiersz>152</wiersz>
+        <wiersz>153</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3267,7 +3399,7 @@
         <text>O uchylenie postanowienia o stwierdzeniu nabycia spadku lub aktu poświadczenia dziedziczenia (art. 678 kpc) </text>
       </komorka>
       <komorka>
-        <wiersz>152</wiersz>
+        <wiersz>153</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3275,7 +3407,7 @@
         <text>274</text>
       </komorka>
       <komorka>
-        <wiersz>153</wiersz>
+        <wiersz>154</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3283,7 +3415,7 @@
         <text>O uchylenie lub zmianę stwierdzenia nabycia spadku (art. 679 kpc)</text>
       </komorka>
       <komorka>
-        <wiersz>153</wiersz>
+        <wiersz>154</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3291,7 +3423,7 @@
         <text>275</text>
       </komorka>
       <komorka>
-        <wiersz>154</wiersz>
+        <wiersz>155</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3299,7 +3431,7 @@
         <text>O zwrot depozytu sądowego (art. 69311 kpc)</text>
       </komorka>
       <komorka>
-        <wiersz>154</wiersz>
+        <wiersz>155</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3307,7 +3439,7 @@
         <text>278</text>
       </komorka>
       <komorka>
-        <wiersz>155</wiersz>
+        <wiersz>156</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3315,7 +3447,7 @@
         <text>O wydanie depozytu sądowego</text>
       </komorka>
       <komorka>
-        <wiersz>155</wiersz>
+        <wiersz>156</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3323,7 +3455,7 @@
         <text>279</text>
       </komorka>
       <komorka>
-        <wiersz>156</wiersz>
+        <wiersz>157</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3331,7 +3463,7 @@
         <text>Razem: ( suma wierszy 157+159)</text>
       </komorka>
       <komorka>
-        <wiersz>156</wiersz>
+        <wiersz>157</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3339,7 +3471,7 @@
         <text>-</text>
       </komorka>
       <komorka>
-        <wiersz>157</wiersz>
+        <wiersz>158</wiersz>
         <kolumna>1</kolumna>
         <colSpan>2</colSpan>
         <rowspan>4</rowspan>
@@ -3347,7 +3479,7 @@
         <text>O zobowiązanie sprawcy przemocy w rodzinie do opuszczenia mieszkania zajmowanego wspólnie z innym członkiem rodziny dotkniętym przemocą  lub  zakazu  zbliżania się do mieszkania  i jego bezpośredniego otoczenia (art. 11a ustawy z dnia 29 lipca 2005 r. o przeciwdziałaniu przemocy w rodzinie)</text>
       </komorka>
       <komorka>
-        <wiersz>157</wiersz>
+        <wiersz>158</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3355,7 +3487,7 @@
         <text>które wpłynęły po wydaniu przez Policję lub Żandarmerię  Wojskową  „nakazu” lub „zakazu” </text>
       </komorka>
       <komorka>
-        <wiersz>157</wiersz>
+        <wiersz>158</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3363,7 +3495,7 @@
         <text>282zn</text>
       </komorka>
       <komorka>
-        <wiersz>158</wiersz>
+        <wiersz>159</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3371,7 +3503,7 @@
         <text>w tym wnioski o zabezpieczenie polegające na przedłużeniu wydanego przez Policję lub Żandarmerię nakazu (art. 755 2 k.p.c.) </text>
       </komorka>
       <komorka>
-        <wiersz>158</wiersz>
+        <wiersz>159</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3379,7 +3511,7 @@
         <text>-</text>
       </komorka>
       <komorka>
-        <wiersz>159</wiersz>
+        <wiersz>160</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3387,7 +3519,7 @@
         <text>bez uprzedniego wydania przez Policje lub Żandarmerię Wojskową  „nakazu” lub „zakazu” </text>
       </komorka>
       <komorka>
-        <wiersz>159</wiersz>
+        <wiersz>160</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3396,7 +3528,7 @@
       </komorka>
 
       <komorka>
-        <wiersz>160</wiersz>
+        <wiersz>161</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3404,7 +3536,7 @@
         <text> w tym  wnioski o  zabezpieczenie   dot. natychmiastowego opuszczenia wspólnie zajmowanego mieszkania i jego bezpośredniego otoczenia lub zakazu zbliżania się do mieszkania i jego bezpośredniego otoczenia </text>
       </komorka>
       <komorka>
-        <wiersz>160</wiersz>
+        <wiersz>161</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3413,7 +3545,7 @@
       </komorka>
 
       <komorka>
-        <wiersz>161</wiersz>
+        <wiersz>162</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3421,7 +3553,7 @@
         <text>Inne bez symbolu i o symbolu wyżej niewymienionym </text>
       </komorka>
       <komorka>
-        <wiersz>161</wiersz>
+        <wiersz>162</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3429,7 +3561,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>162</wiersz>
+        <wiersz>163</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3437,7 +3569,7 @@
         <text><![CDATA[<b>Razem sprawy nieprocesowe rodzinne </b>]]>(wiersz 163 do 171)</text>
       </komorka>
       <komorka>
-        <wiersz>162</wiersz>
+        <wiersz>163</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3445,7 +3577,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>163</wiersz>
+        <wiersz>164</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3453,7 +3585,7 @@
         <text>Ustanowienie opieki nad osobą dorosłą</text>
       </komorka>
       <komorka>
-        <wiersz>163</wiersz>
+        <wiersz>164</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3461,7 +3593,7 @@
         <text>210</text>
       </komorka>
       <komorka>
-        <wiersz>164</wiersz>
+        <wiersz>165</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3469,7 +3601,7 @@
         <text>Rozstrzygnięcie w istotnych sprawach rodziny (art. 24 k.r.o.)</text>
       </komorka>
       <komorka>
-        <wiersz>164</wiersz>
+        <wiersz>165</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3477,7 +3609,7 @@
         <text>211</text>
       </komorka>
       <komorka>
-        <wiersz>165</wiersz>
+        <wiersz>166</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3485,7 +3617,7 @@
         <text>RNs –  ustawa z dnia 19 sierpnia 1994 r. o ochronie zdrowia  psychicznego (Dz. U. z 2016 r., poz. 546) dot. orzeczeń wobec osób dorosłych</text>
       </komorka>
       <komorka>
-        <wiersz>165</wiersz>
+        <wiersz>166</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3493,7 +3625,7 @@
         <text>236 do 241</text>
       </komorka>
       <komorka>
-        <wiersz>166</wiersz>
+        <wiersz>167</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3501,7 +3633,7 @@
         <text>Zastosowanie obowiązku poddania się leczeniu odwykowemu</text>
       </komorka>
       <komorka>
-        <wiersz>166</wiersz>
+        <wiersz>167</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3509,7 +3641,7 @@
         <text>228</text>
       </komorka>
       <komorka>
-        <wiersz>167</wiersz>
+        <wiersz>168</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3517,7 +3649,7 @@
         <text>Zmianę orzeczenia o obowiązku leczenia odwykowego</text>
       </komorka>
       <komorka>
-        <wiersz>167</wiersz>
+        <wiersz>168</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3525,7 +3657,7 @@
         <text>228z</text>
       </komorka>
       <komorka>
-        <wiersz>168</wiersz>
+        <wiersz>169</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3533,7 +3665,7 @@
         <text>Zezwolenie na dokonanie czynności przekraczającej zakres zwykłego zarządu majątkiem ubezwłasnowolnionego</text>
       </komorka>
       <komorka>
-        <wiersz>168</wiersz>
+        <wiersz>169</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3541,7 +3673,7 @@
         <text>253</text>
       </komorka>
       <komorka>
-        <wiersz>169</wiersz>
+        <wiersz>170</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3549,7 +3681,7 @@
         <text>Umieszczenie w domu pomocy społecznej</text>
       </komorka>
       <komorka>
-        <wiersz>169</wiersz>
+        <wiersz>170</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3557,7 +3689,7 @@
         <text>240</text>
       </komorka>
       <komorka>
-        <wiersz>170</wiersz>
+        <wiersz>171</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3565,7 +3697,7 @@
         <text>Zmiana orzeczenia o przyjęciu do domu pomocy społecznej</text>
       </komorka>
       <komorka>
-        <wiersz>170</wiersz>
+        <wiersz>171</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3573,7 +3705,7 @@
         <text>240z</text>
       </komorka>
       <komorka>
-        <wiersz>171</wiersz>
+        <wiersz>172</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3581,7 +3713,7 @@
         <text>Inne bez symbolu i o symbolu wyżej niewymienionym </text>
       </komorka>
       <komorka>
-        <wiersz>171</wiersz>
+        <wiersz>172</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3589,7 +3721,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>172</wiersz>
+        <wiersz>173</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3597,7 +3729,7 @@
         <text><![CDATA[<b>Razem sprawy opiekuńcze małoletnich (Nsm)</b>]]> (w. 173 do 177)</text>
       </komorka>
       <komorka>
-        <wiersz>172</wiersz>
+        <wiersz>173</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3605,7 +3737,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>173</wiersz>
+        <wiersz>174</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3613,7 +3745,7 @@
         <text>W tym Nsm – ustawa z dnia 19 sierpnia 1994 r. o ochronie zdrowia  psychicznego (Dz. U. z 2017r., poz. 882) dot. orzeczeń wobec małoletnich</text>
       </komorka>
       <komorka>
-        <wiersz>173</wiersz>
+        <wiersz>174</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3621,7 +3753,7 @@
         <text>236 do 241</text>
       </komorka>
       <komorka>
-        <wiersz>174</wiersz>
+        <wiersz>175</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3629,7 +3761,7 @@
         <text>Ustalenie kontaktów z małoletnim</text>
       </komorka>
       <komorka>
-        <wiersz>174</wiersz>
+        <wiersz>175</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3637,7 +3769,7 @@
         <text>247</text>
       </komorka>
       <komorka>
-        <wiersz>175</wiersz>
+        <wiersz>176</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3645,7 +3777,7 @@
         <text>Zmiana postanowienia w przedmiocie władzy rodzicielskiej</text>
       </komorka>
       <komorka>
-        <wiersz>175</wiersz>
+        <wiersz>176</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3653,7 +3785,7 @@
         <text>202a</text>
       </komorka>
       <komorka>
-        <wiersz>176</wiersz>
+        <wiersz>177</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3661,7 +3793,7 @@
         <text>Rozstrzygniecie o istotnych sprawach dziecka w braku porozumienia miedzy rodzicami</text>
       </komorka>
       <komorka>
-        <wiersz>176</wiersz>
+        <wiersz>177</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3669,7 +3801,7 @@
         <text>243</text>
       </komorka>
       <komorka>
-        <wiersz>177</wiersz>
+        <wiersz>178</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3677,7 +3809,7 @@
         <text>Inne bez symbolu i o symbolu wyżej niewymienionym</text>
       </komorka>
       <komorka>
-        <wiersz>177</wiersz>
+        <wiersz>178</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3685,7 +3817,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>178</wiersz>
+        <wiersz>179</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3693,7 +3825,7 @@
         <text> <![CDATA[<b> Razem sprawy nieletnich (Nkd)</b>]]></text>
       </komorka>
       <komorka>
-        <wiersz>178</wiersz>
+        <wiersz>179</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3701,7 +3833,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>179</wiersz>
+        <wiersz>180</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3709,7 +3841,7 @@
         <text><![CDATA[<b>Z innych repertoriów lub wykazów</b>]]></text>
       </komorka>
       <komorka>
-        <wiersz>179</wiersz>
+        <wiersz>180</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3717,7 +3849,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>180</wiersz>
+        <wiersz>181</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3725,7 +3857,7 @@
         <text><![CDATA[<b>Cz (zażaleniowe)</b>]]> (wiersze 183 do 192) </text>
       </komorka>
       <komorka>
-        <wiersz>180</wiersz>
+        <wiersz>181</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3733,7 +3865,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>181</wiersz>
+        <wiersz>182</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>2</rowspan>
@@ -3741,7 +3873,7 @@
         <text>z tego</text>
       </komorka>
       <komorka>
-        <wiersz>181</wiersz>
+        <wiersz>182</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -3749,7 +3881,7 @@
         <text>zażalenia z  art. 394 § 1 i 3941a§3 kpc</text>
       </komorka>
       <komorka>
-        <wiersz>181</wiersz>
+        <wiersz>182</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3757,7 +3889,7 @@
         <text></text>
       </komorka>
       <komorka>
-        <wiersz>182</wiersz>
+        <wiersz>183</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -3765,7 +3897,7 @@
         <text>zażalenia z  art. 3942 § 1 i 11 kpc</text>
       </komorka>
       <komorka>
-        <wiersz>182</wiersz>
+        <wiersz>183</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3773,7 +3905,7 @@
         <text></text>
       </komorka>
       <komorka>
-        <wiersz>183</wiersz>
+        <wiersz>184</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3781,7 +3913,7 @@
         <text>Procesowych (C) z wyłączeniem rodzinnych</text>
       </komorka>
       <komorka>
-        <wiersz>183</wiersz>
+        <wiersz>184</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3789,7 +3921,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>184</wiersz>
+        <wiersz>185</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3797,7 +3929,7 @@
         <text>Procesowych rodzinnych (RC)</text>
       </komorka>
       <komorka>
-        <wiersz>184</wiersz>
+        <wiersz>185</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3805,7 +3937,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>185</wiersz>
+        <wiersz>186</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3813,7 +3945,7 @@
         <text>Nieprocesowych (Ns) z wyłączeniem rodzinnych</text>
       </komorka>
       <komorka>
-        <wiersz>185</wiersz>
+        <wiersz>186</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3821,7 +3953,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>186</wiersz>
+        <wiersz>187</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3829,7 +3961,7 @@
         <text>Nieprocesowych rodzinnych (RNs)</text>
       </komorka>
       <komorka>
-        <wiersz>186</wiersz>
+        <wiersz>187</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3837,7 +3969,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>187</wiersz>
+        <wiersz>188</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3845,7 +3977,7 @@
         <text>RNs – ust. o ochr. zdr. psychicznego</text>
       </komorka>
       <komorka>
-        <wiersz>187</wiersz>
+        <wiersz>188</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3853,7 +3985,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>188</wiersz>
+        <wiersz>189</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3861,7 +3993,7 @@
         <text>Opiekuńczych (Nsm)</text>
       </komorka>
       <komorka>
-        <wiersz>188</wiersz>
+        <wiersz>189</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3869,7 +4001,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>189</wiersz>
+        <wiersz>190</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3877,7 +4009,7 @@
         <text>Nsm – ust. o ochr. zdr. psychicznego</text>
       </komorka>
       <komorka>
-        <wiersz>189</wiersz>
+        <wiersz>190</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3885,7 +4017,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>190</wiersz>
+        <wiersz>191</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3893,7 +4025,7 @@
         <text>Nieletnich</text>
       </komorka>
       <komorka>
-        <wiersz>190</wiersz>
+        <wiersz>191</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3901,7 +4033,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>191</wiersz>
+        <wiersz>192</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3909,7 +4041,7 @@
         <text>zażalenie na odmowę dokonania czynności notarialnej (art. 83 § 1 ustawy z dnia 14 lutego 1991 r. - Prawo o notariacie)</text>
       </komorka>
       <komorka>
-        <wiersz>191</wiersz>
+        <wiersz>192</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3917,7 +4049,7 @@
         <text>744</text>
       </komorka>
       <komorka>
-        <wiersz>192</wiersz>
+        <wiersz>193</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3925,7 +4057,7 @@
         <text>Innych</text>
       </komorka>
       <komorka>
-        <wiersz>192</wiersz>
+        <wiersz>193</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3933,7 +4065,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>193</wiersz>
+        <wiersz>194</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3941,7 +4073,7 @@
         <text><![CDATA[<b>Co – II instancja </b>]]>(wiersze 194 do 199)</text>
       </komorka>
       <komorka>
-        <wiersz>193</wiersz>
+        <wiersz>194</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3950,7 +4082,7 @@
       </komorka>
 
       <komorka>
-        <wiersz>194</wiersz>
+        <wiersz>195</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3958,7 +4090,7 @@
         <text>O nadanie klauzuli wykonalności (z wyłączeniem spraw o symbolu 104n, 104m i 104p)</text>
       </komorka>
       <komorka>
-        <wiersz>194</wiersz>
+        <wiersz>195</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3966,7 +4098,7 @@
         <text>104</text>
       </komorka>
       <komorka>
-        <wiersz>195</wiersz>
+        <wiersz>196</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3974,7 +4106,7 @@
         <text>O wyłączenie sędziego</text>
       </komorka>
       <komorka>
-        <wiersz>195</wiersz>
+        <wiersz>196</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3982,7 +4114,7 @@
         <text>109</text>
       </komorka>
       <komorka>
-        <wiersz>196</wiersz>
+        <wiersz>197</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3990,7 +4122,7 @@
         <text>O zwolnienie od kosztów sądowych</text>
       </komorka>
       <komorka>
-        <wiersz>196</wiersz>
+        <wiersz>197</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3999,7 +4131,7 @@
       </komorka>
 
       <komorka>
-        <wiersz>197</wiersz>
+        <wiersz>198</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -4007,7 +4139,7 @@
         <text>O wyznaczenie sądu (s.108)</text>
       </komorka>
       <komorka>
-        <wiersz>197</wiersz>
+        <wiersz>198</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -4015,7 +4147,7 @@
         <text>108</text>
       </komorka>
       <komorka>
-        <wiersz>198</wiersz>
+        <wiersz>199</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -4023,7 +4155,7 @@
         <text>O ponowne wydanie tytułu wykonawczego w miejsce utraconego (art. 794 kpc)</text>
       </komorka>
       <komorka>
-        <wiersz>198</wiersz>
+        <wiersz>199</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -4031,7 +4163,7 @@
         <text>125</text>
       </komorka>
       <komorka>
-        <wiersz>199</wiersz>
+        <wiersz>200</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -4039,7 +4171,7 @@
         <text>Inne</text>
       </komorka>
       <komorka>
-        <wiersz>199</wiersz>
+        <wiersz>200</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -4047,7 +4179,7 @@
         <text>-</text>
       </komorka>
       <komorka>
-        <wiersz>200</wiersz>
+        <wiersz>201</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -4055,7 +4187,7 @@
         <text><![CDATA[<b>WSC (skarga kasacyjna)</b>]]></text>
       </komorka>
       <komorka>
-        <wiersz>200</wiersz>
+        <wiersz>201</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -4063,7 +4195,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>201</wiersz>
+        <wiersz>202</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -4071,7 +4203,7 @@
         <text><![CDATA[<b>WSC (skarga o stwierdzenie niezgodności z prawem)– II instancja</b>]]></text>
       </komorka>
       <komorka>
-        <wiersz>201</wiersz>
+        <wiersz>202</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -4079,7 +4211,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>202</wiersz>
+        <wiersz>203</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -4087,7 +4219,7 @@
         <text>WSNc (skarga nadzwyczajna) - II instancja</text>
       </komorka>
       <komorka>
-        <wiersz>202</wiersz>
+        <wiersz>203</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -4095,7 +4227,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>203</wiersz>
+        <wiersz>204</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -4103,7 +4235,7 @@
         <text>Skarga na postępowanie sądowe  Wykaz S*)</text>
       </komorka>
       <komorka>
-        <wiersz>203</wiersz>
+        <wiersz>204</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -4115,7 +4247,7 @@
 
   <tabela id="1.1.1">
     <daneTabeli>
-      <iloscWierszy>205</iloscWierszy>
+      <iloscWierszy>206</iloscWierszy>
       <tekstNadTabela> <![CDATA[<b>Ewidencja spraw – I instancja </b>]]></tekstNadTabela>
       <iloscWierszyNaglowka>5</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>4</iloscKolumnPrzedIteracja>
@@ -5360,15 +5492,34 @@
       <komorka>
         <wiersz>62</wiersz>
         <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>1</rowspan>
+        <style> wciecie </style>
+        <text>
+          Zadośćuczynienie z tytułu uszkodzenia ciała lub uszczerbku na zdrowiu na podstawie art. 445 kc
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>62</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center</style>
+        <text>325</text>
+      </komorka>
+      <komorka>
+        <wiersz>63</wiersz>
+        <kolumna>1</kolumna>
         <colSpan>1</colSpan>
         <rowspan>2</rowspan>
         <style> wciecie </style>
-        <text>Zadośćuczynienie z tytułu uszkodzenia ciała lub uszczerbku na zdrowiu na podstawie art. 445 kc</text>
+        <text>
+          Odszkodowania za naruszenie dóbr osobistych na podstawie art. 448 kc:
+        </text>
       </komorka>
 
-
       <komorka>
-        <wiersz>62</wiersz>
+        <wiersz>63</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -5376,7 +5527,7 @@
         <text>zadośćuczynienie za doznaną krzywdę</text>
       </komorka>
       <komorka>
-        <wiersz>62</wiersz>
+        <wiersz>63</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5384,7 +5535,7 @@
         <text>056</text>
       </komorka>
       <komorka>
-        <wiersz>63</wiersz>
+        <wiersz>64</wiersz>
         <kolumna>1</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -5392,7 +5543,7 @@
         <text>na cel społeczny</text>
       </komorka>
       <komorka>
-        <wiersz>63</wiersz>
+        <wiersz>64</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5401,7 +5552,7 @@
       </komorka>
 
       <komorka>
-        <wiersz>64</wiersz>
+        <wiersz>65</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>2</rowspan>
@@ -5409,7 +5560,7 @@
         <text>Odszkodowania za naruszenie zasady równego traktowania (art. 13 ustawy z dnia 3 grudnia 2010 r. o wdrożeniu niektórych przepisów UE w zakresie równego traktowania (Dz. U. z 2016 r., poz. 1219)</text>
       </komorka>
       <komorka>
-        <wiersz>64</wiersz>
+        <wiersz>65</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -5417,7 +5568,7 @@
         <text>zadośćuczynienie za doznaną krzywdę</text>
       </komorka>
       <komorka>
-        <wiersz>64</wiersz>
+        <wiersz>65</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5425,7 +5576,7 @@
         <text>056rtz</text>
       </komorka>
       <komorka>
-        <wiersz>65</wiersz>
+        <wiersz>66</wiersz>
         <kolumna>1</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -5433,7 +5584,7 @@
         <text>na cel społeczny</text>
       </komorka>
       <komorka>
-        <wiersz>65</wiersz>
+        <wiersz>66</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5441,7 +5592,7 @@
         <text>056rts</text>
       </komorka>
       <komorka>
-        <wiersz>66</wiersz>
+        <wiersz>67</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -5449,7 +5600,7 @@
         <text>Bezpodstawne wzbogacenie (art. 405 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>66</wiersz>
+        <wiersz>67</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5457,7 +5608,7 @@
         <text>057</text>
       </komorka>
       <komorka>
-        <wiersz>67</wiersz>
+        <wiersz>68</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -5465,7 +5616,7 @@
         <text>Roszczenia o przywrócenie stanu zgodnego z prawem i o zaniechanie naruszeń  (art. 222 §2 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>67</wiersz>
+        <wiersz>68</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5473,7 +5624,7 @@
         <text>058</text>
       </komorka>
       <komorka>
-        <wiersz>68</wiersz>
+        <wiersz>69</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>3</rowspan>
@@ -5481,7 +5632,7 @@
         <text>Odpowiedzialność za szkodę wyrządzoną przez niezgodne z prawem działanie lub zaniechanie przy wykonaniu władzy publicznej (art.417§1 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>68</wiersz>
+        <wiersz>69</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -5489,7 +5640,7 @@
         <text>Skarbu Państwa</text>
       </komorka>
       <komorka>
-        <wiersz>68</wiersz>
+        <wiersz>69</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5497,7 +5648,7 @@
         <text>059</text>
       </komorka>
       <komorka>
-        <wiersz>69</wiersz>
+        <wiersz>70</wiersz>
         <kolumna>1</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -5505,7 +5656,7 @@
         <text>jednostki samorządu terytorialnego</text>
       </komorka>
       <komorka>
-        <wiersz>69</wiersz>
+        <wiersz>70</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5513,7 +5664,7 @@
         <text>060</text>
       </komorka>
       <komorka>
-        <wiersz>70</wiersz>
+        <wiersz>71</wiersz>
         <kolumna>1</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -5521,7 +5672,7 @@
         <text>inne osoby prawne</text>
       </komorka>
       <komorka>
-        <wiersz>70</wiersz>
+        <wiersz>71</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5530,7 +5681,7 @@
       </komorka>
 
       <komorka>
-        <wiersz>71</wiersz>
+        <wiersz>72</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>3</rowspan>
@@ -5538,7 +5689,7 @@
         <text>Solidarna odpowiedzialność na podstawie porozumienia za wykonywanie zadań z zakresu władzy publicznej (art.417§2 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>71</wiersz>
+        <wiersz>72</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -5546,7 +5697,7 @@
         <text>Skarbu Państwa</text>
       </komorka>
       <komorka>
-        <wiersz>71</wiersz>
+        <wiersz>72</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5554,7 +5705,7 @@
         <text>061</text>
       </komorka>
       <komorka>
-        <wiersz>72</wiersz>
+        <wiersz>73</wiersz>
         <kolumna>1</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -5562,7 +5713,7 @@
         <text>jednostki samorządu terytorialnego</text>
       </komorka>
       <komorka>
-        <wiersz>72</wiersz>
+        <wiersz>73</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5570,7 +5721,7 @@
         <text>062</text>
       </komorka>
       <komorka>
-        <wiersz>73</wiersz>
+        <wiersz>74</wiersz>
         <kolumna>1</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -5578,7 +5729,7 @@
         <text>inne osoby prawne</text>
       </komorka>
       <komorka>
-        <wiersz>73</wiersz>
+        <wiersz>74</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5586,7 +5737,7 @@
         <text>062a</text>
       </komorka>
       <komorka>
-        <wiersz>74</wiersz>
+        <wiersz>75</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -5594,7 +5745,7 @@
         <text>Żądanie naprawienia szkody wyrządzonej na osobie przez zgodne z prawem wykonywanie władzy publicznej gdy okoliczności wskazują, że wymagają tego względy słuszności (art. 4172 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>74</wiersz>
+        <wiersz>75</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5602,7 +5753,7 @@
         <text>068</text>
       </komorka>
       <komorka>
-        <wiersz>75</wiersz>
+        <wiersz>76</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -5610,7 +5761,7 @@
         <text>Żądanie zadośćuczynienia pieniężnego za szkody wyrządzone na osobie przez zgodne z prawem wykonywanie władzy publicznej gdy okoliczności wskazują, że wymagają tego względy słuszności (art. 4172 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>75</wiersz>
+        <wiersz>76</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5618,7 +5769,7 @@
         <text>069</text>
       </komorka>
       <komorka>
-        <wiersz>76</wiersz>
+        <wiersz>77</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -5626,7 +5777,7 @@
         <text>Odpowiedzialność za wydanie aktu norma¬tywnego niezgodnego z Konstytucją , ratyfikowaną umową międzynarodową lub ustawą oraz za niewydanie aktu normatywnego, którego obowiązek wydania przewiduje przepis prawa  (art.4171§1 i 4  kc)</text>
       </komorka>
       <komorka>
-        <wiersz>76</wiersz>
+        <wiersz>77</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5634,7 +5785,7 @@
         <text>063</text>
       </komorka>
       <komorka>
-        <wiersz>77</wiersz>
+        <wiersz>78</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -5642,7 +5793,7 @@
         <text>Odpowiedzialność za wydanie prawomoc¬nego orzeczenia lub ostatecznej decyzji oraz za niewydanie orzeczenia lub decyzji, gdy obowiązek ich wydania przewiduje przepis prawa(art.4171§2 i 3  kc)</text>
       </komorka>
       <komorka>
-        <wiersz>77</wiersz>
+        <wiersz>78</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5650,7 +5801,7 @@
         <text>064</text>
       </komorka>
       <komorka>
-        <wiersz>78</wiersz>
+        <wiersz>79</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -5658,7 +5809,7 @@
         <text>Roszczenia wniesione na podstawie art.16 ustawy z dn.17 czerwca 2004 r. o skardze na naruszenie prawa strony do rozpoznania sprawy w postępowaniu przygotowawczym (…) (Dz. U. z 2018 r. poz. 75)</text>
       </komorka>
       <komorka>
-        <wiersz>78</wiersz>
+        <wiersz>79</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5666,7 +5817,7 @@
         <text>070</text>
       </komorka>
       <komorka>
-        <wiersz>79</wiersz>
+        <wiersz>80</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -5674,7 +5825,7 @@
         <text>Roszczenia z walutowych transakcji instrumentami pochodnymi (opcje walutowe, swapy walutowe, CIRS, forward i inne)</text>
       </komorka>
       <komorka>
-        <wiersz>79</wiersz>
+        <wiersz>80</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5682,7 +5833,7 @@
         <text>075</text>
       </komorka>
       <komorka>
-        <wiersz>80</wiersz>
+        <wiersz>81</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -5690,7 +5841,7 @@
         <text>O uchylenie wyroku sądu polubownego</text>
       </komorka>
       <komorka>
-        <wiersz>80</wiersz>
+        <wiersz>81</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5698,7 +5849,7 @@
         <text>073</text>
       </komorka>
       <komorka>
-        <wiersz>81</wiersz>
+        <wiersz>82</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -5706,7 +5857,7 @@
         <text>O uznanie umowy za bezskuteczną (art. 59 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>81</wiersz>
+        <wiersz>82</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5714,7 +5865,7 @@
         <text>306</text>
       </komorka>
       <komorka>
-        <wiersz>82</wiersz>
+        <wiersz>83</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -5722,7 +5873,7 @@
         <text>O unieważnienie umowy zawartej w wyniku aukcji albo przetargu (art. 705 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>82</wiersz>
+        <wiersz>83</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5730,7 +5881,7 @@
         <text>308</text>
       </komorka>
       <komorka>
-        <wiersz>83</wiersz>
+        <wiersz>84</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -5738,7 +5889,7 @@
         <text>O wydanie rzeczy ruchomej (art.  222 § 1 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>83</wiersz>
+        <wiersz>84</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5746,7 +5897,7 @@
         <text>309</text>
       </komorka>
       <komorka>
-        <wiersz>84</wiersz>
+        <wiersz>85</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -5754,7 +5905,7 @@
         <text>Roszczenia wzajemne między właścicielem a samoistnym posiadaczem rzeczy (art. 229 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>84</wiersz>
+        <wiersz>85</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5762,7 +5913,7 @@
         <text>301</text>
       </komorka>
       <komorka>
-        <wiersz>85</wiersz>
+        <wiersz>86</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -5770,7 +5921,7 @@
         <text>O wstrzymanie budowy (art. 347 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>85</wiersz>
+        <wiersz>86</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5778,7 +5929,7 @@
         <text>310</text>
       </komorka>
       <komorka>
-        <wiersz>86</wiersz>
+        <wiersz>87</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -5786,7 +5937,7 @@
         <text>O rozstrzygnięcie z powodu nadzwyczajnej zmian stosunków (art. 3571 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>86</wiersz>
+        <wiersz>87</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5794,7 +5945,7 @@
         <text>311</text>
       </komorka>
       <komorka>
-        <wiersz>87</wiersz>
+        <wiersz>88</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -5802,7 +5953,7 @@
         <text>Żądania z tytułu wyzysku (art. 388 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>87</wiersz>
+        <wiersz>88</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5810,7 +5961,7 @@
         <text>312</text>
       </komorka>
       <komorka>
-        <wiersz>88</wiersz>
+        <wiersz>89</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -5818,7 +5969,7 @@
         <text>O zawarcie umowy przyrzeczonej (art. 390 § 2 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>88</wiersz>
+        <wiersz>89</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5826,7 +5977,7 @@
         <text>313</text>
       </komorka>
       <komorka>
-        <wiersz>89</wiersz>
+        <wiersz>90</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -5834,7 +5985,7 @@
         <text>O orzeczenie przepadku świadczenia spełnionego w zamian za dokonanie czynu zabronionego przez ustawę lub w celu niegodziwym (art. 412 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>89</wiersz>
+        <wiersz>90</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5842,7 +5993,7 @@
         <text>314</text>
       </komorka>
       <komorka>
-        <wiersz>90</wiersz>
+        <wiersz>91</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -5850,7 +6001,7 @@
         <text>O naprawienie szkody wynikłej z czynu niedozwolonego, z wyłączeniem spraw o symbolach 014wk, 014oc, 014pz,  026, 027, 027a, 027b, 028, 029, 030, 050, 050z, 055, 056, 056s, 059, 060, 060a, 061, 062, 062a, 068, 069, 063, 064</text>
       </komorka>
       <komorka>
-        <wiersz>90</wiersz>
+        <wiersz>91</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5858,7 +6009,7 @@
         <text>302</text>
       </komorka>
       <komorka>
-        <wiersz>91</wiersz>
+        <wiersz>92</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -5866,7 +6017,7 @@
         <text>O naprawienie szkody z tytułu odpowiedzialności za szkodę wyrządzoną przez produkt niebezpieczny</text>
       </komorka>
       <komorka>
-        <wiersz>91</wiersz>
+        <wiersz>92</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5874,7 +6025,7 @@
         <text>303</text>
       </komorka>
       <komorka>
-        <wiersz>92</wiersz>
+        <wiersz>93</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -5882,7 +6033,7 @@
         <text>O naprawienie szkody wynikłej z niewykonania lub nienależytego wykonania zobowiązania</text>
       </komorka>
       <komorka>
-        <wiersz>92</wiersz>
+        <wiersz>93</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5890,7 +6041,7 @@
         <text>304</text>
       </komorka>
       <komorka>
-        <wiersz>93</wiersz>
+        <wiersz>94</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -5898,7 +6049,7 @@
         <text>O upoważnienie do wykonania zastępczego na koszt dłużnika (art. 480  kc)</text>
       </komorka>
       <komorka>
-        <wiersz>93</wiersz>
+        <wiersz>94</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5906,7 +6057,7 @@
         <text>315</text>
       </komorka>
       <komorka>
-        <wiersz>94</wiersz>
+        <wiersz>95</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -5914,7 +6065,7 @@
         <text>O uznanie czynności prawnej za bezskuteczną</text>
       </komorka>
       <komorka>
-        <wiersz>94</wiersz>
+        <wiersz>95</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5922,7 +6073,7 @@
         <text>307</text>
       </komorka>
       <komorka>
-        <wiersz>95</wiersz>
+        <wiersz>96</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>15</rowspan>
@@ -5930,7 +6081,7 @@
         <text>Roszczenia</text>
       </komorka>
       <komorka>
-        <wiersz>95</wiersz>
+        <wiersz>96</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>14</rowspan>
@@ -5938,7 +6089,7 @@
         <text>z umowy</text>
       </komorka>
       <komorka>
-        <wiersz>95</wiersz>
+        <wiersz>96</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5946,7 +6097,7 @@
         <text>sprzedaży</text>
       </komorka>
       <komorka>
-        <wiersz>95</wiersz>
+        <wiersz>96</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5954,7 +6105,7 @@
         <text>88</text>
       </komorka>
       <komorka>
-        <wiersz>96</wiersz>
+        <wiersz>97</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5962,7 +6113,7 @@
         <text>dostawy</text>
       </komorka>
       <komorka>
-        <wiersz>96</wiersz>
+        <wiersz>97</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5970,7 +6121,7 @@
         <text>89</text>
       </komorka>
       <komorka>
-        <wiersz>97</wiersz>
+        <wiersz>98</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5978,7 +6129,7 @@
         <text>o dzieło</text>
       </komorka>
       <komorka>
-        <wiersz>97</wiersz>
+        <wiersz>98</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5986,7 +6137,7 @@
         <text>90</text>
       </komorka>
       <komorka>
-        <wiersz>98</wiersz>
+        <wiersz>99</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5994,7 +6145,7 @@
         <text>o roboty budowlane</text>
       </komorka>
       <komorka>
-        <wiersz>98</wiersz>
+        <wiersz>99</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6002,7 +6153,7 @@
         <text>91</text>
       </komorka>
       <komorka>
-        <wiersz>99</wiersz>
+        <wiersz>100</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6010,7 +6161,7 @@
         <text>deweloperskiej art. 9 ustawy z 16 września 2011 r. o ochronie praw nabywcy lokalu mieszkalnego lub domu jednorodzinnego (Dz.U. z 2017r. poz. 1468)</text>
       </komorka>
       <komorka>
-        <wiersz>99</wiersz>
+        <wiersz>100</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6018,7 +6169,7 @@
         <text>091a</text>
       </komorka>
       <komorka>
-        <wiersz>100</wiersz>
+        <wiersz>101</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6026,7 +6177,7 @@
         <text>najmu lub dzierżawy</text>
       </komorka>
       <komorka>
-        <wiersz>100</wiersz>
+        <wiersz>101</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6034,7 +6185,7 @@
         <text>92</text>
       </komorka>
       <komorka>
-        <wiersz>101</wiersz>
+        <wiersz>102</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6042,7 +6193,7 @@
         <text>pożyczki</text>
       </komorka>
       <komorka>
-        <wiersz>101</wiersz>
+        <wiersz>102</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6050,7 +6201,7 @@
         <text>93</text>
       </komorka>
       <komorka>
-        <wiersz>102</wiersz>
+        <wiersz>103</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6058,7 +6209,7 @@
         <text>zlecenia</text>
       </komorka>
       <komorka>
-        <wiersz>102</wiersz>
+        <wiersz>103</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6066,7 +6217,7 @@
         <text>94</text>
       </komorka>
       <komorka>
-        <wiersz>103</wiersz>
+        <wiersz>104</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6074,7 +6225,7 @@
         <text>agencyjnej</text>
       </komorka>
       <komorka>
-        <wiersz>103</wiersz>
+        <wiersz>104</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6082,7 +6233,7 @@
         <text>95</text>
       </komorka>
       <komorka>
-        <wiersz>104</wiersz>
+        <wiersz>105</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6090,7 +6241,7 @@
         <text>przewozu</text>
       </komorka>
       <komorka>
-        <wiersz>104</wiersz>
+        <wiersz>105</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6098,7 +6249,7 @@
         <text>96</text>
       </komorka>
       <komorka>
-        <wiersz>105</wiersz>
+        <wiersz>106</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6106,7 +6257,7 @@
         <text>spedycji</text>
       </komorka>
       <komorka>
-        <wiersz>105</wiersz>
+        <wiersz>106</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6114,7 +6265,7 @@
         <text>97</text>
       </komorka>
       <komorka>
-        <wiersz>106</wiersz>
+        <wiersz>107</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6122,7 +6273,7 @@
         <text>składu</text>
       </komorka>
       <komorka>
-        <wiersz>106</wiersz>
+        <wiersz>107</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6130,7 +6281,7 @@
         <text>98</text>
       </komorka>
       <komorka>
-        <wiersz>107</wiersz>
+        <wiersz>108</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6138,7 +6289,7 @@
         <text>poręczenia</text>
       </komorka>
       <komorka>
-        <wiersz>107</wiersz>
+        <wiersz>108</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6146,7 +6297,7 @@
         <text>99</text>
       </komorka>
       <komorka>
-        <wiersz>108</wiersz>
+        <wiersz>109</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6154,7 +6305,7 @@
         <text>renty lub dożywocia</text>
       </komorka>
       <komorka>
-        <wiersz>108</wiersz>
+        <wiersz>109</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6162,7 +6313,7 @@
         <text>100</text>
       </komorka>
       <komorka>
-        <wiersz>109</wiersz>
+        <wiersz>110</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -6170,7 +6321,7 @@
         <text>z weksla</text>
       </komorka>
       <komorka>
-        <wiersz>109</wiersz>
+        <wiersz>110</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6179,7 +6330,7 @@
       </komorka>
 
       <komorka>
-        <wiersz>110</wiersz>
+        <wiersz>111</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6187,7 +6338,7 @@
         <text>O uznanie za niegodnego dziedziczenia</text>
       </komorka>
       <komorka>
-        <wiersz>110</wiersz>
+        <wiersz>111</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6195,7 +6346,7 @@
         <text>320</text>
       </komorka>
       <komorka>
-        <wiersz>111</wiersz>
+        <wiersz>112</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6203,7 +6354,7 @@
         <text>O odszkodowanie za bezumowne korzystanie z lokalu mieszkalnego</text>
       </komorka>
       <komorka>
-        <wiersz>111</wiersz>
+        <wiersz>112</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6211,7 +6362,7 @@
         <text>305m</text>
       </komorka>
       <komorka>
-        <wiersz>112</wiersz>
+        <wiersz>113</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6219,7 +6370,7 @@
         <text>O odszkodowanie za bezumowne korzystanie z lokalu użytkowego</text>
       </komorka>
       <komorka>
-        <wiersz>112</wiersz>
+        <wiersz>113</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6227,7 +6378,7 @@
         <text>305u</text>
       </komorka>
       <komorka>
-        <wiersz>113</wiersz>
+        <wiersz>114</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6235,7 +6386,7 @@
         <text>Żądanie odmowy wykonania tytułu wykonawczego</text>
       </komorka>
       <komorka>
-        <wiersz>113</wiersz>
+        <wiersz>114</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6244,7 +6395,7 @@
       </komorka>
 
       <komorka>
-        <wiersz>114</wiersz>
+        <wiersz>115</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6252,7 +6403,7 @@
         <text>O uchylenie, stwierdzenie nieważności albo o ustalenie nieistnienia uchwał organów osób prawnych  lub jednostek organizacyjnych niebędących osobami prawnymi, którym ustawa przyznaje zdolność prawną (art. 17 pkt 42 kpc)</text>
       </komorka>
       <komorka>
-        <wiersz>114</wiersz>
+        <wiersz>115</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6260,7 +6411,7 @@
         <text>321</text>
       </komorka>
       <komorka>
-        <wiersz>115</wiersz>
+        <wiersz>116</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6268,7 +6419,7 @@
         <text>O zobowiązanie do złożenia oświadczenia woli</text>
       </komorka>
       <komorka>
-        <wiersz>115</wiersz>
+        <wiersz>116</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6276,7 +6427,7 @@
         <text>317</text>
       </komorka>
       <komorka>
-        <wiersz>116</wiersz>
+        <wiersz>117</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6284,7 +6435,7 @@
         <text>O ustalenie wstąpienia w stosunek najmu</text>
       </komorka>
       <komorka>
-        <wiersz>116</wiersz>
+        <wiersz>117</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6292,7 +6443,7 @@
         <text>318</text>
       </komorka>
       <komorka>
-        <wiersz>117</wiersz>
+        <wiersz>118</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6300,7 +6451,7 @@
         <text>O ustalenie opłaty z tytułu użytkowania wieczystego</text>
       </komorka>
       <komorka>
-        <wiersz>117</wiersz>
+        <wiersz>118</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6308,7 +6459,7 @@
         <text>319</text>
       </komorka>
       <komorka>
-        <wiersz>118</wiersz>
+        <wiersz>119</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6316,7 +6467,7 @@
         <text>O roszczenia z tytułu naruszenia prawa konkurencji wniesione zgodnie z ustawą z 21.04.2017 o roszczeniach o naprawienie szkody wyrządzonej przez naruszenie prawa konkurencji (Dz.U. 2017r. poz. 1132)</text>
       </komorka>
       <komorka>
-        <wiersz>118</wiersz>
+        <wiersz>119</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6324,7 +6475,7 @@
         <text></text>
       </komorka>
       <komorka>
-        <wiersz>119</wiersz>
+        <wiersz>120</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6332,7 +6483,7 @@
         <text>Inne bez symbolu i o symbolu wyżej niewymienionym </text>
       </komorka>
       <komorka>
-        <wiersz>119</wiersz>
+        <wiersz>120</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6340,7 +6491,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>120</wiersz>
+        <wiersz>121</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6348,7 +6499,7 @@
         <text><![CDATA[<b>CG-G szkody geologiczne i górnnicze </b>]]>(razem wiersze 122 do 127)</text>
       </komorka>
       <komorka>
-        <wiersz>120</wiersz>
+        <wiersz>121</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6356,7 +6507,7 @@
         <text> </text>
       </komorka>
       <komorka>
-        <wiersz>121</wiersz>
+        <wiersz>122</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>5</rowspan>
@@ -6364,7 +6515,7 @@
         <text>Sprawy o napra-wienie szkód w</text>
       </komorka>
       <komorka>
-        <wiersz>121</wiersz>
+        <wiersz>122</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -6372,7 +6523,7 @@
         <text> budynkach  i lokalach</text>
       </komorka>
       <komorka>
-        <wiersz>121</wiersz>
+        <wiersz>122</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6380,7 +6531,7 @@
         <text>350</text>
       </komorka>
       <komorka>
-        <wiersz>122</wiersz>
+        <wiersz>123</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -6388,7 +6539,7 @@
         <text>obiektach budowlanych i infrastrukturze technicznej (z wyłączeniem budynków i lokali)</text>
       </komorka>
       <komorka>
-        <wiersz>122</wiersz>
+        <wiersz>123</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6396,7 +6547,7 @@
         <text>351</text>
       </komorka>
       <komorka>
-        <wiersz>123</wiersz>
+        <wiersz>124</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -6404,7 +6555,7 @@
         <text>gruncie i zasobach wodnych (z wyłączeniem gruntów rolnych i leśnych)</text>
       </komorka>
       <komorka>
-        <wiersz>123</wiersz>
+        <wiersz>124</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6412,7 +6563,7 @@
         <text>352</text>
       </komorka>
       <komorka>
-        <wiersz>124</wiersz>
+        <wiersz>125</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -6420,7 +6571,7 @@
         <text>plonach</text>
       </komorka>
       <komorka>
-        <wiersz>124</wiersz>
+        <wiersz>125</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6428,7 +6579,7 @@
         <text>353</text>
       </komorka>
       <komorka>
-        <wiersz>125</wiersz>
+        <wiersz>126</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -6436,7 +6587,7 @@
         <text>gruntach rolnych i leśnych</text>
       </komorka>
       <komorka>
-        <wiersz>125</wiersz>
+        <wiersz>126</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6444,7 +6595,7 @@
         <text>354</text>
       </komorka>
       <komorka>
-        <wiersz>126</wiersz>
+        <wiersz>127</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6452,7 +6603,7 @@
         <text> Inne roszczenia </text>
       </komorka>
       <komorka>
-        <wiersz>126</wiersz>
+        <wiersz>127</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6460,7 +6611,7 @@
         <text>355</text>
       </komorka>
       <komorka>
-        <wiersz>127</wiersz>
+        <wiersz>128</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6468,7 +6619,7 @@
         <text> <![CDATA[<b>Ns (nieprocesowe) </b>]]> (z wył. rejestrowych)   (razem wiersze 129 do 139) </text>
       </komorka>
       <komorka>
-        <wiersz>127</wiersz>
+        <wiersz>128</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6477,7 +6628,7 @@
       </komorka>
 
       <komorka>
-        <wiersz>128</wiersz>
+        <wiersz>129</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6485,7 +6636,7 @@
         <text>O separację na podstawie zgodnego żądania małżonków</text>
       </komorka>
       <komorka>
-        <wiersz>128</wiersz>
+        <wiersz>129</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6493,7 +6644,7 @@
         <text>233</text>
       </komorka>
       <komorka>
-        <wiersz>129</wiersz>
+        <wiersz>130</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6501,7 +6652,7 @@
         <text>Ubezwłasnowolnienie </text>
       </komorka>
       <komorka>
-        <wiersz>129</wiersz>
+        <wiersz>130</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6509,7 +6660,7 @@
         <text>232</text>
       </komorka>
       <komorka>
-        <wiersz>130</wiersz>
+        <wiersz>131</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6517,7 +6668,7 @@
         <text>Zniesienie separacji</text>
       </komorka>
       <komorka>
-        <wiersz>130</wiersz>
+        <wiersz>131</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6525,7 +6676,7 @@
         <text>234</text>
       </komorka>
       <komorka>
-        <wiersz>131</wiersz>
+        <wiersz>132</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6533,7 +6684,7 @@
         <text>O uchylenie ubezwłasnowolnienia</text>
       </komorka>
       <komorka>
-        <wiersz>131</wiersz>
+        <wiersz>132</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6542,7 +6693,7 @@
       </komorka>
 
       <komorka>
-        <wiersz>132</wiersz>
+        <wiersz>133</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6550,7 +6701,7 @@
         <text>Sprawy w trybie wyborczym (wybory prezydenckie)</text>
       </komorka>
       <komorka>
-        <wiersz>132</wiersz>
+        <wiersz>133</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6558,7 +6709,7 @@
         <text>290</text>
       </komorka>
       <komorka>
-        <wiersz>133</wiersz>
+        <wiersz>134</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6566,7 +6717,7 @@
         <text>Sprawy w trybie wyborczym (wybory parlamentarne)</text>
       </komorka>
       <komorka>
-        <wiersz>133</wiersz>
+        <wiersz>134</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6574,7 +6725,7 @@
         <text>291</text>
       </komorka>
       <komorka>
-        <wiersz>134</wiersz>
+        <wiersz>135</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6582,7 +6733,7 @@
         <text>Sprawy w trybie wyborczym (wybory samorządowe)</text>
       </komorka>
       <komorka>
-        <wiersz>134</wiersz>
+        <wiersz>135</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6590,7 +6741,7 @@
         <text>292</text>
       </komorka>
       <komorka>
-        <wiersz>135</wiersz>
+        <wiersz>136</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6598,7 +6749,7 @@
         <text>wydanie wypisu aktu notarialnego (art. 110 § 2 ustawy z dnia 14 lutego 1991 r. - Prawo o notariacie)</text>
       </komorka>
       <komorka>
-        <wiersz>135</wiersz>
+        <wiersz>136</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6606,7 +6757,7 @@
         <text>294</text>
       </komorka>
       <komorka>
-        <wiersz>136</wiersz>
+        <wiersz>137</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6614,7 +6765,7 @@
         <text>Nakazanie powrotu osoby podlegającej władzy rodzicielskiej lub pozostającej pod opieką za granicę w sprawie prowadzonej na podstawie Konwencji dotyczącej cywilnych aspektów uprowadzenia dziecka za granicę, sporządzonej                     w Hadze dnia 25 października 1980 r.</text>
       </komorka>
       <komorka>
-        <wiersz>136</wiersz>
+        <wiersz>137</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6622,7 +6773,7 @@
         <text>295</text>
       </komorka>
       <komorka>
-        <wiersz>137</wiersz>
+        <wiersz>138</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6630,7 +6781,7 @@
         <text>Przymusowe odebrania osoby podlegającej władzy rodzicielskiej lub pozostającej pod opieką za granicę w sprawie prowadzonej na podstawie Konwencji dotyczącej cywilnych aspektów uprowadzenia dziecka za granicę, sporządzonej w Hadze dnia 25 października  1980 r.</text>
       </komorka>
       <komorka>
-        <wiersz>137</wiersz>
+        <wiersz>138</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6638,7 +6789,7 @@
         <text>296</text>
       </komorka>
       <komorka>
-        <wiersz>138</wiersz>
+        <wiersz>139</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6646,7 +6797,7 @@
         <text>Inne bez symbolu i o symbolu wyżej niewymienionym </text>
       </komorka>
       <komorka>
-        <wiersz>138</wiersz>
+        <wiersz>139</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6654,7 +6805,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>139</wiersz>
+        <wiersz>140</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>5</rowspan>
@@ -6662,7 +6813,7 @@
         <text><![CDATA[<b>Ns-Rej.</b>]]></text>
       </komorka>
       <komorka>
-        <wiersz>139</wiersz>
+        <wiersz>140</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -6670,7 +6821,7 @@
         <text>razem (w. 141 do 144)</text>
       </komorka>
       <komorka>
-        <wiersz>139</wiersz>
+        <wiersz>140</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6678,7 +6829,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>140</wiersz>
+        <wiersz>141</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -6686,7 +6837,7 @@
         <text>Prasa f)</text>
       </komorka>
       <komorka>
-        <wiersz>140</wiersz>
+        <wiersz>141</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6694,7 +6845,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>141</wiersz>
+        <wiersz>142</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -6702,7 +6853,7 @@
         <text>Partie f)</text>
       </komorka>
       <komorka>
-        <wiersz>141</wiersz>
+        <wiersz>142</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6710,7 +6861,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>142</wiersz>
+        <wiersz>143</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -6718,7 +6869,7 @@
         <text>Fundusze Emerytalne f)</text>
       </komorka>
       <komorka>
-        <wiersz>142</wiersz>
+        <wiersz>143</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6726,7 +6877,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>143</wiersz>
+        <wiersz>144</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -6734,7 +6885,7 @@
         <text>Fundusze Inwestycyjne f)</text>
       </komorka>
       <komorka>
-        <wiersz>143</wiersz>
+        <wiersz>144</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6742,7 +6893,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>144</wiersz>
+        <wiersz>145</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6750,7 +6901,7 @@
         <text><![CDATA[<b>Nc (nakazowe, upominawcze i europejskie postępowanie nakazowe)</b>]]>(suma w. 146 do 185)</text>
       </komorka>
       <komorka>
-        <wiersz>144</wiersz>
+        <wiersz>145</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6758,7 +6909,7 @@
         <text>-</text>
       </komorka>
       <komorka>
-        <wiersz>145</wiersz>
+        <wiersz>146</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6766,7 +6917,7 @@
         <text>Odszkodowania z tytułu wypadków komunikacyjnych</text>
       </komorka>
       <komorka>
-        <wiersz>145</wiersz>
+        <wiersz>146</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6775,7 +6926,7 @@
       </komorka>
 
       <komorka>
-        <wiersz>146</wiersz>
+        <wiersz>147</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>3</rowspan>
@@ -6783,7 +6934,7 @@
         <text>Odszkodowania z tytułu wypadków komunikacyjnych</text>
       </komorka>
       <komorka>
-        <wiersz>146</wiersz>
+        <wiersz>147</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -6791,7 +6942,7 @@
         <text>z wyłączeniem spraw o symbolu 325, 014oc i 014pz</text>
       </komorka>
       <komorka>
-        <wiersz>146</wiersz>
+        <wiersz>147</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6799,7 +6950,7 @@
         <text>014wk</text>
       </komorka>
       <komorka>
-        <wiersz>147</wiersz>
+        <wiersz>148</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -6807,7 +6958,7 @@
         <text>spory na tle ubezpieczeń OC posiadaczy pojazdów mechanicznych  z wyłączeniem spraw o symbolu 014pz</text>
       </komorka>
       <komorka>
-        <wiersz>147</wiersz>
+        <wiersz>148</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6815,7 +6966,7 @@
         <text>014oc</text>
       </komorka>
       <komorka>
-        <wiersz>148</wiersz>
+        <wiersz>149</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -6823,7 +6974,7 @@
         <text>roszczenia z tytułu zwrotu kosztów najmu pojazdu zastępczego przeciwko ubezpieczycielowi OC posiadacza pojazdu mechanicznego</text>
       </komorka>
       <komorka>
-        <wiersz>148</wiersz>
+        <wiersz>149</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6832,7 +6983,7 @@
       </komorka>
 
       <komorka>
-        <wiersz>149</wiersz>
+        <wiersz>150</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6840,7 +6991,7 @@
         <text>Roszczenia związane z rękojmią i gwarancją (dotyczy wszystkich rodzajów umów)</text>
       </komorka>
       <komorka>
-        <wiersz>149</wiersz>
+        <wiersz>150</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6848,7 +6999,7 @@
         <text>18</text>
       </komorka>
       <komorka>
-        <wiersz>150</wiersz>
+        <wiersz>151</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6856,7 +7007,7 @@
         <text>Roszczenia z tytułu umów kontraktacji</text>
       </komorka>
       <komorka>
-        <wiersz>150</wiersz>
+        <wiersz>151</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6864,7 +7015,7 @@
         <text>19</text>
       </komorka>
       <komorka>
-        <wiersz>151</wiersz>
+        <wiersz>152</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6872,7 +7023,7 @@
         <text>Spory na tle waloryzacji (art. 3581 kc)</text>
       </komorka>
       <komorka>
-        <wiersz>151</wiersz>
+        <wiersz>152</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6880,7 +7031,7 @@
         <text>43</text>
       </komorka>
       <komorka>
-        <wiersz>152</wiersz>
+        <wiersz>153</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>2</rowspan>
@@ -6889,7 +7040,7 @@
       </komorka>
 
       <komorka>
-        <wiersz>152</wiersz>
+        <wiersz>153</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -6897,7 +7048,7 @@
         <text>akcjami</text>
       </komorka>
       <komorka>
-        <wiersz>152</wiersz>
+        <wiersz>153</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6905,7 +7056,7 @@
         <text>044a</text>
       </komorka>
       <komorka>
-        <wiersz>153</wiersz>
+        <wiersz>154</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -6913,7 +7064,7 @@
         <text>innymi papierami wartościowymi</text>
       </komorka>
       <komorka>
-        <wiersz>153</wiersz>
+        <wiersz>154</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6921,7 +7072,7 @@
         <text>44</text>
       </komorka>
       <komorka>
-        <wiersz>154</wiersz>
+        <wiersz>155</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6929,7 +7080,7 @@
         <text>Roszczenia z umowy spółki cywilnej</text>
       </komorka>
       <komorka>
-        <wiersz>154</wiersz>
+        <wiersz>155</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6937,7 +7088,7 @@
         <text>46</text>
       </komorka>
       <komorka>
-        <wiersz>155</wiersz>
+        <wiersz>156</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6945,7 +7096,7 @@
         <text>Roszczenia z umów ubezpieczenia, z wyłączeniem    spraw o symbolu 014wk, 014oc, 014pz</text>
       </komorka>
       <komorka>
-        <wiersz>155</wiersz>
+        <wiersz>156</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6953,7 +7104,7 @@
         <text>47</text>
       </komorka>
       <komorka>
-        <wiersz>156</wiersz>
+        <wiersz>157</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6961,7 +7112,7 @@
         <text>Roszczenia z umowy komisu</text>
       </komorka>
       <komorka>
-        <wiersz>156</wiersz>
+        <wiersz>157</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6969,7 +7120,7 @@
         <text>48</text>
       </komorka>
       <komorka>
-        <wiersz>157</wiersz>
+        <wiersz>158</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>3</rowspan>
@@ -6977,7 +7128,7 @@
         <text>Roszczenia z umów bankowych, z wyłączeniem spraw o symbolu 049c i 049cf</text>
       </komorka>
       <komorka>
-        <wiersz>157</wiersz>
+        <wiersz>158</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -6985,7 +7136,7 @@
         <text>poręczenia</text>
       </komorka>
       <komorka>
-        <wiersz>157</wiersz>
+        <wiersz>158</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6993,7 +7144,7 @@
         <text>049a</text>
       </komorka>
       <komorka>
-        <wiersz>158</wiersz>
+        <wiersz>159</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -7001,7 +7152,7 @@
         <text>gwarancje bankowe i akredytywy</text>
       </komorka>
       <komorka>
-        <wiersz>158</wiersz>
+        <wiersz>159</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7009,7 +7160,7 @@
         <text>049b</text>
       </komorka>
       <komorka>
-        <wiersz>159</wiersz>
+        <wiersz>160</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -7017,7 +7168,7 @@
         <text>innych</text>
       </komorka>
       <komorka>
-        <wiersz>159</wiersz>
+        <wiersz>160</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7025,7 +7176,7 @@
         <text>49</text>
       </komorka>
       <komorka>
-        <wiersz>160</wiersz>
+        <wiersz>161</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>2</rowspan>
@@ -7033,7 +7184,7 @@
         <text>Roszczenia z umów bankowych</text>
       </komorka>
       <komorka>
-        <wiersz>160</wiersz>
+        <wiersz>161</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -7041,7 +7192,7 @@
         <text>waloryzowanych/ denominowanych /indeksowanych do waluty innej niż waluta polska z wyłączeniem denominowanych /indeksowanych do franka szwajcarskiego</text>
       </komorka>
       <komorka>
-        <wiersz>160</wiersz>
+        <wiersz>161</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7049,7 +7200,7 @@
         <text>049c</text>
       </komorka>
       <komorka>
-        <wiersz>161</wiersz>
+        <wiersz>162</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -7057,7 +7208,7 @@
         <text>denominowanych /indeksowanych do franka szwajcarskiego</text>
       </komorka>
       <komorka>
-        <wiersz>161</wiersz>
+        <wiersz>162</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7065,7 +7216,7 @@
         <text>49 cf</text>
       </komorka>
       <komorka>
-        <wiersz>162</wiersz>
+        <wiersz>163</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -7073,7 +7224,7 @@
         <text> Roszczenia z umowy darowizny</text>
       </komorka>
       <komorka>
-        <wiersz>162</wiersz>
+        <wiersz>163</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7081,7 +7232,7 @@
         <text>53</text>
       </komorka>
       <komorka>
-        <wiersz>163</wiersz>
+        <wiersz>164</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -7089,7 +7240,7 @@
         <text> Roszczenia o zachowek</text>
       </komorka>
       <komorka>
-        <wiersz>163</wiersz>
+        <wiersz>164</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7097,7 +7248,7 @@
         <text>54</text>
       </komorka>
       <komorka>
-        <wiersz>164</wiersz>
+        <wiersz>165</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -7105,7 +7256,7 @@
         <text>Roszczenia z walutowych transakcji instrumentami pochodnymi (opcje walutowe, swapy walutowe, CIRS, forward i inne)</text>
       </komorka>
       <komorka>
-        <wiersz>164</wiersz>
+        <wiersz>165</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7113,7 +7264,7 @@
         <text>75</text>
       </komorka>
       <komorka>
-        <wiersz>165</wiersz>
+        <wiersz>166</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -7121,7 +7272,7 @@
         <text>O odszkodowanie z tytułu odpowiedzialności za szkodę wynikłą z niewykonania lub nienależytego wykonania zobowiązania</text>
       </komorka>
       <komorka>
-        <wiersz>165</wiersz>
+        <wiersz>166</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7129,7 +7280,7 @@
         <text>304</text>
       </komorka>
       <komorka>
-        <wiersz>166</wiersz>
+        <wiersz>167</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -7137,7 +7288,7 @@
         <text>O naprawienie szkody wynikłej z czynu niedozwolonego, z wyłączeniem spraw o symbolach 014wk, 014oc, 014pz,  026, 027, 027a, 027b, 028, 029, 030, 050, 050z, 055, 056, 056s, 059, 060, 060a, 061, 062, 062a, 068, 069, 063, 064</text>
       </komorka>
       <komorka>
-        <wiersz>166</wiersz>
+        <wiersz>167</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7145,7 +7296,7 @@
         <text>302</text>
       </komorka>
       <komorka>
-        <wiersz>167</wiersz>
+        <wiersz>168</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>15</rowspan>
@@ -7153,7 +7304,7 @@
         <text>Roszczenia</text>
       </komorka>
       <komorka>
-        <wiersz>167</wiersz>
+        <wiersz>168</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>14</rowspan>
@@ -7161,7 +7312,7 @@
         <text>z umowy</text>
       </komorka>
       <komorka>
-        <wiersz>167</wiersz>
+        <wiersz>168</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7169,7 +7320,7 @@
         <text>sprzedaży</text>
       </komorka>
       <komorka>
-        <wiersz>167</wiersz>
+        <wiersz>168</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7177,7 +7328,7 @@
         <text>88</text>
       </komorka>
       <komorka>
-        <wiersz>168</wiersz>
+        <wiersz>169</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7185,7 +7336,7 @@
         <text>dostawy</text>
       </komorka>
       <komorka>
-        <wiersz>168</wiersz>
+        <wiersz>169</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7193,7 +7344,7 @@
         <text>89</text>
       </komorka>
       <komorka>
-        <wiersz>169</wiersz>
+        <wiersz>170</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7201,7 +7352,7 @@
         <text>o dzieło</text>
       </komorka>
       <komorka>
-        <wiersz>169</wiersz>
+        <wiersz>170</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7209,7 +7360,7 @@
         <text>90</text>
       </komorka>
       <komorka>
-        <wiersz>170</wiersz>
+        <wiersz>171</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7217,7 +7368,7 @@
         <text>o roboty budowlane</text>
       </komorka>
       <komorka>
-        <wiersz>170</wiersz>
+        <wiersz>171</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7225,7 +7376,7 @@
         <text>91</text>
       </komorka>
       <komorka>
-        <wiersz>171</wiersz>
+        <wiersz>172</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7233,7 +7384,7 @@
         <text>deweloperskiej art. 9 ustawy z 16 września 2011 r. o ochronie praw nabywcy lokalu mieszkalnego lub domu jednorodzinnego(Dz.U. z 2017r. poz. 1468)</text>
       </komorka>
       <komorka>
-        <wiersz>171</wiersz>
+        <wiersz>172</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7241,7 +7392,7 @@
         <text>091a</text>
       </komorka>
       <komorka>
-        <wiersz>172</wiersz>
+        <wiersz>173</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7249,7 +7400,7 @@
         <text>Najmu</text>
       </komorka>
       <komorka>
-        <wiersz>172</wiersz>
+        <wiersz>173</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7257,7 +7408,7 @@
         <text>92</text>
       </komorka>
       <komorka>
-        <wiersz>173</wiersz>
+        <wiersz>174</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7265,7 +7416,7 @@
         <text>pożyczki</text>
       </komorka>
       <komorka>
-        <wiersz>173</wiersz>
+        <wiersz>174</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7273,7 +7424,7 @@
         <text>93</text>
       </komorka>
       <komorka>
-        <wiersz>174</wiersz>
+        <wiersz>175</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7281,7 +7432,7 @@
         <text>zlecenia</text>
       </komorka>
       <komorka>
-        <wiersz>174</wiersz>
+        <wiersz>175</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7289,7 +7440,7 @@
         <text>94</text>
       </komorka>
       <komorka>
-        <wiersz>175</wiersz>
+        <wiersz>176</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7297,7 +7448,7 @@
         <text>agencyjnej</text>
       </komorka>
       <komorka>
-        <wiersz>175</wiersz>
+        <wiersz>176</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7305,7 +7456,7 @@
         <text>95</text>
       </komorka>
       <komorka>
-        <wiersz>176</wiersz>
+        <wiersz>177</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7313,7 +7464,7 @@
         <text>przewozu</text>
       </komorka>
       <komorka>
-        <wiersz>176</wiersz>
+        <wiersz>177</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7321,7 +7472,7 @@
         <text>96</text>
       </komorka>
       <komorka>
-        <wiersz>177</wiersz>
+        <wiersz>178</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7329,7 +7480,7 @@
         <text>Spedycji</text>
       </komorka>
       <komorka>
-        <wiersz>177</wiersz>
+        <wiersz>178</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7337,7 +7488,7 @@
         <text>97</text>
       </komorka>
       <komorka>
-        <wiersz>178</wiersz>
+        <wiersz>179</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7345,7 +7496,7 @@
         <text>Składu</text>
       </komorka>
       <komorka>
-        <wiersz>178</wiersz>
+        <wiersz>179</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7353,7 +7504,7 @@
         <text>98</text>
       </komorka>
       <komorka>
-        <wiersz>179</wiersz>
+        <wiersz>180</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7361,7 +7512,7 @@
         <text>poręczenia</text>
       </komorka>
       <komorka>
-        <wiersz>179</wiersz>
+        <wiersz>180</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7369,7 +7520,7 @@
         <text>99</text>
       </komorka>
       <komorka>
-        <wiersz>180</wiersz>
+        <wiersz>181</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7377,7 +7528,7 @@
         <text>Renty</text>
       </komorka>
       <komorka>
-        <wiersz>180</wiersz>
+        <wiersz>181</wiersz>
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7385,7 +7536,7 @@
         <text>100</text>
       </komorka>
       <komorka>
-        <wiersz>181</wiersz>
+        <wiersz>182</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -7393,7 +7544,7 @@
         <text>z weksla</text>
       </komorka>
       <komorka>
-        <wiersz>181</wiersz>
+        <wiersz>182</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7401,7 +7552,7 @@
         <text>087</text>
       </komorka>
       <komorka>
-        <wiersz>182</wiersz>
+        <wiersz>183</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -7409,7 +7560,7 @@
         <text>O odszkodowanie za bezumowne korzystanie z lokalu mieszkalnego</text>
       </komorka>
       <komorka>
-        <wiersz>182</wiersz>
+        <wiersz>183</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7417,7 +7568,7 @@
         <text>305m</text>
       </komorka>
       <komorka>
-        <wiersz>183</wiersz>
+        <wiersz>184</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -7425,7 +7576,7 @@
         <text>O odszkodowanie za bezumowne korzystanie z lokalu użytkowego</text>
       </komorka>
       <komorka>
-        <wiersz>183</wiersz>
+        <wiersz>184</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7433,7 +7584,7 @@
         <text>305u</text>
       </komorka>
       <komorka>
-        <wiersz>184</wiersz>
+        <wiersz>185</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -7441,7 +7592,7 @@
         <text>Inne bez symbolu i o symbolu wyżej niewymienionym </text>
       </komorka>
       <komorka>
-        <wiersz>184</wiersz>
+        <wiersz>185</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7449,7 +7600,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>185</wiersz>
+        <wiersz>186</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -7457,7 +7608,7 @@
         <text><![CDATA[<b>Co ogólne  </b>]]>(razem wiersze 187 do 203)</text>
       </komorka>
       <komorka>
-        <wiersz>185</wiersz>
+        <wiersz>186</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7465,7 +7616,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>186</wiersz>
+        <wiersz>187</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>3</rowspan>
@@ -7473,7 +7624,7 @@
         <text>O nadanie klauzuli wykonalności</text>
       </komorka>
       <komorka>
-        <wiersz>186</wiersz>
+        <wiersz>187</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -7481,7 +7632,7 @@
         <text>z wyłączeniem spraw o symbolach 104n, 104m i 104p</text>
       </komorka>
       <komorka>
-        <wiersz>186</wiersz>
+        <wiersz>187</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7489,7 +7640,7 @@
         <text>104</text>
       </komorka>
       <komorka>
-        <wiersz>187</wiersz>
+        <wiersz>188</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -7497,7 +7648,7 @@
         <text>przeciwko małżonkowi dłużnika (art. 787, 7871 kpc)</text>
       </komorka>
       <komorka>
-        <wiersz>187</wiersz>
+        <wiersz>188</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7505,7 +7656,7 @@
         <text>104m</text>
       </komorka>
       <komorka>
-        <wiersz>188</wiersz>
+        <wiersz>189</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -7513,7 +7664,7 @@
         <text>wobec przejścia uprawnień lub obowiązków (art. 788 kpc)</text>
       </komorka>
       <komorka>
-        <wiersz>188</wiersz>
+        <wiersz>189</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7521,7 +7672,7 @@
         <text>104p</text>
       </komorka>
       <komorka>
-        <wiersz>189</wiersz>
+        <wiersz>190</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -7529,7 +7680,7 @@
         <text>O zwolnienie od kosztów sądowych i/lub ustanowienie radcy prawnego , adwokata</text>
       </komorka>
       <komorka>
-        <wiersz>189</wiersz>
+        <wiersz>190</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7537,7 +7688,7 @@
         <text>105</text>
       </komorka>
       <komorka>
-        <wiersz>190</wiersz>
+        <wiersz>191</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -7545,7 +7696,7 @@
         <text>Uznanie orzeczenia sądu państwa obcego</text>
       </komorka>
       <komorka>
-        <wiersz>190</wiersz>
+        <wiersz>191</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7553,7 +7704,7 @@
         <text>107</text>
       </komorka>
       <komorka>
-        <wiersz>191</wiersz>
+        <wiersz>192</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -7561,7 +7712,7 @@
         <text>O wyznaczenie sądu</text>
       </komorka>
       <komorka>
-        <wiersz>191</wiersz>
+        <wiersz>192</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7569,7 +7720,7 @@
         <text>108</text>
       </komorka>
       <komorka>
-        <wiersz>192</wiersz>
+        <wiersz>193</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -7577,7 +7728,7 @@
         <text>O wyłączenie sędziego</text>
       </komorka>
       <komorka>
-        <wiersz>192</wiersz>
+        <wiersz>193</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7585,7 +7736,7 @@
         <text>109</text>
       </komorka>
       <komorka>
-        <wiersz>193</wiersz>
+        <wiersz>194</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -7593,7 +7744,7 @@
         <text> O odtworzenie akt </text>
       </komorka>
       <komorka>
-        <wiersz>193</wiersz>
+        <wiersz>194</wiersz>
         <kolumna>2</kolumna>
         <colSpan>1</colSpan>
         <rowspan>0</rowspan>
@@ -7601,7 +7752,7 @@
         <text>111</text>
       </komorka>
       <komorka>
-        <wiersz>194</wiersz>
+        <wiersz>195</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -7609,7 +7760,7 @@
         <text>O udzielenie zabezpieczenia</text>
       </komorka>
       <komorka>
-        <wiersz>194</wiersz>
+        <wiersz>195</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7618,7 +7769,7 @@
       </komorka>
 
       <komorka>
-        <wiersz>195</wiersz>
+        <wiersz>196</wiersz>
         <kolumna>1</kolumna>
         <colSpan>2</colSpan>
         <rowspan>3</rowspan>
@@ -7626,7 +7777,7 @@
         <text>Na podstawie rozporządzenia Parlamentu Europejskiego i Rady (UE) NR 655/2014 z dnia 15 maja 2014 r. ustanawiającego procedurę europejskiego nakazu zabezpieczenia na rachunku bankowym w celu ułatwienia transgranicznego dochodzenia wierzytelności w sprawach cywilnych i handlowych</text>
       </komorka>
       <komorka>
-        <wiersz>195</wiersz>
+        <wiersz>196</wiersz>
         <kolumna>2</kolumna>
         <colSpan>1</colSpan>
         <rowspan>0</rowspan>
@@ -7634,7 +7785,7 @@
         <text>o udzielenie zabezpieczenia</text>
       </komorka>
       <komorka>
-        <wiersz>195</wiersz>
+        <wiersz>196</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7642,7 +7793,7 @@
         <text>131a</text>
       </komorka>
       <komorka>
-        <wiersz>196</wiersz>
+        <wiersz>197</wiersz>
         <kolumna>2</kolumna>
         <colSpan>1</colSpan>
         <rowspan>0</rowspan>
@@ -7650,7 +7801,7 @@
         <text>o uchylenie lub zmianę zabezpieczenia (art. 33)</text>
       </komorka>
       <komorka>
-        <wiersz>196</wiersz>
+        <wiersz>197</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7658,7 +7809,7 @@
         <text>-</text>
       </komorka>
       <komorka>
-        <wiersz>197</wiersz>
+        <wiersz>198</wiersz>
         <kolumna>2</kolumna>
         <colSpan>1</colSpan>
         <rowspan>0</rowspan>
@@ -7666,7 +7817,7 @@
         <text>o ograniczenie lub zakończenie wykonywania zabezpieczenia (art. 34)</text>
       </komorka>
       <komorka>
-        <wiersz>197</wiersz>
+        <wiersz>198</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7674,7 +7825,7 @@
         <text>-</text>
       </komorka>
       <komorka>
-        <wiersz>198</wiersz>
+        <wiersz>199</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -7682,7 +7833,7 @@
         <text>O uchylenie lub zmianę prawomocnego postanowienia o udzieleniu zabezpieczenia</text>
       </komorka>
       <komorka>
-        <wiersz>198</wiersz>
+        <wiersz>199</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7690,7 +7841,7 @@
         <text>132</text>
       </komorka>
       <komorka>
-        <wiersz>199</wiersz>
+        <wiersz>200</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -7698,7 +7849,7 @@
         <text>O ponowne wydanie tytułu wykonawczego zamiast utraconego (art. 794 kpc)</text>
       </komorka>
       <komorka>
-        <wiersz>199</wiersz>
+        <wiersz>200</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7706,12 +7857,8 @@
         <text>125</text>
       </komorka>
 
-
-
-
-
       <komorka>
-        <wiersz>200</wiersz>
+        <wiersz>201</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -7719,7 +7866,7 @@
         <text>O zabezpieczenie dowodu</text>
       </komorka>
       <komorka>
-        <wiersz>200</wiersz>
+        <wiersz>201</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7727,7 +7874,7 @@
         <text>129</text>
       </komorka>
       <komorka>
-        <wiersz>201</wiersz>
+        <wiersz>202</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -7735,7 +7882,7 @@
         <text>O stwierdzenie wykonalności orzeczenia sądu zagranicznego (art. 1151 kpc)</text>
       </komorka>
       <komorka>
-        <wiersz>201</wiersz>
+        <wiersz>202</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7743,7 +7890,7 @@
         <text>133</text>
       </komorka>
       <komorka>
-        <wiersz>202</wiersz>
+        <wiersz>203</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -7751,7 +7898,7 @@
         <text>O nadanie klauzuli wykonalności tytułom egzekucyjnym określonym w rozporządzeniu Rady (WE) nr 4/2009 z dn. 18 grudnia 2008 r. w sprawie jurysdykcji, prawa właściwego, uznawania i wykonywania orzeczeń oraz współpracy w zakresie zobowiązań alimentacyjnych (art. 11511 kpc)</text>
       </komorka>
       <komorka>
-        <wiersz>202</wiersz>
+        <wiersz>203</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7759,7 +7906,7 @@
         <text>141</text>
       </komorka>
       <komorka>
-        <wiersz>203</wiersz>
+        <wiersz>204</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -7767,7 +7914,7 @@
         <text>Inne bez symbolu i o symbolu wyżej niewymienionym </text>
       </komorka>
       <komorka>
-        <wiersz>203</wiersz>
+        <wiersz>204</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7775,7 +7922,7 @@
         <text>–</text>
       </komorka>
       <komorka>
-        <wiersz>204</wiersz>
+        <wiersz>205</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -7783,7 +7930,7 @@
         <text>WSC (skarga o stwierdzenie niezgodności z prawem) – I instancja</text>
       </komorka>
       <komorka>
-        <wiersz>204</wiersz>
+        <wiersz>205</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7791,7 +7938,7 @@
         <text></text>
       </komorka>
       <komorka>
-        <wiersz>205</wiersz>
+        <wiersz>206</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -7799,7 +7946,7 @@
         <text>WSNc (skarga nadzwyczajna) – I instancja</text>
       </komorka>
       <komorka>
-        <wiersz>205</wiersz>
+        <wiersz>206</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -7808,8 +7955,7 @@
       </komorka>
     </tablaBoczna>
   </tabela>
-  
-  
+
   <tabela id="1.1.1.a">
     <daneTabeli>
       <iloscWierszy>1</iloscWierszy>
@@ -8824,7 +8970,7 @@
 
       <iloscWierszy>8</iloscWierszy>
       <tekstNadTabela>
-       <![CDATA[<b> Terminowość przyznawania wynagrodzeń za sporządzenie opinii pisemnych i ustnych oraz za stawiennictwo (z wył. tłumaczy przysięgłych)</b>]]>
+        <![CDATA[<b> Terminowość przyznawania wynagrodzeń za sporządzenie opinii pisemnych i ustnych oraz za stawiennictwo (z wył. tłumaczy przysięgłych)</b>]]>
       </tekstNadTabela>
       <iloscWierszyNaglowka>1</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>4</iloscKolumnPrzedIteracja>
@@ -8952,7 +9098,7 @@
 
       <iloscWierszy>9</iloscWierszy>
       <tekstNadTabela>
-       <![CDATA[<b> Terminowość przyznawania wynagrodzeń za sporządzenie opinii pisemnych i ustnych oraz za stawiennictwo (z wył. tłumaczy przysięgłych)</b>]]>
+        <![CDATA[<b> Terminowość przyznawania wynagrodzeń za sporządzenie opinii pisemnych i ustnych oraz za stawiennictwo (z wył. tłumaczy przysięgłych)</b>]]>
       </tekstNadTabela>
       <iloscWierszyNaglowka>1</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>4</iloscKolumnPrzedIteracja>
@@ -9232,7 +9378,6 @@
       </komorka>
     </tablaBoczna>
   </tabela>
- 
 
   <tabela id="1.1.3">
     <daneTabeli>
@@ -9287,7 +9432,7 @@
         <style>center </style>
         <text>1 sędziego</text>
       </komorka>
-   
+
       <komorka>
         <wiersz>3</wiersz>
         <kolumna>1</kolumna>
@@ -9331,7 +9476,6 @@
         <style> wciecie </style>
         <text>Rep. Ca</text>
       </komorka>
-    
     </tablaBoczna>
   </tabela>
   <tabela id="1.2.1">
@@ -9796,7 +9940,6 @@
         <style> wciecie </style>
         <text>
           Ogółem sprawy cywilne (suma wierszy 02, 05, 06, 08 do 19)
-
         </text>
       </komorka>
       <komorka>
@@ -9959,10 +10102,9 @@
         <style> wciecie</style>
         <text>Skarga na postępowanie sądowe  Wykaz S</text>
       </komorka>
-
     </tablaBoczna>
   </tabela>
-  
+
   <tabela id="1.2.2">
     <daneTabeli>
 
@@ -9992,7 +10134,7 @@
         <style>center </style>
         <text>Liczba odbytych sesji (rozprawy i posiedzenia) - wokandy</text>
       </komorka>
-    
+
       <komorka>
         <wiersz>1</wiersz>
         <kolumna>4</kolumna>
@@ -10010,7 +10152,6 @@
         <text>
           Załatwienie1) ogółem
           (suma kol. 4, 22)
-
         </text>
       </komorka>
       <komorka>
@@ -10097,7 +10238,7 @@
         <style>center col_120</style>
         <text>Razem załatwionych spraw na posiedzeniu sędziowie SO (suma kol.24,25,34)</text>
       </komorka>
-      
+
       <komorka>
         <wiersz>2</wiersz>
         <kolumna>10</kolumna>
@@ -10141,7 +10282,7 @@
         <style>center col_120</style>
         <text>referendarze</text>
       </komorka>
-      
+
       <komorka>
         <wiersz>3</wiersz>
         <kolumna>1</kolumna>
@@ -10164,7 +10305,8 @@
         <colSpan>0</colSpan>
         <rowspan>2</rowspan>
         <style>center col_120</style>
-        <text>          sędziów funkcyjnych SO (suma kol. od 8 do 15)
+        <text>
+          sędziów funkcyjnych SO (suma kol. od 8 do 15)
         </text>
       </komorka>
       <komorka>
@@ -10229,7 +10371,7 @@
           sędziów SO z wyłączeniem sędziów funkcyjnych
         </text>
       </komorka>
-      
+
       <komorka>
         <wiersz>3</wiersz>
         <kolumna>13</kolumna>
@@ -10472,9 +10614,7 @@
         <style> wciecie </style>
         <text> C- w tym</text>
       </komorka>
-      
-      
-      
+
       <komorka>
         <wiersz>5</wiersz>
         <kolumna>2</kolumna>
@@ -10516,7 +10656,7 @@
         <style> wciecie </style>
         <text>w wyniku zmian zarządzenia MS o biurowości </text>
       </komorka>
-     
+
       <komorka>
         <wiersz>10</wiersz>
         <kolumna>1</kolumna>
@@ -10534,7 +10674,6 @@
         <style> wciecie </style>
         <text>W wyniku przekazania sprawy w ramach sądu pomiędzy wydziałami tego samego pionu</text>
       </komorka>
-      
 
       <komorka>
         <wiersz>12</wiersz>
@@ -10848,8 +10987,7 @@
       </komorka>
     </tablaBoczna>
   </tabela>
-  
-  
+
   <tabela id="1.3.a">
     <daneTabeli>
 
@@ -10879,7 +11017,6 @@
         <style>center col_80_fest</style>
         <text>ZAŁATWIONO</text>
       </komorka>
-   
 
       <komorka>
         <wiersz>2</wiersz>
@@ -10978,8 +11115,6 @@
         <style>center col_80_fest</style>
         <text>mediacji</text>
       </komorka>
-
-     
     </naglowek>
     <tablaBoczna>
       <komorka>
@@ -11042,7 +11177,6 @@
         <style> wciecie </style>
         <text>Co</text>
       </komorka>
-    
     </tablaBoczna>
   </tabela>
 
@@ -11075,7 +11209,6 @@
         <style>center </style>
         <text>ZAŁATWIONO</text>
       </komorka>
-
 
       <komorka>
         <wiersz>2</wiersz>
@@ -11133,8 +11266,6 @@
         <style>center col_130</style>
         <text>w tym uwzględnione sprawy z wykazu S</text>
       </komorka>
-     
-
     </naglowek>
     <tablaBoczna>
       <komorka>
@@ -11179,9 +11310,6 @@
         <style> wciecie </style>
         <text>Cz II instancja </text>
       </komorka>
-
-    
-
     </tablaBoczna>
   </tabela>
 
@@ -11214,7 +11342,6 @@
         <style>center col_130</style>
         <text>ZAŁATWIONO</text>
       </komorka>
-
 
       <komorka>
         <wiersz>2</wiersz>
@@ -11264,9 +11391,6 @@
         <style>center col_130 </style>
         <text>inne załatwienia</text>
       </komorka>
-    
-
-
     </naglowek>
     <tablaBoczna>
       <komorka>
@@ -11329,13 +11453,13 @@
         <style> wciecie </style>
         <text>Co</text>
       </komorka>
-
     </tablaBoczna>
   </tabela>
-   <tabela id="1.3">
+ 
+  <tabela id="1.3">
     <daneTabeli>
 
-      <iloscWierszy>3</iloscWierszy>
+      <iloscWierszy>9</iloscWierszy>
       <tekstNadTabela><![CDATA[<b>Załatwienie spraw przez referendarzy</b>]]></tekstNadTabela>
       <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>1</iloscKolumnPrzedIteracja>
@@ -11367,7 +11491,7 @@
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
-        <style>center col_120</style>
+        <style>center col_100</style>
         <text>  ogółem (kol. od 2 do 7) </text>
       </komorka>
       <komorka>
@@ -11375,7 +11499,7 @@
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
-        <style>center col_120</style>
+        <style>center col_100</style>
         <text>Rep. RC</text>
       </komorka>
       <komorka>
@@ -11383,7 +11507,7 @@
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
-        <style>center col_120</style>
+        <style>center col_100</style>
         <text> Rep. RNs </text>
       </komorka>
       <komorka>
@@ -11391,7 +11515,7 @@
         <kolumna>4</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
-        <style>center col_120</style>
+        <style>center col_100</style>
         <text>Rep Nsm</text>
       </komorka>
       <komorka>
@@ -11399,7 +11523,7 @@
         <kolumna>5</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
-        <style>center col_120</style>
+        <style>center col_100</style>
         <text>Rep RCo</text>
       </komorka>
       <komorka>
@@ -11407,7 +11531,7 @@
         <kolumna>6</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
-        <style>center col_120</style>
+        <style>center col_100</style>
         <text>Rep Nkd </text>
       </komorka>
       <komorka>
@@ -11415,7 +11539,7 @@
         <kolumna>7</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
-        <style>center col_120</style>
+        <style>center col_100</style>
         <text>inne </text>
       </komorka>
     </naglowek>
@@ -11443,17 +11567,69 @@
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style> wciecie </style>
+        <text>Wydawanie nakazów zapłaty w postępowaniu upominawczym</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Wydawanie nakazów zapłaty w postępowaniu nakazowym</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O nadanie klauzuli wykonalności</text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Umorzenie postepowania upominawczego</text>
+      </komorka>
+      <komorka>
+        <wiersz>7</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Zawieszenie postępowania upominawczego w oparciu o art.174§1 pkt 1 i 4 kpc</text>
+      </komorka>
+      <komorka>
+        <wiersz>8</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Prawomocne postanowienia w postępowaniu upominawczym o przekazaniu sprawy sądowi równorzędnemu lub niższego rzędu</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>9</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
         <text>inne</text>
       </komorka>
-    
+      
+      
+      
     </tablaBoczna>
   </tabela>
-  
+
   <tabela id="1.4.1">
     <daneTabeli>
 
       <iloscWierszy>21</iloscWierszy>
-      <tekstNadTabela><![CDATA[<b>Terminowość sporządzania uzasadnień</b>]]></tekstNadTabela>
+      <tekstNadTabela><![CDATA[<b>Terminowość sporządzania uzasadnień (od dnia wpływu do właściwego sądu wniosku o doręczenie wyroku z uzasadnie-niem, a jeżeli wniosek był dotknięty brakami - od dnia usunięcia tych braków)</b>]]></tekstNadTabela>
       <iloscWierszyNaglowka>3</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>3</iloscKolumnPrzedIteracja>
       <iloscKolumnPoIteracji>14</iloscKolumnPoIteracji>
@@ -11889,9 +12065,6 @@
         <style>center col_80_fest</style>
         <text>Terminowość sporządzania uzasadnień</text>
       </komorka>
-    
-
-     
 
       <komorka>
         <wiersz>2</wiersz>
@@ -11917,7 +12090,6 @@
         <style>center </style>
         <text>po upływie terminu ustawowego</text>
       </komorka>
-     
 
       <komorka>
         <wiersz>3</wiersz>
@@ -12781,7 +12953,7 @@
 
       <iloscWierszy>12</iloscWierszy>
       <tekstNadTabela>
-       <![CDATA[<b> Sprawy zawieszone nie zakreślone od dnia pierwotnego wpisu do repertorium (wykazane w dziale 2.1.1.) (łącznie z czasem trwania mediacji)</b>]]>
+        <![CDATA[<b> Sprawy zawieszone nie zakreślone od dnia pierwotnego wpisu do repertorium (wykazane w dziale 2.1.1.) (łącznie z czasem trwania mediacji)</b>]]>
       </tekstNadTabela>
       <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>3</iloscKolumnPrzedIteracja>
@@ -13029,7 +13201,7 @@
 
       <iloscWierszy>12</iloscWierszy>
       <tekstNadTabela>
-		<![CDATA[<b>
+        <![CDATA[<b>
         Sprawy zawieszone nie zakreślone od dnia pierwotnego wpisu do repertorium (wykazane w dziale 2.1.1.) (bez czasu trwania mediacji w sprawach wszczętych po 1 stycznia 2016r.)</b>]]>
       </tekstNadTabela>
       <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
@@ -13277,7 +13449,8 @@
     <daneTabeli>
 
       <iloscWierszy>12</iloscWierszy>
-      <tekstNadTabela><![CDATA[<b>
+      <tekstNadTabela>
+        <![CDATA[<b>
         Liczba spraw zakreślonych w urządzeniu ewidencyjnym w wyniku zawieszenia postępowania(łącznie z czasem trwania mediacji)</b>]]>
       </tekstNadTabela>
       <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
@@ -13526,7 +13699,8 @@
     <daneTabeli>
 
       <iloscWierszy>12</iloscWierszy>
-      <tekstNadTabela><![CDATA[<b>
+      <tekstNadTabela>
+        <![CDATA[<b>
         Liczba spraw zakreślonych w urządzeniu ewidencyjnym w wyniku zawieszenia postępowania (bez czasu trwania mediacji w sprawach wszczętych po 1 stycznia 2016r.)</b>]]>
       </tekstNadTabela>
       <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
@@ -13774,7 +13948,8 @@
     <daneTabeli>
 
       <iloscWierszy>21</iloscWierszy>
-      <tekstNadTabela><![CDATA[<b>
+      <tekstNadTabela>
+        <![CDATA[<b>
         Czas trwania postępowania sądowego (w sądzie okręgowym I instancji - od dnia pierwszej rejestracji w sądzie I instancji do uprawomocnienia się sprawy w I instancji a w sądzie okręgowym II instancji od dnia pierwszej rejestracji w sądzie rejonowym (I instancji) do dnia wydania orzeczenia w sądzie okręgowym II instancji lub od dnia wpływu sprawy do sądu okręgowego (II instancji do dnia wydania orzeczenia w II instancji)) (łącznie z czasem trwania mediacji)</b>]]>
       </tekstNadTabela>
       <iloscWierszyNaglowka>1</iloscWierszyNaglowka>
@@ -14085,7 +14260,8 @@
     <daneTabeli>
 
       <iloscWierszy>21</iloscWierszy>
-      <tekstNadTabela><![CDATA[<b>
+      <tekstNadTabela>
+        <![CDATA[<b>
         Czas trwania postępowania sądowego (w sądzie okręgowym I instancji - od dnia pierwszej rejestracji w sądzie I instancji do uprawomocnienia się sprawy w I instancji a w sądzie okręgowym II instancji od dnia pierwszej rejestracji w sądzie rejonowym (I instancji) do dnia wydania orzeczenia w sądzie okręgowym II instancji lub od dnia wpływu sprawy do sądu okręgowego (II instancji do dnia wydania orzeczenia w II instancji)) (łącznie z czasem trwania mediacji)</b>]]>
       </tekstNadTabela>
       <iloscWierszyNaglowka>1</iloscWierszyNaglowka>
@@ -14396,7 +14572,8 @@
     <daneTabeli>
 
       <iloscWierszy>21</iloscWierszy>
-      <tekstNadTabela><![CDATA[<b>
+      <tekstNadTabela>
+        <![CDATA[<b>
         Czas trwania postępowania sądowego (w sądzie okręgowym I instancji - od dnia pierwszej rejestracji w sądzie I instancji do uprawomocnienia się sprawy w I instancji a w sądzie okręgowym II instancji od dnia pierwszej rejestracji w sądzie rejonowym (I instancji) do dnia wydania orzeczenia w sądzie okręgowym II instancji lub od dnia wpływu sprawy do sądu okręgowego (II instancji do dnia wydania orzeczenia w II instancji)) (łącznie z czasem trwania mediacji)</b>]]>
       </tekstNadTabela>
       <iloscWierszyNaglowka>1</iloscWierszyNaglowka>
@@ -14707,7 +14884,8 @@
     <daneTabeli>
 
       <iloscWierszy>21</iloscWierszy>
-      <tekstNadTabela><![CDATA[<b>
+      <tekstNadTabela>
+        <![CDATA[<b>
         Czas trwania postępowania sądowego (w sądzie okręgowym I instancji - od dnia pierwszej rejestracji w sądzie I instancji do uprawomocnienia się sprawy w I instancji a w sądzie okręgowym II instancji od dnia pierwszej rejestracji w sądzie rejonowym (I instancji) do dnia wydania orzeczenia w sądzie okręgowym II instancji lub od dnia wpływu sprawy do sądu okręgowego (II instancji do dnia wydania orzeczenia w II instancji)) (łącznie z czasem trwania mediacji)</b>]]>
       </tekstNadTabela>
       <iloscWierszyNaglowka>1</iloscWierszyNaglowka>
@@ -15018,7 +15196,8 @@
     <daneTabeli>
 
       <iloscWierszy>21</iloscWierszy>
-      <tekstNadTabela><![CDATA[<b>
+      <tekstNadTabela>
+        <![CDATA[<b>
         Czas trwania postępowania sądowego (w sądzie okręgowym I instancji - od dnia pierwszej rejestracji w sądzie I instancji do uprawomocnienia się sprawy w I instancji a w sądzie okręgowym II instancji od dnia pierwszej rejestracji w sądzie rejonowym (I instancji) do dnia wydania orzeczenia w sądzie okręgowym II instancji lub od dnia wpływu sprawy do sądu okręgowego (II instancji do dnia wydania orzeczenia w II instancji)) (łącznie z czasem trwania mediacji)</b>]]>
       </tekstNadTabela>
       <iloscWierszyNaglowka>1</iloscWierszyNaglowka>
@@ -15330,7 +15509,8 @@
     <daneTabeli>
 
       <iloscWierszy>7</iloscWierszy>
-      <tekstNadTabela><![CDATA[<b>
+      <tekstNadTabela>
+        <![CDATA[<b>
         Wyznaczenie pierwszej rozprawy/posiedzenia spraw</b>]]> (od dnia wpływu/wpisu sprawy, wraz ze sprawami zawieszonymi         poprzednio zakreślonymi, do dnia, w którym odbyła się pierwsza rozprawa/posiedzenie)
       </tekstNadTabela>
       <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
@@ -15506,7 +15686,7 @@
       </komorka>
     </tablaBoczna>
   </tabela>
-   <tabela id="7.1.a">
+  <tabela id="7.1.a">
     <daneTabeli>
 
       <iloscWierszy>3</iloscWierszy>
@@ -15560,7 +15740,7 @@
         <style>center </style>
         <text>Liczba sesji sędziów funkcyjnych (danego sądu)</text>
       </komorka>
-     <komorka>
+      <komorka>
         <wiersz>1</wiersz>
         <kolumna>6</kolumna>
         <colSpan>0</colSpan>
@@ -15568,7 +15748,7 @@
         <style>center </style>
         <text>Liczba sesji sędziów delegowanych w trybie art. 77 § 1 usp na czas nieokreślony lub na czas określony orzekających w pełnym wymiarze w danym sądzie</text>
       </komorka>
-       <komorka>
+      <komorka>
         <wiersz>1</wiersz>
         <kolumna>5</kolumna>
         <colSpan>0</colSpan>
@@ -15576,7 +15756,7 @@
         <style>center </style>
         <text>Stan rejestru na koniec obecnego okresu statystycznego</text>
       </komorka>
-       <komorka>
+      <komorka>
         <wiersz>1</wiersz>
         <kolumna>7</kolumna>
         <colSpan>0</colSpan>
@@ -15584,7 +15764,7 @@
         <style>center </style>
         <text>Liczba sesji sędziów delegowanych w trybie art. 77 § 1 usp  orzekających w niepełnym wymiarze w danym sądzie</text>
       </komorka>
-       <komorka>
+      <komorka>
         <wiersz>1</wiersz>
         <kolumna>8</kolumna>
         <colSpan>0</colSpan>
@@ -15592,7 +15772,7 @@
         <style>center </style>
         <text>Liczba sesji sędziów delegowanych w trybie art. 77 § 8 i 9 usp do  danego sądu</text>
       </komorka>
-       <komorka>
+      <komorka>
         <wiersz>1</wiersz>
         <kolumna>9</kolumna>
         <colSpan>0</colSpan>
@@ -15600,7 +15780,6 @@
         <style>center </style>
         <text>Liczba sesji sędziów wykonujących czynności orzecznicze z mocy ustawy w danym sądzie</text>
       </komorka>
-     
     </naglowek>
 
     <tablaBoczna>
@@ -15612,7 +15791,7 @@
         <style> wciecie </style>
         <text>Liczba sesji (sędziowie zbiorczo I i II instancja) </text>
       </komorka>
-  <komorka>
+      <komorka>
         <wiersz>2</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
@@ -15637,7 +15816,6 @@
         <style> wciecie </style>
         <text>II instancja</text>
       </komorka>
-
     </tablaBoczna>
   </tabela>
   <tabela id="7.2">
@@ -16164,7 +16342,7 @@
       </komorka>
     </tablaBoczna>
   </tabela>
-   <tabela id="10">
+  <tabela id="10">
     <daneTabeli>
 
       <iloscWierszy>1</iloscWierszy>
@@ -16210,7 +16388,7 @@
         <rowspan>0</rowspan>
         <style>center col_200</style>
         <text>
-         pow. 500 do 1,5 tys.
+          pow. 500 do 1,5 tys.
         </text>
       </komorka>
 
@@ -16257,7 +16435,7 @@
         <style>center col_200</style>
         <text>pow. 15 tys. do 20 tys.</text>
       </komorka>
-    <komorka>
+      <komorka>
         <wiersz>1</wiersz>
         <kolumna>10</kolumna>
         <colSpan>0</colSpan>
@@ -16265,7 +16443,7 @@
         <style>center col_200</style>
         <text>pow. 20 tys. do 50 tys</text>
       </komorka>
-      
+
       <komorka>
         <wiersz>1</wiersz>
         <kolumna>11</kolumna>
@@ -16274,8 +16452,8 @@
         <style>center col_200</style>
         <text>pow. 50 tys. do 75 tys</text>
       </komorka>
-      
-         <komorka>
+
+      <komorka>
         <wiersz>1</wiersz>
         <kolumna>12</kolumna>
         <colSpan>0</colSpan>
@@ -16283,9 +16461,8 @@
         <style>center col_200</style>
         <text>pow. 75 tys. do 150 tys.</text>
       </komorka>
-        
-        
- <komorka>
+
+      <komorka>
         <wiersz>1</wiersz>
         <kolumna>13</kolumna>
         <colSpan>0</colSpan>
@@ -16293,10 +16470,8 @@
         <style>center col_200</style>
         <text>pow. 150 tys. do 200 tys.</text>
       </komorka>
-      
-        
-        
-     <komorka>
+
+      <komorka>
         <wiersz>1</wiersz>
         <kolumna>14</kolumna>
         <colSpan>0</colSpan>
@@ -16304,7 +16479,7 @@
         <style>center col_200</style>
         <text>pow. 200 tys. do 500 tys.</text>
       </komorka>
-     <komorka>
+      <komorka>
         <wiersz>1</wiersz>
         <kolumna>15</kolumna>
         <colSpan>0</colSpan>
@@ -16312,8 +16487,8 @@
         <style>center col_200</style>
         <text>pow. 500 tys. do 1 mln</text>
       </komorka>
-       
-            <komorka>
+
+      <komorka>
         <wiersz>1</wiersz>
         <kolumna>16</kolumna>
         <colSpan>0</colSpan>
@@ -16321,7 +16496,7 @@
         <style>center col_200</style>
         <text>pow. 1 mln do 2 mln</text>
       </komorka>
-         <komorka>
+      <komorka>
         <wiersz>1</wiersz>
         <kolumna>17</kolumna>
         <colSpan>0</colSpan>
@@ -16329,9 +16504,6 @@
         <style>center col_200</style>
         <text>pow. 2 mln</text>
       </komorka>
-      
-         
-         
     </naglowek>
     <tablaBoczna>
       <komorka>
@@ -16342,16 +16514,14 @@
         <style> wciecie </style>
         <text>  </text>
       </komorka>
-
-   
     </tablaBoczna>
   </tabela>
-    <tabela id="13.1">
+  <tabela id="13.1">
     <daneTabeli>
 
       <iloscWierszy>14</iloscWierszy>
       <tekstNadTabela>
-       <![CDATA[<b> Sprawy karne wielotomowe w tym wieloosobowe (nie dotyczy spraw o wyrok łączny)</b>]]>
+        <![CDATA[<b> Sprawy karne wielotomowe w tym wieloosobowe (nie dotyczy spraw o wyrok łączny)</b>]]>
       </tekstNadTabela>
       <iloscWierszyNaglowka>3</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>2</iloscKolumnPrzedIteracja>

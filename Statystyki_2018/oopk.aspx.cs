@@ -152,7 +152,7 @@ namespace Statystyki_2018
 
                 string path = Server.MapPath("XMLHeaders") + "\\" + tenPlikNazwa + ".xml";
                 StringBuilder Tabele = new StringBuilder();
-                Tabele.Append(xMLHeaders.TabelaSedziowskaXML(path, int.Parse(idDzialu), "1", (DataTable)Session["tabelka001"], true, false, false, true, "", tenPlik));
+                Tabele.Append(xMLHeaders.TabelaSedziowskaXML(path, int.Parse(idDzialu), "5", (DataTable)Session["tabelka001"], true, false, false, true, "", tenPlik));
 
                 tablePlaceHolder01.Controls.Add(new Label { Text = Tabele.ToString(), ID = "id1" });
             }

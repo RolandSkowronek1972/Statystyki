@@ -334,6 +334,7 @@ namespace Statystyki_2018
                     {
                         string t1 = dDR[1].ToString().Trim();
                         string t2 = dRR[0].ToString().Trim();
+                        string txt = dDR[4].ToString().Trim();
                         if ((t1 == t2) && (dDR[4].ToString().Trim() != "0"))
                         {
                             string druga = string.Empty;
@@ -348,10 +349,11 @@ namespace Statystyki_2018
                             {
                                 czwarta = idSad.Substring(idSad.Length - 2, 2);
                             }
-#pragma warning disable CS0168 // The variable 'ecc' is declared but never used
                             catch (Exception ecc)
-#pragma warning restore CS0168 // The variable 'ecc' is declared but never used
-                            { }
+
+                            {
+                                log.Error("MSS raportTXT 1: " + ecc.Message);
+                            }
                             idsadu = idSad.Substring(0, 6);
                             string idTabeli = t1;
                             string idWiersza = dDR[2].ToString();
@@ -367,8 +369,10 @@ namespace Statystyki_2018
                                     line = idRaportu + ";" + druga + ";" + idsadu + ";" + idWydzialu + ";" + idTabeli + ";" + idWiersza + ";" + idKolumny + ";" + wartosc;
                                 }
                             }
-                            catch
-                            { }
+                            catch (Exception ecc)
+                            {
+                                log.Error("MSS raportTXT 2: " + ecc.Message);
+                            }
 
                             if (string.IsNullOrEmpty(line) == false)
                             {
@@ -380,7 +384,7 @@ namespace Statystyki_2018
             }
             catch (Exception ex)
             {
-                result.AppendLine(ex.Message);
+                log.Error("MSS raportTXT 3: " + ex.Message);
             }
             return result;
         } //end of raportTXT
@@ -987,7 +991,7 @@ namespace Statystyki_2018
             }
             catch (Exception ex)
             {
-                log.Error(tenPlik + " bład generowania tabeli dla działu  : " + idDzialu.ToString()+ " " +ex.Message);
+                log.Error(tenPlik + " bład generowania tabeli dla działu  : " + idDzialu.ToString() + " " + ex.Message);
                 tabelaGlowna.AppendLine(ex.Message);
             }
 

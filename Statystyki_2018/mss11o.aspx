@@ -14,6 +14,7 @@
                 left: 0;
                 right: 0;
             }
+
         .auto-style1 {
             font-weight: normal;
         }
@@ -83,57 +84,63 @@
             </div>
 
             <br />
-          <br />
-                <table style="width:100%;">
-                    <tr>
-                        <td colspan="3" class="borderAll">MINISTERSTWO SPRAWIEDLIWOŚCI, Al. Ujazdowskie 11, 00-950 Warszawa</td>
-                    </tr>
-                    <tr>
-                        <td class="borderAll col_33prc">&nbsp;&nbsp; Sąd Okręgowy w 
+            <table style="width: 100%;">
+                <tr>
+                    <td colspan="3" class="borderAll">MINISTERSTWO SPRAWIEDLIWOŚCI, Al. Ujazdowskie 11, 00-950 Warszawa</td>
+                </tr>
+                <tr>
+                    <td class="borderAll col_33prc">&nbsp;&nbsp; Sąd Okręgowy w
                             <br />
-&nbsp;&nbsp;
+                        &nbsp;&nbsp;
                             <br />
-&nbsp;&nbsp;&nbsp; ..................................<br />
-                            &nbsp;<br />
-                        </td>
-                        <td class="borderAll col_33prc center"><strong><span class="auto-style1">MS-S11o<br />
-                            </span></strong>
+                        &nbsp;&nbsp;&nbsp; ..................................<br />
+                        &nbsp;<br />
+                    </td>
+                    <td class="borderAll col_33prc center"><strong><span class="auto-style1">MS-S11o<br />
+                    </span></strong>
+                        <br />
+                        <span class="auto-style2">
+                            <strong>SPRAWOZDANIE
                             <br />
-                            <span class="auto-style2">
-                            <strong>SPRAWOZDANIE 
-                            <br />
-                            <br />
+                                <br />
                             </strong>
                             z zakresu prawa pracy i ubezpieczeń społecznych</span><br />
-                        </td>
-                        <td class="borderAll col_33prc">Adresat:
+                    </td>
+                    <td class="borderAll col_33prc">Adresat:
                             <br />
-                            &nbsp;&nbsp;&nbsp;&nbsp; Ministerstwo Sprawiedliwości Departament Strategii i Funduszy Europejskich</td>
-                    </tr>
-                    <tr>
-                        <td class="borderAll col_15prc">&nbsp;&nbsp;&nbsp;<span class="auto-style1"> Obszar Sądu Apelacyjnego
+                        &nbsp;&nbsp;&nbsp;&nbsp; Ministerstwo Sprawiedliwości Departament Strategii i Funduszy Europejskich</td>
+                </tr>
+                <tr>
+                    <td class="borderAll col_15prc">&nbsp;&nbsp;&nbsp;<span class="auto-style1"> Obszar Sądu Apelacyjnego
                             <br />
-&nbsp;&nbsp;&nbsp; w…………………………………………….</span></td>
-                        <td class="center borderAll">
-                            za … kwartał …**) 20… r.</td>
-                        <td class="borderAll col_33prc">
+                        &nbsp;&nbsp;&nbsp; w…………………………………………….</span></td>
+                    <td class="center borderAll">za … kwartał …**) 20… r.</td>
+                    <td class="borderAll col_33prc">
+                        <br />
+                        Termin przekazania: do
                             <br />
-                            Termin przekazania: do
-                            <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10 dnia kalendarzowego po każdym kwartale z danymi narastającymi od początku roku do końca kwartału<br />
-                        </td>
-                    </tr>
-                    </table>
-                <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10 dnia kalendarzowego po każdym kwartale z danymi narastającymi od początku roku do końca kwartału<br />
+                    </td>
+                </tr>
+            </table>
+            <br />
 
             <br />
 
             <asp:Label ID="kod011" runat="server"></asp:Label>
+
+          
             <br />
 
             <div id='Terminowość sporządzania tłumaczeń pisemnych' class="page-break">
                 <asp:PlaceHolder runat="server" ID="tablePlaceHolder"></asp:PlaceHolder>
-
+                <asp:PlaceHolder runat="server" ID="tablePlaceHolder01"></asp:PlaceHolder>
+                <asp:PlaceHolder runat="server" ID="tablePlaceHolder02"></asp:PlaceHolder>
+               
+                 <asp:PlaceHolder runat="server" ID="tablePlaceHolder03"></asp:PlaceHolder>
+               
+                 <asp:PlaceHolder runat="server" ID="tablePlaceHolder04"></asp:PlaceHolder>
+               
                 <br />
                 <strong>Dział 10.2 Terminowość sporządzania tłumaczeń pisemnych</strong>&nbsp;
     <table style="width: 100%;">
@@ -301,7 +308,7 @@
             </table>
 
             <br />
-            </strong>
+          
             <br />
 
             <br />

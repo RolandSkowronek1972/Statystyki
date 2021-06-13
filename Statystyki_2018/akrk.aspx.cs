@@ -240,7 +240,8 @@ namespace Statystyki_2018
                     {
                         try
                         {
-                            tb.Text = dane.Rows[wiersz - 1][kolumna].ToString().Trim();
+                            string idKolumny = "d_" + kolumna.ToString("D2");
+                            tb.Text = dane.Rows[wiersz - 1][idKolumny].ToString().Trim();
                         }
                         catch
                         { }

@@ -14,6 +14,7 @@
                 left: 0;
                 right: 0;
             }
+
         .auto-style1 {
             font-weight: normal;
         }
@@ -90,48 +91,48 @@
             </div>
 
             <br />
- <br />
-                <table style="width:100%;">
-                    <tr>
-                        <td colspan="3" class="borderAll">MINISTERSTWO SPRAWIEDLIWOŚCI, Al. Ujazdowskie 11, 00-950 Warszawa</td>
-                    </tr>
-                    <tr>
-                        <td class="col_33prc borderAll wciecie">Sąd Okręgowy<br />
-                            w ..................................<br />
-                            &nbsp;<br />
-                        </td>
-                        <td class="borderAll col_33prc center"><strong><span class="auto-style1">MS-S5o<br />
-                            </span></strong>
+            <br />
+            <table style="width: 100%;">
+                <tr>
+                    <td colspan="3" class="borderAll">MINISTERSTWO SPRAWIEDLIWOŚCI, Al. Ujazdowskie 11, 00-950 Warszawa</td>
+                </tr>
+                <tr>
+                    <td class="col_33prc borderAll wciecie">Sąd Okręgowy<br />
+                        w ..................................<br />
+                        &nbsp;<br />
+                    </td>
+                    <td class="borderAll col_33prc center"><strong><span class="auto-style1">MS-S5o<br />
+                    </span></strong>
+                        <br />
+                        <strong><span class="auto-style2">SPRAWOZDANIE </span></strong>
+                        <br />
+                        w sprawach karnych i wykroczeniowych</td>
+                    <td class="borderAll col_33prc wciecie">Adresat
                             <br />
-                            <strong><span class="auto-style2">SPRAWOZDANIE </span></strong>
+                        Ministerstwo Sprawiedliwości Departament Strategii i Funduszy Europejskich</td>
+                </tr>
+                <tr>
+                    <td class="col_33prc borderAll wciecie">&nbsp;<span class="auto-style1">&nbsp;Obszar Sądu Apelacyjnego
                             <br />
-                            w sprawach karnych i wykroczeniowych</td>
-                        <td class="borderAll col_33prc wciecie">Adresat
+                        w..................................<br />
+                    </span></td>
+                    <td class="center borderAll">&nbsp;za … kwartał …**) 20… r.
+                    </td>
+                    <td class="borderAll col_33prc wciecie">
+                        <br />
+                        Termin przekazania:
                             <br />
-                            Ministerstwo Sprawiedliwości Departament Strategii i Funduszy Europejskich</td>
-                    </tr>
-                    <tr>
-                        <td class="col_33prc borderAll wciecie">&nbsp;<span class="auto-style1">&nbsp;Obszar Sądu Apelacyjnego
-                            <br />
-                            w..................................<br />
-                            </span></td>
-                        <td class="center borderAll">
-                            &nbsp;za … kwartał …**) 20… r.
-                        </td>
-                        <td class="borderAll col_33prc wciecie">
-                            <br />
-                            Termin przekazania:
-                            <br />
-                            do 10 dnia kalendarzowego po każdym kwartale z danymi narastającymi od początku roku do końca kwartału <br />
-                        </td>
-                    </tr>
-                    </table>
-                <br />
+                        do 10 dnia kalendarzowego po każdym kwartale z danymi narastającymi od początku roku do końca kwartału
+                        <br />
+                    </td>
+                </tr>
+            </table>
+            <br />
 
             <br />
             <br />
         </div>
-    
+
         <asp:PlaceHolder runat="server" ID="tablePlaceHolder"></asp:PlaceHolder>
 
         <div id='Dział 1.1.2.c. Sprawy rozpatrywane w trybie art. 335, 336, 338a i 387 kpk' class="page-break">
@@ -839,7 +840,7 @@
         <div>
             <strong>
                 <br />
-                Dział1.1.3.b. </strong>
+                Dział 1.1.3.b. </strong>
 
             <table style="width: 100%;">
                 <tr>
@@ -2537,27 +2538,28 @@
                 <tr>
                     <td class="center borderAll" rowspan="4" colspan="4">SPRAWY według repertoriów i wykazów</td>
                     <td class="center borderAll" rowspan="4">L.p.</td>
-                    <td class="center borderAll" rowspan="4">Liczba sesji (rozprawy i posiedzenia) </td>
-                    <td class="center borderAll" rowspan="4">- wokandy Suma wyznaczonych spraw (suma kol. </td>
-                    <td class="center borderAll" rowspan="4">4 i 22,) Łączna liczba dni na które wyznaczono sesje-wokandy </td>
-                    <td class="center borderAll" rowspan="4">Razem wyznaczonych na rozprawę sędziów (suma kol. 5,17, 21) </td>
-                    <td class="center borderAll" colspan="17">Liczba wyznaczonych spraw na rozprawę, dotyczy:</td>
+                    <td class="center borderAll" rowspan="4">&nbsp;Liczba odbytych sesji (rozprawy i posiedzenia) - wokandy </td>
+                    <td class="center borderAll" rowspan="4">Łączna liczba dni w których odbyto sesje-wokandy</td>
+                    <td class="center borderAll" rowspan="4">Załatwienie<sup>1)</sup> ogółem </td>
+                    <td class="center borderAll" colspan="18">Liczba wyznaczonych spraw na rozprawę, dotyczy:</td>
                     <td class="center borderAll" colspan="19">Liczba wyznaczonych spraw na posiedzenia, dotyczy:</td>
                 </tr>
                 <tr>
+                    <td class="center borderAll" rowspan="3">Załatwienie razem (suma kol. 5, 17, 21)</td>
                     <td class="center borderAll" colspan="12">Sędziowie SO </td>
-                    <td class="center borderAll" rowspan="3">Razem wyznaczonych na rozprawę sędziowie SR (suma kol. 18,19,20)</td>
+                    <td class="center borderAll" rowspan="3">Razem załatwionych spraw na rozprawie sędziowie SR (suma kol.18,19,20)</td>
                     <td class="center borderAll" colspan="3">sędziowie SR</td>
                     <td class="center borderAll" rowspan="3">inni sędziowie</td>
-                    <td class="center borderAll" rowspan="3">Razem wyznaczonych na posiedzenie sędziów i referendarze (suma kol.23,35,39,40)</td>
-                    <td class="center borderAll" colspan="12">sędziowie SO</td>
+                    <td class="center borderAll" rowspan="3">Załatwienie razem (suma kol. 23, 35, 39, 40)</td>
+                    <td class="center borderAll" rowspan="3">Razem wyznaczonych spraw na posiedzenie sędziowie SO (suma kol.24,25,34)</td>
+                    <td class="center borderAll" colspan="11">sędziowie SO</td>
                     <td class="center borderAll" rowspan="3">Razem wyznaczonych na posiedzenie sędziowie SR (suma kol. 36,37,38)</td>
                     <td class="center borderAll" colspan="3">sędziowie SR</td>
                     <td class="center borderAll" rowspan="3">inni sędziowie</td>
                     <td class="center borderAll" rowspan="3">referendarze </td>
                 </tr>
                 <tr>
-                    <td class="center borderAll" rowspan="2">Razem wyznaczonych spraw na rozprawę sędziowie SO (suma kol.6,7,16)</td>
+                    <td class="center borderAll" rowspan="2">Razem załatwionych spraw na rozprawie sędziowie SO (suma kol.6,7,16)</td>
                     <td class="center borderAll" rowspan="2">sędziów SO z wyłączeniem sędziów funkcyjnych</td>
                     <td class="center borderAll" rowspan="2">sędziów funkcyjnych SO (suma kol. od 8 do 15) </td>
                     <td class="center borderAll" colspan="8">z tego </td>
@@ -2565,7 +2567,6 @@
                     <td class="center borderAll" rowspan="2">sędziów SR delegowanych w trybie art. 77 §1 usp na czas nieokreślony lub na czas określony, orzekających w pełnym wymiarze</td>
                     <td class="center borderAll" rowspan="2">sędziów SR delegowanych w trybie art. 77 §1 usp na czas nieokreślony lub na czas określony, orzekających w niepełnym wymiarze</td>
                     <td class="center borderAll" rowspan="2">sędziów SR delegowanych w trybie art. 77 § 9 usp </td>
-                    <td class="center borderAll" rowspan="2">Razem wyznaczonych spraw na posiedzenie sędziowie SO (suma kol.24,25,34)</td>
                     <td class="center borderAll" rowspan="2">sędziów SO z wyłączeniem sędziów funkcyjnych</td>
                     <td class="center borderAll" rowspan="2">sędziów funkcyjnych SO (suma kol. od 26 do 33) </td>
                     <td class="center borderAll" colspan="8">z tego</td>
@@ -2598,7 +2599,7 @@
                     <td class="center borderAll">2</td>
                     <td class="center borderAll">3</td>
                     <td class="center borderAll">4</td>
-                    <td class="center borderAll">5</td>
+                    <td class="center borderAll" colspan="0">5</td>
                     <td class="center borderAll">6</td>
                     <td class="center borderAll">7</td>
                     <td class="center borderAll">8</td>
@@ -2646,7 +2647,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w01_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=1!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w01_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=1!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=1!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w01_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=1!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w01_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -2730,7 +2731,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w02_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=2!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w02_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=2!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=2!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w02_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=2!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w02_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -2815,7 +2816,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w03_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=3!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w03_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=3!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=3!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w03_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=3!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w03_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -2899,7 +2900,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w04_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=4!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w04_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=4!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=4!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w04_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=4!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w04_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -2985,7 +2986,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w05_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=5!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w05_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=5!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=5!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w05_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=5!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w05_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -3069,7 +3070,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w06_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=6!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w06_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=6!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=6!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w06_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=6!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w06_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -3153,7 +3154,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w07_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=7!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w07_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=7!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=7!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w07_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=7!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w07_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -3237,7 +3238,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w08_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=8!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w08_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=8!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=8!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w08_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=8!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w08_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -3322,7 +3323,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w09_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=9!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w09_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=9!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=9!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w09_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=9!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w09_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -3406,7 +3407,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w10_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=10!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w10_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=10!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=10!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w10_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=10!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w10_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -3490,7 +3491,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w11_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=11!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w11_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=11!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=11!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w11_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=11!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w11_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -3574,7 +3575,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w12_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=12!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w12_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=12!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=12!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w12_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=12!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w12_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -3658,7 +3659,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w13_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=13!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w13_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=13!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=13!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w13_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=13!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w13_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -3742,7 +3743,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w14_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=14!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w14_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=14!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=14!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w14_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=14!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w14_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -3826,7 +3827,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w15_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=15!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w15_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=15!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=15!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w15_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=15!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w15_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -3910,7 +3911,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w16_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=16!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w16_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=16!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=16!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w16_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=16!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w16_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -3996,7 +3997,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w17_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=17!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w17_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=17!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=17!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w17_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=17!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w17_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -4080,7 +4081,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w18_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=18!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w18_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=18!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=18!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w18_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=18!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w18_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -4165,7 +4166,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w19_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=19!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w19_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=19!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=19!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w19_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=19!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w19_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -4249,7 +4250,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w20_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=20!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w20_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=20!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=20!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w20_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=20!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w20_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -4333,7 +4334,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w21_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=21!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w21_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=21!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=21!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w21_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=21!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w21_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -4417,7 +4418,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w22_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=22!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w22_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=22!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=22!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w22_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=22!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w22_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -4501,7 +4502,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w23_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=23!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w23_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=23!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=23!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w23_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=23!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w23_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -4585,7 +4586,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w24_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=24!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w24_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=24!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=24!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w24_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=24!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w24_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -4671,7 +4672,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w25_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=25!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w25_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=25!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=25!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w25_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=25!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w25_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -4756,7 +4757,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w26_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=26!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w26_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=26!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=26!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w26_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=26!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w26_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -4842,7 +4843,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w27_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=27!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w27_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=27!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=27!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w27_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=27!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w27_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -4928,7 +4929,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w28_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=28!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w28_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=28!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=28!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w28_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=28!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w28_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -5013,7 +5014,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w29_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=29!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w29_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=29!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=29!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w29_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=29!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w29_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -5097,7 +5098,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w30_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=30!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w30_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=30!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=30!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w30_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=30!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w30_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -5182,7 +5183,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w31_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=31!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w31_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=31!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=31!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w31_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=31!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w31_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -5266,7 +5267,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w32_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=32!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w32_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=32!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=32!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w32_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=32!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w32_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -5351,7 +5352,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w33_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=33!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w33_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=33!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=33!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w33_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=33!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w33_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -5435,7 +5436,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w34_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=34!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w34_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=34!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=34!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w34_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=34!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w34_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -5520,7 +5521,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w35_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=35!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w35_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=35!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=35!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w35_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=35!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w35_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -5605,7 +5606,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w36_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=36!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w36_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=36!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=36!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w36_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=36!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w36_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -5690,7 +5691,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w37_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=37!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w37_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=37!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=37!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w37_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=37!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w37_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -5776,7 +5777,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w38_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=38!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w38_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=38!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=38!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w38_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=38!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w38_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -5860,7 +5861,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w39_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=39!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w39_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=39!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=39!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w39_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=39!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w39_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -5945,7 +5946,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w40_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=40!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w40_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=40!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=40!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w40_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=40!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w40_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -6029,7 +6030,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w41_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=41!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w41_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=41!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=41!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w41_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=41!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w41_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -6113,7 +6114,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w42_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll " style="height: 43px"><a href="javascript:openPopup('popup.aspx?sesja=42!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w42_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll " style="height: 43px"><a href="javascript:openPopup('popup.aspx?sesja=42!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " style="height: 43px" colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=42!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w42_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll " style="height: 43px"><a href="javascript:openPopup('popup.aspx?sesja=42!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w42_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -6197,7 +6198,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w43_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=43!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w43_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=43!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=43!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w43_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=43!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w43_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -6281,7 +6282,7 @@
                         <asp:Label CssClass="normal" ID="tab_132_w44_c03" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=44!1.3.2!4!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w44_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=44!1.3.2!5!4')">
+                    <td class="col_80_fest_fest center borderAll " colspan="0"><a href="javascript:openPopup('popup.aspx?sesja=44!1.3.2!5!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w44_c05" runat="server" Text="0"></asp:Label></a></td>
                     <td class="col_80_fest_fest center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=44!1.3.2!6!4')">
                         <asp:Label CssClass="normal" ID="tab_132_w44_c06" runat="server" Text="0"></asp:Label></a></td>
@@ -6357,11 +6358,7 @@
             </table>
         </div>
 
-      
-       <asp:PlaceHolder runat="server" ID="TablePlaceHolder1"></asp:PlaceHolder>
-
-
-
+        <asp:PlaceHolder runat="server" ID="TablePlaceHolder1"></asp:PlaceHolder>
 
         <div id='2.2. Czas trwania postępowania sądowego (w sądzie okręgowym I instancji - od dnia pierwszej rejestracji w sądzie I instancji do uprawomocnienia się sprawy w I instancji a w sądzie okręgowym II instancji od dnia pierwszej rejestracji w sądzie rejonowym (I instancji) do dnia wydania orze-czenia w sądzie okręgowym II instancji lub od dnia wpływu sprawy do sądu okręgowego (II instancji do dnia wydania orzeczenia w II instancji)' class="page-break">
             <br />
@@ -9383,12 +9380,7 @@
             </table>
         </div>
 
-
-
-
-
-
-         <asp:PlaceHolder runat="server" ID="TablePlaceHolder10"></asp:PlaceHolder>
+        <asp:PlaceHolder runat="server" ID="TablePlaceHolder10"></asp:PlaceHolder>
         <div id='10.1. Szczegółowe rozliczenie skargi (wykaz S)' class="page-break">
             <br />
             <strong>Dział 10.1. Szczegółowe rozliczenie skargi (wykaz S)</strong>
@@ -10633,8 +10625,6 @@
             <asp:PlaceHolder runat="server" ID="TablePlaceHolder8"></asp:PlaceHolder>
             <br />
         </div>
-        
-        
 
         <div id='14.1. Obsada Sądu (Wydziału)(' class="page-break">
             <br />
@@ -11053,128 +11043,6 @@
             <asp:PlaceHolder runat="server" ID="TablePlaceHolder9"></asp:PlaceHolder>
         </div>
 
-   
-        <div id="15.2" class="page-break">
-            <br />
-            <strong>Dział 15.2. Terminowość sporządzania opinii pisemnych (z wył. tłumaczy przysięgłych)</strong>
-            <table style="width: 100%;">
-                <tr>
-                    <td class="center borderAll" colspan="2" rowspan="3">Sprawy wg repertoriów</td>
-                    <td class="center borderAll" colspan="8">Liczba sporządzonych opinii</td>
-                </tr>
-                <tr>
-                    <td class="center borderAll" rowspan="2">razem (kol.1= 2 do 5 = 6 do 8) </td>
-                    <td class="center borderAll" rowspan="2">w ustalonym terminie</td>
-                    <td class="center borderAll" colspan="3">po ustalonym terminie</td>
-                    <td class="center borderAll" colspan="3">wg czasu wydania opinii</td>
-                </tr>
-                <tr>
-                    <td class="center borderAll">do 30 dni</td>
-                    <td class="center borderAll">pow. 1 do 3 miesięcy</td>
-                    <td class="center borderAll">pow. 3 miesięcy do 30 dni</td>
-                    <td class="center borderAll">do 30 dni</td>
-                    <td class="center borderAll">pow. 1 do 3 miesięcy</td>
-                    <td class="center borderAll">pow. 3 miesięcy</td>
-                </tr>
-                <tr>
-                    <td class="center borderAll" colspan="2">0</td>
-                        <td class="center borderAll">1</td>
-                        <td class="center borderAll">2</td>
-                        <td class="center borderAll">3</td>
-                        <td class="center borderAll">4</td>
-                        <td class="center borderAll">5</td>
-                        <td class="center borderAll">6</td>
-                        <td class="center borderAll">7</td>
-                        <td class="center borderAll">8</td>
-                       
-                </tr>
-                <tr>
-                    <td class="borderAll wciecie">Ogółem (w. 02-04)</td>
-                    <td class="borderAll col_36">1</td>
-                    <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=1!15.2!1!4')">
-                        <asp:Label CssClass="normal" ID="tab_15_2_w01_c01" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=1!15.2!2!4')">
-                        <asp:Label CssClass="normal" ID="tab_15_2_w01_c02" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=1!15.2!3!4')">
-                        <asp:Label CssClass="normal" ID="tab_15_2_w01_c03" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=1!15.2!4!4')">
-                        <asp:Label CssClass="normal" ID="tab_15_2_w01_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=1!15.2!5!4')">
-                        <asp:Label CssClass="normal" ID="tab_15_2_w01_c05" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=1!15.2!6!4')">
-                        <asp:Label CssClass="normal" ID="tab_15_2_w01_c06" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=1!15.2!7!4')">
-                        <asp:Label CssClass="normal" ID="tab_15_2_w01_c07" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=1!15.2!8!4')">
-                        <asp:Label CssClass="normal" ID="tab_15_2_w01_c08" runat="server" Text="0"></asp:Label></a></td>
-                </tr>
-                <tr>
-                    <td class="borderAll wciecie">K</td>
-                    <td class="borderAll col_36">2</td>
-                    <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=2!15.2!1!4')">
-                        <asp:Label CssClass="normal" ID="tab_15_2_w02_c01" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=2!15.2!2!4')">
-                        <asp:Label CssClass="normal" ID="tab_15_2_w02_c02" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=2!15.2!3!4')">
-                        <asp:Label CssClass="normal" ID="tab_15_2_w02_c03" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=2!15.2!4!4')">
-                        <asp:Label CssClass="normal" ID="tab_15_2_w02_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=2!15.2!5!4')">
-                        <asp:Label CssClass="normal" ID="tab_15_2_w02_c05" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=2!15.2!6!4')">
-                        <asp:Label CssClass="normal" ID="tab_15_2_w02_c06" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=2!15.2!7!4')">
-                        <asp:Label CssClass="normal" ID="tab_15_2_w02_c07" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=2!15.2!8!4')">
-                        <asp:Label CssClass="normal" ID="tab_15_2_w02_c08" runat="server" Text="0"></asp:Label></a></td>
-                </tr>
-                <tr>
-                    <td class="borderAll wciecie">Ka</td>
-                    <td class="borderAll col_36">3</td>
-                    <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=3!15.2!1!4')">
-                        <asp:Label CssClass="normal" ID="tab_15_2_w03_c01" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=3!15.2!2!4')">
-                        <asp:Label CssClass="normal" ID="tab_15_2_w03_c02" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=3!15.2!3!4')">
-                        <asp:Label CssClass="normal" ID="tab_15_2_w03_c03" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=3!15.2!4!4')">
-                        <asp:Label CssClass="normal" ID="tab_15_2_w03_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=3!15.2!5!4')">
-                        <asp:Label CssClass="normal" ID="tab_15_2_w03_c05" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=3!15.2!6!4')">
-                        <asp:Label CssClass="normal" ID="tab_15_2_w03_c06" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=3!15.2!7!4')">
-                        <asp:Label CssClass="normal" ID="tab_15_2_w03_c07" runat="server" Text="0"></asp:Label></a></td>
-                    <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=3!15.2!8!4')">
-                        <asp:Label CssClass="normal" ID="tab_15_2_w03_c08" runat="server" Text="0"></asp:Label></a></td>
-                </tr>
-                <tr>
-                    <td class="borderAll wciecie">Inne</td>
-                    <td class="borderAll col_36">4
-    <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=4!15.2!1!4')">
-        <asp:Label CssClass="normal" ID="tab_15_2_w04_c01" runat="server" Text="0"></asp:Label></a></td>
-                        <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=4!15.2!2!4')">
-                            <asp:Label CssClass="normal" ID="tab_15_2_w04_c02" runat="server" Text="0"></asp:Label></a></td>
-                        <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=4!15.2!3!4')">
-                            <asp:Label CssClass="normal" ID="tab_15_2_w04_c03" runat="server" Text="0"></asp:Label></a></td>
-                        <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=4!15.2!4!4')">
-                            <asp:Label CssClass="normal" ID="tab_15_2_w04_c04" runat="server" Text="0"></asp:Label></a></td>
-                        <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=4!15.2!5!4')">
-                            <asp:Label CssClass="normal" ID="tab_15_2_w04_c05" runat="server" Text="0"></asp:Label></a></td>
-                        <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=4!15.2!6!4')">
-                            <asp:Label CssClass="normal" ID="tab_15_2_w04_c06" runat="server" Text="0"></asp:Label></a></td>
-                        <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=4!15.2!7!4')">
-                            <asp:Label CssClass="normal" ID="tab_15_2_w04_c07" runat="server" Text="0"></asp:Label></a></td>
-                        <td class="col_81 center borderAll "><a href="javascript:openPopup('popup.aspx?sesja=4!15.2!8!4')">
-                            <asp:Label CssClass="normal" ID="tab_15_2_w04_c08" runat="server" Text="0"></asp:Label></a></td>
-                </tr>
-            </table>
-        </div>
-
-        <div id='15.3. Terminowość przyznawania wynagrodzeń za sporządzenie opinii pisemnych i ustnych oraz za stawiennictwo (z wył. tłumaczy przysięgłych)' class="page-break">
-            <br />
-            <asp:PlaceHolder runat="server" ID="tablePlaceHolder2"></asp:PlaceHolder>
-        </div>
         <div>
             <table style="width: 100%;">
                 <tr>

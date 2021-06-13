@@ -10,7 +10,7 @@
       <iloscKolumnPrzedIteracja>1</iloscKolumnPrzedIteracja>
       <iloscKolumnPoIteracji>4</iloscKolumnPoIteracji>
       <lp>1</lp>
-      <identyfikatorTabeli>1</identyfikatorTabeli>
+      <identyfikatorTabeli>1.</identyfikatorTabeli>
     </daneTabeli>
     <naglowek>
 
@@ -82,8 +82,8 @@
 
   <tabela id="1.1.1">
     <daneTabeli>
-      <iloscWierszy>109</iloscWierszy>
-      <tekstNadTabela>.  Ewidencja spraw – I instancja z wyłączeniem zażaleniowych</tekstNadTabela>
+      <iloscWierszy>111</iloscWierszy>
+      <tekstNadTabela>  Ewidencja spraw – I instancja z wyłączeniem zażaleniowych</tekstNadTabela>
       <iloscWierszyNaglowka>5</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>4</iloscKolumnPrzedIteracja>
       <iloscKolumnPoIteracji>15</iloscKolumnPoIteracji>
@@ -2002,8 +2002,8 @@
       <komorka>
         <wiersz>105</wiersz>
         <kolumna>2</kolumna>
-        <colSpan>3</colSpan>
-        <rowspan>0</rowspan>
+        <colSpan>2</colSpan>
+        <rowspan>3</rowspan>
         <style> wciecie </style>
         <text>O udzielenie zabezpieczenia w trybie rozporządzenia Parlamentu Europejskiego i Rady (UE) NR 655/2014 z dnia 15 maja 2014 r. ustanawiającego procedurę europejskiego nakazu zabezpieczenia na rachunku bankowym w celu ułatwienia transgranicznego dochodzenia wierzytelności w sprawach cywilnych i handlowych</text>
       </komorka>
@@ -2012,16 +2012,24 @@
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>O udzielenie zabezpieczenia</text>
+      </komorka>
+      <komorka>
+        <wiersz>105</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
         <style> center </style>
         <text>131a</text>
       </komorka>
       <komorka>
         <wiersz>106</wiersz>
         <kolumna>2</kolumna>
-        <colSpan>3</colSpan>
+        <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style> wciecie </style>
-        <text>Inne bez symbolu i o symbolu wyżej niewymienionym </text>
+        <text>o uchylenie lub zmianę zabezpieczenia (art. 33)</text>
       </komorka>
       <komorka>
         <wiersz>106</wiersz>
@@ -2034,10 +2042,10 @@
       <komorka>
         <wiersz>107</wiersz>
         <kolumna>2</kolumna>
-        <colSpan>3</colSpan>
+        <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style> wciecie </style>
-        <text>WSC skarga o stwierdzenie niezgodności z prawem – I instancja</text>
+        <text>o ograniczenie lub zakończenie wykonywania zabezpieczenia (art. 34)</text>
       </komorka>
       <komorka>
         <wiersz>107</wiersz>
@@ -2053,7 +2061,7 @@
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
         <style> wciecie </style>
-        <text>WSNc (skarga nadzwyczajna) – I instancja</text>
+        <text>Inne bez symbolu i o symbolu wyżej niewymienionym</text>
       </komorka>
       <komorka>
         <wiersz>108</wiersz>
@@ -2070,10 +2078,43 @@
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
         <style> wciecie </style>
-        <text>Wykaz U (sprawy upadłości banków i zakładów ubezpieczeń)</text>
+        <text>WSC skarga o stwierdzenie niezgodności z prawem – I instancja</text>
       </komorka>
       <komorka>
         <wiersz>109</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>-</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>110</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>WSNc (skarga nadzwyczajna) – I instancja</text>
+      </komorka>
+      <komorka>
+        <wiersz>110</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>-</text>
+      </komorka>
+      <komorka>
+        <wiersz>111</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Wykaz U (sprawy upadłości banków i zakładów ubezpieczeń)</text>
+      </komorka>
+      <komorka>
+        <wiersz>111</wiersz>
         <kolumna>3</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -2224,10 +2265,310 @@
     </tablaBoczna>
   </tabela>
 
+  <tabela id="1.1.c">
+    <daneTabeli>
+      <iloscWierszy>7</iloscWierszy>
+      <tekstNadTabela>(dział 1.1.1 wiersz 109  + dział 1.1.2 wiersz 66 kolumna 3 lit. c) skarga o stwierdzenie niezgodności z prawem  łącznie I i II instancja</tekstNadTabela>
+      <iloscWierszyNaglowka>3</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>2</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>1</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>1.1.C</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_250</style>
+        <text> Wyszczególnienie</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest</style>
+        <text>Liczba spraw</text>
+      </komorka>
+    </naglowek>
+    <tablaBoczna>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+          przekazanych Sądowi Najwyższemu ze skargą o stwierdzenie niezgodności z prawem prawomocnego orzeczenia
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>przesłanych z Sądu Najwyższego w okresie sprawozdawczym (w.02 =w. 03 do 07)</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>5</rowspan>
+        <style> wciecie </style>
+        <text>
+          w których Sąd Najwyższy
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>odmówił przyjęcia skargi do rozpoznania (art.424<![CDATA[<sup>9</sup>]]> kpc)</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>odrzucił skargę (art.424<![CDATA[<sup>8</sup>]]> kpc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>odrzucił skargę (art.424<![CDATA[<sup>8</sup>]]> kpc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>oddalił skargę (art.424<![CDATA[<sup>11</sup>]]> §1 kpc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>uwzględnił skargę (art.424<![CDATA[<sup>11</sup>]]> §2 kpc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>7</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>załatwił w inny sposób</text>
+      </komorka>
+    </tablaBoczna>
+  </tabela>
+
+  <tabela id="1.1.e">
+    <daneTabeli>
+      <iloscWierszy>9</iloscWierszy>
+      <tekstNadTabela>(dział 1.1.2 wiersz 60 kolumna 3 lit. e) skarga kasacyjna</tekstNadTabela>
+      <iloscWierszyNaglowka>3</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>2</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>1</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>1.1.e.</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_250</style>
+        <text> Wyszczególnienie</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest</style>
+        <text>Liczba spraw</text>
+      </komorka>
+    </naglowek>
+    <tablaBoczna>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+          Przekazanych Sądowi Najwyższemu ze skargą kasacyjną w okresie sprawozdawczym
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Przesłanych z Sądu Najwyższego w okresie sprawozdawczym (w. 02 = w. 03 do 09)</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>7</rowspan>
+        <style> wciecie </style>
+        <text>
+          w których Sąd Najwyższy
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>odmówił przyjęcia skargi do rozpoznania (art.398<![CDATA[<sup>9</sup>]]> kpc)</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>odrzucił skargę </text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>oddalił skargę (art.398<![CDATA[<sup>8</sup>]]> kpc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>uwzględnił skargę (art.398<![CDATA[<sup>14</sup>]]> §1 kpc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>7</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>uchylił orzeczenie i przekazał sprawę sądowi I lub II instancji do ponownego rozpoznania  (art.398<![CDATA[<sup>15</sup>]]> §2 kpc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>8</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>uchylił wydane orzeczenie i odrzucił pozew  (art.398<![CDATA[<sup>19</sup>]]> §2 kpc)</text>
+      </komorka>
+      <komorka>
+        <wiersz>9</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>załatwił w inny sposób</text>
+      </komorka>
+    </tablaBoczna>
+  </tabela>
+
+  <tabela id="1.1.f">
+    <daneTabeli>
+      <iloscWierszy>2</iloscWierszy>
+      <tekstNadTabela>Ustanowienie pełnomocnika z urzędu</tekstNadTabela>
+      <iloscWierszyNaglowka>1</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>1</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>3</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>1.1.f.</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_250</style>
+        <text> Repertorium lub wykaz</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_120</style>
+        <text>Liczba spraw w których doszło do ustanowienia pełnomocnika z urzędu (radca prawny, adwokat)</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_120</style>
+        <text>Liczba ustanowionych pełnomocników z urzędu (radca prawny, adwokat)</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_120</style>
+        <text>W tym liczba wyznaczonych pełnomocników w wyniku zwolnienia poprzedniego pełnomocnika (od I 2012)</text>
+      </komorka>
+    </naglowek>
+    <tablaBoczna>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+          GC
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Ga</text>
+      </komorka>
+    
+    
+    </tablaBoczna>
+  </tabela>
+
+
   <tabela id="1.1.2">
     <daneTabeli>
 
-      <iloscWierszy>62</iloscWierszy>
+      <iloscWierszy>68</iloscWierszy>
       <tekstNadTabela>Ewidencja spraw II instancja</tekstNadTabela>
       <iloscWierszyNaglowka>5</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>4</iloscKolumnPrzedIteracja>
@@ -3431,7 +3772,7 @@
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
         <style> wciecie </style>
-        <text>WSC skarga kasacyjna</text>
+        <text>Zs skarga na orzeczenia Krajowej Izby Odwoławczej i postanowienia Prezesa KIO</text>
       </komorka>
       <komorka>
         <wiersz>59</wiersz>
@@ -3444,13 +3785,106 @@
       <komorka>
         <wiersz>60</wiersz>
         <kolumna>1</kolumna>
-        <colSpan>3</colSpan>
-        <rowspan>0</rowspan>
+        <colSpan>1</colSpan>
+        <rowspan>5</rowspan>
         <style> wciecie </style>
-        <text>WSC skarga o stwierdzenie niezgodności z prawem – II instancja</text>
+        <text>
+          w tym ze skargi na
+        </text>
       </komorka>
       <komorka>
         <wiersz>60</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+          wyrok KIO (art. 551 u.z.p.)
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>60</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>827</text>
+      </komorka>
+      <komorka>
+        <wiersz>61</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>postanowienie KIO o umorzeniu postępowania (art. 568 u.z.p.)</text>
+      </komorka>
+      <komorka>
+        <wiersz>61</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>827</text>
+      </komorka>
+      <komorka>
+        <wiersz>62</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>postanowienie KIO o odrzuceniu odwołania (art. 528 u.z.p.)</text>
+      </komorka>
+      <komorka>
+        <wiersz>62</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>828</text>
+      </komorka>
+      <komorka>
+        <wiersz>63</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>postanowienie KIO o odrzuceniu odwołania (art. 528 u.z.p.)</text>
+      </komorka>
+      <komorka>
+        <wiersz>63</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>829</text>
+      </komorka>
+      <komorka>
+        <wiersz>64</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>postanowienie Prezesa KIO (art. 519 u.z.p.)</text>
+      </komorka>
+      <komorka>
+        <wiersz>64</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>830</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>65</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>WSC skarga kasacyjna</text>
+      </komorka>
+      <komorka>
+        <wiersz>65</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -3458,7 +3892,23 @@
         <text>-</text>
       </komorka>
       <komorka>
-        <wiersz>61</wiersz>
+        <wiersz>66</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>WSC skarga o stwierdzenie niezgodności z prawem – II instancja</text>
+      </komorka>
+      <komorka>
+        <wiersz>66</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center </style>
+        <text>-</text>
+      </komorka>
+      <komorka>
+        <wiersz>67</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3466,15 +3916,16 @@
         <text>WSNc (skarga nadzwyczajna) – II instancja</text>
       </komorka>
       <komorka>
-        <wiersz>61</wiersz>
+        <wiersz>67</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style> center </style>
         <text>-</text>
       </komorka>
+
       <komorka>
-        <wiersz>62</wiersz>
+        <wiersz>68</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -3482,7 +3933,7 @@
         <text>Skargi na postępowanie sądowe **</text>
       </komorka>
       <komorka>
-        <wiersz>62</wiersz>
+        <wiersz>68</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -4786,12 +5237,13 @@
       </komorka>
     </tablaBoczna>
   </tabela>
+
   <tabela id="1.1.3">
     <daneTabeli>
 
-      <iloscWierszy>1</iloscWierszy>
+      <iloscWierszy>2</iloscWierszy>
       <tekstNadTabela>
-        Skład orzekający w sprawach Ga
+        Skład orzekający w sprawach Ga iGz
       </tekstNadTabela>
       <iloscWierszyNaglowka>3</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>1</iloscKolumnPrzedIteracja>
@@ -4881,14 +5333,23 @@
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style> wciecie </style>
-        <text>przekazane Sądowi Najwyższemu ze skargą nadzwyczajną  </text>
+        <text>Rep. Ga </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Rep. Zs </text>
       </komorka>
     </tablaBoczna>
   </tabela>
+
   <tabela id="1.2.1">
     <daneTabeli>
 
-      <iloscWierszy>14</iloscWierszy>
+      <iloscWierszy>15</iloscWierszy>
       <tekstNadTabela> Liczba sesji i wyznaczonych spraw  </tekstNadTabela>
       <iloscWierszyNaglowka>4</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>2</iloscKolumnPrzedIteracja>
@@ -5413,8 +5874,18 @@
         <style> wciecie </style>
         <text>Gz  II instancja</text>
       </komorka>
+
       <komorka>
         <wiersz>10</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Zs</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>11</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>2</rowspan>
@@ -5422,7 +5893,7 @@
         <text>WSC </text>
       </komorka>
       <komorka>
-        <wiersz>10</wiersz>
+        <wiersz>11</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5430,7 +5901,7 @@
         <text>skarga kasacyjna</text>
       </komorka>
       <komorka>
-        <wiersz>11</wiersz>
+        <wiersz>12</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -5438,7 +5909,7 @@
         <text>skarga o stwierdzenie niezgodności z prawem</text>
       </komorka>
       <komorka>
-        <wiersz>12</wiersz>
+        <wiersz>13</wiersz>
         <kolumna>1</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -5446,7 +5917,7 @@
         <text>Wykaz U</text>
       </komorka>
       <komorka>
-        <wiersz>13</wiersz>
+        <wiersz>14</wiersz>
         <kolumna>1</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -5454,7 +5925,7 @@
         <text>WSNc (skarga nadzwyczajna)</text>
       </komorka>
       <komorka>
-        <wiersz>14</wiersz>
+        <wiersz>15</wiersz>
         <kolumna>1</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -5467,8 +5938,8 @@
   <tabela id="1.2.2">
     <daneTabeli>
 
-      <iloscWierszy>39</iloscWierszy>
-      <tekstNadTabela> Liczba sesji i wyznaczonych spraw  </tekstNadTabela>
+      <iloscWierszy>40</iloscWierszy>
+      <tekstNadTabela> Liczba odbytych sesji i załatwionych spraw  </tekstNadTabela>
       <iloscWierszyNaglowka>4</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>3</iloscKolumnPrzedIteracja>
       <iloscKolumnPoIteracji>40</iloscKolumnPoIteracji>
@@ -5491,7 +5962,10 @@
         <colSpan>1</colSpan>
         <rowspan>4</rowspan>
         <style>center </style>
-        <text>Liczba sesji (rozprawy i posiedzenia)  - wokandy</text>
+        <text>
+          Liczba odbytych sesji (rozprawy i posiedzenia)
+          - wokandy
+        </text>
       </komorka>
       <komorka>
         <wiersz>1</wiersz>
@@ -5500,7 +5974,7 @@
         <rowspan>4</rowspan>
         <style>center </style>
         <text>
-          Suma wyznaczonych spraw (suma kol. 4 i 22,)
+          Łączna liczba dni w których odbyto sesje-wokandy
         </text>
       </komorka>
       <komorka>
@@ -5509,62 +5983,59 @@
         <colSpan>0</colSpan>
         <rowspan>4</rowspan>
         <style>center </style>
-        <text>Łączna liczba dni na które wyznaczono sesje-wokandy</text>
-      </komorka>
-      <komorka>
-        <wiersz>1</wiersz>
-        <kolumna>5</kolumna>
-        <colSpan>0</colSpan>
-        <rowspan>4</rowspan>
-        <style>center </style>
         <text>
-          Razem wyznaczonych na rozprawę sędziów
-          (suma kol. 5,17, 21)
+          Załatwienie1) ogółem
+          (suma kol. 4, 22)
         </text>
       </komorka>
+
       <komorka>
         <wiersz>1</wiersz>
         <kolumna>6</kolumna>
-        <colSpan>17</colSpan>
-        <rowspan>0</rowspan>
-        <style>center col_120</style>
-        <text>Liczba wyznaczonych spraw na rozprawę, dotyczy:</text>
-      </komorka>
-      <komorka>
-        <wiersz>1</wiersz>
-        <kolumna>7</kolumna>
-        <colSpan>0</colSpan>
-        <rowspan>4</rowspan>
-        <style>center </style>
-        <text>
-          Razem wyznaczonych na rozprawę sędziowie SR (suma kol. 18,19,20)
-        </text>
-      </komorka>
-      <komorka>
-        <wiersz>1</wiersz>
-        <kolumna>8</kolumna>
         <colSpan>18</colSpan>
         <rowspan>0</rowspan>
         <style>center col_120</style>
-        <text>Liczba wyznaczonych spraw na posiedzenia, dotyczy:</text>
+        <text>Liczba załatwionych spraw na rozprawie, dotyczy:</text>
       </komorka>
 
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>19</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>Liczba załatwionych spraw na posiedzeniach, dotyczy:</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center </style>
+        <text>
+          Załatwienie razem
+          (suma kol. 5, 17, 21)
+        </text>
+      </komorka>
       <komorka>
         <wiersz>2</wiersz>
         <kolumna>4</kolumna>
         <colSpan>12</colSpan>
         <rowspan>0</rowspan>
         <style>center </style>
-        <text>Sędziowie SO</text>
+        <text>
+          Załatwienie razem
+          (suma kol. 5, 17, 21)
+        </text>
       </komorka>
-
       <komorka>
         <wiersz>2</wiersz>
         <kolumna>5</kolumna>
         <colSpan>0</colSpan>
         <rowspan>3</rowspan>
         <style>center col_120</style>
-        <text>Razem wyznaczonych na rozprawę sędziowie SR (suma kol. 18,19,20)</text>
+        <text>          Razem załatwionych spraw na rozprawie sędziowie SR (suma kol.18,19,20)        </text>
       </komorka>
       <komorka>
         <wiersz>2</wiersz>
@@ -5587,10 +6058,12 @@
       <komorka>
         <wiersz>2</wiersz>
         <kolumna>8</kolumna>
-        <colSpan>12</colSpan>
-        <rowspan>0</rowspan>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
         <style>center col_120</style>
-        <text>Sędziowie SO</text>
+        <text>
+          Załatwienie razem (suma kol. 23, 35, 39, 40)
+        </text>
       </komorka>
 
       <komorka>
@@ -5599,15 +6072,17 @@
         <colSpan>0</colSpan>
         <rowspan>3</rowspan>
         <style>center col_120</style>
-        <text>Razem wyznaczonych na rozprawę sędziowie SR (suma kol. 18,19,20)</text>
+        <text>
+          Razem załatwionych spraw na posiedzeniu sędziowie SO (suma kol.24,25,34)
+        </text>
       </komorka>
       <komorka>
         <wiersz>2</wiersz>
         <kolumna>10</kolumna>
-        <colSpan>3</colSpan>
+        <colSpan>11</colSpan>
         <rowspan>0</rowspan>
-        <style>center col_120</style>
-        <text> sędziowie SR</text>
+        <style>center </style>
+        <text> sędziowie SO</text>
       </komorka>
 
       <komorka>
@@ -5616,16 +6091,35 @@
         <colSpan>0</colSpan>
         <rowspan>3</rowspan>
         <style>center col_120</style>
-        <text>Inni sędziowie</text>
+        <text>
+          Razem załatwionych spraw na posiedzeniu sędziowie SR (suma kol.36,37,38)
+        </text>
       </komorka>
 
       <komorka>
         <wiersz>2</wiersz>
-        <kolumna>12</kolumna>
+        <kolumna>14</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>sędziów SR</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>15</kolumna>
         <colSpan>0</colSpan>
         <rowspan>3</rowspan>
         <style>center col_120</style>
-        <text>referendarze</text>
+        <text>inni sędziowie</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>16</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_120</style>
+        <text>referendarzy</text>
       </komorka>
       <komorka>
         <wiersz>3</wiersz>
@@ -5633,16 +6127,22 @@
         <colSpan>0</colSpan>
         <rowspan>2</rowspan>
         <style>center col_120</style>
-        <text>Razem wyznaczonych  spraw na rozprawę sędziowie SO (suma kol.6,7,16)</text>
+        <text>
+          Razem załatwionych spraw na rozprawie sędziowie SO (suma kol.6,7,16)
+        </text>
       </komorka>
+
       <komorka>
         <wiersz>3</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>2</rowspan>
         <style>center col_120</style>
-        <text>sędziów SO z wyłączeniem sędziów funkcyjnych</text>
+        <text>
+          sędziów SO z wyłączeniem sędziów funkcyjnych
+        </text>
       </komorka>
+
       <komorka>
         <wiersz>3</wiersz>
         <kolumna>4</kolumna>
@@ -5650,7 +6150,8 @@
         <rowspan>2</rowspan>
         <style>center col_120</style>
         <text>
-          sędziów funkcyjnych SO (suma kol. od 8 do 15)
+          sędziów funkcyjnych SO
+          (suma kol. od 8 do 15)
         </text>
       </komorka>
       <komorka>
@@ -5658,7 +6159,7 @@
         <kolumna>5</kolumna>
         <colSpan>8</colSpan>
         <rowspan>0</rowspan>
-        <style>center col_120</style>
+        <style>center </style>
         <text>z tego:</text>
       </komorka>
       <komorka>
@@ -5675,7 +6176,9 @@
         <colSpan>0</colSpan>
         <rowspan>2</rowspan>
         <style>center col_120</style>
-        <text>sędziów SR delegowanych w trybie art. 77 §1 usp na czas nieokreślony lub na czas określony, orzekających w pełnym wymiarze</text>
+        <text>
+          sędziów SR delegowanych w trybie art. 77 §1 usp na czas nieokreślony lub na czas określony, orzekających w pełnym wymiarze
+        </text>
       </komorka>
       <komorka>
         <wiersz>3</wiersz>
@@ -5683,7 +6186,9 @@
         <colSpan>0</colSpan>
         <rowspan>2</rowspan>
         <style>center col_120</style>
-        <text>sędziów SR delegowanych w trybie art. 77 §1 usp na czas nieokreślony lub na czas określony, orzekających w pełnym wymiarze</text>
+        <text>
+          sędziów SR delegowanych w trybie art. 77 §1 usp na czas nieokreślony lub na czas określony, orzekających w niepełnym wymiarze
+        </text>
       </komorka>
       <komorka>
         <wiersz>3</wiersz>
@@ -5692,7 +6197,7 @@
         <rowspan>2</rowspan>
         <style>center col_120</style>
         <text>
-          sędziów SR delegowanych w trybie art. 77 § 9 usp
+          sędziów SR delegowanych w trybie art. 77 §1 usp na czas nieokreślony lub na czas określony, orzekających w niepełnym wymiarze
         </text>
       </komorka>
       <komorka>
@@ -5702,22 +6207,12 @@
         <rowspan>2</rowspan>
         <style>center col_120</style>
         <text>
-          Razem wyznaczonych  spraw na posiedzenie sędziowie SO (suma kol.24,25,34)
-        </text>
-      </komorka>
-      <komorka>
-        <wiersz>3</wiersz>
-        <kolumna>11</kolumna>
-        <colSpan>0</colSpan>
-        <rowspan>2</rowspan>
-        <style>center col_120</style>
-        <text>
           sędziów SO z wyłączeniem sędziów funkcyjnych
         </text>
       </komorka>
       <komorka>
         <wiersz>3</wiersz>
-        <kolumna>12</kolumna>
+        <kolumna>11</kolumna>
         <colSpan>0</colSpan>
         <rowspan>2</rowspan>
         <style>center col_120</style>
@@ -5746,6 +6241,7 @@
           inni
         </text>
       </komorka>
+
       <komorka>
         <wiersz>3</wiersz>
         <kolumna>15</kolumna>
@@ -5753,7 +6249,7 @@
         <rowspan>2</rowspan>
         <style>center col_120</style>
         <text>
-          sędziów SR delegowanych w trybie art. 77 §1 usp na czas nieokreślony lub na czas określony, orzekających w pełnym wymiarze
+          sędziów SR delegowanych w trybie art. 77 §1 usp
         </text>
       </komorka>
 
@@ -5767,7 +6263,6 @@
           sędziów SR delegowanych w trybie art. 77 §1 usp na czas nieokreślony lub na czas określony, orzekających w niepełnym wymiarze
         </text>
       </komorka>
-
       <komorka>
         <wiersz>3</wiersz>
         <kolumna>17</kolumna>
@@ -5925,7 +6420,7 @@
         <rowspan>0</rowspan>
         <style> wciecie </style>
         <text>
-          Ogółem sprawy gospodarcze  (w. 02, 25 do 29,31,33,35 do 39)
+          Ogółem sprawy gospodarcze  (w. 02, 25 do 29,31,33,35 do 40)
         </text>
       </komorka>
       <komorka>
@@ -6248,9 +6743,16 @@
         <style> wciecie </style>
         <text>  w tym liczba spraw zakreślonych w związku ze zmianami organizacyjnymi ( zniesienie/likwidacja/ zmiany obszaru właściwości sądu, wydziału, sekcji oraz zmiany zarządzenia MS o biurowości))</text>
       </komorka>
-
       <komorka>
         <wiersz>35</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>  Zs</text>
+      </komorka>
+      <komorka>
+        <wiersz>36</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>2</rowspan>
@@ -6258,7 +6760,7 @@
         <text>WSC</text>
       </komorka>
       <komorka>
-        <wiersz>35</wiersz>
+        <wiersz>36</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -6266,7 +6768,7 @@
         <text>skarga kasacyjne</text>
       </komorka>
       <komorka>
-        <wiersz>36</wiersz>
+        <wiersz>37</wiersz>
         <kolumna>1</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -6275,7 +6777,7 @@
       </komorka>
 
       <komorka>
-        <wiersz>37</wiersz>
+        <wiersz>38</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6284,7 +6786,7 @@
       </komorka>
 
       <komorka>
-        <wiersz>38</wiersz>
+        <wiersz>39</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6292,7 +6794,7 @@
         <text>WSNc (skarga nadzwyczajna)</text>
       </komorka>
       <komorka>
-        <wiersz>39</wiersz>
+        <wiersz>40</wiersz>
         <kolumna>1</kolumna>
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
@@ -6465,16 +6967,471 @@
       </komorka>
     </tablaBoczna>
   </tabela>
-  <tabela id="1.4">
+  <tabela id="1.3.a">
     <daneTabeli>
 
-      <iloscWierszy>18</iloscWierszy>
-      <tekstNadTabela>Terminowość sporządzania uzasadnień</tekstNadTabela>
+      <iloscWierszy>5</iloscWierszy>
+      <tekstNadTabela><![CDATA[<b>Merytoryczne i inne załatwienia spraw – sędziowie </b>]]></tekstNadTabela>
+      <iloscWierszyNaglowka>5</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>2</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>9</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>1.3.a</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>5</rowspan>
+        <style>center col_250</style>
+        <text> SPRAWY WG REPERTORIÓW LUB WYKAZÓW</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>9</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest</style>
+        <text>ZAŁATWIONO</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>4</rowspan>
+        <style>center col_80_fest</style>
+        <text>Razem</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>8</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest</style>
+        <text>z tego</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest</style>
+        <text>uwzględniono w całości lub części</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest </style>
+        <text>w tym wyrokiem zaocznym</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest</style>
+        <text>oddalono</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest </style>
+        <text>w tym wyrokiem zaocznym</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>umorzono</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center </style>
+        <text>inne załatwienia</text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest </style>
+        <text>ogółem</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest</style>
+        <text>w tym w wyniku </text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest</style>
+        <text>zawarcia ugody przed sądem </text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest</style>
+        <text>mediacji</text>
+      </komorka>
+    </naglowek>
+    <tablaBoczna>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>OGÓŁEM  </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>5</rowspan>
+        <style> wciecie </style>
+        <text>w tym</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>GC  </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>GNs </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>GNc </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>GCo</text>
+      </komorka>
+    </tablaBoczna>
+  </tabela>
+
+  <tabela id="1.3.b">
+    <daneTabeli>
+
+      <iloscWierszy>5</iloscWierszy>
+      <tekstNadTabela><![CDATA[<b>Merytoryczne i inne załatwienia spraw – sędziowie </b>]]></tekstNadTabela>
+      <iloscWierszyNaglowka>5</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>2</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>6</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>1.3.b</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_250</style>
+        <text> SPRAWY WG REPERTORIÓW LUB WYKAZÓW</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>6</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>ZAŁATWIONO</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_130</style>
+        <text>
+          razem (kol. 2 do 5)
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>5</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>z tego</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_130</style>
+        <text>oddalono</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_130 </style>
+        <text>zmieniono w całości lub części</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_130 </style>
+        <text>uchylono lub uchylono i przekazano do sądu I instancji</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_130 </style>
+        <text>inne załatwienia</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_130</style>
+        <text>w tym uwzględnione sprawy z wykazu S</text>
+      </komorka>
+    </naglowek>
+    <tablaBoczna>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+          OGÓŁEM
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>5</rowspan>
+        <style> wciecie </style>
+        <text>w tym</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Ga </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Gz I instancja </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Gz II instancja </text>
+      </komorka>
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Zs </text>
+      </komorka>
+    </tablaBoczna>
+  </tabela>
+
+  <tabela id="1.3.c">
+    <daneTabeli>
+
+      <iloscWierszy>4</iloscWierszy>
+      <tekstNadTabela><![CDATA[<b>Merytoryczne i inne załatwienia spraw – referendarze sądowi</b>]]></tekstNadTabela>
+      <iloscWierszyNaglowka>5</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>2</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>5</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>1.3.c</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_250</style>
+        <text> SPRAWY WG REPERTORIÓW LUB WYKAZÓW</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>5</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_130</style>
+        <text>ZAŁATWIONO</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_130</style>
+        <text>
+          razem (kol. 2+4+6+9)
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>4</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_130</style>
+        <text>z tego</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_130</style>
+        <text>uwzględniono w całości lub części</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_130 </style>
+        <text>oddalono</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_130</style>
+        <text>umorzono</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_130 </style>
+        <text>inne załatwienia</text>
+      </komorka>
+    </naglowek>
+    <tablaBoczna>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>OGÓŁEM  </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>5</rowspan>
+        <style> wciecie </style>
+        <text>w tym</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>GC  </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>GNs </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>GNc </text>
+      </komorka>
+    </tablaBoczna>
+  </tabela>
+
+  <tabela id="1.4.1">
+    <daneTabeli>
+
+      <iloscWierszy>21</iloscWierszy>
+      <tekstNadTabela>Terminowość sporządzania uzasadnień (od dnia wpływu do właściwego sądu wniosku o doręczenie wyroku z uzasadnieniem, a jeżeli wniosek był dotknięty brakami - od dnia usunięcia tych braków)</tekstNadTabela>
       <iloscWierszyNaglowka>3</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>3</iloscKolumnPrzedIteracja>
       <iloscKolumnPoIteracji>14</iloscKolumnPoIteracji>
       <lp>1</lp>
-      <identyfikatorTabeli>1.4</identyfikatorTabeli>
+      <identyfikatorTabeli>1.4.1</identyfikatorTabeli>
     </daneTabeli>
     <naglowek>
 
@@ -6636,7 +7593,7 @@
         <colSpan>3</colSpan>
         <rowspan>0</rowspan>
         <style> wciecie </style>
-        <text>OGÓŁEM (w. od 02 do 06 = w.07+13) </text>
+        <text>OGÓŁEM (w. od 02 do 07 = w.08+15) </text>
       </komorka>
 
       <komorka>
@@ -6653,7 +7610,7 @@
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style> center </style>
-        <text>GC (w.08+14)</text>
+        <text>GC (w.09+16)</text>
       </komorka>
       <komorka>
         <wiersz>3</wiersz>
@@ -6661,7 +7618,7 @@
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style> wciecie </style>
-        <text>GNs (w.09+15)</text>
+        <text>GNs (w.10+17)</text>
       </komorka>
 
       <komorka>
@@ -6670,13 +7627,13 @@
         <colSpan>1</colSpan>
         <rowspan>0</rowspan>
         <style> wciecie </style>
-        <text>Gz   (w.10+16)</text>
+        <text>Gz   (w.11+18)</text>
       </komorka>
       <komorka>
         <wiersz>5</wiersz>
         <kolumna>1</kolumna>
         <colSpan>2</colSpan>
-        <rowspan>2</rowspan>
+        <rowspan>3</rowspan>
         <style> wciecie </style>
         <text>II instancja</text>
       </komorka>
@@ -6686,7 +7643,9 @@
         <colSpan>1</colSpan>
         <rowspan>0</rowspan>
         <style> wciecie </style>
-        <text>Ga   (w.11+17)</text>
+        <text>
+          Ga   (w.12+19)
+        </text>
       </komorka>
 
       <komorka>
@@ -6695,26 +7654,34 @@
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style> wciecie </style>
-        <text>Gz   (w.12+18)</text>
+        <text>Gz  (w.13+20)</text>
       </komorka>
       <komorka>
         <wiersz>7</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
-        <rowspan>6</rowspan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Zs  (w.14+21)</text>
+      </komorka>
+      <komorka>
+        <wiersz>8</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>7</rowspan>
         <style> wciecie </style>
         <text>Sędziowie SO</text>
       </komorka>
       <komorka>
-        <wiersz>7</wiersz>
+        <wiersz>8</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
         <style> wciecie </style>
-        <text>ogółem (w. od 08 do 12)</text>
+        <text>ogółem (w. od 09 do 14)</text>
       </komorka>
       <komorka>
-        <wiersz>8</wiersz>
+        <wiersz>9</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>3</rowspan>
@@ -6722,7 +7689,7 @@
         <text>I instancja</text>
       </komorka>
       <komorka>
-        <wiersz>8</wiersz>
+        <wiersz>9</wiersz>
         <kolumna>2</kolumna>
         <colSpan>1</colSpan>
         <rowspan>0</rowspan>
@@ -6731,7 +7698,7 @@
       </komorka>
 
       <komorka>
-        <wiersz>9</wiersz>
+        <wiersz>10</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6739,7 +7706,7 @@
         <text>GNs</text>
       </komorka>
       <komorka>
-        <wiersz>10</wiersz>
+        <wiersz>11</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6747,15 +7714,15 @@
         <text>Gz</text>
       </komorka>
       <komorka>
-        <wiersz>11</wiersz>
+        <wiersz>12</wiersz>
         <kolumna>1</kolumna>
         <colSpan>1</colSpan>
-        <rowspan>2</rowspan>
+        <rowspan>3</rowspan>
         <style> wciecie </style>
         <text>II instancja</text>
       </komorka>
       <komorka>
-        <wiersz>11</wiersz>
+        <wiersz>12</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6764,24 +7731,32 @@
       </komorka>
 
       <komorka>
-        <wiersz>12</wiersz>
+        <wiersz>13</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style> wciecie </style>
         <text>Gz</text>
       </komorka>
-
       <komorka>
-        <wiersz>13</wiersz>
+        <wiersz>14</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
-        <rowspan>6</rowspan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Zs</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>15</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>7</rowspan>
         <style> wciecie </style>
         <text>Sędziowie SR delegowani do SO</text>
       </komorka>
       <komorka>
-        <wiersz>13</wiersz>
+        <wiersz>15</wiersz>
         <kolumna>2</kolumna>
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
@@ -6789,7 +7764,7 @@
         <text>ogółem (w. od 14 do 18)</text>
       </komorka>
       <komorka>
-        <wiersz>14</wiersz>
+        <wiersz>16</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>3</rowspan>
@@ -6797,7 +7772,7 @@
         <text>I instancja</text>
       </komorka>
       <komorka>
-        <wiersz>14</wiersz>
+        <wiersz>16</wiersz>
         <kolumna>2</kolumna>
         <colSpan>1</colSpan>
         <rowspan>0</rowspan>
@@ -6806,7 +7781,7 @@
       </komorka>
 
       <komorka>
-        <wiersz>15</wiersz>
+        <wiersz>17</wiersz>
         <kolumna>2</kolumna>
         <colSpan>1</colSpan>
         <rowspan>0</rowspan>
@@ -6815,7 +7790,7 @@
       </komorka>
 
       <komorka>
-        <wiersz>16</wiersz>
+        <wiersz>18</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6823,15 +7798,15 @@
         <text>Gz</text>
       </komorka>
       <komorka>
-        <wiersz>17</wiersz>
+        <wiersz>19</wiersz>
         <kolumna>1</kolumna>
         <colSpan>1</colSpan>
-        <rowspan>2</rowspan>
+        <rowspan>3</rowspan>
         <style> wciecie </style>
         <text>II instancja</text>
       </komorka>
       <komorka>
-        <wiersz>17</wiersz>
+        <wiersz>19</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
@@ -6840,12 +7815,20 @@
       </komorka>
 
       <komorka>
-        <wiersz>18</wiersz>
+        <wiersz>20</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style> wciecie </style>
         <text>Gz</text>
+      </komorka>
+      <komorka>
+        <wiersz>21</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Zs</text>
       </komorka>
     </tablaBoczna>
   </tabela>
@@ -6853,7 +7836,7 @@
   <tabela id="2.1.1">
     <daneTabeli>
 
-      <iloscWierszy>9</iloscWierszy>
+      <iloscWierszy>10</iloscWierszy>
       <tekstNadTabela>Sprawy od dnia pierwotnego wpisu do repertorium  (łącznie z czasem trwania mediacji)</tekstNadTabela>
       <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>3</iloscKolumnPrzedIteracja>
@@ -6984,7 +7967,7 @@
         <wiersz>2</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
-        <rowspan>8</rowspan>
+        <rowspan>9</rowspan>
         <style> wciecie </style>
         <text>w tym</text>
       </komorka>
@@ -7063,13 +8046,21 @@
         <style> wciecie </style>
         <text>zażalenia art. 394<![CDATA[<sup>2</sup>]]>§3 i 1<![CDATA[<sup>1</sup>]]> kpc      </text>
       </komorka>
+      <komorka>
+        <wiersz>10</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Zs </text>
+      </komorka>
     </tablaBoczna>
   </tabela>
 
   <tabela id="2.1.1.1">
     <daneTabeli>
 
-      <iloscWierszy>9</iloscWierszy>
+      <iloscWierszy>10</iloscWierszy>
       <tekstNadTabela> Sprawy od dnia pierwotnego wpisu do repertorium (bez czasu trwania mediacji w sprawach wszczętych po 1 stycznia 2016r.)</tekstNadTabela>
       <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>3</iloscKolumnPrzedIteracja>
@@ -7200,7 +8191,7 @@
         <wiersz>2</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
-        <rowspan>8</rowspan>
+        <rowspan>9</rowspan>
         <style> wciecie </style>
         <text>w tym</text>
       </komorka>
@@ -7279,19 +8270,27 @@
         <style> wciecie </style>
         <text>zażalenia art. 394<![CDATA[<sup>2</sup>]]>§3 i 1<![CDATA[<sup>1</sup>]]> kpc      </text>
       </komorka>
+      <komorka>
+        <wiersz>10</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Zs </text>
+      </komorka>
     </tablaBoczna>
   </tabela>
 
   <tabela id="2.1.1.a">
     <daneTabeli>
 
-      <iloscWierszy>7</iloscWierszy>
+      <iloscWierszy>10</iloscWierszy>
       <tekstNadTabela>Sprawy zawieszone nie zakreślone od dnia pierwotnego wpisu do repertorium (wykazane w dziale 2.1.1.) (łącznie z czasem trwania mediacji)</tekstNadTabela>
       <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>3</iloscKolumnPrzedIteracja>
       <iloscKolumnPoIteracji>11</iloscKolumnPoIteracji>
       <lp>1</lp>
-      <wyswietlNaglowek>0</wyswietlNaglowek>
+    
       <identyfikatorTabeli>2.1.1.a</identyfikatorTabeli>
     </daneTabeli>
     <naglowek>
@@ -7417,7 +8416,7 @@
         <wiersz>2</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
-        <rowspan>8</rowspan>
+        <rowspan>9</rowspan>
         <style> wciecie </style>
         <text>w tym</text>
       </komorka>
@@ -7496,13 +8495,21 @@
         <style> wciecie </style>
         <text>zażalenia art. 394<![CDATA[<sup>2</sup>]]>§3 i 1<![CDATA[<sup>1</sup>]]> kpc      </text>
       </komorka>
+      <komorka>
+        <wiersz>10</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Zs </text>
+      </komorka>
     </tablaBoczna>
   </tabela>
 
   <tabela id="2.1.1.a.1">
     <daneTabeli>
 
-      <iloscWierszy>7</iloscWierszy>
+      <iloscWierszy>10</iloscWierszy>
       <tekstNadTabela>Sprawy zawieszone nie zakreślone od dnia pierwotnego wpisu do repertorium (wykazane w dziale 2.1.1.) (bez czasu trwania mediacji w sprawach wszczętych po 1 stycznia 2016r.)</tekstNadTabela>
       <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>3</iloscKolumnPrzedIteracja>
@@ -7633,7 +8640,7 @@
         <wiersz>2</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
-        <rowspan>8</rowspan>
+        <rowspan>9</rowspan>
         <style> wciecie </style>
         <text>w tym</text>
       </komorka>
@@ -7712,13 +8719,21 @@
         <style> wciecie </style>
         <text>zażalenia art. 394<![CDATA[<sup>2</sup>]]>§3 i 1<![CDATA[<sup>1</sup>]]> kpc      </text>
       </komorka>
+      <komorka>
+        <wiersz>10</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Zs </text>
+      </komorka>
     </tablaBoczna>
   </tabela>
 
   <tabela id="2.1.2">
     <daneTabeli>
 
-      <iloscWierszy>7</iloscWierszy>
+      <iloscWierszy>10</iloscWierszy>
       <tekstNadTabela>Liczba spraw zakreślonych w urządzeniu ewidencyjnym w wyniku zawieszenia postępowania(łącznie z czasem trwania mediacji)</tekstNadTabela>
       <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>3</iloscKolumnPrzedIteracja>
@@ -7849,7 +8864,7 @@
         <wiersz>2</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
-        <rowspan>8</rowspan>
+        <rowspan>9</rowspan>
         <style> wciecie </style>
         <text>w tym</text>
       </komorka>
@@ -7928,13 +8943,21 @@
         <style> wciecie </style>
         <text>zażalenia art. 394<![CDATA[<sup>2</sup>]]>§3 i 1<![CDATA[<sup>1</sup>]]> kpc      </text>
       </komorka>
+      <komorka>
+        <wiersz>10</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Zs </text>
+      </komorka>
     </tablaBoczna>
   </tabela>
 
   <tabela id="2.1.2.1">
     <daneTabeli>
 
-      <iloscWierszy>7</iloscWierszy>
+      <iloscWierszy>10</iloscWierszy>
       <tekstNadTabela>Liczba spraw zakreślonych w urządzeniu ewidencyjnym w wyniku zawieszenia postępowania (bez czasu trwania mediacji w sprawach wszczętych po 1 stycznia 2016r.)</tekstNadTabela>
       <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>3</iloscKolumnPrzedIteracja>
@@ -8065,7 +9088,7 @@
         <wiersz>2</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
-        <rowspan>8</rowspan>
+        <rowspan>9</rowspan>
         <style> wciecie </style>
         <text>w tym</text>
       </komorka>
@@ -8144,13 +9167,21 @@
         <style> wciecie </style>
         <text>zażalenia art. 394<![CDATA[<sup>2</sup>]]>§3 i 1<![CDATA[<sup>1</sup>]]> kpc      </text>
       </komorka>
+      <komorka>
+        <wiersz>10</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Zs </text>
+      </komorka>
     </tablaBoczna>
   </tabela>
 
   <tabela id="2.2">
     <daneTabeli>
 
-      <iloscWierszy>28</iloscWierszy>
+      <iloscWierszy>29</iloscWierszy>
       <tekstNadTabela>
         Czas trwania postępowania sądowego (w sądzie okręgowym I instancji - od dnia pierwszej rejestracji w sądzie I instancji do uprawomocnienia się sprawy w I instancji a w sądzie okręgowym II instancji od dnia pierwszej rejestracji w sądzie rejonowym (I instancji) do dnia wydania orzeczenia w sądzie okręgowym II instancji lub od dnia wpływu sprawy do sądu okręgowego (II instancji do dnia wydania orzeczenia w II instancji)) (łącznie z czasem trwania mediacji)
       </tekstNadTabela>
@@ -8312,7 +9343,7 @@
         <wiersz>7</wiersz>
         <kolumna>1</kolumna>
         <colSpan>1</colSpan>
-        <rowspan>22</rowspan>
+        <rowspan>23</rowspan>
         <style> wciecie </style>
         <text>SO II instancja  </text>
       </komorka>
@@ -8506,12 +9537,20 @@
         <style> wciecie </style>
         <text>zażalenia z  art. 394<![CDATA[<sup>2</sup>]]> § 1 i 1<![CDATA[<sup>1</sup>]]> kpc</text>
       </komorka>
+      <komorka>
+        <wiersz>29</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Zs </text>
+      </komorka>
     </tablaBoczna>
   </tabela>
   <tabela id="2.2.a">
     <daneTabeli>
 
-      <iloscWierszy>28</iloscWierszy>
+      <iloscWierszy>29</iloscWierszy>
       <tekstNadTabela>
         Czas trwania postępowania sądowego (w sądzie okręgowym I instancji - od dnia pierwszej rejestracji w sądzie I instancji do uprawomocnienia się sprawy merytorycznie zakończonej (wyrokiem, orzeczeniem) w I instancji a w sądzie okręgowym II instancji od dnia pierwszej rejestracji w sądzie rejonowym (I instancji) do dnia wydania orzeczenia merytorycznie kończącego sprawę (wyrokiem, orzeczeniem) w sądzie okręgowym II instancji lub od dnia wpływu sprawy do sądu okręgowego (II instancji do dnia wydania orzeczenia w II instancji)) (łącznie z czasem trwania mediacji)
       </tekstNadTabela>
@@ -8673,7 +9712,7 @@
         <wiersz>7</wiersz>
         <kolumna>1</kolumna>
         <colSpan>1</colSpan>
-        <rowspan>22</rowspan>
+        <rowspan>23</rowspan>
         <style> wciecie </style>
         <text>SO II instancja  </text>
       </komorka>
@@ -8867,13 +9906,21 @@
         <style> wciecie </style>
         <text>zażalenia z  art. 394<![CDATA[<sup>2</sup>]]> § 1 i 1<![CDATA[<sup>1</sup>]]> kpc</text>
       </komorka>
+      <komorka>
+        <wiersz>29</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Zs </text>
+      </komorka>
     </tablaBoczna>
   </tabela>
 
   <tabela id="2.2.1">
     <daneTabeli>
 
-      <iloscWierszy>28</iloscWierszy>
+      <iloscWierszy>29</iloscWierszy>
       <tekstNadTabela>
         Czas trwania postępowania sądowego (w sądzie okręgowym I instancji - od dnia pierwszej rejestracji w sądzie I instancji do uprawomocnienia się sprawy w I instancji a w sądzie okręgowym II instancji od dnia pierwszej rejestracji w sądzie rejonowym (I instancji) do dnia wydania orzeczenia w sądzie okręgowym II instancji lub od dnia wpływu sprawy do sądu okręgowego (II instancji do dnia wydania orzeczenia w II instancji)) (bez czasu trwania mediacji w sprawach wszczętych po 1 stycznia 2016r.)
       </tekstNadTabela>
@@ -9035,7 +10082,7 @@
         <wiersz>7</wiersz>
         <kolumna>1</kolumna>
         <colSpan>1</colSpan>
-        <rowspan>22</rowspan>
+        <rowspan>23</rowspan>
         <style> wciecie </style>
         <text>SO II instancja  </text>
       </komorka>
@@ -9229,13 +10276,21 @@
         <style> wciecie </style>
         <text>zażalenia z  art. 394<![CDATA[<sup>2</sup>]]> § 1 i 1<![CDATA[<sup>1</sup>]]> kpc</text>
       </komorka>
+      <komorka>
+        <wiersz>29</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Zs </text>
+      </komorka>
     </tablaBoczna>
   </tabela>
 
   <tabela id="2.2.1.a">
     <daneTabeli>
 
-      <iloscWierszy>28</iloscWierszy>
+      <iloscWierszy>29</iloscWierszy>
       <tekstNadTabela>
         Czas trwania postępowania sądowego (w sądzie okręgowym I instancji - od dnia pierwszej rejestracji w sądzie I instancji do uprawomocnienia się sprawy merytorycznie zakończonej (wyrokiem, orzeczeniem) w I instancji a w sądzie okręgowym II instancji od dnia pierwszej rejestracji w sądzie rejonowym (I instancji) do dnia wydania orzeczenia merytorycznie kończącego sprawę (wyrokiem, orzeczeniem) w sądzie okręgowym II instancji lub od dnia wpływu sprawy do sądu okręgowego (II instancji do dnia wydania orzeczenia w II instancji)) (bez czasu trwania mediacji w sprawach wszczętych po 1 stycznia 2016r.)
       </tekstNadTabela>
@@ -9397,7 +10452,7 @@
         <wiersz>7</wiersz>
         <kolumna>1</kolumna>
         <colSpan>1</colSpan>
-        <rowspan>22</rowspan>
+        <rowspan>23</rowspan>
         <style> wciecie </style>
         <text>SO II instancja  </text>
       </komorka>
@@ -9591,12 +10646,20 @@
         <style> wciecie </style>
         <text>zażalenia z  art. 394<![CDATA[<sup>2</sup>]]> § 1 i 1<![CDATA[<sup>1</sup>]]> kpc</text>
       </komorka>
+      <komorka>
+        <wiersz>29</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Zs </text>
+      </komorka>
     </tablaBoczna>
   </tabela>
 
   <tabela id="2.3">
     <daneTabeli>
-      <iloscWierszy>5</iloscWierszy>
+      <iloscWierszy>6</iloscWierszy>
       <tekstNadTabela>Czas trwania wszystkich mediacji w sprawie od dnia wydania postanowienia o skierowaniu stron do mediacji do dnia zakończenia mediacji </tekstNadTabela>
       <iloscWierszyNaglowka>1</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>2</iloscKolumnPrzedIteracja>
@@ -9705,7 +10768,7 @@
         <wiersz>3</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
-        <rowspan>3</rowspan>
+        <rowspan>4</rowspan>
         <style> wciecie </style>
         <text>SO II instancja </text>
       </komorka>
@@ -9733,11 +10796,20 @@
         <style> wciecie </style>
         <text>Ga (apelacyjne) </text>
       </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Zs </text>
+      </komorka>
     </tablaBoczna>
   </tabela>
+  
   <tabela id="2.3.1">
     <daneTabeli>
-      <iloscWierszy>5</iloscWierszy>
+      <iloscWierszy>6</iloscWierszy>
       <tekstNadTabela>Czas trwania mediacji niezakończonych w sprawie od dnia wydania postanowienia o skierowaniu stron do mediacji do ostatniego dnia okresu sprawozdawczego</tekstNadTabela>
       <iloscWierszyNaglowka>1</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>2</iloscKolumnPrzedIteracja>
@@ -9846,7 +10918,7 @@
         <wiersz>3</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
-        <rowspan>3</rowspan>
+        <rowspan>4</rowspan>
         <style> wciecie </style>
         <text>SO II instancja </text>
       </komorka>
@@ -9874,13 +10946,21 @@
         <style> wciecie </style>
         <text>Ga (apelacyjne) </text>
       </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Zs </text>
+      </komorka>
     </tablaBoczna>
   </tabela>
 
   <tabela id="3">
     <daneTabeli>
 
-      <iloscWierszy>5</iloscWierszy>
+      <iloscWierszy>6</iloscWierszy>
       <tekstNadTabela>
         Wyznaczenie pierwszej rozprawy/posiedzenia spraw (od dnia wpływu/wpisu sprawy, wraz ze sprawami zawieszonymi poprzednio zakreślonymi, do dnia, w którym odbyła się pierwsza rozprawa/posiedzenie)
       </tekstNadTabela>
@@ -9888,7 +10968,7 @@
       <iloscKolumnPrzedIteracja>2</iloscKolumnPrzedIteracja>
       <iloscKolumnPoIteracji>7</iloscKolumnPoIteracji>
       <lp>1</lp>
-      <identyfikatorTabeli>3</identyfikatorTabeli>
+      <identyfikatorTabeli>3.</identyfikatorTabeli>
     </daneTabeli>
     <naglowek>
 
@@ -9910,7 +10990,7 @@
           Od daty wpływu sprawy w danym lub poprzednim okresie sprawozdawczym do pierwszej rozprawy (posiedzenia) w okresie sprawozdawczym upłynął okres
         </text>
       </komorka>
-     
+
       <komorka>
         <wiersz>2</wiersz>
         <kolumna>2</kolumna>
@@ -9933,7 +11013,8 @@
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style>center col_80_fest</style>
-        <text>          pow. 2 do 3 mies
+        <text>
+          pow. 2 do 3 mies
         </text>
       </komorka>
       <komorka>
@@ -10008,7 +11089,7 @@
         <wiersz>4</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
-        <rowspan>2</rowspan>
+        <rowspan>3</rowspan>
         <style> wciecie </style>
         <text> II instancja  </text>
       </komorka>
@@ -10030,9 +11111,294 @@
         <style> wciecie </style>
         <text>Gz (zażaleniowe)</text>
       </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Zs </text>
+      </komorka>
     </tablaBoczna>
   </tabela>
 
+  <tabela id="4.1.a">
+    <daneTabeli>
+
+      <iloscWierszy>2</iloscWierszy>
+      <tekstNadTabela>
+        Terminowość postępowania międzyinstancyjnego w pierwszej instancji
+      </tekstNadTabela>
+      <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>1</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>7</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>4.1.a</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest</style>
+        <text>
+          Środki odwoławcze, które zostały przekazane do rozpoznania sądowi II instancji
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_80_fest</style>
+        <text>
+          Ogółem (kol. 2 do 7)
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>6</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>
+          Z tego od daty orzeczenia sądu okręgowego do daty przekazania do sądu II instancji upłynął okres
+        </text>
+      </komorka>
+      
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest</style>
+        <text>
+          do 2 mies.
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest</style>
+        <text>
+          pow. 2 do 3 mies.
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest</style>
+        <text>     pow. 3 do 6 mies.</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest</style>
+        <text>    pow.6 do 12 miesięcy</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest</style>
+        <text>pow. 12 mies. do 2 lat</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest</style>
+        <text>
+          ponad 2 lata
+        </text>
+      </komorka>
+
+
+
+    </naglowek>
+    <tablaBoczna>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Apelacje  </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Zażalenia</text>
+      </komorka>
+
+
+
+
+
+    </tablaBoczna>
+  </tabela>
+
+
+
+  <tabela id="6.a.1">
+    <daneTabeli>
+
+      <iloscWierszy>3</iloscWierszy>
+      <tekstNadTabela>
+        Liczba sesji
+      </tekstNadTabela>
+      <iloscWierszyNaglowka>1</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>1</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>8</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>6.a.1 </identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_80_fest</style>
+        <text>Wyszczególnienie</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest</style>
+        <text>
+          Liczba sesji sędziów liniowych (niefunkcyjnych) danego sądu orzekających  przez cały okres statystyczny w pełnym wymiarze etatu z wyłączeniem sędziów funkcyjnych oraz  delegowanych w trybie art. 77 § 1 usp na czas nieokreślony lub na czas określony orzekający w pełnym  i niepełnym wymiarze
+          oraz delegowanych w trybie art. 77 § 8 i 9 usp do danego sądu
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest</style>
+        <text>
+          Liczba sesji sędziów liniowych (niefunkcyjnych)  danego sądu orzekających  przez cały okres statystyczny w niepełnym wymiarze etatu z wyłączeniem sędziów funkcyjnych   oraz  delegowanych w trybie art. 77 § 1 usp na czas nieokreślony lub na czas określony orzekający w pełnym  i niepełnym wymiarze  oraz delegowanych w trybie art. 77 § 8 i 9 usp do danego sądu
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest</style>
+        <text>
+          Liczba sesji sędziów liniowych (niefunkcyjnych) danego sądu orzekających  przez część  okresu statystycznego w pełnym lub niepełnym wymiarze etatu z wyłączeniem sędziów funkcyjnych  oraz  delegowanych w trybie art. 77 § 1 usp na czas nieokreślony lub na czas określony orzekający w pełnym i niepełnym wymiarze  oraz delegowanych w trybie art. 77 § 8 i 9 usp do danego sądu (w kolumnie tej wykazujemy również „wpadkowe” sesje sędziów danego sądu np. delegowanych do innych sądów w czasie trwania ich delegacji, a także „wpadkowe” sesje sędziów będących na etacie w innym wydziale danego sądu)
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest</style>
+        <text>
+          Liczba sesji sędziów   funkcyjnych (danego sądu);
+          sędziowie orzekający w danym wydziale są wykazywani jako funkcyjni tylko w tym wydziale. Jeżeli orzekają dodatkowo w innych wydziałach to takich sędziów w innych wydziałach wykazujemy jako sędziów liniowych (niefunkcyjnych)
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest</style>
+        <text>      Liczba sesji sędziów delegowanych w trybie art. 77 § 1 usp na czas nieokreślony lub na czas określony orzekających w pełnym wymiarze w danym sądzie</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest</style>
+        <text>      Liczba sesji sędziów delegowanych w trybie art. 77 § 1 usp  orzekających w niepełnym wymiarze w danym sądzie (w tym sędziowie, którzy w czasie delegacji pełnią funkcje np. Prezesa i zgodnie z podziałem czynności mają zmniejszony zakres orzekania)</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest</style>
+        <text>Liczba sesji sędziów delegowanych w trybie art. 77 § 8 i 9 usp do danego sądu</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>9</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_80_fest</style>
+        <text>
+          Liczba sesji sędziów wykonujących czynności orzecznicze z mocy ustawy w danym sądzie
+          (art. 47 b usp), w tym sesje sędziów, którzy byli delegowani do danego sądu na podstawie art. 77 § 1 usp i kończą sprawy po zakończeniu delegacji w danym („naszym”) sądzie, a także sesje sędziów, którzy przenieśli się do innego sądu równorzędnego i kończą sprawy w danym („naszym”) sądzie. W przypadku, kiedy sędziowie otrzymali nominację do innego sądu w kolumnie tej wykazujemy sesje tych sędziów w sprawach, które kończyli w danym („naszym”) sądzie.
+        </text>
+      </komorka>
+    
+     
+   
+    </naglowek>
+    <tablaBoczna>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Liczba sesji (sędziowie zbiorczo I i II instancja)  </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>I instancja</text>
+      </komorka>
+
+  
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>I instancja </text>
+      </komorka>
+
+   
+    </tablaBoczna>
+  </tabela>
+  
+  
+  
+  
+  
+  
   <tabela id="6.2">
     <daneTabeli>
 

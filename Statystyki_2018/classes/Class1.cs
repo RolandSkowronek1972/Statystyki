@@ -893,7 +893,7 @@ namespace Statystyki_2018
 
         
         //================================================================================================
-
+        /*
         public DataTable generuj_dane_do_tabeli_mss2(int id_dzialu, DateTime poczatek, DateTime koniec, int il_kolumn, string tenPlik)
         {
             string status = string.Empty;
@@ -967,5 +967,6 @@ namespace Statystyki_2018
 
             return dTResult;
         }// end of generuj_dane_do_tabeli_mss2
+        */
     } // end of class
 }

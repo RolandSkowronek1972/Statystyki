@@ -1842,7 +1842,7 @@
   <tabela id="1.1.2">
     <daneTabeli>
       <iloscWierszy>29</iloscWierszy>
-      <tekstNadTabela>Struktura wpływu </tekstNadTabela>
+      <tekstNadTabela>Struktura załatwień </tekstNadTabela>
       <iloscWierszyNaglowka>3</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>3</iloscKolumnPrzedIteracja>
       <iloscKolumnPoIteracji>12</iloscKolumnPoIteracji>
@@ -2820,7 +2820,7 @@
     <daneTabeli>
 
       <iloscWierszy>19</iloscWierszy>
-      <tekstNadTabela><![CDATA[<b>Terminowość sporządzania uzasadnień (Sąd) (od dnia wpływu wniosku do właściwego sądu)</b>]]></tekstNadTabela>
+      <tekstNadTabela><![CDATA[<b>Terminowość sporządzania uzasadnień (od dnia wpływu do właściwego sądu wniosku o doręczenie wyroku z uzasadnieniem, a jeżeli wniosek był dotknięty brakami - od dnia usunięcia tych braków) </b>]]></tekstNadTabela>
       <iloscWierszyNaglowka>3</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>4</iloscKolumnPrzedIteracja>
       <iloscKolumnPoIteracji>14</iloscKolumnPoIteracji>
@@ -3600,7 +3600,7 @@
     <daneTabeli>
 
       <iloscWierszy>17</iloscWierszy>
-      <tekstNadTabela>Sprawy od dnia pierwotnego wpisu do repertorium (łącznie z czasem trwania mediacji)</tekstNadTabela>
+      <tekstNadTabela>Sprawy od dnia pierwotnego wpisu do repertorium/ wykazów </tekstNadTabela>
       <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>4</iloscKolumnPrzedIteracja>
       <iloscKolumnPoIteracji>11</iloscKolumnPoIteracji>
@@ -3897,7 +3897,7 @@
     <daneTabeli>
 
       <iloscWierszy>17</iloscWierszy>
-      <tekstNadTabela>Sprawy od dnia pierwotnego wpisu do repertorium (łącznie z czasem trwania mediacji)</tekstNadTabela>
+      <tekstNadTabela>Sprawy zawieszone niezakreślone od dnia pierwotnego wpisu do repertorium (wykazane w dziale 2.1.1.)</tekstNadTabela>
       <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>4</iloscKolumnPrzedIteracja>
       <iloscKolumnPoIteracji>11</iloscKolumnPoIteracji>
@@ -4194,7 +4194,7 @@
     <daneTabeli>
 
       <iloscWierszy>17</iloscWierszy>
-      <tekstNadTabela>Sprawy od dnia pierwotnego wpisu do repertorium (łącznie z czasem trwania mediacji)</tekstNadTabela>
+      <tekstNadTabela>Liczba spraw zakreślonych w urządzeniu ewidencyjnym w wyniku zawieszenia postępowania</tekstNadTabela>
       <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>4</iloscKolumnPrzedIteracja>
       <iloscKolumnPoIteracji>11</iloscKolumnPoIteracji>
@@ -7049,7 +7049,7 @@ Nakazy aresztowania kierowane z Wielkiej Brytanii, Irlandii Północnej, Republi
         <wiersz>2</wiersz>
         <kolumna>1</kolumna>
         <colSpan>0</colSpan>
-        <rowspan>0</rowspan>
+        <rowspan>2</rowspan>
         <style>center col_120</style>
         <text>
           razem (kol.1= 2 do 5 = 6 do 8)
@@ -7059,7 +7059,7 @@ Nakazy aresztowania kierowane z Wielkiej Brytanii, Irlandii Północnej, Republi
         <wiersz>2</wiersz>
         <kolumna>2</kolumna>
         <colSpan>0</colSpan>
-        <rowspan>0</rowspan>
+        <rowspan>2</rowspan>
         <style>center col_120</style>
         <text>w ustalonym terminie</text>
       </komorka>

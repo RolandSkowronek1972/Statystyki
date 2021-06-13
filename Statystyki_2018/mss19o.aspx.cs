@@ -70,8 +70,12 @@ namespace Statystyki_2018
                 Date2.Date = DateTime.Parse(datyMSS.DataKoncowa());
             }
 
-            Session["data_1"] = datyMSS.DataPoczatkowa();
-            Session["data_2"] = datyMSS.DataKoncowa();
+            // Session["data_1"] = datyMSS.DataPoczatkowa();
+            // Session["data_2"] = datyMSS.DataKoncowa();
+
+            Session["data_1"] = Date1.Date.ToShortDateString();
+            Session["data_2"] = Date2.Date.ToShortDateString();
+
             odswiez();
         }// end of Page_Load
 
@@ -99,11 +103,11 @@ namespace Statystyki_2018
             tablePlaceHolder04.Controls.Clear();
             tablePlaceHolder05.Controls.Clear();
 
-            string[] numeryTabel00 = new string[] { "1", "1.1.1", "1.1.1.a", "1.1.2", "1.1.a", "1.1.b" };
+            string[] numeryTabel00 = new string[] { "1", "1.1.1", "1.1.1.a", "1.1.2", "1.1.a", "1.1.b", "1.1.c", "1.1.e", "1.1.f" };
             string[] numeryTabel01 = new string[] { "1.1.h.1", "1.1.h.2", "1.1.i", "1.1.j" };
-            string[] numeryTabel02 = new string[] { "1.1.l", "1.1.3", "1.2.1", "1.2.2", "1.3.1", "1.4", "2.1.1", "2.1.1.1", "2.1.1.a", "2.1.1.a.1", "2.1.2", "2.1.2.1", "2.2", "2.2.a", "2.2.1", "2.2.1.a", "2.3", "2.3.1", "3" };
+            string[] numeryTabel02 = new string[] { "1.1.l", "1.1.3", "1.2.1", "1.2.2", "1.3.a", "1.3.b", "1.3.c", "1.3.1", "1.4.1", "2.1.1", "2.1.1.1", "2.1.1.a", "2.1.1.a.1", "2.1.2", "2.1.2.1", "2.2", "2.2.a", "2.2.1", "2.2.1.a", "2.3", "2.3.1", "3","4.1.a" };
 
-            string[] numeryTabel04 = new string[] { "6.2" };
+            string[] numeryTabel04 = new string[] { "6.a.1","6.2" };
             string[] numeryTabel05 = new string[] { "7.2", "7.3" };
             ms.TworzTabelizListy(numeryTabel00, tablePlaceHolder01, path, tabelaDanychMSS, idWydzialuNumerycznie, tenPlik);
 
@@ -113,63 +117,9 @@ namespace Statystyki_2018
             ms.TworzTabelizListy(numeryTabel04, tablePlaceHolder04, path, tabelaDanychMSS, idWydzialuNumerycznie, tenPlik);
             ms.TworzTabelizListy(numeryTabel05, tablePlaceHolder05, path, tabelaDanychMSS, idWydzialuNumerycznie, tenPlik);
 
-            #region "1.1.c";
+        
 
-            idTabeli = "'1.1.c'";
-            idWiersza = "'1'";
-            tab_1_1_c_w01_c01.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-            idWiersza = "'2'";
-            tab_1_1_c_w02_c01.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-            idWiersza = "'3'";
-            tab_1_1_c_w03_c01.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-            idWiersza = "'4'";
-            tab_1_1_c_w04_c01.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-            idWiersza = "'5'";
-            tab_1_1_c_w05_c01.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-            idWiersza = "'6'";
-            tab_1_1_c_w06_c01.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-            idWiersza = "'7'";
-            tab_1_1_c_w07_c01.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-
-            #endregion "1.1.c";
-
-            #region "1.1.e";
-
-            idTabeli = "'1.1.e'";
-            idWiersza = "'1'";
-            tab_1_1_e_w01_c01.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-            idWiersza = "'2'";
-            tab_1_1_e_w02_c01.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-            idWiersza = "'3'";
-            tab_1_1_e_w03_c01.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-            idWiersza = "'4'";
-            tab_1_1_e_w04_c01.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-            idWiersza = "'5'";
-            tab_1_1_e_w05_c01.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-            idWiersza = "'6'";
-            tab_1_1_e_w06_c01.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-            idWiersza = "'7'";
-            tab_1_1_e_w07_c01.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-            idWiersza = "'8'";
-            tab_1_1_e_w08_c01.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-            idWiersza = "'9'";
-            tab_1_1_e_w09_c01.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-
-            #endregion "1.1.e";
-
-            #region "1.1.f";
-
-            idTabeli = "'1.1.f'";
-            idWiersza = "'1'";
-            tab_1_1_f_w01_c01.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-            tab_1_1_f_w01_c02.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='2'", tenPlik);
-            tab_1_1_f_w01_c03.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='3'", tenPlik);
-            idWiersza = "'2'";
-            tab_1_1_f_w02_c01.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-            tab_1_1_f_w02_c02.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='2'", tenPlik);
-            tab_1_1_f_w02_c03.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='3'", tenPlik);
-
-            #endregion "1.1.f";
+      
 
             #region "1.1.g";
 
@@ -256,28 +206,7 @@ namespace Statystyki_2018
             tab_1_1_k_w01_c01.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
 
             #endregion "1.1.k";
-
-            #region "4.1.a";
-
-            idTabeli = "'4.1.a'";
-            idWiersza = "'1'";
-            tab_4_1_a_w01_c01.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-            tab_4_1_a_w01_c02.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='2'", tenPlik);
-            tab_4_1_a_w01_c03.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='3'", tenPlik);
-            tab_4_1_a_w01_c04.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='4'", tenPlik);
-            tab_4_1_a_w01_c05.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='5'", tenPlik);
-            tab_4_1_a_w01_c06.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='6'", tenPlik);
-            tab_4_1_a_w01_c07.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='7'", tenPlik);
-            idWiersza = "'2'";
-            tab_4_1_a_w02_c01.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-            tab_4_1_a_w02_c02.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='2'", tenPlik);
-            tab_4_1_a_w02_c03.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='3'", tenPlik);
-            tab_4_1_a_w02_c04.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='4'", tenPlik);
-            tab_4_1_a_w02_c05.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='5'", tenPlik);
-            tab_4_1_a_w02_c06.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='6'", tenPlik);
-            tab_4_1_a_w02_c07.Text = dr.wyciagnijWartosc(tabelaDanychMSS, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='7'", tenPlik);
-
-            #endregion "4.1.a";
+         
 
             #region "4.1.b";
 

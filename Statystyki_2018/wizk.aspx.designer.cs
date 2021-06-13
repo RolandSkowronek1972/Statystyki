@@ -6004,7 +6004,7 @@ namespace Statystyki_2018 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label tab_17_w01_c01;
+        protected global::System.Web.UI.WebControls.TextBox tab_17_w01_c01;
         
         /// <summary>
         /// tab_17_w02_c01 control.
@@ -6013,7 +6013,7 @@ namespace Statystyki_2018 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label tab_17_w02_c01;
+        protected global::System.Web.UI.WebControls.TextBox tab_17_w02_c01;
         
         /// <summary>
         /// tab_17_w03_c01 control.
@@ -6022,7 +6022,7 @@ namespace Statystyki_2018 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label tab_17_w03_c01;
+        protected global::System.Web.UI.WebControls.TextBox tab_17_w03_c01;
         
         /// <summary>
         /// Label13 control.

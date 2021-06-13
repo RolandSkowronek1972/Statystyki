@@ -2,7 +2,7 @@
 using System.Data;
 using System.Text;
 using System.Web.Services;
-
+using System.Xml;
 namespace Statystyki_2018
 {
     /// <summary>
@@ -80,8 +80,7 @@ namespace Statystyki_2018
             }
             cm.log.Info("Wymiana serwer: Ilość rekodrów odczytanych: "+ odpowiedz.Rows.Count.ToString ());
 
-            /*  StringBuilder stringBuilder = new StringBuilder();
-
+            StringBuilder stringBuilder = new StringBuilder();
               stringBuilder.AppendLine("<Odpowiedz>");
               foreach (DataRow item in odpowiedz.Rows)
               {
@@ -95,7 +94,7 @@ namespace Statystyki_2018
                   }
 
                   //File.ReadAllBytes
-                  stringBuilder.AppendLine("<row>");
+                  stringBuilder.AppendLine("<wiersz>");
                   stringBuilder.AppendLine("<wydzial>" + item[0] + "</wydzial>");
                   stringBuilder.AppendLine("<repertorium>" + item[1] + "</repertorium>");
 
@@ -105,79 +104,13 @@ namespace Statystyki_2018
                   stringBuilder.AppendLine("<msword> " + cos4 + " </msword>");
                   stringBuilder.AppendLine("<rodzaj> " + item[6] + " </rodzaj>");
 
-                  stringBuilder.AppendLine("</row>");
+                  stringBuilder.AppendLine("</wiersz>");
               }
               stringBuilder.AppendLine("</Odpowiedz>");
-
-              return stringBuilder.ToString();
-              */
+            string pathODP = Server.MapPath("Wymiana\\Temp\\odpowiedz_") + DateTime.Now.ToString().Replace(" ", "_").Replace(".", "_").Replace(":", "_") + ".xml";
+            System.IO.File.WriteAllText(pathODP, stringBuilder.ToString());
             return odpowiedz;
         }
-        /*
-        public string DaneWXml(string NrWydzialu, string repertorium, int nrSprawy, string rodzaj, string connection, int rok, string kwerendaZapytujaca)
-        {
-            // zapis zapytania
-            Zapytanie zapytanie = new Zapytanie();
-            zapytanie.nrWydzialu = NrWydzialu;
-            zapytanie.repertorium = repertorium;
-            zapytanie.NumerSprawy = nrSprawy;
-            zapytanie.RodzajSprawy = rodzaj;
-            zapytanie.connection = connection;
-            zapytanie.kwerenda = kwerendaZapytujaca;
-            zapytanie.DataZapytania = DateTime.Now.ToString();
-            System.Xml.Serialization.XmlSerializer writer =
-                new System.Xml.Serialization.XmlSerializer(typeof(Zapytanie));
-
-            string path = Server.MapPath("Wymiana\\Temp\\zapytanie") + DateTime.Now.ToString().Replace(" ", "_").Replace(".", "_").Replace(":", "_") + ".xml";
-
-            System.IO.FileStream file = System.IO.File.Create(path);
-
-            writer.Serialize(file, zapytanie);
-            file.Close();
-
-            DataTable parametry2 = cm.makeParameterTable();
-            //@wydzial, @rep, @numer, @rok
-            parametry2.Rows.Add("@wydzial", NrWydzialu);
-            parametry2.Rows.Add("@rep", repertorium);
-            parametry2.Rows.Add("@numer", nrSprawy);
-            parametry2.Rows.Add("@rok", rok);
-            DataTable odpowiedz = cm.getDataTable(kwerendaZapytujaca, connection, parametry2, "wymiana serwer");
-            if (odpowiedz == null)
-            {
-                cm.log.Error("Wymiana serwer: Brak wyników kwerendy zapytania");
-                return "Wymiana serwer: Brak wyników kwerendy zapytania";
-            }
-
-            StringBuilder stringBuilder = new StringBuilder();
-
-            stringBuilder.AppendLine("<Odpowiedz>");
-            foreach (DataRow item in odpowiedz.Rows)
-            {
-                var cos2 = (Byte[])item[5];
-            
-                StringBuilder cos4 = new StringBuilder();
-                foreach (var bajt in cos2)
-                {
-                    var cos5 = bajt.ToString("X");
-                    cos4.Append(cos5);
-                }
-
-                //File.ReadAllBytes
-                stringBuilder.AppendLine("<row>");
-                stringBuilder.AppendLine("<wydzial>" + item[0] + "</wydzial>");
-                stringBuilder.AppendLine("<repertorium>" + item[1] + "</repertorium>");
-
-                stringBuilder.AppendLine("<numer>" + item[2] + " </numer>");
-                stringBuilder.AppendLine("<rok> " + item[3] + " </rok>");
-                stringBuilder.AppendLine("<dataOrzeczenia> " + item[4] + " </dataOrzeczenia>");
-                stringBuilder.AppendLine("<msword> " + cos4 + " </msword>");
-                stringBuilder.AppendLine("<rodzaj> " + item[6] + " </rodzaj>");
-
-                stringBuilder.AppendLine("</row>");
-            }
-            stringBuilder.AppendLine("</Odpowiedz>");
-
-            return stringBuilder.ToString();
-        }*/
+       
     }
 }

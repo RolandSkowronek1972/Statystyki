@@ -230,14 +230,29 @@
     <hv>h</hv>
     <text>Posiedz.</text>
   </komorka>
-
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>33</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text> Rozpr.</text>
+  </komorka>
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>34</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Posiedz.</text>
+  </komorka>
   <komorka>
     <wiersz>3</wiersz>
     <kolumna>35</kolumna>
     <colSpan>1</colSpan>
     <rowSpan>1</rowSpan>
     <hv>h</hv>
-    <text>urlop</text>
+    <text> Rozpr.</text>
   </komorka>
   <komorka>
     <wiersz>3</wiersz>
@@ -245,11 +260,27 @@
     <colSpan>1</colSpan>
     <rowSpan>1</rowSpan>
     <hv>h</hv>
-    <text>zwolnienie lekarskie</text>
+    <text>Posiedz.</text>
   </komorka>
   <komorka>
     <wiersz>3</wiersz>
     <kolumna>37</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>urlop</text>
+  </komorka>
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>38</kolumna>
+    <colSpan>1</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>zwolnienie lekarskie</text>
+  </komorka>
+  <komorka>
+    <wiersz>3</wiersz>
+    <kolumna>39</kolumna>
     <colSpan>1</colSpan>
     <rowSpan>1</rowSpan>
     <hv>h</hv>
@@ -258,7 +289,7 @@
 
   <komorka>
     <wiersz>3</wiersz>
-    <kolumna>38</kolumna>
+    <kolumna>40</kolumna>
     <colSpan>1</colSpan>
     <rowSpan>1</rowSpan>
     <hv>h</hv>
@@ -266,7 +297,7 @@
   </komorka>
   <komorka>
     <wiersz>3</wiersz>
-    <kolumna>39</kolumna>
+    <kolumna>41</kolumna>
     <colSpan>1</colSpan>
     <rowSpan>1</rowSpan>
     <hv>h</hv>
@@ -275,7 +306,7 @@
 
   <komorka>
     <wiersz>3</wiersz>
-    <kolumna>40</kolumna>
+    <kolumna>42</kolumna>
     <colSpan>1</colSpan>
     <rowSpan>1</rowSpan>
     <hv>h</hv>
@@ -283,7 +314,7 @@
   </komorka>
   <komorka>
     <wiersz>3</wiersz>
-    <kolumna>41</kolumna>
+    <kolumna>43</kolumna>
     <colSpan>1</colSpan>
     <rowSpan>1</rowSpan>
     <hv>h</hv>
@@ -414,6 +445,14 @@
   </komorka>
   <komorka>
     <wiersz>2</wiersz>
+    <kolumna>11</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Cz</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
     <kolumna>13</kolumna>
     <colSpan>1</colSpan>
     <rowSpan>2</rowSpan>
@@ -500,6 +539,14 @@
     <rowSpan>1</rowSpan>
     <hv>h</hv>
     <text>N</text>
+  </komorka>
+  <komorka>
+    <wiersz>2</wiersz>
+    <kolumna>29</kolumna>
+    <colSpan>2</colSpan>
+    <rowSpan>1</rowSpan>
+    <hv>h</hv>
+    <text>Cz</text>
   </komorka>
   <komorka>
     <wiersz>2</wiersz>
@@ -610,7 +657,7 @@
   <komorka>
     <wiersz>1</wiersz>
     <kolumna>3</kolumna>
-    <colSpan>16</colSpan>
+    <colSpan>18</colSpan>
     <rowSpan>1</rowSpan>
     <hv>h</hv>
     <text>ZAŁATWIENIA</text>
@@ -618,7 +665,7 @@
   <komorka>
     <wiersz>1</wiersz>
     <kolumna>17</kolumna>
-    <colSpan>17</colSpan>
+    <colSpan>19</colSpan>
     <rowSpan>1</rowSpan>
     <hv>h</hv>
     <text>WYZNACZENIA</text>

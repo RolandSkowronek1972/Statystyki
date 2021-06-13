@@ -244,7 +244,7 @@ namespace Statystyki_2018
                     {
                         try
                         {
-                            tb.Text = dane.Rows[wiersz - 1][kolumna].ToString().Trim();
+                            tb.Text = dane.Rows[wiersz - 1][kolumna-1].ToString().Trim();
                         }
                         catch
                         { }

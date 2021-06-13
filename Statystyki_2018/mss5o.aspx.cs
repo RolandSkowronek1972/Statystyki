@@ -110,15 +110,16 @@ namespace Statystyki_2018
                     int idWydzialuNumerycznie = int.Parse((string)Session["id_dzialu"]);
                   
 
-                    string[] numeryTabel00 = new string[] { "1.1","1.1.a","1.1.b","1.1.1","1.1.1.a","1.1.2" };
-                    string[] numeryTabel01 = new string[] { "1.4.1", "1.4.2" , "2.1.1" , "2.1.1.a" , "2.1.2" };
+                    string[] numeryTabel00 = new string[] { "1.1","1.1.a","1.1.b","1.1.1","1.1.2" };
+                    string[] numeryTabel01 = new string[] { "1.4.1" , "2.1.1" , "2.1.1.a" , "2.1.2" };
                     string[] numeryTabel02 = new string[] { "9.1.3", "9.2", "9.3" , "9.3.2", "9.3.3", "9.4" };
                     string[] numeryTabel03 = new string[] { "13.1", "13.1.a", "13.1.b", "13.1.c","13.2" };
                     string[] numeryTabel04 = new string[] { "14.1.a", "14.2", "15.1", "15.2", "15.3" };
                     tablePlaceHolder.Controls.Clear();
-                    TablePlaceHolder1.Controls.Clear();
+                    TablePlaceHolder1.Controls.Clear();                
+                    TablePlaceHolder8.Controls.Clear();
+                    TablePlaceHolder9.Controls.Clear();
                     TablePlaceHolder10.Controls.Clear();
-                    tablePlaceHolder2.Controls.Clear();
 
                     ms.TworzTabelizListy(numeryTabel00, tablePlaceHolder, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
                     ms.TworzTabelizListy(numeryTabel01, TablePlaceHolder1, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
@@ -453,8 +454,9 @@ namespace Statystyki_2018
                 }
                 if (!string.IsNullOrEmpty(idWydzialu))
                 {
-                    DataTable tabela2 = cl.generuj_dane_do_tabeli_mss2(int.Parse((string)Session["id_dzialu"]), Date1.Date, Date2.Date, 21, tenPlik); //dane
-                    var distinctRows = (from DataRow dRow in tabela2.Rows select dRow["idTabeli"]).Distinct(); //lista tabelek
+                    DataTable tabelaDanych = ms.generuj_dane_do_tabeli_mss2(int.Parse((string)Session["id_dzialu"]), Date1.Date, Date2.Date, 21);
+                  //  DataTable tabela2 = cl.generuj_dane_do_tabeli_mss2(int.Parse((string)Session["id_dzialu"]), Date1.Date, Date2.Date, 21); //dane
+                    var distinctRows = (from DataRow dRow in tabelaDanych.Rows select dRow["idTabeli"]).Distinct(); //lista tabelek
                     DataTable listaTabelek = new DataTable();
                     listaTabelek.Columns.Add("tabela", typeof(string));
                     DataRow rowik = listaTabelek.NewRow();
@@ -468,7 +470,7 @@ namespace Statystyki_2018
                     var output = new StringBuilder();
                     //  output.AppendLine("Id formularza;Okres;Sąd;Wydział ;Dział;Wiersz;Kolumna;Liczba");
 
-                    output = ms.raportTXT(listaTabelek, tabela2, idRaportu.Text.Trim(), idSad.Text);
+                    output = ms.raportTXT(listaTabelek, tabelaDanych, idRaportu.Text.Trim(), idSad.Text);
 
                     Response.Clear();
                     Response.Buffer = true;
