@@ -15,7 +15,8 @@
                 left: 0;
                 right: 0;
             }
-                @media print {
+
+        @media print {
 
             @page {
                 font-size: 7.5pt;
@@ -29,8 +30,6 @@
                 -moz-transform: translate(-40mm, 0) scale(0.70);
                 break-after: column;
             }
-
-           
         }
     </style>
 
@@ -168,9 +167,9 @@
                                 <asp:Label ID="Label110" runat="server" Text='<%# Eval("d_10")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_90"  />
+                        <ItemStyle CssClass="col_90" />
                     </asp:TemplateField>
-                       <asp:TemplateField HeaderText="d_08" SortExpression="d_07">
+                    <asp:TemplateField HeaderText="d_08" SortExpression="d_07">
                         <ItemTemplate>
                             <a href="javascript:openPopup('popup.aspx?sesja=<%# Eval("id_")+ "!"+Eval("id_tabeli") +"!11!1"%>')">
                                 <asp:Label ID="Label111" runat="server" Text='<%# Eval("d_11")%>' CssClass="normal"></asp:Label>
@@ -182,7 +181,7 @@
             </asp:GridView>
         </div>
 
-        <div style="width: 1150px; margin: 0 auto 0 auto; position: relative; left: 0px; display: block" >
+        <div style="width: 1150px; margin: 0 auto 0 auto; position: relative; left: 0px; display: block">
             &nbsp;<asp:PlaceHolder runat="server" ID="tablePlaceHolder01"></asp:PlaceHolder>
             <br />
         </div>

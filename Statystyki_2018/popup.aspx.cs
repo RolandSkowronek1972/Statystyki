@@ -542,7 +542,7 @@ namespace Statystyki_2018
                 Label2.Text = tytul;
             }
             Label2.Text = tytul;
-            string sedzia = cl.wyciagnij_sedziego(id_sedziego.ToString());
+            string sedzia = cl.wyciagnij_sedziegoXXL(id_sedziego.ToString(), cs);
             if (sedzia == "Odwołanie do obiektu nie zostało ustawione na wystąpienie obiektu.")
             {
                 sedzia = "";

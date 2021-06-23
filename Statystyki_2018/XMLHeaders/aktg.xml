@@ -7,7 +7,7 @@
       <tekstNadTabela>Statystyka miesięczna Wydział Gospodarczy Tabela 2</tekstNadTabela>
       <iloscWierszyNaglowka>1</iloscWierszyNaglowka> 
       <iloscKolumnPrzedIteracja>2</iloscKolumnPrzedIteracja>
-      <iloscKolumnPoIteracji>6</iloscKolumnPoIteracji>
+      <iloscKolumnPoIteracji>7</iloscKolumnPoIteracji>
       <lp>1</lp>
       <identyfikatorTabeli>2</identyfikatorTabeli>
     </daneTabeli>
@@ -76,7 +76,14 @@
         <style> center col_60 </style>
         <text>WSC</text>
       </komorka>
-      
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>Razem</text>
+      </komorka>
     </naglowek>
     <tablaBoczna>
 
@@ -190,7 +197,7 @@
     </tablaBoczna>
     <stylKolumny>
       <kolumna>
-        <nrKolumny>6</nrKolumny>
+        <nrKolumny>7</nrKolumny>
         <styl>gray</styl>
       </kolumna>
      

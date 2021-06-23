@@ -3356,7 +3356,8 @@ namespace Statystyki_2018
                 licznik++;
                 builder.AppendLine("</tr>");
             }
-            builder.Append(sumaTabeli(dane, 7, 15, idtabeli, "Razem", 5));
+            builder.Append(sumaTabeliX(dane, 84, 15, idtabeli, "Razem", 5, 1));
+           // builder.Append(sumaTabeli(dane, 7, 15, idtabeli, "Razem", 5));
             builder.Append("</table>");
             builder.AppendLine("</div>");
             Label tblControl = new Label { Text = builder.ToString() };
@@ -3393,8 +3394,8 @@ namespace Statystyki_2018
                 licznik++;
             }
 
-            builder.Append(sumaTabeli(dane, 7, 14, idtabeli, "Razem", 4));
-
+         //   builder.Append(sumaTabeli(dane, 7, 14, idtabeli, "Razem", 4));
+            builder.Append(sumaTabeliX(dane, 72, 14, idtabeli, "Razem", 4, 0));
             builder.Append("</table>");
 
             Label tblControl = new Label { Text = builder.ToString() };
@@ -3430,8 +3431,8 @@ namespace Statystyki_2018
                 licznik++;
             }
 
-            builder.Append(sumaTabeli(dane, 7, 13, idtabeli, "Razem", 5));
-
+           // builder.Append(sumaTabeli(dane, 7, 13, idtabeli, "Razem", 5));
+            builder.Append(sumaTabeliX(dane, 72, 32, idtabeli, "Razem", 5, 0));
             builder.Append("</table>");
 
             Label tblControl = new Label { Text = builder.ToString() };

@@ -157,6 +157,7 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="mss10o.aspx" />
     <Content Include="oopr.aspx" />
     <Content Include="oopk.aspx" />
     <Content Include="oopc.aspx" />
@@ -175,6 +176,9 @@
     <Content Include="aktc.aspx" />
     <Content Include="SerwisWymiany.asmx" />
     <Content Include="Wymiana1.aspx" />
+    <Content Include="XMLHeaders\MSS10o.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="XMLHeaders\MSS11o.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -610,6 +614,13 @@
     </Compile>
     <Compile Include="akrk.aspx.designer.cs">
       <DependentUpon>akrk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mss10o.aspx.cs">
+      <DependentUpon>mss10o.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mss10o.aspx.designer.cs">
+      <DependentUpon>mss10o.aspx</DependentUpon>
     </Compile>
     <Compile Include="oopr.aspx.cs">
       <DependentUpon>oopr.aspx</DependentUpon>

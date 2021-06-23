@@ -82,7 +82,7 @@
             &nbsp;<asp:PlaceHolder runat="server" ID="tablePlaceHolder01"></asp:PlaceHolder>
             <br />
         </div>
-           <div id="debag">
+        <div id="debag">
             <br />
             <br />
             Raport statystyczny
@@ -93,8 +93,6 @@
             <asp:Label ID="Label28" runat="server"></asp:Label>
             &nbsp;<asp:Label ID="Label30" runat="server"></asp:Label>
             <br />
-
-        
         </div>
     </div>
 </asp:Content>
