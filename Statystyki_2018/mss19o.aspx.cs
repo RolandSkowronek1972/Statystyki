@@ -76,9 +76,51 @@ namespace Statystyki_2018
             Session["data_1"] = Date1.Date.ToShortDateString();
             Session["data_2"] = Date2.Date.ToShortDateString();
 
-            odswiez();
+            rysuj();
         }// end of Page_Load
+        protected void rysuj()
+        {
+            string path = Server.MapPath("XMLHeaders") + "\\" + "MSS19o.xml";
+            string idTabeli = string.Empty;
+            string idWiersza = string.Empty;
+            string idWydzialu = (string)Session["id_dzialu"];
+            int idWydzialuNumerycznie = int.Parse((string)Session["id_dzialu"]);
+            DataTable tabelaDanychMSS = ms.generuj_dane_do_tabeli_mss2(int.Parse((string)Session["id_dzialu"]), Date1.Date, Date2.Date, 21);
+            //wypełnianie lebeli
+            this.ClearChildControlState();
+            this.Context.Items.Clear();
+            tablePlaceHolder01.Dispose();
+            tablePlaceHolder02.Dispose();
+            tablePlaceHolder03.Dispose();
+            tablePlaceHolder04.Dispose();
+            tablePlaceHolder05.Dispose();
 
+            tablePlaceHolder01.Controls.Clear();
+
+            tablePlaceHolder02.Controls.Clear();
+            tablePlaceHolder03.Controls.Clear();
+            tablePlaceHolder04.Controls.Clear();
+            tablePlaceHolder05.Controls.Clear();
+
+            string[] numeryTabel00 = new string[] { "1", "1.1.1", "1.1.1.a", "1.1.2", "1.1.a", "1.1.b", "1.1.c", "1.1.e", "1.1.f" };
+            string[] numeryTabel01 = new string[] { "1.1.h.1", "1.1.h.2", "1.1.i", "1.1.j" };
+            string[] numeryTabel02 = new string[] { "1.1.l", "1.1.3", "1.2.1", "1.2.2", "1.3.a", "1.3.b", "1.3.c", "1.3.1", "1.4.1", "2.1.1", "2.1.1.1", "2.1.1.a", "2.1.1.a.1", "2.1.2", "2.1.2.1", "2.2", "2.2.a", "2.2.1", "2.2.1.a", "2.3", "2.3.1", "3", "4.1.a" };
+
+            string[] numeryTabel04 = new string[] { "6.a.1", "6.2" };
+            string[] numeryTabel05 = new string[] { "7.2", "7.3" };
+            ms.TworzTabelizListy(numeryTabel00, tablePlaceHolder01, path, tabelaDanychMSS, idWydzialuNumerycznie, tenPlik);
+
+            ms.TworzTabelizListy(numeryTabel01, tablePlaceHolder02, path, tabelaDanychMSS, idWydzialuNumerycznie, tenPlik);
+
+            ms.TworzTabelizListy(numeryTabel02, tablePlaceHolder03, path, tabelaDanychMSS, idWydzialuNumerycznie, tenPlik);
+            ms.TworzTabelizListy(numeryTabel04, tablePlaceHolder04, path, tabelaDanychMSS, idWydzialuNumerycznie, tenPlik);
+            ms.TworzTabelizListy(numeryTabel05, tablePlaceHolder05, path, tabelaDanychMSS, idWydzialuNumerycznie, tenPlik);
+
+
+
+
+
+        }
         protected void odswiez()
         {
             string path = Server.MapPath("XMLHeaders") + "\\" + "MSS19o.xml";

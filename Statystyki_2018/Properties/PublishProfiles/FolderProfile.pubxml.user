@@ -859,10 +859,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/01/2019 12:40:59</publishTime>
     </File>
     <File Include="bin/stat2018.dll">
-      <publishTime>06/23/2021 19:20:51</publishTime>
+      <publishTime>06/30/2021 09:04:29</publishTime>
     </File>
     <File Include="bin/stat2018.pdb">
-      <publishTime>06/23/2021 19:20:51</publishTime>
+      <publishTime>06/30/2021 09:04:28</publishTime>
     </File>
     <File Include="bin/stat2018.XmlSerializers.dll">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -1129,7 +1129,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="mss10o.aspx">
-      <publishTime>06/23/2021 18:57:41</publishTime>
+      <publishTime>06/27/2021 10:08:08</publishTime>
     </File>
     <File Include="mss10r.aspx">
       <publishTime>02/06/2021 19:57:54</publishTime>
@@ -1198,7 +1198,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="mss1r.aspx">
-      <publishTime>02/06/2021 19:57:56</publishTime>
+      <publishTime>06/29/2021 21:38:57</publishTime>
     </File>
     <File Include="mss1r.aspx.cs">
       <publishTime>09/09/2020 10:44:02</publishTime>
@@ -1225,7 +1225,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="mss5r.aspx">
-      <publishTime>02/06/2021 19:57:57</publishTime>
+      <publishTime>06/27/2021 20:07:51</publishTime>
     </File>
     <File Include="mss5r.aspx.cs">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -1765,7 +1765,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/01/2018 16:29:38</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>06/23/2021 19:20:56</publishTime>
+      <publishTime>06/30/2021 09:04:32</publishTime>
     </File>
     <File Include="Properties/AssemblyInfo.cs">
       <publishTime>03/03/2020 13:38:12</publishTime>
@@ -1912,7 +1912,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/15/2021 17:31:35</publishTime>
     </File>
     <File Include="Statystyki_2018.csproj.user">
-      <publishTime>06/23/2021 19:20:40</publishTime>
+      <publishTime>06/30/2021 09:04:20</publishTime>
     </File>
     <File Include="style/login.css">
       <publishTime>12/18/2018 20:51:16</publishTime>
@@ -1999,7 +1999,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/23/2021 14:41:16</publishTime>
     </File>
     <File Include="Template/aktg.xlsx">
-      <publishTime>03/14/2021 14:37:31</publishTime>
+      <publishTime>06/27/2021 10:17:27</publishTime>
     </File>
     <File Include="Template/aktg2.xlsx">
       <publishTime>03/17/2021 20:42:36</publishTime>
@@ -2257,7 +2257,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="version.txt">
-      <publishTime>06/23/2021 19:20:40</publishTime>
+      <publishTime>06/30/2021 09:03:38</publishTime>
     </File>
     <File Include="wab.aspx">
       <publishTime>02/06/2021 19:58:07</publishTime>
@@ -2398,7 +2398,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/14/2020 11:50:51</publishTime>
     </File>
     <File Include="XMLHeaders/MSS10o.xml">
-      <publishTime>06/23/2021 18:52:16</publishTime>
+      <publishTime>06/27/2021 10:13:01</publishTime>
     </File>
     <File Include="XMLHeaders/MSS10r.xml">
       <publishTime>08/01/2020 12:32:40</publishTime>
@@ -2410,25 +2410,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/25/2020 12:44:40</publishTime>
     </File>
     <File Include="XMLHeaders/MSS16r.xml">
-      <publishTime>09/02/2020 07:44:38</publishTime>
+      <publishTime>06/29/2021 21:49:26</publishTime>
     </File>
     <File Include="XMLHeaders/MSS19o.xml">
-      <publishTime>06/02/2021 22:05:57</publishTime>
+      <publishTime>06/30/2021 09:03:25</publishTime>
     </File>
     <File Include="XMLHeaders/MSS19r.xml">
       <publishTime>08/29/2020 22:17:50</publishTime>
     </File>
     <File Include="XMLHeaders/MSS1o.xml">
-      <publishTime>05/26/2021 22:17:07</publishTime>
+      <publishTime>06/29/2021 21:38:56</publishTime>
     </File>
     <File Include="XMLHeaders/MSS1r.xml">
-      <publishTime>09/02/2020 20:30:10</publishTime>
+      <publishTime>06/29/2021 21:49:27</publishTime>
     </File>
     <File Include="XMLHeaders/MSS5o.xml">
       <publishTime>05/26/2021 22:31:37</publishTime>
     </File>
     <File Include="XMLHeaders/MSS5r.xml">
-      <publishTime>09/25/2020 19:00:52</publishTime>
+      <publishTime>06/29/2021 22:05:23</publishTime>
     </File>
     <File Include="XMLHeaders/oczc1.xml">
       <publishTime>05/30/2021 17:20:34</publishTime>

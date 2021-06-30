@@ -58,13 +58,134 @@ namespace Statystyki_2018
 
             Session["data_1"] = Date1.Date.ToShortDateString();
             Session["data_2"] = Date2.Date.ToShortDateString();
-            odswiez();
+            rysuj();
         }// end of Page_Load
+
+        protected void rysuj()
+        {
+            string idWydzialu = "'" + (string)Session["id_dzialu"] + "'";
+            //id_dzialu.Text = (string)Session["txt_dzialu"];
+
+            try
+            {
+                string idTabeli = string.Empty;
+                string idWiersza = string.Empty;
+                tablePlaceHolder.Dispose();
+                TablePlaceHolder2.Dispose();
+                TablePlaceHolder3.Dispose();
+                TablePlaceHolder4.Dispose();
+                TablePlaceHolder5.Dispose();
+
+                PlaceHolder1f.Dispose();
+                tablePlaceHolder.Controls.Clear();
+                TablePlaceHolder2.Controls.Clear();
+                TablePlaceHolder3.Controls.Clear();
+                TablePlaceHolder4.Controls.Clear();
+
+                TablePlaceHolder5.Controls.Clear();
+
+                TablePlaceHolder8.Controls.Clear();
+                DataTable tabela2 = ms.PustaTabelaDanychMSS();
+
+                //wypełnianie lebeli
+                string path = Server.MapPath("XMLHeaders") + "\\" + "MSS1o.xml";
+                Label tblControl = new Label { ID = "kod01" };
+                tblControl.Width = 1150;
+                Label tblControl2 = new Label { ID = "kod02" };
+                tblControl2.Width = 1150;
+                Label tblControl3 = new Label { ID = "kod03" };
+                tblControl3.Width = 1150;
+                Label tblControl4 = new Label { ID = "kod04" };
+                tblControl4.Width = 1150;
+                Label tblControl5 = new Label { ID = "kod05" };
+                tblControl5.Width = 1150;
+                Label tblControl7 = new Label { ID = "kod07" };
+                tblControl7.Width = 1150;
+                Label tblControl8 = new Label { ID = "kod08" };
+                tblControl8.Width = 1150;
+                Label tblControl9 = new Label { ID = "kod09" };
+                tblControl9.Width = 1150;
+                StringBuilder tabelaGlowna = new StringBuilder();
+                tabelaGlowna.Clear();
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.1.1", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.1.1.a", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.1.2", tabela2, tenPlik));
+
+                tblControl.Text = tabelaGlowna.ToString();
+                tablePlaceHolder.Controls.Clear();
+                tablePlaceHolder.Controls.Add(tblControl);
+                tabelaGlowna.Clear();
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.1.f", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.1.g", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.1.h", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.1.j", tabela2, tenPlik));
+                tblControl9.Text = tabelaGlowna.ToString();
+                PlaceHolder1f.Controls.Add(tblControl9);
+
+                tabelaGlowna.Clear();
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.1.z.z", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.1.z.z.z", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.1.3", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.2.1", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.2.2", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.3.a", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.3.b", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.3.c", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.3", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.4.1", tabela2, tenPlik));
+                //  tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.4.2", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "2.1.1", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "2.1.1.1", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "2.1.1.a", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "2.1.1.a.1", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "2.1.2", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "2.1.2.1", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "2.2", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "2.2.a", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "2.2.1", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "2.2.1.a", tabela2, tenPlik));
+
+                tblControl2.Text = tabelaGlowna.ToString();
+
+                TablePlaceHolder2.Controls.Add(tblControl2);
+                tabelaGlowna.Clear();
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "3", tabela2, tenPlik));
+                tblControl3.Text = tabelaGlowna.ToString();
+
+                TablePlaceHolder3.Controls.Add(tblControl3);
+
+                tabelaGlowna.Clear();
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "8.3", tabela2, tenPlik));
+                tblControl4.Text = tabelaGlowna.ToString();
+                TablePlaceHolder4.Controls.Add(tblControl4);
+                tabelaGlowna.Clear();
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.1.o.1", tabela2, tenPlik));
+                tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.1.o.2", tabela2, tenPlik));
+                tblControl5.Text = tabelaGlowna.ToString();
+                TablePlaceHolder5.Controls.Add(tblControl5);
+
+                TablePlaceHolder8.Controls.Clear();
+                TablePlaceHolder8.Controls.Add(new Label { Text = ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "7.1.a", tabela2, tenPlik) });
+
+                TablePlaceHolder8.Controls.Add(new Label { Text = ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "7.2", tabela2, tenPlik) });
+                TablePlaceHolder10.Controls.Clear();
+                TablePlaceHolder10.Controls.Add(new Label { Text = ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "10", tabela2, tenPlik) });
+
+                tablePlaceHolder.Dispose();
+                TablePlaceHolder2.Dispose();
+                TablePlaceHolder3.Dispose();
+                TablePlaceHolder4.Dispose();
+                TablePlaceHolder5.Dispose();
+            }
+            catch (Exception ex)
+            {
+                cm.log.Error(tenPlik + " " + ex.Message);
+            }
+        }
 
         protected void odswiez()
         {
-           
-
             string idWydzialu = "'" + (string)Session["id_dzialu"] + "'";
             //id_dzialu.Text = (string)Session["txt_dzialu"];
 
@@ -136,7 +257,7 @@ namespace Statystyki_2018
                 tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.3.c", tabela2, tenPlik));
                 tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.3", tabela2, tenPlik));
                 tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.4.1", tabela2, tenPlik));
-              //  tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.4.2", tabela2, tenPlik));
+                //  tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "1.4.2", tabela2, tenPlik));
                 tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "2.1.1", tabela2, tenPlik));
                 tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "2.1.1.1", tabela2, tenPlik));
                 tabelaGlowna.AppendLine(ms.odczytXML(path, int.Parse((string)Session["id_dzialu"]), "2.1.1.a", tabela2, tenPlik));
@@ -280,8 +401,6 @@ namespace Statystyki_2018
                 tab_1_1_e_w04_c01.Text = wyciagnijWartosc(tabela2, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'");
 
                 #endregion "1.1.e";
-
-             
 
                 #region "1.1.j";
 
@@ -588,8 +707,6 @@ namespace Statystyki_2018
                 idTabeli = "'1.1.z'";
                 idWiersza = "'1'";
                 tab_1_1_z_w01_c01.Text = wyciagnijWartosc(tabela2, "idWydzial=" + idWydzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'");
-
-             
 
                 #region "1.2.2";
 
@@ -1756,7 +1873,7 @@ namespace Statystyki_2018
                 if (!string.IsNullOrEmpty(idWydzialu))
                 {
                     DataTable tabela2 = ms.generuj_dane_do_tabeli_mss2(int.Parse((string)Session["id_dzialu"]), Date1.Date, Date2.Date, 40);
-                //    DataTable tabela2 = cl.generuj_dane_do_tabeli_mss2(int.Parse((string)Session["id_dzialu"]), Date1.Date, Date2.Date, 100, tenPlik); //dane
+                    //    DataTable tabela2 = cl.generuj_dane_do_tabeli_mss2(int.Parse((string)Session["id_dzialu"]), Date1.Date, Date2.Date, 100, tenPlik); //dane
                     var distinctRows = (from DataRow dRow in tabela2.Rows select dRow["idTabeli"]).Distinct(); //lista tabelek
                     DataTable listaTabelek = new DataTable();
                     listaTabelek.Columns.Add("tabela", typeof(string));

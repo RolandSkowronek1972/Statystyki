@@ -62,9 +62,57 @@ namespace Statystyki_2018
 
             Session["data_1"] = datyMSS.DataPoczatkowa();
             Session["data_2"] = datyMSS.DataKoncowa();
-            odswiez();
+            rysuj();
             makeLabels();
         }// end of Page_Load
+
+        protected void rysuj()
+        {
+            string id_dzialu = (string)Session["id_dzialu"];
+            Id_dzialu.Text = (string)Session["txt_dzialu"];
+            int idWydzialuNumerycznie = int.Parse((string)Session["id_dzialu"]);
+
+            try
+            {
+                string idTabeli = string.Empty;
+                string idWiersza = string.Empty;
+
+                DataTable tabela2 = ms.PustaTabelaDanychMSS();
+                //wypełnianie lebeli
+                tablePlaceHolder01.Controls.Clear();
+
+                string path = Server.MapPath("XMLHeaders") + "\\" + "MSS11r.xml";
+                string[] numeryTabel00 = new string[] { "1", "1.1.1", "1.1.1.1", "1.1.1.a", "1.1.1.b", "1.1.1.c", "1.1.2", "1.1.1.2" };
+                string[] numeryTabel01 = new string[] { "1.1.2.h" };
+                string[] numeryTabel02 = new string[] { "1.2.a.1", "1.2.a.2", "1.2.a", "1.2.1", "1.2.2", "1.3", "1.4", "2.1.1", "2.1.1.1", "2.1.1.a", "2.1.1.a.1", "2.1.2", "2.1.2.1", "2.2", "2.2.a", "2.2.1", "2.2.1.a", "2.3", "2.3.1", "3", "4.1", "4.2", "5.1", "5.2" };
+
+                ms.TworzTabelizListy(numeryTabel00, tablePlaceHolder01, path, tabela2, idWydzialuNumerycznie, tenPlik);
+                ms.TworzTabelizListy(numeryTabel01, tablePlaceHolder02, path, tabela2, idWydzialuNumerycznie, tenPlik);
+                ms.TworzTabelizListy(numeryTabel02, tablePlaceHolder03, path, tabela2, idWydzialuNumerycznie, tenPlik);
+
+                tablePlaceHolder01.Dispose();
+                tablePlaceHolder02.Dispose();
+                tablePlaceHolder03.Dispose();
+            }
+            catch (Exception ex)
+            {
+                cm.log.Error(tenPlik + " bład generowania tabel : " + ex.Message);
+            }
+
+            // dopasowanie opisów
+            makeLabels();
+
+            try
+            {
+                Label11.Visible = cl.debug(int.Parse(id_dzialu));
+            }
+            catch
+            {
+                Label11.Visible = false;
+            }
+
+            Label3.Text = ms.nazwaSadu((string)Session["id_dzialu"]);
+        }
 
         protected void odswiez()
         {
@@ -83,9 +131,9 @@ namespace Statystyki_2018
 
                 string path = Server.MapPath("XMLHeaders") + "\\" + "MSS11r.xml";
                 string[] numeryTabel00 = new string[] { "1", "1.1.1", "1.1.1.1", "1.1.1.a", "1.1.1.b", "1.1.1.c", "1.1.2", "1.1.1.2" };
-                string[] numeryTabel01 = new string[] {  "1.1.2.h"};
+                string[] numeryTabel01 = new string[] { "1.1.2.h" };
 
-                string[] numeryTabel02 = new string[] { "1.2.a.1", "1.2.a.2", "1.2.a", "1.2.1", "1.2.2", "1.3", "1.4", "2.1.1", "2.1.1.1", "2.1.1.a", "2.1.1.a.1", "2.1.2", "2.1.2.1", "2.2", "2.2.a", "2.2.1", "2.2.1.a", "2.3", "2.3.1", "3", "4.1", "4.2", "5.1" ,"5.2"};
+                string[] numeryTabel02 = new string[] { "1.2.a.1", "1.2.a.2", "1.2.a", "1.2.1", "1.2.2", "1.3", "1.4", "2.1.1", "2.1.1.1", "2.1.1.a", "2.1.1.a.1", "2.1.2", "2.1.2.1", "2.2", "2.2.a", "2.2.1", "2.2.1.a", "2.3", "2.3.1", "3", "4.1", "4.2", "5.1", "5.2" };
 
                 ms.TworzTabelizListy(numeryTabel00, tablePlaceHolder01, path, tabela2, idWydzialuNumerycznie, tenPlik);
                 ms.TworzTabelizListy(numeryTabel01, tablePlaceHolder02, path, tabela2, idWydzialuNumerycznie, tenPlik);
@@ -94,7 +142,7 @@ namespace Statystyki_2018
                 tablePlaceHolder01.Dispose();
                 tablePlaceHolder02.Dispose();
                 tablePlaceHolder03.Dispose();
-              
+
                 #region "tabela 1 - 1.1.2.a"
 
                 idTabeli = "'1.1.2.a'";
@@ -175,7 +223,6 @@ namespace Statystyki_2018
                 tab_112g_w05_c01.Text = wyciagnijWartosc(tabela2, "idWydzial=" + id_dzialu + " and idTabeli=" + idTabeli + " and idWiersza ='5' and idkolumny='1'");
 
                 #endregion "tabela 1 - 1.1.2.g"
-
 
                 #region "tabela 6"
 
@@ -660,6 +707,7 @@ namespace Statystyki_2018
                 tab_93_w03_c10.Text = wyciagnijWartosc(tabela2, "idWydzial=" + id_dzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='10'");
                 tab_93_w03_c11.Text = wyciagnijWartosc(tabela2, "idWydzial=" + id_dzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='11'");
                 tab_93_w03_c12.Text = wyciagnijWartosc(tabela2, "idWydzial=" + id_dzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='12'");
+
                 #endregion "tabela 9.3"
 
                 #region "tabela 10.1"
@@ -825,7 +873,7 @@ namespace Statystyki_2018
                 if (!string.IsNullOrEmpty(idWydzialu))
                 {
                     DataTable tabela2 = ms.generuj_dane_do_tabeli_mss2(int.Parse((string)Session["id_dzialu"]), Date1.Date, Date2.Date, 21);
-                //    DataTable tabela2 = cl.generuj_dane_do_tabeli_mss2(int.Parse((string)Session["id_dzialu"]), Date1.Date, Date2.Date, 21, tenPlik); //dane
+                    //    DataTable tabela2 = cl.generuj_dane_do_tabeli_mss2(int.Parse((string)Session["id_dzialu"]), Date1.Date, Date2.Date, 21, tenPlik); //dane
                     var distinctRows = (from DataRow dRow in tabela2.Rows select dRow["idTabeli"]).Distinct(); //lista tabelek
                     DataTable listaTabelek = new DataTable();
                     listaTabelek.Columns.Add("tabela", typeof(string));

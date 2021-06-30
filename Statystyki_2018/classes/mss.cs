@@ -171,6 +171,16 @@ namespace Statystyki_2018
             return "";
         }
 
+        public DataTable PustaTabelaDanychMSS()
+        {
+            DataTable tabela2 = new DataTable();
+            tabela2.Columns.Add("idWydzial", typeof(string));
+            tabela2.Columns.Add("idTabeli", typeof(string));
+            tabela2.Columns.Add("idWiersza", typeof(string));
+            tabela2.Columns.Add("idKolumny", typeof(string));
+            tabela2.Columns.Add("wartosc", typeof(string));
+            return tabela2;
+        }
         public DataTable generuj_dane_do_tabeli_mss2(int id_dzialu, DateTime poczatek, DateTime koniec, int il_kolumn)
         {
             //log.Info("mss: rozpoczęcie popmpowania danych");
@@ -362,16 +372,21 @@ namespace Statystyki_2018
                             string line = string.Empty;
                             //output.AppendLine("Id formularza;Okres;Sąd;Wydział ;Dział;Wiersz;Kolumna;Liczba");
                             //   string line = idRaportu.Text  + ";" + Date1.Date.ToShortDateString().Year.ToString() + Date1.Date.Month.ToString("D2") + ";" + idSad.Text.Trim() + ";" + idSad.Text.Trim() + (string)Session["id_dzialu"] + ";" + idTabeli + ";" + idWiersza + ";" + idKolumny + ";" + wartosc ;
+                        //    wartosc = wartosc.Replace(",", ".");
                             try
                             {
-                                if (int.Parse(wartosc) != 0)
+                                if (double.Parse(wartosc) != 0)
                                 {
                                     line = idRaportu + ";" + druga + ";" + idsadu + ";" + idWydzialu + ";" + idTabeli + ";" + idWiersza + ";" + idKolumny + ";" + wartosc;
                                 }
                             }
                             catch (Exception ecc)
                             {
-                                log.Error("MSS raportTXT 2: " + ecc.Message);
+                                if (wartosc.Length>0)
+                                {
+                                    line = idRaportu + ";" + druga + ";" + idsadu + ";" + idWydzialu + ";" + idTabeli + ";" + idWiersza + ";" + idKolumny + ";" + wartosc;
+                                }
+                                ///log.Error("MSS raportTXT 2: " + ecc.Message);
                             }
 
                             if (string.IsNullOrEmpty(line) == false)

@@ -192,7 +192,7 @@ namespace Statystyki_2018
             // zapis do bazy
             parametry = cm.makeParameterTable();
             parametry.Rows.Add("@rodzaj", rodzaj);
-            DataTable kwerendaZapisujaca = cm.getDataTable("SELECT distinct kwerendaOdczytujaca,  connection FROM wymiana where rodzaj = @rodzaj and typ=2", cm.con_str, parametry, "wymiana cleint: kwerendaZapisujaca");
+            DataTable kwerendaZapisujaca = cm.getDataTable("SELECT distinct kwerendaOdczytujaca,  connection FROM wymiana where rodzaj = @rodzaj and typ=2", cm.con_str, parametry, "wymiana 1 client: kwerendaZapisujaca");
             if (kwerendaZapisujaca == null)
             {
                 log.Error("Wymiana odczyt danych: Brak kwerendy Zapisującej zapytanie po stronie klienta - rodzaj=2");
@@ -370,6 +370,8 @@ namespace Statystyki_2018
             //  serwisWymianySoapClient.Endpoint.Address = endpointAddress;
 
             DataTable wynik = new DataTable();
+            string odpowiedz = string.Empty;
+
             try
             {
                 wynik = serwisWymianySoapClient.DaneWXml(TBNrWydzialu.Text.Trim(), TBRepertorium.Text.Trim(), int.Parse(TBNrSprawy.Text.Trim()), rodzaj, CSkwerendyZapytujacej, int.Parse(lbRok.SelectedItem.Text.Trim()), kwerendaZapytujaca);

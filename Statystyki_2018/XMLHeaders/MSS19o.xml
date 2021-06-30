@@ -4121,7 +4121,7 @@
       <tekstNadTabela> Struktura wpływu spraw</tekstNadTabela>
       <iloscWierszyNaglowka>3</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>3</iloscKolumnPrzedIteracja>
-      <iloscKolumnPoIteracji>10</iloscKolumnPoIteracji>
+      <iloscKolumnPoIteracji>11</iloscKolumnPoIteracji>
       <lp>1</lp>
       <identyfikatorTabeli>1.1.h.1</identyfikatorTabeli>
     </daneTabeli>
@@ -4138,7 +4138,7 @@
       <komorka>
         <wiersz>1</wiersz>
         <kolumna>2</kolumna>
-        <colSpan>10</colSpan>
+        <colSpan>11</colSpan>
         <rowspan>1</rowspan>
         <style>center </style>
         <text>Repertorium/wykaz</text>
@@ -4179,7 +4179,7 @@
       <komorka>
         <wiersz>2</wiersz>
         <kolumna>7</kolumna>
-        <colSpan>2</colSpan>
+        <colSpan>3</colSpan>
         <rowspan>1</rowspan>
         <style>center </style>
         <text>w tym </text>
@@ -4241,6 +4241,14 @@
         <rowspan>1</rowspan>
         <style>center col_80_fest</style>
         <text>Gz</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>9</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_80_fest</style>
+        <text>Zs</text>
       </komorka>
     </naglowek>
 
@@ -4520,7 +4528,7 @@
       <tekstNadTabela>Struktura załatwień spraw</tekstNadTabela>
       <iloscWierszyNaglowka>3</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>3</iloscKolumnPrzedIteracja>
-      <iloscKolumnPoIteracji>10</iloscKolumnPoIteracji>
+      <iloscKolumnPoIteracji>11</iloscKolumnPoIteracji>
       <lp>1</lp>
       <identyfikatorTabeli>1.1.h.2</identyfikatorTabeli>
     </daneTabeli>
@@ -4537,7 +4545,7 @@
       <komorka>
         <wiersz>1</wiersz>
         <kolumna>2</kolumna>
-        <colSpan>10</colSpan>
+        <colSpan>11</colSpan>
         <rowspan>1</rowspan>
         <style>center </style>
         <text>Repertorium/wykaz</text>
@@ -4578,7 +4586,7 @@
       <komorka>
         <wiersz>2</wiersz>
         <kolumna>7</kolumna>
-        <colSpan>2</colSpan>
+        <colSpan>3</colSpan>
         <rowspan>1</rowspan>
         <style>center </style>
         <text>w tym </text>
@@ -4641,7 +4649,16 @@
         <style>center col_80_fest</style>
         <text>Gz</text>
       </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>9</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>1</rowspan>
+        <style>center col_80_fest</style>
+        <text>Zs</text>
+      </komorka>
     </naglowek>
+
 
     <tablaBoczna>
       <komorka>
@@ -5243,7 +5260,7 @@
 
       <iloscWierszy>2</iloscWierszy>
       <tekstNadTabela>
-        Skład orzekający w sprawach Ga iGz
+        Skład orzekający w sprawach Ga i Zs
       </tekstNadTabela>
       <iloscWierszyNaglowka>3</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>1</iloscKolumnPrzedIteracja>

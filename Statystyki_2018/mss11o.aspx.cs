@@ -65,10 +65,141 @@ namespace Statystyki_2018
                 Date2.Date = DateTime.Parse(datyMSS.DataKoncowa());
             }
 
-            odswierz();
+            rysuj();
             makeLabels();
         }// end of Page_Load
 
+         protected void rysuj()
+        {
+            string idWydzialu = "'" + (string)Session["id_dzialu"] + "'";
+            id_dzialu.Text = (string)Session["txt_dzialu"];
+
+            try
+            {
+                string path = Server.MapPath("XMLHeaders") + "\\" + "MSS11o.xml";
+                string idTabeli = string.Empty;
+                string idWiersza = string.Empty;
+
+                int idWydzialuNumerycznie = int.Parse((string)Session["id_dzialu"]);
+                tablePlaceHolder.Controls.Clear();
+                tablePlaceHolder01.Controls.Clear();
+                tablePlaceHolder02.Controls.Clear();
+                tablePlaceHolder03.Controls.Clear();
+                tablePlaceHolder04.Controls.Clear();
+                DataTable tabelaDanych = ms.PustaTabelaDanychMSS();
+                //wypełnianie lebeli
+
+                string[] numeryTabel00 = new string[] { "1.3.a", "1.3.b", "1.3.c", };
+                string[] numeryTabel01 = new string[] { "7.1.a" };
+
+           
+
+                ms.TworzTabelizListy(numeryTabel00, tablePlaceHolder01, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
+                ms.TworzTabelizListy(numeryTabel01, tablePlaceHolder03, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
+
+                Label tblControl = new Label { ID = "kod01" };
+                tblControl.Width = 1150;
+                StringBuilder tabelaGlowna = new StringBuilder();
+                tabelaGlowna.Clear();
+
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1", naglowekTabeliDzialu_1(), tabelaBocznaDzialu_1(), tabelaDanych, 1, 3, 1, 4, idWydzialuNumerycznie, false, "Ewidencja spraw z zakresu prawa pracy i ubezpieczeń społecznych – ogółem I i II instancja", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.1.1.1", naglowekTabeliDzialu_1_1_1_1(), tabelaBocznaDzialu_1_1_1_1(), tabelaDanych, 4, 43, 4, 16, idWydzialuNumerycznie, true, "Ewidencja spraw z zakresu ubezpieczeń społecznych – ogółem I instancja", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.1.1.1.a", naglowekTabeliDzialu_1_1_1_1_a(), tabelaBocznaDzialu_1_1_1_1_a(), tabelaDanych, 3, 1, 1, 11, idWydzialuNumerycznie, true, "Ewidencja spraw z zakresu ubezpieczeń społecznych I instancja – zażaleniowe", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.1.1.2", naglowekTabeliDzialu_1_1_1_2(), tabelaBocznaDzialu_1_1_1_2(), tabelaDanych, 4, 22, 2, 15, idWydzialuNumerycznie, true, "Ewidencja spraw z zakresu ubezpieczeń społecznych – II instancja", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.1.a", naglowekTabeliDzialu_1_1_a(), tabelaBocznaDzialu_1_1_a(), tabelaDanych, 1, 7, 2, 1, idWydzialuNumerycznie, false, "Ewidencja spraw z zakresu ubezpieczeń społecznych – II instancja", tenPlik));
+                //   tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.1.b", naglowekTabeliDzialu_1_1_b(), tabelaBocznaDzialu_1_1_b(), tabelaDanych, 1, 3, 1, 4, idWydzialuNumerycznie, false, "Zażalenia w ramach właściwości poziomej (dotyczy dz. 1.1.1.2, w. 2 i 15 lit. b)", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.1.c", naglowekTabeliDzialu_1_1_c(), tabelaBocznaDzialu_1_1_c(), tabelaDanych, 1, 9, 2, 1, idWydzialuNumerycznie, false, "W tym: (skarga kasacyjna) (dział 1.1.1.2. wiersz 17 kol. 3 lit. c)", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.1.d", naglowekTabeliDzialu_1_1_d(), tabelaBocznaDzialu_1_1_d(), tabelaDanych, 1, 8, 4, 1, idWydzialuNumerycznie, false, "(łącznie I i II instancja) - (Dział 1.1.1.1. wiersz 43 + Dział 1.1.1.2. wiersz 21 kolumna 3 lit. d) w tym", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.1.e", naglowekTabeliDzialu_1_1_e(), tabelaBocznaDzialu_1_1_e(), tabelaDanych, 4, 10, 1, 15, idWydzialuNumerycznie, false, "Ewidencja spraw z zakresu ubezpieczeń społecznych – wg podmiotów", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.1.2.1", naglowekTabeliDzialu_1_1_2_1(), tabelaBocznaDzialu_1_1_2_1(), tabelaDanych, 5, 86, 4, 15, idWydzialuNumerycznie, true, "Ewidencja spraw z zakresu prawa pracy – ogółem I instancja", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.1.2.1.a", naglowekTabeliDzialu_1_1_2_1_a(), tabelaBocznaDzialu_1_1_2_1_a(), tabelaDanych, 3, 1, 1, 11, idWydzialuNumerycznie, true, "Ewidencja spraw z zakresu prawa pracy I instancja – zażaleniowe", tenPlik));
+
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.1.2.2", naglowekTabeliDzialu_1_1_2_2(), tabelaBocznaDzialu_1_1_2_2(), tabelaDanych, 5, 100, 7, 15, idWydzialuNumerycznie, true, "Ewidencja spraw z zakresu prawa pracy – II instancja", tenPlik));
+
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.1.3.a", "<b>Dział 1.1.3.a</b> Wpływ spraw (liczba), w których z roszczeniem wystąpiła większa grupa pracowników (co najmniej 10 pracowników) (Dział 1.1.2.1. wiersz 03 kol. 2 lit. a)", tabelaDanych, idWydzialuNumerycznie, tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.1.3.b", "<b>Dział 1.1.3.b</b> Załatwiono spraw (liczba), w których z roszczeniem wystąpiła większa grupa pracowników (co najmniej 10 pracowników) (dział 1.1.2.1. wiersz 03 kol. 3 lit. b)", tabelaDanych, idWydzialuNumerycznie, tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.1.3.c", naglowekTabeliDzialu_1_1_3_c(), tabelaBocznaDzialu_1_1_3_c(), tabelaDanych, 2, 3, 2, 2, idWydzialuNumerycznie, true, "Ewidencja spraw z zakresu prawa pracy –ogółem oraz I instancja", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.1.3.d", naglowekTabeliDzialu_1_1_3_d(), tabelaBocznaDzialu_1_1_3_d(), tabelaDanych, 1, 7, 2, 1, idWydzialuNumerycznie, true, "Dział 1.1.3.d. W tym: (skargi o stwierdzenie niezgodności z prawem łącznie I i II instancja) (dział 1.1.2.1 w. 85 kol. 3 + dział 1.1.2.2 w. 96 kol. 3 lit. d)    ", tenPlik));
+                //    tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.1.3.e", naglowekTabeliDzialu_1_1_3_e(), tabelaBocznaDzialu_1_1_3_e(), tabelaDanych, 1, 3, 1, 4, idWydzialuNumerycznie, true, "W tym: (skargi o stwierdzenie niezgodności z prawem łącznie I i II instancja) (dział 1.1.2.1 w. 85 kol. 3 + dział 1.1.2.2 w. 96 kol. 3 lit. d)    ", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.1.3.f", naglowekTabeliDzialu_1_1_3_f(), tabelaBocznaDzialu_1_1_3_f(), tabelaDanych, 1, 9, 2, 1, idWydzialuNumerycznie, true, "W tym: (skargi kasacyjne)  (dział 1.1.2.2. wiersz 97 kol. 3 lit. f)", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.1.3.g", naglowekTabeliDzialu_1_1_3_g(), tabelaBocznaDzialu_1_1_3_g(), tabelaDanych, 2, 18, 4, 3, idWydzialuNumerycznie, true, "Sprawy mediacyjne", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.1.3.h", naglowekTabeliDzialu_1_1_3_h(), tabelaBocznaDzialu_1_1_3_h(), tabelaDanych, 3, 1, 1, 5, idWydzialuNumerycznie, true, "W tym: (skargi kasacyjne)  (dział 1.1.2.2. wiersz 95 kol. 3 lit. f)", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.1.3.i", "<b>Dział 1.1.3.i</b> Liczba wyznaczonych ławników (osoby)", tabelaDanych, idWydzialuNumerycznie, tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.1.3.j", naglowekTabeliDzialu_1_1_3_j(), tabelaBocznaDzialu_1_1_3_j(), tabelaDanych, 1, 5, 2, 1, idWydzialuNumerycznie, true, "w tym w wyniku sprzeciwu od nakazu wydanego w elektronicznym postępowaniu upominawczym(dz.1.1.2.1.w. 03 kol. 2, 3, 4, 5)", tenPlik));
+
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.1.3.k", naglowekTabeliDzialu_1_1_3_k(), tabelaBocznaDzialu_1_1_3_k(), tabelaDanych, 1, 8, 4, 1, idWydzialuNumerycznie, true, "(łącznie I i II instancja) - (Dział 1.1.2.1. wiersz 86 + Dział 1.1.2.2. wiersz 99 kolumna 3 lit. k) w tym", tenPlik));
+
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.1.4", naglowekTabeliDzialu_1_1_4(), tabelaBocznaDzialu_1_1_4(), tabelaDanych, 1, 4, 1, 3, idWydzialuNumerycznie, true, "Ustanowienie pełnomocnika z urzędu  ", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.1.5.a", naglowekTabeliDzialu_1_1_5_a(), tabelaBocznaDzialu_1_1_5_a(), tabelaDanych, 3, 29, 3, 18, idWydzialuNumerycznie, true, "Struktura wpływu spraw", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.1.5.b", naglowekTabeliDzialu_1_1_5_b(), tabelaBocznaDzialu_1_1_5_b(), tabelaDanych, 3, 32, 3, 18, idWydzialuNumerycznie, true, "Struktura załatwień spraw", tenPlik));
+
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.2.1", naglowekTabeliDzialu_1_2_1(), tabelaBocznaDzialu_1_2_1(), tabelaDanych, 4, 22, 1, 40, idWydzialuNumerycznie, true, "Liczba sesji i wyznaczonych spraw", tenPlik));
+
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.2.2", naglowekTabeliDzialu_1_2_2(), tabelaBocznaDzialu_1_2_2(), tabelaDanych, 4, 64, 3, 40, idWydzialuNumerycznie, true, "Liczba sesji odbytych i załatwionych spraw ", tenPlik));
+
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.3", naglowekTabeliDzialu_1_3(), tabelaBocznaDzialu_1_3(), tabelaDanych, 2, 6, 1, 10, idWydzialuNumerycznie, true, "Załatwienie spraw przez referendarzy", tenPlik));
+                tblControl.Text = tabelaGlowna.ToString();
+                tablePlaceHolder.Controls.Clear();
+                tablePlaceHolder.Controls.Add(tblControl);
+                tabelaGlowna.Clear();
+
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("1.4.1", naglowekTabeliDzialu_1_4(), tabelaBocznaDzialu_1_4(), tabelaDanych, 3, 27, 3, 14, idWydzialuNumerycznie, true, "Terminowość sporządzania uzasadnień (od dnia wpływu do właściwego sądu wniosku o doręczenie wyroku z uzasadnieniem, a jeżeli wniosek był dotknięty brakami - od dnia usunięcia tych braków)", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("2.1.1", naglowekTabeliDzialu_2_1_1(), tabelaBocznaDzialu_2_1_1(), tabelaDanych, 2, 15, 3, 11, idWydzialuNumerycznie, true, "Sprawy od dnia pierwotnego wpisu do repertorium  (łącznie z czasem trwania mediacji)", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("2.1.1.1", naglowekTabeliDzialu_2_1_1_1(), tabelaBocznaDzialu_2_1_1_1(), tabelaDanych, 2, 15, 3, 11, idWydzialuNumerycznie, true, "Sprawy od dnia pierwotnego wpisu do repertorium (bez czasu trwania mediacji w sprawach wszczętych po 1 stycznia 2016r.)", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("2.1.1.a", naglowekTabeliDzialu_2_1_1_1_a(), tabelaBocznaDzialu_2_1_1_1_a_1(), tabelaDanych, 2, 11, 3, 11, idWydzialuNumerycznie, true, "Sprawy zawieszone nie zakreślone od dnia pierwotnego wpisu do repertorium (wykazane w dziale 2.1.1.) (łącznie z czasem trwania mediacji)", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("2.1.1.a.1", naglowekTabeliDzialu_2_1_1_1_a_1(), tabelaBocznaDzialu_2_1_1_1_a_1(), tabelaDanych, 2, 11, 3, 11, idWydzialuNumerycznie, true, "Sprawy zawieszone nie zakreślone od dnia pierwotnego wpisu do repertorium (wykazane w dziale 2.1.1.) (bez czasu trwania mediacji w sprawach wszczętych po 1 stycznia 2016r.)", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("2.1.2", naglowekTabeliDzialu_2_1_2(), tabelaBocznaDzialu_2_1_2(), tabelaDanych, 2, 11, 3, 11, idWydzialuNumerycznie, true, "Liczba spraw zakreślonych w urządzeniu ewidencyjnym w wyniku zawieszenia postępowania(łącznie z czasem trwania mediacji)", tenPlik));
+
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("2.1.2.1", naglowekTabeliDzialu_2_1_2_1(), tabelaBocznaDzialu_2_1_2_1(), tabelaDanych, 2, 11, 3, 11, idWydzialuNumerycznie, true, "Liczba spraw zakreślonych w urządzeniu ewidencyjnym w wyniku zawieszenia postępowania (bez czasu trwania mediacji w sprawach wszczętych po 1 stycznia 2016r.)", tenPlik));
+
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("2.2", naglowekTabeliDzialu_2_2(), tabelaBocznaDzialu_2_2(), tabelaDanych, 1, 19, 3, 9, idWydzialuNumerycznie, true, "Czas trwania postępowania sądowego (w sądzie okręgowym I instancji - od dnia pierwszej rejestracji w sądzie I instancji do uprawomocnienia się sprawy w I instancji a w sądzie okręgowym II instancji od dnia pierwszej rejestracji w sądzie rejonowym (I instancji) do dnia wydania orzeczenia w sądzie okręgowym II instancji lub od dnia wpływu sprawy do sądu okręgowego (II instancji do dnia wydania orzeczenia w II instancji)) (łącznie z czasem trwania mediacji)", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("2.2.a", naglowekTabeliDzialu_2_2_a(), tabelaBocznaDzialu_2_2_a(), tabelaDanych, 1, 19, 3, 9, idWydzialuNumerycznie, true, "Czas trwania postępowania sądowego (w sądzie okręgowym I instancji - od dnia pierwszej rejestracji w sądzie I instancji do uprawomocnienia się sprawy merytorycznie zakończonej (wyrokiem, orzeczeniem) w I instancji a w sądzie okręgowym II instancji od dnia pierwszej rejestracji w sądzie rejonowym (I instancji) do dnia wydania orzeczenia merytorycznie kończącego sprawę (wyrokiem, orzeczeniem) w sądzie okręgowym II instancji lub od dnia wpływu sprawy do sądu okręgowego (II instancji do dnia wydania orzeczenia w II instancji)) (łącznie z czasem trwania mediacji)", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("2.2.1", naglowekTabeliDzialu_2_2_1(), tabelaBocznaDzialu_2_2_1(), tabelaDanych, 1, 19, 3, 9, idWydzialuNumerycznie, true, "Czas trwania postępowania sądowego (w sądzie okręgowym I instancji - od dnia pierwszej rejestracji w sądzie I instancji do uprawomocnienia się sprawy w I instancji a w sądzie okręgowym II instancji od dnia pierwszej rejestracji w sądzie rejonowym (I instancji) do dnia wydania orzeczenia w sądzie okręgowym II instancji lub od dnia wpływu sprawy do sądu okręgowego (II instancji do dnia wydania orzeczenia w II instancji)) (dok.) (bez czasu trwania mediacji w sprawach wszczętych po 1 stycznia 2016r.)", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("2.2.1.a", naglowekTabeliDzialu_2_2_1_a(), tabelaBocznaDzialu_2_2_1_a(), tabelaDanych, 1, 19, 3, 9, idWydzialuNumerycznie, true, "Czas trwania postępowania sądowego (w sądzie okręgowym I instancji - od dnia pierwszej rejestracji w sądzie I instancji do uprawomocnienia się sprawy merytorycznie zakończonej (wyrokiem, orzeczeniem) w I instancji a w sądzie okręgowym II instancji od dnia pierwszej rejestracji w sądzie rejonowym (I instancji) do dnia wydania orzeczenia merytorycznie kończącego sprawę (wyrokiem, orzeczeniem) w sądzie okręgowym II instancji lub od dnia wpływu sprawy do sądu okręgowego (II instancji do dnia wydania orzeczenia w II instancji)) (bez czasu trwania mediacji w sprawach wszczętych po 1 stycznia 2016r.)", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("2.3", naglowekTabeliDzialu_2_3(), tabelaBocznaDzialu_2_3(), tabelaDanych, 1, 3, 2, 7, idWydzialuNumerycznie, true, "Czas trwania wszystkich mediacji w sprawie od dnia wydania postanowienia o skierowaniu stron do mediacji do dnia zakończenia mediacji ", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("2.3.1", naglowekTabeliDzialu_2_3_1(), tabelaBocznaDzialu_2_3_1(), tabelaDanych, 1, 3, 2, 7, idWydzialuNumerycznie, true, "Czas trwania mediacji niezakończonych w sprawie od dnia wydania postanowienia o skierowaniu stron do mediacji do ostatniego dnia okresu sprawozdawczego", tenPlik));
+
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("3", naglowekTabeliDzialu_3(), tabelaBocznaDzialu_3(), tabelaDanych, 2, 10, 2, 8, idWydzialuNumerycznie, true, "Wyznaczenie pierwszej rozprawy/posiedzenia spraw (od dnia wpływu/wpisu sprawy, wraz ze sprawami zawieszonymi poprzednio zakreślonymi, do dnia, w którym odbyła się pierwsza rozprawa/posiedzenie) ", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("3.1.a", naglowekTabeliDzialu_3_1_a(), tabelaBocznaDzialu_3_1_a(), tabelaDanych, 2, 2, 1, 7, idWydzialuNumerycznie, true, "Terminowość postępowania międzyinstancyjnego  w pierwszej instancji", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("3.1.b", naglowekTabeliDzialu_3_1_b(), tabelaBocznaDzialu_3_1_b(), tabelaDanych, 2, 4, 1, 7, idWydzialuNumerycznie, true, "Terminowość obiegu międzyinstancyjnego spraw odwoławczych (Ua, Uz, Pa,Pz)", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("3.2", naglowekTabeliDzialu_3_2(), tabelaBocznaDzialu_3_2(), tabelaDanych, 2, 4, 1, 7, idWydzialuNumerycznie, true, "Liczba spraw, w których po wydaniu orzeczenia sądu odwoławczego akta zwrócono sądowi I instancji", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("4.1", naglowekTabeliDzialu_4_1(), tabelaBocznaDzialu_4_1(), tabelaDanych, 4, 24, 3, 13, idWydzialuNumerycznie, true, "Szczegółowe rozliczenie skargi (Wykaz S)", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("4.2", naglowekTabeliDzialu_4_2(), tabelaBocznaDzialu_4_2(), tabelaDanych, 2, 2, 1, 7, idWydzialuNumerycznie, true, "Szczegółowe rozliczenie skargi (Wykaz S)", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("5", naglowekTabeliDzialu_5(), tabelaBocznaDzialu_5(), tabelaDanych, 4, 22, 5, 10, idWydzialuNumerycznie, true, "Prawomocnie zasądzone odszkodowania i zadośćuczynienia (w okresie sprawozdawczym)", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("6", naglowekTabeliDzialu_6(), tabelaBocznaDzialu_6(), tabelaDanych, 2, 24, 3, 7, idWydzialuNumerycznie, true, "Sprawy z zakresu prawa pracy i ubezpieczeń społecznych (wielotomowe)", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("7.1", naglowekTabeliDzialu_7_1(), tabelaBocznaDzialu_7_1(), tabelaDanych, 1, 4, 1, 38, idWydzialuNumerycznie, true, "Obsada Sądu (Wydziału) ", tenPlik));
+
+                Label tblControl2 = new Label { ID = "kod02" };
+                tblControl2.Width = 1150;
+                tblControl2.Text = tabelaGlowna.ToString();
+                tablePlaceHolder02.Controls.Clear();
+                tablePlaceHolder02.Controls.Add(tblControl2);
+                tabelaGlowna.Clear();
+
+
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("7.2", naglowekTabeliDzialu_7_2(), tabelaBocznaDzialu_7_2(), tabelaDanych, 1, 13, 3, 7, idWydzialuNumerycznie, true, "Obsada Sądu (Wydziału)", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("8.a", naglowekTabeliDzialu_8_a(), tabelaBocznaDzialu_8_a(), tabelaDanych, 3, 28, 2, 5, idWydzialuNumerycznie, true, "Dyskryminacja w zatrudnieniu (dane dotyczą osób poszkodowanych) 1) ", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("9.1", naglowekTabeliDzialu_9_1(), tabelaBocznaDzialu_9_1(), tabelaDanych, 2, 7, 2, 4, idWydzialuNumerycznie, true, "Liczba biegłych/podmiotów wydających opinie w sprawach  (z wył. tłumaczy przysięgłych) ", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("9.2", naglowekTabeliDzialu_9_2(), tabelaBocznaDzialu_9_2(), tabelaDanych, 3, 7, 2, 8, idWydzialuNumerycznie, true, "Terminowość sporządzania opinii pisemnych (z wył. tłumaczy przysięgłych)", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("9.3", naglowekTabeliDzialu_9_3(), tabelaBocznaDzialu_9_3(), tabelaDanych, 2, 7, 2, 12, idWydzialuNumerycznie, true, "Terminowość przyznawania wynagrodzeń za sporządzenie opinii pisemnych i ustnych oraz za stawiennictwo (z wył. tłumaczy przysięgłych)", tenPlik));
+                tabelaGlowna.AppendLine(ms.tworztabeleMSS("10.1", "<b>Dział 10.1</b> Liczba powołań tłumaczy  ", tabelaDanych, idWydzialuNumerycznie, tenPlik));
+
+                Label tblControl3 = new Label { ID = "kod03" };
+                tblControl3.Width = 1150;
+                tblControl3.Text = tabelaGlowna.ToString();
+                tablePlaceHolder04.Controls.Clear();
+                tablePlaceHolder04.Controls.Add(tblControl3);
+
+
+              
+
+            
+            }
+            catch (Exception ex)
+            {
+                cm.log.Error("MSS 11o Error: " + ex.Message);
+            }
+        }
         protected void odswierz()
         {
             string idWydzialu = "'" + (string)Session["id_dzialu"] + "'";

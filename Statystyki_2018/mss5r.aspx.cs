@@ -81,9 +81,71 @@ namespace Statystyki_2018
 
             Session["data_1"] = Date1.Date.ToShortDateString();
             Session["data_2"] = Date2.Date.ToShortDateString();
-            odswiez();
+            rysuj();
             makeLabels();
         }// end of Page_Load
+
+        protected void rysuj()
+        {
+            string yyx = (string)Session["id_dzialu"];
+            string idWydzialu = (string)Session["id_dzialu"];
+            id_dzialu.Text = (string)Session["txt_dzialu"];
+            string txt = string.Empty;
+            int idWydzialuNumerycznie = int.Parse((string)Session["id_dzialu"]);
+            try
+            {
+                string idTabeli = string.Empty;
+                string idWiersza = string.Empty;
+
+                DataTable tabelaDanych = ms.PustaTabelaDanychMSS();
+
+                string path = Server.MapPath("XMLHeaders") + "\\" + "MSS5r.xml";
+                string[] numeryTabel00 = new string[] { "1.1.1",  "1.1.2", "1.1.b", "1.1.d.1", "1.1.d.2" };
+                string[] numeryTabel01 = new string[] { "1.1.d.1", "1.1.d.2" };
+                string[] numeryTabel02 = new string[] { "1.1.i", "1.1.j" };
+                string[] numeryTabel03 = new string[] { "1.1.p" };
+                string[] numeryTabel04 = new string[] { "1.1.8", "1.2.1", "1.2.2", "1.3.b", "1.3.1", "2.1.1", "2.1.1.a", "2.1.2", "2.2", "2.2.a", "3", "3.1", "4.1" };
+                // string[] numeryTabel04 = new string[] {  };
+                string[] numeryTabel05 = new string[] { "8" };
+                string[] numeryTabel06 = new string[] { "9.1", "9.1.a", "9.2" };
+                string[] numeryTabel07 = new string[] { "11.3" };
+                //    string[] numeryTabel05 = new string[] { "7.3" };
+                try
+                {
+                    cm.log.Info(tenPlik + ": Generowanie tabel z xml sekcja tablePlaceHolder01");
+                    ms.TworzTabelizListy(numeryTabel00, tablePlaceHolder01, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
+                    ms.TworzTabelizListy(numeryTabel02, tablePlaceHolder02, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
+                    ms.TworzTabelizListy(numeryTabel03, tablePlaceHolder03, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
+                    ms.TworzTabelizListy(numeryTabel04, tablePlaceHolder04, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
+                    ms.TworzTabelizListy(numeryTabel05, tablePlaceHolder06, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
+                    ms.TworzTabelizListy(numeryTabel06, tablePlaceHolder07, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
+                    ms.TworzTabelizListy(numeryTabel07, tablePlaceHolder08, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
+                }
+                catch (Exception ex)
+                {
+                    cm.log.Error(tenPlik + ": Generowanie tabel z xml tablePlaceHolder01" + ex.Message);
+                }
+            }
+            catch (Exception ex)
+            {
+                cm.log.Error(tenPlik + " " + ex.Message);
+            }
+
+            // dopasowanie opisów
+            makeLabels();
+
+            try
+            {
+                Label11.Visible = cl.debug(int.Parse(yyx));
+            }
+            catch
+            {
+                Label11.Visible = false;
+            }
+
+            Label11.Text = txt;
+            //Label3.Text = ms.nazwaSadu((string)Session["id_dzialu"]);
+        }
 
         protected void odswiez()
         {
@@ -98,88 +160,34 @@ namespace Statystyki_2018
                 string idWiersza = string.Empty;
 
                 DataTable tabela2 = ms.generuj_dane_do_tabeli_mss2(int.Parse((string)Session["id_dzialu"]), Date1.Date, Date2.Date, 21);
+
+                string path = Server.MapPath("XMLHeaders") + "\\" + "MSS5r.xml";
+                string[] numeryTabel00 = new string[] { "1.1.1", "1.1.1.a", "1.1.2", "1.1.b", "1.1.d.1", "1.1.d.2" };
+                string[] numeryTabel01 = new string[] { "1.1.d.1", "1.1.d.2" };
+                string[] numeryTabel02 = new string[] { "1.1.i", "1.1.j" };
+                string[] numeryTabel03 = new string[] { "1.1.p" };
+                string[] numeryTabel04 = new string[] { "1.1.8", "1.2.1", "1.2.2", "1.3.b", "1.3.1", "2.1.1", "2.1.1.a", "2.1.2", "2.2", "2.2.a", "3", "3.1", "4.1" };
+                // string[] numeryTabel04 = new string[] {  };
+                string[] numeryTabel05 = new string[] { "8" };
+                string[] numeryTabel06 = new string[] { "9.1", "9.1.a", "9.2" };
+                string[] numeryTabel07 = new string[] { "11.3" };
+                //    string[] numeryTabel05 = new string[] { "7.3" };
                 try
                 {
-                    string path = Server.MapPath("XMLHeaders") + "\\" + "MSS5r.xml";
-                    string[] numeryTabel00 = new string[] { "1.1.1", "1.1.1.a" };
-                    string[] numeryTabel01 = new string[] { "1.1.i", "1.1.j" };
-                    string[] numeryTabel02 = new string[] { "1.1.p" };
-                    string[] numeryTabel03 = new string[] { "1.1.8", "1.2.1", "1.2.2", "1.3", "2.1.1", "2.1.1.a", "2.1.2", "2.2", "2.2.a", "3", "3.1", "4.1" };
-                    // string[] numeryTabel04 = new string[] {  };
-                    string[] numeryTabel05 = new string[] { "8" };
-                    string[] numeryTabel06 = new string[] { "9.1", "9.2" };
-                    string[] numeryTabel07 = new string[] { "11.3" };
-                    //    string[] numeryTabel05 = new string[] { "7.3" };
-                    try
-                    {
-                        cm.log.Info(tenPlik + ": Generowanie tabel z xml sekcja tablePlaceHolder01");
-                        ms.TworzTabelizListy(numeryTabel00, tablePlaceHolder01, path, tabela2, idWydzialuNumerycznie, tenPlik);
-                    }
-                    catch (Exception ex)
-                    {
-                        cm.log.Error(tenPlik + ": Generowanie tabel z xml tablePlaceHolder01" + ex.Message);
-                    }
-                    try
-                    {
-                        cm.log.Info(tenPlik + ": Generowanie tabel z xml sekcja tablePlaceHolder02");
-                        ms.TworzTabelizListy(numeryTabel01, tablePlaceHolder02, path, tabela2, idWydzialuNumerycznie, tenPlik);
-                    }
-                    catch (Exception ex)
-                    {
-                        cm.log.Error(tenPlik + ": Generowanie tabel z xml tablePlaceHolder02" + ex.Message);
-                    }
-                    try
-                    {
-                        cm.log.Info(tenPlik + ": Generowanie tabel z xml sekcja tablePlaceHolder03");
-                        ms.TworzTabelizListy(numeryTabel02, tablePlaceHolder03, path, tabela2, idWydzialuNumerycznie, tenPlik);
-                    }
-                    catch (Exception ex)
-                    {
-                        cm.log.Error(tenPlik + ": Generowanie tabel z xml tablePlaceHolder03" + ex.Message);
-                    }
-
-                    try
-                    {
-                        cm.log.Info(tenPlik + ": Generowanie tabel z xml sekcja tablePlaceHolder04");
-                        ms.TworzTabelizListy(numeryTabel03, tablePlaceHolder04, path, tabela2, idWydzialuNumerycznie, tenPlik);
-                    }
-                    catch (Exception ex)
-                    {
-                        cm.log.Error(tenPlik + ": Generowanie tabel z xml tablePlaceHolder04" + ex.Message);
-                    }
-                    try
-                    {
-                        cm.log.Info(tenPlik + ": Generowanie tabel z xml sekcja tablePlaceHolder06");
-                        ms.TworzTabelizListy(numeryTabel05, tablePlaceHolder06, path, tabela2, idWydzialuNumerycznie, tenPlik);
-                    }
-                    catch (Exception ex)
-                    {
-                        cm.log.Error(tenPlik + ": Generowanie tabel z xml tablePlaceHolder06" + ex.Message);
-                    }
-                    try
-                    {
-                        cm.log.Info(tenPlik + ": Generowanie tabel z xml sekcja tablePlaceHolder07");
-                        ms.TworzTabelizListy(numeryTabel06, tablePlaceHolder07, path, tabela2, idWydzialuNumerycznie, tenPlik);
-                    }
-                    catch (Exception ex)
-                    {
-                        cm.log.Error(tenPlik + ": Generowanie tabel z xml " + ex.Message);
-                    }
-
-                    try
-                    {
-                        cm.log.Info(tenPlik + ": Generowanie tabel z xml sekcja tablePlaceHolder08");
-                        ms.TworzTabelizListy(numeryTabel07, tablePlaceHolder08, path, tabela2, idWydzialuNumerycznie, tenPlik);
-                    }
-                    catch (Exception ex)
-                    {
-                        cm.log.Error(tenPlik + ": Generowanie tabel z xml " + ex.Message);
-                    }
+                    cm.log.Info(tenPlik + ": Generowanie tabel z xml sekcja tablePlaceHolder01");
+                    ms.TworzTabelizListy(numeryTabel00, tablePlaceHolder01, path, tabela2, idWydzialuNumerycznie, tenPlik);
+                    ms.TworzTabelizListy(numeryTabel02, tablePlaceHolder02, path, tabela2, idWydzialuNumerycznie, tenPlik);
+                    ms.TworzTabelizListy(numeryTabel03, tablePlaceHolder03, path, tabela2, idWydzialuNumerycznie, tenPlik);
+                    ms.TworzTabelizListy(numeryTabel04, tablePlaceHolder04, path, tabela2, idWydzialuNumerycznie, tenPlik);
+                    ms.TworzTabelizListy(numeryTabel05, tablePlaceHolder06, path, tabela2, idWydzialuNumerycznie, tenPlik);
+                    ms.TworzTabelizListy(numeryTabel06, tablePlaceHolder07, path, tabela2, idWydzialuNumerycznie, tenPlik);
+                    ms.TworzTabelizListy(numeryTabel07, tablePlaceHolder08, path, tabela2, idWydzialuNumerycznie, tenPlik);
                 }
                 catch (Exception ex)
                 {
-                    cm.log.Error(tenPlik + ": Generowanie tabel z xml " + ex.Message);
+                    cm.log.Error(tenPlik + ": Generowanie tabel z xml tablePlaceHolder01" + ex.Message);
                 }
+
                 try
                 {
                     #region "1.1";
@@ -188,52 +196,6 @@ namespace Statystyki_2018
                     pisz("tab_11_", 95, 5, tabela2, "'1.1'", idWydzialu);
 
                     #endregion "1.1";
-
-                    #region "tabela1.1.b"
-
-                    //tab_111a1_w01_col01
-                    idTabeli = "'1.1.b'";
-                    idWiersza = "'1'";
-
-                    tab_11b_w01_c01.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-                    tab_11b_w01_c02.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='2'", tenPlik);
-                    tab_11b_w01_c03.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='3'", tenPlik);
-                    tab_11b_w01_c04.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='4'", tenPlik);
-                    tab_11b_w01_c05.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='5'", tenPlik);
-                    tab_11b_w01_c06.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='6'", tenPlik);
-                    tab_11b_w01_c07.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='7'", tenPlik);
-                    tab_11b_w01_c08.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='8'", tenPlik);
-                    tab_11b_w01_c09.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='9'", tenPlik);
-
-                    idWiersza = "'2'";
-
-                    tab_11b_w02_c01.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-                    tab_11b_w02_c02.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='2'", tenPlik);
-                    tab_11b_w02_c03.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='3'", tenPlik);
-                    tab_11b_w02_c04.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='4'", tenPlik);
-                    tab_11b_w02_c05.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='5'", tenPlik);
-                    tab_11b_w02_c06.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='6'", tenPlik);
-                    tab_11b_w02_c07.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='7'", tenPlik);
-                    tab_11b_w02_c08.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='8'", tenPlik);
-                    tab_11b_w02_c09.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='9'", tenPlik);
-
-                    idWiersza = "'3'";
-
-                    tab_11b_w03_c01.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-                    tab_11b_w03_c02.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='2'", tenPlik);
-                    tab_11b_w03_c03.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='3'", tenPlik);
-                    tab_11b_w03_c04.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='4'", tenPlik);
-                    tab_11b_w03_c05.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='5'", tenPlik);
-                    tab_11b_w03_c06.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='6'", tenPlik);
-                    tab_11b_w03_c07.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='7'", tenPlik);
-                    tab_11b_w03_c08.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='8'", tenPlik);
-                    tab_11b_w03_c09.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='9'", tenPlik);
-
-                    idWiersza = "'4'";
-
-                    tab_11b_w04_c01.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-
-                    #endregion "tabela1.1.b"
 
                     #region "tabela 1.1.c"
 
@@ -255,61 +217,6 @@ namespace Statystyki_2018
                     tab_11c_w05_c01.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza ='5' and idkolumny='1'", tenPlik);
 
                     #endregion "tabela 1.1.c"
-
-                    #region "tabel 1.1.d"
-
-                    //wiersz 1
-                    idTabeli = "'1.1.d'";
-                    idWiersza = "'1'";
-
-                    tab_11d_w01_col01.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-                    tab_11d_w01_col02.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='2'", tenPlik);
-                    tab_11d_w01_col03.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='3'", tenPlik);
-                    //tab_11d_w01_col04.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='4'",tenPlik);
-
-                    //wiersz 2
-                    idWiersza = "'2'";
-                    tab_11d_w02_col01.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-                    tab_11d_w02_col02.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='2'", tenPlik);
-                    tab_11d_w02_col03.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='3'", tenPlik);
-                    //tab_11d_w02_col04.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='4'",tenPlik);
-
-                    //wiersz 3
-                    idWiersza = "'3'";
-                    tab_11d_w03_col01.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'", tenPlik);
-                    tab_11d_w03_col02.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='2'", tenPlik);
-                    tab_11d_w03_col03.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='3'", tenPlik);
-                    //tab_11d_w03_col04.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='4'",tenPlik);
-
-                    //wiersz 4
-                    idWiersza = "'4'";
-                    //tab_11d_w04_col01.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'",tenPlik);
-                    //tab_11d_w04_col02.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='2'",tenPlik);
-                    //tab_11d_w04_col03.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='3'",tenPlik);
-                    tab_11d_w04_col04.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='4'", tenPlik);
-                    //wiersz 5
-                    idWiersza = "'5'";
-                    //tab_11d_w05_col01.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'",tenPlik);
-                    //tab_11d_w05_col02.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='2'",tenPlik);
-                    //tab_11d_w05_col03.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='3'",tenPlik);
-                    tab_11d_w05_col04.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='4'", tenPlik);
-
-                    #endregion "tabel 1.1.d"
-
-                    #region "tabel 1.1.d.a"
-
-                    //wiersz 1
-                    idTabeli = "'1.1.d.a'";
-                    //wiersz 1
-                    tab_11da_w01_c01.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza = '1' and idkolumny = '1'", tenPlik);
-                    //wiersz 5
-                    tab_11da_w02_c01.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza = '2' and idkolumny = '1'", tenPlik);
-                    tab_11da_w03_c01.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza = '3' and idkolumny = '1'", tenPlik);
-                    tab_11da_w04_c01.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza ='4' and idkolumny='1'", tenPlik);
-                    tab_11da_w05_c01.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza ='5' and idkolumny='1'", tenPlik);
-                    tab_11da_w06_c01.Text = dr.wyciagnijWartosc(tabela2, "idWydzial=" + yyx + " and idTabeli=" + idTabeli + " and idWiersza ='6' and idkolumny='1'", tenPlik);
-
-                    #endregion "tabel 1.1.d.a"
 
                     #region "tabel 1.1.e"
 
@@ -879,15 +786,6 @@ namespace Statystyki_2018
 
                 string strMonthName = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(Date2.Date.Month);
                 int last_day = DateTime.DaysInMonth(Date2.Date.Year, Date2.Date.Month);
-                if (((Date1.Date.Day == 1) && (Date2.Date.Day == last_day)) && ((Date1.Date.Month == Date2.Date.Month)))
-                {
-                    // cały miesiąc
-                    tabela1Label.Text = " Sprawy rozpatrywane w trybie art. 335, 336, 338a, 387 i 474a kpk za miesiąc " + strMonthName + " " + Date2.Date.Year.ToString() + " roku.";
-                }
-                else
-                {
-                    tabela1Label.Text = " Sprawy rozpatrywane w trybie art. 335, 336, 338a, 387 i 474a kpk za okres od:  " + Date1.Text + " do  " + Date2.Text;
-                }
             }
             catch
             {
@@ -917,7 +815,7 @@ namespace Statystyki_2018
             if (!string.IsNullOrEmpty(idWydzialu))
             {
                 DataTable tabela2 = ms.generuj_dane_do_tabeli_mss2(int.Parse((string)Session["id_dzialu"]), Date1.Date, Date2.Date, 21);
-              //  DataTable tabela2 = cl.generuj_dane_do_tabeli_mss2(int.Parse((string)Session["id_dzialu"]), Date1.Date, Date2.Date, 21, tenPlik); //dane
+                //  DataTable tabela2 = cl.generuj_dane_do_tabeli_mss2(int.Parse((string)Session["id_dzialu"]), Date1.Date, Date2.Date, 21, tenPlik); //dane
                 var distinctRows = (from DataRow dRow in tabela2.Rows select dRow["idTabeli"]).Distinct(); //lista tabelek
                 DataTable listaTabelek = new DataTable();
                 listaTabelek.Columns.Add("tabela", typeof(string));

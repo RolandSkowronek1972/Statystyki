@@ -43,15 +43,12 @@ namespace Statystyki_2018
                 //cm.log.Debug("otwarcie formularza: " + tenPlik);
                 try
                 {
-                 
                     var fileContents = System.IO.File.ReadAllText(Server.MapPath(@"~//version.txt"));
                     this.Title = "Statystyki " + fileContents.ToString().Trim();
                 }
-
-                catch 
+                catch
 
                 {
-                   
                 }
             }
             CultureInfo newCulture = (CultureInfo)CultureInfo.CurrentCulture.Clone();
@@ -63,8 +60,7 @@ namespace Statystyki_2018
 
             Session["data_1"] = Date1.Date.ToShortDateString();
             Session["data_2"] = Date2.Date.ToShortDateString();
-            odswiez();
-           
+            rysuj();
         }// end of Page_Load
 
         protected void pisz(string Template, int iloscWierszy, int iloscKolumn, DataTable dane, string idTabeli, string idWydzialu)
@@ -89,6 +85,57 @@ namespace Statystyki_2018
             }
         }// end of pisz
 
+        protected void rysuj()
+        {
+            string idWydzialu = "'" + (string)Session["id_dzialu"] + "'";
+            id_dzialu.Text = (string)Session["txt_dzialu"];
+            string txt = string.Empty;
+
+            try
+
+            {
+                string idTabeli = string.Empty;
+                string idWiersza = string.Empty;
+
+                DataTable tabelaDanych = ms.PustaTabelaDanychMSS();
+                //wypełnianie lebeli
+                try
+                {
+                    string path = Server.MapPath("XMLHeaders") + "\\" + "MSS5o.xml";
+                    string yyx = (string)Session["id_dzialu"];
+                    int idWydzialuNumerycznie = int.Parse((string)Session["id_dzialu"]);
+
+                    string[] numeryTabel00 = new string[] { "1.1", "1.1.a", "1.1.b", "1.1.1", "1.1.2" };
+                    string[] numeryTabel01 = new string[] { "1.4.1", "2.1.1", "2.1.1.a", "2.1.2" };
+                    string[] numeryTabel02 = new string[] { "9.1.3", "9.2", "9.3", "9.3.2", "9.3.3", "9.4" };
+                    string[] numeryTabel03 = new string[] { "13.1", "13.1.a", "13.1.b", "13.1.c", "13.2" };
+                    string[] numeryTabel04 = new string[] { "14.1.a", "14.2", "15.1", "15.2", "15.3" };
+                    tablePlaceHolder.Controls.Clear();
+                    TablePlaceHolder1.Controls.Clear();
+                    TablePlaceHolder8.Controls.Clear();
+                    TablePlaceHolder9.Controls.Clear();
+                    TablePlaceHolder10.Controls.Clear();
+
+                    ms.TworzTabelizListy(numeryTabel00, tablePlaceHolder, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
+                    ms.TworzTabelizListy(numeryTabel01, TablePlaceHolder1, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
+                    ms.TworzTabelizListy(numeryTabel02, TablePlaceHolder10, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
+                    ms.TworzTabelizListy(numeryTabel03, TablePlaceHolder8, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
+                    ms.TworzTabelizListy(numeryTabel04, TablePlaceHolder9, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
+
+                    StringBuilder tabelaGlowna = new StringBuilder();
+                }
+                catch (Exception ex)
+
+                {
+                    cm.log.Error("MSS5o bład w wyświetlaniu tabel generowanych dynamicznie " + ex.Message);
+                }
+            }
+            catch (Exception ex)
+            {
+                cm.log.Error("MSS5o bład w całej procedurze wyświetlania " + ex.Message);
+            }
+        }
+
         protected void odswiez()
         {
             string idWydzialu = "'" + (string)Session["id_dzialu"] + "'";
@@ -108,15 +155,14 @@ namespace Statystyki_2018
                     string path = Server.MapPath("XMLHeaders") + "\\" + "MSS5o.xml";
                     string yyx = (string)Session["id_dzialu"];
                     int idWydzialuNumerycznie = int.Parse((string)Session["id_dzialu"]);
-                  
 
-                    string[] numeryTabel00 = new string[] { "1.1","1.1.a","1.1.b","1.1.1","1.1.2" };
-                    string[] numeryTabel01 = new string[] { "1.4.1" , "2.1.1" , "2.1.1.a" , "2.1.2" };
-                    string[] numeryTabel02 = new string[] { "9.1.3", "9.2", "9.3" , "9.3.2", "9.3.3", "9.4" };
-                    string[] numeryTabel03 = new string[] { "13.1", "13.1.a", "13.1.b", "13.1.c","13.2" };
+                    string[] numeryTabel00 = new string[] { "1.1", "1.1.a", "1.1.b", "1.1.1", "1.1.2" };
+                    string[] numeryTabel01 = new string[] { "1.4.1", "2.1.1", "2.1.1.a", "2.1.2" };
+                    string[] numeryTabel02 = new string[] { "9.1.3", "9.2", "9.3", "9.3.2", "9.3.3", "9.4" };
+                    string[] numeryTabel03 = new string[] { "13.1", "13.1.a", "13.1.b", "13.1.c", "13.2" };
                     string[] numeryTabel04 = new string[] { "14.1.a", "14.2", "15.1", "15.2", "15.3" };
                     tablePlaceHolder.Controls.Clear();
-                    TablePlaceHolder1.Controls.Clear();                
+                    TablePlaceHolder1.Controls.Clear();
                     TablePlaceHolder8.Controls.Clear();
                     TablePlaceHolder9.Controls.Clear();
                     TablePlaceHolder10.Controls.Clear();
@@ -128,9 +174,6 @@ namespace Statystyki_2018
                     ms.TworzTabelizListy(numeryTabel04, TablePlaceHolder9, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
 
                     StringBuilder tabelaGlowna = new StringBuilder();
-                   
-
-                   
                 }
                 catch (Exception ex)
 
@@ -234,7 +277,6 @@ namespace Statystyki_2018
 
                 #endregion "1.3.2";
 
-      
                 #region "2.2";
 
                 pisz("tab_22_", 31, 9, tabelaDanych, "'2.2'", idWydzialu);
@@ -425,11 +467,7 @@ namespace Statystyki_2018
             {
                 cm.log.Error("MSS5o bład w całej procedurze wyświetlania " + ex.Message);
             }
-
- 
         }
-
-      
 
         protected void LinkButton54_Click(object sender, EventArgs e)
         {
@@ -455,7 +493,7 @@ namespace Statystyki_2018
                 if (!string.IsNullOrEmpty(idWydzialu))
                 {
                     DataTable tabelaDanych = ms.generuj_dane_do_tabeli_mss2(int.Parse((string)Session["id_dzialu"]), Date1.Date, Date2.Date, 21);
-                  //  DataTable tabela2 = cl.generuj_dane_do_tabeli_mss2(int.Parse((string)Session["id_dzialu"]), Date1.Date, Date2.Date, 21); //dane
+                    //  DataTable tabela2 = cl.generuj_dane_do_tabeli_mss2(int.Parse((string)Session["id_dzialu"]), Date1.Date, Date2.Date, 21); //dane
                     var distinctRows = (from DataRow dRow in tabelaDanych.Rows select dRow["idTabeli"]).Distinct(); //lista tabelek
                     DataTable listaTabelek = new DataTable();
                     listaTabelek.Columns.Add("tabela", typeof(string));

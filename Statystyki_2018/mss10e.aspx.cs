@@ -56,7 +56,7 @@ namespace Statystyki_2018
             if (Date2.Text.Length == 0) Date2.Date = DateTime.Parse(dTime.Year.ToString() + "-" + dTime.Month.ToString("D2") + "-" + DateTime.DaysInMonth(dTime.Year, dTime.Month).ToString("D2"));
             Session["data_1"] = Date1.Date.ToShortDateString();
             Session["data_2"] = Date2.Date.ToShortDateString();
-            odswierz();
+            // odswierz();
             makeLabels();
         }// end of Page_Load
 
@@ -117,7 +117,7 @@ namespace Statystyki_2018
                 if (!string.IsNullOrEmpty(idWydzialu))
                 {
                     DataTable tabelaDanych = ms.generuj_dane_do_tabeli_mss10e(int.Parse((string)Session["id_dzialu"]), Date1.Date, Date2.Date, 60);
-                //    DataTable tabela2 = cl.generuj_dane_do_tabeli_mss2(int.Parse((string)Session["id_dzialu"]), Date1.Date, Date2.Date, 21, tenPlik); //dane
+                    //    DataTable tabela2 = cl.generuj_dane_do_tabeli_mss2(int.Parse((string)Session["id_dzialu"]), Date1.Date, Date2.Date, 21, tenPlik); //dane
                     var distinctRows = (from DataRow dRow in tabelaDanych.Rows select dRow["idTabeli"]).Distinct(); //lista tabelek
                     DataTable listaTabelek = new DataTable();
                     listaTabelek.Columns.Add("tabela", typeof(string));

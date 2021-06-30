@@ -60,7 +60,7 @@ namespace Statystyki_2018
 
             Session["data_1"] = Date1.Date.ToShortDateString();
             Session["data_2"] = Date2.Date.ToShortDateString();
-            odswiez();
+           // odswiez();
             makeLabels();
         }// end of Page_Load
 
@@ -70,7 +70,7 @@ namespace Statystyki_2018
           
             string yyx = (string)Session["id_dzialu"];
 
-        //    string txt = string.Empty; 
+       
 
             try
             {

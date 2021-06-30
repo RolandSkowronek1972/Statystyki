@@ -1048,6 +1048,15 @@ namespace Statystyki_2018 {
         protected global::System.Web.UI.WebControls.Label tab_08_w01_c12;
         
         /// <summary>
+        /// tablePlaceHolder07 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder tablePlaceHolder07;
+        
+        /// <summary>
         /// Label27 control.
         /// </summary>
         /// <remarks>
