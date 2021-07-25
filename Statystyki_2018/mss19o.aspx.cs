@@ -85,7 +85,7 @@ namespace Statystyki_2018
             string idWiersza = string.Empty;
             string idWydzialu = (string)Session["id_dzialu"];
             int idWydzialuNumerycznie = int.Parse((string)Session["id_dzialu"]);
-            DataTable tabelaDanychMSS = ms.generuj_dane_do_tabeli_mss2(int.Parse((string)Session["id_dzialu"]), Date1.Date, Date2.Date, 21);
+            DataTable tabelaDanychMSS = ms.PustaTabelaDanychMSS();
             //wypełnianie lebeli
             this.ClearChildControlState();
             this.Context.Items.Clear();

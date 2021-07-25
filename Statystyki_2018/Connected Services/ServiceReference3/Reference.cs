@@ -9,9 +9,10 @@
 //------------------------------------------------------------------------------
 
 namespace stat2018.ServiceReference3 {
+    using System;
     using System.Data;
-    
-    
+
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference3.SerwisWymianySoap")]
     public interface SerwisWymianySoap {
@@ -57,6 +58,11 @@ namespace stat2018.ServiceReference3 {
         
         public System.Threading.Tasks.Task<System.Data.DataTable> DaneWXmlAsync(string NrWydzialu, string repertorium, int nrSprawy, string rodzaj, string connection, int rok, string kwerendaZapytujaca) {
             return base.Channel.DaneWXmlAsync(NrWydzialu, repertorium, nrSprawy, rodzaj, connection, rok, kwerendaZapytujaca);
+        }
+
+        internal DataTable DaneWXml2(string v1, string v2, int v3, string rodzaj, int v4, DataTable zestawZapytujacy)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
@@ -314,67 +315,54 @@ namespace Statystyki_2018
             string host = string.Empty;
             TextBox1.Text = "";
             log.Error("Wymiana 2 odczyt danych:Start odczytu");
-            stat2018.ServiceReference3.SerwisWymianySoapClient serwisWymianySoapClient = new stat2018.ServiceReference3.SerwisWymianySoapClient();
+            stat2018.ServiceReference2.SerwisWymianySoapClient serwisWymianySoapClient = new stat2018.ServiceReference2.SerwisWymianySoapClient();
             log.Info("Wymiana 2  odczyt danych: Deklaracja połaczenia.");
             rodzaj = lbRodzajSprawy2.SelectedItem.Text.ToString();
             connection = lbRodzajSprawy2.SelectedItem.Value.ToString();
             TextBox1.Text = TextBox1.Text + "connection " + connection + Environment.NewLine;
-            log.Info("Wymiana 2 odczyt danych: Ro:dzaj Sprawy: " + rodzaj + " połaczenia.");
+            log.Info("Wymiana 2 odczyt danych: Rodzaj Sprawy: " + rodzaj + " połaczenia.");
             // walidacja po stronie clientaconnection
 
             DataTable parametry = cm.makeParameterTable();
             parametry.Rows.Add("@rodzaj", rodzaj);
-            TextBox1.Text = TextBox1.Text + "Wymiana odczyt danych: Odczyt kwerendy danych:connection string " + connection + Environment.NewLine;
-            log.Info("Wymiana 2 odczyt danych: Odczyt kwerendy danych:connection string " + connection);
-            DataTable kwerendaWalidująca = cm.getDataTable("SELECT distinct kwerendaOdczytujaca,  connection FROM wymiana where rodzaj = @rodzaj and typ=0", cm.con_str, parametry, "wymiana client: kwerendaWalidująca");
-            if (kwerendaWalidująca == null)
-            {
-                log.Error("Wymiana odczyt danych: Brak kwerendy walidującej zapytanie po stronie klienta - rodzaj=0");
-                TextBox1.Text = TextBox1.Text + "Wymiana odczyt danych: Brak kwerendy walidującej zapytanie po stronie klienta - rodzaj=0" + Environment.NewLine;
-                return;
-            }
-            string kwerendaSprawdzajaca = kwerendaWalidująca.Rows[0][0].ToString();
-            string CSkwerendySprawdzajacej = kwerendaWalidująca.Rows[0][1].ToString();
+            TextBox1.Text = TextBox1.Text + "Wymiana odczyt danych: Odczyt kwerendy z zapytaniami:connection string " + connection + Environment.NewLine;
+            log.Info("Wymiana 2 odczyt danych: Odczyt kwerend z zapytaniami:connection string " + connection);
 
-            parametry = cm.makeParameterTable();
-            parametry.Rows.Add("@numer", TBNrSprawy.Text.Trim());
-            parametry.Rows.Add("@rok", lbRok.SelectedItem.Text.Trim());
-            parametry.Rows.Add("@rep", TBRepertorium.Text.Trim());
-            parametry.Rows.Add("@wydzial", TBNrWydzialu.Text.Trim());
-            string wynikWalidacji = cm.getQuerryValue(kwerendaSprawdzajaca, CSkwerendySprawdzajacej, parametry, "wymiana client - walidacja ");
-
-            try
+            DataTable zestawZapytujacy = cm.getDataTable("SELECT distinct typ, kwerendaOdczytujaca,  connection FROM wymiana where rodzaj = @rodzaj and typ>200 and typ<300 order by typ", cm.con_str, parametry, "wymiana client: kwerendaWalidująca");
+            if (zestawZapytujacy == null)
             {
-                if (int.Parse(wynikWalidacji) == 0)
-                {
-                    log.Error("Brak spraw z repetytoriu, " + TBRepertorium.Text + ", Wydziału " + TBNrWydzialu.Text + ", o numerze " + TBNrSprawy.Text.Trim() + " z roku " + lbRok.SelectedItem.Text.Trim());
-                    TextBox1.Text = TextBox1.Text + "Brak spraw z repetytoriu, " + TBRepertorium.Text + ", Wydziału " + TBNrWydzialu.Text + ", o numerze " + TBNrSprawy.Text.Trim() + " z roku " + lbRok.SelectedItem.Text.Trim() + Environment.NewLine;
-                    return;
-                }
-            }
-            catch (Exception ex)
-            {
-                log.Error("Wymiana: walidacja po stronie klienta " + ex.Message);
-                TextBox1.Text = TextBox1.Text + "Wymiana: walidacja po stronie klienta " + ex.Message + Environment.NewLine;
+                log.Error("Wymiana odczyt danych: Brak kwerend z zapytaniami  po stronie klienta -  typ>200 and typ<300");
+                TextBox1.Text = TextBox1.Text + "Wymiana odczyt danych: Brak kwerend z zapytaniami  po stronie klienta -  typ>200 and typ<300" + Environment.NewLine;
                 return;
             }
 
+            string nrWydzialu = TBNrWydzialu2.Text.Trim();
+            string nrReprrtorium = TBRepertorium2.Text.Trim();
+            string nrSprawy = TBNrSprawy2.Text.Trim();
+            string rok = lbRok2.SelectedItem.Text.Trim();
+            List<string[]> ListaKwerendiSCow = new List<string[]>();
 
-            parametry = cm.makeParameterTable();
-            parametry.Rows.Add("@rodzaj", rodzaj);
-            DataTable zestawZapytujacy = cm.getDataTable("SELECT distinct kwerendaOdczytujaca,  connection FROM wymiana where rodzaj = @rodzaj and typ=1", cm.con_str, parametry, "wymiana cleint: kwerendaWalidująca");
+            string[] zestaw = new string[zestawZapytujacy.Rows.Count];
 
-            string kwerendaZapytujaca = zestawZapytujacy.Rows[0][0].ToString();
-            string CSkwerendyZapytujacej = zestawZapytujacy.Rows[0][1].ToString();
-
+            //   string[] zestaw = new string[3];
+            StringBuilder zesatwDanych = new StringBuilder();
+            foreach (DataRow wiersz in zestawZapytujacy.Rows)
+            {
+                string nrKwerendy = wiersz[0].ToString();
+                string kwerenda = wiersz[1].ToString();
+                string sc = wiersz[2].ToString();
+                zesatwDanych.Append(nrKwerendy + "|" + kwerenda + "|" + sc + "#");
+            }
+            string parametryTXT = nrWydzialu + "|" + nrReprrtorium + "|" + nrSprawy + "|" + rok;
             //  serwisWymianySoapClient.Endpoint.Address = endpointAddress;
 
-            DataTable wynik = new DataTable();
-            string odpowiedz = string.Empty;
+            string wynik = string.Empty;
 
             try
             {
-                wynik = serwisWymianySoapClient.DaneWXml(TBNrWydzialu.Text.Trim(), TBRepertorium.Text.Trim(), int.Parse(TBNrSprawy.Text.Trim()), rodzaj, CSkwerendyZapytujacej, int.Parse(lbRok.SelectedItem.Text.Trim()), kwerendaZapytujaca);
+               // L(string NrWydzialu, string repertorium, string nrSprawy, string rodzaj, string rok, string zestawZapytujacy)
+                wynik = serwisWymianySoapClient.Wymiana2XML(nrWydzialu, nrReprrtorium, nrSprawy,rodzaj, parametryTXT, zesatwDanych.ToString());
+                TextBox1.Text = TextBox1.Text + wynik;
             }
             catch (Exception ex)
             {
@@ -382,7 +370,6 @@ namespace Statystyki_2018
                 TextBox1.Text = TextBox1.Text + ex.Message + Environment.NewLine;
                 return;
             }
-
         }
     }
 }

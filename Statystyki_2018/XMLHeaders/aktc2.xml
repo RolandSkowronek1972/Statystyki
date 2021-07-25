@@ -8,7 +8,7 @@
       <tekstNadTabela>Statystyka miesięczna Wydział Cywilny Tabela 1 </tekstNadTabela>
       <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>0</iloscKolumnPrzedIteracja>
-      <iloscKolumnPoIteracji>20</iloscKolumnPoIteracji>
+      <iloscKolumnPoIteracji>23</iloscKolumnPoIteracji>
       <lp>0</lp>
       <identyfikatorTabeli>1</identyfikatorTabeli>
       <przelamanie>0</przelamanie>
@@ -27,23 +27,23 @@
       <komorka>
         <wiersz>1</wiersz>
         <kolumna>6</kolumna>
-        <colSpan>7</colSpan>
+        <colSpan>8</colSpan>
         <rowspan>1</rowspan>
         <style>center col_60</style>
         <text>Wpływ spraw</text>
       </komorka>
       <komorka>
         <wiersz>1</wiersz>
-        <kolumna>7</kolumna>
-        <colSpan>7</colSpan>
+        <kolumna>8</kolumna>
+        <colSpan>8</colSpan>
         <rowspan>0</rowspan>
         <style>center col_60</style>
         <text>Załatwienia spraw</text>
       </komorka>
       <komorka>
         <wiersz>1</wiersz>
-        <kolumna>8</kolumna>
-        <colSpan>6</colSpan>
+        <kolumna>18</kolumna>
+        <colSpan>7</colSpan>
         <rowspan>0</rowspan>
         <style>center col_60</style>
         <text>Sporządzanie uzasadnień</text>
@@ -71,7 +71,7 @@
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style>center col_60</style>
-        <text>Cz pII</text>
+        <text>Cz pI</text>
       </komorka>
       <komorka>
         <wiersz>2</wiersz>
@@ -79,12 +79,20 @@
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style>center col_60</style>
+        <text>Cz pII</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
         <text>Co</text>
       </komorka>
 
       <komorka>
         <wiersz>2</wiersz>
-        <kolumna>5</kolumna>
+        <kolumna>6</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style>center col_60</style>
@@ -92,7 +100,7 @@
       </komorka>
       <komorka>
         <wiersz>2</wiersz>
-        <kolumna>6</kolumna>
+        <kolumna>7</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style>center col_60</style>
@@ -100,7 +108,7 @@
       </komorka>
       <komorka>
         <wiersz>2</wiersz>
-        <kolumna>7</kolumna>
+        <kolumna>8</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style>center col_60 gray</style>
@@ -108,7 +116,7 @@
       </komorka>
       <komorka>
         <wiersz>2</wiersz>
-        <kolumna>8</kolumna>
+        <kolumna>9</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style>center col_60</style>
@@ -116,7 +124,7 @@
       </komorka>
       <komorka>
         <wiersz>2</wiersz>
-        <kolumna>9</kolumna>
+        <kolumna>10</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style>center col_60 </style>
@@ -124,16 +132,23 @@
       </komorka>
       <komorka>
         <wiersz>2</wiersz>
-        <kolumna>10</kolumna>
+        <kolumna>11</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Cz pI</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>12</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style>center col_60</style>
         <text>Cz pII</text>
       </komorka>
-
       <komorka>
         <wiersz>2</wiersz>
-        <kolumna>11</kolumna>
+        <kolumna>13</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style>center col_60</style>
@@ -142,7 +157,7 @@
 
       <komorka>
         <wiersz>2</wiersz>
-        <kolumna>12</kolumna>
+        <kolumna>14</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style>center col_60</style>
@@ -151,7 +166,7 @@
 
       <komorka>
         <wiersz>2</wiersz>
-        <kolumna>13</kolumna>
+        <kolumna>15</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style>center col_60</style>
@@ -159,7 +174,7 @@
       </komorka>
       <komorka>
         <wiersz>2</wiersz>
-        <kolumna>14</kolumna>
+        <kolumna>16</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style>center col_60 gray</style>
@@ -167,7 +182,7 @@
       </komorka>
       <komorka>
         <wiersz>2</wiersz>
-        <kolumna>15</kolumna>
+        <kolumna>17</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style>center col_60</style>
@@ -175,28 +190,11 @@
       </komorka>
       <komorka>
         <wiersz>2</wiersz>
-        <kolumna>16</kolumna>
-        <colSpan>0</colSpan>
-        <rowspan>0</rowspan>
-        <style>center col_60</style>
-        <text> Cz</text>
-      </komorka>
-
-      <komorka>
-        <wiersz>2</wiersz>
-        <kolumna>17</kolumna>
-        <colSpan>0</colSpan>
-        <rowspan>0</rowspan>
-        <style>center col_60</style>
-        <text>CzpII </text>
-      </komorka>
-      <komorka>
-        <wiersz>2</wiersz>
         <kolumna>18</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style>center col_60</style>
-        <text>Co</text>
+        <text> Cz</text>
       </komorka>
       <komorka>
         <wiersz>2</wiersz>
@@ -204,11 +202,35 @@
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style>center col_60</style>
-        <text>S </text>
+        <text>CzpI </text>
       </komorka>
       <komorka>
         <wiersz>2</wiersz>
         <kolumna>20</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>CzpII </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>21</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>Co</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>22</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60</style>
+        <text>S </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>23</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style>center col_60 gray</style>
@@ -217,15 +239,15 @@
     </naglowek>
     <stylKolumny>
       <kolumna>
-        <nrKolumny>7</nrKolumny>
+        <nrKolumny>8</nrKolumny>
         <styl>gray</styl>
       </kolumna>
       <kolumna>
-        <nrKolumny>14</nrKolumny>
+        <nrKolumny>16</nrKolumny>
         <styl>gray</styl>
       </kolumna>
       <kolumna>
-        <nrKolumny>20</nrKolumny>
+        <nrKolumny>23</nrKolumny>
         <styl>gray</styl>
       </kolumna>
     </stylKolumny>
@@ -238,7 +260,7 @@
       <tekstNadTabela>Statystyka miesięczna Wydział Cywilny Tabela 2  </tekstNadTabela>
       <iloscWierszyNaglowka>1</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>2</iloscKolumnPrzedIteracja>
-      <iloscKolumnPoIteracji>7</iloscKolumnPoIteracji>
+      <iloscKolumnPoIteracji>8</iloscKolumnPoIteracji>
       <lp>1</lp>
       <identyfikatorTabeli>2</identyfikatorTabeli>
     </daneTabeli>
@@ -278,12 +300,19 @@
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style> center col_60 </style>
-        <text>CzpII </text>
+        <text>Cz pI </text>
       </komorka>
-
       <komorka>
         <wiersz>1</wiersz>
         <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 </style>
+        <text>Cz pII </text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>6</kolumna>
         <colSpan>0</colSpan>
         <rowspan>0</rowspan>
         <style> center col_60 </style>
@@ -429,7 +458,7 @@
     </tablaBoczna>
     <stylKolumny>
       <kolumna>
-        <nrKolumny>7</nrKolumny>
+        <nrKolumny>8</nrKolumny>
         <styl>gray</styl>
       </kolumna>
 

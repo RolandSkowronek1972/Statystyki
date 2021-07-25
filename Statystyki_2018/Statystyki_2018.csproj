@@ -150,10 +150,18 @@
     <Content Include="akrp.aspx" />
     <Content Include="akrk.aspx" />
     <Content Include="aktc.xlsx" />
+    <None Include="Connected Services\ServiceReference2\SerwisWymiany.wsdl" />
     <None Include="Connected Services\ServiceReference3\SerwisWymiany.disco" />
     <None Include="Connected Services\ServiceReference3\configuration91.svcinfo" />
     <None Include="Connected Services\ServiceReference3\configuration.svcinfo" />
     <None Include="Connected Services\ServiceReference3\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\ServiceReference2\SerwisWymiany.disco" />
+    <None Include="Connected Services\ServiceReference2\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReference2\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReference2\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -219,7 +227,9 @@
     <Content Include="XMLHeaders\aktg.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="XMLHeaders\MSS1o.xml" />
+    <Content Include="XMLHeaders\MSS1o.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="XMLHeaders\oczc1.xml" />
     <Content Include="XMLHeaders\MSS10r.xml" />
     <Content Include="XMLHeaders\otrp.xml">
@@ -614,6 +624,11 @@
     </Compile>
     <Compile Include="akrk.aspx.designer.cs">
       <DependentUpon>akrk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceReference2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="mss10o.aspx.cs">
       <DependentUpon>mss10o.aspx</DependentUpon>
@@ -1415,6 +1430,9 @@
     <Folder Include="App_GlobalResources\" />
     <Folder Include="classes\App_LocalResources\" />
     <Folder Include="enums\" />
+    <Folder Include="NewFolder1\" />
+    <Folder Include="Wymiana2\Odpowiedzi\" />
+    <Folder Include="Wymiana2\Zapytania\" />
     <Folder Include="Wymiana\Temp\" />
     <Folder Include="Wymiana\Tmp\" />
   </ItemGroup>
@@ -1435,6 +1453,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReference2\" />
     <WCFMetadataStorage Include="Connected Services\ServiceReference3\" />
   </ItemGroup>
   <PropertyGroup>

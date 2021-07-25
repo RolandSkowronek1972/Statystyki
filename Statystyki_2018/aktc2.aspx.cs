@@ -84,7 +84,7 @@ namespace Statystyki_2018
             {
                 string idDzialu = (string)Session["id_dzialu"];
                 id_dzialu.Text = (string)Session["txt_dzialu"];
-                DataTable Tabela1 = dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse(idDzialu), 1, Date1.Date, Date2.Date, 40, tenPlik);
+                DataTable Tabela1 = dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse(idDzialu), 1, Date1.Date, Date2.Date, 28, tenPlik);
                 DataTable Tabela2 = cl.generuj_dane_do_tabeli_wierszy(Date1.Date, Date2.Date, idDzialu, 2, 22, 20, tenPlik);
                 Session["tabelka001"] = Tabela1;
                 Session["tabelka002"] = Tabela2;
@@ -131,8 +131,8 @@ namespace Statystyki_2018
 
                 DataTable table = (DataTable)Session["tabelka001"];
 
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 21, 0, 4, true, true, false, false, false);
-                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 11, 7, 2, 2, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 23, 0, 4, true, true, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 11, 8, 2, 2, false);
                 try
                 {
                     MyExcel.SaveAs(fNewFile);

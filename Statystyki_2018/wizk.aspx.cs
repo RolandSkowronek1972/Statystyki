@@ -3347,16 +3347,16 @@ namespace Statystyki_2018
             builder.AppendLine(XMLHeaders.getHeaderFromXML(path, tenPlik));
             builder.AppendLine("</tr>");
             //ilosc sedziów
-            int licznik = 1;
+            int licznik = 2;
             cm.log.Info("tabela 26 ilosc wirszy " + dane.Rows.Count.ToString());
             foreach (DataRow wierszZtabeli in dane.Rows)
             {
-                builder.Append(TabelaWewnetrzna(14, licznik, idtabeli, wierszZtabeli));
+                builder.Append(TabelaWewnetrzna26(14, licznik, idtabeli, wierszZtabeli));
 
                 licznik++;
                 builder.AppendLine("</tr>");
             }
-            builder.Append(sumaTabeliX(dane, 84, 15, idtabeli, "Razem", 5, 1));
+            builder.Append(sumaTabeliX2(dane, 90, 15, idtabeli, "Razem", 5, 1));
            // builder.Append(sumaTabeli(dane, 7, 15, idtabeli, "Razem", 5));
             builder.Append("</table>");
             builder.AppendLine("</div>");
@@ -3811,6 +3811,41 @@ namespace Statystyki_2018
 
             return builder.ToString();
         }
+        private string sumaTabeliX2(DataTable dane, int iloscKolumn, int dlugoscLinii, int idtabeli, string tekst, int złaczenieRazem, int przesuniecie)
+        {
+            StringBuilder builder = new StringBuilder();
+            string sumaKoncowa = string.Empty;
+            double[] wierszSumujacy = new double[dlugoscLinii];
+
+            DataTable suma = tb.makeSumRow(dane, iloscKolumn, dlugoscLinii);
+            if (suma == null)
+            {
+                cm.log.Error(tenPlik + " bład w sumowaniu tabeli " + idtabeli.ToString());
+                return "";
+            }
+
+            builder.AppendLine("<tr>");
+            builder.AppendLine(tb.komorkaHTML(tekst, złaczenieRazem, 0, "borderAll center col_100 gray"));
+            DataRow wierszDanych = suma.Rows[0];
+            for (int j = 1 + przesuniecie; j <= dlugoscLinii + przesuniecie-1; j++)
+            {
+                string wartoscdanej = "0";
+                try
+                {
+                    string nazwaKolumny = "d_" + j.ToString("D2");
+                    wartoscdanej = wierszDanych[nazwaKolumny].ToString();
+                }
+                catch
+                {
+                }
+
+                builder.Append(tb.komorkaHTML(wartoscdanej, 0, 0, "borderAll center col_100 gray"));
+            }
+
+            builder.AppendLine("</tr>");
+
+            return builder.ToString();
+        }
 
         protected void makeLabels()
         {
@@ -4059,6 +4094,30 @@ namespace Statystyki_2018
             builder.Append(tworzPodSekcjeBezTRiP((step * 4) + 1, (step * 5) + 1, wierszZtabeli, idtabeli.ToString(), 0));
             builder.Append(tb.komorkaHTMLbezP("", 0, 0, "borderAll center col_100"));
             builder.Append(tworzPodSekcjeBezTRiP((step * 5) + 1, (step * 6) + 1, wierszZtabeli, idtabeli.ToString(), 0));
+
+            return builder.ToString();
+        }
+        private string TabelaWewnetrzna26(int step, int licznik, int idtabeli, DataRow wierszZtabeli)
+        {
+            StringBuilder builder = new StringBuilder();
+            builder.AppendLine("<tr>");
+            builder.Append(tb.komorkaHTML(licznik.ToString(), 0, 6, "borderAll center col_36"));
+            builder.Append(tb.komorkaHTML(wierszZtabeli["imie"].ToString() + " " + wierszZtabeli["nazwisko"].ToString(), 0, 6, "borderAll center col_100"));
+            builder.Append(tb.komorkaHTML(wierszZtabeli["funkcja"].ToString(), 0, 6, "borderAll center col_100"));
+            builder.Append(tb.komorkaHTML(wierszZtabeli["d_01"].ToString(), 0, 6, "borderAll center col_100"));
+
+            builder.Append(tb.komorkaHTMLbezP("K", 0, 1, "borderAll center col_100"));
+            builder.Append(tworzPodSekcjeBezTRiP(1, step + 1, wierszZtabeli, idtabeli.ToString(), 1));
+            builder.Append(tb.komorkaHTMLbezP("Kp", 0, 1, "borderAll center col_100"));
+            builder.Append(tworzPodSekcjeBezTRiP(step + 2, (step * 2) +2, wierszZtabeli, idtabeli.ToString(), 0));
+            builder.Append(tb.komorkaHTMLbezP("Ko", 0, 1, "borderAll center col_100"));
+            builder.Append(tworzPodSekcjeBezTRiP((step * 2) + 2, (step * 3) + 2, wierszZtabeli, idtabeli.ToString(), 0));
+            builder.Append(tb.komorkaHTMLbezP("W", 0, 0, "borderAll center col_100"));
+            builder.Append(tworzPodSekcjeBezTRiP((step * 3) + 2, (step * 4) + 2, wierszZtabeli, idtabeli.ToString(), 0));
+            builder.Append(tb.komorkaHTMLbezP("Kop", 0, 0, "borderAll center col_100"));
+            builder.Append(tworzPodSekcjeBezTRiP((step * 4) + 2, (step * 5) + 2, wierszZtabeli, idtabeli.ToString(), 0));
+            builder.Append(tb.komorkaHTMLbezP("", 0, 0, "borderAll center col_100"));
+            builder.Append(tworzPodSekcjeBezTRiP((step * 5) + 2, (step * 6) + 2, wierszZtabeli, idtabeli.ToString(), 0));
 
             return builder.ToString();
         }
