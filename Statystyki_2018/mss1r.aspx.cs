@@ -58,7 +58,7 @@ namespace Statystyki_2018
 
             Session["data_1"] = Date1.Date.ToShortDateString();
             Session["data_2"] = Date2.Date.ToShortDateString();
-        
+
             makeLabels();
         }// end of Page_Load
 
@@ -66,10 +66,10 @@ namespace Statystyki_2018
         {
             id_dzialu.Text = (string)Session["txt_dzialu"];
             string txt = string.Empty;
+            string IdDzialu = (string)Session["id_dzialu"];
             int idWydzialuNumerycznie = int.Parse((string)Session["id_dzialu"]);
             try
             {
-               
                 // tablePlaceHolder01 = new PlaceHolder();
                 tablePlaceHolder01.Controls.Clear();
                 tablePlaceHolder02.Controls.Clear();
@@ -89,15 +89,68 @@ namespace Statystyki_2018
                 string[] numeryTabel00 = new string[] { "1", "1.1", "1.2" };
                 string[] numeryTabel01 = new string[] { "1.1.b", "1.1.c", "1.1.d", "1.1.e" };
                 string[] numeryTabel02 = new string[] { "1.1.h", "1.1.i", "1.1.j", "1.1.k", "1.1.k.a" };
-                string[] numeryTabel03 = new string[] { "1.1.2.a", "1.1.2.b", "1.2.1", "1.2.2", "1.3.a", "1.3.b","1.3.1", "1.4.1", "2.1.1", "2.1.1.1", "2.1.1.a", "2.1.1.a.1", "2.1.2", "2.1.2.1", "2.2", "2.2.a", "2.2.1", "2.2.1.a", "2.3", "2.3.1", "3", "4.1", "4.2", "5", "5.1", "5.1.a", "5.2", "6" };
-                string[] numeryTabel05 = new string[] { "7.3" };
-                string[] numeryTabel06 = new string[] { "9" };
+                string[] numeryTabel03 = new string[] { "1.1.2.a", "1.1.2.b", "1.2.1", "1.2.2", "1.3.a", "1.3.b", "1.3.1", "1.4.1", "2.1.1", "2.1.1.1", "2.1.1.a", "2.1.1.a.1", "2.1.2", "2.1.2.1", "2.2", "2.2.a", "2.2.1", "2.2.1.a", "2.3", "2.3.1", "3", "4.1", "4.2", "5", "5.1", "5.1.a", "5.2", "6" };
+                string[] numeryTabel05 = new string[] { "7.3", "8.1", "8.2", "8.3", "9" };
+
                 ms.TworzTabelizListy(numeryTabel00, tablePlaceHolder01, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
                 ms.TworzTabelizListy(numeryTabel01, tablePlaceHolder02, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
                 ms.TworzTabelizListy(numeryTabel02, tablePlaceHolder03, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
                 ms.TworzTabelizListy(numeryTabel03, tablePlaceHolder04, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
                 ms.TworzTabelizListy(numeryTabel05, tablePlaceHolder06, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
-                ms.TworzTabelizListy(numeryTabel06, tablePlaceHolder07, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
+                if (tabelaDanych.Rows.Count > 0)
+                {
+                    #region "tabel 1.1.a"
+
+                    //wiersz 1
+                    string idTabeli = "'1.1.a'";
+                    string idWiersza = "'1'";
+                    tab_11a_w01_c01.Text = wyciagnijWartosc(tabelaDanych, "idWydzial=" + IdDzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'");
+                    //wiersz 2
+                    idWiersza = "'2'";
+                    tab_11a_w02_c01.Text = wyciagnijWartosc(tabelaDanych, "idWydzial=" + IdDzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'");
+                    //wiersz 3
+                    idWiersza = "'3'";
+                    tab_11a_w03_c01.Text = wyciagnijWartosc(tabelaDanych, "idWydzial=" + IdDzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'");
+                    //wiersz 4
+                    idWiersza = "'4'";
+                    tab_11a_w04_c01.Text = wyciagnijWartosc(tabelaDanych, "idWydzial=" + IdDzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'");
+
+                    #endregion "tabel 1.1.a"
+
+                    idTabeli = "'1.1.f'";
+                    idWiersza = "'1'";
+                    tab_11f_w01_c01.Text = wyciagnijWartosc(tabelaDanych, "idWydzial=" + IdDzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'");
+
+                    idTabeli = "'1.1.g'";
+                    idWiersza = "'1'";
+                    tab_11g_w01_c01.Text = wyciagnijWartosc(tabelaDanych, "idWydzial=" + IdDzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='1'");
+                    tab_11g_w01_c02.Text = wyciagnijWartosc(tabelaDanych, "idWydzial=" + IdDzialu + " and idTabeli=" + idTabeli + " and idWiersza =" + idWiersza + " and idkolumny='2'");
+
+                    idTabeli = "'1.1.1'";
+                    idWiersza = "'1'";
+                    tab_111_w01_c01.Text = wyciagnijWartosc(tabelaDanych, "idWydzial=" + IdDzialu + " and idTabeli=" + idTabeli + " and idWiersza ='1' and idkolumny='1'");
+                    tab_111_w02_c01.Text = wyciagnijWartosc(tabelaDanych, "idWydzial=" + IdDzialu + " and idTabeli=" + idTabeli + " and idWiersza ='2' and idkolumny='1'");
+                    tab_111_w03_c01.Text = wyciagnijWartosc(tabelaDanych, "idWydzial=" + IdDzialu + " and idTabeli=" + idTabeli + " and idWiersza ='3' and idkolumny='1'");
+                    tab_111_w04_c01.Text = wyciagnijWartosc(tabelaDanych, "idWydzial=" + IdDzialu + " and idTabeli=" + idTabeli + " and idWiersza ='4' and idkolumny='1'");
+
+                    tab_111_w05_c01.Text = wyciagnijWartosc(tabelaDanych, "idWydzial=" + IdDzialu + " and idTabeli=" + idTabeli + " and idWiersza ='5' and idkolumny='1'");
+                    tab_111_w06_c01.Text = wyciagnijWartosc(tabelaDanych, "idWydzial=" + IdDzialu + " and idTabeli=" + idTabeli + " and idWiersza ='6' and idkolumny='1'");
+                    tab_111_w07_c01.Text = wyciagnijWartosc(tabelaDanych, "idWydzial=" + IdDzialu + " and idTabeli=" + idTabeli + " and idWiersza ='7' and idkolumny='1'");
+                    tab_111_w08_c01.Text = wyciagnijWartosc(tabelaDanych, "idWydzial=" + IdDzialu + " and idTabeli=" + idTabeli + " and idWiersza ='8' and idkolumny='1'");
+
+                    tab_111_w09_c01.Text = wyciagnijWartosc(tabelaDanych, "idWydzial=" + IdDzialu + " and idTabeli=" + idTabeli + " and idWiersza ='9' and idkolumny='1'");
+                    tab_111_w10_c01.Text = wyciagnijWartosc(tabelaDanych, "idWydzial=" + IdDzialu + " and idTabeli=" + idTabeli + " and idWiersza ='10' and idkolumny='1'");
+                    tab_111_w11_c01.Text = wyciagnijWartosc(tabelaDanych, "idWydzial=" + IdDzialu + " and idTabeli=" + idTabeli + " and idWiersza ='11' and idkolumny='1'");
+                    tab_111_w12_c01.Text = wyciagnijWartosc(tabelaDanych, "idWydzial=" + IdDzialu + " and idTabeli=" + idTabeli + " and idWiersza ='12' and idkolumny='1'");
+
+                    tab_111_w13_c01.Text = wyciagnijWartosc(tabelaDanych, "idWydzial=" + IdDzialu + " and idTabeli=" + idTabeli + " and idWiersza ='13' and idkolumny='1'");
+                    tab_111_w14_c01.Text = wyciagnijWartosc(tabelaDanych, "idWydzial=" + IdDzialu + " and idTabeli=" + idTabeli + " and idWiersza ='14' and idkolumny='1'");
+                    tab_111_w15_c01.Text = wyciagnijWartosc(tabelaDanych, "idWydzial=" + IdDzialu + " and idTabeli=" + idTabeli + " and idWiersza ='15' and idkolumny='1'");
+                    tab_111_w16_c01.Text = wyciagnijWartosc(tabelaDanych, "idWydzial=" + IdDzialu + " and idTabeli=" + idTabeli + " and idWiersza ='16' and idkolumny='1'");
+
+                    tab_111_w17_c01.Text = wyciagnijWartosc(tabelaDanych, "idWydzial=" + IdDzialu + " and idTabeli=" + idTabeli + " and idWiersza ='17' and idkolumny='1'");
+                    tab_111_w18_c01.Text = wyciagnijWartosc(tabelaDanych, "idWydzial=" + IdDzialu + " and idTabeli=" + idTabeli + " and idWiersza ='18' and idkolumny='1'");
+                }
             }
             catch (Exception ex)
             {
@@ -122,7 +175,7 @@ namespace Statystyki_2018
 
         protected void odswiez()
         {
-            string yyx = (string)Session["id_dzialu"];
+            string IdDzialu = (string)Session["id_dzialu"];
             id_dzialu.Text = (string)Session["txt_dzialu"];
             string txt = string.Empty;
             int idWydzialuNumerycznie = int.Parse((string)Session["id_dzialu"]);
@@ -130,8 +183,6 @@ namespace Statystyki_2018
             {
                 DataTable tabelaDanych = ms.generuj_dane_do_tabeli_mss2(int.Parse((string)Session["id_dzialu"]), Date1.Date, Date2.Date, 30);
                 rysuj(tabelaDanych);
-              
-         
             }
             catch (Exception ex)
             {
@@ -143,7 +194,7 @@ namespace Statystyki_2018
 
             try
             {
-                Label11.Visible = cl.debug(int.Parse(yyx));
+                Label11.Visible = cl.debug(int.Parse(IdDzialu));
             }
             catch
             {
@@ -186,15 +237,11 @@ namespace Statystyki_2018
                     // cały miesiąc
                     tabela4Label.Text = "<b>Dział 7.1.</b> Liczba biegłych/podmiotów wydających opinie w sprawach  (z wył. tłumaczy przysięgłych) za miesiąc " + strMonthName + " " + Date2.Date.Year.ToString() + " roku.";
                     tabela5Label.Text = "<b>Dział 7.2.</b> Terminowość sporządzania opinii pisemnych (z wył. tłumaczy przysięgłych) za miesiąc " + strMonthName + " " + Date2.Date.Year.ToString() + " roku.";
-                    tabela7Label.Text = "<b>Dział 8.2</b> Terminowość sporządzania tłumaczeń pisemnych za miesiąc " + strMonthName + " " + Date2.Date.Year.ToString() + " roku.";
-                    tabela8Label.Text = "<b>Dział 8.3</b> Terminowość przyznawania wynagrodzeń za sporządzenie tłumaczeń pisemnych i ustnych oraz za stawiennictwo za miesiąc " + strMonthName + " " + Date2.Date.Year.ToString() + " roku.";
                 }
                 else
                 {
                     tabela4Label.Text = "<b>Dział 7.1.</b> Liczba biegłych/podmiotów wydających opinie w sprawach  (z wył. tłumaczy przysięgłych) za okres od " + Date1.Text + " do  " + Date2.Text;
                     tabela5Label.Text = "<b>Dział 7.2.</b> Terminowość sporządzania opinii pisemnych (z wył. tłumaczy przysięgłych) za okres od " + Date1.Text + " do  " + Date2.Text;
-                    tabela7Label.Text = "<b>Dział 8.2</b> Terminowość sporządzania tłumaczeń pisemnych za okres od " + Date1.Text + " do  " + Date2.Text;
-                    tabela8Label.Text = "<b>Dział 8.3</b> Terminowość przyznawania wynagrodzeń za sporządzenie tłumaczeń pisemnych i ustnych oraz za stawiennictwo za okres od  " + Date1.Text + " do " + Date2.Text;
                 }
             }
             catch

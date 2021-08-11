@@ -200,46 +200,6 @@ namespace Statystyki_2018
                 tb.makeSumRow((DataTable)Session["tabelka001"], e, 0);
             }
         }
-        /*
-        private DataTable makeheader02()
-        {
-            #region tabela  2 ()
-
-            DataTable dT_01 = new DataTable();
-            dT_01.Columns.Clear();
-            dT_01.Columns.Add("Column1", typeof(string));
-            dT_01.Columns.Add("Column2", typeof(string));
-            dT_01.Columns.Add("Column3", typeof(string));
-            dT_01.Columns.Add("Column4", typeof(string));
-            dT_01.Columns.Add("Column5", typeof(string));
-            dT_01.Columns.Add("Column6", typeof(string));
-
-            dT_01.Clear();
-
-            for (int i = 1; i < 11; i++)
-            {
-                dT_01.Rows.Add(new Object[] { i.ToString(), "zaw", "1", "1", "h", "60" });//
-            }
-            dT_01.Rows.Add(new Object[] { "1-14 dni", "", "1", "1", "h", "60" });//
-            dT_01.Rows.Add(new Object[] { "w tym nieusprawiedliwione", "zaw", "1", "1", "h", "60" });//
-            dT_01.Rows.Add(new Object[] { "15-30 dni", "", "1", "1", "h", "60" });//
-            dT_01.Rows.Add(new Object[] { "w tym nieusprawiedliwione", "zaw", "1", "1", "h", "60" });//
-            dT_01.Rows.Add(new Object[] { "pow. 1 do 3 mies.", "", "1", "1", "h", "60" });//
-            dT_01.Rows.Add(new Object[] { "w tym nieusprawiedliwione", "zaw", "1", "1", "h", "60" });//
-            dT_01.Rows.Add(new Object[] { "ponad 3 mies.", "", "1", "1", "h", "60" });//
-            dT_01.Rows.Add(new Object[] { "w tym nieusprawiedliwione", "zaw", "1", "1", "h", "60" });//
-
-            dT_01.Rows.Add(new Object[] { "3", "Razem", "2", "1", "h" });//
-            dT_01.Rows.Add(new Object[] { "3", "w terminie ustawowym", "2", "1", "h" });//
-            dT_01.Rows.Add(new Object[] { "3", "po upływie terminu ustawowego", "1", "8", "h", "120" });//
-
-            dT_01.Rows.Add(new Object[] { "4", "L.p.", "1", "3", "h", "10" });//
-            dT_01.Rows.Add(new Object[] { "4", "Sędzia", "1", "3", "h", "130" });
-            dT_01.Rows.Add(new Object[] { "4", "Terminowość sporządzania uzasadnień", "9", "1", "h", "60" });//
-
-            return dT_01;
-
-            #endregion tabela  2 ()
-        }*/
+     
     }
 }

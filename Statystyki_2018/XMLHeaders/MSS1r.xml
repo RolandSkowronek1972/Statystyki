@@ -6291,7 +6291,7 @@
         <colSpan>2</colSpan>
         <rowspan>0</rowspan>
         <style> wciecie </style>
-        <text>umorzenie na skutek cofnięcia pozwu, wniosku, skargi</text>
+        <text>umorzenie na podstawie art. 505<![CDATA[<sub>37</sub>]]> §1, kpc</text>
       </komorka>
 
       <komorka>
@@ -12208,11 +12208,356 @@
       </komorka>
     </tablaBoczna>
   </tabela>
+  <tabela id="8.1">
+    <daneTabeli>
+      <iloscWierszy>1</iloscWierszy>
+      <tekstNadTabela></tekstNadTabela>
+      <iloscWierszyNaglowka>0</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>0</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>1</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>0</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+
+    </naglowek>
+    <tablaBoczna>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text> Liczba powołań tłumaczy
+        </text>
+
+
+      </komorka>
+    </tablaBoczna>
+  </tabela>
+  <tabela id="8.2">
+    <daneTabeli>
+
+      <iloscWierszy>1</iloscWierszy>
+      <tekstNadTabela>Terminowość sporządzania tłumaczeń pisemnych za okres od 01.01.2021 do 30.09.2021</tekstNadTabela>
+      <iloscWierszyNaglowka>3</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>0</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>8</iloscKolumnPoIteracji>
+      <lp>0</lp>
+      <identyfikatorTabeli>8.2</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text></text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>8</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>Liczba sporządzonych tłumaczeń pisemnych </text>
+      </komorka>
+   
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_120</style>
+        <text>
+          Razem (kol.1=kol. 2 do 6)
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_120</style>
+        <text>    w ustalonym terminie</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>
+          po ustalonym terminie	
+       
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>wg. czasu wydania tłumaczenia</text>
+      </komorka>
+
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>do 30 dni</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>do 30 dni</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>pow. 1 do 3 miesięcy</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>pow. 3 miesięcy</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>do 30 dni</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>pow. 1 do 3 miesięcy</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>pow. 3 miesięcy</text>
+      </komorka>
+    
+    </naglowek>
+    <tablaBoczna>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>  </text>
+      </komorka>
+    </tablaBoczna>
+  </tabela>
+   <tabela id="8.3">
+    <daneTabeli>
+
+      <iloscWierszy>1</iloscWierszy>
+      <tekstNadTabela>Terminowość przyznawania wynagrodzeń za sporządzenie tłumaczeń pisemnych i ustnych oraz za stawiennictwo za okres od 01.01.2021 do 30.09.2021  </tekstNadTabela>
+      <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>0</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>12</iloscKolumnPoIteracji>
+      <lp>0</lp>
+      <identyfikatorTabeli>8.3</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text></text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>4</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>Postanowienia o przyznaniu wynagrodzenia wg czasu od złożenia rachunku </text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>8</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>
+         Skierowanie rachunku do oddziału finansowego wg czasu od postanowienia o przyznaniu wynagrodzenia
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>
+         Razem (kol. 2 do 4)
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>      do 14 dni</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>pow. 4 tys. do 7,5 tys</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>pow.14 do 30 dni</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>powyżej miesiąca</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>razem (kol. 6 do 8)</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>do 14 dni</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>pow. 14 do 30 dni</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>9</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>razem powyżej miesiąca (kol. 9-12)</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>10</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>pow. 1 do 2 miesięcy</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>11</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>pow. 2 do 3 miesięcy</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>12</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>pow. 2 do 3 miesięcy</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>13</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>pow. 3 do 6 miesięcy</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>14</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_200</style>
+        <text>pow. 6 miesięcy</text>
+      </komorka>
+    </naglowek>
+    <tablaBoczna>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>  </text>
+      </komorka>
+    </tablaBoczna>
+  </tabela>
   <tabela id="9">
     <daneTabeli>
 
       <iloscWierszy>1</iloscWierszy>
-      <tekstNadTabela>>Struktura wpływu spraw pod względem wartości przedmiotu sporu></tekstNadTabela>
+      <tekstNadTabela>Struktura wpływu spraw pod względem wartości przedmiotu sporu></tekstNadTabela>
       <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>0</iloscKolumnPrzedIteracja>
       <iloscKolumnPoIteracji>16</iloscKolumnPoIteracji>

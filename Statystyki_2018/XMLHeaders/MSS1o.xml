@@ -8034,6 +8034,94 @@
     </tablaBoczna>
   </tabela>
 
+  <tabela id="1.1.1.1">
+    <daneTabeli>
+      <iloscWierszy>1</iloscWierszy>
+      <tekstNadTabela></tekstNadTabela>
+      <iloscWierszyNaglowka>0</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>0</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>1</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>0</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+ 
+    </naglowek>
+    <tablaBoczna>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text> Załatwione sprawy Dział 1.1.1. (kol. 3) o rozwód (wiersz 4 do 8) w wypadku gdy pierwotnie wpłynęła sprawa o separacj</text>
+    
+  
+      </komorka>
+    </tablaBoczna>
+  </tabela>
+
+  <tabela id="1.1.1.2">
+    <daneTabeli>
+      <iloscWierszy>1</iloscWierszy>
+      <tekstNadTabela></tekstNadTabela>
+      <iloscWierszyNaglowka>0</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>0</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>1</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>0</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+
+    </naglowek>
+    <tablaBoczna>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+          Załatwione sprawy Dział 1.1.1. (kol. 3) o separację (wiersz 9 do 13) w wypadku gdy pierwotnie wpłynęła sprawa o rozwód	 <![CDATA[</br>]]>
+          W wypadku gdy wpłynęła sprawa o separację i została zarejestrowana w rep. Ns, a w trakcie postępowania orzeczono rozwód, to sprawę w rep. Ns należy uznać za załatwioną w inny sposób, a w rep. C wpisać ją pod nowym numerem, w tym także jako ponownie wpisaną. Ponadto należy wykazać ją w następujący sposób:
+        </text>
+
+
+      </komorka>
+    </tablaBoczna>
+  </tabela>
+  <tabela id="1.1.1.3">
+    <daneTabeli>
+      <iloscWierszy>1</iloscWierszy>
+      <tekstNadTabela></tekstNadTabela>
+      <iloscWierszyNaglowka>0</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>0</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>1</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>0</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+
+    </naglowek>
+    <tablaBoczna>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+          Załatwione sprawy Dział 1.1.1. (kol.. 3) o rozwód (wiersz 4 do 8) w wypadku, gdy pierwotnie wpłynął wniosek o separację
+        </text>
+
+
+      </komorka>
+    </tablaBoczna>
+  </tabela>
+
   <tabela id="1.1.1.a">
     <daneTabeli>
       <iloscWierszy>1</iloscWierszy>

@@ -339,21 +339,21 @@ namespace Statystyki_2018
 
                 {
                     // druga mesge 3
-                    tb.komorkaExcela(MyWorksheet1, rowik + 7 + i, 20, tabelka001.Rows[i][1].ToString(), true, 0, 1);//razem kolumna podwOjma
+                    tb.komorkaExcela(MyWorksheet1, rowik + 7 + i, 20, tabelka001.Rows[i][0].ToString(), true, 0, 1);//razem kolumna podwOjma
                     // druga kolumna pojedynacza
-                    tb.komorkaExcela(MyWorksheet1, rowik + 7 + i, 22, tabelka001.Rows[i][2].ToString(), false, 0, 0);//stare
-                    tb.komorkaExcela(MyWorksheet1, rowik + 7 + i, 23, tabelka001.Rows[i][3].ToString(), false, 0, 0);//GCC
-                    tb.komorkaExcela(MyWorksheet1, rowik + 7 + i, 24, tabelka001.Rows[i][4].ToString(), true, 0, 1);//Ns razem
-                    tb.komorkaExcela(MyWorksheet1, rowik + 7 + i, 26, tabelka001.Rows[i][5].ToString(), false, 0, 0);//Ns razem
+                    tb.komorkaExcela(MyWorksheet1, rowik + 7 + i, 22, tabelka001.Rows[i][1].ToString(), false, 0, 0);//stare
+                    tb.komorkaExcela(MyWorksheet1, rowik + 7 + i, 23, tabelka001.Rows[i][2].ToString(), false, 0, 0);//GCC
+                    tb.komorkaExcela(MyWorksheet1, rowik + 7 + i, 24, tabelka001.Rows[i][3].ToString(), true, 0, 1);//Ns razem
+                    tb.komorkaExcela(MyWorksheet1, rowik + 7 + i, 26, tabelka001.Rows[i][4].ToString(), false, 0, 0);//Ns razem
                 }
 
                 for (int i = 4; i < 10; i++)
 
                 {
                     // kolumna c szeroka
-                    tb.komorkaExcela(MyWorksheet1, rowik + 7 + i, 20, tabelka001.Rows[i][1].ToString(), true, 0, 2);
-                    tb.komorkaExcela(MyWorksheet1, rowik + 7 + i, 23, tabelka001.Rows[i][3].ToString(), false, 0, 0);
-                    tb.komorkaExcela(MyWorksheet1, rowik + 7 + i, 24, tabelka001.Rows[i][4].ToString(), true, 0, 2);
+                    tb.komorkaExcela(MyWorksheet1, rowik + 7 + i, 20, tabelka001.Rows[i][0].ToString(), true, 0, 2);
+                    tb.komorkaExcela(MyWorksheet1, rowik + 7 + i, 23, tabelka001.Rows[i][2].ToString(), false, 0, 0);
+                    tb.komorkaExcela(MyWorksheet1, rowik + 7 + i, 24, tabelka001.Rows[i][3].ToString(), true, 0, 2);
                 }
 
                 for (int i = 0; i < 10; i++)
@@ -362,7 +362,7 @@ namespace Statystyki_2018
                     {
                         try
                         {
-                            tb.komorkaExcela(MyWorksheet1, rowik + 7 + i, j + 27, tabelka001.Rows[i][j + 6].ToString(), false, 0, 0);
+                            tb.komorkaExcela(MyWorksheet1, rowik + 7 + i, j + 27, tabelka001.Rows[i][j + 5].ToString(), false, 0, 0);
                             /// tb.komorkaExcela(MyWorksheet1, rowik + 7 + i, j + 25, tabelka001.Rows[i][j + 2].ToString(), false, 0, 0);
                         }
                         catch (Exception ex)
@@ -439,7 +439,7 @@ namespace Statystyki_2018
 
             for (int i = 5; i <= 11; i++)
             {
-                NewTotalRow.Cells.Add(tb.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + idWiersza.ToString().Trim() + "!2!" + i.ToString().Trim() + "!3')\">" + tabelka01.Rows[idWiersza - 1][i].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+                NewTotalRow.Cells.Add(tb.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + idWiersza.ToString().Trim() + "!2!" + (i + 1).ToString().Trim() + "!3')\">" + tabelka01.Rows[idWiersza - 1][i].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             }
             NewTotalRow.Cells.Add(tb.cela("<input id = \"Text1\" type = \"text\" />", 1, 1, "borderTopLeft"));
             return NewTotalRow;
@@ -459,7 +459,7 @@ namespace Statystyki_2018
 
             for (int i = 5; i <= 11; i++)
             {
-                NewTotalRow.Cells.Add(tb.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + idWiersza.ToString().Trim() + "!2!" + i.ToString().Trim() + "!3')\">" + tabelka01.Rows[idWiersza - 1][i].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+                NewTotalRow.Cells.Add(tb.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + idWiersza.ToString().Trim() + "!2!" + (i + 1).ToString().Trim() + "!3')\">" + tabelka01.Rows[idWiersza - 1][i].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             }
             NewTotalRow.Cells.Add(tb.cela("<input id = \"Text1\" type = \"text\" />", 1, 1, "borderTopLeft"));
             return NewTotalRow;
@@ -480,7 +480,7 @@ namespace Statystyki_2018
             NewTotalRow.Cells.Add(tb.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + idWiersza.ToString().Trim() + "!2!5!3')\">" + tabelka01.Rows[idWiersza - 1][4].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             for (int i = 5; i <= 11; i++)
             {
-                NewTotalRow.Cells.Add(tb.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + idWiersza.ToString().Trim() + "!2!" + i.ToString().Trim() + "!3')\">" + tabelka01.Rows[idWiersza - 1][i].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+                NewTotalRow.Cells.Add(tb.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + idWiersza.ToString().Trim() + "!2!" + (i+1).ToString().Trim() + "!3')\">" + tabelka01.Rows[idWiersza - 1][i].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             }
             NewTotalRow.Cells.Add(tb.cela("<input id = \"Text1\" type = \"text\" />", 1, 1, "borderTopLeft"));
             return NewTotalRow;
@@ -500,7 +500,7 @@ namespace Statystyki_2018
             for (int i = 5; i <= 11; i++)
             {
 
-                NewTotalRow.Cells.Add(tb.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + idWiersza.ToString().Trim() + "!2!" + i.ToString().Trim() + "!3')\">" + tabelka01.Rows[idWiersza - 1][i].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+                NewTotalRow.Cells.Add(tb.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + idWiersza.ToString().Trim() + "!2!" + (i + 1).ToString().Trim() + "!3')\">" + tabelka01.Rows[idWiersza - 1][i].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
 
             }
             NewTotalRow.Cells.Add(tb.cela("<input id = \"Text1\" type = \"text\" />", 1, 1, "borderTopLeft"));
@@ -523,7 +523,7 @@ namespace Statystyki_2018
 
             for (int i = 5; i <= 11; i++)
             {
-                NewTotalRow.Cells.Add(tb.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + idWiersza.ToString().Trim() + "!2!" + i.ToString().Trim() + "!3')\">" + tabelka01.Rows[idWiersza - 1][i].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+                NewTotalRow.Cells.Add(tb.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + idWiersza.ToString().Trim() + "!2!" + (i + 1).ToString().Trim() + "!3')\">" + tabelka01.Rows[idWiersza - 1][i].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
 
               }
             NewTotalRow.Cells.Add(tb.cela("<input id = \"Text1\" type = \"text\" />", 1, 1, "borderTopLeft"));

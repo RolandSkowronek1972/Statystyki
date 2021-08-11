@@ -121,33 +121,6 @@ namespace Statystyki_2018 {
         protected global::System.Web.UI.WebControls.PlaceHolder tablePlaceHolder;
         
         /// <summary>
-        /// tab_1_1_1_1_w01_c01 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label tab_1_1_1_1_w01_c01;
-        
-        /// <summary>
-        /// tab_1_1_1_2_w01_c01 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label tab_1_1_1_2_w01_c01;
-        
-        /// <summary>
-        /// tab_1_1_1_3_w01_c01 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label tab_1_1_1_3_w01_c01;
-        
-        /// <summary>
         /// tab_1_1_a_w01_c01 control.
         /// </summary>
         /// <remarks>

@@ -362,6 +362,12 @@ namespace Statystyki_2018
             {
                // L(string NrWydzialu, string repertorium, string nrSprawy, string rodzaj, string rok, string zestawZapytujacy)
                 wynik = serwisWymianySoapClient.Wymiana2XML(nrWydzialu, nrReprrtorium, nrSprawy,rodzaj, parametryTXT, zesatwDanych.ToString());
+                if (wynik.Length>0)
+                {
+                    string pathODP = Server.MapPath("Wymiana2\\Odpowiedzi\\odpowiedz_z_serwera_") + DateTime.Now.ToString().Replace(" ", "_").Replace(".", "_").Replace(":", "_") + ".xml";
+                    System.IO.File.WriteAllText(pathODP, wynik);
+                  
+                }
                 TextBox1.Text = TextBox1.Text + wynik;
             }
             catch (Exception ex)

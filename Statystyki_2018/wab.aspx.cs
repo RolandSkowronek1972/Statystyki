@@ -101,19 +101,19 @@ namespace Statystyki_2018
                 DataTable tabelka01 = dr. generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 1,1,12,tenPlik);
                 Session["tabelka002"] = tabelka01;
                 //row 1
-                tab_01_w01_c01.Text = tabelka01.Rows[0][1].ToString();
-                tab_01_w01_c02.Text = tabelka01.Rows[0][2].ToString();
-                tab_01_w01_c03.Text = tabelka01.Rows[0][3].ToString();
-                tab_01_w01_c04.Text = tabelka01.Rows[0][4].ToString();
-                tab_01_w01_c05.Text = tabelka01.Rows[0][5].ToString();
-                tab_01_w01_c06.Text = tabelka01.Rows[0][6].ToString();
+                tab_01_w01_c01.Text = tabelka01.Rows[0][0].ToString();
+                tab_01_w01_c02.Text = tabelka01.Rows[0][1].ToString();
+                tab_01_w01_c03.Text = tabelka01.Rows[0][2].ToString();
+                tab_01_w01_c04.Text = tabelka01.Rows[0][3].ToString();
+                tab_01_w01_c05.Text = tabelka01.Rows[0][4].ToString();
+                tab_01_w01_c06.Text = tabelka01.Rows[0][5].ToString();
             
-                tab_01_w01_c07.Text = tabelka01.Rows[0][7].ToString();
-                tab_01_w01_c08.Text = tabelka01.Rows[0][8].ToString();
-                tab_01_w01_c09.Text = tabelka01.Rows[0][9].ToString();
-                tab_01_w01_c10.Text = tabelka01.Rows[0][10].ToString();
-                tab_01_w01_c11.Text = tabelka01.Rows[0][11].ToString();
-                tab_01_w01_c12.Text = tabelka01.Rows[0][12].ToString();
+                tab_01_w01_c07.Text = tabelka01.Rows[0][6].ToString();
+                tab_01_w01_c08.Text = tabelka01.Rows[0][7].ToString();
+                tab_01_w01_c09.Text = tabelka01.Rows[0][8].ToString();
+                tab_01_w01_c10.Text = tabelka01.Rows[0][9].ToString();
+                tab_01_w01_c11.Text = tabelka01.Rows[0][10].ToString();
+                tab_01_w01_c12.Text = tabelka01.Rows[0][10].ToString();
 
             }
             catch (Exception ex)
@@ -127,21 +127,21 @@ namespace Statystyki_2018
                 DataTable tabelka01 = dr. generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"],2, 1, 12, tenPlik);
                 Session["tabelka001"] = tabelka01;
                 //row 1
-                tab_02_w01_c01.Text = tabelka01.Rows[0][1].ToString();
-                tab_02_w01_c02.Text = tabelka01.Rows[0][2].ToString();
-                tab_02_w01_c03.Text = tabelka01.Rows[0][3].ToString();
-                tab_02_w01_c04.Text = tabelka01.Rows[0][4].ToString();
-                tab_02_w01_c05.Text = tabelka01.Rows[0][5].ToString();
-                tab_02_w01_c06.Text = tabelka01.Rows[0][6].ToString();
+                tab_02_w01_c01.Text = tabelka01.Rows[0][0].ToString();
+                tab_02_w01_c02.Text = tabelka01.Rows[0][1].ToString();
+                tab_02_w01_c03.Text = tabelka01.Rows[0][2].ToString();
+                tab_02_w01_c04.Text = tabelka01.Rows[0][3].ToString();
+                tab_02_w01_c05.Text = tabelka01.Rows[0][4].ToString();
+                tab_02_w01_c06.Text = tabelka01.Rows[0][5].ToString();
 
-                tab_02_w01_c07.Text = tabelka01.Rows[0][7].ToString();
-                tab_02_w01_c08.Text = tabelka01.Rows[0][8].ToString();
-                tab_02_w01_c09.Text = tabelka01.Rows[0][9].ToString();
-                tab_02_w01_c10.Text = tabelka01.Rows[0][10].ToString();
-                tab_02_w01_c11.Text = tabelka01.Rows[0][11].ToString();
-                tab_02_w01_c12.Text = tabelka01.Rows[0][12].ToString();
-                tab_02_w01_c13.Text = tabelka01.Rows[0][13].ToString();
-                tab_02_w01_c14.Text = tabelka01.Rows[0][14].ToString();
+                tab_02_w01_c07.Text = tabelka01.Rows[0][6].ToString();
+                tab_02_w01_c08.Text = tabelka01.Rows[0][7].ToString();
+                tab_02_w01_c09.Text = tabelka01.Rows[0][8].ToString();
+                tab_02_w01_c10.Text = tabelka01.Rows[0][9].ToString();
+                tab_02_w01_c11.Text = tabelka01.Rows[0][10].ToString();
+                tab_02_w01_c12.Text = tabelka01.Rows[0][11].ToString();
+                tab_02_w01_c13.Text = tabelka01.Rows[0][12].ToString();
+                tab_02_w01_c14.Text = tabelka01.Rows[0][13].ToString();
 
             }
             catch (Exception ex)
@@ -155,15 +155,15 @@ namespace Statystyki_2018
                 DataTable tabelka01 = dr. generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 3, 1, 12, tenPlik);
                 Session["tabelka003"] = tabelka01;
                 //row 1
-                tab_03_w01_c01.Text = tabelka01.Rows[0][1].ToString();
-                tab_03_w01_c02.Text = tabelka01.Rows[0][2].ToString();
-                tab_03_w01_c03.Text = tabelka01.Rows[0][3].ToString();
-                tab_03_w01_c04.Text = tabelka01.Rows[0][4].ToString();
-                tab_03_w01_c05.Text = tabelka01.Rows[0][5].ToString();
-                tab_03_w01_c06.Text = tabelka01.Rows[0][6].ToString();
-                tab_03_w01_c07.Text = tabelka01.Rows[0][7].ToString();
-                tab_03_w01_c08.Text = tabelka01.Rows[0][8].ToString();
-            
+                tab_03_w01_c01.Text = tabelka01.Rows[0][0].ToString();
+                tab_03_w01_c02.Text = tabelka01.Rows[0][1].ToString();
+                tab_03_w01_c03.Text = tabelka01.Rows[0][2].ToString();
+                tab_03_w01_c04.Text = tabelka01.Rows[0][3].ToString();
+                tab_03_w01_c05.Text = tabelka01.Rows[0][4].ToString();
+                tab_03_w01_c06.Text = tabelka01.Rows[0][5].ToString();
+                tab_03_w01_c07.Text = tabelka01.Rows[0][6].ToString();
+                tab_03_w01_c08.Text = tabelka01.Rows[0][7].ToString();
+
             }
             catch (Exception ex)
             {

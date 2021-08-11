@@ -189,9 +189,9 @@ namespace Statystyki_2018
                 DataTable table2 = (DataTable)Session["tabelka002"];
                 tabela.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], table2, 15, 0, 4, true, true, false, false, false);
 
-                tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 4, 6, 2, 3, false);
+                tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 4, 5, 2, 3, false);
 
-                tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 7, 7, 2, 3, false);
+                tabela.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 7, 6, 2, 3, false);
 
                 try
                 {
@@ -249,7 +249,7 @@ namespace Statystyki_2018
                     {
                         try
                         {
-                            tb.Text = dane.Rows[wiersz - 1][kolumna].ToString().Trim();
+                            tb.Text = dane.Rows[wiersz - 1][kolumna-1].ToString().Trim();
                         }
                         catch
                         {

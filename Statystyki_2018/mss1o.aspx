@@ -130,36 +130,7 @@
         <br />
         <br />
         <asp:PlaceHolder runat="server" ID="tablePlaceHolder"></asp:PlaceHolder>
-        <table style="width: 100%;">
-            <tr>
-                <td><strong>Dział 1.1.1.1.</strong> Załatwione sprawy Dział 1.1.1. (kol. 3) o rozwód (wiersz 4 do 8) w wypadku gdy pierwotnie wpłynęła sprawa o separację</td>
-                <td class="borderAll center col_90">
-                    <a href="javascript:openPopup('popup.aspx?sesja=1!1.1.1.1!1!4')">
-                        <asp:Label CssClass="normal" ID="tab_1_1_1_1_w01_c01" runat="server" Text="0"></asp:Label></a>
-                </td>
-            </tr>
-        </table>
         <br />
-        <table style="width: 100%;">
-            <tr>
-                <td><strong>Dział 1.1.1.2.</strong> Załatwione sprawy Dział 1.1.1. (kol. 3) o separację (wiersz 9 do 13) w wypadku gdy pierwotnie wpłynęła sprawa o rozwód </td>
-                <td class="borderAll center col_90">
-                    <a href="javascript:openPopup('popup.aspx?sesja=1!1.1.1.2!1!4')">
-                        <asp:Label CssClass="normal" ID="tab_1_1_1_2_w01_c01" runat="server" Text="0"></asp:Label></a>
-                </td>
-            </tr>
-        </table>
-        W wypadku gdy wpłynęła sprawa o separację i została zarejestrowana w rep. Ns, a w trakcie postępowania orzeczono rozwód, to sprawę w rep. Ns należy uznać  za załatwioną  w inny
-sposób, a w rep. C wpisać ją pod nowym numerem, w tym także jako ponownie wpisaną. Ponadto należy  wykazać  ją w następujący sposób:
-       <table style="width: 100%;">
-           <tr>
-               <td><strong>Dział 1.1.1.3.</strong> Załatwione sprawy Dział 1.1.1. (kol.. 3) o rozwód (wiersz 4 do 8) w wypadku, gdy pierwotnie wpłynął wniosek o separację  </td>
-               <td class="borderAll center col_90">
-                   <a href="javascript:openPopup('popup.aspx?sesja=1!1.1.1.3!1!4')">
-                       <asp:Label CssClass="normal" ID="tab_1_1_1_3_w01_c01" runat="server" Text="0"></asp:Label></a>
-               </td>
-           </tr>
-       </table>
         <br />
         <div id='1.1.a' class="page-break">
             <strong>Dział 1.1.a</strong> Pozwy zbiorowe rep. C

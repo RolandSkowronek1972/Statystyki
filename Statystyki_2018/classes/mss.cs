@@ -906,7 +906,7 @@ namespace Statystyki_2018
                 {
                     string txt = dr.wyciagnijWartosc(dane, "idWydzial=" + idWydzialu + " and idTabeli='" + idTabeli + "' and idWiersza ='" + i.ToString() + "' and idkolumny='1'", tenPlik);
                     string txt2 = "<a Class=\"normal\" href=\"javascript: openPopup('popup.aspx?sesja=" + i.ToString().ToString() + "!" + idTabeli + "!1!4')\">" + txt + " </a>";
-                    kodStony.AppendLine("<td class='center borderAll col_90'>" + txt2 + "</td>");
+                    kodStony.AppendLine("<td class='center borderAll col_90' style=' vertical-align: top; height:20px; display:block'>" + txt2 + "</td>");
                 }
                 kodStony.AppendLine("</tr>");
             }

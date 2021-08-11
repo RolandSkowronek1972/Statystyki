@@ -141,6 +141,10 @@ namespace Statystyki_2018
             string ZestaKW_SC_08 = string.Empty;
 
             stTabKW = zestawZapytujacy.Split(stringSeparatorsKW, StringSplitOptions.None);
+            StringBuilder Zapytania = new StringBuilder();
+            Zapytania.AppendLine("  <?xml version='1.0' encoding='utf-8'?> ");
+            Zapytania.AppendLine("<!—nagłówek XML-- > ");
+            Zapytania.AppendLine("<ms:Zapytania version='1' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>");
             try
             {
                 ZestaKW_SC_00 = stTabKW[0];
@@ -159,6 +163,27 @@ namespace Statystyki_2018
                 return string.Empty;
             }
 
+            for (int i = 0; i < 9; i++)
+            {
+                Zapytania.AppendLine("<ms:zapytanie> ");
+                string[] daneZapytan = wyciagnijDane(stTabKW[i]);
+                try
+                {
+                    Zapytania.AppendLine("<ms:id> " + daneZapytan[0] + "</ms:id >");
+                    Zapytania.AppendLine("<ms:kwerenda> " + daneZapytan[1] + "</ms:kwerenda >");
+                    Zapytania.AppendLine("<ms:connectionString> " + daneZapytan[2] + "</ms:connectionString >");
+                }
+                catch (Exception ex)
+                {
+                    cm.log.Error("Wymiana  serwer 1: Bład kwerend z zapytaniami");
+                    return null;
+                }
+                Zapytania.AppendLine("</ms:zapytanie> ");
+            }
+            Zapytania.AppendLine("</ms:Zapytania> ");
+            string pathZDP = Server.MapPath("Wymiana2\\Zapytania\\Zapytanie_") + DateTime.Now.ToString().Replace(" ", "_").Replace(".", "_").Replace(":", "_") + ".xml";
+            System.IO.File.WriteAllText(pathZDP, Zapytania.ToString());
+
             //sprawy
             DataTable dTsprawy = new DataTable();
             if (!string.IsNullOrEmpty(ZestaKW_SC_00))
@@ -173,8 +198,8 @@ namespace Statystyki_2018
             DataSet dSetStronyZeSprawy = new DataSet();
             List<int> id_sprawy = new List<int>();
             StringBuilder plikXML = new StringBuilder();
-            plikXML.AppendLine("  <?xml version='1.0' encoding='utf - 8' ?> ");
-            plikXML.AppendLine("< !—nagłówek XML-- > ");
+            plikXML.AppendLine("<?xml version='1.0' encoding='utf-8'?> ");
+            plikXML.AppendLine("<!—nagłówek XML-- > ");
             plikXML.AppendLine("<ms:Sprawy version='1' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>");
 
             foreach (DataRow wierszZdanymiSpraw in dTsprawy.Rows)
@@ -342,7 +367,7 @@ namespace Statystyki_2018
                 /*============================ referent =====================================*/
 
                 plikXML.AppendLine("<ms:Referenci>");
-               
+
                 DataTable dTSprawyReferent = SprawyReferent(idSprawy, ZestaKW_SC_03);
                 if (dTSprawyReferent != null)
                 {
@@ -370,6 +395,80 @@ namespace Statystyki_2018
                 plikXML.AppendLine("</ms:Referenci>");
 
                 /*============================ eof referent =====================================*/
+                /*============================ eof Orzeczenia =====================================*/
+                /*============================ eof Wyrok =====================================*/
+                plikXML.AppendLine("<ms:Orzeczenia>");
+
+                DataTable dTSprawyWyrok = Wyrok(idSprawy, ZestaKW_SC_07);
+                plikXML.AppendLine("<ms:OrzeczeniaWyrok>");
+                if (dTSprawyWyrok != null)
+                {
+                    foreach (DataRow wyrok in dTSprawyWyrok.Rows)
+                    {
+                        plikXML.AppendLine("<ms:wyrok>");
+
+                        string rodzajOrzeczenia = wyrok[0].ToString();
+                        string Data = wyrok[1].ToString();
+
+                        string Nazwa = wyrok[2].ToString();
+                        string TrescSentencji = wyrok[3].ToString();
+
+                        plikXML.AppendLine("<ms:Rodzaj>" + rodzajOrzeczenia + "</ms:Rodzaj>");
+                        plikXML.AppendLine("<ms:Data>" + Data + "</ms:Data>");
+                        plikXML.AppendLine("<ms:Nazwa>" + Nazwa + "</ms:Nazwa>");
+                        plikXML.AppendLine("<ms:TrescSentencji>" + TrescSentencji + "</ms:TrescSentencji>");
+
+                        plikXML.AppendLine("</ms:wyrok>");
+                    }
+                }
+                plikXML.AppendLine("</ms:OrzeczeniaWyrok>");
+                DataTable dTSprawyPostanowienie = Postanowienie(idSprawy, ZestaKW_SC_08);
+                plikXML.AppendLine("<ms:OrzeczeniaPostanowienie>");
+                if (dTSprawyPostanowienie != null)
+                {
+                    foreach (DataRow wyrok in dTSprawyPostanowienie.Rows)
+                    {
+                        plikXML.AppendLine("<ms:Postanowienie>");
+
+                        string rodzajOrzeczenia = wyrok[0].ToString();
+                        string Data = wyrok[1].ToString();
+
+                        string Nazwa = wyrok[2].ToString();
+                        string TrescSentencji = wyrok[3].ToString();
+
+                        plikXML.AppendLine("<ms:Rodzaj>" + rodzajOrzeczenia + "</ms:Rodzaj>");
+                        plikXML.AppendLine("<ms:Data>" + Data + "</ms:Data>");
+                        plikXML.AppendLine("<ms:Nazwa>" + Nazwa + "</ms:Nazwa>");
+                        plikXML.AppendLine("<ms:TrescSentencji>" + TrescSentencji + "</ms:TrescSentencji>");
+
+                        plikXML.AppendLine("</ms:Postanowienie>");
+                    }
+                }
+                plikXML.AppendLine("</ms:OrzeczeniaPostanowienie>");
+                DataTable dTSprawyProtokol = Protokol(idSprawy, ZestaKW_SC_08);
+                plikXML.AppendLine("<ms:OrzeczeniaProtokol>");
+                if (dTSprawyProtokol != null)
+                {
+                    foreach (DataRow wyrok in dTSprawyProtokol.Rows)
+                    {
+                        plikXML.AppendLine("<ms:Protokol>");
+
+                        string rodzajOrzeczenia = wyrok[0].ToString();
+                        string Data = wyrok[1].ToString();
+
+                        string Nazwa = wyrok[2].ToString();
+                        string TrescSentencji = wyrok[3].ToString();
+
+                        plikXML.AppendLine("<ms:Rodzaj>" + rodzajOrzeczenia + "</ms:Rodzaj>");
+                        plikXML.AppendLine("<ms:Data>" + Data + "</ms:Data>");
+                        plikXML.AppendLine("<ms:Nazwa>" + Nazwa + "</ms:Nazwa>");
+                        plikXML.AppendLine("<ms:TrescSentencji>" + TrescSentencji + "</ms:TrescSentencji>");
+
+                        plikXML.AppendLine("</ms:Protokol>");
+                    }
+                }
+                plikXML.AppendLine("</ms:OrzeczeniaProtokol>");
+                plikXML.AppendLine("</ms:Orzeczenia>");
             }
 
             plikXML.AppendLine("</ms:Sprawy>");
@@ -440,6 +539,15 @@ namespace Statystyki_2018
             DataTable dT1 = cm.getDataTable(Kwerenda, ConnectionString, parametry, "Wymiana 2 - Strony sprawy");
 
             return dT1;
+        }
+
+        private string[] wyciagnijDane(string dane)
+        {
+            string[] stringSeparators = new string[] { "|" };
+            string[] stTab = null;
+
+            stTab = dane.Split(stringSeparators, StringSplitOptions.None);
+            return stTab;
         }
 
         private string AdresyStron(int id_sprawy, string kwerendaZapytujacaIConnectionString)
@@ -529,10 +637,85 @@ namespace Statystyki_2018
             return dT1;
         }
 
-        private string Orzeczenia(int id_sprawy, string kwerendaZapytujacaIConnectionString)
+        private DataTable Wyrok(int id_sprawy, string kwerendaZapytujacaIConnectionString)
         {
-            string odpowiedz = string.Empty;
-            return odpowiedz;
+            string Kwerenda = string.Empty;
+            string ConnectionString = string.Empty;
+
+            string[] stringSeparators = new string[] { "|" };
+            string[] stTab = null;
+
+            stTab = kwerendaZapytujacaIConnectionString.Split(stringSeparators, StringSplitOptions.None);
+            try
+            {
+                Kwerenda = stTab[1];
+                ConnectionString = stTab[2];
+            }
+            catch (Exception ex)
+            {
+                cm.log.Error("Wymiana 2 serwer: Brak kwerend z zapytaniami " + ex.Message);
+                return null;
+            }
+            DataTable parametry = cm.makeParameterTable();
+            parametry.Rows.Add("@ident", id_sprawy);
+
+            DataTable dT1 = cm.getDataTable(Kwerenda, ConnectionString, parametry, "Wymiana 2 - referent");
+
+            return dT1;
+        }
+
+        private DataTable Postanowienie(int id_sprawy, string kwerendaZapytujacaIConnectionString)
+        {
+            string Kwerenda = string.Empty;
+            string ConnectionString = string.Empty;
+
+            string[] stringSeparators = new string[] { "|" };
+            string[] stTab = null;
+
+            stTab = kwerendaZapytujacaIConnectionString.Split(stringSeparators, StringSplitOptions.None);
+            try
+            {
+                Kwerenda = stTab[1];
+                ConnectionString = stTab[2];
+            }
+            catch (Exception ex)
+            {
+                cm.log.Error("Wymiana 2 serwer: Brak kwerend z zapytaniami " + ex.Message);
+                return null;
+            }
+            DataTable parametry = cm.makeParameterTable();
+            parametry.Rows.Add("@ident", id_sprawy);
+
+            DataTable dT1 = cm.getDataTable(Kwerenda, ConnectionString, parametry, "Wymiana 2 - referent");
+
+            return dT1;
+        }
+
+        private DataTable Protokol(int id_sprawy, string kwerendaZapytujacaIConnectionString)
+        {
+            string Kwerenda = string.Empty;
+            string ConnectionString = string.Empty;
+
+            string[] stringSeparators = new string[] { "|" };
+            string[] stTab = null;
+
+            stTab = kwerendaZapytujacaIConnectionString.Split(stringSeparators, StringSplitOptions.None);
+            try
+            {
+                Kwerenda = stTab[1];
+                ConnectionString = stTab[2];
+            }
+            catch (Exception ex)
+            {
+                cm.log.Error("Wymiana 2 serwer: Brak kwerend z zapytaniami " + ex.Message);
+                return null;
+            }
+            DataTable parametry = cm.makeParameterTable();
+            parametry.Rows.Add("@ident", id_sprawy);
+
+            DataTable dT1 = cm.getDataTable(Kwerenda, ConnectionString, parametry, "Wymiana 2 - referent");
+
+            return dT1;
         }
     }
 }
