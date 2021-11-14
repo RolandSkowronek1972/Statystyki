@@ -3,7 +3,6 @@ using System;
 using System.Data;
 using System.Globalization;
 using System.IO;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace Statystyki_2018
@@ -62,7 +61,7 @@ namespace Statystyki_2018
                         Session["tabelka002"] = null;
                         Session["tabelka003"] = null;
                         Session["tabelka004"] = null;
-                      
+
                         odswiez();
                         makeLabels();
                     }
@@ -73,10 +72,6 @@ namespace Statystyki_2018
                 Server.Transfer("default.aspx");
             }
         }// end of Page_Load
-
-
-
-
 
         protected void clearHedersSession()
         {
@@ -90,10 +85,10 @@ namespace Statystyki_2018
         {
             string idDzialu = (string)Session["id_dzialu"];
             id_dzialu.Text = (string)Session["txt_dzialu"];
-         
+
             try
             {
-                Session["tabelka001"] = dr.generuj_dane_do_tabeli_wierszy2018( Date1.Date, Date2.Date, idDzialu, 1,6,6, true, tenPlik);
+                Session["tabelka001"] = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, idDzialu, 1, 10, 6, true, tenPlik);
                 GridView2.DataSource = null;
                 GridView2.DataSourceID = null;
                 GridView2.DataSource = (DataTable)Session["tabelka001"];
@@ -134,8 +129,6 @@ namespace Statystyki_2018
 
             makeLabels();
 
-           
-          
             Label3.Text = cl.nazwaSadu((string)Session["id_dzialu"]);
         }
 
@@ -147,8 +140,6 @@ namespace Statystyki_2018
             {
                 GridView1.DataSource = null;
                 GridView1.DataSourceID = null;
-
-
                 GridView1.DataSource = tabela01;
                 GridView1.DataBind();
             }
@@ -156,11 +147,7 @@ namespace Statystyki_2018
             {
                 cm.log.Error(tenPlik + " generowanie tabeli wierszy 01  " + ex.Message);
             }
-
         }
-
-
-
 
         protected void makeLabels()
         {
@@ -295,6 +282,9 @@ namespace Statystyki_2018
         {
             if (e.Row.RowType == DataControlRowType.Header)
             {
+
+
+
                 GridView HeaderGrid = (GridView)sender;
                 GridViewRow HeaderGridRow = new GridViewRow(0, 0, DataControlRowType.Header, DataControlRowState.Insert);
                 HeaderGridRow.Font.Size = 7;
@@ -637,7 +627,6 @@ namespace Statystyki_2018
 
         #endregion "nagłowki tabel"
 
-
         protected void Button3_Click(object sender, EventArgs e)
         {
             // execel begin
@@ -649,12 +638,12 @@ namespace Statystyki_2018
 
             using (ExcelPackage MyExcel = new ExcelPackage(existingFile))
             {
-             
                 ExcelWorksheet MyWorksheet1 = MyExcel.Workbook.Worksheets[1];
-            
-                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziowZopisem(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 6, 6, 1, 4, true);             
-                MyWorksheet1 = tb.tworzArkuszwExcelPrzestawiony(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 12, 0, 4, true, true, true, true, false);
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 8, 0, 4, true, true, true, true, false);            
+
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziowZopisem(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 6, 10, 1, 4, true);
+             //   MyWorksheet1 = tb.tworzArkuszwExcelPrzestawiony(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 12, 0, 4, true, true, true, true, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 12, 0, 4, true, true, true, true, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 8, 0, 4, true, true, true, true, false);
                 MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 8, 0, 4, true, true, true, true, false);
 
                 try
@@ -679,6 +668,30 @@ namespace Statystyki_2018
             odswiez();
         }
 
-      
+        protected void SumaTabeli02(object sender, GridViewRowEventArgs e)
+        {
+
+            if (e.Row.RowType == DataControlRowType.Footer)
+            {
+                tb.makeSumRow((DataTable)Session["tabelka002"], e,3,4);
+            }
+           
+        }
+
+        protected void SumaTabeli03(object sender, GridViewRowEventArgs e)
+        {
+            if (e.Row.RowType == DataControlRowType.Footer)
+            {
+                tb.makeSumRow((DataTable)Session["tabelka003"], e,3,4);
+            }
+        }
+
+        protected void SumaTabeli04(object sender, GridViewRowEventArgs e)
+        {
+            if (e.Row.RowType == DataControlRowType.Footer)
+            {
+                tb.makeSumRow((DataTable)Session["tabelka004"], e,3,4);
+            }
+        }
     }
 }

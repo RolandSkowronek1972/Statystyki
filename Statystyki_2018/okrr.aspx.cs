@@ -23,12 +23,12 @@ namespace Statystyki_2018
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            string idWydzial = Request.QueryString["w"];
+            string idWydzial =Request.QueryString["w"];
             try
             {
                 if (idWydzial == null)
                 {
-                    return;
+                    Server.Transfer("default.aspx");
                 }
                 bool dost = cm.dostep(idWydzial, (string)Session["identyfikatorUzytkownika"]);
                 if (!dost)
@@ -70,7 +70,7 @@ namespace Statystyki_2018
             }
             catch
             {
-                Server.Transfer("default.aspx");
+               
             }
         }// end of Page_Load
 
@@ -550,25 +550,26 @@ namespace Statystyki_2018
                 tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 14, 4, "powyżej 3 do 6 miesięcy", true, 0, 14);
                 tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 15, 4, "powyżej 6 do 12 miesięcy", true, 0, 14);
                 tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 16, 4, "powyżej 12 miesięcy", true, 0, 14);
-
                 tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 17, 4, "w tym", true, 3, 1, true, true);
                 tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 17, 6, "powyżej 12 miesięcy - 2 lat", true, 0, 12);
                 tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 18, 6, "powyżej 2 lat - 3 lat", true, 0, 12);
                 tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 19, 6, "powyżej 3 lat - 5 lat", true, 0, 12);
                 tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 20, 6, "powyżej 5 lat", true, 0, 12);
+
+             
                 try
                 {
                     for (int i = 0; i < 11; i++)//wiersze
                     {
                         for (int j = 0; j < 4; j++)// kolunmny
                         {
-                            tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 10 + i, j + 19, tabelka001.Rows[i][j + 1].ToString(), false, 0, 0, true, false);
+                            tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 10 + i, j + 19, tabelka001.Rows[i][j ].ToString(), false, 0, 0, true, false);
                         }
                         tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 10 + i, 22, "", true, 10, 1, true, true);
 
                         for (int j = 4; j < 18; j++)// kolunmny
                         {
-                            tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 10 + i, j + 20, tabelka001.Rows[i][j + 1].ToString(), false, 0, 0, true, false);
+                            tabela.komorkaExcela(MyWorksheet, przesuniecieWdol + 10 + i, j + 20, tabelka001.Rows[i][j-1 ].ToString(), false, 0, 0, true, false);
                         }
                     }
                 }
@@ -691,18 +692,18 @@ namespace Statystyki_2018
             DataTable tabelka01 = (DataTable)Session["tabelka002"];
             GridViewRow NewTotalRow = new GridViewRow(0, 0, DataControlRowType.DataRow, DataControlRowState.Insert);
             NewTotalRow.Cells.Add(tabela.cela(tekst, 1, 14, "borderTopLeft "));
-            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!1!3')\">" + tabelka01.Rows[idWiersza][1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
-            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!2!3')\">" + tabelka01.Rows[idWiersza][2].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
-            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!3!3')\">" + tabelka01.Rows[idWiersza][3].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
-            for (int i = 4; i < 17; i++)
+            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!1!3')\">" + tabelka01.Rows[idWiersza][0].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!2!3')\">" + tabelka01.Rows[idWiersza][1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!3!3')\">" + tabelka01.Rows[idWiersza][2].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+            for (int i = 4; i < 18; i++)
             {
-                NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!" + i.ToString() + "!3')\">" + tabelka01.Rows[idWiersza][i].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+                NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!" + i.ToString() + "!3')\">" + tabelka01.Rows[idWiersza][i-1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             }
-            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!1!3')\">" + tabelka01.Rows[idWiersza][17].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+          //  NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!16!3')\">" + tabelka01.Rows[idWiersza][16].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
 
             return NewTotalRow;
         }
-
+      
         private GridViewRow wierszTabeli1(int idWiersza, string idtabeli, string tekst)
         {
             // nowy wiersz
@@ -711,15 +712,15 @@ namespace Statystyki_2018
             GridViewRow NewTotalRow = new GridViewRow(0, 0, DataControlRowType.DataRow, DataControlRowState.Insert);
             NewTotalRow.Cells.Add(tabela.cela(tekst, 1, 14, "borderTopLeft "));
 
-            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!1!3')\">" + tabelka01.Rows[idWiersza][1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
-            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!2!3')\">" + tabelka01.Rows[idWiersza][2].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
-            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!3!3')\">" + tabelka01.Rows[idWiersza][3].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!1!3')\">" + tabelka01.Rows[idWiersza][0].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!2!3')\">" + tabelka01.Rows[idWiersza][1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!3!3')\">" + tabelka01.Rows[idWiersza][2].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             for (int i = 4; i < 13; i++)
             {
-                NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!" + i.ToString() + "!3')\">" + tabelka01.Rows[idWiersza][i].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+                NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!" + i.ToString() + "!3')\">" + tabelka01.Rows[idWiersza][i-1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             }
             NewTotalRow.Cells.Add(tabela.cela("", 7, 4, "borderTopLeft gray"));
-            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!1!3')\">" + tabelka01.Rows[idWiersza][17].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!17!3')\">" + tabelka01.Rows[idWiersza][16].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             return NewTotalRow;
         }
 
@@ -730,15 +731,15 @@ namespace Statystyki_2018
             DataTable tabelka01 = (DataTable)Session["tabelka002"];
             GridViewRow NewTotalRow = new GridViewRow(0, 0, DataControlRowType.DataRow, DataControlRowState.Insert);
             NewTotalRow.Cells.Add(tabela.cela(tekst, 1, 14, "borderTopLeft "));
-            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!1!3')\">" + tabelka01.Rows[idWiersza][1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
-            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!2!3')\">" + tabelka01.Rows[idWiersza][2].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
-            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!3!3')\">" + tabelka01.Rows[idWiersza][3].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!1!3')\">" + tabelka01.Rows[idWiersza][0].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!2!3')\">" + tabelka01.Rows[idWiersza][1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!3!3')\">" + tabelka01.Rows[idWiersza][2].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             for (int i = 4; i < 13; i++)
             {
-                NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!" + i.ToString() + "!3')\">" + tabelka01.Rows[idWiersza][i].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+                NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!" + i.ToString() + "!3')\">" + tabelka01.Rows[idWiersza][i-1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             }
-
-            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!1!3')\">" + tabelka01.Rows[idWiersza][17].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+            
+            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!17!3')\">" + tabelka01.Rows[idWiersza][16].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             return NewTotalRow;
         }
 
@@ -750,14 +751,14 @@ namespace Statystyki_2018
             GridViewRow NewTotalRow = new GridViewRow(0, 0, DataControlRowType.DataRow, DataControlRowState.Insert);
             NewTotalRow.Cells.Add(tabela.cela("w tym", 4, 1, "borderTopLeft gray"));
             NewTotalRow.Cells.Add(tabela.cela(tekst, 1, 13, "borderTopLeft  "));
-            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!1!3')\">" + tabelka01.Rows[idWiersza][1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
-            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!2!3')\">" + tabelka01.Rows[idWiersza][2].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
-            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!3!3')\">" + tabelka01.Rows[idWiersza][3].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!1!3')\">" + tabelka01.Rows[idWiersza][0].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!2!3')\">" + tabelka01.Rows[idWiersza][1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!3!3')\">" + tabelka01.Rows[idWiersza][2].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             for (int i = 4; i < 13; i++)
             {
-                NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!" + i.ToString() + "!3')\">" + tabelka01.Rows[idWiersza][i].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+                NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!" + i.ToString() + "!3')\">" + tabelka01.Rows[idWiersza][i-1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             }
-            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!1!3')\">" + tabelka01.Rows[idWiersza][17].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!17!3')\">" + tabelka01.Rows[idWiersza][16].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             return NewTotalRow;
         }
 
@@ -769,14 +770,14 @@ namespace Statystyki_2018
             GridViewRow NewTotalRow = new GridViewRow(0, 0, DataControlRowType.DataRow, DataControlRowState.Insert);
 
             NewTotalRow.Cells.Add(tabela.cela(tekst, 1, 13, "borderTopLeft"));
-            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!1!3')\">" + tabelka01.Rows[idWiersza][1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
-            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!2!3')\">" + tabelka01.Rows[idWiersza][2].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
-            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!3!3')\">" + tabelka01.Rows[idWiersza][3].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!1!3')\">" + tabelka01.Rows[idWiersza][0].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!2!3')\">" + tabelka01.Rows[idWiersza][1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!3!3')\">" + tabelka01.Rows[idWiersza][2].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             for (int i = 4; i < 13; i++)
             {
-                NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!" + i.ToString() + "!3')\">" + tabelka01.Rows[idWiersza][i].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+                NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!" + i.ToString() + "!3')\">" + tabelka01.Rows[idWiersza][i-1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             }
-            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!1!3')\">" + tabelka01.Rows[idWiersza][17].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+              NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!17!3')\">" + tabelka01.Rows[idWiersza][16].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             return NewTotalRow;
         }
 
@@ -795,17 +796,17 @@ namespace Statystyki_2018
 
             int idWiersza = 0;
 
-            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!1!3')\">" + tabelka01.Rows[idWiersza][1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
-            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!2!3')\">" + tabelka01.Rows[idWiersza][2].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
-            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!3!3')\">" + tabelka01.Rows[idWiersza][3].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!1!3')\">" + tabelka01.Rows[idWiersza][0].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!2!3')\">" + tabelka01.Rows[idWiersza][1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!3!3')\">" + tabelka01.Rows[idWiersza][2].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
 
             NewTotalRow.Cells.Add(tabela.cela("", 11, 2, "borderTopLeft doubleXcross gray"));
 
-            for (int i = 4; i < 17; i++)
+            for (int i = 4; i < 18; i++)
             {
-                NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!" + i.ToString() + "!3')\">" + tabelka01.Rows[idWiersza][i].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+                NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!" + i.ToString() + "!3')\">" + tabelka01.Rows[idWiersza][i-1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             }
-            NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!1!3')\">" + tabelka01.Rows[idWiersza][17].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+         //   NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!16!3')\">" + tabelka01.Rows[idWiersza][16].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
 
             GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, NewTotalRow);
 
@@ -839,8 +840,8 @@ namespace Statystyki_2018
             GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, wierszTabeli2(idWiersza, idtabeli, "powyżej 12 miesięcy - 2 lat"));
             // nowy wiersz
             idWiersza = 8;
+         
             GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, wierszTabeli3(idWiersza, idtabeli, "powyżej 2 lat - 3 lat"));
-
             // nowy wiersz
             idWiersza = 9;
             GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, wierszTabeli3(idWiersza, idtabeli, "powyżej 3 lat - 5 lat"));

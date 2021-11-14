@@ -57,7 +57,7 @@ namespace Statystyki_2018
                     if (col.Contains(idkolumny))
                     {
                         sumObject = tabelka.Compute("Sum(" + idkolumny + ")", "");
-                        wiersz[i] = double.Parse(sumObject.ToString());
+                        wiersz[idkolumny] = double.Parse(sumObject.ToString());
                     }
                 }
                 catch (Exception ex)

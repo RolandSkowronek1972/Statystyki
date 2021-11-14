@@ -11,6 +11,7 @@ namespace Statystyki_2018
 {
     public partial class Wymiana1 : System.Web.UI.Page
     {
+        
         public ServiceReference test = new ServiceReference();
         public common cm = new common();
         public Class1 cl = new Class1();
@@ -328,13 +329,15 @@ namespace Statystyki_2018
             TextBox1.Text = TextBox1.Text + "Wymiana odczyt danych: Odczyt kwerendy z zapytaniami:connection string " + connection + Environment.NewLine;
             log.Info("Wymiana 2 odczyt danych: Odczyt kwerend z zapytaniami:connection string " + connection);
 
-            DataTable zestawZapytujacy = cm.getDataTable("SELECT distinct typ, kwerendaOdczytujaca,  connection FROM wymiana where rodzaj = @rodzaj and typ>200 and typ<300 order by typ", cm.con_str, parametry, "wymiana client: kwerendaWalidująca");
+            DataTable zestawZapytujacy = cm.getDataTable("SELECT distinct typ, kwerendaOdczytujaca,  connection FROM wymiana where rodzaj = @rodzaj and typ>200 and typ<300 order by typ", cm.con_str, parametry, "wymiana 2 client: kwerendaOdczytujaca");
             if (zestawZapytujacy == null)
             {
-                log.Error("Wymiana odczyt danych: Brak kwerend z zapytaniami  po stronie klienta -  typ>200 and typ<300");
+                log.Error("Wymiana 2 odczyt danych: Brak kwerend z zapytaniami  po stronie klienta -  typ>200 and typ<300");
                 TextBox1.Text = TextBox1.Text + "Wymiana odczyt danych: Brak kwerend z zapytaniami  po stronie klienta -  typ>200 and typ<300" + Environment.NewLine;
                 return;
             }
+            log.Info("Wymiana 2 odczyt danych: Ilość kwerend odczytujacych " + zestawZapytujacy.Rows.Count.ToString());
+            TextBox1.Text = TextBox1.Text + "Wymiana 2 odczyt danych: Ilość kwerend odczytujacych " + zestawZapytujacy.Rows.Count.ToString() + Environment.NewLine;
 
             string nrWydzialu = TBNrWydzialu2.Text.Trim();
             string nrReprrtorium = TBRepertorium2.Text.Trim();
@@ -346,18 +349,37 @@ namespace Statystyki_2018
 
             //   string[] zestaw = new string[3];
             StringBuilder zesatwDanych = new StringBuilder();
+            StringBuilder Zapytania = new StringBuilder();
+            Zapytania.AppendLine("  <?xml version='1.0' encoding='utf-8'?> ");
+            Zapytania.AppendLine("<!—nagłówek XML-- > ");
+            Zapytania.AppendLine("<ms:Zapytania version='1' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>");
             foreach (DataRow wiersz in zestawZapytujacy.Rows)
             {
                 string nrKwerendy = wiersz[0].ToString();
                 string kwerenda = wiersz[1].ToString();
                 string sc = wiersz[2].ToString();
                 zesatwDanych.Append(nrKwerendy + "|" + kwerenda + "|" + sc + "#");
+                Zapytania.AppendLine("<ms:zapytanie> ");
+                try
+                {
+                    Zapytania.AppendLine("<ms:id> " + nrKwerendy + "</ms:id >");
+                    Zapytania.AppendLine("<ms:kwerenda> " + kwerenda + "</ms:kwerenda >");
+                    Zapytania.AppendLine("<ms:connectionString> " + sc + "</ms:connectionString >");
+                }
+                catch (Exception ex)
+                {
+                    cm.log.Error("Wymiana  serwer 1: Bład kwerend z zapytaniami");
+                  
+                }
+                Zapytania.AppendLine("</ms:zapytanie> ");
             }
             string parametryTXT = nrWydzialu + "|" + nrReprrtorium + "|" + nrSprawy + "|" + rok;
+            Zapytania.AppendLine("</ms:Zapytania> ");
+            string pathZDP = Server.MapPath("Wymiana2\\Zapytania\\Zapytanie_Server1_") + DateTime.Now.ToString().Replace(" ", "_").Replace(".", "_").Replace(":", "_") + ".xml";
             //  serwisWymianySoapClient.Endpoint.Address = endpointAddress;
 
             string wynik = string.Empty;
-
+            log.Info("Wymiana 2 Start zapytania do serwera  " + serwisWymianySoapClient.Endpoint.Address);
             try
             {
                // L(string NrWydzialu, string repertorium, string nrSprawy, string rodzaj, string rok, string zestawZapytujacy)
@@ -372,10 +394,13 @@ namespace Statystyki_2018
             }
             catch (Exception ex)
             {
-                log.Error("Wymiana odczyt danych: " + ex.Message);
+                log.Error("Wymiana 2 odczyt danych: " + ex.Message);
                 TextBox1.Text = TextBox1.Text + ex.Message + Environment.NewLine;
                 return;
             }
+            log.Info("Wymiana 2 Koniec zapytania do serwera  " + serwisWymianySoapClient.Endpoint.Address);
+
+
         }
     }
 }

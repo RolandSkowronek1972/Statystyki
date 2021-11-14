@@ -11987,6 +11987,287 @@
       </komorka>
     </tablaBoczna>
   </tabela>
+
+
+  <tabela id="7.1">
+    <daneTabeli>
+
+      <iloscWierszy>4</iloscWierszy>
+      <tekstNadTabela>Liczba biegłych/podmiotów wydających opinie w sprawach (z wył. tłumaczy przysięgłych)</tekstNadTabela>
+      <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>2</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>4</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>7.1</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_250</style>
+        <text>Sprawy wg repertoriów </text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>4</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>  Liczba powołanych biegłych  </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>Razem (kol. 2-4)</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>biegli sądowi</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>biegli spoza listy</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>inne podmioty</text>
+      </komorka>
+    </naglowek>
+    <tablaBoczna>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Ogółem (w. 02+04)  </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style> wciecie </style>
+        <text>w tym</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>C</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>CG-G </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Ns</text>
+      </komorka>
+    </tablaBoczna>
+  </tabela>
+
+  <tabela id="7.2">
+    <daneTabeli>
+
+      <iloscWierszy>4</iloscWierszy>
+      <tekstNadTabela> Terminowość sporządzania opinii pisemnych (z wył. tłumaczy przysięgłych) </tekstNadTabela>
+      <iloscWierszyNaglowka>3</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>2</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>8</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>7.2</identyfikatorTabeli>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_250</style>
+        <text>Sprawy wg repertoriów </text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>8</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text> Lista sporządzonych opinii  </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_120</style>
+        <text>
+          razem
+          (kol. 1=2 do 5=6 do 8)
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_120</style>
+        <text>
+          w ustawowym
+          terminie</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>po ustalonym terminie</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>3</colSpan>
+        <rowspan>0</rowspan>
+        <style>center </style>
+        <text>wg. czasu wydania opinii</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>do 30 dni</text>
+      </komorka>
+       <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>
+          pow. 1 do  3 miesięcy.
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>
+          pow. 3 miesięcy
+        </text>
+      </komorka>
+
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>do 30 dni</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>
+          pow. 1 do  3 miesięcy.
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_120</style>
+        <text>
+          pow. 3 miesięcy
+        </text>
+      </komorka>
+    </naglowek>
+    <tablaBoczna>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>2</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Ogółem (w. 02+04)  </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style> wciecie </style>
+        <text>w tym</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>C</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>CG-G </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>Ns</text>
+      </komorka>
+    </tablaBoczna>
+  </tabela>
+  
   <tabela id="7.3">
     <daneTabeli>
 

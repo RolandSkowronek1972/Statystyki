@@ -70,33 +70,31 @@ namespace Statystyki_2018
             int idWydzialuNumerycznie = int.Parse((string)Session["id_dzialu"]);
             try
             {
-                // tablePlaceHolder01 = new PlaceHolder();
+             
                 tablePlaceHolder01.Controls.Clear();
                 tablePlaceHolder02.Controls.Clear();
                 tablePlaceHolder03.Controls.Clear();
                 tablePlaceHolder04.Controls.Clear();
                 tablePlaceHolder05.Controls.Clear();
-                tablePlaceHolder06.Controls.Clear();
-                tablePlaceHolder07.Controls.Clear();
+            
                 tablePlaceHolder01.Dispose();
                 tablePlaceHolder02.Dispose();
                 tablePlaceHolder03.Dispose();
                 tablePlaceHolder04.Dispose();
                 tablePlaceHolder05.Dispose();
-                tablePlaceHolder06.Dispose();
-                tablePlaceHolder07.Dispose();
+               
                 string path = Server.MapPath("XMLHeaders") + "\\" + "MSS1r.xml";
                 string[] numeryTabel00 = new string[] { "1", "1.1", "1.2" };
                 string[] numeryTabel01 = new string[] { "1.1.b", "1.1.c", "1.1.d", "1.1.e" };
                 string[] numeryTabel02 = new string[] { "1.1.h", "1.1.i", "1.1.j", "1.1.k", "1.1.k.a" };
-                string[] numeryTabel03 = new string[] { "1.1.2.a", "1.1.2.b", "1.2.1", "1.2.2", "1.3.a", "1.3.b", "1.3.1", "1.4.1", "2.1.1", "2.1.1.1", "2.1.1.a", "2.1.1.a.1", "2.1.2", "2.1.2.1", "2.2", "2.2.a", "2.2.1", "2.2.1.a", "2.3", "2.3.1", "3", "4.1", "4.2", "5", "5.1", "5.1.a", "5.2", "6" };
-                string[] numeryTabel05 = new string[] { "7.3", "8.1", "8.2", "8.3", "9" };
+                string[] numeryTabel03 = new string[] { "1.1.2.a", "1.1.2.b", "1.2.1", "1.2.2", "1.3.a", "1.3.b", "1.3.1", "1.4.1", "2.1.1", "2.1.1.1", "2.1.1.a", "2.1.1.a.1", "2.1.2", "2.1.2.1", "2.2", "2.2.a", "2.2.1", "2.2.1.a", "2.3", "2.3.1", "3", "4.1", "4.2", "5", "5.1", "5.1.a", "5.2", "6",  "7.1", "7.2", "7.3", "8.1", "8.2", "8.3", "9" };
+             
 
                 ms.TworzTabelizListy(numeryTabel00, tablePlaceHolder01, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
                 ms.TworzTabelizListy(numeryTabel01, tablePlaceHolder02, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
                 ms.TworzTabelizListy(numeryTabel02, tablePlaceHolder03, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
                 ms.TworzTabelizListy(numeryTabel03, tablePlaceHolder04, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
-                ms.TworzTabelizListy(numeryTabel05, tablePlaceHolder06, path, tabelaDanych, idWydzialuNumerycznie, tenPlik);
+              
                 if (tabelaDanych.Rows.Count > 0)
                 {
                     #region "tabel 1.1.a"
@@ -232,17 +230,7 @@ namespace Statystyki_2018
 
                 string strMonthName = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(Date2.Date.Month);
                 int last_day = DateTime.DaysInMonth(Date2.Date.Year, Date2.Date.Month);
-                if (((Date1.Date.Day == 1) && (Date2.Date.Day == last_day)) && ((Date1.Date.Month == Date2.Date.Month)))
-                {
-                    // cały miesiąc
-                    tabela4Label.Text = "<b>Dział 7.1.</b> Liczba biegłych/podmiotów wydających opinie w sprawach  (z wył. tłumaczy przysięgłych) za miesiąc " + strMonthName + " " + Date2.Date.Year.ToString() + " roku.";
-                    tabela5Label.Text = "<b>Dział 7.2.</b> Terminowość sporządzania opinii pisemnych (z wył. tłumaczy przysięgłych) za miesiąc " + strMonthName + " " + Date2.Date.Year.ToString() + " roku.";
-                }
-                else
-                {
-                    tabela4Label.Text = "<b>Dział 7.1.</b> Liczba biegłych/podmiotów wydających opinie w sprawach  (z wył. tłumaczy przysięgłych) za okres od " + Date1.Text + " do  " + Date2.Text;
-                    tabela5Label.Text = "<b>Dział 7.2.</b> Terminowość sporządzania opinii pisemnych (z wył. tłumaczy przysięgłych) za okres od " + Date1.Text + " do  " + Date2.Text;
-                }
+              
             }
             catch
             {

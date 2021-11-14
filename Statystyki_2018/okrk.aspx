@@ -497,7 +497,7 @@
                 <ItemTemplate>
                         <a href="javascript:openPopup('popup.aspx?sesja=<%# Eval("id_sedziego")+ "!"+Eval("id_tabeli") +"!17!7"%>')"><asp:Label ID="Label317" runat="server" Text='<%# Eval("d_17")%>' CssClass="normal"></asp:Label> </a>
                 </ItemTemplate>
-                  <ItemStyle  CssClass="col_46" />
+                  <ItemStyle  CssClass="col_46 " />
             </asp:TemplateField>
 
        <asp:TemplateField HeaderText="d_06" SortExpression="d_06">
@@ -516,7 +516,7 @@
         </div>
     
     <br />
-    <div id="Div11"  class="page-break"> 
+    <div id="Tabela4"  class="page-break"> 
     &nbsp;<asp:Label ID="Tabela4label" runat="server"></asp:Label>
 &nbsp;
     &nbsp;<asp:Label ID="infoLabel5" runat="server" Text="Tabela 4 \/" Visible="False"></asp:Label>

@@ -3356,8 +3356,8 @@ namespace Statystyki_2018
                 licznik++;
                 builder.AppendLine("</tr>");
             }
-            builder.Append(sumaTabeliX2(dane, 90, 15, idtabeli, "Razem", 5, 1));
-           // builder.Append(sumaTabeli(dane, 7, 15, idtabeli, "Razem", 5));
+           // builder.Append(sumaTabeliX2(dane, 90, 15, idtabeli, "Razem", 5, 1));
+            builder.Append(sumaTabeli26(dane, 7, 15, idtabeli, "Razem", 5));
             builder.Append("</table>");
             builder.AppendLine("</div>");
             Label tblControl = new Label { Text = builder.ToString() };
@@ -3739,6 +3739,58 @@ namespace Statystyki_2018
             for (int j = 0; j < dlugoscLinii ; j++)
             {
                 builder.Append(tb.komorkaHTML(wierszSumujacy[j + 1].ToString(), 0, 0, "borderAll center col_100 gray"));
+            }
+
+            builder.AppendLine("</tr>");
+
+            return builder.ToString();
+        }
+        private string sumaTabeli26(DataTable dane, int iloscWierszy, int dlugoscLinii, int idtabeli, string tekst, int złaczenieRazem)
+        {
+            //   List<double> items = new List<double>();
+            StringBuilder builder = new StringBuilder();
+            string sumaKoncowa = string.Empty;
+            double[] wierszSumujacy = new double[dlugoscLinii + 2];
+            for (int i = 0; i < dlugoscLinii + 2; i++)
+            {
+                wierszSumujacy[i] = 0;
+            }
+
+            DataTable suma = tb.makeSumRow(dane, iloscWierszy * dlugoscLinii);
+            if (suma == null)
+            {
+                cm.log.Error(tenPlik + " bład w sumowaniu tabeli " + idtabeli.ToString());
+                return "";
+            }
+
+            int dlugosc = 1;
+
+            for (int i = 1; i < (iloscWierszy * dlugoscLinii-1); i++)
+            {
+                try
+                {
+                    double wynik = double.Parse(suma.Rows[0][i].ToString());
+                    double poprzedni = wierszSumujacy[dlugosc];
+                    double razem = wynik + poprzedni;
+                    wierszSumujacy[dlugosc] = razem;
+
+                }
+                catch (Exception ex)
+                {
+                    cm.log.Error("Bład wizk sumowanie : " + ex.Message);
+                }
+                if (dlugosc == dlugoscLinii)
+                {
+                    dlugosc = 1;
+                }
+                dlugosc++;
+            }
+            builder.AppendLine("<tr>");
+            builder.AppendLine(tb.komorkaHTML(tekst, złaczenieRazem, 0, "borderAll center col_100 gray"));
+
+            for (int j = 2; j < dlugoscLinii+1; j++)
+            {
+                builder.Append(tb.komorkaHTML(wierszSumujacy[j].ToString(), 0, 0, "borderAll center col_100 gray"));
             }
 
             builder.AppendLine("</tr>");

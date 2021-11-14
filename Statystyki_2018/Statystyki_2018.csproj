@@ -165,6 +165,7 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="mss6r.aspx" />
     <Content Include="mss10o.aspx" />
     <Content Include="oopr.aspx" />
     <Content Include="oopk.aspx" />
@@ -188,6 +189,9 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="XMLHeaders\MSS11o.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLHeaders\MSS6r.xml">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="XMLHeaders\MSS5o.xml" />
@@ -629,6 +633,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="mss6r.aspx.cs">
+      <DependentUpon>mss6r.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mss6r.aspx.designer.cs">
+      <DependentUpon>mss6r.aspx</DependentUpon>
     </Compile>
     <Compile Include="mss10o.aspx.cs">
       <DependentUpon>mss10o.aspx</DependentUpon>
@@ -1430,7 +1441,6 @@
     <Folder Include="App_GlobalResources\" />
     <Folder Include="classes\App_LocalResources\" />
     <Folder Include="enums\" />
-    <Folder Include="NewFolder1\" />
     <Folder Include="Wymiana2\Odpowiedzi\" />
     <Folder Include="Wymiana2\Zapytania\" />
     <Folder Include="Wymiana\Temp\" />

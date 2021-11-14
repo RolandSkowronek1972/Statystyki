@@ -175,13 +175,13 @@ namespace Statystyki_2018
                 }
                 catch (Exception ex)
                 {
-                    cm.log.Error("Wymiana  serwer 1: Bład kwerend z zapytaniami");
+                    cm.log.Error("Wymiana  serwer 2: Bład kwerend z zapytaniami");
                     return null;
                 }
                 Zapytania.AppendLine("</ms:zapytanie> ");
             }
             Zapytania.AppendLine("</ms:Zapytania> ");
-            string pathZDP = Server.MapPath("Wymiana2\\Zapytania\\Zapytanie_") + DateTime.Now.ToString().Replace(" ", "_").Replace(".", "_").Replace(":", "_") + ".xml";
+            string pathZDP = Server.MapPath("Wymiana2\\Zapytania\\Zapytanie_server2_") + DateTime.Now.ToString().Replace(" ", "_").Replace(".", "_").Replace(":", "_") + ".xml";
             System.IO.File.WriteAllText(pathZDP, Zapytania.ToString());
 
             //sprawy

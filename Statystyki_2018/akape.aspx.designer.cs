@@ -1021,15 +1021,6 @@ namespace Statystyki_2018 {
         protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
-        /// tabela_2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource tabela_2;
-        
-        /// <summary>
         /// Label17 control.
         /// </summary>
         /// <remarks>

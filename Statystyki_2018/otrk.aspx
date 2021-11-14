@@ -134,10 +134,10 @@
                     <asp:TemplateField HeaderText="d_06" SortExpression="d_06">
                         <ItemTemplate>
                             <a href="javascript:openPopup('popup.aspx?sesja=<%# Eval("id_")+ "!"+Eval("id_tabeli") +"!6!1"%>')">
-                                <asp:Label ID="Label106" runat="server" Text='<%# Eval("d_06")%>' CssClass="normal"></asp:Label>
+                                <asp:Label ID="Label106" runat="server" Text='<%# Eval("d_06")%>' CssClass="normal "></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="t1_d3_r" />
+                        <ItemStyle CssClass="t1_d3_r gray" />
                     </asp:TemplateField>
                 </Columns>
             </asp:GridView>
@@ -148,7 +148,7 @@
 
             <asp:Label ID="Label19" runat="server"></asp:Label>
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" OnRowCreated="grvMergeHeader_RowCreated"
-                Width="99%" ShowHeader="False">
+                Width="99%" ShowHeader="False" OnRowDataBound="SumaTabeli02" ShowFooter="True">
                 <Columns>
                     <asp:BoundField DataField="id" HeaderText="id" SortExpression="id" />
                     <asp:BoundField DataField="funkcja" HeaderText="funkcja"
@@ -232,7 +232,7 @@
                                 <asp:Label ID="Label208" runat="server" Text='<%# Eval("d_08")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="t2_d3" />
+                        <ItemStyle CssClass="t2_d3 gray" />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_09" SortExpression="d_09">
                         <ItemTemplate>
@@ -258,12 +258,13 @@
                         <ItemStyle CssClass="t2_d3" />
                     </asp:TemplateField>
                 </Columns>
+                <FooterStyle CssClass="gray" />
             </asp:GridView>
             <br />
         </div>
         <div id="wyznaczenia" class="page-break">
             &nbsp;<asp:Label ID="Label17" runat="server"></asp:Label>
-            <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False" OnRowCreated="GridView3_RowCreated" Width="99%" ShowHeader="False">
+            <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False" OnRowCreated="GridView3_RowCreated" Width="99%" ShowHeader="False" OnRowDataBound="SumaTabeli03" ShowFooter="True">
                 <Columns>
                     <asp:BoundField DataField="id" HeaderText="id" SortExpression="id" />
                     <asp:BoundField DataField="funkcja" HeaderText="funkcja"
@@ -340,11 +341,12 @@
                         <ItemStyle CssClass="t3_d3" />
                     </asp:TemplateField>
                 </Columns>
+                <FooterStyle CssClass="gray" />
             </asp:GridView>
         </div>
            <div id="cos" class="page-break">
             &nbsp;<asp:Label ID="Label15" runat="server"></asp:Label>
-            <asp:GridView ID="GridView4" runat="server" AutoGenerateColumns="False" OnRowCreated="GridView4_RowCreated" Width="99%" ShowHeader="False">
+            <asp:GridView ID="GridView4" runat="server" AutoGenerateColumns="False" OnRowCreated="GridView4_RowCreated" Width="99%" ShowHeader="False" OnRowDataBound="SumaTabeli04" ShowFooter="True">
                 <Columns>
                     <asp:BoundField DataField="id" HeaderText="id" SortExpression="id" />
                     <asp:BoundField DataField="funkcja" HeaderText="funkcja"
@@ -421,6 +423,7 @@
                         <ItemStyle CssClass="t3_d3" />
                     </asp:TemplateField>
                 </Columns>
+                <FooterStyle CssClass="gray" />
             </asp:GridView>
         </div>
 

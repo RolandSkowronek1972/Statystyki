@@ -31,7 +31,8 @@ namespace Statystyki_2018
             }
             else
             {
-                return;
+                Server.Transfer("default.aspx");
+              
             }
             DateTime dTime = DateTime.Now;
             dTime = dTime.AddMonths(-1);
@@ -66,9 +67,9 @@ namespace Statystyki_2018
                     }
                 }
             }
-            catch 
+            catch (Exception ex)
             {
-                 Server.Transfer("default.aspx");
+                cm.log.Error(tenPlik + " " + ex);
             }
         }// end of Page_Load
 
@@ -99,7 +100,7 @@ namespace Statystyki_2018
             {
                 
                 DataTable tabelka01 = dr. generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 1,1,12,tenPlik);
-                Session["tabelka002"] = tabelka01;
+                Session["tabelka001"] = tabelka01;
                 //row 1
                 tab_01_w01_c01.Text = tabelka01.Rows[0][0].ToString();
                 tab_01_w01_c02.Text = tabelka01.Rows[0][1].ToString();
@@ -113,7 +114,7 @@ namespace Statystyki_2018
                 tab_01_w01_c09.Text = tabelka01.Rows[0][8].ToString();
                 tab_01_w01_c10.Text = tabelka01.Rows[0][9].ToString();
                 tab_01_w01_c11.Text = tabelka01.Rows[0][10].ToString();
-                tab_01_w01_c12.Text = tabelka01.Rows[0][10].ToString();
+                tab_01_w01_c12.Text = tabelka01.Rows[0][11].ToString();
 
             }
             catch (Exception ex)
@@ -124,8 +125,8 @@ namespace Statystyki_2018
             try
             {
 
-                DataTable tabelka01 = dr. generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"],2, 1, 12, tenPlik);
-                Session["tabelka001"] = tabelka01;
+                DataTable tabelka01 = dr. generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"],2, 1,16, tenPlik);
+                Session["tabelka002"] = tabelka01;
                 //row 1
                 tab_02_w01_c01.Text = tabelka01.Rows[0][0].ToString();
                 tab_02_w01_c02.Text = tabelka01.Rows[0][1].ToString();
@@ -142,7 +143,7 @@ namespace Statystyki_2018
                 tab_02_w01_c12.Text = tabelka01.Rows[0][11].ToString();
                 tab_02_w01_c13.Text = tabelka01.Rows[0][12].ToString();
                 tab_02_w01_c14.Text = tabelka01.Rows[0][13].ToString();
-
+               
             }
             catch (Exception ex)
             {
@@ -263,95 +264,18 @@ namespace Statystyki_2018
 
             FileInfo fNewFile = new FileInfo(download + "_.xlsx");
 
-            // pierwsza tabelka
-
+            cm.log.Info(tenPlik + " start generowania pliku excel");
             using (ExcelPackage MyExcel = new ExcelPackage(existingFile))
             {
-                // pierwsza
-
-                int rowik = 4;
                 try
                 {
-                    ExcelWorksheet MyWorksheet1 = MyExcel.Workbook.Worksheets[1];
-                    DataTable tabelka001 = (DataTable)Session["tabelka001"];
-                    for (int i = 1; i <= 12; i++)
-                    {
-                        try
-                        {
-                            MyWorksheet1.Cells[rowik, i + 1].Value = double.Parse(tabelka001.Rows[0][i].ToString().Trim());
-                        }
-                        catch
-                        {
-                            MyWorksheet1.Cells[rowik, i + 1].Value = tabelka001.Rows[0][i + 1].ToString().Trim();
-                        }
-                        MyWorksheet1.Cells[rowik, i + 1].Style.ShrinkToFit = true;
-                        MyWorksheet1.Cells[rowik, i + 1].Style.Border.BorderAround(OfficeOpenXml.Style.ExcelBorderStyle.Thin, System.Drawing.Color.Black);
-                    }
+                    tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 1, 12, 1, 4, false);
+                    tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 1, 14, 1, 4, false);
+                    tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 1, 8, 1, 3, false);
+                    tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 4, 13, 1, 5, false);
+                    tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[5], (DataTable)Session["tabelka005"], 2, 2, 1, 3, false);
 
-                }
-                catch (Exception ex)
-                {
-                    cm.log.Error(tenPlik + " Generowanie pliku Excell " + ex.Message);
-                }
-
-                //druga 
-                try
-                {
-                    DataTable tabelka001 = (DataTable)Session["tabelka002"];
-                    ExcelWorksheet MyWorksheet2 = MyExcel.Workbook.Worksheets[2];
-                    for (int i = 0; i < 14; i++)
-                    {
-                        tb.komorkaExcela(MyWorksheet2,  4, 1, tabelka001.Rows[0][i].ToString().Trim(),false, 0, 0);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    cm.log.Error(tenPlik + " Generowanie pliku Excell " + ex.Message);
-                }
-
-                //trzecoa 
-                try
-                {
-                    DataTable tabelka001 = (DataTable)Session["tabelka003"];
-
-                    ExcelWorksheet MyWorksheet2 = MyExcel.Workbook.Worksheets[3];
-                    for (int i = 0; i < 7; i++)
-                    {
-                        tb.komorkaExcela(MyWorksheet2, 4, 1, tabelka001.Rows[0][i].ToString().Trim(), false, 0, 0);
-
-                    }
-
-                }
-                catch (Exception ex)
-                {
-                    cm.log.Error(tenPlik + " Generowanie pliku Excell " + ex.Message);
-                }
-
-
-
-                //czwarta 
-                try
-                {
-                    DataTable tabelka001 = (DataTable)Session["tabelka004"];
-
-                    ExcelWorksheet MyWorksheet2 = MyExcel.Workbook.Worksheets[4];
-                    for (int j = 0; j < 4; j++)
-                    {
-                        for (int i = 0; i < 7; i++)
-                        {
-                            tb.komorkaExcela(MyWorksheet2,j+ 4, 1 + i, tabelka001.Rows[i][j].ToString().Trim(), false, 0, 0);
-
-                        }
-                    }
-                   
-
-                }
-                catch (Exception ex)
-                {
-                    cm.log.Error(tenPlik + " Generowanie pliku Excell " + ex.Message);
-                }
-                try
-                {
+               
                     MyExcel.SaveAs(fNewFile);
 
                     this.Response.Clear();
@@ -359,15 +283,12 @@ namespace Statystyki_2018
                     this.Response.AddHeader("Content-Disposition", "attachment;filename=" + fNewFile.Name);
                     this.Response.WriteFile(fNewFile.FullName);
                     this.Response.End();
-
                 }
                 catch (Exception ex)
                 {
-                    cm.log.Error(tenPlik + " Generowanie pliku Excell " + ex.Message);
+                    cm.log.Error(tenPlik + " excel " + ex);
                 }
-
             }//end of using
-
             odswiez();
         }
 

@@ -99,7 +99,7 @@ namespace Statystyki_2018
 
         private void tabela_01()
         {
-            DataTable tabela01 = dr.generuj_dane_do_tabeli_wierszy2018(DateTime.Parse(Date1.Text), DateTime.Parse(Date2.Text), (string)Session["id_dzialu"], 1, 6, 18, true, tenPlik);
+            DataTable tabela01 = dr.generuj_dane_do_tabeli_wierszy2018(DateTime.Parse(Date1.Text), DateTime.Parse(Date2.Text), (string)Session["id_dzialu"], 1, 10, 18, true, tenPlik);
             Session["tabelka001"] = tabela01;
             try
             {
@@ -146,57 +146,17 @@ namespace Statystyki_2018
             dT_01.Columns.Add("Column5", typeof(string));
             dT_01.Columns.Add("Column6", typeof(string));
             dT_01.Clear();
-            dT_01.Rows.Add(new Object[] { "1", "Meryto-<br>ryczne", "1", "1" });
-            dT_01.Rows.Add(new Object[] { "1", "Stare", "1", "1" });
-            dT_01.Rows.Add(new Object[] { "1", "Meryto-<br>ryczne", "1", "1" });
-            dT_01.Rows.Add(new Object[] { "1", "Stare", "1", "1" });
+            string[] teksty = new string[] { "GC","GNs","GNc","GCo","GCps","Gz","WSC","GU","GUp","GN","Gzd","GUo","Guu","Guz","GUk","Łącznie" };
+            foreach (var tekst in teksty)
+            {
+                dT_01.Rows.Add(new Object[] { "1", tekst, "1", "1" });
+            }
+           
 
-            dT_01.Rows.Add(new Object[] { "2", "Razem", "1", "2" });
+            dT_01.Rows.Add(new Object[] { "2", "Opis", "1", "2" });
 
-            dT_01.Rows.Add(new Object[] { "2", "w tym", "2", "1" });
-            dT_01.Rows.Add(new Object[] { "2", "Razem", "1", "2" });
-
-            dT_01.Rows.Add(new Object[] { "2", "w tym", "2", "1" });
-
-            dT_01.Rows.Add(new Object[] { "3", "Urlopy", "1", "3" });
-            dT_01.Rows.Add(new Object[] { "3", "Zwol<br/>-nienia", "1", "3" });
-            dT_01.Rows.Add(new Object[] { "3", "Razem", "1", "3" });
-            dT_01.Rows.Add(new Object[] { "3", "w terminie ustawowym", "1", "3" });
-            dT_01.Rows.Add(new Object[] { "3", "po upływie terminu ustawowego", "1", "3" });
-            dT_01.Rows.Add(new Object[] { "3", "w tym nieuspra-<br/>wiedliwione", "1", "3" });
-            dT_01.Rows.Add(new Object[] { "3", "Razem", "1", "3" });
-            dT_01.Rows.Add(new Object[] { "3", "w terminie ustawowym", "1", "3" });
-            dT_01.Rows.Add(new Object[] { "3", "po upływie terminu ustawowego", "1", "3" });
-            dT_01.Rows.Add(new Object[] { "3", "w tym nieuspra-<br/>wiedliwione", "1", "3" });
-            dT_01.Rows.Add(new Object[] { "3", "C", "3", "1" });
-            dT_01.Rows.Add(new Object[] { "3", "Cgg", "1", "3" });
-            dT_01.Rows.Add(new Object[] { "3", "Ns", "3", "1" });
-            dT_01.Rows.Add(new Object[] { "3", "N", "1", "3" });
-
-            dT_01.Rows.Add(new Object[] { "3", "Nc", "1", "3" });
-            dT_01.Rows.Add(new Object[] { "3", "Co", "1", "3" });
-            dT_01.Rows.Add(new Object[] { "3", "Cps", "1", "3" });
-            dT_01.Rows.Add(new Object[] { "3", "Cz", "1", "3" });
-            dT_01.Rows.Add(new Object[] { "3", "WSC", "1", "3" });
-            dT_01.Rows.Add(new Object[] { "3", "Razem", "1", "3" });
-
-            //4
-            dT_01.Rows.Add(new Object[] { "4", "L.p.", "1", "4" });
-            dT_01.Rows.Add(new Object[] { "4", "Funkcja", "1", "4" });
-            dT_01.Rows.Add(new Object[] { "4", "Stanowisko", "1", "4" });
-
-            dT_01.Rows.Add(new Object[] { "4", "Imie i nazwisko", "1", "4" });
-
-            dT_01.Rows.Add(new Object[] { "4", "Liczba sesji", "1", "4" });
-            dT_01.Rows.Add(new Object[] { "4", "Etat ", "1", "4" });
-            dT_01.Rows.Add(new Object[] { "4", "Nieobecność", "2", "1" });
-            dT_01.Rows.Add(new Object[] { "4", "Terminowość sporządzania uzasadnień ", "4", "1" });
-            dT_01.Rows.Add(new Object[] { "4", "Uzasadnienia <br/>wygłoszone ", "1", "4" });
-            dT_01.Rows.Add(new Object[] { "4", "Terminowość sporządzania uzasadnień orzeczeń merytorycznych C i NS ", "4", "1" });
-            dT_01.Rows.Add(new Object[] { "4", "Uzasadnienia <br/>wygłoszone ", "1", "4" });
-
-            dT_01.Rows.Add(new Object[] { "4", "ZAŁATWIENIA ", "14", "1" });
-            dT_01.Rows.Add(new Object[] { "4", "Uwagi ", "1", "4" });
+            dT_01.Rows.Add(new Object[] { "2", "Sprawy według repetoriów i wykazów", "1", "16" });
+          
 
             return dT_01;
         }
@@ -242,6 +202,11 @@ namespace Statystyki_2018
 
                 HeaderCell = new TableCell();
                 HeaderCell.Text = "GCps";
+                HeaderCell.ColumnSpan = 1;
+                HeaderGridRow.Cells.Add(HeaderCell);
+                GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
+                HeaderCell = new TableCell();
+                HeaderCell.Text = "Gz";
                 HeaderCell.ColumnSpan = 1;
                 HeaderGridRow.Cells.Add(HeaderCell);
                 GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
@@ -323,7 +288,7 @@ namespace Statystyki_2018
 
                 HeaderCell = new TableCell();
                 HeaderCell.Text = "Sprawy według repetoriów i wykazów";
-                HeaderCell.ColumnSpan = 15;
+                HeaderCell.ColumnSpan = 16;
 
                 HeaderGridRow.Cells.Add(HeaderCell);
                 GridView1.Controls[0].Controls.AddAt(0, HeaderGridRow);
@@ -382,6 +347,12 @@ namespace Statystyki_2018
 
                 HeaderCell = new TableCell();
                 HeaderCell.Text = "GCps";
+                HeaderCell.ColumnSpan = 1;
+                HeaderGridRow.Cells.Add(HeaderCell);
+                GridView2.Controls[0].Controls.AddAt(0, HeaderGridRow);
+                HeaderCell = new TableCell();
+
+                HeaderCell.Text = "Gz";
                 HeaderCell.ColumnSpan = 1;
                 HeaderGridRow.Cells.Add(HeaderCell);
                 GridView2.Controls[0].Controls.AddAt(0, HeaderGridRow);
@@ -503,7 +474,7 @@ namespace Statystyki_2018
 
                 HeaderCell = new TableCell();
                 HeaderCell.Text = "Załatwienia";
-                HeaderCell.ColumnSpan = 15;
+                HeaderCell.ColumnSpan = 16;
                 HeaderCell.RowSpan = 1;
                 HeaderGridRow.Cells.Add(HeaderCell);
                 GridView2.Controls[0].Controls.AddAt(0, HeaderGridRow);
@@ -563,6 +534,11 @@ namespace Statystyki_2018
 
                 HeaderCell = new TableCell();
                 HeaderCell.Text = "GCps";
+                HeaderCell.ColumnSpan = 1;
+                HeaderGridRow.Cells.Add(HeaderCell);
+                GridView3.Controls[0].Controls.AddAt(0, HeaderGridRow);
+                HeaderCell = new TableCell();
+                HeaderCell.Text = "Gz";
                 HeaderCell.ColumnSpan = 1;
                 HeaderGridRow.Cells.Add(HeaderCell);
                 GridView3.Controls[0].Controls.AddAt(0, HeaderGridRow);
@@ -673,7 +649,7 @@ namespace Statystyki_2018
 
                 HeaderCell = new TableCell();
                 HeaderCell.Text = "Wyznaczenia";
-                HeaderCell.ColumnSpan = 15;
+                HeaderCell.ColumnSpan = 16;
                 HeaderCell.RowSpan = 1;
                 HeaderGridRow.Cells.Add(HeaderCell);
                 GridView3.Controls[0].Controls.AddAt(0, HeaderGridRow);
@@ -729,7 +705,11 @@ namespace Statystyki_2018
                 HeaderCell.ColumnSpan = 1;
                 HeaderGridRow.Cells.Add(HeaderCell);
                 GridView4.Controls[0].Controls.AddAt(0, HeaderGridRow);
-
+                HeaderCell = new TableCell();
+                HeaderCell.Text = "Gz";
+                HeaderCell.ColumnSpan = 1;
+                HeaderGridRow.Cells.Add(HeaderCell);
+                GridView4.Controls[0].Controls.AddAt(0, HeaderGridRow);
                 HeaderCell = new TableCell();
                 HeaderCell.Text = "WSC";
                 HeaderCell.ColumnSpan = 1;
@@ -836,7 +816,7 @@ namespace Statystyki_2018
 
                 HeaderCell = new TableCell();
                 HeaderCell.Text = "Pozostało w referatach spraw kategorii";
-                HeaderCell.ColumnSpan = 15;
+                HeaderCell.ColumnSpan = 16;
                 HeaderCell.RowSpan = 1;
                 HeaderGridRow.Cells.Add(HeaderCell);
                 GridView4.Controls[0].Controls.AddAt(0, HeaderGridRow);
@@ -910,10 +890,10 @@ namespace Statystyki_2018
 
                 table = view.ToTable();
                 ExcelWorksheet MyWorksheet1 = MyExcel.Workbook.Worksheets[1];
-                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziowZopisem(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 9, 15, 1, 3, true);
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 21, 0, 3, true, true, true, true, true);
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 17, 0, 3, true, true, true, true, true);
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 16, 0, 3, true, true, true, true, true);
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziowZopisem(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"],10, 16, 1, 3, true);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 22, 0, 3, true, true, true, true, true);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[3], (DataTable)Session["tabelka003"], 18, 0, 3, true, true, true, true, true);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[4], (DataTable)Session["tabelka004"], 17, 0, 3, true, true, true, true, true);
                 try
                 {
                     MyExcel.SaveAs(fNewFile);
