@@ -1,0 +1,880 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<komorki xmlns="urn:tabeleMSS">
+  <tabela id="15">
+    <daneTabeli>
+
+      <iloscWierszy>6</iloscWierszy>
+      <tekstNadTabela>IV. 4.1. Czas trwania postępowania sądowego od dnia pierwszej rejestracji do dnia zakończenia sprawy w danej instancji w wydziale (liczba spraw – ogółem)</tekstNadTabela>
+      <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>1</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>13</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>2</identyfikatorTabeli>
+      <przelamanie>0</przelamanie>
+      <horizont>1</horizont>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_60 gray</style>
+        <text> Kategoria Spraw</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_60 gray</style>
+        <text> rok</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>13</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60 gray</style>
+        <text>Liczba spraw</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60 gray</style>
+        <text>
+          do 3 miesięcy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60 gray</style>
+        <text>
+          suma powyżej 3 miesięcy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>powyżej 3 do 6 miesięcy </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>
+          powyżej 6 do 12 miesięcy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>suma powyżej 12 miesięcy </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>powyżej 12 miesięcy do 2 lat</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>powyżej 2 do 3 lat</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>9</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>suma powyżej 3 lat</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>10</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>powyżej 3 do 5 lat</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>11</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>powyżej 5 do 8 lat</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>12</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>ponad 8 lat	</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>13</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>SUMA	</text>
+      </komorka>
+    </naglowek>
+    <tablaBoczna>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+         GC
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+          GNc
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+          GCo
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+          GNs
+        </text>
+      </komorka>
+    
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie gray</style>
+        <text>Razem</text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie gray</style>
+        <text>OGÓŁEM za okres oceny</text>
+      </komorka>
+
+    
+    </tablaBoczna>
+    <stylKolumny>
+      <kolumna>
+        <nrKolumny>13</nrKolumny>
+        <styl>gray</styl>
+      </kolumna>
+    </stylKolumny>
+  </tabela>
+  
+  <tabela id="16">
+    <daneTabeli>
+
+      <iloscWierszy>6</iloscWierszy>
+      <tekstNadTabela> IV. 4.2. Czas trwania postępowania sądowego od dnia pierwszej rejestracji do dnia zakończenia sprawy w danej instancji w wydziale (% – ogółem)</tekstNadTabela>
+      <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>1</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>13</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>2</identyfikatorTabeli>
+      <przelamanie>0</przelamanie>
+      <horizont>1</horizont>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_60 gray</style>
+        <text> Kategoria Spraw</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_60 gray</style>
+        <text> rok</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>13</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60 gray</style>
+        <text>Liczba spraw</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60 gray</style>
+        <text>
+          do 3 miesięcy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60 gray</style>
+        <text>
+          suma powyżej 3 miesięcy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>powyżej 3 do 6 miesięcy </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>
+          powyżej 6 do 12 miesięcy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>suma powyżej 12 miesięcy </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>powyżej 12 miesięcy do 2 lat</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>powyżej 2 do 3 lat</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>9</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>suma powyżej 3 lat</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>10</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>powyżej 3 do 5 lat</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>11</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>powyżej 5 do 8 lat</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>12</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>ponad 8 lat	</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>13</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>SUMA	</text>
+      </komorka>
+    </naglowek>
+    <tablaBoczna>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>GC</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+          GNc
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+          GCo
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+          GNs
+        </text>
+      </komorka>
+     
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie gray</style>
+        <text>Razem</text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie gray</style>
+        <text>OGÓŁEM za okres oceny</text>
+      </komorka>
+
+
+    </tablaBoczna>
+    <stylKolumny>
+      <kolumna>
+        <nrKolumny>13</nrKolumny>
+        <styl>gray</styl>
+      </kolumna>
+    </stylKolumny>
+  </tabela>
+  <tabela id="24">
+    <daneTabeli>
+
+      <iloscWierszy>6</iloscWierszy>
+      <tekstNadTabela> IV. 7.1. Struktura pozostałości (wydział ogółem – liczba spraw)</tekstNadTabela>
+      <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>1</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>14</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>2</identyfikatorTabeli>
+      <przelamanie>0</przelamanie>
+      <horizont>1</horizont>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_60 gray</style>
+        <text> Kategoria Spraw</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_60 gray</style>
+        <text> rok</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>12</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60 gray</style>
+        <text>Liczba spraw</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_60 gray</style>
+        <text> sprawdzanie z pozostałością</text>
+      </komorka>
+
+     
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60 gray</style>
+        <text>
+          do 3 miesięcy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60 gray</style>
+        <text>
+          suma powyżej 3 miesięcy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>powyżej 3 do 6 miesięcy </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>
+          powyżej 6 do 12 miesięcy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>suma powyżej 12 miesięcy </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>powyżej 12 miesięcy do 2 lat</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>powyżej 2 do 3 lat</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>9</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>suma powyżej 3 lat</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>10</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>powyżej 3 do 5 lat</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>11</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>powyżej 5 do 8 lat</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>12</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>ponad 8 lat	</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>13</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>SUMA	</text>
+      </komorka>
+    </naglowek>
+    <tablaBoczna>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>GC</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+          Cgg
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+          Co
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+          Cps
+        </text>
+      </komorka>
+    
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie gray</style>
+        <text>Razem</text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie gray</style>
+        <text>OGÓŁEM za okres oceny</text>
+      </komorka>
+
+    
+    </tablaBoczna>
+    <stylKolumny>
+      <kolumna>
+        <nrKolumny>13</nrKolumny>
+        <styl>gray</styl>
+      </kolumna>
+    </stylKolumny>
+  </tabela>
+  <tabela id="25">
+    <daneTabeli>
+
+      <iloscWierszy>6</iloscWierszy>
+      <tekstNadTabela> IV. 7.2. Struktura pozostałości (wydział ogółem – %)</tekstNadTabela>
+      <iloscWierszyNaglowka>2</iloscWierszyNaglowka>
+      <iloscKolumnPrzedIteracja>1</iloscKolumnPrzedIteracja>
+      <iloscKolumnPoIteracji>14</iloscKolumnPoIteracji>
+      <lp>1</lp>
+      <identyfikatorTabeli>2</identyfikatorTabeli>
+      <przelamanie>0</przelamanie>
+      <horizont>1</horizont>
+    </daneTabeli>
+    <naglowek>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_60 gray</style>
+        <text> Kategoria Spraw</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_60 gray</style>
+        <text> rok</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>12</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60 gray</style>
+        <text>Liczba spraw</text>
+      </komorka>
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>2</rowspan>
+        <style>center col_60 gray</style>
+        <text> sprawdzanie z pozostałością</text>
+      </komorka>
+
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>2</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60 gray</style>
+        <text>
+          do 3 miesięcy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>3</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style>center col_60 gray</style>
+        <text>
+          suma powyżej 3 miesięcy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>4</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>powyżej 3 do 6 miesięcy </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>5</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>
+          powyżej 6 do 12 miesięcy
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>6</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>suma powyżej 12 miesięcy </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>7</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>powyżej 12 miesięcy do 2 lat</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>8</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>powyżej 2 do 3 lat</text>
+      </komorka>
+
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>9</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>suma powyżej 3 lat</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>10</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>powyżej 3 do 5 lat</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>11</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>powyżej 5 do 8 lat</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>12</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>ponad 8 lat	</text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>13</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> center col_60 gray</style>
+        <text>SUMA	</text>
+      </komorka>
+    </naglowek>
+    <tablaBoczna>
+
+      <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>1</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+          GC
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+          GNc
+        </text>
+      </komorka>
+
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+          GCo
+        </text>
+      </komorka>
+      <komorka>
+        <wiersz>4</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie </style>
+        <text>
+          GNs
+        </text>
+      </komorka>
+    
+      <komorka>
+        <wiersz>5</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie gray</style>
+        <text>Razem</text>
+      </komorka>
+      <komorka>
+        <wiersz>6</wiersz>
+        <kolumna>1</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>0</rowspan>
+        <style> wciecie gray</style>
+        <text>OGÓŁEM za okres oceny</text>
+      </komorka>
+
+
+    </tablaBoczna>
+    <stylKolumny>
+      <kolumna>
+        <nrKolumny>13</nrKolumny>
+        <styl>gray</styl>
+      </kolumna>
+    </stylKolumny>
+  </tabela>
+</komorki>

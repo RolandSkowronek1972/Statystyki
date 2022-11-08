@@ -1,0 +1,27 @@
+  <?xml version='1.0' encoding='utf - 8' ?> 
+< !—nagłówek XML-- > 
+<ms:Sprawy version='1' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<ms:Sprawa> 
+<ms:Sprawa_ident>30</ms:Sprawa_ident>
+<ms:repertorium>7</ms:repertorium>
+<ms:numer>65</ms:numer>
+<ms:data_wpl1>03.03.2009 00:00:00</ms:data_wpl1>
+<ms:data_wpl2></ms:data_wpl2>
+<ms:rok>2009</ms:rok>
+<ms:data_zakr>05.03.2009 00:00:00</ms:data_zakr>
+<ms:rozstrzygniecie>1</ms:rozstrzygniecie>
+<ms:Opis>2009</ms:Opis>
+<ms:symbol>o eksmisje </ms:symbol>
+<ms:Sygnatura>uwzgledniono</ms:Sygnatura>
+<ms:NrProkuratury>o eksmisje </ms:NrProkuratury>
+<ms:Strony>
+</ms:Strony>
+<ms:InneStrony>
+</ms:InneStrony>
+<ms:Sady>
+</ms:Sady>
+<ms:Referenci>
+</ms:Referenci>
+<ms:Orzeczenia>
+</ms:Orzeczenia>
+</ms:Sprawy>

@@ -29,7 +29,7 @@ namespace Statystyki_2018
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            string idWydzial = Request.QueryString["w"];
+             string idWydzial = Request.QueryString["w"]; Session["czesc"] = cm.nazwaFormularza(tenPlik, idWydzial) ;
             try
             {
                 if (idWydzial == null)
@@ -39,10 +39,15 @@ namespace Statystyki_2018
                 }
 
                 Session["id_dzialu"] = idWydzial;
-                bool dost = cm.dostep(idWydzial, (string)Session["identyfikatorUzytkownika"]);
-                if (!dost)
+                String IdentyfikatorUzytkownika = string.Empty;
+                IdentyfikatorUzytkownika = (string)Session["identyfikatorUzytkownika"];
+                DataTable parametry = cm.makeParameterTable();
+                parametry.Rows.Add("@identyfikatorUzytkownika", IdentyfikatorUzytkownika);
+
+
+                if (cm.getQuerryValue("select admin from uzytkownik where ident =@identyfikatorUzytkownika", cm.con_str, parametry) == "0" && !cm.dostep(idWydzial, (string)Session["identyfikatorUzytkownika"]))
                 {
-                   Server.Transfer("default.aspx?info='Użytkownik " + (string)Session["identyfikatorUzytkownika"] + " nie praw do działu nr " + idWydzial + "'");
+                    Server.Transfer("default.aspx?info='Użytkownik " + (string)Session["identyfikatorUzytkownika"] + " nie praw do działu nr " + idWydzial + "'");
                 }
 
                 path = Server.MapPath("~\\Template\\" + tenPlikNazwa + ".xlsx");
@@ -146,8 +151,8 @@ namespace Statystyki_2018
             {
                 cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 1");
             }
-         //   DataTable tabelka01 = dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse(idDzialu), 1, Date1.Date, Date2.Date, 400, tenPlik);
-
+            //   DataTable tabelka01 = dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse(idDzialu), 1, Date1.Date, Date2.Date, 400, tenPlik);
+            tablePlaceHolder01.Controls.Clear();
             try
             {
                 Session["tabelka001"] = dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse(idDzialu), 1, Date1.Date, Date2.Date, 350, tenPlik);

@@ -17,7 +17,7 @@ namespace Statystyki_2018
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            string idWydzial = Request.QueryString["w"];
+             string idWydzial = Request.QueryString["w"]; Session["czesc"] = cm.nazwaFormularza(tenPlik, idWydzial) ;
             if (idWydzial != null)
             {
                 Session["id_dzialu"] = idWydzial;            
@@ -44,10 +44,15 @@ namespace Statystyki_2018
             {
                 string user = (string)Session["userIdNum"];
                 string dzial = (string)Session["id_dzialu"];
-                bool dost = cm.dostep(dzial, user);
-                if (!dost)
+                String IdentyfikatorUzytkownika = string.Empty;
+                IdentyfikatorUzytkownika = (string)Session["identyfikatorUzytkownika"];
+                DataTable parametry = cm.makeParameterTable();
+                parametry.Rows.Add("@identyfikatorUzytkownika", IdentyfikatorUzytkownika);
+
+
+                if (cm.getQuerryValue("select admin from uzytkownik where ident =@identyfikatorUzytkownika", cm.con_str, parametry) == "0" && !cm.dostep(idWydzial, (string)Session["identyfikatorUzytkownika"]))
                 {
-                    Server.Transfer("default.aspx");
+                    Server.Transfer("default.aspx?info='Użytkownik " + (string)Session["identyfikatorUzytkownika"] + " nie praw do działu nr " + idWydzial + "'");
                 }
                 else
                 {
@@ -103,9 +108,9 @@ namespace Statystyki_2018
 
             Session["tabelka001"] = dr.tworzTabele(int.Parse(id_dzialu), 1, Date1.Date, Date2.Date, 20, GridView1, tenPlik);
 
-            Session["tabelka002"] = dr.tworzTabele(int.Parse(id_dzialu), 2, Date1.Date, Date2.Date, 7, GridView2, tenPlik);
+            Session["tabelka002"] = dr.tworzTabele(int.Parse(id_dzialu), 2, Date1.Date, Date2.Date, 7, GridView3, tenPlik);
 
-            Session["tabelka003"] = dr.tworzTabele(int.Parse(id_dzialu), 3, Date1.Date, Date2.Date, 7, GridView3, tenPlik);
+            Session["tabelka003"] = dr.tworzTabele(int.Parse(id_dzialu), 3, Date1.Date, Date2.Date, 7, GridView2, tenPlik);
 
             // dopasowanie opisów
             makeLabels();

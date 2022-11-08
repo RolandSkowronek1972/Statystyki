@@ -13,12 +13,22 @@
     <link href="style/new.css" rel="stylesheet" type="text/css" />
     <link href="style/Tables.css" rel="stylesheet" type="text/css" />
     <link href="style/style.css" rel="stylesheet" type="text/css" />
+    <link href="style/card.css" rel="Stylesheet" type="text/css" />
     <script src="Scripts/jquery-1.8.3.js"></script>
-  <script src="Scripts/rls.js"></script>
+    <script src="Scripts/rls.js"></script>
+    <script src="Scripts/index.js"></script>
     <script>
-        
+        var request = new XMLHttpRequest();
+        request.open("GET", "time.txt", false);
+        request.send(null);
+        var returnValue = request.responseText;
+
         initCountdownValue = 500;
-        var inactivityCountdown = initCountdownValue;
+        if (returnValue = "") { inactivityCountdown = 500; }
+        else { inactivityCountdown = request.responseText; }
+        initCountdownValue = inactivityCountdown;
+        //  alert(inactivityCountdown);
+
         $(document).ready(function () {
 
             $(document).delegate("#login", "click", function (e) {
@@ -39,6 +49,7 @@
                 document.getElementById("demoX").innerHTML = minutes + ":" + seconds;//inactivityCountdown;
                 document.getElementById("form1").addEventListener("mousemove", function (e) {
                     inactivityCountdown = initCountdownValue;
+
                 }
                 );
                 if (inactivityCountdown < 1) {
@@ -49,11 +60,114 @@
             }, 1 * 1000);
 
             $(document).delegate("form1", "click change keydown mousemove", function () {
+
                 inactivityCountdown = initCountdownValue;
             });
 
         });
     </script>
+    <script type="text/javascript">
+
+        var myValue = "";
+
+
+        function OnCardSelectionChanged(s, e) {
+
+            s.GetSelectedFieldValues("plik;wydzial;nazwa", GetSelectedFieldValuesCallback);
+        }
+        function GetSelectedFieldValuesCallback(values) {
+          
+            let result = values.toString();
+            var myArray = result.split(",");
+            myValue = myArray[0];                
+            window.open(myArray[0] + "?w=" + myArray[1], '_parent');
+
+        }
+    </script>
+      <script type="text/javascript">
+
+          function SetText(nazwa) {
+             
+              polls = document.querySelectorAll('[id ^= "Button"]');
+              var first = polls[0];
+              document.getElementById(first.id).innerHTML = nazwa;
+}
+          function SetText2(nazwa1, nazwa2) {
+                   polls = document.querySelectorAll('[id ^= "Button"]');
+              var first = polls[0];
+              document.getElementById(first.id).innerHTML = nazwa1;
+              polls2 = document.querySelectorAll('[id ^= "ControlName"]');
+              var second = polls2[0];
+              document.getElementById(second.id).innerHTML = nazwa2;
+}
+          
+
+
+          
+</script>
+
+    <style>
+        .myButton {
+            -moz-box-shadow: 0px 10px 14px -7px #276873;
+            -webkit-box-shadow: 0px 10px 14px -7px #276873;
+            box-shadow: 0px 10px 14px -7px #276873;
+            background-color: #c0c0c0;
+           height:80px;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            
+            font-size: x-large;
+            font-weight:bolder;
+            padding: 32px 32px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #3d768a;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+
+            .myButton:hover {
+                background-color: #446266;
+            }
+
+            .myButton:active {
+                position: relative;
+                top: 1px;
+            }
+
+
+.breadcrumbs
+{
+    font: 16px "Segoe UI", "Helvetica Neue", Helvetica, "Droid Sans", Tahoma, Geneva, sans-serif;
+    float: left;
+   margin-right:6px;
+    line-height: 20px;
+    color: #666;
+    text-decoration: none;
+}
+.breadcrumbs  a
+{
+    color: #666;
+    text-decoration: none;
+}
+.breadcrumbs a:hover
+{
+    text-decoration: underline !important;
+       color: #666;
+}
+.breadcrumbs:hover
+{
+    text-decoration: underline !important;
+        color: #666;
+}
+
+.top-panel {
+    border-bottom: 1px #E8E8E8 solid;
+    background-color: #F7F7F7;
+}
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -64,23 +178,45 @@
 
         <div style="top: 0px;" class="noprint">
 
-            <div id="menuHolder" class="menuHolder">
-                <div style="width: 70%;">
-                    <dx:ASPxMenu ID="ASPxPopupMenu1" runat="server" Theme="Moderno" ItemLinkMode="TextOnly" CssClass="hoverLink">
-                    </dx:ASPxMenu>
+            <asp:Panel ID="Panel1" runat="server">
+                <div id="menuHolder" class="menuHolder">
+                    <div style="width: 70%;">
+                        <dx:ASPxMenu ID="ASPxPopupMenu1" runat="server" Theme="Moderno" ItemLinkMode="TextOnly" CssClass="icon-cart">
+                        </dx:ASPxMenu>
+                    </div>
+                    <div style="width: 10%; float: right; margin-top: -5px; text-align: center;">
+                        <p id="demoX"></p>
+                    </div>
                 </div>
-                <div style="width: 20%; float: left; margin-top: 7px; text-align: center;">
-                    <asp:Label ID="Label1" runat="server" Font-Size="Large"></asp:Label>
-                </div>
-                <div style="width: 10%; float: right; margin-top: -5px; text-align: center;">
-                    <p id="demoX"></p>
-                </div>
-            </div>
-        </div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        </asp:ContentPlaceHolder>
+            </asp:Panel>
+            <asp:Panel ID="Panel2" runat="server">
+                <asp:Panel ID="Panel3" runat="server" CssClass="top-panel">
 
-        <a href="#top" class="cd-top">Top</a>
+                    <br />
+                    <table style="width:100%;">
+                        <tr>
+                            <td style="width: 30px">
+                                &nbsp;</td>
+                            <td style="width: 50%;">
+                                <asp:LinkButton ID="LinkButton1" runat="server" CssClass="breadcrumbs" Font-Bold="False" OnClick="LinkButton1_Click" PostBackUrl="~/redirector.aspx">Panel      &gt;  </asp:LinkButton>
+                                <asp:LinkButton ID="Button1" runat="server" CssClass="breadcrumbs" Font-Bold="False" OnClick="Button1_Click"></asp:LinkButton>
+                                <asp:Label ID="ControlName" runat="server" BorderColor="#666666" CssClass="breadcrumbs" Font-Bold="False"></asp:Label>
+                            </td>
+                            <td>&nbsp;</td>
+                            <td style="text-align: right">
+                                <asp:Label ID="Label1" runat="server" Font-Size="Medium"></asp:Label>
+                            </td>
+                        </tr>
+                    </table>
+                    <br />
+                </asp:Panel>
+            </asp:Panel>
+        </div>
+        <div style="z-index: -1;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <a href="#top" class="cd-top">Top>Topcd-top">Top>Top
     </form>
 </body>
 </html>

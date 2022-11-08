@@ -14,6 +14,7 @@
                 left: 0;
                 right: 0;
             }
+           
     </style>
 
     <script src="Scripts/rls.js"></script>
@@ -54,19 +55,30 @@
     </div>
 
     <div>
-
+         <div data-bind="dxDataGrid: gridOptions"></div>
         <dx:ASPxGridView ID="grid" 
             runat="server" 
             EnableTheming="True" 
             OnDataBinding="dataBinding" 
             Theme="Moderno"
             EnableCallbackAnimation="True" 
-             ViewStateMode="Enabled">
+             ViewStateMode="Enabled" OnCustomColumnDisplayText="grid_CustomColumnDisplayText"
+            
+            >
            
               <SettingsDetail ExportMode="All" />
            
-           <SettingsPager AlwaysShowPager="True" 
-           NumericButtonCount="200" PageSize="1000">
+              <SettingsAdaptivity>
+                  <AdaptiveDetailLayoutProperties>
+                      <SettingsItems Width="1px" />
+                      <Styles>
+                          <LayoutItem CssClass="NowaDopasowanie">
+                          </LayoutItem>
+                      </Styles>
+                  </AdaptiveDetailLayoutProperties>
+              </SettingsAdaptivity>
+           
+           <SettingsPager AlwaysShowPager="True" EnableAdaptivity="True">
             </SettingsPager>
 
             <Settings 
@@ -83,6 +95,10 @@
             <Styles>
                 <Header Wrap="True">
                 </Header>
+                <DetailRow Wrap="True">
+                </DetailRow>
+                <DetailCell Wrap="True">
+                </DetailCell>
                 <Cell Wrap="False">
                 </Cell>
             </Styles>

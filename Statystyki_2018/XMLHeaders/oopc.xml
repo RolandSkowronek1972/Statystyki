@@ -8,7 +8,7 @@
       <tekstNadTabela>Ruch spraw sędziów </tekstNadTabela>
       <iloscWierszyNaglowka>5</iloscWierszyNaglowka>
       <iloscKolumnPrzedIteracja>0</iloscKolumnPrzedIteracja>
-      <iloscKolumnPoIteracji>83</iloscKolumnPoIteracji>
+      <iloscKolumnPoIteracji>97</iloscKolumnPoIteracji>
       <lp>1</lp>
       <identyfikatorTabeli>1</identyfikatorTabeli>
     </daneTabeli>
@@ -90,7 +90,7 @@
         <rowspan>0</rowspan>
         <style>center colorKoralowyJasny</style>
         <text>
-          pozostało spraw starych - wszystkie kategorie spraw (bez czasu trwania mediacji, zgodnie z dz. 2.1.1.1 MS-S11o)
+          pozostało spraw starych - wszystkie kategorie spraw (łącznie z czasem trwania mediacji, zgodnie z dz. 2.1.1. MS-S1r)
         </text>
       </komorka>
       <komorka>
@@ -100,23 +100,32 @@
         <rowspan>0</rowspan>
         <style>center colorKoralowyJasny</style>
         <text>
-          stan spraw zawieszonych (wszystkie kategorie spraw, zgodnie z MS-S5o)
+          stan spraw zawieszonych (wszystkie kategorie spraw, łącznie z czasem trwania mediacji, zgodnie z MS-S1r)
         </text>
       </komorka>
       <komorka>
         <wiersz>1</wiersz>
         <kolumna>10</kolumna>
         <colSpan>14</colSpan>
+        <rowspan>2</rowspan>
+        <style>center colorKoralowyJasny </style>
+        <text>
+         terminowość sporządzania uzasadnień na wniosek przez sędziów i referendarzy sądowych (zgodnie z MS-S1r, dz. 1.4.1.a + 1.4.1.c) *
+        </text>
+      </komorka>
+        <komorka>
+        <wiersz>1</wiersz>
+        <kolumna>11</kolumna>
+        <colSpan>14</colSpan>
         <rowspan>0</rowspan>
         <style>center colorKoralowyJasny </style>
         <text>
-          terminowość sporządzania uzasadnień
+        terminowość sporządzania uzasadnień z urzędu  przez sędziów i referendarzy sądowych (zgodnie z MS-S1r, dz. 1.4.1.b + 1.4.1.d) *
         </text>
       </komorka>
-
       <komorka>
         <wiersz>1</wiersz>
-        <kolumna>11</kolumna>
+        <kolumna>12</kolumna>
         <colSpan>4</colSpan>
         <rowspan>2</rowspan>
         <style>center colorKoralowyJasny </style>
@@ -124,7 +133,7 @@
       </komorka>
       <komorka>
         <wiersz>1</wiersz>
-        <kolumna>12</kolumna>
+        <kolumna>13</kolumna>
         <colSpan>0</colSpan>
         <rowspan>6</rowspan>
         <style>center colorPomaranczowyJasny col_120</style>
@@ -623,7 +632,7 @@
         <rowspan>4</rowspan>
         <style>center col_80_fest_fest colorPomaranczowyJasny</style>
         <text>
-          ogółem
+          ogółem 
         </text>
       </komorka>
       <komorka>
@@ -646,30 +655,79 @@
          niezakreślonych
         </text>
       </komorka>
+
+  <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>60</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>4</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          łącznie
+        </text>
+      </komorka>
       <komorka>
         <wiersz>2</wiersz>
-        <kolumna>58</kolumna>
-        <colSpan>12</colSpan>
+        <kolumna>61</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>4</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          w terminie ustawowym 14 dni
+        </text>
+      </komorka>
+     <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>62</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>4</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          razem po terminie ustawowym
+        </text>
+      </komorka>
+       <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>63</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>4</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+          nieusprawiedliwionych
+        </text>
+      </komorka>
+     
+       <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>64</kolumna>
+        <colSpan>8</colSpan>
         <rowspan>0</rowspan>
         <style>center  colorPomaranczowyJasny</style>
         <text>
-          od dnia przedłożenia sędziemu akt w celu sporządzenia uzasadnienia (zgodnie z MS-S5o, dz. 1.4.2) *
+          po upływie terminu ustawowego
         </text>
       </komorka>
-
-      <komorka>
+         <komorka>
         <wiersz>2</wiersz>
-        <kolumna>59</kolumna>
-        <colSpan>2</colSpan>
-        <rowspan>0</rowspan>
+        <kolumna>65</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>4</rowspan>
         <style>center col_80_fest_fest colorPomaranczowyJasny</style>
         <text>
-          od dnia wpływu wniosku do właściwego sądu
-          (zgodnie z MS-S5o, dz. 1.4.1)**
+         Uzasadnienia wygłoszone **/***
         </text>
       </komorka>
-
-    
+           <komorka>
+        <wiersz>2</wiersz>
+        <kolumna>66</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>4</rowspan>
+        <style>center col_80_fest_fest colorPomaranczowyJasny</style>
+        <text>
+         Liczba spraw, do których wpłynął wniosek o transkrypcje uzasadnień wygłoszonych
+        </text>
+      </komorka>
+        
 
       <komorka>
         <wiersz>3</wiersz>
@@ -876,7 +934,7 @@
         <wiersz>3</wiersz>
         <kolumna>30</kolumna>
         <colSpan>8</colSpan>
-        <rowspan>0</rowspan>
+        <rowspan>2</rowspan>
         <style>center col_80_fest_fest colorZoltyJasny</style>
         <text>po upływie terminiu ustawowego</text>
       </komorka>
@@ -886,7 +944,7 @@
         <colSpan>0</colSpan>
         <rowspan>3</rowspan>
         <style>center col_80_fest_fest colorZoltyJasny</style>
-        <text>ogółem</text>
+        <text>Uzasadnienia wygłoszone **/***</text>
       </komorka>
 
       <komorka>
@@ -895,12 +953,75 @@
         <colSpan>0</colSpan>
         <rowspan>3</rowspan>
         <style>center col_80_fest_fest colorZoltyJasny</style>
-        <text>w tym, w których wpłynął wniosek o transkrypcję</text>
+        <text>Liczba spraw, do których wpłynął wniosek o transkrypcje uzasadnień wygłoszonych</text>
       </komorka>
-
-      <komorka>
+  <komorka>
         <wiersz>3</wiersz>
         <kolumna>33</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>1-14 dni</text>
+      </komorka>
+       <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>34</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>w tym nieusprawiedliwione	</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>35</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>15-30 dni</text>
+      </komorka>
+       <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>36</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>w tym nieusprawiedliwione	</text>
+      </komorka>
+        <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>37</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>powyżej 1 - 3 mies.</text>
+      </komorka>
+       <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>38</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>w tym nieusprawiedliwione	</text>
+      </komorka>
+          <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>39</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>ponad 3 mies.</text>
+      </komorka>
+       <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>40</kolumna>
+        <colSpan>0</colSpan>
+        <rowspan>3</rowspan>
+        <style>center col_80_fest_fest colorZoltyJasny</style>
+        <text>w tym nieusprawiedliwione	</text>
+      </komorka>
+      <komorka>
+        <wiersz>3</wiersz>
+        <kolumna>41</kolumna>
         <colSpan>0</colSpan>
         <rowspan>3</rowspan>
         <style>center col_80_fest_fest colorZoltyJasny</style>
@@ -909,16 +1030,16 @@
 
       <komorka>
         <wiersz>3</wiersz>
-        <kolumna>34</kolumna>
+        <kolumna>42</kolumna>
         <colSpan>2</colSpan>
-        <rowspan>0</rowspan>
+        <rowspan>2</rowspan>
         <style>center col_80_fest_fest colorZoltyJasny</style>
         <text>załatwiono </text>
       </komorka>
 
       <komorka>
         <wiersz>3</wiersz>
-        <kolumna>35</kolumna>
+        <kolumna>43</kolumna>
         <colSpan>0</colSpan>
         <rowspan>3</rowspan>
         <style>center col_80_fest_fest colorZoltyJasny</style>

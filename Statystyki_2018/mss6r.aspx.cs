@@ -23,7 +23,7 @@ namespace Statystyki_2018
         protected void Page_Load(object sender, EventArgs e)
         {
             cm.log.Info("otwarcie formularza: " + tenPlik);
-            string idWydzial = Request.QueryString["w"];
+             string idWydzial = Request.QueryString["w"]; Session["czesc"] = cm.nazwaFormularza(tenPlik, idWydzial) ;
             if (idWydzial != null)
             {
                 Session["id_dzialu"] = idWydzial;
@@ -82,32 +82,38 @@ namespace Statystyki_2018
                 //wypełnianie lebeli
                 string path = Server.MapPath("XMLHeaders") + "\\" + "MSS6r.xml";
                 string[] numeryTabel00 = new string[] { "1.1" };
-                string[] numeryTabel01 = new string[] { "4.1", "4.2", "4.3", "4.4" };
-                string[] numeryTabel02 = new string[] { "5.1", "5.2", "5.3", "5.4", "5.5", "5.6" };
-                string[] numeryTabel03 = new string[] { "6.1", "6.2", "6.3", "6.4" };
-                string[] numeryTabel04 = new string[] { "7.1", "7.2", "7.3", "7.4", "7.5", "7.6" };
-                string[] numeryTabel05 = new string[] { "8.1", "8.2", "8.3" };
-                string[] numeryTabel06 = new string[] { "9.1", "9.2" };
-                string[] numeryTabel07 = new string[] { "10" };
-                string[] numeryTabel08 = new string[] { "11" };
-                string[] numeryTabel09 = new string[] { "12" };
-                string[] numeryTabel10 = new string[] { "13" };
-                string[] numeryTabel11 = new string[] { "14.a", "14.b" };
+                string[] numeryTabel00_w = new string[] { "1.1.c", "1.1.d", "1.1.e", "1.1.1", "1.1.1.a" };
+                string[] numeryTabel01 = new string[] { "1.1.g", "1.1.2", "1.2", "1.3", "1.3.a" };
+                string[] numeryTabel02 = new string[] {  "2.1", "2.2", "2.3.a", "2.3.b", "2.3.c", "2.4", "2.5", "2.5.a", "3.1", "3.2", "3.3", "3.4", "4", "4a" };
+                string[] numeryTabel03 = new string[] { "5", "6" };
+                string[] numeryTabel04 = new string[] { "7.1" , "7.2"};
+                string[] numeryTabel05 = new string[] { };
+                string[] numeryTabel06 = new string[] { };
+                string[] numeryTabel07 = new string[] { };
+                string[] numeryTabel08 = new string[] { };
+                string[] numeryTabel09 = new string[] { };
+                string[] numeryTabel10 = new string[] { };
+                string[] numeryTabel11 = new string[] { };
+                PlaceHolder1_waski.Controls.Clear();
                 tablePlaceHolder0.Controls.Clear();
                 tablePlaceHolder01.Controls.Clear();
                 tablePlaceHolder02.Controls.Clear();
                 tablePlaceHolder03.Controls.Clear();
                 tablePlaceHolder04.Controls.Clear();
-                tablePlaceHolder05.Controls.Clear();
+
                 tablePlaceHolder06.Controls.Clear();
                 tablePlaceHolder07.Controls.Clear();
                 tablePlaceHolder08.Controls.Clear();
                 tablePlaceHolder09.Controls.Clear();
                 tablePlaceHolder10.Controls.Clear();
                 tablePlaceHolder11.Controls.Clear();
-                //  tablePlaceHolder12.Controls.Clear();
+               
                 ms.TworzTabelizListy(numeryTabel00, tablePlaceHolder0, path, tabela2, idWydzialuNumerycznie, tenPlik);
-         
+                ms.TworzTabelizListy(numeryTabel00_w, PlaceHolder1_waski, path, tabela2, idWydzialuNumerycznie, tenPlik);
+                ms.TworzTabelizListy(numeryTabel01, tablePlaceHolder01, path, tabela2, idWydzialuNumerycznie, tenPlik);
+                ms.TworzTabelizListy(numeryTabel02, tablePlaceHolder02, path, tabela2, idWydzialuNumerycznie, tenPlik);
+                ms.TworzTabelizListy(numeryTabel03, tablePlaceHolder03, path, tabela2, idWydzialuNumerycznie, tenPlik);
+                ms.TworzTabelizListy(numeryTabel04, tablePlaceHolder04, path, tabela2, idWydzialuNumerycznie, tenPlik);
             }
             catch (Exception ex)
             {
@@ -139,26 +145,68 @@ namespace Statystyki_2018
                 string idTabeli = string.Empty;
                 string idWiersza = string.Empty;
                 string idWydzial = (string)Session["id_dzialu"];
+                Session["data_1"] = Date1.Date.ToShortDateString();
+                Session["data_2"] = Date2.Date.ToShortDateString();
                 DataTable tabela2 = ms.generuj_dane_do_tabeli_mss2(int.Parse((string)Session["id_dzialu"]), Date1.Date, Date2.Date, 21);
                 //wypełnianie lebeli
                 string path = Server.MapPath("XMLHeaders") + "\\" + "MSS6r.xml";
-                string[] numeryTabel00 = new string[] { "1.1" };
-               
-                tablePlaceHolder0.Controls.Clear();
-                tablePlaceHolder01.Controls.Clear();
-                tablePlaceHolder02.Controls.Clear();
-                tablePlaceHolder03.Controls.Clear();
-                tablePlaceHolder04.Controls.Clear();
-                tablePlaceHolder05.Controls.Clear();
-                tablePlaceHolder06.Controls.Clear();
-                tablePlaceHolder07.Controls.Clear();
-                tablePlaceHolder08.Controls.Clear();
-                tablePlaceHolder09.Controls.Clear();
-                tablePlaceHolder10.Controls.Clear();
-                tablePlaceHolder11.Controls.Clear();
-                //  tablePlaceHolder12.Controls.Clear();
-                ms.TworzTabelizListy(numeryTabel00, tablePlaceHolder0, path, tabela2, idWydzialuNumerycznie, tenPlik);
-             
+              
+
+                /*  tablePlaceHolder0.Controls.Clear();
+                  tablePlaceHolder01.Controls.Clear();
+                  tablePlaceHolder02.Controls.Clear();
+                  tablePlaceHolder03.Controls.Clear();
+                  tablePlaceHolder04.Controls.Clear();
+
+                  tablePlaceHolder06.Controls.Clear();
+                  tablePlaceHolder07.Controls.Clear();
+                  tablePlaceHolder08.Controls.Clear();
+                  tablePlaceHolder09.Controls.Clear();
+                  tablePlaceHolder10.Controls.Clear();
+                  tablePlaceHolder11.Controls.Clear();
+                  //  tablePlaceHolder12.Controls.Clear();
+                  ms.TworzTabelizListy(numeryTabel00, tablePlaceHolder0, path, tabela2, idWydzialuNumerycznie, tenPlik);*/
+
+
+            
+   
+                    //wypełnianie lebeli
+                
+                    string[] numeryTabel00 = new string[] { "1.1" };
+                    string[] numeryTabel00_w = new string[] { "1.1.c", "1.1.d", "1.1.e", "1.1.1", "1.1.1.a" };
+                    string[] numeryTabel01 = new string[] { "1.1.g", "1.1.2", "1.2", "1.3" };
+                    string[] numeryTabel02 = new string[] { "1.3.a", "2.1", "2.2", "2.3.a", "2.3.b", "2.3.c", "2.4", "2.5", "2.5.a", "3.1", "3.2", "3.3", "3.4", "4", "4a" };
+                    string[] numeryTabel03 = new string[] { "5", "6" };
+                    string[] numeryTabel04 = new string[] { "7.1", "7.2" };
+                    string[] numeryTabel05 = new string[] { };
+                    string[] numeryTabel06 = new string[] { };
+                    string[] numeryTabel07 = new string[] { };
+                    string[] numeryTabel08 = new string[] { };
+                    string[] numeryTabel09 = new string[] { };
+                    string[] numeryTabel10 = new string[] { };
+                    string[] numeryTabel11 = new string[] { };
+                    PlaceHolder1_waski.Controls.Clear();
+                    tablePlaceHolder0.Controls.Clear();
+                    tablePlaceHolder01.Controls.Clear();
+                    tablePlaceHolder02.Controls.Clear();
+                    tablePlaceHolder03.Controls.Clear();
+                    tablePlaceHolder04.Controls.Clear();
+
+                    tablePlaceHolder06.Controls.Clear();
+                    tablePlaceHolder07.Controls.Clear();
+                    tablePlaceHolder08.Controls.Clear();
+                    tablePlaceHolder09.Controls.Clear();
+                    tablePlaceHolder10.Controls.Clear();
+                    tablePlaceHolder11.Controls.Clear();
+
+                    ms.TworzTabelizListy(numeryTabel00, tablePlaceHolder0, path, tabela2, idWydzialuNumerycznie, tenPlik);
+                    ms.TworzTabelizListy(numeryTabel00_w, PlaceHolder1_waski, path, tabela2, idWydzialuNumerycznie, tenPlik);
+                    ms.TworzTabelizListy(numeryTabel01, tablePlaceHolder01, path, tabela2, idWydzialuNumerycznie, tenPlik);
+                    ms.TworzTabelizListy(numeryTabel02, tablePlaceHolder02, path, tabela2, idWydzialuNumerycznie, tenPlik);
+                    ms.TworzTabelizListy(numeryTabel03, tablePlaceHolder03, path, tabela2, idWydzialuNumerycznie, tenPlik);
+                    ms.TworzTabelizListy(numeryTabel04, tablePlaceHolder04, path, tabela2, idWydzialuNumerycznie, tenPlik);
+              
+
             }
             catch (Exception ex)
             {
@@ -224,11 +272,15 @@ namespace Statystyki_2018
                 DataRow dr = foundRows[0];
                 result = dr[4].ToString();
             }
-
-            catch 
+            catch
 
             { }
             return result;
+        }
+        protected void TimerTick(object sender, EventArgs e)
+        {
+            Timer1.Enabled = false;
+            imgLoader.Visible = false;
         }
 
         protected void makeCSVFile(object sender, EventArgs e)
@@ -250,7 +302,7 @@ namespace Statystyki_2018
                 if (!string.IsNullOrEmpty(idWydzialu))
                 {
                     DataTable tabela2 = ms.generuj_dane_do_tabeli_mss2(int.Parse((string)Session["id_dzialu"]), Date1.Date, Date2.Date, 21);
-           
+
                     var distinctRows = (from DataRow dRow in tabela2.Rows select dRow["idTabeli"]).Distinct(); //lista tabelek
                     DataTable listaTabelek = new DataTable();
                     listaTabelek.Columns.Add("tabela", typeof(string));
@@ -276,7 +328,6 @@ namespace Statystyki_2018
                     Response.End();
                 }
             }
-
             catch
 
             {

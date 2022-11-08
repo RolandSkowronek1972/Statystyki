@@ -144,7 +144,7 @@ namespace Statystyki_2018
             StringBuilder Zapytania = new StringBuilder();
             Zapytania.AppendLine("  <?xml version='1.0' encoding='utf-8'?> ");
             Zapytania.AppendLine("<!—nagłówek XML-- > ");
-            Zapytania.AppendLine("<ms:Zapytania version='1' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>");
+            Zapytania.AppendLine("<Zapytania version='1' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>");
             try
             {
                 ZestaKW_SC_00 = stTabKW[0];
@@ -159,28 +159,28 @@ namespace Statystyki_2018
             }
             catch (Exception ex)
             {
-                cm.log.Error("Wymiana 2 serwer: Brak kwerend z zapytaniami");
+                cm.log.Error("Wymiana 2 serwer: Brak kwerend z zapytaniami " + ex.Message);
                 return string.Empty;
             }
 
             for (int i = 0; i < 9; i++)
             {
-                Zapytania.AppendLine("<ms:zapytanie> ");
+                Zapytania.AppendLine("<zapytanie> ");
                 string[] daneZapytan = wyciagnijDane(stTabKW[i]);
                 try
                 {
-                    Zapytania.AppendLine("<ms:id> " + daneZapytan[0] + "</ms:id >");
-                    Zapytania.AppendLine("<ms:kwerenda> " + daneZapytan[1] + "</ms:kwerenda >");
-                    Zapytania.AppendLine("<ms:connectionString> " + daneZapytan[2] + "</ms:connectionString >");
+                    Zapytania.AppendLine("<id> " + daneZapytan[0] + "</id >");
+                    Zapytania.AppendLine("<kwerenda> " + daneZapytan[1] + "</kwerenda >");
+                    Zapytania.AppendLine("<connectionString> " + daneZapytan[2] + "</connectionString >");
                 }
                 catch (Exception ex)
                 {
-                    cm.log.Error("Wymiana  serwer 2: Bład kwerend z zapytaniami");
+                    cm.log.Error("Wymiana 2 serwer: Brak kwerend z zapytaniami " + ex.Message);
                     return null;
                 }
-                Zapytania.AppendLine("</ms:zapytanie> ");
+                Zapytania.AppendLine("</zapytanie> ");
             }
-            Zapytania.AppendLine("</ms:Zapytania> ");
+            Zapytania.AppendLine("</Zapytania> ");
             string pathZDP = Server.MapPath("Wymiana2\\Zapytania\\Zapytanie_server2_") + DateTime.Now.ToString().Replace(" ", "_").Replace(".", "_").Replace(":", "_") + ".xml";
             System.IO.File.WriteAllText(pathZDP, Zapytania.ToString());
 
@@ -200,11 +200,11 @@ namespace Statystyki_2018
             StringBuilder plikXML = new StringBuilder();
             plikXML.AppendLine("<?xml version='1.0' encoding='utf-8'?> ");
             plikXML.AppendLine("<!—nagłówek XML-- > ");
-            plikXML.AppendLine("<ms:Sprawy version='1' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>");
+            plikXML.AppendLine("<Sprawy version='1' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>");
 
             foreach (DataRow wierszZdanymiSpraw in dTsprawy.Rows)
             {
-                plikXML.AppendLine("<ms:Sprawa> ");
+                plikXML.AppendLine("<Sprawa> ");
 
                 int idSprawy = int.Parse(wierszZdanymiSpraw[0].ToString());
                 string SprawaRepertorium = (wierszZdanymiSpraw[1].ToString()); // repertorium
@@ -220,28 +220,28 @@ namespace Statystyki_2018
                 string SprawaSygnatura = (wierszZdanymiSpraw[11].ToString()); // Sygnatura
                 string SprawaNrProkuratury = (wierszZdanymiSpraw[12].ToString()); // Sygnatura
 
-                plikXML.AppendLine("<ms:Sprawa_ident>" + idSprawy + "</ms:Sprawa_ident>");
-                plikXML.AppendLine("<ms:repertorium>" + SprawaRepertorium + "</ms:repertorium>");
-                plikXML.AppendLine("<ms:numer>" + SprawaNumer + "</ms:numer>");
-                plikXML.AppendLine("<ms:data_wpl1>" + SprawaData_wpl1 + "</ms:data_wpl1>");
-                plikXML.AppendLine("<ms:data_wpl2>" + SprawaData_wpl2 + "</ms:data_wpl2>");
-                plikXML.AppendLine("<ms:rok>" + SprawaRok + "</ms:rok>");
-                plikXML.AppendLine("<ms:data_zakr>" + SprawaData_zakrk + "</ms:data_zakr>");
-                plikXML.AppendLine("<ms:rozstrzygniecie>" + SprawaRozstrzygniecie + "</ms:rozstrzygniecie>");
-                plikXML.AppendLine("<ms:Opis>" + SprawaOpis + "</ms:Opis>");
-                plikXML.AppendLine("<ms:symbol>" + SprawaSymbol + "</ms:symbol>");
-                plikXML.AppendLine("<ms:Sygnatura>" + SprawaSygnatura + "</ms:Sygnatura>");
-                plikXML.AppendLine("<ms:NrProkuratury>" + SprawaNrProkuratury + "</ms:NrProkuratury>");
+                plikXML.AppendLine("<Sprawa_ident>" + idSprawy + "</Sprawa_ident>");
+                plikXML.AppendLine("<repertorium>" + SprawaRepertorium + "</repertorium>");
+                plikXML.AppendLine("<numer>" + SprawaNumer + "</numer>");
+                plikXML.AppendLine("<data_wpl1>" + SprawaData_wpl1 + "</data_wpl1>");
+                plikXML.AppendLine("<data_wpl2>" + SprawaData_wpl2 + "</data_wpl2>");
+                plikXML.AppendLine("<rok>" + SprawaRok + "</rok>");
+                plikXML.AppendLine("<data_zakr>" + SprawaData_zakrk + "</data_zakr>");
+                plikXML.AppendLine("<rozstrzygniecie>" + SprawaRozstrzygniecie + "</rozstrzygniecie>");
+                plikXML.AppendLine("<Opis>" + SprawaOpis + "</Opis>");
+                plikXML.AppendLine("<symbol>" + SprawaSymbol + "</symbol>");
+                plikXML.AppendLine("<Sygnatura>" + SprawaSygnatura + "</Sygnatura>");
+                plikXML.AppendLine("<NrProkuratury>" + SprawaNrProkuratury + "</NrProkuratury>");
 
                 /*============================ Strony =====================================*/
-                plikXML.AppendLine("<ms:Strony>");
+                plikXML.AppendLine("<Strony>");
 
                 DataTable dTSprawyStrony = SprawyStrony(idSprawy, ZestaKW_SC_01);
                 if (dTSprawyStrony != null)
                 {
                     foreach (DataRow SprawyStronyWierszDanych in dTSprawyStrony.Rows)
                     {
-                        plikXML.AppendLine("<ms:Strona>");
+                        plikXML.AppendLine("<Strona>");
 
                         string StronyIdent = SprawyStronyWierszDanych[1].ToString();
                         string StronySprawyStatus = SprawyStronyWierszDanych[1].ToString();
@@ -265,43 +265,43 @@ namespace Statystyki_2018
                         string StronyCudzoziemiec = SprawyStronyWierszDanych[18].ToString();
                         string StronyCzyZakreslono = SprawyStronyWierszDanych[19].ToString();
 
-                        plikXML.AppendLine("<ms:ident>" + StronyIdent + "</ms:ident>");
-                        plikXML.AppendLine("<ms:Status>" + StronySprawyStatus + "</ms:Status>");
-                        plikXML.AppendLine("<ms:OsobaFizyczna>" + StronySprawyOsobaFizyczna + "</ms:OsobaFizyczna>");
-                        plikXML.AppendLine("<ms:Imie>" + StronyImie + "</ms:Imie>");
-                        plikXML.AppendLine("<ms:Nazwisko>" + StronyNazwisko + "</ms:Nazwisko>");
-                        plikXML.AppendLine("<ms:Kwalifikacja>" + StronyKwalifikacja + "</ms:Kwalifikacja>");
-                        plikXML.AppendLine("<ms:Plec>" + StronyPlec + "</ms:Plec>");
-                        plikXML.AppendLine("<ms:Adres>" + StronyAdres + "</ms:Adres>");
-                        plikXML.AppendLine("<ms:Instytucja>" + StronyInstytucja + "</ms:Instytucja>");
-                        plikXML.AppendLine("<ms:NazwiskoDopelniacz>" + StronyNazwiskoDopelniacz + "</ms:NazwiskoDopelniacz>");
-                        plikXML.AppendLine("<ms:ImieDopelniacz>" + StronyImieDopelniacz + "</ms:ImieDopelniacz>");
-                        plikXML.AppendLine("<ms:PESEL>" + StronyPESEL + "</ms:PESEL>");
-                        plikXML.AppendLine("<ms:ImieOjca>" + StronyImieOjca + "</ms:ImieOjca>");
-                        plikXML.AppendLine("<ms:ImieMatki>" + StronyImieMatki + "</ms:ImieMatki>");
-                        plikXML.AppendLine("<ms:NazwiskoRodoweMatki>" + StronyNazwiskoRodoweMatki + "</ms:NazwiskoRodoweMatki>");
-                        plikXML.AppendLine("<ms:DataUrodzenia>" + StronyDataUrodzenia + "</ms:DataUrodzenia>");
-                        plikXML.AppendLine("<ms:MiejsceUrodzenia>" + StronyMiejsceUrodzenia + "</ms:MiejsceUrodzenia>");
-                        plikXML.AppendLine("<ms:Nieletni>" + StronyNieletni + "</ms:Nieletni>");
-                        plikXML.AppendLine("<ms:ZawodWyuczony>" + StronyZawodWyuczony + "</ms:ZawodWyuczony>");
-                        plikXML.AppendLine("<ms:Cudzoziemiec>" + StronyCudzoziemiec + "</ms:Cudzoziemiec>");
-                        plikXML.AppendLine("<ms:CzyZakreslono>" + StronyIdent + "</ms:CzyZakreslono>");
-                        plikXML.AppendLine("</ms:Strona>");
+                        plikXML.AppendLine("<ident>" + StronyIdent + "</ident>");
+                        plikXML.AppendLine("<Status>" + StronySprawyStatus + "</Status>");
+                        plikXML.AppendLine("<OsobaFizyczna>" + StronySprawyOsobaFizyczna + "</OsobaFizyczna>");
+                        plikXML.AppendLine("<Imie>" + StronyImie + "</Imie>");
+                        plikXML.AppendLine("<Nazwisko>" + StronyNazwisko + "</Nazwisko>");
+                        plikXML.AppendLine("<Kwalifikacja>" + StronyKwalifikacja + "</Kwalifikacja>");
+                        plikXML.AppendLine("<Plec>" + StronyPlec + "</Plec>");
+                        plikXML.AppendLine("<Adres>" + StronyAdres + "</Adres>");
+                        plikXML.AppendLine("<Instytucja>" + StronyInstytucja + "</Instytucja>");
+                        plikXML.AppendLine("<NazwiskoDopelniacz>" + StronyNazwiskoDopelniacz + "</NazwiskoDopelniacz>");
+                        plikXML.AppendLine("<ImieDopelniacz>" + StronyImieDopelniacz + "</ImieDopelniacz>");
+                        plikXML.AppendLine("<PESEL>" + StronyPESEL + "</PESEL>");
+                        plikXML.AppendLine("<ImieOjca>" + StronyImieOjca + "</ImieOjca>");
+                        plikXML.AppendLine("<ImieMatki>" + StronyImieMatki + "</ImieMatki>");
+                        plikXML.AppendLine("<NazwiskoRodoweMatki>" + StronyNazwiskoRodoweMatki + "</NazwiskoRodoweMatki>");
+                        plikXML.AppendLine("<DataUrodzenia>" + StronyDataUrodzenia + "</DataUrodzenia>");
+                        plikXML.AppendLine("<MiejsceUrodzenia>" + StronyMiejsceUrodzenia + "</MiejsceUrodzenia>");
+                        plikXML.AppendLine("<Nieletni>" + StronyNieletni + "</Nieletni>");
+                        plikXML.AppendLine("<ZawodWyuczony>" + StronyZawodWyuczony + "</ZawodWyuczony>");
+                        plikXML.AppendLine("<Cudzoziemiec>" + StronyCudzoziemiec + "</Cudzoziemiec>");
+                        plikXML.AppendLine("<CzyZakreslono>" + StronyIdent + "</CzyZakreslono>");
+                        plikXML.AppendLine("</Strona>");
                     }
                 }
 
                 id_sprawy.Add(idSprawy);
-                plikXML.AppendLine("</ms:Strony>");
+                plikXML.AppendLine("</Strony>");
                 /*============================ eof Strony =====================================*/
                 /*============================ inne Strony =====================================*/
-                plikXML.AppendLine("<ms:InneStrony>");
+                plikXML.AppendLine("<InneStrony>");
 
                 DataTable dTSprawyInneStrony = InneStronyZeSprawy(idSprawy, ZestaKW_SC_05);
                 if (dTSprawyInneStrony != null)
                 {
                     foreach (DataRow SprawyInneStronyWierszDanych in dTSprawyInneStrony.Rows)
                     {
-                        plikXML.AppendLine("<ms:InnaStrona>");
+                        plikXML.AppendLine("<InnaStrona>");
 
                         string StronyInneIdent = SprawyInneStronyWierszDanych[0].ToString();
                         string StronySprawyInneStatus = SprawyInneStronyWierszDanych[1].ToString();
@@ -317,33 +317,33 @@ namespace Statystyki_2018
                         string StronyInnePESEL = SprawyInneStronyWierszDanych[10].ToString();
                         string StronyCzyZakreslono = SprawyInneStronyWierszDanych[19].ToString();
 
-                        plikXML.AppendLine("<ms:ident>" + StronyInneIdent + "</ms:ident>");
-                        plikXML.AppendLine("<ms:Status>" + StronySprawyInneStatus + "</ms:Status>");
-                        plikXML.AppendLine("<ms:OsobaFizyczna>" + StronyInneSprawyOsobaFizyczna + "</ms:OsobaFizyczna>");
-                        plikXML.AppendLine("<ms:Imie>" + StronyInneImie + "</ms:Imie>");
-                        plikXML.AppendLine("<ms:Nazwisko>" + StronyInneNazwisko + "</ms:Nazwisko>");
-                        plikXML.AppendLine("<ms:Plec>" + StronyInnePlec + "</ms:Plec>");
-                        plikXML.AppendLine("<ms:Adres>" + StronyInneAdres + "</ms:Adres>");
-                        plikXML.AppendLine("<ms:Instytucja>" + StronyInneInstytucja + "</ms:Instytucja>");
-                        plikXML.AppendLine("<ms:NazwiskoDopelniacz>" + StronyInneNazwiskoDopelniacz + "</ms:NazwiskoDopelniacz>");
-                        plikXML.AppendLine("<ms:ImieDopelniacz>" + StronyInneImieDopelniacz + "</ms:ImieDopelniacz>");
+                        plikXML.AppendLine("<ident>" + StronyInneIdent + "</ident>");
+                        plikXML.AppendLine("<Status>" + StronySprawyInneStatus + "</Status>");
+                        plikXML.AppendLine("<OsobaFizyczna>" + StronyInneSprawyOsobaFizyczna + "</OsobaFizyczna>");
+                        plikXML.AppendLine("<Imie>" + StronyInneImie + "</Imie>");
+                        plikXML.AppendLine("<Nazwisko>" + StronyInneNazwisko + "</Nazwisko>");
+                        plikXML.AppendLine("<Plec>" + StronyInnePlec + "</Plec>");
+                        plikXML.AppendLine("<Adres>" + StronyInneAdres + "</Adres>");
+                        plikXML.AppendLine("<Instytucja>" + StronyInneInstytucja + "</Instytucja>");
+                        plikXML.AppendLine("<NazwiskoDopelniacz>" + StronyInneNazwiskoDopelniacz + "</NazwiskoDopelniacz>");
+                        plikXML.AppendLine("<ImieDopelniacz>" + StronyInneImieDopelniacz + "</ImieDopelniacz>");
 
-                        plikXML.AppendLine("<ms:PESEL>" + StronyInnePESEL + "</ms:PESEL>");
-                        plikXML.AppendLine("<ms:CzyZakreslono>" + StronyCzyZakreslono + "</ms:CzyZakreslono>");
-                        plikXML.AppendLine("</ms:InnaStrona>");
+                        plikXML.AppendLine("<PESEL>" + StronyInnePESEL + "</PESEL>");
+                        plikXML.AppendLine("<CzyZakreslono>" + StronyCzyZakreslono + "</CzyZakreslono>");
+                        plikXML.AppendLine("</InnaStrona>");
                     }
                 }
-                plikXML.AppendLine("</ms:InneStrony>");
+                plikXML.AppendLine("</InneStrony>");
                 /*============================ eof inne Strony =====================================*/
 
                 /*============================ Sąd =====================================*/
-                plikXML.AppendLine("<ms:Sady>");
+                plikXML.AppendLine("<Sady>");
                 DataTable dTSprawySad = SprawySad(idSprawy, ZestaKW_SC_02);
                 if (dTSprawySad != null)
                 {
                     foreach (DataRow SprawySad in dTSprawySad.Rows)
                     {
-                        plikXML.AppendLine("<ms:Sad>");
+                        plikXML.AppendLine("<Sad>");
 
                         string SadNazwa = SprawySad[0].ToString();
                         string NrSadu = SprawySad[1].ToString();
@@ -352,28 +352,28 @@ namespace Statystyki_2018
                         string NazwaWydzialu = SprawySad[3].ToString();
                         string NazwaSerweraSadu = SprawySad[4].ToString();
 
-                        plikXML.AppendLine("<ms:Nazwa>" + SadNazwa + "</ms:Nazwa>");
-                        plikXML.AppendLine("<ms:NrSadu>" + NrSadu + "</ms:NrSadu>");
-                        plikXML.AppendLine("<ms:NrWydzialu>" + NrWydzialuSadu + "</ms:NrWydzialu>");
-                        plikXML.AppendLine("<ms:NazwaWydzialu>" + NazwaWydzialu + "</ms:NazwaWydzialu>");
-                        plikXML.AppendLine("<ms:NazwaSerwera>" + NazwaSerweraSadu + "</ms:NazwaSerwera>");
+                        plikXML.AppendLine("<Nazwa>" + SadNazwa + "</Nazwa>");
+                        plikXML.AppendLine("<NrSadu>" + NrSadu + "</NrSadu>");
+                        plikXML.AppendLine("<NrWydzialu>" + NrWydzialuSadu + "</NrWydzialu>");
+                        plikXML.AppendLine("<NazwaWydzialu>" + NazwaWydzialu + "</NazwaWydzialu>");
+                        plikXML.AppendLine("<NazwaSerwera>" + NazwaSerweraSadu + "</NazwaSerwera>");
 
-                        plikXML.AppendLine("</ms:Sad>");
+                        plikXML.AppendLine("</Sad>");
                     }
                 }
-                plikXML.AppendLine("</ms:Sady>");
+                plikXML.AppendLine("</Sady>");
                 /*============================ eof Sąd =====================================*/
 
                 /*============================ referent =====================================*/
 
-                plikXML.AppendLine("<ms:Referenci>");
+                plikXML.AppendLine("<Referenci>");
 
                 DataTable dTSprawyReferent = SprawyReferent(idSprawy, ZestaKW_SC_03);
                 if (dTSprawyReferent != null)
                 {
                     foreach (DataRow referent in dTSprawyReferent.Rows)
                     {
-                        plikXML.AppendLine("<ms:referent>");
+                        plikXML.AppendLine("<referent>");
 
                         string Referent_Ident = referent[0].ToString();
                         string Tytul = referent[1].ToString();
@@ -383,29 +383,29 @@ namespace Statystyki_2018
                         string Stanowisko = referent[4].ToString();
                         string Funkcja = referent[5].ToString();
 
-                        plikXML.AppendLine("<ms:Referent_Ident>" + Referent_Ident + "</ms:Referent_Ident>");
-                        plikXML.AppendLine("<ms:Tytul>" + Tytul + "</ms:Tytul>");
-                        plikXML.AppendLine("<ms:Imie>" + Imie + "</ms:Imie>");
-                        plikXML.AppendLine("<ms:Nazwisko>" + Nazwisko + "</ms:Nazwisko>");
-                        plikXML.AppendLine("<ms:Funkcja>" + Funkcja + "</ms:Funkcja>");
+                        plikXML.AppendLine("<Referent_Ident>" + Referent_Ident + "</Referent_Ident>");
+                        plikXML.AppendLine("<Tytul>" + Tytul + "</Tytul>");
+                        plikXML.AppendLine("<Imie>" + Imie + "</Imie>");
+                        plikXML.AppendLine("<Nazwisko>" + Nazwisko + "</Nazwisko>");
+                        plikXML.AppendLine("<Funkcja>" + Funkcja + "</Funkcja>");
 
-                        plikXML.AppendLine("</ms:referent>");
+                        plikXML.AppendLine("</referent>");
                     }
                 }
-                plikXML.AppendLine("</ms:Referenci>");
+                plikXML.AppendLine("</Referenci>");
 
                 /*============================ eof referent =====================================*/
                 /*============================ eof Orzeczenia =====================================*/
                 /*============================ eof Wyrok =====================================*/
-                plikXML.AppendLine("<ms:Orzeczenia>");
+                plikXML.AppendLine("<Orzeczenia>");
 
                 DataTable dTSprawyWyrok = Wyrok(idSprawy, ZestaKW_SC_07);
-                plikXML.AppendLine("<ms:OrzeczeniaWyrok>");
+                plikXML.AppendLine("<OrzeczeniaWyrok>");
                 if (dTSprawyWyrok != null)
                 {
                     foreach (DataRow wyrok in dTSprawyWyrok.Rows)
                     {
-                        plikXML.AppendLine("<ms:wyrok>");
+                        plikXML.AppendLine("<wyrok>");
 
                         string rodzajOrzeczenia = wyrok[0].ToString();
                         string Data = wyrok[1].ToString();
@@ -413,22 +413,22 @@ namespace Statystyki_2018
                         string Nazwa = wyrok[2].ToString();
                         string TrescSentencji = wyrok[3].ToString();
 
-                        plikXML.AppendLine("<ms:Rodzaj>" + rodzajOrzeczenia + "</ms:Rodzaj>");
-                        plikXML.AppendLine("<ms:Data>" + Data + "</ms:Data>");
-                        plikXML.AppendLine("<ms:Nazwa>" + Nazwa + "</ms:Nazwa>");
-                        plikXML.AppendLine("<ms:TrescSentencji>" + TrescSentencji + "</ms:TrescSentencji>");
+                        plikXML.AppendLine("<Rodzaj>" + rodzajOrzeczenia + "</Rodzaj>");
+                        plikXML.AppendLine("<Data>" + Data + "</Data>");
+                        plikXML.AppendLine("<Nazwa>" + Nazwa + "</Nazwa>");
+                        plikXML.AppendLine("<TrescSentencji>" + TrescSentencji + "</TrescSentencji>");
 
-                        plikXML.AppendLine("</ms:wyrok>");
+                        plikXML.AppendLine("</wyrok>");
                     }
                 }
-                plikXML.AppendLine("</ms:OrzeczeniaWyrok>");
+                plikXML.AppendLine("</OrzeczeniaWyrok>");
                 DataTable dTSprawyPostanowienie = Postanowienie(idSprawy, ZestaKW_SC_08);
-                plikXML.AppendLine("<ms:OrzeczeniaPostanowienie>");
+                plikXML.AppendLine("<OrzeczeniaPostanowienie>");
                 if (dTSprawyPostanowienie != null)
                 {
                     foreach (DataRow wyrok in dTSprawyPostanowienie.Rows)
                     {
-                        plikXML.AppendLine("<ms:Postanowienie>");
+                        plikXML.AppendLine("<Postanowienie>");
 
                         string rodzajOrzeczenia = wyrok[0].ToString();
                         string Data = wyrok[1].ToString();
@@ -436,22 +436,22 @@ namespace Statystyki_2018
                         string Nazwa = wyrok[2].ToString();
                         string TrescSentencji = wyrok[3].ToString();
 
-                        plikXML.AppendLine("<ms:Rodzaj>" + rodzajOrzeczenia + "</ms:Rodzaj>");
-                        plikXML.AppendLine("<ms:Data>" + Data + "</ms:Data>");
-                        plikXML.AppendLine("<ms:Nazwa>" + Nazwa + "</ms:Nazwa>");
-                        plikXML.AppendLine("<ms:TrescSentencji>" + TrescSentencji + "</ms:TrescSentencji>");
+                        plikXML.AppendLine("<Rodzaj>" + rodzajOrzeczenia + "</Rodzaj>");
+                        plikXML.AppendLine("<Data>" + Data + "</Data>");
+                        plikXML.AppendLine("<Nazwa>" + Nazwa + "</Nazwa>");
+                        plikXML.AppendLine("<TrescSentencji>" + TrescSentencji + "</TrescSentencji>");
 
-                        plikXML.AppendLine("</ms:Postanowienie>");
+                        plikXML.AppendLine("</Postanowienie>");
                     }
                 }
-                plikXML.AppendLine("</ms:OrzeczeniaPostanowienie>");
+                plikXML.AppendLine("</OrzeczeniaPostanowienie>");
                 DataTable dTSprawyProtokol = Protokol(idSprawy, ZestaKW_SC_08);
-                plikXML.AppendLine("<ms:OrzeczeniaProtokol>");
+                plikXML.AppendLine("<OrzeczeniaProtokol>");
                 if (dTSprawyProtokol != null)
                 {
                     foreach (DataRow wyrok in dTSprawyProtokol.Rows)
                     {
-                        plikXML.AppendLine("<ms:Protokol>");
+                        plikXML.AppendLine("<Protokol>");
 
                         string rodzajOrzeczenia = wyrok[0].ToString();
                         string Data = wyrok[1].ToString();
@@ -459,32 +459,37 @@ namespace Statystyki_2018
                         string Nazwa = wyrok[2].ToString();
                         string TrescSentencji = wyrok[3].ToString();
 
-                        plikXML.AppendLine("<ms:Rodzaj>" + rodzajOrzeczenia + "</ms:Rodzaj>");
-                        plikXML.AppendLine("<ms:Data>" + Data + "</ms:Data>");
-                        plikXML.AppendLine("<ms:Nazwa>" + Nazwa + "</ms:Nazwa>");
-                        plikXML.AppendLine("<ms:TrescSentencji>" + TrescSentencji + "</ms:TrescSentencji>");
+                        plikXML.AppendLine("<Rodzaj>" + rodzajOrzeczenia + "</Rodzaj>");
+                        plikXML.AppendLine("<Data>" + Data + "</Data>");
+                        plikXML.AppendLine("<Nazwa>" + Nazwa + "</Nazwa>");
+                        plikXML.AppendLine("<TrescSentencji>" + TrescSentencji + "</TrescSentencji>");
 
-                        plikXML.AppendLine("</ms:Protokol>");
+                        plikXML.AppendLine("</Protokol>");
                     }
                 }
-                plikXML.AppendLine("</ms:OrzeczeniaProtokol>");
-                plikXML.AppendLine("</ms:Orzeczenia>");
+                plikXML.AppendLine("</OrzeczeniaProtokol>");
+                plikXML.AppendLine("</Orzeczenia>");
             }
 
-            plikXML.AppendLine("</ms:Sprawy>");
-            string pathODP = Server.MapPath("Wymiana2\\Odpowiedzi\\odpowiedz_") + DateTime.Now.ToString().Replace(" ", "_").Replace(".", "_").Replace(":", "_") + ".xml";
-            System.IO.File.WriteAllText(pathODP, plikXML.ToString());
+           
+            plikXML.AppendLine("</Sprawy>");
+           
+            try
+            {
+                string pathODP = Server.MapPath("Wymiana2\\Odpowiedzi\\odpowiedz_") + DateTime.Now.ToString().Replace(" ", "_").Replace(".", "_").Replace(":", "_") + ".xml";
+                System.IO.File.WriteAllText(pathODP, plikXML.ToString());
+            }
+            catch (Exception ex)
+            {
+                cm.log.Error("Wymiana odczyt danych: " + ex.Message);
+              
+            }
             return plikXML.ToString();
         }
 
         private DataTable Sprawy(string wydzial, string repertorium, string rodzaj, int numer, int rok, string kwerendaZapytujacaIConnectionString)
         {
-            int SprawyNr = 0;
-            int StronyZeSprawyNr = 1;
-            int AdresyStronKwerendaNr = 2;
-            int InneStronyZeSprawyStron = 3;
-            int AdresyInnychStron = 4;
-            int Orzeczenia = 5;
+           
 
             string odpowiedz = string.Empty;
             string SprawyKwerenda = string.Empty;
@@ -501,7 +506,7 @@ namespace Statystyki_2018
             }
             catch (Exception ex)
             {
-                cm.log.Error("Wymiana 2 serwer: Brak kwerend z zapytaniami");
+                cm.log.Error("Wymiana 2 serwer: Brak kwerend z zapytaniami " + ex.Message);
                 return null;
             }
             DataTable parametry = cm.makeParameterTable();

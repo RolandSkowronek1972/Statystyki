@@ -309,13 +309,14 @@ namespace Statystyki_2018
             ilosckolunPrzedIteracja = 1,
             ilosckolunPoIteracji = 2,
             lp = 3,
-           
+
             //===============
             informacjeOtabeli = 0,
 
             naglowek = 1,
             tabelaBoczna = 2,
             tabelaStyli = 3,
+
             //nr noda z komorkami
             nodZkomorkami = 4
         }
@@ -349,6 +350,7 @@ namespace Statystyki_2018
 
             return dT;
         }
+
         public string tekstNadTabelą(string tekst, DateTime poczatek, DateTime koniec)
         {
             string strMonthName = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(koniec.Month);
@@ -357,14 +359,36 @@ namespace Statystyki_2018
             if ((poczatek.Day == 1) && ((koniec.Day == last_day) && (poczatek.Month == koniec.Month)))
             {
                 // cały miesiąc
-                textWyjcciowy = tekst +" za "+ strMonthName + " " + koniec.Year.ToString() + " roku.";
+                textWyjcciowy = tekst + " za " + strMonthName + " " + koniec.Year.ToString() + " roku.";
             }
             else
             {
-                textWyjcciowy = tekst +  " za okres od " + poczatek.ToShortDateString() + " do  " + koniec.ToShortDateString();
+                textWyjcciowy = tekst + " za okres od " + poczatek.ToShortDateString() + " do  " + koniec.ToShortDateString();
             }
 
             return textWyjcciowy;
+        }
+
+        public string nazwaFormularza(string plik, string id)
+        {
+            string result = string.Empty;
+            try
+            {
+                DataTable parameters = makeParameterTable();
+                parameters.Rows.Add("@id", id.Trim());
+                parameters.Rows.Add("@plik", plik.Trim());
+
+                result = getQuerryValue("SELECT DISTINCT nazwa FROM wydzialy where ident=@id and plik=@plik", con_str, parameters);
+            }
+            catch
+            {
+
+             
+            }
+         
+           
+
+            return result;
         }
     } // end of common
 }

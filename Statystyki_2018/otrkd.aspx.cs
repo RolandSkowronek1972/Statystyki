@@ -20,7 +20,7 @@ namespace Statystyki_2018
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            string idWydzial = Request.QueryString["w"];
+             string idWydzial = Request.QueryString["w"]; Session["czesc"] = cm.nazwaFormularza(tenPlik, idWydzial) ;
             if (idWydzial != null)
             {
                 Session["id_dzialu"] = idWydzial;
@@ -31,27 +31,21 @@ namespace Statystyki_2018
                 Server.Transfer("default.aspx");
                 return;
             }
-            CultureInfo newCulture = (CultureInfo)CultureInfo.CurrentCulture.Clone();
-            newCulture.DateTimeFormat = CultureInfo.GetCultureInfo("PL").DateTimeFormat;
-            System.Threading.Thread.CurrentThread.CurrentCulture = newCulture;
-            System.Threading.Thread.CurrentThread.CurrentUICulture = newCulture;
-            System.Threading.Thread.CurrentThread.CurrentUICulture = newCulture;
-            DateTime dTime = DateTime.Now.AddMonths(-1); ;
-
-            if (Date1.Text.Length == 0) Date1.Date = DateTime.Parse(dTime.Year.ToString() + "-" + dTime.Month.ToString("D2") + "-01");
-            if (Date2.Text.Length == 0) Date2.Date = DateTime.Parse(dTime.Year.ToString() + "-" + dTime.Month.ToString("D2") + "-" + DateTime.DaysInMonth(dTime.Year, dTime.Month).ToString("D2"));
-
-            Session["data_1"] = Date1.Date.ToShortDateString();
-            Session["data_2"] = Date2.Date.ToShortDateString();
+           
 
             try
             {
                 string user = (string)Session["userIdNum"];
                 string dzial = (string)Session["id_dzialu"];
-                bool dost = cm.dostep(dzial, user);
-                if (!dost)
+                String IdentyfikatorUzytkownika = string.Empty;
+                IdentyfikatorUzytkownika = (string)Session["identyfikatorUzytkownika"];
+                DataTable parametry = cm.makeParameterTable();
+                parametry.Rows.Add("@identyfikatorUzytkownika", IdentyfikatorUzytkownika);
+
+
+                if (cm.getQuerryValue("select admin from uzytkownik where ident =@identyfikatorUzytkownika", cm.con_str, parametry) == "0" && !cm.dostep(idWydzial, (string)Session["identyfikatorUzytkownika"]))
                 {
-                    Server.Transfer("default.aspx?info='Użytkownik " + user + " nie praw do działu nr " + dzial + "'");
+                    Server.Transfer("default.aspx?info='Użytkownik " + (string)Session["identyfikatorUzytkownika"] + " nie praw do działu nr " + idWydzial + "'");
                 }
                 else
                 {
@@ -68,6 +62,19 @@ namespace Statystyki_2018
             {
                 cm.log.Error(tenPlik + " " + ex.Message);
             }
+
+ CultureInfo newCulture = (CultureInfo)CultureInfo.CurrentCulture.Clone();
+            newCulture.DateTimeFormat = CultureInfo.GetCultureInfo("PL").DateTimeFormat;
+            System.Threading.Thread.CurrentThread.CurrentCulture = newCulture;
+            System.Threading.Thread.CurrentThread.CurrentUICulture = newCulture;
+            System.Threading.Thread.CurrentThread.CurrentUICulture = newCulture;
+            DateTime dTime = DateTime.Now.AddMonths(-1); ;
+
+            if (Date1.Text.Length == 0) Date1.Date = DateTime.Parse(dTime.Year.ToString() + "-" + dTime.Month.ToString("D2") + "-01");
+            if (Date2.Text.Length == 0) Date2.Date = DateTime.Parse(dTime.Year.ToString() + "-" + dTime.Month.ToString("D2") + "-" + DateTime.DaysInMonth(dTime.Year, dTime.Month).ToString("D2"));
+
+            Session["data_1"] = Date1.Date.ToShortDateString();
+            Session["data_2"] = Date2.Date.ToShortDateString();
         }// end of Page_Load
 
         protected void odswiez()

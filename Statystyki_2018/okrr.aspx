@@ -220,7 +220,15 @@
                         </ItemTemplate>
                         <ItemStyle CssClass="col_50H" />
                     </asp:TemplateField>
+                        <asp:TemplateField HeaderText="d_07" SortExpression="d_07">
+                        <ItemTemplate>
 
+                            <a href="javascript:openPopup('popup.aspx?sesja=<%# Eval("id_sedziego")+ "!"+Eval("id_tabeli") +"!13!6"%>')">
+                                <asp:Label ID="Label728" runat="server" Text='<%# Eval("d_13")%>' CssClass="normal"></asp:Label>
+                            </a>
+                        </ItemTemplate>
+                        <ItemStyle CssClass="col_50H" />
+                    </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_07" SortExpression="d_07">
                         <ItemTemplate>
                             <asp:TextBox ID="TextBoxx30" runat="server" CssClass="col_29"></asp:TextBox>
@@ -235,15 +243,7 @@
                         <ItemStyle CssClass="col_50H" />
                     </asp:TemplateField>
 
-                    <asp:TemplateField HeaderText="d_07" SortExpression="d_07">
-                        <ItemTemplate>
-
-                            <a href="javascript:openPopup('popup.aspx?sesja=<%# Eval("id_sedziego")+ "!"+Eval("id_tabeli") +"!13!6"%>')">
-                                <asp:Label ID="Label728" runat="server" Text='<%# Eval("d_13")%>' CssClass="normal"></asp:Label>
-                            </a>
-                        </ItemTemplate>
-                        <ItemStyle CssClass="col_50H" />
-                    </asp:TemplateField>
+                
 
                     <asp:TemplateField HeaderText="d_07" SortExpression="d_07">
                         <ItemTemplate>

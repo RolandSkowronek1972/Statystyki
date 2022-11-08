@@ -16,7 +16,7 @@
                 right: 0;
             }
 
-      @media print {
+        @media print {
 
             @page {
                 font-size: 7.5pt;
@@ -25,9 +25,16 @@
             }
 
             .horizont {
-                transform: translate(-65mm, 0) scale(0.5);
-                -webkit-transform: translate(-65mm, 0) scale(0.5);
-                -moz-transform: translate(-65mm, 0) scale(0.5);
+                transform: translate(-25mm, 0) scale(0.8);
+                -webkit-transform: translate(-25mm, 0) scale(0.8);
+                -moz-transform: translate(-25mm, 0) scale(0.8);
+                break-after: column;
+            }
+
+            .horizont_w {
+                transform: translate(-35mm, 0) scale(0.75);
+                -webkit-transform: translate(-35mm, 0) scale(0.75);
+                -moz-transform: translate(-35mm, 0) scale(0.75);
                 break-after: column;
             }
         }
@@ -69,7 +76,7 @@
     </div>
 
     <div style="width: 1150px; margin: 0 auto 0 auto; position: relative; top: 60px;">
-        <div id="Div2" style="z-index: 10;" class="horizont">
+        <div id="Div2" style="z-index: 10;">
             <div style="margin-left: auto; margin-right: auto; text-align: center; width: auto;">
                 <asp:Label ID="Label3" runat="server" Text="Sąd " Style="font-weight: 700"></asp:Label>
             </div>
@@ -79,10 +86,16 @@
         </div>
 
         <div style="width: 1150px; margin: 0 auto 0 auto; position: relative; left: 0px; display: block">
-            &nbsp;<asp:PlaceHolder runat="server" ID="tablePlaceHolder01"></asp:PlaceHolder>
+            <div class=" horizont_w">
+                &nbsp;<asp:PlaceHolder runat="server" ID="tablePlaceHolder01"></asp:PlaceHolder>
+            </div>
+            <div >
+                &nbsp;<asp:PlaceHolder runat="server" ID="tablePlaceHolder02"></asp:PlaceHolder>
+            </div>
+
             <br />
         </div>
-           <div id="debag">
+        <div id="debag">
             <br />
             <br />
             Raport statystyczny
@@ -93,10 +106,7 @@
             <asp:Label ID="Label28" runat="server"></asp:Label>
             &nbsp;<asp:Label ID="Label30" runat="server"></asp:Label>
             <br />
-
-        
         </div>
     </div>
-      <br />
-  
+    <br />
 </asp:Content>

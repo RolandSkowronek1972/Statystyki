@@ -104,6 +104,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\statystyki-popup\Bin\Microsoft.Data.Edm.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="NPOI, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\NPOI.dll</HintPath>
@@ -120,6 +123,10 @@
     <Reference Include="System.DirectoryServices.AccountManagement" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.4\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.ServiceModel" />
@@ -129,13 +136,25 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Web" />
     <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Web.Http, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.4\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.4\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Services" />
     <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="adm.aspx" />
+    <Content Include="nowaN.aspx" />
+    <Content Include="oczp.aspx" />
+    <Content Include="redirector2.aspx" />
+    <Content Include="style\card.css" />
     <Content Include="aktc2.aspx" />
     <Content Include="aktg2.aspx" />
     <Content Include="aktr.aspx" />
@@ -165,6 +184,7 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="aopc2.aspx" />
     <Content Include="mss6r.aspx" />
     <Content Include="mss10o.aspx" />
     <Content Include="oopr.aspx" />
@@ -183,7 +203,9 @@
     <Content Include="okrcN.aspx" />
     <Content Include="otrp.aspx" />
     <Content Include="aktc.aspx" />
+    <Content Include="Scripts\index.js" />
     <Content Include="SerwisWymiany.asmx" />
+    <Content Include="wizg.aspx" />
     <Content Include="Wymiana1.aspx" />
     <Content Include="XMLHeaders\MSS10o.xml">
       <SubType>Designer</SubType>
@@ -195,6 +217,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="XMLHeaders\MSS5o.xml" />
+    <Content Include="XMLHeaders\oczp.xml" />
     <Content Include="XMLHeaders\oopr.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -211,6 +234,9 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="XMLHeaders\aoppe.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLHeaders\wizg.xml">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="XMLHeaders\wizk.xml">
@@ -273,7 +299,6 @@
     <Content Include="oopg.aspx" />
     <Content Include="aopc.aspx" />
     <Content Include="aopk.aspx" />
-    <Content Include="aopc2.aspx" />
     <Content Include="aoppe.aspx" />
     <Content Include="mss16r.aspx" />
     <Content Include="mss19r.aspx" />
@@ -365,7 +390,6 @@
     <Content Include="onsk.aspx" />
     <Content Include="onsp.aspx" />
     <Content Include="onsr.aspx" />
-    <Content Include="onsuOLD.aspx" />
     <Content Include="oopu.aspx" />
     <Content Include="otrc.aspx">
       <BrowseToURL>m</BrowseToURL>
@@ -413,6 +437,9 @@
     <Content Include="libman.json" />
     <None Include="Connected Services\ServiceReference3\SerwisWymiany.wsdl" />
     <Content Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <Content Include="Properties\DataSources\System.Data.DataTable1.datasource" />
+    <Content Include="Properties\DataSources\System.Data.DataTable2.datasource" />
+    <Content Include="Properties\DataSources\System.Data.DataTable3.datasource" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -513,15 +540,7 @@
     <Content Include="Template\aoppe.xlsx" />
     <Content Include="Template\aopk.xlsx" />
     <Content Include="Template\oczc.xlsx" />
-    <None Include="Web.config-stary">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web.Debug.config-stary">
-      <DependentUpon>Web.config-stary</DependentUpon>
-    </None>
-    <None Include="Web.Release.config-stary">
-      <DependentUpon>Web.config-stary</DependentUpon>
-    </None>
+    <Content Include="Template\wizg_aspx.xlsx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -544,6 +563,27 @@
     </Compile>
     <Compile Include="adm.aspx.designer.cs">
       <DependentUpon>adm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nowaN.aspx.cs">
+      <DependentUpon>nowaN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nowaN.aspx.designer.cs">
+      <DependentUpon>nowaN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oczp.aspx.cs">
+      <DependentUpon>oczp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oczp.aspx.designer.cs">
+      <DependentUpon>oczp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="redirector2.aspx.cs">
+      <DependentUpon>redirector2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="redirector2.aspx.designer.cs">
+      <DependentUpon>redirector2.aspx</DependentUpon>
     </Compile>
     <Compile Include="aktc2.aspx.cs">
       <DependentUpon>aktc2.aspx</DependentUpon>
@@ -628,6 +668,13 @@
     </Compile>
     <Compile Include="akrk.aspx.designer.cs">
       <DependentUpon>akrk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aopc2.aspx.cs">
+      <DependentUpon>aopc2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aopc2.aspx.designer.cs">
+      <DependentUpon>aopc2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Connected Services\ServiceReference2\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -730,7 +777,6 @@
     <Compile Include="mss10e.aspx.designer.cs">
       <DependentUpon>mss10e.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Employee.cs" />
     <Compile Include="oktc.aspx.cs">
       <DependentUpon>oktc.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -788,13 +834,6 @@
     </Compile>
     <Compile Include="aopk.aspx.designer.cs">
       <DependentUpon>aopk.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="aopc2.aspx.cs">
-      <DependentUpon>aopc2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="aopc2.aspx.designer.cs">
-      <DependentUpon>aopc2.aspx</DependentUpon>
     </Compile>
     <Compile Include="aoppe.aspx.cs">
       <DependentUpon>aoppe.aspx</DependentUpon>
@@ -1063,6 +1102,7 @@
     <Compile Include="obba.aspx.designer.cs">
       <DependentUpon>obba.aspx</DependentUpon>
     </Compile>
+    <Content Include="time.txt" />
     <Compile Include="UserControlls\ZarzadzanieFormularzami.ascx.cs">
       <DependentUpon>ZarzadzanieFormularzami.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1293,13 +1333,6 @@
     <Compile Include="onsr.aspx.designer.cs">
       <DependentUpon>onsr.aspx</DependentUpon>
     </Compile>
-    <Compile Include="onsuOLD.aspx.cs">
-      <DependentUpon>onsuOLD.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="onsuOLD.aspx.designer.cs">
-      <DependentUpon>onsuOLD.aspx</DependentUpon>
-    </Compile>
     <Compile Include="oopu.aspx.cs">
       <DependentUpon>oopu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1406,6 +1439,13 @@
     <Compile Include="onsa.aspx.designer.cs">
       <DependentUpon>onsa.aspx</DependentUpon>
     </Compile>
+    <Compile Include="wizg.aspx.cs">
+      <DependentUpon>wizg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wizg.aspx.designer.cs">
+      <DependentUpon>wizg.aspx</DependentUpon>
+    </Compile>
     <Compile Include="wizk.aspx.cs">
       <DependentUpon>wizk.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1440,7 +1480,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="App_GlobalResources\" />
     <Folder Include="classes\App_LocalResources\" />
-    <Folder Include="enums\" />
     <Folder Include="Wymiana2\Odpowiedzi\" />
     <Folder Include="Wymiana2\Zapytania\" />
     <Folder Include="Wymiana\Temp\" />

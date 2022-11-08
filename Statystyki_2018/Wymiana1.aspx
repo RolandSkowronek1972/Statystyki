@@ -88,7 +88,7 @@
                             <tr>
                                 <td class="wciecie" style="background-color: #CCCCCC">nr wydziału</td>
                                 <td style="background-color: #CCCCCC">
-                                    <dx:ASPxTextBox ID="TBNrWydzialu2" runat="server" required="" Theme="Moderno" Width="170px">
+                                    <dx:ASPxTextBox ID="TBNrWydzialu2" runat="server" required="" Theme="Moderno" Width="170px" Text="0">
                                         <ValidationSettings>
                                             <RequiredField ErrorText="* Pole jest wymagane- nie może być puste" IsRequired="True" />
                                         </ValidationSettings>
@@ -98,7 +98,7 @@
                             <tr>
                                 <td class="wciecie">oznaczenie repertorium</td>
                                 <td>
-                                    <dx:ASPxTextBox ID="TBRepertorium2" runat="server" required="" Theme="Moderno" Width="170px">
+                                    <dx:ASPxTextBox ID="TBRepertorium2" runat="server" required="" Theme="Moderno" Width="170px" Text="0">
                                         <ValidationSettings>
                                             <RequiredField ErrorText="* Pole jest wymagane- nie może być puste" IsRequired="True" />
                                         </ValidationSettings>
@@ -108,7 +108,7 @@
                             <tr>
                                 <td class="wciecie" style="background-color: #CCCCCC">numer sprawy</td>
                                 <td style="background-color: #CCCCCC">
-                                    <dx:ASPxTextBox ID="TBNrSprawy2" runat="server" Theme="Moderno" Width="170px">
+                                    <dx:ASPxTextBox ID="TBNrSprawy2" runat="server" Theme="Moderno" Width="170px" Text="1">
                                         <ValidationSettings>
                                             <RegularExpression ErrorText="Pole może zawierać tylko liczby całkowite większe od zera " ValidationExpression="^[1-9]\d*$" />
                                             <RequiredField ErrorText="* Pole jest wymagane- nie może być puste" IsRequired="True" />

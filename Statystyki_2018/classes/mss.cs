@@ -380,7 +380,7 @@ namespace Statystyki_2018
                                     line = idRaportu + ";" + druga + ";" + idsadu + ";" + idWydzialu + ";" + idTabeli + ";" + idWiersza + ";" + idKolumny + ";" + wartosc;
                                 }
                             }
-                            catch (Exception ecc)
+                            catch 
                             {
                                 if (wartosc.Length>0)
                                 {

@@ -27,7 +27,7 @@ namespace Statystyki_2018
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            string idWydzial = Request.QueryString["w"];
+             string idWydzial = Request.QueryString["w"]; Session["czesc"] = cm.nazwaFormularza(tenPlik, idWydzial) ;
             if (idWydzial == null)
             {
                 Server.Transfer("default.aspx");
@@ -36,8 +36,16 @@ namespace Statystyki_2018
             try
             {
                 Session["id_dzialu"] = idWydzial;
-                bool dost = cm.dostep(idWydzial, (string)Session["identyfikatorUzytkownika"]);
-                if (!dost) Server.Transfer("default.aspx?info='Użytkownik " + (string)Session["identyfikatorUzytkownika"] + " nie praw do działu nr " + idWydzial + "'");
+                String IdentyfikatorUzytkownika = string.Empty;
+                IdentyfikatorUzytkownika = (string)Session["identyfikatorUzytkownika"];
+                DataTable parametry = cm.makeParameterTable();
+                parametry.Rows.Add("@identyfikatorUzytkownika", IdentyfikatorUzytkownika);
+
+
+                if (cm.getQuerryValue("select admin from uzytkownik where ident =@identyfikatorUzytkownika", cm.con_str, parametry) == "0" && !cm.dostep(idWydzial, (string)Session["identyfikatorUzytkownika"]))
+                {
+                    Server.Transfer("default.aspx?info='Użytkownik " + (string)Session["identyfikatorUzytkownika"] + " nie praw do działu nr " + idWydzial + "'");
+                }
                 path = Server.MapPath("~\\Template\\" + tenPlikNazwa + ".xlsx");
                 CultureInfo newCulture = (CultureInfo)CultureInfo.CurrentCulture.Clone();
                 newCulture.DateTimeFormat = CultureInfo.GetCultureInfo("PL").DateTimeFormat;

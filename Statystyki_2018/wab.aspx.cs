@@ -23,7 +23,7 @@ namespace Statystyki_2018
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            string idWydzial = Request.QueryString["w"];
+             string idWydzial = Request.QueryString["w"]; Session["czesc"] = cm.nazwaFormularza(tenPlik, idWydzial) ;
             if (idWydzial != null)
             {
                 Session["id_dzialu"] = idWydzial;
@@ -320,7 +320,7 @@ namespace Statystyki_2018
                         try
                         {
                            
-                            tb.Text = dane.Rows[wiersz - 1][kolumna].ToString().Trim();
+                            tb.Text = dane.Rows[wiersz - 1][kolumna-1].ToString().Trim();
                             cm.log.Info("WAB " + controlName + " wartosc:"+ tb.Text);
                         }
                         catch (Exception exc)

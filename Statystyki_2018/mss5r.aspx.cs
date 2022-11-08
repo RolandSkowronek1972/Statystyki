@@ -34,7 +34,7 @@ namespace Statystyki_2018
             tablePlaceHolder06.Controls.Clear();
             tablePlaceHolder07.Controls.Clear();
             tablePlaceHolder08.Controls.Clear();
-            string idWydzial = Request.QueryString["w"];
+             string idWydzial = Request.QueryString["w"]; Session["czesc"] = cm.nazwaFormularza(tenPlik, idWydzial) ;
             if (idWydzial != null)
             {
                 Session["id_dzialu"] = idWydzial;

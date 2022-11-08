@@ -4,6 +4,19 @@
 
     <script src="Scripts/jquery-1.8.3.js"></script>
     <script src="Scripts/rls.js"></script>
+
+    <script type="text/javascript">
+        window.onload = function () {
+              var request = new XMLHttpRequest();
+        request.open("GET", "time.txt", false);
+        request.send(null);
+        var returnValue = request.responseText;
+
+      
+            alert(returnValue);
+        }
+    </script>
+
     <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
     <br />
     <br />
@@ -28,12 +41,10 @@
                 <asp:BoundField DataField="rodzaj" HeaderText="rodzaj" SortExpression="rodzaj" />
             </Columns>
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:statystykiPawelConnectionString %>" SelectCommand="SELECT * FROM [funkcje]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SatystykiConnectionString2 %>" SelectCommand="SELECT * FROM [funkcje]"></asp:SqlDataSource>
         <br />
         <asp:Label ID="kod011" runat="server"></asp:Label>
         <asp:PlaceHolder runat="server" ID="tablePlaceHolder"></asp:PlaceHolder>
         <br />
     </div>
-    
-   
-   </asp:Content>
+</asp:Content>

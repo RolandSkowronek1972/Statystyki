@@ -18,7 +18,7 @@ namespace Statystyki_2018
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            string idWydzial = Request.QueryString["w"];
+             string idWydzial = Request.QueryString["w"]; Session["czesc"] = cm.nazwaFormularza(tenPlik, idWydzial) ;
             if (idWydzial != null)
             {
                 Session["id_dzialu"] = idWydzial;
@@ -97,7 +97,8 @@ namespace Statystyki_2018
             cm.log.Info("mss16r start");
             string idTabeli = string.Empty;
             string idWiersza = string.Empty;
-
+            Session["data_1"] = Date1.Date.ToShortDateString();
+            Session["data_2"] = Date2.Date.ToShortDateString();
             try
             {
                 DataTable tabelaDanych = ms.generuj_dane_do_tabeli_mss2(int.Parse((string)Session["id_dzialu"]), Date1.Date, Date2.Date, 50);
@@ -933,7 +934,8 @@ namespace Statystyki_2018
             cm.log.Info("mss16r start");
             string idTabeli = string.Empty;
             string idWiersza = string.Empty;
-
+            Session["data_1"] = Date1.Date.ToShortDateString();
+            Session["data_2"] = Date2.Date.ToShortDateString();
             try
             {
 

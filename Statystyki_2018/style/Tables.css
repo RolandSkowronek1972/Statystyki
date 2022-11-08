@@ -4,6 +4,17 @@
 .pogrubienie {
     font-weight: bold;
 }
+
+.dxgv{
+    width:200px;
+
+}
+.nowaDopasowanie {
+    width: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: inherit;
+}
 .dopasowanie {
     width: auto;
     margin-left: 5px;
@@ -567,7 +578,6 @@
 }
 
 .col_80_fest_fest {
-    width: 80px;
     text-align: center;
     min-width: 80px;
 }
@@ -829,6 +839,13 @@ h1 {
     border-radius: 20px/50px;
     background-clip: padding-box;
     text-align: center;
+}
+
+.fontInCell {
+    font-size: 15px;
+  
+    color: #fff;
+   
 }
 
 .button {

@@ -32327,6 +32327,8 @@ td.dxflNestedControlCell {
 }
 .dxflViewFormLayoutSys .dxflItem {
      padding-bottom: 4px;
+     font-weight:bolder;
+     font-size:25px;
 }
 .dxflItem > table.dxflItemTable { width: 100%; }
 .dxflGroup { padding: 6px 5px; width: 100%;}

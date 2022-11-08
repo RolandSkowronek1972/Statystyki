@@ -107,7 +107,9 @@ namespace Statystyki_2018
             }
             try
             {
-                admin = (int)e.NewValues[4];
+                var adminVar = e.NewValues[4];
+               
+                admin = adminVar == "1" ? 1 : 0;
                 cm.log.Info("Administracja - dodawany użytkownik admin " + admin);
             }
             catch (Exception ex)
@@ -122,7 +124,9 @@ namespace Statystyki_2018
             parametry.Rows.Add("@login", login);
             parametry.Rows.Add("@loginDomenowy", loginDomenowy);
             parametry.Rows.Add("@admin", admin);
-            cm.runQuerry("update uzytkownik set imie=@imie, nazwisko=@nazwisko, login=@login, login_domenowy=@loginDomenowy , admin=@admin where ident=@ident", cm.con_str, parametry, "administracja - wprowadzanie uzytkownika");
+      //      cm.runQuerry("update uzytkownik set imie=@imie, nazwisko=@nazwisko, login=@login, login_domenowy=@loginDomenowy , admin=@admin where ident=@ident", cm.con_str, parametry, "administracja - wprowadzanie uzytkownika");
+            cm.runQuerry("insert into uzytkownik (imie, nazwisko,login, login_domenowy, admin) values (@imie, @nazwisko, @login, @loginDomenowy , @admin)", cm.con_str, parametry, "administracja - wprowadzanie uzytkownika");
+
             grid1.DataBind();
         }
 

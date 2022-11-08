@@ -23,15 +23,21 @@ namespace Statystyki_2018
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            string idWydzial = Request.QueryString["w"];
+             string idWydzial = Request.QueryString["w"];
+            Session["czesc"] = cm.nazwaFormularza(tenPlik, idWydzial) ;
             try
             {
                 if (idWydzial == null)
                 {
                     return;
                 }
-                bool dost = cm.dostep(idWydzial, (string)Session["identyfikatorUzytkownika"]);
-                if (!dost)
+                String IdentyfikatorUzytkownika = string.Empty;
+                IdentyfikatorUzytkownika = (string)Session["identyfikatorUzytkownika"];
+                DataTable parametry = cm.makeParameterTable();
+                parametry.Rows.Add("@identyfikatorUzytkownika", IdentyfikatorUzytkownika);
+
+
+                if (cm.getQuerryValue("select admin from uzytkownik where ident =@identyfikatorUzytkownika", cm.con_str, parametry) == "0" && !cm.dostep(idWydzial, (string)Session["identyfikatorUzytkownika"]))
                 {
                     Server.Transfer("default.aspx?info='Użytkownik " + (string)Session["identyfikatorUzytkownika"] + " nie praw do działu nr " + idWydzial + "'");
                 }
@@ -371,17 +377,15 @@ namespace Statystyki_2018
                         {
                             try
                             {
-                                string value = (dR[i - 1].ToString().Trim());
+                                string value = (dR[i + 1].ToString().Trim());
                                 tabela.komorkaExcela(MyExcel.Workbook.Worksheets[1], rowik + 6, i + 3, value, false, 0, 0);
-                                // MyWorksheet1.Cells[rowik + 6, i + 3].Value = double.Parse(dR[i - 1].ToString().Trim());
+                              
                             }
                             catch
                             {
                                 //   MyWorksheet1.Cells[rowik + 6, i + 3].Value = dR[i - 1].ToString().Trim();
                             }
-                            //   MyWorksheet1.Cells[rowik + 6, i + 3].Style.ShrinkToFit = true;
-                            //  MyWorksheet1.Cells[rowik + 6, i + 3].Style.Border.BorderAround(OfficeOpenXml.Style.ExcelBorderStyle.Thin, System.Drawing.Color.Black);
-                        }
+                         }
                         rowik++;
                         j++;
                         if (j > 10)
@@ -481,11 +485,11 @@ namespace Statystyki_2018
             GridViewRow NewTotalRow = new GridViewRow(0, 0, DataControlRowType.DataRow, DataControlRowState.Insert);
             NewTotalRow.Cells.Add(tabela.cela(tekst, 1, 3, "borderTopLeft "));
 
-            for (int i = 1; i < 25; i++)
+            for (int i = 2; i < 26; i++)
             {
                 try
                 {
-                    NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!" + i.ToString().Trim() + "!3')\">" + tabelka01.Rows[idWiersza][i].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+                    NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!" + i.ToString().Trim() + "!3')\">" + tabelka01.Rows[idWiersza][i+2].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
                 }
                 catch (Exception ex)
                 {
@@ -503,12 +507,12 @@ namespace Statystyki_2018
             GridViewRow NewTotalRow = new GridViewRow(0, 0, DataControlRowType.DataRow, DataControlRowState.Insert);
             NewTotalRow.Cells.Add(tabela.cela("Zaległość", 6, 1, "borderTopLeft "));
             NewTotalRow.Cells.Add(tabela.cela(tekst, 1, 2, "borderTopLeft  "));
-            for (int i = 1; i < 25; i++)
+            for (int i = 2; i < 26; i++)
             {
                 try
                 {
                     string txt = tabelka01.Rows[idWiersza - 1][i].ToString().Trim();
-                    NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!" + i.ToString().Trim() + "!3')\">" + tabelka01.Rows[idWiersza][i].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+                    NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!" + i.ToString().Trim() + "!3')\">" + tabelka01.Rows[idWiersza][i+2].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
                 }
                 catch (Exception ex)
                 {
@@ -527,9 +531,9 @@ namespace Statystyki_2018
             GridViewRow NewTotalRow = new GridViewRow(0, 0, DataControlRowType.DataRow, DataControlRowState.Insert);
             NewTotalRow.Cells.Add(tabela.cela(tekst, 1, 2, "borderTopLeft  "));
 
-            for (int i = 1; i < 25; i++)
+            for (int i = 2; i < 26; i++)
             {
-                NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!" + i.ToString().Trim() + "!3')\">" + tabelka01.Rows[idWiersza][i].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
+                NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!" + i.ToString().Trim() + "!3')\">" + tabelka01.Rows[idWiersza][i+2].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             }
             return NewTotalRow;
         }

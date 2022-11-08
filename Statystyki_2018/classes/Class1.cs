@@ -403,7 +403,7 @@ namespace Statystyki_2018
                     tabelaWyjsciowa.Rows.Add(wiersz);
                 }
             }
-            catch (Exception ex)
+            catch 
             { }
 
             return tabelaWyjsciowa;

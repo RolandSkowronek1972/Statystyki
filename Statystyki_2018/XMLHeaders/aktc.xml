@@ -11,7 +11,7 @@
       <lp>1</lp>
       <identyfikatorTabeli>2</identyfikatorTabeli>
       <przelamanie>0</przelamanie>
-      <horizont>1</horizont>
+      <horizont>0</horizont>
     </daneTabeli>
     <naglowek>
 
@@ -234,7 +234,7 @@
       <lp>0</lp>
       <identyfikatorTabeli>1</identyfikatorTabeli>
       <przelamanie>0</przelamanie>
-      <horizont>1</horizont>
+      <horizont>0</horizont>
     </daneTabeli>
     <naglowek>
 

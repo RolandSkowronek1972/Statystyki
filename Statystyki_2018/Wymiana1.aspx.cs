@@ -65,7 +65,7 @@ namespace Statystyki_2018
         protected void ASPxButton1_Click(object sender, EventArgs e)
         {
             string kwerendaOdczytujaca = string.Empty;
-            string rodzaj = string.Empty;
+            int rodzaj = 0;
 
             string connection = string.Empty;
             string url = string.Empty;
@@ -74,10 +74,10 @@ namespace Statystyki_2018
             log.Error("Wymiana odczyt danych:Start odczytu");
             stat2018.ServiceReference3.SerwisWymianySoapClient serwisWymianySoapClient = new stat2018.ServiceReference3.SerwisWymianySoapClient();
             log.Info("Wymiana odczyt danych: Deklaracja połaczenia.");
-            rodzaj = lbRodzajSprawy.SelectedItem.Text.ToString();
+          //  rodzaj = int (lbRodzajSprawy.SelectedItem.Text.ToString());
             connection = lbRodzajSprawy.SelectedItem.Value.ToString();
             TextBox1.Text = TextBox1.Text + "connection " + connection + Environment.NewLine;
-            log.Info("Wymiana odczyt danych: Ro:dzaj Sprawy: " + rodzaj + " połaczenia.");
+            log.Info("Wymiana odczyt danych: Ro:dzaj Sprawy: " + rodzaj.ToString() + " połaczenia.");
             // walidacja po stronie clientaconnection
 
             DataTable parametry = cm.makeParameterTable();
@@ -133,7 +133,7 @@ namespace Statystyki_2018
             DataTable wynik = new DataTable();
             try
             {
-                wynik = serwisWymianySoapClient.DaneWXml(TBNrWydzialu.Text.Trim(), TBRepertorium.Text.Trim(), int.Parse(TBNrSprawy.Text.Trim()), rodzaj, CSkwerendyZapytujacej, int.Parse(lbRok.SelectedItem.Text.Trim()), kwerendaZapytujaca);
+                wynik = serwisWymianySoapClient.DaneWXml(TBNrWydzialu.Text.Trim(), TBRepertorium.Text.Trim(), int.Parse(TBNrSprawy.Text.Trim()), rodzaj.ToString(), CSkwerendyZapytujacej, int.Parse(lbRok.SelectedItem.Text.Trim()), kwerendaZapytujaca);
             }
             catch (Exception ex)
             {
@@ -341,7 +341,6 @@ namespace Statystyki_2018
 
             string nrWydzialu = TBNrWydzialu2.Text.Trim();
             string nrReprrtorium = TBRepertorium2.Text.Trim();
-            string nrSprawy = TBNrSprawy2.Text.Trim();
             string rok = lbRok2.SelectedItem.Text.Trim();
             List<string[]> ListaKwerendiSCow = new List<string[]>();
 
@@ -350,40 +349,68 @@ namespace Statystyki_2018
             //   string[] zestaw = new string[3];
             StringBuilder zesatwDanych = new StringBuilder();
             StringBuilder Zapytania = new StringBuilder();
-            Zapytania.AppendLine("  <?xml version='1.0' encoding='utf-8'?> ");
-            Zapytania.AppendLine("<!—nagłówek XML-- > ");
-            Zapytania.AppendLine("<ms:Zapytania version='1' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>");
+            Zapytania.AppendLine("<?xml version='1.0' encoding='utf-8'?>");
+         //   Zapytania.AppendLine("<!-nagłówek XML-- > ");
+            Zapytania.AppendLine("<Zapytania>");
+          
+
+
+
+
             foreach (DataRow wiersz in zestawZapytujacy.Rows)
             {
                 string nrKwerendy = wiersz[0].ToString();
                 string kwerenda = wiersz[1].ToString();
                 string sc = wiersz[2].ToString();
                 zesatwDanych.Append(nrKwerendy + "|" + kwerenda + "|" + sc + "#");
-                Zapytania.AppendLine("<ms:zapytanie> ");
+                Zapytania.AppendLine("<zapytanie> ");
                 try
                 {
-                    Zapytania.AppendLine("<ms:id> " + nrKwerendy + "</ms:id >");
-                    Zapytania.AppendLine("<ms:kwerenda> " + kwerenda + "</ms:kwerenda >");
-                    Zapytania.AppendLine("<ms:connectionString> " + sc + "</ms:connectionString >");
+                    Zapytania.AppendLine("<id> " + nrKwerendy + "</id >");
+                    Zapytania.AppendLine("<kwerenda> " + kwerenda + "</kwerenda >");
+                    Zapytania.AppendLine("<connectionString> " + sc + "</connectionString >");
                 }
                 catch (Exception ex)
                 {
                     cm.log.Error("Wymiana  serwer 1: Bład kwerend z zapytaniami");
                   
                 }
-                Zapytania.AppendLine("</ms:zapytanie> ");
+                Zapytania.AppendLine("</zapytanie> ");
             }
+            int nrSprawy = 0;
+            try
+            {
+              //  nrSprawy = int(TBNrSprawy2.Text.Trim());
+            }
+            catch 
+            {
+
+                
+            }
+            
             string parametryTXT = nrWydzialu + "|" + nrReprrtorium + "|" + nrSprawy + "|" + rok;
-            Zapytania.AppendLine("</ms:Zapytania> ");
+            Zapytania.AppendLine("</Zapytania> ");
             string pathZDP = Server.MapPath("Wymiana2\\Zapytania\\Zapytanie_Server1_") + DateTime.Now.ToString().Replace(" ", "_").Replace(".", "_").Replace(":", "_") + ".xml";
-            //  serwisWymianySoapClient.Endpoint.Address = endpointAddress;
+
+            XmlDocument xdoc = new XmlDocument();
+            try
+            {
+                xdoc.LoadXml(Zapytania.ToString());
+                xdoc.Save(pathZDP);
+            }
+            catch (Exception ex)
+            {
+                log.Error("Wymiana odczyt danych: " + ex.Message);
+                TextBox1.Text = TextBox1.Text + ex.Message;
+            }
+             //  serwisWymianySoapClient.Endpoint.Address = endpointAddress;
 
             string wynik = string.Empty;
             log.Info("Wymiana 2 Start zapytania do serwera  " + serwisWymianySoapClient.Endpoint.Address);
             try
             {
                // L(string NrWydzialu, string repertorium, string nrSprawy, string rodzaj, string rok, string zestawZapytujacy)
-                wynik = serwisWymianySoapClient.Wymiana2XML(nrWydzialu, nrReprrtorium, nrSprawy,rodzaj, parametryTXT, zesatwDanych.ToString());
+             //   wynik = serwisWymianySoapClient.Wymiana2XML(nrWydzialu, nrReprrtorium, nrSprawy,rodzaj.ToString(), parametryTXT, zesatwDanych.ToString());
                 if (wynik.Length>0)
                 {
                     string pathODP = Server.MapPath("Wymiana2\\Odpowiedzi\\odpowiedz_z_serwera_") + DateTime.Now.ToString().Replace(" ", "_").Replace(".", "_").Replace(":", "_") + ".xml";

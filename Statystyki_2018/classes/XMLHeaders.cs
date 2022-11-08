@@ -293,7 +293,7 @@ namespace Statystyki_2018
                     kodStony.AppendLine(wierszZsuma.ToString());
                 }
             }
-            catch (Exception ex)
+            catch 
             {
             }
 
@@ -363,7 +363,7 @@ namespace Statystyki_2018
                     tabelaGlowna.AppendLine(tworztabeleWierszy(idTabeli, naglowek, tabelaBoczna, tabelaDanych, iloscWieszyNaglowka, iloscWierszy, ilosckolunPrzedIteracja, ilosckolunPoIteracji, idDzialu, false, tekstNadTabela, int.Parse(idTabeli), tabelaStyli, tenPlik));
                 }
             }
-            catch (Exception ex)
+            catch 
             {
                 //tabelaGlowna.AppendLine(ex.Message);
             }

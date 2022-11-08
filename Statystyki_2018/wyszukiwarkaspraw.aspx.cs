@@ -61,12 +61,7 @@ namespace Statystyki_2018
 
 
                     }
-                    //==============
-
-                   
-
-
-
+               
                 }
                 catch
                 {

@@ -25,10 +25,10 @@ namespace stat2018.ServiceReference2 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Wymiana2XML", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        string Wymiana2XML(string wydzial, string rep, string numer, string rodzaj, string rok, string zestawZapytujacy);
+        string Wymiana2XML(string wydzial, string rep, int numer, int rodzaj, string rok, string zestawZapytujacy);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Wymiana2XML", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> Wymiana2XMLAsync(string wydzial, string rep, string numer, string rodzaj, string rok, string zestawZapytujacy);
+        System.Threading.Tasks.Task<string> Wymiana2XMLAsync(string wydzial, string rep, int numer, int rodzaj, string rok, string zestawZapytujacy);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -66,11 +66,11 @@ namespace stat2018.ServiceReference2 {
             return base.Channel.DaneWXmlAsync(NrWydzialu, repertorium, nrSprawy, rodzaj, connection, rok, kwerendaZapytujaca);
         }
         
-        public string Wymiana2XML(string wydzial, string rep, string numer, string rodzaj, string rok, string zestawZapytujacy) {
+        public string Wymiana2XML(string wydzial, string rep, int numer, int rodzaj, string rok, string zestawZapytujacy) {
             return base.Channel.Wymiana2XML(wydzial, rep, numer, rodzaj, rok, zestawZapytujacy);
         }
         
-        public System.Threading.Tasks.Task<string> Wymiana2XMLAsync(string wydzial, string rep, string numer, string rodzaj, string rok, string zestawZapytujacy) {
+        public System.Threading.Tasks.Task<string> Wymiana2XMLAsync(string wydzial, string rep, int numer, int rodzaj, string rok, string zestawZapytujacy) {
             return base.Channel.Wymiana2XMLAsync(wydzial, rep, numer, rodzaj, rok, zestawZapytujacy);
         }
     }

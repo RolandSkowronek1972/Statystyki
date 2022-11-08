@@ -1399,7 +1399,7 @@
 					<Style CssClass="butn1"></Style>
 				</Styles>
 			</CancelButton>
-			<UpdateButton Text="Zapisz">
+			<UpdateButton Text="ZapiszAA">
 				 <Styles>
 					<Style CssClass="butn1"></Style>
 				</Styles>

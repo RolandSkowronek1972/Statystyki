@@ -1829,7 +1829,7 @@
                     <td class="borderAll center">
                         <a href="javascript: openPopup('popup.aspx?sesja=14!1!36!3')">
                             <asp:Label CssClass="normal" ID="tab_1_w14_c36" runat="server" Text="0"></asp:Label></a></td>
-                    <
+                    
                 </tr>
                 <tr>
                     <td class="borderAll center">sierpień</td>
@@ -6571,7 +6571,7 @@
                     <td class="borderAll center">
                         <a href="javascript: openPopup('popup.aspx?sesja=14!3!12!3')">
                             <asp:Label CssClass="normal" ID="tab_3_w14_c12" runat="server" Text="0"></asp:Label></a></td>
-                    <
+                    
                 </tr>
                 <tr>
                     <td class="borderAll center">sierpień</td>
@@ -6925,6 +6925,7 @@
                                 <asp:Label CssClass="normal" ID="tab_3_w23_c12" runat="server" Text="0"></asp:Label></a></td>
                     </tr>
                     <tr>
+                    
                         <td class="borderAll center">narastająco</td>
                         <td class="borderAll center">
                             <a href="javascript: openPopup('popup.aspx?sesja=24!3!1!3')">
@@ -10832,7 +10833,7 @@
                     <td class="borderAll center">
                         <a href="javascript: openPopup('popup.aspx?sesja=14!5!4!3')">
                             <asp:Label CssClass="normal" ID="tab_5_w14_c04" runat="server" Text="0"></asp:Label></a></td>
-                    <
+                    
                 </tr>
                 <tr>
                     <td class="borderAll center">sierpień</td>
