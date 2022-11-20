@@ -216,7 +216,7 @@
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-        <a href="#top" class="cd-top">Top>Topcd-top">Top>Top
+        <a href="#top" class="cd-top">Top</a>
     </form>
 </body>
 </html>

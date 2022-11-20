@@ -151,6 +151,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="adm.aspx" />
+    <Content Include="kontrolka2022.aspx" />
     <Content Include="nowaN.aspx" />
     <Content Include="oczp.aspx" />
     <Content Include="redirector2.aspx" />
@@ -563,6 +564,13 @@
     </Compile>
     <Compile Include="adm.aspx.designer.cs">
       <DependentUpon>adm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kontrolka2022.aspx.cs">
+      <DependentUpon>kontrolka2022.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kontrolka2022.aspx.designer.cs">
+      <DependentUpon>kontrolka2022.aspx</DependentUpon>
     </Compile>
     <Compile Include="nowaN.aspx.cs">
       <DependentUpon>nowaN.aspx</DependentUpon>

@@ -41,13 +41,13 @@ namespace Statystyki_2018
                     }
                     catch
                     {
-                        cm.log.Error("Site1.Master:Brak przeniesienia z logowania identyfikatora numerycznego Użytkownika! ");
+                        cm.log.Error("redirector->Page_Load:Brak przeniesienia z logowania identyfikatora numerycznego Użytkownika! ");
                     }
                     //cm.log.Info("Site1.Master: Identyfikatora uzytkownika: " + IdentyfikatorUzytkownika);
                 }
                 catch
                 {
-                    cm.log.Error("Site1.Master: Nie przypisanoe identyfikatora użytkownika");
+                    cm.log.Error("redirector->Page_Load: Nie przypisanoe identyfikatora użytkownika");
                 }
                 DataTable parametry = cm.makeParameterTable();
                 parametry.Rows.Add("@identyfikatorUzytkownika", IdentyfikatorUzytkownika);
@@ -163,12 +163,13 @@ namespace Statystyki_2018
             DataTable parametry = cm.makeParameterTable();
             parametry.Rows.Add("@identyfikatorUzytkownika", IdentyfikatorUzytkownika);
             DataTable statystyczne = new DataTable();
-            statystyczne = cm.getDataTable(kwerenda, cm.con_str, parametry, "sitemaster");
+            statystyczne = cm.getDataTable(kwerenda, cm.con_str, parametry, "redirector");
             cardView.DataSource = null;
             cardView.DataSourceID = null;
             cardView.DataSource = statystyczne;
             cardView.DataBind();
         }
+
 
         private void zaladujDaneDoMenuInne(DataTable pozycje)
         {
@@ -196,7 +197,7 @@ namespace Statystyki_2018
 
             Session["elementMenu"] = "Statystyczne";
             Session["czesc"] = "";
-            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print2", "JavaScript:SetText('Statystyczne');", true);
+            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "SetText", "JavaScript:SetText('Statystyczne');", true);
 
             string admin = "0";
 
@@ -250,26 +251,41 @@ namespace Statystyki_2018
 
         private void ElementyMenuKontrolki()
         {
-            String IdentyfikatorUzytkownika = string.Empty;
-            IdentyfikatorUzytkownika = (string)Session["identyfikatorUzytkownika"];
             DataTable parametry = cm.makeParameterTable();
-            parametry.Rows.Add("@identyfikatorUzytkownika", IdentyfikatorUzytkownika);
-            Session["elementMenu"] = "Kontrolki";
+            parametry.Rows.Add("@identyfikatorUzytkownika", (string)Session["identyfikatorUzytkownika"]);
+
+            Session["elementMenu"] = "Statystyczne";
             Session["czesc"] = "";
-            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print2", "JavaScript:SetText('Kontrolki');", true);
-            parametry.Rows.Add("@identyfikatorUzytkownika", IdentyfikatorUzytkownika);
-            string kwerenda = "SELECT ident as wydzial, opis, wartosc FROM konfig  WHERE(klucz = 'kontrolka') order by opis";               // admin
-                                                                                                                                            // czy admin
-            if (cm.getQuerryValue("select admin from uzytkownik where ident =@identyfikatorUzytkownika", cm.con_str, parametry) != "1")
+            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "SetText", "JavaScript:SetText('Kontrolki');", true);
+
+            string admin = "0";
+
+            try
             {
-                kwerenda = "SELECT DISTINCT konfig.ident as wydzial, konfig.opis as nazwa, 'nowaN.aspx' as plik, konfig.klucz FROM uprawnienia  order by konfig.opis";
+                admin = cm.getQuerryValue("select admin from uzytkownik where ident =@identyfikatorUzytkownika", cm.con_str, parametry);
+                //log.Info("Header: Użytkownik ma prawa administracyjne");
+            }
+            catch
+            { }
+            string kwerenda = "SELECT DISTINCT wydzialy.ident as wydzial , wydzialy.nazwa as nazwa, wydzialy.plik as plik FROM wydzialy INNER JOIN uprawnienia ON wydzialy.ident = uprawnienia.id_wydzialu WHERE(uprawnienia.rodzaj = 1) AND(uprawnienia.id_uzytkownika = @identyfikatorUzytkownika) order by wydzialy.nazwa";
+
+            if (admin == "1")
+            {
+                string odp = cm.getQuerryValue("SELECT        COUNT(id_uzytkownika) AS Expr1 FROM            uprawnienia WHERE ( id_uzytkownika = @identyfikatorUzytkownika) AND (rodzaj = 3)", cm.con_str, parametry);
+                if (odp=="0")
+                {
+                    return;
+                }
+                kwerenda = "SELECT ident as wydzial, opis as nazwa, 'kontrolka2022.aspx' as plik FROM konfig  WHERE(klucz = 'kontrolka') order by opis";
             }
 
-        
             Session["pozycjaMenu"] = kwerenda;
-            zaladujDaneDoMenu(kwerenda, IdentyfikatorUzytkownika);
             PanelMenuGlowne.Visible = false;
+            zaladujDaneDoMenu(kwerenda, (string)Session["identyfikatorUzytkownika"]);
             menuKategorii.Visible = true;
+
+
+    
         }
 
         private void ElementyMenuInne()
@@ -282,7 +298,7 @@ namespace Statystyki_2018
 
             DataTable pozycje = new DataTable();
             DataColumn dt = new DataColumn();
-            dt.ColumnName = "ident";
+            dt.ColumnName = "wydzial";
             dt.DataType = typeof(int);
             pozycje.Columns.Add(dt);
             dt = new DataColumn();
@@ -322,7 +338,7 @@ namespace Statystyki_2018
                     DataRow dr = pozycje.NewRow();
                     dr[0] = 1;
                     dr[1] = "Wyszukiwarka";
-                    dr[2] = "NowaN.aspx";
+                    dr[2] = "wyszukiwarka.aspx";
                     pozycje.Rows.Add(dr);
                 }
                 if (pozycje.Rows.Count > 0)

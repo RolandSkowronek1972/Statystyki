@@ -865,10 +865,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/01/2019 12:40:59</publishTime>
     </File>
     <File Include="bin/stat2018.dll">
-      <publishTime>11/06/2022 21:05:20</publishTime>
+      <publishTime>11/20/2022 18:22:36</publishTime>
     </File>
     <File Include="bin/stat2018.pdb">
-      <publishTime>11/06/2022 21:05:20</publishTime>
+      <publishTime>11/20/2022 18:22:36</publishTime>
     </File>
     <File Include="bin/stat2018.XmlSerializers.dll">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -1082,6 +1082,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="kontrolka.aspx.designer.cs">
       <publishTime>12/02/2019 15:59:09</publishTime>
+    </File>
+    <File Include="kontrolka2022.aspx">
+      <publishTime>11/20/2022 17:22:07</publishTime>
     </File>
     <File Include="kontrolkaDruk.aspx">
       <publishTime>02/06/2021 19:57:56</publishTime>
@@ -1789,7 +1792,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/01/2018 16:29:38</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>11/06/2022 21:05:22</publishTime>
+      <publishTime>11/20/2022 18:22:41</publishTime>
     </File>
     <File Include="Properties/AssemblyInfo.cs">
       <publishTime>03/03/2020 13:38:12</publishTime>
@@ -1930,7 +1933,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/11/2021 21:48:10</publishTime>
     </File>
     <File Include="Site1.Master">
-      <publishTime>06/18/2022 10:05:33</publishTime>
+      <publishTime>11/20/2022 14:58:13</publishTime>
     </File>
     <File Include="Site1.Master.cs">
       <publishTime>09/04/2020 22:24:01</publishTime>
@@ -1948,10 +1951,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/03/2021 16:44:26</publishTime>
     </File>
     <File Include="Statystyki_2018.csproj">
-      <publishTime>11/06/2022 20:59:35</publishTime>
+      <publishTime>11/20/2022 17:22:08</publishTime>
     </File>
     <File Include="Statystyki_2018.csproj.user">
-      <publishTime>11/06/2022 21:05:15</publishTime>
+      <publishTime>11/20/2022 18:22:22</publishTime>
     </File>
     <File Include="style/card.css">
       <publishTime>06/03/2022 10:45:33</publishTime>
@@ -2308,7 +2311,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="version.txt">
-      <publishTime>10/09/2022 20:49:19</publishTime>
+      <publishTime>11/20/2022 18:22:01</publishTime>
     </File>
     <File Include="wab.aspx">
       <publishTime>02/06/2021 19:58:08</publishTime>
@@ -2329,7 +2332,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>11/06/2022 21:05:21</publishTime>
+      <publishTime>11/20/2022 18:22:37</publishTime>
     </File>
     <File Include="Web.config-stary">
       <publishTime>03/05/2021 16:44:28</publishTime>
