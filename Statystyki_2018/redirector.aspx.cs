@@ -254,7 +254,7 @@ namespace Statystyki_2018
             DataTable parametry = cm.makeParameterTable();
             parametry.Rows.Add("@identyfikatorUzytkownika", (string)Session["identyfikatorUzytkownika"]);
 
-            Session["elementMenu"] = "Statystyczne";
+            Session["elementMenu"] = "Kontrolki";
             Session["czesc"] = "";
             ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "SetText", "JavaScript:SetText('Kontrolki');", true);
 
@@ -267,13 +267,14 @@ namespace Statystyki_2018
             }
             catch
             { }
-            string kwerenda = "SELECT DISTINCT wydzialy.ident as wydzial , wydzialy.nazwa as nazwa, wydzialy.plik as plik FROM wydzialy INNER JOIN uprawnienia ON wydzialy.ident = uprawnienia.id_wydzialu WHERE(uprawnienia.rodzaj = 1) AND(uprawnienia.id_uzytkownika = @identyfikatorUzytkownika) order by wydzialy.nazwa";
+            string kwerenda = "SELECT DISTINCT  konfig.ident AS wydzial,konfig.opis AS nazwa, 'kontrolka2022.aspx' AS plik FROM konfig RIGHT OUTER JOIN   uprawnienia ON konfig.ident = uprawnienia.id_wydzialu WHERE(konfig.klucz = N'kontrolka') AND(uprawnienia.id_uzytkownika = @identyfikatorUzytkownika) AND(uprawnienia.rodzaj = 3) order by opis";
 
             if (admin == "1")
             {
-                string odp = cm.getQuerryValue("SELECT        COUNT(id_uzytkownika) AS Expr1 FROM            uprawnienia WHERE ( id_uzytkownika = @identyfikatorUzytkownika) AND (rodzaj = 3)", cm.con_str, parametry);
+                string odp = cm.getQuerryValue("SELECT        COUNT(id_uzytkownika) AS Expr1 FROM uprawnienia WHERE ( id_uzytkownika = @identyfikatorUzytkownika) AND (rodzaj = 3)", cm.con_str, parametry);
                 if (odp=="0")
                 {
+                    kwerenda = "";
                     return;
                 }
                 kwerenda = "SELECT ident as wydzial, opis as nazwa, 'kontrolka2022.aspx' as plik FROM konfig  WHERE(klucz = 'kontrolka') order by opis";
@@ -338,14 +339,14 @@ namespace Statystyki_2018
                     DataRow dr = pozycje.NewRow();
                     dr[0] = 1;
                     dr[1] = "Wyszukiwarka";
-                    dr[2] = "wyszukiwarka.aspx";
+                    dr[2] = "wyszukiwarkaspraw.aspx";
                     pozycje.Rows.Add(dr);
                 }
                 if (pozycje.Rows.Count > 0)
                 {
                     Session["elementMenu"] = "Inne";
                     Session["czesc"] = "";
-                    ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print2", "JavaScript:SetText('Inne');", true);
+                    ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "SetText", "JavaScript:SetText('Inne');", true);
                     Session["pozycjaMenu"] = kwerenda;
                     zaladujDaneDoMenuInne(pozycje);
                     PanelMenuGlowne.Visible = false;
