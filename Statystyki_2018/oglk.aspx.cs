@@ -113,39 +113,39 @@ namespace Statystyki_2018
 
             try
             {
-                DataTable tabelka04 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, ((string)Session["id_dzialu"]), 4, 10, 2, false, tenPlik);
+                DataTable tabelka04 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, ((string)Session["id_dzialu"]), 4, 10, 3, false, tenPlik);
                 Session["tabelka004"] = tabelka04;
 
                 // wypełnianie danych labeli
-                tab_4_w01_c01.Text = tabelka04.Rows[0][1].ToString().Trim();
-                tab_4_w01_c02.Text = tabelka04.Rows[0][2].ToString().Trim();
+                tab_4_w01_c01.Text = tabelka04.Rows[0][3].ToString().Trim();
+                tab_4_w01_c02.Text = tabelka04.Rows[0][4].ToString().Trim();
 
-                tab_4_w02_c01.Text = tabelka04.Rows[1][1].ToString().Trim();
-                tab_4_w02_c02.Text = tabelka04.Rows[1][2].ToString().Trim();
+                tab_4_w02_c01.Text = tabelka04.Rows[1][3].ToString().Trim();
+                tab_4_w02_c02.Text = tabelka04.Rows[1][4].ToString().Trim();
 
-                tab_4_w03_c01.Text = tabelka04.Rows[2][1].ToString().Trim();
-                tab_4_w03_c02.Text = tabelka04.Rows[2][2].ToString().Trim();
+                tab_4_w03_c01.Text = tabelka04.Rows[2][3].ToString().Trim();
+                tab_4_w03_c02.Text = tabelka04.Rows[2][4].ToString().Trim();
 
-                tab_4_w04_c01.Text = tabelka04.Rows[3][1].ToString().Trim();
-                tab_4_w04_c02.Text = tabelka04.Rows[3][2].ToString().Trim();
+                tab_4_w04_c01.Text = tabelka04.Rows[3][3].ToString().Trim();
+                tab_4_w04_c02.Text = tabelka04.Rows[3][4].ToString().Trim();
 
-                tab_4_w05_c01.Text = tabelka04.Rows[4][1].ToString().Trim();
-                tab_4_w05_c02.Text = tabelka04.Rows[4][2].ToString().Trim();
+                tab_4_w05_c01.Text = tabelka04.Rows[4][3].ToString().Trim();
+                tab_4_w05_c02.Text = tabelka04.Rows[4][4].ToString().Trim();
 
-                tab_4_w06_c01.Text = tabelka04.Rows[5][1].ToString().Trim();
-                tab_4_w06_c02.Text = tabelka04.Rows[5][2].ToString().Trim();
+                tab_4_w06_c01.Text = tabelka04.Rows[5][3].ToString().Trim();
+                tab_4_w06_c02.Text = tabelka04.Rows[5][4].ToString().Trim();
 
-                tab_4_w07_c01.Text = tabelka04.Rows[6][1].ToString().Trim();
-                tab_4_w07_c02.Text = tabelka04.Rows[6][2].ToString().Trim();
+                tab_4_w07_c01.Text = tabelka04.Rows[6][3].ToString().Trim();
+                tab_4_w07_c02.Text = tabelka04.Rows[6][4].ToString().Trim();
 
-                tab_4_w08_c01.Text = tabelka04.Rows[7][1].ToString().Trim();
-                tab_4_w08_c02.Text = tabelka04.Rows[7][2].ToString().Trim();
+                tab_4_w08_c01.Text = tabelka04.Rows[7][3].ToString().Trim();
+                tab_4_w08_c02.Text = tabelka04.Rows[7][4].ToString().Trim();
 
-                tab_4_w09_c01.Text = tabelka04.Rows[8][1].ToString().Trim();
-                tab_4_w09_c02.Text = tabelka04.Rows[8][2].ToString().Trim();
+                tab_4_w09_c01.Text = tabelka04.Rows[8][3].ToString().Trim();
+                tab_4_w09_c02.Text = tabelka04.Rows[8][4].ToString().Trim();
 
-                tab_4_w10_c01.Text = tabelka04.Rows[9][1].ToString().Trim();
-                tab_4_w10_c02.Text = tabelka04.Rows[9][2].ToString().Trim();
+                tab_4_w10_c01.Text = tabelka04.Rows[9][3].ToString().Trim();
+                tab_4_w10_c02.Text = tabelka04.Rows[9][4].ToString().Trim();
             }
             catch (Exception ex)
             {

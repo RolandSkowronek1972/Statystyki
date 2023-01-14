@@ -58,6 +58,7 @@
     <RunCodeAnalysis>false</RunCodeAnalysis>
     <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
     <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AjaxControlToolkit, Version=4.1.7.1213, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
@@ -153,6 +154,7 @@
     <Content Include="adm.aspx" />
     <Content Include="kontrolka2022.aspx" />
     <Content Include="nowaN.aspx" />
+    <Content Include="oczu.aspx" />
     <Content Include="oczp.aspx" />
     <Content Include="redirector2.aspx" />
     <Content Include="style\card.css" />
@@ -218,6 +220,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="XMLHeaders\MSS5o.xml" />
+    <Content Include="XMLHeaders\oczu.xml" />
     <Content Include="XMLHeaders\oczp.xml" />
     <Content Include="XMLHeaders\oopr.xml">
       <SubType>Designer</SubType>
@@ -438,9 +441,6 @@
     <Content Include="libman.json" />
     <None Include="Connected Services\ServiceReference3\SerwisWymiany.wsdl" />
     <Content Include="Properties\DataSources\System.Data.DataTable.datasource" />
-    <Content Include="Properties\DataSources\System.Data.DataTable1.datasource" />
-    <Content Include="Properties\DataSources\System.Data.DataTable2.datasource" />
-    <Content Include="Properties\DataSources\System.Data.DataTable3.datasource" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -542,6 +542,7 @@
     <Content Include="Template\aopk.xlsx" />
     <Content Include="Template\oczc.xlsx" />
     <Content Include="Template\wizg_aspx.xlsx" />
+    <Content Include="Template\oczu.xlsx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -578,6 +579,13 @@
     </Compile>
     <Compile Include="nowaN.aspx.designer.cs">
       <DependentUpon>nowaN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oczu.aspx.cs">
+      <DependentUpon>oczu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oczu.aspx.designer.cs">
+      <DependentUpon>oczu.aspx</DependentUpon>
     </Compile>
     <Compile Include="oczp.aspx.cs">
       <DependentUpon>oczp.aspx</DependentUpon>
