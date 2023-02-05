@@ -118,13 +118,13 @@ namespace Statystyki_2018
         protected void tworzPlikExcell(object sender, EventArgs e)
         {
             // execel begin
-            string path = Server.MapPath("Template") + "\\oczu.xlsx";
+            string path = Server.MapPath("Template") + "\\oglk.xlsx";
             FileInfo existingFile = new FileInfo(path);
             if (!existingFile.Exists)
             {
                 return;
             }
-            string download = Server.MapPath("Template") + @"\oczu";
+            string download = Server.MapPath("Template") + @"\oglk";
 
             FileInfo fNewFile = new FileInfo(download + "_.xlsx");
 
@@ -134,43 +134,51 @@ namespace Statystyki_2018
             {
                 ExcelWorksheet MyWorksheet1 = MyExcel.Workbook.Worksheets[1];
 
-                // pierwsza
+               
                 DataTable table1 = (DataTable)Session["tabelka001"];
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], table1, 45, 0, 12, true, true, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], table1, 22, 0, 7,false, true, false, false, false);
 
                 //pod tabela
-                int rowik = table1.Rows.Count +6;
+                int rowik = table1.Rows.Count +7;
 
-                tb.komorkaExcela(MyWorksheet1, rowik + 7, 1, "Zaległość z poprzedniego miesiąca", true, 0, 1);
-                tb.komorkaExcela(MyWorksheet1, rowik + 8, 1, "Wpływ", true, 0, 1);
-                tb.komorkaExcela(MyWorksheet1, rowik + 9, 1, "Załatwienia", true, 0, 1);
-                tb.komorkaExcela(MyWorksheet1, rowik + 10, 1, "Pozostało na następny miesiąc", true, 0, 1);
-                tb.komorkaExcela(MyWorksheet1, rowik + 11, 1, "w tym", true, 4, 0);
-                tb.komorkaExcela(MyWorksheet1, rowik + 11, 2, "3-6 miesięcy", true, 0, 0);
-                tb.komorkaExcela(MyWorksheet1, rowik + 12, 2, "6-12 miesięcy", true, 0, 0);
-                tb.komorkaExcela(MyWorksheet1, rowik + 13, 2, "od 1 roku do 2 lat", true, 0, 0);
-                tb.komorkaExcela(MyWorksheet1, rowik + 14, 2, "od 2 lat do 3 lat", true, 0, 0);
-                tb.komorkaExcela(MyWorksheet1, rowik + 15, 2, "powyżej 3 lat", true, 0, 0);
+                tb.komorkaExcela(MyWorksheet1, rowik , 1, "Zaległość z poprzedniego miesiąca", true, 0, 5);
+                tb.komorkaExcela(MyWorksheet1, rowik + 1, 1, "Wpływ", true, 0, 5);
+                tb.komorkaExcela(MyWorksheet1, rowik + 2, 1, "Wpływ spraw do rozpoznania przez referendarzy sądowych", true, 0, 5);
+                tb.komorkaExcela(MyWorksheet1, rowik + 3, 1, "Załatwienia", true, 0, 5);
+                tb.komorkaExcela(MyWorksheet1, rowik + 4, 1, "Pozostało na następny miesiąc", true, 0, 5);
+                tb.komorkaExcela(MyWorksheet1, rowik + 5, 1, "Zaległość", true, 5, 0);
+                tb.komorkaExcela(MyWorksheet1, rowik + 5, 2, "3-6 miesięcy", true, 0, 4);
+                tb.komorkaExcela(MyWorksheet1, rowik + 6, 2, "6-12 miesięcy", true, 0, 4);
+                tb.komorkaExcela(MyWorksheet1, rowik + 7, 2, "12-24 miesięcy (do 2 lat)", true, 0, 4);
+                tb.komorkaExcela(MyWorksheet1, rowik + 8, 2, "24-36 miesięcy (2-3 lat)", true, 0, 4);
+                tb.komorkaExcela(MyWorksheet1, rowik + 9, 2, "36-60 miesięcy (3-5 lat)", true, 0, 4);
+                tb.komorkaExcela(MyWorksheet1, rowik + 10, 2, "powyżej 60 miesięcy (powyżej 5 lat)", true, 0, 4);
                 DataTable tabelka001 = (DataTable)Session["tabelka002"];
                 int licznik = 0;
                 foreach (DataRow dR in tabelka001.Rows)
                 {
                     
-                    for (int i =0; i < 4; i++)
+                    for (int i =0; i < 16; i++)
                     {
-                       tb. komorkaExcela(MyWorksheet1, rowik + 7, (i*2)+3 , dR[i ].ToString().Trim(), true, 0, 1, true, false);
+                       tb. komorkaExcela(MyWorksheet1, rowik , i+7 , dR[i ].ToString().Trim(), true, 0, 0, true, false);
 
                        
                     }
-                    tb.komorkaExcela(MyWorksheet1, rowik + 7, 11, dR[5].ToString().Trim(), false, 0, 0, true, false);
-                    rowik++;
+                     rowik++;
                     licznik++;
-                    if (licznik==9)
+                    if (licznik > 10)
                     {
                         break;
                     }
                 }
 
+                
+                DataTable tabelka004 = (DataTable)Session["tabelka004"];
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[2], tabelka004,13,2, 2,6, false);
+
+
+
+                
                 try
                 {
                     MyExcel.SaveAs(fNewFile);
@@ -316,10 +324,10 @@ namespace Statystyki_2018
             GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeliOGLK(tabelka01, 16, idWiersza, idtabeli, "Wpływ", 7, 0, "", "borderAll center"));
 
             idWiersza = 3;
-            GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeliOGLK(tabelka01, 16, idWiersza, idtabeli, "Wpływ spraw do rozpoznania przez referendarzy sądowych", 7, 0, "gray", "borderAll center gray"));
+            GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeliOGLK(tabelka01, 16, idWiersza, idtabeli, "Wpływ spraw do rozpoznania przez referendarzy sądowych", 7, 0, "", "borderAll center "));
 
             idWiersza = 4;
-            GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeliOGLK(tabelka01, 16, idWiersza, idtabeli, "Załatwienia", 7, 0, "gray", "borderAll center gray"));
+            GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeliOGLK(tabelka01, 16, idWiersza, idtabeli, "Załatwienia", 7, 0, "", "borderAll center "));
 
             idWiersza = 5;
             GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeliOGLK(tabelka01, 16, idWiersza, idtabeli, "Pozostałość na następny miesiąc", 7, 0, "", "borderAll center"));

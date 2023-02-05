@@ -7,7 +7,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_PublishTargetUrl>C:\repo\priv\publish</_PublishTargetUrl>
-    <History>True|2023-01-08T18:53:11.3583070Z;True|2022-12-19T11:17:31.2565077+01:00;False|2022-12-19T11:14:58.6001496+01:00;False|2022-12-19T11:12:17.6139636+01:00;False|2022-12-19T11:09:17.2088059+01:00;False|2022-12-19T11:06:16.3256032+01:00;False|2022-12-19T08:34:59.1404114+01:00;False|2022-12-19T08:33:37.2877052+01:00;</History>
+    <History>True|2023-02-05T17:10:08.0504172Z;True|2023-01-08T19:53:11.3583070+01:00;True|2022-12-19T11:17:31.2565077+01:00;False|2022-12-19T11:14:58.6001496+01:00;False|2022-12-19T11:12:17.6139636+01:00;False|2022-12-19T11:09:17.2088059+01:00;False|2022-12-19T11:06:16.3256032+01:00;False|2022-12-19T08:34:59.1404114+01:00;False|2022-12-19T08:33:37.2877052+01:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="adm.aspx">
@@ -866,10 +866,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/01/2019 12:40:59</publishTime>
     </File>
     <File Include="bin/stat2018.dll">
-      <publishTime>01/15/2023 12:42:47</publishTime>
+      <publishTime>02/05/2023 18:09:33</publishTime>
     </File>
     <File Include="bin/stat2018.pdb">
-      <publishTime>01/15/2023 12:42:47</publishTime>
+      <publishTime>02/05/2023 18:09:33</publishTime>
     </File>
     <File Include="bin/stat2018.XmlSerializers.dll">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -1370,7 +1370,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="oglk.aspx">
-      <publishTime>12/11/2022 13:42:33</publishTime>
+      <publishTime>02/05/2023 15:01:11</publishTime>
     </File>
     <File Include="oglk.aspx.cs">
       <publishTime>01/04/2020 10:18:18</publishTime>
@@ -1469,7 +1469,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/09/2019 14:50:01</publishTime>
     </File>
     <File Include="okrr.aspx">
-      <publishTime>12/11/2022 13:42:33</publishTime>
+      <publishTime>01/23/2023 20:18:56</publishTime>
     </File>
     <File Include="okrr.aspx.cs">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -1796,7 +1796,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/01/2018 16:29:38</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>01/15/2023 12:42:49</publishTime>
+      <publishTime>02/05/2023 18:09:37</publishTime>
     </File>
     <File Include="Properties/AssemblyInfo.cs">
       <publishTime>03/03/2020 13:38:12</publishTime>
@@ -1955,10 +1955,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/03/2021 16:44:26</publishTime>
     </File>
     <File Include="Statystyki_2018.csproj">
-      <publishTime>01/08/2023 18:40:02</publishTime>
+      <publishTime>02/05/2023 11:53:00</publishTime>
     </File>
     <File Include="Statystyki_2018.csproj.user">
-      <publishTime>01/15/2023 12:42:41</publishTime>
+      <publishTime>02/05/2023 18:09:20</publishTime>
     </File>
     <File Include="style/card.css">
       <publishTime>12/11/2022 13:42:34</publishTime>
@@ -2114,7 +2114,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/08/2023 19:42:06</publishTime>
     </File>
     <File Include="Template/oglc.xlsx">
-      <publishTime>12/11/2022 13:42:32</publishTime>
+      <publishTime>02/05/2023 17:17:24</publishTime>
     </File>
     <File Include="Template/oglc2.xlsx">
       <publishTime>12/11/2022 13:42:32</publishTime>
@@ -2126,7 +2126,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/01/2019 15:29:54</publishTime>
     </File>
     <File Include="Template/oglk.xlsx">
-      <publishTime>12/11/2022 13:42:32</publishTime>
+      <publishTime>02/05/2023 17:59:48</publishTime>
     </File>
     <File Include="Template/oglk2.xlsx">
       <publishTime>12/11/2022 13:42:32</publishTime>
@@ -2318,7 +2318,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="version.txt">
-      <publishTime>01/15/2023 12:42:41</publishTime>
+      <publishTime>02/05/2023 18:09:20</publishTime>
     </File>
     <File Include="wab.aspx">
       <publishTime>12/11/2022 13:42:34</publishTime>
@@ -2505,6 +2505,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="XMLHeaders/oczu.xml">
       <publishTime>12/19/2022 22:04:23</publishTime>
+    </File>
+    <File Include="XMLHeaders/oglk.xml">
+      <publishTime>02/05/2023 12:43:45</publishTime>
     </File>
     <File Include="XMLHeaders/oglr_01.xml">
       <publishTime>12/11/2022 13:42:32</publishTime>
