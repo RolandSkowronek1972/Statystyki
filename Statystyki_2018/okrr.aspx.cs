@@ -265,6 +265,7 @@ namespace Statystyki_2018
             dT_01.Rows.Add(new Object[] { "4", "Terminowość sporządzania orzeczeń", "4", "1", "h" });
             dT_01.Rows.Add(new Object[] { "4", "Uzasadnienia wygłoszone", "1", "4", "h" });
             dT_01.Rows.Add(new Object[] { "4", "Oddalono lub utrzymano w mocy apelacje / zażalenia", "1", "4", "h" });
+            dT_01.Rows.Add(new Object[] { "4", "RCz - p1  oddalono lub utrzymano w mocy zażalenia", "1", "4", "h" });
             dT_01.Rows.Add(new Object[] { "4", "Nieobecności", "2", "2", "h" });
             dT_01.Rows.Add(new Object[] { "4", "Załatwienia", "13", "1", "h" });
             dT_01.Rows.Add(new Object[] { "4", "Razem", "1", "4", "h" });
@@ -324,6 +325,7 @@ namespace Statystyki_2018
             dT_03.Rows.Add(new Object[] { "2", "Rsm", "1", "2", "h" });
             dT_03.Rows.Add(new Object[] { "1", "Nkd", "2", "1", "h" });
             dT_03.Rows.Add(new Object[] { "1", "Nmo", "2", "1", "h" });
+            dT_03.Rows.Add(new Object[] { "1", "RCz", "2", "1", "h" });
             dT_03.Rows.Add(new Object[] { "1", "RCo", "2", "1", "h" });
             dT_03.Rows.Add(new Object[] { "1", "RCps", "2", "1", "h" });
 
@@ -633,7 +635,7 @@ namespace Statystyki_2018
 
                 if (!flaga)
                 {
-                    e.Row.Cells[30].ColumnSpan = 4;
+                    e.Row.Cells[31].ColumnSpan = 4;
                 }
             }
         }

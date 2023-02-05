@@ -41,7 +41,7 @@
                 <asp:BoundField DataField="rodzaj" HeaderText="rodzaj" SortExpression="rodzaj" />
             </Columns>
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SatystykiConnectionString2 %>" SelectCommand="SELECT * FROM [funkcje]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SatystykiConnectionString %>" SelectCommand="SELECT COUNT(konfig.ident) AS Expr1 FROM konfig INNER JOIN uprawnienia ON konfig.ident = uprawnienia.id_wydzialu WHERE (uprawnienia.rodzaj = 5) AND (uprawnienia.id_uzytkownika = 6)"></asp:SqlDataSource>
         <br />
         <asp:Label ID="kod011" runat="server"></asp:Label>
         <asp:PlaceHolder runat="server" ID="tablePlaceHolder"></asp:PlaceHolder>

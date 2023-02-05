@@ -154,6 +154,7 @@
     <Content Include="adm.aspx" />
     <Content Include="kontrolka2022.aspx" />
     <Content Include="nowaN.aspx" />
+    <Content Include="oglk.aspx" />
     <Content Include="oczu.aspx" />
     <Content Include="oczp.aspx" />
     <Content Include="redirector2.aspx" />
@@ -220,6 +221,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="XMLHeaders\MSS5o.xml" />
+    <Content Include="XMLHeaders\oglk.xml" />
     <Content Include="XMLHeaders\oczu.xml" />
     <Content Include="XMLHeaders\oczp.xml" />
     <Content Include="XMLHeaders\oopr.xml">
@@ -385,7 +387,6 @@
     <Content Include="mss5r.aspx" />
     <Content Include="ocenaPracownika.aspx" />
     <Content Include="oglc2.aspx" />
-    <Content Include="oglk.aspx" />
     <Content Include="oglr.aspx" />
     <Content Include="oktk.aspx" />
     <Content Include="oksr.aspx" />
@@ -579,6 +580,13 @@
     </Compile>
     <Compile Include="nowaN.aspx.designer.cs">
       <DependentUpon>nowaN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oglk.aspx.cs">
+      <DependentUpon>oglk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oglk.aspx.designer.cs">
+      <DependentUpon>oglk.aspx</DependentUpon>
     </Compile>
     <Compile Include="oczu.aspx.cs">
       <DependentUpon>oczu.aspx</DependentUpon>
@@ -1285,13 +1293,6 @@
     </Compile>
     <Compile Include="oglc2.aspx.designer.cs">
       <DependentUpon>oglc2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="oglk.aspx.cs">
-      <DependentUpon>oglk.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="oglk.aspx.designer.cs">
-      <DependentUpon>oglk.aspx</DependentUpon>
     </Compile>
     <Compile Include="oglr.aspx.cs">
       <DependentUpon>oglr.aspx</DependentUpon>

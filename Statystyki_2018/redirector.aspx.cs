@@ -331,7 +331,8 @@ namespace Statystyki_2018
                     dr[2] = "kof.aspx";
                     pozycje.Rows.Add(dr);
                 }
-                int iloscUprawnienInne = int.Parse(cm.getQuerryValue("SELECT COUNT(*) FROM  uprawnienia WHERE (rodzaj = 5) and id_uzytkownika=@identyfikatorUzytkownika", cm.con_str, parametry, "Header - sprawdzanie oceny pracownika"));
+                int iloscUprawnienInne = int.Parse(cm.getQuerryValue("SELECT        COUNT(konfig.ident) AS Expr1 FROM            konfig INNER JOIN uprawnienia ON konfig.ident = uprawnienia.id_wydzialu WHERE(uprawnienia.rodzaj = 5) AND(uprawnienia.id_uzytkownika = @identyfikatorUzytkownika)", cm.con_str, parametry, "Header - sprawdzanie oceny pracownika"));
+                
                 if (iloscUprawnienInne > 0)
                 {
                     //                kwerenda = "SELECT DISTINCT konfig.ident, konfig.opis, konfig.wartosc, konfig.klucz FROM uprawnienia INNER JOIN konfig ON uprawnienia.id_wydzialu  = konfig.ident WHERE        (uprawnienia.id_uzytkownika = @identyfikatorUzytkownika) AND (uprawnienia.rodzaj =3 )  AND (rtrim(konfig.klucz) = 'kontrolka') order by konfig.opis";
