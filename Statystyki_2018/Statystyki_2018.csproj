@@ -157,6 +157,9 @@
     <Content Include="oglk.aspx" />
     <Content Include="oczu.aspx" />
     <Content Include="oczp.aspx" />
+    <Content Include="oopr.aspx" />
+    <Content Include="oopk.aspx" />
+    <Content Include="oopc.aspx" />
     <Content Include="redirector2.aspx" />
     <Content Include="style\card.css" />
     <Content Include="aktc2.aspx" />
@@ -191,9 +194,8 @@
     <Content Include="aopc2.aspx" />
     <Content Include="mss6r.aspx" />
     <Content Include="mss10o.aspx" />
-    <Content Include="oopr.aspx" />
-    <Content Include="oopk.aspx" />
-    <Content Include="oopc.aspx" />
+    <Content Include="ooprOld.aspx" />
+    <Content Include="oopc_Old.aspx" />
     <Content Include="aopk2.aspx" />
     <Content Include="aopp.aspx" />
     <Content Include="oczc.aspx" />
@@ -602,6 +604,27 @@
     <Compile Include="oczp.aspx.designer.cs">
       <DependentUpon>oczp.aspx</DependentUpon>
     </Compile>
+    <Compile Include="oopr.aspx.cs">
+      <DependentUpon>oopr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oopr.aspx.designer.cs">
+      <DependentUpon>oopr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oopk.aspx.cs">
+      <DependentUpon>oopk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oopk.aspx.designer.cs">
+      <DependentUpon>oopk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oopc.aspx.cs">
+      <DependentUpon>oopc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oopc.aspx.designer.cs">
+      <DependentUpon>oopc.aspx</DependentUpon>
+    </Compile>
     <Compile Include="redirector2.aspx.cs">
       <DependentUpon>redirector2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -719,26 +742,19 @@
     <Compile Include="mss10o.aspx.designer.cs">
       <DependentUpon>mss10o.aspx</DependentUpon>
     </Compile>
-    <Compile Include="oopr.aspx.cs">
-      <DependentUpon>oopr.aspx</DependentUpon>
+    <Compile Include="ooprOld.aspx.cs">
+      <DependentUpon>ooprOld.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="oopr.aspx.designer.cs">
-      <DependentUpon>oopr.aspx</DependentUpon>
+    <Compile Include="ooprOld.aspx.designer.cs">
+      <DependentUpon>ooprOld.aspx</DependentUpon>
     </Compile>
-    <Compile Include="oopk.aspx.cs">
-      <DependentUpon>oopk.aspx</DependentUpon>
+    <Compile Include="oopc_Old.aspx.cs">
+      <DependentUpon>oopc_Old.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="oopk.aspx.designer.cs">
-      <DependentUpon>oopk.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="oopc.aspx.cs">
-      <DependentUpon>oopc.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="oopc.aspx.designer.cs">
-      <DependentUpon>oopc.aspx</DependentUpon>
+    <Compile Include="oopc_Old.aspx.designer.cs">
+      <DependentUpon>oopc_Old.aspx</DependentUpon>
     </Compile>
     <Compile Include="aopk2.aspx.cs">
       <DependentUpon>aopk2.aspx</DependentUpon>
