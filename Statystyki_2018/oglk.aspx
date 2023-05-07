@@ -69,14 +69,14 @@
             <asp:GridView ID="gwTabela1" runat="server" OnRowCreated="naglowekTabeli_gwTabela1" AutoGenerateColumns="False" Width="100%" ShowHeader="False" OnRowDataBound="gwTabela1_RowDataBound">
                 <Columns>
                     <asp:BoundField DataField="id" HeaderText="L.p." SortExpression="id">
-                        <ItemStyle CssClass="col_25" />
+                        <ItemStyle CssClass="col_15" />
                     </asp:BoundField>
                     <asp:TemplateField HeaderText="imie" SortExpression="imie">
                         <ItemTemplate>
                             <asp:Label ID="Label5" runat="server" Text='<%# Eval("nazwisko") %>'></asp:Label>
                             <asp:Label ID="Label2" runat="server" Text='<%# Bind("imie") %>'></asp:Label>
                         </ItemTemplate>
-                        <ItemStyle CssClass="t2_nazwisko" />
+                        <ItemStyle CssClass="col_150" />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_01" SortExpression="d_01">
                         <ItemTemplate>
@@ -84,7 +84,7 @@
                                 <asp:Label ID="Label_gwTabela1101" runat="server" Text='<%# Eval("d_01")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_60" />
+                        <ItemStyle CssClass="col_50" />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_02" SortExpression="d_01">
                         <ItemTemplate>
@@ -92,7 +92,7 @@
                                 <asp:Label ID="Label_gwTabela1102" runat="server" Text='<%# Eval("d_02")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_60" />
+                        <ItemStyle CssClass="col_50" />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_03" SortExpression="d_01">
                         <ItemTemplate>
@@ -100,7 +100,7 @@
                                 <asp:Label ID="Label_gwTabela1103" runat="server" Text='<%# Eval("d_03")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_60" />
+                        <ItemStyle CssClass="col_50" />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_04" SortExpression="d_01">
                         <ItemTemplate>
@@ -108,7 +108,7 @@
                                 <asp:Label ID="Label_gwTabela1104" runat="server" Text='<%# Eval("d_04")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_60" />
+                        <ItemStyle CssClass="col_50" />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_05" SortExpression="d_01">
                         <ItemTemplate>
@@ -116,7 +116,7 @@
                                 <asp:Label ID="Label_gwTabela1105" runat="server" Text='<%# Eval("d_05")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_60" />
+                        <ItemStyle CssClass="col_50" />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_06" SortExpression="d_01">
                         <ItemTemplate>
@@ -124,7 +124,7 @@
                                 <asp:Label ID="Label_gwTabela1106" runat="server" Text='<%# Eval("d_06")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_60" />
+                        <ItemStyle CssClass="col_50" />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_07" SortExpression="d_01">
                         <ItemTemplate>
@@ -132,7 +132,7 @@
                                 <asp:Label ID="Label_gwTabela1107" runat="server" Text='<%# Eval("d_07")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_60" />
+                        <ItemStyle CssClass="col_50" />
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="d_07" SortExpression="d_01">
@@ -141,7 +141,7 @@
                                 <asp:Label ID="Label_gwTabela1108" runat="server" Text='<%# Eval("d_08")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_60 " />
+                        <ItemStyle CssClass="col_50 " />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_07" SortExpression="d_01">
                         <ItemTemplate>
@@ -149,7 +149,7 @@
                                 <asp:Label ID="Label_gwTabela1109" runat="server" Text='<%# Eval("d_09")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_60 gray" />
+                        <ItemStyle CssClass="col_50 gray" />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_07" SortExpression="d_01">
                         <ItemTemplate>
@@ -157,7 +157,7 @@
                                 <asp:Label ID="Label_gwTabela1110" runat="server" Text='<%# Eval("d_10")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_60 gray" />
+                        <ItemStyle CssClass="col_50 gray" />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_07" SortExpression="d_01">
                         <ItemTemplate>
@@ -165,7 +165,7 @@
                                 <asp:Label ID="Label_gwTabela1111" runat="server" Text='<%# Eval("d_11")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_60 gray" />
+                        <ItemStyle CssClass="col_50 gray" />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_07" SortExpression="d_01">
                         <ItemTemplate>
@@ -173,7 +173,7 @@
                                 <asp:Label ID="Label_gwTabela1112" runat="server" Text='<%# Eval("d_12")%>' CssClass="normal "></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_60 " />
+                        <ItemStyle CssClass="col_50 " />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_07" SortExpression="d_01">
                         <ItemTemplate>
@@ -181,7 +181,7 @@
                                 <asp:Label ID="Label_gwTabela1113" runat="server" Text='<%# Eval("d_13")%>' CssClass="normal "></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_60 " />
+                        <ItemStyle CssClass="col_50 " />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_07" SortExpression="d_01">
                         <ItemTemplate>
@@ -189,7 +189,7 @@
                                 <asp:Label ID="Label_gwTabela1114" runat="server" Text='<%# Eval("d_14")%>' CssClass="normal "></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_60 " />
+                        <ItemStyle CssClass="col_50 " />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_07" SortExpression="d_01">
                         <ItemTemplate>
@@ -197,7 +197,7 @@
                                 <asp:Label ID="Label_gwTabela1115" runat="server" Text='<%# Eval("d_15")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_60 " />
+                        <ItemStyle CssClass="col_50 " />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_07" SortExpression="d_01">
                         <ItemTemplate>
@@ -205,7 +205,7 @@
                                 <asp:Label ID="Label_gwTabela1116" runat="server" Text='<%# Eval("d_16")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_60 " />
+                        <ItemStyle CssClass="col_50 " />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_07" SortExpression="d_01">
                         <ItemTemplate>
@@ -213,7 +213,7 @@
                                 <asp:Label ID="Label_gwTabela1117" runat="server" Text='<%# Eval("d_17")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_60 " />
+                        <ItemStyle CssClass="col_50 " />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_07" SortExpression="d_01">
                         <ItemTemplate>
@@ -221,7 +221,7 @@
                                 <asp:Label ID="Label_gwTabela1118" runat="server" Text='<%# Eval("d_18")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_60 " />
+                        <ItemStyle CssClass="col_50 " />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_07" SortExpression="d_01">
                         <ItemTemplate>
@@ -229,7 +229,7 @@
                                 <asp:Label ID="Label_gwTabela1119" runat="server" Text='<%# Eval("d_19")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_60" />
+                        <ItemStyle CssClass="col_50" />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_07" SortExpression="d_01">
                         <ItemTemplate>
@@ -237,7 +237,7 @@
                                 <asp:Label ID="Label_gwTabela1120" runat="server" Text='<%# Eval("d_20")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_60 gray" />
+                        <ItemStyle CssClass="col_50 gray" />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="d_07" SortExpression="d_01">
                         <ItemTemplate>
@@ -245,7 +245,7 @@
                                 <asp:Label ID="Label_gwTabela1121" runat="server" Text='<%# Eval("d_21")%>' CssClass="normal"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_60 gray" />
+                        <ItemStyle CssClass="col_50 gray" />
                     </asp:TemplateField>
                
                 
