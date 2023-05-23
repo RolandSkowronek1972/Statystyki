@@ -157,6 +157,8 @@
     <Content Include="oglk.aspx" />
     <Content Include="oczu.aspx" />
     <Content Include="oczp.aspx" />
+    <Content Include="aopc.aspx" />
+    <Content Include="oktk.aspx" />
     <Content Include="oopr.aspx" />
     <Content Include="oopk.aspx" />
     <Content Include="oopc.aspx" />
@@ -305,7 +307,7 @@
     <Content Include="onsu.aspx" />
     <Content Include="oopp.aspx" />
     <Content Include="oopg.aspx" />
-    <Content Include="aopc.aspx" />
+    <Content Include="aopcOLD.aspx" />
     <Content Include="aopk.aspx" />
     <Content Include="aoppe.aspx" />
     <Content Include="mss16r.aspx" />
@@ -390,7 +392,6 @@
     <Content Include="ocenaPracownika.aspx" />
     <Content Include="oglc2.aspx" />
     <Content Include="oglr.aspx" />
-    <Content Include="oktk.aspx" />
     <Content Include="oksr.aspx" />
     <Content Include="onsc.aspx" />
     <Content Include="onsg.aspx" />
@@ -603,6 +604,20 @@
     </Compile>
     <Compile Include="oczp.aspx.designer.cs">
       <DependentUpon>oczp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aopc.aspx.cs">
+      <DependentUpon>aopc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aopc.aspx.designer.cs">
+      <DependentUpon>aopc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oktk.aspx.cs">
+      <DependentUpon>oktk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oktk.aspx.designer.cs">
+      <DependentUpon>oktk.aspx</DependentUpon>
     </Compile>
     <Compile Include="oopr.aspx.cs">
       <DependentUpon>oopr.aspx</DependentUpon>
@@ -861,12 +876,12 @@
     </Compile>
     <Compile Include="classes\CustomTemplate.cs" />
     <Compile Include="classes\devExpressXXL.cs" />
-    <Compile Include="aopc.aspx.cs">
-      <DependentUpon>aopc.aspx</DependentUpon>
+    <Compile Include="aopcOLD.aspx.cs">
+      <DependentUpon>aopcOLD.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="aopc.aspx.designer.cs">
-      <DependentUpon>aopc.aspx</DependentUpon>
+    <Compile Include="aopcOLD.aspx.designer.cs">
+      <DependentUpon>aopcOLD.aspx</DependentUpon>
     </Compile>
     <Compile Include="aopk.aspx.cs">
       <DependentUpon>aopk.aspx</DependentUpon>
@@ -1316,13 +1331,6 @@
     </Compile>
     <Compile Include="oglr.aspx.designer.cs">
       <DependentUpon>oglr.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="oktk.aspx.cs">
-      <DependentUpon>oktk.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="oktk.aspx.designer.cs">
-      <DependentUpon>oktk.aspx</DependentUpon>
     </Compile>
     <Compile Include="oksr.aspx.cs">
       <DependentUpon>oksr.aspx</DependentUpon>

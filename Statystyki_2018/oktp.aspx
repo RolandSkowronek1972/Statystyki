@@ -183,7 +183,7 @@
                                 <asp:Label ID="Label209" runat="server" Text='<%# Eval("d_09")%>' CssClass="small"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_40" />
+                        <ItemStyle CssClass="col_40 gray" />
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="d_07" SortExpression="d_07">
@@ -228,7 +228,7 @@
                                 <asp:Label ID="Label214" runat="server" Text='<%# Eval("d_14")%>' CssClass="small"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_40" />
+                        <ItemStyle CssClass="col_40 gray" />
                     </asp:TemplateField>
                    
                  
