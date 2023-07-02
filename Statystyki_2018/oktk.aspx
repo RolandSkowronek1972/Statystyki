@@ -192,7 +192,7 @@
                                 <asp:Label ID="Label210" runat="server" Text='<%# Eval("d_10")%>' CssClass="small"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_40 gray" />
+                        <ItemStyle CssClass="col_40 " />
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="d_07" SortExpression="d_07">
@@ -201,7 +201,7 @@
                                 <asp:Label ID="Label211" runat="server" Text='<%# Eval("d_11")%>' CssClass="small"></asp:Label>
                             </a>
                         </ItemTemplate>
-                        <ItemStyle CssClass="col_40" />
+                        <ItemStyle CssClass="col_40 gray" />
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="d_07" SortExpression="d_07">
@@ -244,9 +244,16 @@
                                 <asp:Label ID="Label216" runat="server" Text='<%# Eval("d_16")%>' CssClass="small"></asp:Label>
                             </a>
                         </ItemTemplate>
+                        <ItemStyle CssClass="col_40 " />
+                    </asp:TemplateField>
+                      <asp:TemplateField HeaderText="d_07" SortExpression="d_07">
+                        <ItemTemplate>
+                            <a href="javascript:openPopup('popup.aspx?sesja=<%# Eval("id_sedziego")+ "!"+Eval("id_tabeli") +"!17!2"%>')">
+                                <asp:Label ID="Label217" runat="server" Text='<%# Eval("d_17")%>' CssClass="small"></asp:Label>
+                            </a>
+                        </ItemTemplate>
                         <ItemStyle CssClass="col_40 gray" />
                     </asp:TemplateField>
-
                     <asp:TemplateField HeaderText="d_15" SortExpression="d_01">
                         <ItemTemplate>
                             <asp:TextBox ID="TextBox1" runat="server" Width="100%"></asp:TextBox>

@@ -134,12 +134,14 @@ namespace Statystyki_2018
 
             dT_01.Rows.Add(new Object[] { "1", "rozprawy", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "posiedzenia", "1", "1" });
+            dT_01.Rows.Add(new Object[] { "1", "rozprawy", "1", "1" });
+            dT_01.Rows.Add(new Object[] { "1", "posiedzenia", "1", "1" });
             for (int i = 0; i < 2; i++)
             {
                 dT_01.Rows.Add(new Object[] { "1", "K", "1", "1" });
                 dT_01.Rows.Add(new Object[] { "1", "Ko", "1", "1" });
                 dT_01.Rows.Add(new Object[] { "1", "Kp", "1", "1" });
-                dT_01.Rows.Add(new Object[] { "1", "W", "1", "1" });
+                dT_01.Rows.Add(new Object[] { "1", "Kop", "1", "1" });
                 dT_01.Rows.Add(new Object[] { "1", "W", "1", "1" });
                 dT_01.Rows.Add(new Object[] { "1", "Razem", "1", "1" });
             }
@@ -149,7 +151,7 @@ namespace Statystyki_2018
             dT_01.Rows.Add(new Object[] { "2", " Imię i nazwisko sędziego", "1", "2" });
             dT_01.Rows.Add(new Object[] { "2", "podstawowy wskaźnik przedziału", "1", "2" });
             dT_01.Rows.Add(new Object[] { "2", "Ilość sesji", "2", "1" });
-            dT_01.Rows.Add(new Object[] { "2", "Liczba wyznaczonych spraw", "1", "2" });
+            dT_01.Rows.Add(new Object[] { "2", "Liczba wyznaczonych spraw", "2", "1" });
             dT_01.Rows.Add(new Object[] { "2", "Wpływ", "6", "1" });
             dT_01.Rows.Add(new Object[] { "2", "Załatwienia", "6", "1" });
             dT_01.Rows.Add(new Object[] { "2", "Absencja w diach roboczych", "1", "2" });
@@ -251,7 +253,7 @@ namespace Statystyki_2018
         {
             
             GridViewRow NewTotalRow = new GridViewRow(0, 0, DataControlRowType.DataRow, DataControlRowState.Insert);
-            NewTotalRow.Cells.Add(tb.cela("Zaległości", 7, 4, "borderTopLeft col_240"));
+            NewTotalRow.Cells.Add(tb.cela("Zaległości", 7, 5, "borderTopLeft col_240"));
             NewTotalRow.Cells.Add(tb.cela(tekst, 1, 2, "borderTopLeft  "));
 
             for (int i = 1; i < 7; i++)
@@ -272,7 +274,7 @@ namespace Statystyki_2018
             GridViewRow NewTotalRow = new GridViewRow(0, 0, DataControlRowType.DataRow, DataControlRowState.Insert);
             try
             {
-                GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.PodsumowanieTabeli(tabelka02, 17, "borderAll center gray"));
+                GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.PodsumowanieTabeli(tabelka02, 18, "borderAll center gray"));
             }
             catch
             {
@@ -281,16 +283,16 @@ namespace Statystyki_2018
             string idtabeli = "2";
             
             int idWiersza = 1;
-            GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeli(tabelka01, 7, idWiersza, idtabeli, "Pozostało z poprzedniego okresu", 6, 1, "", "borderAll center"));
+            GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeli(tabelka01, 7, idWiersza, idtabeli, "Pozostało z poprzedniego okresu", 7, 1, "", "borderAll center"));
 
             idWiersza = 2;
-            GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeli(tabelka01, 7, idWiersza, idtabeli, "Wpłynęło", 6, 1, "", "borderAll center"));
+            GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeli(tabelka01, 7, idWiersza, idtabeli, "Wpłynęło", 7, 1, "", "borderAll center"));
             
             idWiersza = 3;
-            GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeli(tabelka01, 7, idWiersza, idtabeli, "Załatwiono", 6, 1, "", "borderAll center"));
+            GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeli(tabelka01, 7, idWiersza, idtabeli, "Załatwiono", 7, 1, "", "borderAll center"));
             
             idWiersza = 4;
-            GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeli(tabelka01, 7, idWiersza, idtabeli, "Pozostało na następny okres", 6, 1, "", "borderAll center"));
+            GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tb.wierszTabeli(tabelka01, 7, idWiersza, idtabeli, "Pozostało na następny okres", 7, 1, "", "borderAll center"));
             
             idWiersza = 5;
             GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, wierszTabela2(tabelka01, idWiersza, idtabeli, "powyżej 3 m-cy do 6 m-cy"));
@@ -334,8 +336,7 @@ namespace Statystyki_2018
                         TextBox txt = ((TextBox)GridView1.Rows[i].Cells[18].FindControl("TextBox1"));
                         if (txt != null)
                         {
-                            string tekst = txt.Text;
-                            tb.komorkaExcela(MyWorksheet1, i + 5, 18, tekst, false, 0, 0);
+                            tb.komorkaExcela(MyWorksheet1, i + 5, 20, txt.Text, false, 0, 0);
                         }
                     }
                 }

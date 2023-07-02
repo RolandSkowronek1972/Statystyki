@@ -102,7 +102,6 @@ namespace Statystyki_2018
                 GridView1.DataBind();
                 Session["tabelka003"] = dr.tworzTabele(int.Parse(dzial), 3, Date1.Date, Date2.Date, 31, GridView2, tenPlik);
                 GridView2.DataBind();
-
                 Session["tabelka005"] = dr.tworzTabele(int.Parse(dzial), 5, Date1.Date, Date2.Date, 30, GridView3, tenPlik);
                 GridView3.DataBind();
             }
@@ -198,7 +197,7 @@ namespace Statystyki_2018
             dT_01.Rows.Add(new Object[] { "1", "rozprawy", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "posiedzenia", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "C", "1", "1" });
-            dT_01.Rows.Add(new Object[] { "1", "CG-C", "1", "1" });
+            dT_01.Rows.Add(new Object[] { "1", "CG-G", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "N", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "Ns", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "Nc", "1", "1" });
@@ -208,7 +207,7 @@ namespace Statystyki_2018
             dT_01.Rows.Add(new Object[] { "1", "Cz", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "Razem", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "C", "1", "1" });
-            dT_01.Rows.Add(new Object[] { "1", "CG-C", "1", "1" });
+            dT_01.Rows.Add(new Object[] { "1", "CG-G", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "N", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "Ns", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "Nc", "1", "1" });
@@ -440,6 +439,16 @@ namespace Statystyki_2018
 
         private void AddNewRow(object sender, int iloscKolumn, int idTabeli, DataTable tabelkaZdanymi, GridViewRowEventArgs e)
         {
+            GridView GridView1 = (GridView)sender;
+            GridViewRow NewTotalRow = new GridViewRow(0, 0, DataControlRowType.DataRow, DataControlRowState.Insert);
+            try
+            {
+                GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, tabela.PodsumowanieTabeli((DataTable)Session["tabelka001"], 25, "borderAll center gray"));
+            }
+            catch (Exception ex)
+            {
+                cm.log.Error(tenPlik + " " + ex.Message);
+            }
             podtabela(idTabeli, iloscKolumn, tabelkaZdanymi, sender, e);
         }
 

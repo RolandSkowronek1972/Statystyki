@@ -794,7 +794,7 @@ namespace Statystyki_2018
             GridViewRow NewTotalRow = new GridViewRow(0, 0, DataControlRowType.DataRow, DataControlRowState.Insert);
 
             string idtabeli = "2";
-            TableCell HeaderCell = tabela.cela("Razem", 11, 2, "borderTopLeft");
+            TableCell HeaderCell = tabela.cela("Razem", 11, 3, "borderTopLeft");
             HeaderCell.BackColor = System.Drawing.Color.LightGray;
             NewTotalRow.Cells.Add(HeaderCell);
 

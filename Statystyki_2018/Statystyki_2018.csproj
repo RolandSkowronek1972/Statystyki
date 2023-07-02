@@ -158,6 +158,8 @@
     <Content Include="oczu.aspx" />
     <Content Include="oczp.aspx" />
     <Content Include="aopc.aspx" />
+    <Content Include="aktg2.aspx" />
+    <Content Include="oktr.aspx" />
     <Content Include="oktk.aspx" />
     <Content Include="oopr.aspx" />
     <Content Include="oopk.aspx" />
@@ -165,7 +167,7 @@
     <Content Include="redirector2.aspx" />
     <Content Include="style\card.css" />
     <Content Include="aktc2.aspx" />
-    <Content Include="aktg2.aspx" />
+    <Content Include="aktg2_old.aspx" />
     <Content Include="aktr.aspx" />
     <Content Include="aktg.aspx" />
     <Content Include="aktpe.aspx" />
@@ -330,7 +332,6 @@
     <Content Include="oglp.aspx" />
     <Content Include="oktkr.aspx" />
     <Content Include="oktp.aspx" />
-    <Content Include="oktr.aspx" />
     <Content Include="mss19o.aspx" />
     <Content Include="passwordPopup.aspx" />
     <Content Include="style\oktkr.css" />
@@ -612,6 +613,20 @@
     <Compile Include="aopc.aspx.designer.cs">
       <DependentUpon>aopc.aspx</DependentUpon>
     </Compile>
+    <Compile Include="aktg2.aspx.cs">
+      <DependentUpon>aktg2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aktg2.aspx.designer.cs">
+      <DependentUpon>aktg2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oktr.aspx.cs">
+      <DependentUpon>oktr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oktr.aspx.designer.cs">
+      <DependentUpon>oktr.aspx</DependentUpon>
+    </Compile>
     <Compile Include="oktk.aspx.cs">
       <DependentUpon>oktk.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -654,12 +669,12 @@
     <Compile Include="aktc2.aspx.designer.cs">
       <DependentUpon>aktc2.aspx</DependentUpon>
     </Compile>
-    <Compile Include="aktg2.aspx.cs">
-      <DependentUpon>aktg2.aspx</DependentUpon>
+    <Compile Include="aktg2_old.aspx.cs">
+      <DependentUpon>aktg2_old.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="aktg2.aspx.designer.cs">
-      <DependentUpon>aktg2.aspx</DependentUpon>
+    <Compile Include="aktg2_old.aspx.designer.cs">
+      <DependentUpon>aktg2_old.aspx</DependentUpon>
     </Compile>
     <Compile Include="aktr.aspx.cs">
       <DependentUpon>aktr.aspx</DependentUpon>
@@ -1049,13 +1064,6 @@
     </Compile>
     <Compile Include="oktp.aspx.designer.cs">
       <DependentUpon>oktp.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="oktr.aspx.cs">
-      <DependentUpon>oktr.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="oktr.aspx.designer.cs">
-      <DependentUpon>oktr.aspx</DependentUpon>
     </Compile>
     <Compile Include="mss19o.aspx.cs">
       <DependentUpon>mss19o.aspx</DependentUpon>

@@ -7,7 +7,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_PublishTargetUrl>C:\repo\priv\publish</_PublishTargetUrl>
-    <History>True|2023-05-23T10:37:42.0833952Z;True|2023-05-10T21:44:36.9208239+02:00;True|2023-05-07T19:06:55.5609663+02:00;True|2023-05-07T18:43:03.9642545+02:00;True|2023-04-10T18:14:08.3284086+02:00;True|2023-04-08T15:58:29.4021434+02:00;True|2023-04-02T17:00:02.1565115+02:00;True|2023-04-02T11:21:43.3725738+02:00;True|2023-02-05T18:10:08.0504172+01:00;True|2023-01-08T19:53:11.3583070+01:00;True|2022-12-19T11:17:31.2565077+01:00;False|2022-12-19T11:14:58.6001496+01:00;False|2022-12-19T11:12:17.6139636+01:00;False|2022-12-19T11:09:17.2088059+01:00;False|2022-12-19T11:06:16.3256032+01:00;False|2022-12-19T08:34:59.1404114+01:00;False|2022-12-19T08:33:37.2877052+01:00;</History>
+    <History>True|2023-07-02T14:12:55.6400954Z;True|2023-06-11T15:07:06.6939034+02:00;True|2023-06-11T12:57:27.8201249+02:00;True|2023-05-23T12:37:42.0833952+02:00;True|2023-05-10T21:44:36.9208239+02:00;True|2023-05-07T19:06:55.5609663+02:00;True|2023-05-07T18:43:03.9642545+02:00;True|2023-04-10T18:14:08.3284086+02:00;True|2023-04-08T15:58:29.4021434+02:00;True|2023-04-02T17:00:02.1565115+02:00;True|2023-04-02T11:21:43.3725738+02:00;True|2023-02-05T18:10:08.0504172+01:00;True|2023-01-08T19:53:11.3583070+01:00;True|2022-12-19T11:17:31.2565077+01:00;False|2022-12-19T11:14:58.6001496+01:00;False|2022-12-19T11:12:17.6139636+01:00;False|2022-12-19T11:09:17.2088059+01:00;False|2022-12-19T11:06:16.3256032+01:00;False|2022-12-19T08:34:59.1404114+01:00;False|2022-12-19T08:33:37.2877052+01:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="adm.aspx">
@@ -167,7 +167,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="aktg2.aspx">
-      <publishTime>12/11/2022 13:42:32</publishTime>
+      <publishTime>06/11/2023 14:46:08</publishTime>
+    </File>
+    <File Include="aktg2_old.aspx">
+      <publishTime>06/11/2023 14:01:50</publishTime>
     </File>
     <File Include="aktk.aspx">
       <publishTime>12/11/2022 13:42:32</publishTime>
@@ -869,10 +872,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/01/2019 12:40:59</publishTime>
     </File>
     <File Include="bin/stat2018.dll">
-      <publishTime>05/23/2023 12:37:16</publishTime>
+      <publishTime>07/02/2023 16:12:41</publishTime>
     </File>
     <File Include="bin/stat2018.pdb">
-      <publishTime>05/23/2023 12:37:16</publishTime>
+      <publishTime>07/02/2023 16:12:41</publishTime>
     </File>
     <File Include="bin/stat2018.XmlSerializers.dll">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -1472,7 +1475,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/09/2019 14:50:01</publishTime>
     </File>
     <File Include="okrr.aspx">
-      <publishTime>01/23/2023 20:18:56</publishTime>
+      <publishTime>07/02/2023 16:04:46</publishTime>
     </File>
     <File Include="okrr.aspx.cs">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -1526,7 +1529,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/10/2019 21:31:16</publishTime>
     </File>
     <File Include="oktk.aspx">
-      <publishTime>05/23/2023 12:17:19</publishTime>
+      <publishTime>06/11/2023 11:32:28</publishTime>
     </File>
     <File Include="oktk.aspx.cs">
       <publishTime>01/04/2020 16:45:43</publishTime>
@@ -1553,13 +1556,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="oktr.aspx">
-      <publishTime>12/11/2022 13:42:33</publishTime>
+      <publishTime>06/11/2023 12:48:08</publishTime>
     </File>
     <File Include="oktr.aspx.cs">
       <publishTime>09/09/2020 11:30:29</publishTime>
     </File>
     <File Include="oktr.aspx.designer.cs">
       <publishTime>02/09/2020 20:12:35</publishTime>
+    </File>
+    <File Include="oktr_old.aspx">
+      <publishTime>06/11/2023 11:59:46</publishTime>
     </File>
     <File Include="onsa.aspx">
       <publishTime>12/11/2022 13:42:33</publishTime>
@@ -1808,7 +1814,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/01/2018 16:29:38</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>05/23/2023 12:37:18</publishTime>
+      <publishTime>07/02/2023 16:12:43</publishTime>
     </File>
     <File Include="Properties/AssemblyInfo.cs">
       <publishTime>03/03/2020 13:38:12</publishTime>
@@ -1967,10 +1973,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/03/2021 16:44:26</publishTime>
     </File>
     <File Include="Statystyki_2018.csproj">
-      <publishTime>05/23/2023 12:37:05</publishTime>
+      <publishTime>06/11/2023 14:01:50</publishTime>
     </File>
     <File Include="Statystyki_2018.csproj.user">
-      <publishTime>05/23/2023 08:32:54</publishTime>
+      <publishTime>07/02/2023 16:12:30</publishTime>
     </File>
     <File Include="style/card.css">
       <publishTime>12/11/2022 13:42:34</publishTime>
@@ -2063,7 +2069,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/aktg2.xlsx">
-      <publishTime>12/11/2022 13:42:32</publishTime>
+      <publishTime>06/11/2023 14:44:00</publishTime>
     </File>
     <File Include="Template/aktk.xlsx">
       <publishTime>12/11/2022 13:42:32</publishTime>
@@ -2186,7 +2192,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/07/2023 18:00:28</publishTime>
     </File>
     <File Include="Template/oktr.xlsx">
-      <publishTime>12/11/2022 13:42:32</publishTime>
+      <publishTime>06/11/2023 12:48:02</publishTime>
     </File>
     <File Include="Template/onsc.xlsx">
       <publishTime>12/11/2022 13:42:32</publishTime>
@@ -2330,7 +2336,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="version.txt">
-      <publishTime>05/23/2023 12:37:05</publishTime>
+      <publishTime>07/02/2023 16:12:30</publishTime>
     </File>
     <File Include="wab.aspx">
       <publishTime>12/11/2022 13:42:34</publishTime>
