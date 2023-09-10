@@ -2,6 +2,10 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+    <br />
+    <br />
+    <br />
+
     <script src="Scripts/jquery-1.8.3.js"></script>
     <script src="Scripts/rls.js"></script>
 
@@ -13,38 +17,17 @@
         var returnValue = request.responseText;
 
       
-            alert(returnValue);
+         //   alert(returnValue);
         }
     </script>
 
-    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+    <asp:TextBox ID="TextBox1" runat="server" Height="94px" Width="280px"></asp:TextBox>
+    <br />
     <br />
     <br />
 
-    <div id='tab2'>
+    <asp:Button ID="Notatnik" runat="server" OnClick="Button1_Click" Text="Button" />
+    <br />
+    <br />
 
-        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="sprawdzenie plików" />
-        <br />
-        <br />
-        <asp:Label ID="Label2" runat="server"></asp:Label>
-        <br />
-        <asp:Label ID="Label3" runat="server"></asp:Label>
-        <br />
-        <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Button" />
-        <asp:TextBox ID="TextBox2" runat="server" Width="665px"></asp:TextBox>
-        <br />
-        <asp:TextBox ID="TextBox1" runat="server" Height="160px" TextMode="MultiLine" Width="1012px"></asp:TextBox>
-        <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1" AutoGenerateColumns="False">
-            <Columns>
-                <asp:BoundField DataField="ident" HeaderText="ident" SortExpression="ident" />
-                <asp:BoundField DataField="nazwa" HeaderText="nazwa" SortExpression="nazwa" />
-                <asp:BoundField DataField="rodzaj" HeaderText="rodzaj" SortExpression="rodzaj" />
-            </Columns>
-        </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SatystykiConnectionString %>" SelectCommand="SELECT COUNT(konfig.ident) AS Expr1 FROM konfig INNER JOIN uprawnienia ON konfig.ident = uprawnienia.id_wydzialu WHERE (uprawnienia.rodzaj = 5) AND (uprawnienia.id_uzytkownika = 6)"></asp:SqlDataSource>
-        <br />
-        <asp:Label ID="kod011" runat="server"></asp:Label>
-        <asp:PlaceHolder runat="server" ID="tablePlaceHolder"></asp:PlaceHolder>
-        <br />
-    </div>
-</asp:Content>
+    </asp:Content>

@@ -255,6 +255,7 @@ namespace Statystyki_2018
             dT_01.Rows.Add(new Object[] { "3", "Nmo", "1", "3", "h" });
             dT_01.Rows.Add(new Object[] { "3", "RCz", "1", "3", "h" });
             dT_01.Rows.Add(new Object[] { "3", "WSC", "1", "3", "h" });
+            dT_01.Rows.Add(new Object[] { "3", "WSNc ", "1", "3", "h" });
             dT_01.Rows.Add(new Object[] { "4", "L.p.", "1", "4", "h" });
             dT_01.Rows.Add(new Object[] { "4", "Funkcja", "1", "4", "h" });
             dT_01.Rows.Add(new Object[] { "4", "Imię i Nazwisko / Stanowisko", "1", "4", "h" });
@@ -267,7 +268,7 @@ namespace Statystyki_2018
             dT_01.Rows.Add(new Object[] { "4", "Oddalono lub utrzymano w mocy apelacje / zażalenia", "1", "4", "h" });
             dT_01.Rows.Add(new Object[] { "4", "RCz - p1  oddalono lub utrzymano w mocy zażalenia", "1", "4", "h" });
             dT_01.Rows.Add(new Object[] { "4", "Nieobecności", "2", "2", "h" });
-            dT_01.Rows.Add(new Object[] { "4", "Załatwienia", "13", "1", "h" });
+            dT_01.Rows.Add(new Object[] { "4", "Załatwienia", "14", "1", "h" });
             dT_01.Rows.Add(new Object[] { "4", "Razem", "1", "4", "h" });
             dT_01.Rows.Add(new Object[] { "4", "Alk", "1", "2", "h" });
             dT_01.Rows.Add(new Object[] { "4", "Op", "1", "2", "h" });
@@ -635,7 +636,7 @@ namespace Statystyki_2018
 
                 if (!flaga)
                 {
-                    e.Row.Cells[31].ColumnSpan = 4;
+                    e.Row.Cells[32].ColumnSpan = 4;
                 }
             }
         }
@@ -702,7 +703,7 @@ namespace Statystyki_2018
             NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!1!3')\">" + tabelka01.Rows[idWiersza][0].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!2!3')\">" + tabelka01.Rows[idWiersza][1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!3!3')\">" + tabelka01.Rows[idWiersza][2].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
-            for (int i = 4; i < 18; i++)
+            for (int i = 4; i < 19; i++)
             {
                 NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!" + i.ToString() + "!3')\">" + tabelka01.Rows[idWiersza][i-1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             }
@@ -722,7 +723,7 @@ namespace Statystyki_2018
             NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!1!3')\">" + tabelka01.Rows[idWiersza][0].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!2!3')\">" + tabelka01.Rows[idWiersza][1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!3!3')\">" + tabelka01.Rows[idWiersza][2].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
-            for (int i = 4; i < 13; i++)
+            for (int i = 4; i < 14; i++)
             {
                 NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!" + i.ToString() + "!3')\">" + tabelka01.Rows[idWiersza][i-1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             }
@@ -741,7 +742,7 @@ namespace Statystyki_2018
             NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!1!3')\">" + tabelka01.Rows[idWiersza][0].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!2!3')\">" + tabelka01.Rows[idWiersza][1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!3!3')\">" + tabelka01.Rows[idWiersza][2].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
-            for (int i = 4; i < 13; i++)
+            for (int i = 4; i < 14; i++)
             {
                 NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!" + i.ToString() + "!3')\">" + tabelka01.Rows[idWiersza][i-1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             }
@@ -761,7 +762,7 @@ namespace Statystyki_2018
             NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!1!3')\">" + tabelka01.Rows[idWiersza][0].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!2!3')\">" + tabelka01.Rows[idWiersza][1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!3!3')\">" + tabelka01.Rows[idWiersza][2].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
-            for (int i = 4; i < 13; i++)
+            for (int i = 4; i < 14; i++)
             {
                 NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!" + i.ToString() + "!3')\">" + tabelka01.Rows[idWiersza][i-1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             }
@@ -780,7 +781,7 @@ namespace Statystyki_2018
             NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!1!3')\">" + tabelka01.Rows[idWiersza][0].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!2!3')\">" + tabelka01.Rows[idWiersza][1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!3!3')\">" + tabelka01.Rows[idWiersza][2].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
-            for (int i = 4; i < 13; i++)
+            for (int i = 4; i < 14; i++)
             {
                 NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!" + i.ToString() + "!3')\">" + tabelka01.Rows[idWiersza][i-1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             }
@@ -809,7 +810,7 @@ namespace Statystyki_2018
 
             NewTotalRow.Cells.Add(tabela.cela("", 11, 2, "borderTopLeft doubleXcross gray"));
 
-            for (int i = 4; i < 18; i++)
+            for (int i = 4; i < 19; i++)
             {
                 NewTotalRow.Cells.Add(tabela.cela("<a class='normal' href=\"javascript: openPopup('popup.aspx?sesja=" + (idWiersza + 1).ToString().Trim() + "!2!" + i.ToString() + "!3')\">" + tabelka01.Rows[idWiersza][i-1].ToString().Trim() + "</a>", 1, 1, "borderTopLeft"));
             }

@@ -197,7 +197,7 @@ namespace Statystyki_2018
             dT_01.Rows.Add(new Object[] { "1", "rozprawy", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "posiedzenia", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "C", "1", "1" });
-            dT_01.Rows.Add(new Object[] { "1", "CG-G", "1", "1" });
+            dT_01.Rows.Add(new Object[] { "1", "CGG", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "N", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "Ns", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "Nc", "1", "1" });
@@ -207,7 +207,7 @@ namespace Statystyki_2018
             dT_01.Rows.Add(new Object[] { "1", "Cz", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "Razem", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "C", "1", "1" });
-            dT_01.Rows.Add(new Object[] { "1", "CG-G", "1", "1" });
+            dT_01.Rows.Add(new Object[] { "1", "CGG", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "N", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "Ns", "1", "1" });
             dT_01.Rows.Add(new Object[] { "1", "Nc", "1", "1" });

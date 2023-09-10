@@ -310,7 +310,7 @@ namespace Statystyki_2018
             GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, wierszTabeli3(tabelka01, idWiersza, idtabeli, "powyżej 3 lat do 5 lat"));
             idWiersza = 10;
             GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, wierszTabeli3(tabelka01, idWiersza, idtabeli, "powyżej 5 lat do 8 lat"));
-            idWiersza = 10;
+            idWiersza = 11;
             GridView1.Controls[0].Controls.AddAt(e.Row.RowIndex + rowIndex, wierszTabeli3(tabelka01, idWiersza, idtabeli, "powyżej 8 lat"));
         }
 
