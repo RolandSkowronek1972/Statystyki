@@ -11,7 +11,6 @@ namespace Statystyki_2018
         protected void Page_Load(object sender, EventArgs e)
         {
 
-
             if (!IsPostBack)
             {
                 listaSpraw.DataSource = null;
@@ -25,7 +24,6 @@ namespace Statystyki_2018
                     {
                         listaSpraw.DataSource = null;
                         listaSpraw.DataSourceID = null;
-
                         listaSpraw.DataBind();
                     }
                 }
@@ -33,7 +31,6 @@ namespace Statystyki_2018
                 {
                     listaSpraw.DataSource = null;
                     listaSpraw.DataSourceID = null;
-
                     listaSpraw.DataBind();
 
                 }
@@ -49,12 +46,10 @@ namespace Statystyki_2018
                     catch
                     {
                     }
-                  
-               
                 }
                 catch
                 {
-                    //Server.Transfer("default.aspx");
+                    Server.Transfer("default.aspx");
                 }
 
             }
@@ -69,11 +64,13 @@ namespace Statystyki_2018
                 int id = 0;
                 try
                 {
-                    id = 100 + int.Parse(ident);
+                    id = int.Parse(ident);
                 }
                 catch (Exception ex)
                 {
                     cl.log.Error("Wyszukiwarka wyszukiwarka2 " + ex.Message);
+                    Server.Transfer("default.aspx");
+                    return;
                 }
 
                 string user = string.Empty;
@@ -87,12 +84,27 @@ namespace Statystyki_2018
                 {
                     cl.log.Error("Wyszukiwarka wyszukiwarka2 " + ex.Message);
                 }
+                if (user == null)
+                {
+                    Server.Transfer("default.aspx");
+                    return;
+                }
+                int pozwolenieNum = 0;
+              
+                try
+                {
+                 pozwolenieNum = int.Parse( cl.czy_dostepnaWyszukiwarka(user, ident, domain));
+                    
+                    
+                }
+                catch 
+                {}
 
-                string pozwolenie = cl.czy_dostepny(user, id.ToString(), domain);
-                if (pozwolenie != "0")
+                if ((pozwolenieNum>0))
                 {
                     ASPxComboBox1.Items.Add(dR[0].ToString());
                 }
+
             }
             
             if (ASPxComboBox1.SelectedIndex == -1)

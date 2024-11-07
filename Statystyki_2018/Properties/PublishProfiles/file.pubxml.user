@@ -7,79 +7,387 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_PublishTargetUrl>C:\test\publish</_PublishTargetUrl>
+    <History>True|2024-11-07T19:38:28.4795631Z||;True|2024-11-07T20:38:05.8915334+01:00||;</History>
+    <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
+    <File Include="adm.aspx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="adm.aspx.cs">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="adm.aspx.designer.cs">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
     <File Include="agl.aspx">
-      <publishTime>12/13/2018 19:08:38</publishTime>
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="agl.aspx.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="agl.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
     </File>
     <File Include="aglc.aspx">
-      <publishTime>12/14/2018 22:39:51</publishTime>
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="aglc.aspx.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="aglc.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
     </File>
     <File Include="aglg.aspx">
-      <publishTime>12/14/2018 22:39:51</publishTime>
+      <publishTime>06/23/2024 17:12:48</publishTime>
+    </File>
+    <File Include="aglg.aspx.cs">
+      <publishTime>06/23/2024 17:12:48</publishTime>
+    </File>
+    <File Include="aglg.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
     </File>
     <File Include="aglg2.aspx">
-      <publishTime>01/07/2019 15:19:52</publishTime>
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="aglg2.aspx.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="aglg2.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
     </File>
     <File Include="akac.aspx">
-      <publishTime>12/14/2018 22:39:51</publishTime>
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="akac.aspx.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="akac.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
     </File>
     <File Include="Akac2.aspx">
-      <publishTime>12/14/2018 22:39:51</publishTime>
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="Akac2.aspx.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="Akac2.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
     </File>
     <File Include="akak.aspx">
-      <publishTime>12/14/2018 22:39:52</publishTime>
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="akak.aspx.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="akak.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
     </File>
     <File Include="akak2.aspx">
-      <publishTime>12/14/2018 22:39:52</publishTime>
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="akak2.aspx.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="akak2.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
     </File>
     <File Include="akap.aspx">
-      <publishTime>12/14/2018 22:39:52</publishTime>
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="akap.aspx.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="akap.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
     </File>
     <File Include="akap2.aspx">
-      <publishTime>12/14/2018 22:39:52</publishTime>
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="akap2.aspx.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="akap2.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
     </File>
     <File Include="akape.aspx">
-      <publishTime>12/14/2018 22:39:52</publishTime>
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="akape.aspx.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="akape.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
     </File>
     <File Include="akrc.aspx">
-      <publishTime>12/26/2018 02:15:29</publishTime>
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="akrc.aspx.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="akrc.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
     </File>
     <File Include="akrg.aspx">
-      <publishTime>12/26/2018 05:04:33</publishTime>
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="akrg.aspx.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="akrg.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
     </File>
     <File Include="akrk.aspx">
-      <publishTime>12/26/2018 04:17:56</publishTime>
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="akrk.aspx.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="akrk.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
     </File>
     <File Include="akrp.aspx">
-      <publishTime>12/26/2018 06:26:45</publishTime>
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="akrp.aspx.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="akrp.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aktc.aspx">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aktc.aspx.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aktc.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="aktc.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="aktc2.aspx">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aktc2.aspx.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aktc2.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aktg.aspx">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aktg.aspx.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aktg.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aktg2.aspx">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aktg2.aspx.cs">
+      <publishTime>07/12/2024 20:17:45</publishTime>
+    </File>
+    <File Include="aktg2.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aktg2_old.aspx">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aktg2_old.aspx.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aktg2_old.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="akti.aspx">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="akti.aspx.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="akti.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aktk.aspx">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aktk.aspx.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aktk.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aktk2.aspx">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aktk2.aspx.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aktk2.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aktpe.aspx">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aktpe.aspx.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aktpe.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aktr.aspx">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aktr.aspx.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aktr.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
     </File>
     <File Include="ansc.aspx">
-      <publishTime>12/14/2018 22:39:52</publishTime>
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="ansc.aspx.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="ansc.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
     </File>
     <File Include="ansk.aspx">
-      <publishTime>12/14/2018 22:39:52</publishTime>
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="ansk.aspx.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="ansk.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
     </File>
     <File Include="ansp.aspx">
-      <publishTime>12/14/2018 22:39:52</publishTime>
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="ansp.aspx.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="ansp.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aopc.aspx">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aopc.aspx.cs">
+      <publishTime>10/27/2024 14:16:03</publishTime>
+    </File>
+    <File Include="aopc.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aopc2.aspx">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aopc2.aspx.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aopc2.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aopcOLD.aspx">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="aopcOLD.aspx.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aopcOLD.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aopg.aspx">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aopg.aspx.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aopg.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aopk.aspx">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="aopk.aspx.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aopk.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aopk2.aspx">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aopk2.aspx.cs">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aopk2.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="aopp.aspx">
+      <publishTime>06/23/2024 17:12:43</publishTime>
+    </File>
+    <File Include="aopp.aspx.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="aopp.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="aoppe.aspx">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="aoppe.aspx.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="aoppe.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
     </File>
     <File Include="App_Code/Class1.cs">
       <publishTime>01/06/2018 04:20:02</publishTime>
     </File>
+    <File Include="App_GlobalResources/DevExpress_Web_ASPxDiagram_v23_2.pl.designer.cs">
+      <publishTime>04/26/2024 12:45:53</publishTime>
+    </File>
+    <File Include="App_GlobalResources/DevExpress_Web_ASPxDiagram_v23_2.pl.resx">
+      <publishTime>04/26/2024 12:45:50</publishTime>
+    </File>
+    <File Include="App_GlobalResources/DevExpress_Web_ASPxEditors_v23_2.pl.designer.cs">
+      <publishTime>04/26/2024 12:45:54</publishTime>
+    </File>
+    <File Include="App_GlobalResources/DevExpress_Web_ASPxEditors_v23_2.pl.resx">
+      <publishTime>04/26/2024 12:45:50</publishTime>
+    </File>
+    <File Include="App_GlobalResources/DevExpress_Web_ASPxGantt_v23_2.pl.designer.cs">
+      <publishTime>04/26/2024 12:45:54</publishTime>
+    </File>
+    <File Include="App_GlobalResources/DevExpress_Web_ASPxGantt_v23_2.pl.resx">
+      <publishTime>04/26/2024 12:45:50</publishTime>
+    </File>
+    <File Include="App_GlobalResources/DevExpress_Web_ASPxGridView_V17.1.designer.cs">
+      <publishTime>05/05/2024 09:55:49</publishTime>
+    </File>
+    <File Include="App_GlobalResources/DevExpress_Web_ASPxGridView_V17.1.resx">
+      <publishTime>05/03/2024 14:49:38</publishTime>
+    </File>
     <File Include="bin/AjaxControlToolkit.dll">
-      <publishTime>08/13/2014 06:30:48</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="bin/AjaxControlToolkit.resources.dll">
       <publishTime>08/13/2014 06:31:40</publishTime>
     </File>
     <File Include="bin/AjaxMin.dll">
-      <publishTime>08/13/2014 06:30:52</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="bin/de/DevExpress.Data.v16.1.resources.dll">
       <publishTime>10/31/2016 09:49:22</publishTime>
     </File>
     <File Include="bin/de/DevExpress.Data.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:38</publishTime>
+      <publishTime>11/03/2024 11:51:47</publishTime>
     </File>
     <File Include="bin/de/DevExpress.DataAccess.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:40</publishTime>
@@ -94,25 +402,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:51:05</publishTime>
     </File>
     <File Include="bin/de/DevExpress.Office.v17.1.Core.resources.dll">
-      <publishTime>03/13/2018 11:20:42</publishTime>
+      <publishTime>11/03/2024 11:51:52</publishTime>
     </File>
     <File Include="bin/de/DevExpress.Pdf.v16.1.Core.resources.dll">
       <publishTime>10/31/2016 09:52:44</publishTime>
     </File>
     <File Include="bin/de/DevExpress.Pdf.v17.1.Core.resources.dll">
-      <publishTime>03/13/2018 11:20:42</publishTime>
+      <publishTime>11/03/2024 11:51:52</publishTime>
     </File>
     <File Include="bin/de/DevExpress.Printing.v16.1.Core.resources.dll">
       <publishTime>10/31/2016 09:52:44</publishTime>
     </File>
     <File Include="bin/de/DevExpress.Printing.v17.1.Core.resources.dll">
-      <publishTime>03/13/2018 11:20:42</publishTime>
+      <publishTime>11/03/2024 11:51:52</publishTime>
     </File>
     <File Include="bin/de/DevExpress.RichEdit.v16.1.Core.resources.dll">
       <publishTime>10/31/2016 09:56:47</publishTime>
     </File>
     <File Include="bin/de/DevExpress.RichEdit.v17.1.Core.resources.dll">
-      <publishTime>03/13/2018 11:20:47</publishTime>
+      <publishTime>11/03/2024 11:51:55</publishTime>
     </File>
     <File Include="bin/de/DevExpress.Snap.v17.1.Core.resources.dll">
       <publishTime>03/13/2018 11:20:43</publishTime>
@@ -121,7 +429,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:52:44</publishTime>
     </File>
     <File Include="bin/de/DevExpress.Sparkline.v17.1.Core.resources.dll">
-      <publishTime>03/13/2018 11:20:43</publishTime>
+      <publishTime>11/03/2024 11:51:52</publishTime>
     </File>
     <File Include="bin/de/DevExpress.Spreadsheet.v17.1.Core.resources.dll">
       <publishTime>03/13/2018 11:20:49</publishTime>
@@ -130,19 +438,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:52:45</publishTime>
     </File>
     <File Include="bin/de/DevExpress.Utils.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:43</publishTime>
+      <publishTime>11/03/2024 11:51:52</publishTime>
     </File>
     <File Include="bin/de/DevExpress.Utils.v17.1.UI.resources.dll">
       <publishTime>03/13/2018 11:20:44</publishTime>
     </File>
+    <File Include="bin/de/DevExpress.Web.ASPxRichEdit.v17.1.resources.dll">
+      <publishTime>11/03/2024 11:51:45</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Web.ASPxSpellChecker.v17.1.resources.dll">
+      <publishTime>11/03/2024 11:51:45</publishTime>
+    </File>
     <File Include="bin/de/DevExpress.Web.Resources.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:44</publishTime>
+      <publishTime>11/03/2024 11:51:53</publishTime>
     </File>
     <File Include="bin/de/DevExpress.Web.v16.1.resources.dll">
       <publishTime>10/31/2016 09:47:25</publishTime>
     </File>
     <File Include="bin/de/DevExpress.Web.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:35</publishTime>
+      <publishTime>11/03/2024 11:51:45</publishTime>
     </File>
     <File Include="bin/de/DevExpress.Xpo.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:45</publishTime>
@@ -151,7 +465,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:55:08</publishTime>
     </File>
     <File Include="bin/de/DevExpress.XtraBars.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:45</publishTime>
+      <publishTime>11/03/2024 11:51:54</publishTime>
     </File>
     <File Include="bin/de/DevExpress.XtraCharts.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:45</publishTime>
@@ -160,7 +474,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:55:09</publishTime>
     </File>
     <File Include="bin/de/DevExpress.XtraEditors.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:46</publishTime>
+      <publishTime>11/03/2024 11:51:54</publishTime>
     </File>
     <File Include="bin/de/DevExpress.XtraGrid.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:47</publishTime>
@@ -169,7 +483,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:55:09</publishTime>
     </File>
     <File Include="bin/de/DevExpress.XtraLayout.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:47</publishTime>
+      <publishTime>11/03/2024 11:51:54</publishTime>
     </File>
     <File Include="bin/de/DevExpress.XtraNavBar.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:47</publishTime>
@@ -178,7 +492,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:55:09</publishTime>
     </File>
     <File Include="bin/de/DevExpress.XtraPrinting.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:47</publishTime>
+      <publishTime>11/03/2024 11:51:55</publishTime>
     </File>
     <File Include="bin/de/DevExpress.XtraRichEdit.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:47</publishTime>
@@ -190,7 +504,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:56:48</publishTime>
     </File>
     <File Include="bin/de/DevExpress.XtraTreeList.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:50</publishTime>
+      <publishTime>11/03/2024 11:51:55</publishTime>
     </File>
     <File Include="bin/de/DevExpress.XtraVerticalGrid.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:50</publishTime>
@@ -205,7 +519,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:49:22</publishTime>
     </File>
     <File Include="bin/DevExpress.Data.v17.1.dll">
-      <publishTime>03/13/2018 11:20:38</publishTime>
+      <publishTime>11/03/2024 11:51:47</publishTime>
     </File>
     <File Include="bin/DevExpress.DataAccess.v17.1.dll">
       <publishTime>03/13/2018 11:20:40</publishTime>
@@ -223,7 +537,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:52:44</publishTime>
     </File>
     <File Include="bin/DevExpress.Office.v17.1.Core.dll">
-      <publishTime>03/13/2018 11:20:42</publishTime>
+      <publishTime>11/03/2024 11:51:52</publishTime>
     </File>
     <File Include="bin/DevExpress.Pdf.v16.1.Core.dll">
       <publishTime>10/31/2016 09:52:44</publishTime>
@@ -232,7 +546,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:52:44</publishTime>
     </File>
     <File Include="bin/DevExpress.Pdf.v17.1.Core.dll">
-      <publishTime>03/13/2018 11:20:42</publishTime>
+      <publishTime>11/03/2024 11:51:52</publishTime>
     </File>
     <File Include="bin/DevExpress.Pdf.v17.1.Drawing.dll">
       <publishTime>03/13/2018 11:20:42</publishTime>
@@ -241,13 +555,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:52:44</publishTime>
     </File>
     <File Include="bin/DevExpress.Printing.v17.1.Core.dll">
-      <publishTime>03/13/2018 11:20:42</publishTime>
+      <publishTime>11/03/2024 11:51:52</publishTime>
     </File>
     <File Include="bin/DevExpress.RichEdit.v16.1.Core.dll">
       <publishTime>10/31/2016 09:56:47</publishTime>
     </File>
     <File Include="bin/DevExpress.RichEdit.v17.1.Core.dll">
-      <publishTime>03/13/2018 11:20:47</publishTime>
+      <publishTime>11/03/2024 11:51:55</publishTime>
     </File>
     <File Include="bin/DevExpress.Snap.v17.1.Core.dll">
       <publishTime>03/13/2018 11:20:43</publishTime>
@@ -256,7 +570,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:52:44</publishTime>
     </File>
     <File Include="bin/DevExpress.Sparkline.v17.1.Core.dll">
-      <publishTime>03/13/2018 11:20:43</publishTime>
+      <publishTime>11/03/2024 11:51:52</publishTime>
+    </File>
+    <File Include="bin/DevExpress.SpellChecker.v17.1.Core.dll">
+      <publishTime>11/03/2024 11:51:52</publishTime>
     </File>
     <File Include="bin/DevExpress.Spreadsheet.v17.1.Core.dll">
       <publishTime>03/13/2018 11:20:49</publishTime>
@@ -265,16 +582,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:52:45</publishTime>
     </File>
     <File Include="bin/DevExpress.Utils.v17.1.dll">
-      <publishTime>03/13/2018 11:20:44</publishTime>
+      <publishTime>11/03/2024 11:51:52</publishTime>
     </File>
     <File Include="bin/DevExpress.Utils.v17.1.UI.dll">
       <publishTime>03/13/2018 11:20:44</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.ASPxRichEdit.v17.1.dll">
+      <publishTime>11/03/2024 11:51:45</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.ASPxSpellChecker.v17.1.dll">
+      <publishTime>11/03/2024 11:51:45</publishTime>
     </File>
     <File Include="bin/DevExpress.Web.ASPxThemes.v16.1.dll">
       <publishTime>10/31/2016 09:47:25</publishTime>
     </File>
     <File Include="bin/DevExpress.Web.ASPxThemes.v17.1.dll">
-      <publishTime>03/13/2018 11:20:36</publishTime>
+      <publishTime>11/03/2024 11:51:45</publishTime>
     </File>
     <File Include="bin/DevExpress.Web.Bootstrap.v17.1.dll">
       <publishTime>03/13/2018 11:20:36</publishTime>
@@ -283,7 +606,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:53:56</publishTime>
     </File>
     <File Include="bin/DevExpress.Web.Resources.v17.1.dll">
-      <publishTime>03/13/2018 11:20:44</publishTime>
+      <publishTime>11/03/2024 11:51:53</publishTime>
     </File>
     <File Include="bin/DevExpress.Web.Resources.v17.2.resources.dll">
       <publishTime>01/17/2018 19:19:26</publishTime>
@@ -292,7 +615,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:47:25</publishTime>
     </File>
     <File Include="bin/DevExpress.Web.v17.1.dll">
-      <publishTime>03/13/2018 11:20:36</publishTime>
+      <publishTime>11/03/2024 11:51:45</publishTime>
     </File>
     <File Include="bin/DevExpress.Web.v17.2.resources.dll">
       <publishTime>01/17/2018 19:18:46</publishTime>
@@ -304,7 +627,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:55:09</publishTime>
     </File>
     <File Include="bin/DevExpress.XtraBars.v17.1.dll">
-      <publishTime>03/13/2018 11:20:45</publishTime>
+      <publishTime>11/03/2024 11:51:54</publishTime>
     </File>
     <File Include="bin/DevExpress.XtraCharts.v17.1.dll">
       <publishTime>03/13/2018 11:20:45</publishTime>
@@ -316,7 +639,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:55:09</publishTime>
     </File>
     <File Include="bin/DevExpress.XtraEditors.v17.1.dll">
-      <publishTime>03/13/2018 11:20:47</publishTime>
+      <publishTime>11/03/2024 11:51:54</publishTime>
     </File>
     <File Include="bin/DevExpress.XtraGrid.v17.1.dll">
       <publishTime>03/13/2018 11:20:47</publishTime>
@@ -325,7 +648,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:55:09</publishTime>
     </File>
     <File Include="bin/DevExpress.XtraLayout.v17.1.dll">
-      <publishTime>03/13/2018 11:20:47</publishTime>
+      <publishTime>11/03/2024 11:51:54</publishTime>
     </File>
     <File Include="bin/DevExpress.XtraNavBar.v17.1.dll">
       <publishTime>03/13/2018 11:20:47</publishTime>
@@ -334,7 +657,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:55:09</publishTime>
     </File>
     <File Include="bin/DevExpress.XtraPrinting.v17.1.dll">
-      <publishTime>03/13/2018 11:20:47</publishTime>
+      <publishTime>11/03/2024 11:51:55</publishTime>
     </File>
     <File Include="bin/DevExpress.XtraRichEdit.v17.1.dll">
       <publishTime>03/13/2018 11:20:47</publishTime>
@@ -346,19 +669,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:56:48</publishTime>
     </File>
     <File Include="bin/DevExpress.XtraTreeList.v17.1.dll">
-      <publishTime>03/13/2018 11:20:50</publishTime>
+      <publishTime>11/03/2024 11:51:55</publishTime>
     </File>
     <File Include="bin/DevExpress.XtraVerticalGrid.v17.1.dll">
       <publishTime>03/13/2018 11:20:50</publishTime>
     </File>
     <File Include="bin/EPPlus.dll">
-      <publishTime>01/08/2016 09:00:08</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="bin/es/DevExpress.Data.v16.1.resources.dll">
       <publishTime>10/31/2016 09:49:22</publishTime>
     </File>
     <File Include="bin/es/DevExpress.Data.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:38</publishTime>
+      <publishTime>11/03/2024 11:51:47</publishTime>
     </File>
     <File Include="bin/es/DevExpress.DataAccess.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:40</publishTime>
@@ -373,25 +696,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:52:44</publishTime>
     </File>
     <File Include="bin/es/DevExpress.Office.v17.1.Core.resources.dll">
-      <publishTime>03/13/2018 11:20:42</publishTime>
+      <publishTime>11/03/2024 11:51:52</publishTime>
     </File>
     <File Include="bin/es/DevExpress.Pdf.v16.1.Core.resources.dll">
       <publishTime>10/31/2016 09:52:44</publishTime>
     </File>
     <File Include="bin/es/DevExpress.Pdf.v17.1.Core.resources.dll">
-      <publishTime>03/13/2018 11:20:42</publishTime>
+      <publishTime>11/03/2024 11:51:52</publishTime>
     </File>
     <File Include="bin/es/DevExpress.Printing.v16.1.Core.resources.dll">
       <publishTime>10/31/2016 09:52:44</publishTime>
     </File>
     <File Include="bin/es/DevExpress.Printing.v17.1.Core.resources.dll">
-      <publishTime>03/13/2018 11:20:42</publishTime>
+      <publishTime>11/03/2024 11:51:52</publishTime>
     </File>
     <File Include="bin/es/DevExpress.RichEdit.v16.1.Core.resources.dll">
       <publishTime>10/31/2016 09:56:47</publishTime>
     </File>
     <File Include="bin/es/DevExpress.RichEdit.v17.1.Core.resources.dll">
-      <publishTime>03/13/2018 11:20:47</publishTime>
+      <publishTime>11/03/2024 11:51:55</publishTime>
     </File>
     <File Include="bin/es/DevExpress.Snap.v17.1.Core.resources.dll">
       <publishTime>03/13/2018 11:20:43</publishTime>
@@ -400,7 +723,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:52:44</publishTime>
     </File>
     <File Include="bin/es/DevExpress.Sparkline.v17.1.Core.resources.dll">
-      <publishTime>03/13/2018 11:20:43</publishTime>
+      <publishTime>11/03/2024 11:51:52</publishTime>
     </File>
     <File Include="bin/es/DevExpress.Spreadsheet.v17.1.Core.resources.dll">
       <publishTime>03/13/2018 11:20:49</publishTime>
@@ -409,19 +732,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:52:45</publishTime>
     </File>
     <File Include="bin/es/DevExpress.Utils.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:44</publishTime>
+      <publishTime>11/03/2024 11:51:52</publishTime>
     </File>
     <File Include="bin/es/DevExpress.Utils.v17.1.UI.resources.dll">
       <publishTime>03/13/2018 11:20:44</publishTime>
     </File>
+    <File Include="bin/es/DevExpress.Web.ASPxRichEdit.v17.1.resources.dll">
+      <publishTime>11/03/2024 11:51:45</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Web.ASPxSpellChecker.v17.1.resources.dll">
+      <publishTime>11/03/2024 11:51:45</publishTime>
+    </File>
     <File Include="bin/es/DevExpress.Web.Resources.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:44</publishTime>
+      <publishTime>11/03/2024 11:51:53</publishTime>
     </File>
     <File Include="bin/es/DevExpress.Web.v16.1.resources.dll">
       <publishTime>10/31/2016 09:47:25</publishTime>
     </File>
     <File Include="bin/es/DevExpress.Web.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:36</publishTime>
+      <publishTime>11/03/2024 11:51:45</publishTime>
     </File>
     <File Include="bin/es/DevExpress.Xpo.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:45</publishTime>
@@ -430,7 +759,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:55:09</publishTime>
     </File>
     <File Include="bin/es/DevExpress.XtraBars.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:45</publishTime>
+      <publishTime>11/03/2024 11:51:54</publishTime>
     </File>
     <File Include="bin/es/DevExpress.XtraCharts.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:45</publishTime>
@@ -439,7 +768,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:55:09</publishTime>
     </File>
     <File Include="bin/es/DevExpress.XtraEditors.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:47</publishTime>
+      <publishTime>11/03/2024 11:51:54</publishTime>
     </File>
     <File Include="bin/es/DevExpress.XtraGrid.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:47</publishTime>
@@ -448,7 +777,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:55:09</publishTime>
     </File>
     <File Include="bin/es/DevExpress.XtraLayout.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:47</publishTime>
+      <publishTime>11/03/2024 11:51:54</publishTime>
     </File>
     <File Include="bin/es/DevExpress.XtraNavBar.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:47</publishTime>
@@ -457,7 +786,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:55:09</publishTime>
     </File>
     <File Include="bin/es/DevExpress.XtraPrinting.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:47</publishTime>
+      <publishTime>11/03/2024 11:51:55</publishTime>
     </File>
     <File Include="bin/es/DevExpress.XtraRichEdit.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:47</publishTime>
@@ -469,19 +798,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:56:48</publishTime>
     </File>
     <File Include="bin/es/DevExpress.XtraTreeList.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:50</publishTime>
+      <publishTime>11/03/2024 11:51:55</publishTime>
     </File>
     <File Include="bin/es/DevExpress.XtraVerticalGrid.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:50</publishTime>
     </File>
     <File Include="bin/itextsharp.dll">
-      <publishTime>03/10/2015 14:59:14</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.Data.v16.1.resources.dll">
       <publishTime>10/31/2016 09:49:22</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.Data.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:38</publishTime>
+      <publishTime>11/03/2024 11:51:47</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.DataAccess.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:40</publishTime>
@@ -496,25 +825,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:52:44</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.Office.v17.1.Core.resources.dll">
-      <publishTime>03/13/2018 11:20:42</publishTime>
+      <publishTime>11/03/2024 11:51:52</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.Pdf.v16.1.Core.resources.dll">
       <publishTime>10/31/2016 09:52:44</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.Pdf.v17.1.Core.resources.dll">
-      <publishTime>03/13/2018 11:20:42</publishTime>
+      <publishTime>11/03/2024 11:51:52</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.Printing.v16.1.Core.resources.dll">
       <publishTime>10/31/2016 09:52:44</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.Printing.v17.1.Core.resources.dll">
-      <publishTime>03/13/2018 11:20:42</publishTime>
+      <publishTime>11/03/2024 11:51:52</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.RichEdit.v16.1.Core.resources.dll">
       <publishTime>10/31/2016 09:56:47</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.RichEdit.v17.1.Core.resources.dll">
-      <publishTime>03/13/2018 11:20:47</publishTime>
+      <publishTime>11/03/2024 11:51:55</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.Snap.v17.1.Core.resources.dll">
       <publishTime>03/13/2018 11:20:43</publishTime>
@@ -523,7 +852,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:52:44</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.Sparkline.v17.1.Core.resources.dll">
-      <publishTime>03/13/2018 11:20:43</publishTime>
+      <publishTime>11/03/2024 11:51:52</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.Spreadsheet.v17.1.Core.resources.dll">
       <publishTime>03/13/2018 11:20:49</publishTime>
@@ -532,19 +861,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:52:45</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.Utils.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:44</publishTime>
+      <publishTime>11/03/2024 11:51:52</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.Utils.v17.1.UI.resources.dll">
       <publishTime>03/13/2018 11:20:44</publishTime>
     </File>
+    <File Include="bin/ja/DevExpress.Web.ASPxRichEdit.v17.1.resources.dll">
+      <publishTime>11/03/2024 11:51:45</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Web.ASPxSpellChecker.v17.1.resources.dll">
+      <publishTime>11/03/2024 11:51:45</publishTime>
+    </File>
     <File Include="bin/ja/DevExpress.Web.Resources.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:44</publishTime>
+      <publishTime>11/03/2024 11:51:53</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.Web.v16.1.resources.dll">
       <publishTime>10/31/2016 09:47:25</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.Web.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:36</publishTime>
+      <publishTime>11/03/2024 11:51:45</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.Xpo.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:45</publishTime>
@@ -553,7 +888,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:55:09</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.XtraBars.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:45</publishTime>
+      <publishTime>11/03/2024 11:51:54</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.XtraCharts.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:45</publishTime>
@@ -562,7 +897,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:55:09</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.XtraEditors.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:47</publishTime>
+      <publishTime>11/03/2024 11:51:54</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.XtraGrid.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:47</publishTime>
@@ -571,7 +906,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:55:09</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.XtraLayout.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:47</publishTime>
+      <publishTime>11/03/2024 11:51:54</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.XtraNavBar.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:47</publishTime>
@@ -580,7 +915,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:55:09</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.XtraPrinting.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:47</publishTime>
+      <publishTime>11/03/2024 11:51:55</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.XtraRichEdit.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:47</publishTime>
@@ -592,73 +927,181 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:56:48</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.XtraTreeList.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:50</publishTime>
+      <publishTime>11/03/2024 11:51:55</publishTime>
     </File>
     <File Include="bin/ja/DevExpress.XtraVerticalGrid.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:50</publishTime>
     </File>
     <File Include="bin/log4net.dll">
-      <publishTime>03/08/2017 19:26:22</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/24/2018 15:38:22</publishTime>
     </File>
     <File Include="bin/Microsoft.Data.Edm.dll">
-      <publishTime>03/26/2015 01:35:24</publishTime>
+      <publishTime>04/25/2024 02:07:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/08/2023 08:09:56</publishTime>
     </File>
     <File Include="bin/NPOI.dll">
-      <publishTime>09/22/2014 13:25:32</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="bin/NPOI.OOXML.dll">
-      <publishTime>09/22/2014 13:25:32</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="bin/NPOI.OpenXml4Net.dll">
       <publishTime>09/22/2014 13:25:32</publishTime>
     </File>
     <File Include="bin/NPOI.OpenXmlFormats.dll">
-      <publishTime>09/22/2014 13:25:32</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="bin/pl/AjaxControlToolkit.resources.dll">
       <publishTime>08/13/2014 06:31:40</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
-      <publishTime>06/18/2015 21:19:46</publishTime>
+      <publishTime>05/24/2018 15:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>05/24/2018 15:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>05/24/2018 15:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>05/24/2018 15:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>05/24/2018 15:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>05/24/2018 15:38:22</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
-      <publishTime>06/18/2015 21:19:46</publishTime>
+      <publishTime>05/24/2018 15:38:22</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
-      <publishTime>06/18/2015 21:19:46</publishTime>
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
-      <publishTime>06/18/2015 21:19:44</publishTime>
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
-      <publishTime>06/18/2015 21:19:46</publishTime>
+      <publishTime>05/24/2018 15:38:24</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
-      <publishTime>06/18/2015 21:19:46</publishTime>
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>05/24/2018 15:38:24</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
-      <publishTime>06/18/2015 21:19:46</publishTime>
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
     </File>
     <File Include="bin/roslyn/System.Collections.Immutable.dll">
-      <publishTime>06/18/2015 21:19:46</publishTime>
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.AccessControl.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
     </File>
     <File Include="bin/roslyn/System.Reflection.Metadata.dll">
-      <publishTime>06/18/2015 21:19:46</publishTime>
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.AccessControl.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Claims.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>05/24/2018 15:38:24</publishTime>
     </File>
     <File Include="bin/roslyn/vbc.exe">
-      <publishTime>06/18/2015 21:19:46</publishTime>
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>05/24/2018 15:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>05/24/2018 15:38:24</publishTime>
     </File>
     <File Include="bin/roslyn/VBCSCompiler.exe">
-      <publishTime>06/18/2015 21:19:46</publishTime>
+      <publishTime>05/24/2018 15:38:24</publishTime>
     </File>
     <File Include="bin/roslyn/VBCSCompiler.exe.config">
-      <publishTime>06/18/2015 21:19:46</publishTime>
+      <publishTime>05/24/2018 15:38:24</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.Data.v16.1.resources.dll">
       <publishTime>10/31/2016 09:49:22</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.Data.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:38</publishTime>
+      <publishTime>11/03/2024 11:51:47</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.DataAccess.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:40</publishTime>
@@ -673,25 +1116,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:52:44</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.Office.v17.1.Core.resources.dll">
-      <publishTime>03/13/2018 11:20:42</publishTime>
+      <publishTime>11/03/2024 11:51:52</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.Pdf.v16.1.Core.resources.dll">
       <publishTime>10/31/2016 09:52:44</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.Pdf.v17.1.Core.resources.dll">
-      <publishTime>03/13/2018 11:20:42</publishTime>
+      <publishTime>11/03/2024 11:51:52</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.Printing.v16.1.Core.resources.dll">
       <publishTime>10/31/2016 09:52:44</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.Printing.v17.1.Core.resources.dll">
-      <publishTime>03/13/2018 11:20:42</publishTime>
+      <publishTime>11/03/2024 11:51:52</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.RichEdit.v16.1.Core.resources.dll">
       <publishTime>10/31/2016 09:56:47</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.RichEdit.v17.1.Core.resources.dll">
-      <publishTime>03/13/2018 11:20:47</publishTime>
+      <publishTime>11/03/2024 11:51:55</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.Snap.v17.1.Core.resources.dll">
       <publishTime>03/13/2018 11:20:43</publishTime>
@@ -700,7 +1143,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:52:44</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.Sparkline.v17.1.Core.resources.dll">
-      <publishTime>03/13/2018 11:20:43</publishTime>
+      <publishTime>11/03/2024 11:51:52</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.Spreadsheet.v17.1.Core.resources.dll">
       <publishTime>03/13/2018 11:20:49</publishTime>
@@ -709,19 +1152,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:52:45</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.Utils.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:44</publishTime>
+      <publishTime>11/03/2024 11:51:52</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.Utils.v17.1.UI.resources.dll">
       <publishTime>03/13/2018 11:20:44</publishTime>
     </File>
+    <File Include="bin/ru/DevExpress.Web.ASPxRichEdit.v17.1.resources.dll">
+      <publishTime>11/03/2024 11:51:45</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Web.ASPxSpellChecker.v17.1.resources.dll">
+      <publishTime>11/03/2024 11:51:45</publishTime>
+    </File>
     <File Include="bin/ru/DevExpress.Web.Resources.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:44</publishTime>
+      <publishTime>11/03/2024 11:51:53</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.Web.v16.1.resources.dll">
       <publishTime>10/31/2016 09:47:25</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.Web.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:36</publishTime>
+      <publishTime>11/03/2024 11:51:45</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.Xpo.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:45</publishTime>
@@ -730,7 +1179,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:55:09</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.XtraBars.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:45</publishTime>
+      <publishTime>11/03/2024 11:51:54</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.XtraCharts.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:45</publishTime>
@@ -739,7 +1188,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:55:09</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.XtraEditors.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:47</publishTime>
+      <publishTime>11/03/2024 11:51:54</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.XtraGrid.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:47</publishTime>
@@ -748,7 +1197,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:55:09</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.XtraLayout.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:47</publishTime>
+      <publishTime>11/03/2024 11:51:54</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.XtraNavBar.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:47</publishTime>
@@ -757,7 +1206,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:55:09</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.XtraPrinting.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:47</publishTime>
+      <publishTime>11/03/2024 11:51:55</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.XtraRichEdit.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:47</publishTime>
@@ -769,88 +1218,196 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/31/2016 09:56:48</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.XtraTreeList.v17.1.resources.dll">
-      <publishTime>03/13/2018 11:20:50</publishTime>
+      <publishTime>11/03/2024 11:51:55</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.XtraVerticalGrid.v17.1.resources.dll">
       <publishTime>03/13/2018 11:20:50</publishTime>
     </File>
     <File Include="bin/stat2018.dll">
-      <publishTime>01/07/2019 15:20:18</publishTime>
+      <publishTime>11/07/2024 20:38:25</publishTime>
+    </File>
+    <File Include="bin/stat2018.pdb">
+      <publishTime>11/07/2024 20:38:25</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>02/01/2018 12:17:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>02/01/2018 12:17:40</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>02/01/2018 12:19:26</publishTime>
+    </File>
+    <File Include="classes/Class1.cs">
+      <publishTime>06/12/2024 21:58:37</publishTime>
+    </File>
+    <File Include="classes/common.cs">
+      <publishTime>06/23/2024 17:01:38</publishTime>
+    </File>
+    <File Include="classes/CustomTemplate.cs">
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="classes/dataReaders.cs">
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="classes/datyDoMSS.cs">
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="classes/devExpressXXL.cs">
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="classes/Header.cs">
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="classes/listaFormularzy.cs">
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="classes/logowanie.cs">
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="classes/log_4_net.cs">
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="classes/mss.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="classes/pdfTables.cs">
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="classes/SsrSso.cs">
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="classes/tabele.cs">
+      <publishTime>09/08/2024 14:06:59</publishTime>
+    </File>
+    <File Include="classes/XMLHeaders.cs">
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="Connected Services/ServiceReference2/configuration.svcinfo">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Connected Services/ServiceReference2/configuration91.svcinfo">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Connected Services/ServiceReference2/Reference.cs">
+      <publishTime>03/28/2024 07:26:08</publishTime>
+    </File>
+    <File Include="Connected Services/ServiceReference2/Reference.svcmap">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Connected Services/ServiceReference2/SerwisWymiany.disco">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Connected Services/ServiceReference2/SerwisWymiany.wsdl">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Connected Services/ServiceReference3/configuration.svcinfo">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Connected Services/ServiceReference3/configuration91.svcinfo">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Connected Services/ServiceReference3/Reference.cs">
+      <publishTime>03/28/2024 07:26:13</publishTime>
+    </File>
+    <File Include="Connected Services/ServiceReference3/Reference.svcmap">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Connected Services/ServiceReference3/SerwisWymiany.disco">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Connected Services/ServiceReference3/SerwisWymiany.wsdl">
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="default.aspx">
-      <publishTime>03/13/2018 21:40:39</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="default.aspx.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="default.aspx.designer.cs">
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="GlobalSuppressions.cs">
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="img/ajax-loader.gif">
-      <publishTime>01/10/2018 16:41:54</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="img/alert.JPG">
-      <publishTime>01/10/2018 16:41:54</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="img/bg-signin-divider.png">
-      <publishTime>01/10/2018 16:41:54</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="img/calendar.png">
-      <publishTime>01/10/2018 16:41:54</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="img/cal_1.jpg">
-      <publishTime>01/10/2018 16:41:54</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="img/cancel.png">
-      <publishTime>01/10/2018 16:41:54</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="img/cd-top-arrow.svg">
-      <publishTime>01/10/2018 16:41:54</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="img/collapse.jpg">
-      <publishTime>01/10/2018 16:41:54</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="img/collapse_blue.jpg">
-      <publishTime>01/10/2018 16:41:54</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="img/details.jpg">
-      <publishTime>01/10/2018 16:41:54</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="img/edit.jpg">
-      <publishTime>01/10/2018 16:41:54</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="img/expand.jpg">
-      <publishTime>01/10/2018 16:41:54</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="img/expand_blue.jpg">
-      <publishTime>01/10/2018 16:41:54</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="img/images.png">
-      <publishTime>01/10/2018 16:41:54</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="img/minus.jpg">
-      <publishTime>01/10/2018 16:41:54</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="img/ok_1.png">
-      <publishTime>01/10/2018 16:41:54</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="img/plus-icon.png">
-      <publishTime>01/10/2018 16:41:54</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="img/pobrane.jpg">
-      <publishTime>01/10/2018 16:41:54</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="img/str1.png">
-      <publishTime>01/10/2018 16:41:54</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="img/str2.png">
-      <publishTime>01/10/2018 16:41:54</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="img/stralka.jpg">
-      <publishTime>01/10/2018 16:41:54</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="img/whitePoint.png">
-      <publishTime>01/10/2018 16:41:54</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="img/zamknij.jpg">
-      <publishTime>01/10/2018 16:41:54</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="kof.aspx">
-      <publishTime>03/13/2018 21:58:51</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="kof.aspx.cs">
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="kof.aspx.designer.cs">
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="kontrolka.aspx">
       <publishTime>12/21/2018 17:35:12</publishTime>
@@ -858,8 +1415,41 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="kontrolka2018.aspx">
       <publishTime>02/09/2018 23:27:41</publishTime>
     </File>
+    <File Include="kontrolka2022.aspx">
+      <publishTime>10/19/2024 10:29:14</publishTime>
+    </File>
+    <File Include="kontrolka2022.aspx.cs">
+      <publishTime>11/07/2024 19:58:37</publishTime>
+    </File>
+    <File Include="kontrolka2022.aspx.designer.cs">
+      <publishTime>10/19/2024 10:27:53</publishTime>
+    </File>
+    <File Include="kontrolka2022X.aspx">
+      <publishTime>10/13/2024 16:34:29</publishTime>
+    </File>
+    <File Include="kontrolka2022X.aspx.cs">
+      <publishTime>04/02/2024 19:50:43</publishTime>
+    </File>
+    <File Include="kontrolka2022X.aspx.designer.cs">
+      <publishTime>03/10/2024 20:35:34</publishTime>
+    </File>
     <File Include="kontrolkaDruk.aspx">
-      <publishTime>12/21/2018 17:35:12</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="kontrolkaDruk.aspx.cs">
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="kontrolkaDruk.aspx.designer.cs">
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="kontrolkaExcell.aspx">
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="kontrolkaExcell.aspx.cs">
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="kontrolkaExcell.aspx.designer.cs">
+      <publishTime>12/11/2022 13:42:33</publishTime>
     </File>
     <File Include="kontrolkaNew.aspx">
       <publishTime>02/09/2018 01:37:51</publishTime>
@@ -867,188 +1457,791 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="kontrolkaX.aspx">
       <publishTime>03/13/2018 19:33:31</publishTime>
     </File>
+    <File Include="libman.json">
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
     <File Include="log4net.config">
-      <publishTime>12/12/2018 21:05:26</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="mk.aspx">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mk.aspx.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mk.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mp.aspx">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mp.aspx.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mp.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mp2.aspx">
+      <publishTime>11/07/2024 20:04:18</publishTime>
+    </File>
+    <File Include="mp2.aspx.cs">
+      <publishTime>11/07/2024 20:37:54</publishTime>
+    </File>
+    <File Include="mp2.aspx.designer.cs">
+      <publishTime>07/10/2024 22:08:21</publishTime>
+    </File>
+    <File Include="mss10e.aspx">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mss10e.aspx.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mss10e.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mss10o.aspx">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mss10o.aspx.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mss10o.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
     </File>
     <File Include="mss10r.aspx">
-      <publishTime>08/07/2018 16:40:09</publishTime>
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="mss10r.aspx.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mss10r.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mss11o.aspx">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mss11o.aspx.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mss11o.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
     </File>
     <File Include="mss11r.aspx">
-      <publishTime>12/25/2018 13:11:19</publishTime>
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mss11r.aspx.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mss11r.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
     </File>
     <File Include="mss16r.aspx">
-      <publishTime>08/23/2018 05:55:22</publishTime>
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="mss16r.aspx.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mss16r.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
     </File>
     <File Include="mss19o.aspx">
-      <publishTime>08/23/2018 09:09:39</publishTime>
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mss19o.aspx.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mss19o.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
     </File>
     <File Include="mss19o2.aspx">
       <publishTime>08/23/2018 03:18:34</publishTime>
     </File>
+    <File Include="mss19r.aspx">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mss19r.aspx.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mss19r.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
     <File Include="mss1o.aspx">
-      <publishTime>08/23/2018 06:43:41</publishTime>
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="mss1o.aspx.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mss1o.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
     </File>
     <File Include="mss1r.aspx">
-      <publishTime>08/07/2018 16:40:10</publishTime>
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mss1r.aspx.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mss1r.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
     </File>
     <File Include="mss1r_old.aspx">
       <publishTime>02/09/2018 04:58:04</publishTime>
     </File>
     <File Include="mss40r.aspx">
-      <publishTime>08/07/2018 16:40:10</publishTime>
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="mss40r.aspx.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mss40r.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="mss5o.aspx">
+      <publishTime>06/23/2024 17:12:48</publishTime>
+    </File>
+    <File Include="mss5o.aspx.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mss5o.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
     </File>
     <File Include="mss5r.aspx">
-      <publishTime>08/07/2018 16:40:10</publishTime>
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="mss5r.aspx.cs">
+      <publishTime>06/23/2024 17:12:44</publishTime>
+    </File>
+    <File Include="mss5r.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="mss6r.aspx">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="mss6r.aspx.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="mss6r.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
     </File>
     <File Include="msstabele/mss5r.xlsx">
-      <publishTime>05/23/2018 00:07:07</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="nowa.aspx">
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="nowa.aspx.cs">
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="nowa.aspx.designer.cs">
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="nowaN.aspx">
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="nowaN.aspx.cs">
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="nowaN.aspx.designer.cs">
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="obba.aspx">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="obba.aspx.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="obba.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
     </File>
     <File Include="obbc.aspx">
-      <publishTime>12/14/2018 22:53:22</publishTime>
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="obbc.aspx.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="obbc.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
     </File>
     <File Include="obbk.aspx">
-      <publishTime>12/14/2018 22:39:52</publishTime>
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="obbk.aspx.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="obbk.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
     </File>
     <File Include="obbp.aspx">
-      <publishTime>12/14/2018 22:39:52</publishTime>
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="obbp.aspx.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="obbp.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
     </File>
     <File Include="obbr.aspx">
-      <publishTime>12/14/2018 22:39:52</publishTime>
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="obbr.aspx.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="obbr.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
     </File>
     <File Include="ocenaPracownika.aspx">
-      <publishTime>03/13/2018 19:33:38</publishTime>
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="ocenaPracownika.aspx.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="ocenaPracownika.aspx.designer.cs">
+      <publishTime>12/11/2022 13:42:33</publishTime>
+    </File>
+    <File Include="oczc.aspx">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="oczc.aspx.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="oczc.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="oczc2.aspx">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="oczc2.aspx.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="oczc2.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="oczp.aspx">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="oczp.aspx.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="oczp.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="oczu.aspx">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="oczu.aspx.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="oczu.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
     </File>
     <File Include="oglc.aspx">
-      <publishTime>12/19/2018 20:59:49</publishTime>
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="oglc.aspx.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="oglc.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
     </File>
     <File Include="oglc2.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="oglc2.aspx.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="oglc2.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="oglc3.aspx">
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="oglc3.aspx.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="oglc3.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
     </File>
     <File Include="oglcOLD.aspx">
       <publishTime>03/13/2018 19:33:24</publishTime>
     </File>
     <File Include="oglk.aspx">
-      <publishTime>12/19/2018 20:18:44</publishTime>
+      <publishTime>09/08/2024 11:23:09</publishTime>
+    </File>
+    <File Include="oglk.aspx.cs">
+      <publishTime>09/08/2024 14:13:49</publishTime>
+    </File>
+    <File Include="oglk.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
     </File>
     <File Include="oglk2.aspx">
-      <publishTime>12/19/2018 20:52:39</publishTime>
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="oglk2.aspx.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="oglk2.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
     </File>
     <File Include="oglk3.aspx">
-      <publishTime>12/26/2018 09:57:56</publishTime>
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="oglk3.aspx.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="oglk3.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="oglp.aspx">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="oglp.aspx.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="oglp.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
     </File>
     <File Include="oglr.aspx">
-      <publishTime>12/25/2018 06:47:46</publishTime>
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="oglr.aspx.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="oglr.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
     </File>
     <File Include="oglr2.aspx">
-      <publishTime>12/19/2018 02:23:08</publishTime>
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="oglr2.aspx.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="oglr2.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
     </File>
     <File Include="okrc.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="okrc.aspx.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="okrc.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="okrcN.aspx">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="okrcN.aspx.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="okrcN.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
     </File>
     <File Include="okrd.aspx">
-      <publishTime>12/18/2018 21:33:23</publishTime>
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="okrd.aspx.cs">
+      <publishTime>06/23/2024 17:12:45</publishTime>
+    </File>
+    <File Include="okrd.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
     </File>
     <File Include="okrk.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="okrk.aspx.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="okrk.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
     </File>
     <File Include="okrp.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:48</publishTime>
+    </File>
+    <File Include="okrp.aspx.cs">
+      <publishTime>06/23/2024 17:12:48</publishTime>
+    </File>
+    <File Include="okrp.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
     </File>
     <File Include="okrr.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="okrr.aspx.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="okrr.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
     </File>
     <File Include="oksr.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="oksr.aspx.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="oksr.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="okt2.aspx">
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="okt2.aspx.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="okt2.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
     </File>
     <File Include="oktc.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="oktc.aspx.cs">
+      <publishTime>06/23/2024 17:12:48</publishTime>
+    </File>
+    <File Include="oktc.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
     </File>
     <File Include="oktg.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="oktg.aspx.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="oktg.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
     </File>
     <File Include="oktk.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>09/30/2024 12:46:18</publishTime>
+    </File>
+    <File Include="oktk.aspx.cs">
+      <publishTime>09/30/2024 13:09:46</publishTime>
+    </File>
+    <File Include="oktk.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
     </File>
     <File Include="oktkr.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="oktkr.aspx.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="oktkr.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
     </File>
     <File Include="oktp.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="oktp.aspx.cs">
+      <publishTime>10/11/2024 15:52:41</publishTime>
+    </File>
+    <File Include="oktp.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="oktp2.aspx">
+      <publishTime>10/11/2024 15:44:55</publishTime>
+    </File>
+    <File Include="oktp2.aspx.cs">
+      <publishTime>10/11/2024 15:54:12</publishTime>
+    </File>
+    <File Include="oktp2.aspx.designer.cs">
+      <publishTime>10/11/2024 15:27:59</publishTime>
     </File>
     <File Include="oktr.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>09/08/2024 13:40:47</publishTime>
+    </File>
+    <File Include="oktr.aspx.cs">
+      <publishTime>09/08/2024 14:06:59</publishTime>
+    </File>
+    <File Include="oktr.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="onsa.aspx">
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="onsa.aspx.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="onsa.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
     </File>
     <File Include="onsc.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="onsc.aspx.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="onsc.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
     </File>
     <File Include="onsg.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="onsg.aspx.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="onsg.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
     </File>
     <File Include="onsk.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="onsk.aspx.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="onsk.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
     </File>
     <File Include="onsp.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="onsp.aspx.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="onsp.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
     </File>
     <File Include="onsr.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="onsr.aspx.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="onsr.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
     </File>
     <File Include="onsu.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="onsu.aspx.cs">
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="onsu.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
     </File>
     <File Include="oopc.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="oopc.aspx.cs">
+      <publishTime>06/23/2024 17:12:48</publishTime>
+    </File>
+    <File Include="oopc.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="oopc_Old.aspx">
+      <publishTime>06/23/2024 17:12:46</publishTime>
+    </File>
+    <File Include="oopc_Old.aspx.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="oopc_Old.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="oopg.aspx">
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="oopg.aspx.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="oopg.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
     </File>
     <File Include="oopk.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="oopk.aspx.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="oopk.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
     </File>
     <File Include="oopp.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="oopp.aspx.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="oopp.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
     </File>
     <File Include="oopr.aspx">
-      <publishTime>12/24/2018 15:52:35</publishTime>
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="oopr.aspx.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="oopr.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="ooprOld.aspx">
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="ooprOld.aspx.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="ooprOld.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
     </File>
     <File Include="oopu.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="oopu.aspx.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="oopu.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="osog.aspx">
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="osog.aspx.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="osog.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
     </File>
     <File Include="otrc.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="otrc.aspx.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="otrc.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
     </File>
     <File Include="otrg.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="otrg.aspx.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="otrg.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
     </File>
     <File Include="otrk.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="otrk.aspx.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="otrk.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
     </File>
     <File Include="otrkd.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:48</publishTime>
+    </File>
+    <File Include="otrkd.aspx.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="otrkd.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
     </File>
     <File Include="otrkr.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="otrkr.aspx.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="otrkr.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
     </File>
     <File Include="otrp.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="otrp.aspx.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="otrp.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
     </File>
     <File Include="otrr.aspx">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="otrr.aspx.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="otrr.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>01/05/2018 16:33:00</publishTime>
+      <publishTime>07/07/2024 18:46:51</publishTime>
+    </File>
+    <File Include="passwordPopup.aspx">
+      <publishTime>12/11/2022 13:42:34</publishTime>
+    </File>
+    <File Include="passwordPopup.aspx.cs">
+      <publishTime>12/11/2022 13:42:34</publishTime>
+    </File>
+    <File Include="passwordPopup.aspx.designer.cs">
+      <publishTime>12/11/2022 13:42:34</publishTime>
     </File>
     <File Include="popup.aspx">
-      <publishTime>11/16/2018 01:03:41</publishTime>
+      <publishTime>12/11/2022 13:42:34</publishTime>
+    </File>
+    <File Include="popup.aspx.cs">
+      <publishTime>06/23/2024 17:12:47</publishTime>
+    </File>
+    <File Include="popup.aspx.designer.cs">
+      <publishTime>12/11/2022 13:42:34</publishTime>
+    </File>
+    <File Include="Properties/AssemblyInfo.cs">
+      <publishTime>12/19/2022 11:16:53</publishTime>
+    </File>
+    <File Include="Properties/DataSources/System.Data.DataTable.datasource">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Properties/DataSources/System.Data.DataTable1.datasource">
+      <publishTime>07/16/2023 12:47:41</publishTime>
+    </File>
+    <File Include="Properties/DataSources/System.Data.DataTable2.datasource">
+      <publishTime>07/16/2023 12:48:09</publishTime>
+    </File>
+    <File Include="Properties/PublishProfiles/file.pubxml">
+      <publishTime>11/07/2024 20:38:20</publishTime>
+    </File>
+    <File Include="Properties/PublishProfiles/FolderProfile.pubxml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Properties/Resources.Designer.cs">
+      <publishTime>03/28/2024 07:26:13</publishTime>
+    </File>
+    <File Include="Properties/Resources.resx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Properties/Settings.Designer.cs">
+      <publishTime>03/28/2024 07:26:13</publishTime>
+    </File>
+    <File Include="Properties/Settings.settings">
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="redirector.aspx">
-      <publishTime>05/08/2018 07:50:45</publishTime>
+      <publishTime>12/11/2023 18:01:50</publishTime>
+    </File>
+    <File Include="redirector.aspx.cs">
+      <publishTime>02/25/2024 13:13:24</publishTime>
+    </File>
+    <File Include="redirector.aspx.designer.cs">
+      <publishTime>12/11/2022 13:42:34</publishTime>
+    </File>
+    <File Include="redirector2.aspx">
+      <publishTime>12/11/2022 13:42:34</publishTime>
+    </File>
+    <File Include="redirector2.aspx.cs">
+      <publishTime>12/11/2022 13:42:34</publishTime>
+    </File>
+    <File Include="redirector2.aspx.designer.cs">
+      <publishTime>12/11/2022 13:42:34</publishTime>
+    </File>
+    <File Include="RenderingResult.cs">
+      <publishTime>03/30/2024 14:42:03</publishTime>
     </File>
     <File Include="Scripts/ai.0.15.0-build58334.js">
-      <publishTime>01/10/2018 16:37:32</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Scripts/ai.0.15.0-build58334.min.js">
-      <publishTime>01/10/2018 16:37:32</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Scripts/custom.js">
-      <publishTime>01/10/2018 16:37:32</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Scripts/index.js">
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.js">
       <publishTime>01/10/2018 16:37:32</publishTime>
@@ -1060,79 +2253,115 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/10/2018 16:37:32</publishTime>
     </File>
     <File Include="Scripts/jquery-1.8.3.js">
-      <publishTime>01/12/2018 11:22:54</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Scripts/jquery-1.8.3.min.js">
-      <publishTime>01/12/2018 11:19:22</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Scripts/jquery-latest.min.js">
-      <publishTime>01/10/2018 16:37:32</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Scripts/jquery-ui.min.js">
-      <publishTime>01/10/2018 16:37:32</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Scripts/jquery.divascookies-0.6.min.js">
-      <publishTime>12/14/2018 22:39:53</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Scripts/jQuery.print.js">
-      <publishTime>03/14/2018 02:18:47</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Scripts/main.js">
-      <publishTime>01/10/2018 16:37:32</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Scripts/modernizr.js">
-      <publishTime>12/14/2018 22:39:54</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Scripts/rls.js">
-      <publishTime>01/13/2018 06:28:44</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="SerwisWymiany.asmx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="SerwisWymiany.asmx.cs">
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Site1.Master">
-      <publishTime>12/26/2018 05:13:17</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Site1.Master.cs">
+      <publishTime>12/18/2023 19:43:05</publishTime>
+    </File>
+    <File Include="Site1.Master.designer.cs">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Statystyki_2018.csproj">
+      <publishTime>10/11/2024 15:56:06</publishTime>
+    </File>
+    <File Include="Statystyki_2018.csproj.user">
+      <publishTime>11/07/2024 20:38:22</publishTime>
+    </File>
+    <File Include="style/card.css">
+      <publishTime>12/11/2022 13:42:34</publishTime>
     </File>
     <File Include="style/login.css">
-      <publishTime>12/18/2018 20:51:16</publishTime>
+      <publishTime>12/11/2022 13:42:34</publishTime>
     </File>
     <File Include="style/menu.css">
-      <publishTime>12/25/2018 05:29:26</publishTime>
+      <publishTime>12/11/2022 13:42:34</publishTime>
+    </File>
+    <File Include="style/MUstyles.css">
+      <publishTime>12/11/2022 13:42:34</publishTime>
     </File>
     <File Include="style/new.css">
-      <publishTime>08/21/2018 14:26:02</publishTime>
+      <publishTime>12/11/2022 13:42:34</publishTime>
+    </File>
+    <File Include="style/oktkr.css">
+      <publishTime>12/11/2022 13:42:34</publishTime>
     </File>
     <File Include="style/popup.css">
-      <publishTime>01/05/2018 16:57:44</publishTime>
+      <publishTime>12/11/2022 13:42:34</publishTime>
     </File>
     <File Include="style/Siteggg.css">
       <publishTime>01/05/2018 16:57:42</publishTime>
     </File>
     <File Include="style/ssrocena.css">
-      <publishTime>12/18/2018 20:51:16</publishTime>
+      <publishTime>12/11/2022 13:42:34</publishTime>
     </File>
     <File Include="style/style.css">
-      <publishTime>12/25/2018 04:55:19</publishTime>
+      <publishTime>12/11/2022 13:42:34</publishTime>
     </File>
     <File Include="style/Tables.css">
-      <publishTime>12/18/2018 20:51:16</publishTime>
+      <publishTime>10/11/2024 11:06:59</publishTime>
     </File>
     <File Include="temp.aspx">
       <publishTime>12/14/2018 22:39:54</publishTime>
     </File>
     <File Include="template.aspx">
-      <publishTime>12/14/2018 22:39:54</publishTime>
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="template.aspx.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="template.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:42</publishTime>
     </File>
     <File Include="Template/agl.xlsx">
-      <publishTime>08/06/2018 08:52:28</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/aglc.xlsx">
-      <publishTime>08/19/2018 23:25:30</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/aglg.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/aglg2.xlsx">
-      <publishTime>12/13/2018 02:07:08</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/akac.xlsx">
-      <publishTime>01/10/2018 18:29:12</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/akac2.xlsx">
-      <publishTime>01/10/2018 18:29:12</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/akac2_.xlsx">
       <publishTime>01/10/2018 18:29:12</publishTime>
@@ -1141,187 +2370,340 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/10/2018 18:29:12</publishTime>
     </File>
     <File Include="Template/akap.xlsx">
-      <publishTime>01/10/2018 18:29:12</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/akap2.xlsx">
-      <publishTime>01/10/2018 18:29:12</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/akap2_.xlsx">
       <publishTime>01/10/2018 18:29:12</publishTime>
     </File>
     <File Include="Template/akape.xls">
-      <publishTime>01/10/2018 18:29:12</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/akap_.xlsx">
       <publishTime>01/10/2018 18:29:12</publishTime>
     </File>
     <File Include="Template/akrc.xlsx">
-      <publishTime>12/25/2018 17:13:10</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/akrg.xlsx">
-      <publishTime>12/26/2018 04:46:45</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/akrk.xlsx">
-      <publishTime>12/26/2018 03:15:08</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/akrp.xlsx">
-      <publishTime>12/26/2018 06:26:14</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/aktc2.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/aktg.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/aktg2.xlsx">
+      <publishTime>06/11/2023 14:44:00</publishTime>
+    </File>
+    <File Include="Template/aktk.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/aktk2.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/aktpe.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/aktr.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/aopc.xlsx">
+      <publishTime>04/26/2024 12:32:25</publishTime>
+    </File>
+    <File Include="Template/aopc2.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/aopg.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/aopk.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/aopk2.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/aopp.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/aoppe.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/mk.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/mp.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/obba.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/obbc.xlsx">
-      <publishTime>11/20/2018 16:59:56</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/obbk.xlsx">
-      <publishTime>11/16/2018 10:00:39</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/obbp.xlsx">
-      <publishTime>11/28/2018 17:12:16</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/obbr.xlsx">
-      <publishTime>11/17/2018 01:53:53</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/oczc.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/oczu.xlsx">
+      <publishTime>01/08/2023 19:42:06</publishTime>
     </File>
     <File Include="Template/oglc.xlsx">
-      <publishTime>01/10/2018 18:29:12</publishTime>
+      <publishTime>02/05/2023 17:17:24</publishTime>
     </File>
     <File Include="Template/oglc2.xlsx">
-      <publishTime>03/03/2018 05:48:58</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/oglc3.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/oglc_.xlsx">
       <publishTime>04/06/2018 03:28:09</publishTime>
     </File>
     <File Include="Template/oglk.xlsx">
-      <publishTime>08/08/2018 10:08:45</publishTime>
+      <publishTime>02/05/2023 17:59:48</publishTime>
+    </File>
+    <File Include="Template/oglk2.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/oglk3.xlsx">
-      <publishTime>12/11/2018 18:58:43</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/oglk_.xlsx">
       <publishTime>08/07/2018 22:44:21</publishTime>
     </File>
+    <File Include="Template/oglp.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
     <File Include="Template/oglr.xlsx">
-      <publishTime>03/04/2018 21:02:40</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/oglr2.xlsx">
-      <publishTime>04/10/2018 18:20:17</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/oglr_.xlsx">
       <publishTime>05/25/2018 18:27:10</publishTime>
     </File>
     <File Include="Template/okrc.xlsx">
-      <publishTime>04/11/2018 14:56:15</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/okrd.xlsx">
-      <publishTime>04/11/2018 01:12:15</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/okrk.xlsx">
-      <publishTime>03/28/2018 17:30:10</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/okrp.xlsx">
-      <publishTime>06/05/2018 16:58:23</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/okrr.xlsx">
-      <publishTime>03/01/2018 15:58:42</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/OKTC.xlsx">
-      <publishTime>04/05/2018 22:36:08</publishTime>
+      <publishTime>04/02/2023 16:56:33</publishTime>
     </File>
     <File Include="Template/oktg.xlsx">
-      <publishTime>05/08/2018 21:40:58</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/oktk.xlsx">
-      <publishTime>01/10/2018 18:29:12</publishTime>
+      <publishTime>09/30/2024 12:59:43</publishTime>
     </File>
     <File Include="Template/oktkr.xlsx">
-      <publishTime>08/07/2018 15:18:52</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/oktk_.xlsx">
       <publishTime>04/05/2018 22:16:55</publishTime>
     </File>
     <File Include="Template/oktp.xlsx">
-      <publishTime>12/13/2018 15:57:55</publishTime>
+      <publishTime>05/07/2023 18:00:28</publishTime>
+    </File>
+    <File Include="Template/oktp2.xlsx">
+      <publishTime>10/11/2024 15:56:02</publishTime>
     </File>
     <File Include="Template/oktr.xlsx">
-      <publishTime>05/23/2018 14:02:21</publishTime>
+      <publishTime>09/02/2024 19:55:13</publishTime>
     </File>
     <File Include="Template/onsc.xlsx">
-      <publishTime>10/14/2018 21:41:30</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/onsg.xlsx">
-      <publishTime>05/23/2018 08:10:44</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/onsr.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/onsu.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/oopc.xlsx">
-      <publishTime>01/10/2018 18:29:12</publishTime>
+      <publishTime>03/28/2023 11:42:01</publishTime>
     </File>
     <File Include="Template/oopc_.xlsx">
       <publishTime>01/10/2018 18:29:12</publishTime>
     </File>
+    <File Include="Template/oopg.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
     <File Include="Template/oopk.xlsx">
-      <publishTime>12/08/2018 23:12:47</publishTime>
+      <publishTime>04/02/2023 11:18:52</publishTime>
     </File>
     <File Include="Template/oopk_.xlsx">
       <publishTime>01/10/2018 18:29:12</publishTime>
     </File>
     <File Include="Template/oopp.xlsx">
-      <publishTime>01/10/2018 18:29:12</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/oopp_.xlsx">
       <publishTime>01/10/2018 18:29:12</publishTime>
     </File>
     <File Include="Template/oopr.xlsx">
-      <publishTime>08/29/2018 13:01:13</publishTime>
+      <publishTime>04/10/2023 17:50:42</publishTime>
     </File>
     <File Include="Template/oopr_old.xlsx">
       <publishTime>01/10/2018 18:29:12</publishTime>
     </File>
     <File Include="Template/oopu.xlsx">
-      <publishTime>01/10/2018 18:29:12</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/oopu_.xlsx">
       <publishTime>01/10/2018 18:29:12</publishTime>
     </File>
+    <File Include="Template/osok.xlsx">
+      <publishTime>12/13/2023 12:54:07</publishTime>
+    </File>
     <File Include="Template/otrc.xlsx">
-      <publishTime>07/30/2018 12:29:55</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/otrg.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/otrk.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/otrkd.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/otrkr.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/otrp.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/otrr.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/RaportCywilny01.xlsx">
-      <publishTime>01/10/2018 18:29:12</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/RaportKarny.xlsx">
-      <publishTime>01/10/2018 18:29:12</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/SamsungIF_Rg.woff">
-      <publishTime>01/10/2018 18:29:12</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/SSRocena.xlsx">
-      <publishTime>01/10/2018 18:29:12</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/SSRocena1.xlsx">
-      <publishTime>01/10/2018 18:29:12</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/statystykiWydzialCywilny.xlsx">
-      <publishTime>01/10/2018 18:29:12</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/wab.xlsx">
-      <publishTime>04/06/2018 05:05:46</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Template/wizc_aspx.xlsx">
-      <publishTime>11/15/2018 12:04:13</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/wizg_aspx.xlsx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="test.aspx">
-      <publishTime>12/15/2018 01:17:37</publishTime>
+      <publishTime>07/16/2024 13:25:28</publishTime>
+    </File>
+    <File Include="test.aspx.cs">
+      <publishTime>09/04/2024 21:20:18</publishTime>
+    </File>
+    <File Include="test.aspx.designer.cs">
+      <publishTime>07/14/2024 18:22:45</publishTime>
+    </File>
+    <File Include="TheNewControll.aspx">
+      <publishTime>06/23/2024 17:12:42</publishTime>
+    </File>
+    <File Include="TheNewControll.aspx.cs">
+      <publishTime>06/10/2024 21:25:09</publishTime>
+    </File>
+    <File Include="TheNewControll.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:41</publishTime>
+    </File>
+    <File Include="time.txt">
+      <publishTime>12/11/2022 13:42:34</publishTime>
     </File>
     <File Include="UserControlls/PopupLinkButtom.ascx">
-      <publishTime>03/26/2018 12:15:09</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="UserControlls/PopupLinkButtom.ascx.cs">
+      <publishTime>06/23/2024 17:12:48</publishTime>
+    </File>
+    <File Include="UserControlls/PopupLinkButtom.ascx.designer.cs">
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="UserControlls/PopupLinkButtom2.ascx">
-      <publishTime>03/26/2018 12:15:38</publishTime>
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="UserControlls/PopupLinkButtom2.ascx.cs">
+      <publishTime>06/23/2024 17:12:48</publishTime>
+    </File>
+    <File Include="UserControlls/PopupLinkButtom2.ascx.designer.cs">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="UserControlls/ZarzadzanieFormularzami.ascx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="UserControlls/ZarzadzanieFormularzami.ascx.cs">
+      <publishTime>06/23/2024 16:43:46</publishTime>
+    </File>
+    <File Include="UserControlls/ZarzadzanieFormularzami.ascx.designer.cs">
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="version.txt">
-      <publishTime>01/07/2019 14:45:19</publishTime>
+      <publishTime>11/07/2024 20:01:05</publishTime>
     </File>
     <File Include="wab.aspx">
-      <publishTime>08/07/2018 16:40:11</publishTime>
+      <publishTime>06/23/2024 17:12:48</publishTime>
+    </File>
+    <File Include="wab.aspx.cs">
+      <publishTime>06/23/2024 17:12:48</publishTime>
+    </File>
+    <File Include="wab.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:48</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>12/18/2018 16:58:47</publishTime>
+      <publishTime>11/07/2024 20:38:01</publishTime>
+    </File>
+    <File Include="Web.Debug.config">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Web.Release.config">
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="WebForm1.aspx">
       <publishTime>03/13/2018 19:33:45</publishTime>
@@ -1329,11 +2711,221 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="WebForm2.aspx">
       <publishTime>03/13/2018 19:33:46</publishTime>
     </File>
+    <File Include="wizc.aspx">
+      <publishTime>06/23/2024 17:12:48</publishTime>
+    </File>
+    <File Include="wizc.aspx.cs">
+      <publishTime>06/23/2024 17:12:48</publishTime>
+    </File>
+    <File Include="wizc.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:48</publishTime>
+    </File>
+    <File Include="wizg.aspx">
+      <publishTime>06/23/2024 17:12:48</publishTime>
+    </File>
+    <File Include="wizg.aspx.cs">
+      <publishTime>06/23/2024 17:12:48</publishTime>
+    </File>
+    <File Include="wizg.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:48</publishTime>
+    </File>
+    <File Include="wizk.aspx">
+      <publishTime>06/23/2024 17:12:48</publishTime>
+    </File>
+    <File Include="wizk.aspx.cs">
+      <publishTime>06/23/2024 17:12:48</publishTime>
+    </File>
+    <File Include="wizk.aspx.designer.cs">
+      <publishTime>06/23/2024 17:12:48</publishTime>
+    </File>
     <File Include="wizytacjaCywilny.aspx">
       <publishTime>12/21/2018 11:40:55</publishTime>
     </File>
+    <File Include="Wymiana1.aspx">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Wymiana1.aspx.cs">
+      <publishTime>12/19/2022 20:58:54</publishTime>
+    </File>
+    <File Include="Wymiana1.aspx.designer.cs">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="wyszukiwarka.cs">
+      <publishTime>12/11/2022 13:42:34</publishTime>
+    </File>
     <File Include="wyszukiwarkaspraw.aspx">
-      <publishTime>03/13/2018 19:33:46</publishTime>
+      <publishTime>12/11/2022 13:42:34</publishTime>
+    </File>
+    <File Include="wyszukiwarkaspraw.aspx.cs">
+      <publishTime>04/02/2024 17:54:09</publishTime>
+    </File>
+    <File Include="wyszukiwarkaspraw.aspx.designer.cs">
+      <publishTime>12/11/2022 13:42:34</publishTime>
+    </File>
+    <File Include="XMLHeaders/aglc1.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/aglc3.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/akrp2.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/aktc.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/aktc2.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/aktg.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/aktg2.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/aktk1.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/aktk2.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/aktk2_1.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/aktk2_2.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/aktpe1.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/aktpe2.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/aktr.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/ansa.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/aopk2.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/aopp.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/aoppe.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/mss.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/MSS10o.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/MSS10r.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/MSS11o.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/MSS11r.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/MSS16r.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/MSS19o.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/MSS19r.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/MSS1o.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/MSS1r.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/MSS5o.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/MSS5r.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/MSS6r.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/oczc1.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/oczp.xml">
+      <publishTime>02/06/2023 10:39:01</publishTime>
+    </File>
+    <File Include="XMLHeaders/oczu.xml">
+      <publishTime>12/19/2022 22:04:23</publishTime>
+    </File>
+    <File Include="XMLHeaders/oglk.xml">
+      <publishTime>04/13/2024 18:14:30</publishTime>
+    </File>
+    <File Include="XMLHeaders/oglr_01.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/okrc.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/okt2.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/onsu2.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/onsu3.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/onsu4.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/oopc.xml">
+      <publishTime>04/26/2024 08:44:29</publishTime>
+    </File>
+    <File Include="XMLHeaders/oopk.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/oopr.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/otrc.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/otrp.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/otrr1.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/test.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/wizc.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/wizg.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/wizk.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/wizk_1_13.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/wizk_1_19.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/wizk_1_20.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="XMLHeaders/wizk_1_25.xml">
+      <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
   </ItemGroup>
 </Project>

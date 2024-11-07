@@ -329,8 +329,7 @@
             <asp:Label ID="lbTabela2Title" runat="server"></asp:Label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Label ID="infoLabel3" runat="server" Text="Tabela 3 \/" Visible="False"></asp:Label>
-            <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False"
-                DataSourceID="tabela_2" OnRowCreated="GridView2_GenerowanieNaglowka"
+            <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" OnRowCreated="GridView2_GenerowanieNaglowka"
                 Width="99%" ShowHeader="False" OnRowDataBound="GridView2_RowDataBound">
                 <Columns>
                     <asp:BoundField DataField="id" HeaderText="L.p." SortExpression="id">

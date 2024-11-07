@@ -6,7 +6,7 @@
 }
 
 .dxgv{
-    width:200px;
+   width:200px;
 
 }
 .nowaDopasowanie {
@@ -1657,15 +1657,7 @@ div.accountInfo {
     border-top: 1px solid #d6d6d6;
     padding: 15px 24px;
     height: 27px;
-    /*
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#F0F0F0",GradientType=0);
--webkit-border-radius: 0 0 5px 5px;
--moz-border-radius: 0 0 5px 5px;
-border-radius: 0 0 5px 5px;
-border-top: 1px solid #d6d6d6;
-padding: 15px 24px;
-margin: 0 0px;
-height: 42px;*/
+
 }
 /* MISC
 ----------------------------------------------------------*/
@@ -1833,6 +1825,7 @@ height: 42px;*/
     height: 380px;
 }
 
+
 .ax_box {
     color: Black;
     text-decoration: none;
@@ -1856,17 +1849,34 @@ height: 42px;*/
     top: -3px;
     height: 24px;
     cursor: pointer;
-    left: 0px;
+    left: 1px;
 }
 
-.ax_X:hover {
-    color: Black;
-    background-color: White;
+.button-47 {
+    align-items: center;
+    background: #FFFFFF;
+    border: 0 solid #E2E8F0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+    color: #1A202C;
+    display: inline-flex;
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    height: 56px;
+    justify-content: center;
+    line-height: 24px;
+    overflow-wrap: break-word;
+    padding: 24px;
+    text-decoration: none;
+    width: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
-.ax_X:active {
-    color: #777777;
-}
 
 .navi_border {
     border-color: #e1e1e1;
@@ -2091,7 +2101,6 @@ height: 42px;*/
     text-align: center;
 }
 
-.a
 
 .t4_d3 {
     width: 133px;

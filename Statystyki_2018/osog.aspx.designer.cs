@@ -7,90 +7,128 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Statystyki_2018 {
-    
-    
-    public partial class kontrolka {
-        
+namespace Statystyki_2018
+{
+
+
+    public partial class osog
+    {
+
         /// <summary>
-        /// data1 control.
+        /// Label4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxDateEdit data1;
-        
+        protected global::System.Web.UI.WebControls.Label Label4;
+
         /// <summary>
-        /// data2 control.
+        /// Date1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxDateEdit data2;
-        
+        protected global::DevExpress.Web.ASPxDateEdit Date1;
+
         /// <summary>
-        /// LinkButton1 control.
+        /// Date2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
-        
+        protected global::DevExpress.Web.ASPxDateEdit Date2;
+
         /// <summary>
-        /// LinkButton2 control.
+        /// LinkButton54 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton2;
-        
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton54;
+
         /// <summary>
-        /// LinkButton3 control.
+        /// LinkButton57 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton3;
-        
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton57;
+
         /// <summary>
-        /// ASPxGridView1 control.
+        /// Label3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxGridView ASPxGridView1;
-        
+        protected global::System.Web.UI.WebControls.Label Label3;
+
         /// <summary>
-        /// SqlDataSource1 control.
+        /// tabela2Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
-        
+        protected global::System.Web.UI.WebControls.Label tabela2Label;
+
         /// <summary>
-        /// ASPxGridViewExporter1 control.
+        /// infoLabel2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxGridViewExporter ASPxGridViewExporter1;
-        
+        protected global::System.Web.UI.WebControls.Label infoLabel2;
+
         /// <summary>
-        /// Label1 control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
+
+        /// <summary>
+        /// Label29 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label29;
+
+        /// <summary>
+        /// Label28 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label28;
+
+        /// <summary>
+        /// Label30 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label30;
+
+        /// <summary>
+        /// Label11 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label11;
     }
 }

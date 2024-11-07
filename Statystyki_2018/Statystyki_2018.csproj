@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
-  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -15,7 +14,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>stat2018</RootNamespace>
     <AssemblyName>stat2018</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -96,17 +95,16 @@
     <Reference Include="log4net">
       <HintPath>..\..\statystyki-popup\Bin\log4net.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Data.Edm, Version=5.6.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\statystyki-popup\Bin\Microsoft.Data.Edm.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="NPOI, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -153,13 +151,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="adm.aspx" />
+    <Content Include="akti.aspx" />
     <Content Include="kontrolka2022.aspx" />
+    <Content Include="kontrolka2022X.aspx" />
+    <Content Include="mp2.aspx" />
     <Content Include="nowaN.aspx" />
+    <Content Include="aglg.aspx" />
     <Content Include="oglk.aspx" />
     <Content Include="oczu.aspx" />
     <Content Include="oczp.aspx" />
     <Content Include="aopc.aspx" />
     <Content Include="aktg2.aspx" />
+    <Content Include="oktp2.aspx" />
+    <Content Include="osog.aspx" />
+    <Content Include="oktc.aspx" />
     <Content Include="oktr.aspx" />
     <Content Include="oktk.aspx" />
     <Content Include="oopr.aspx" />
@@ -174,7 +179,6 @@
     <Content Include="aktpe.aspx" />
     <Content Include="aktk2.aspx" />
     <Content Include="aktk.aspx" />
-    <Content Include="aglg.aspx" />
     <Content Include="aglc.aspx" />
     <Content Include="agl.aspx" />
     <Content Include="akrg.aspx" />
@@ -209,13 +213,13 @@
     <Content Include="aopg.aspx" />
     <Content Include="mk.aspx" />
     <Content Include="mss10e.aspx" />
-    <Content Include="oktc.aspx" />
     <Content Include="oglk2.aspx" />
     <Content Include="okrcN.aspx" />
     <Content Include="otrp.aspx" />
     <Content Include="aktc.aspx" />
     <Content Include="Scripts\index.js" />
     <Content Include="SerwisWymiany.asmx" />
+    <Content Include="TheNewControll.aspx" />
     <Content Include="wizg.aspx" />
     <Content Include="Wymiana1.aspx" />
     <Content Include="XMLHeaders\MSS10o.xml">
@@ -385,7 +389,6 @@
     <Content Include="img\whitePoint.png" />
     <Content Include="img\zamknij.jpg" />
     <Content Include="kof.aspx" />
-    <Content Include="kontrolka.aspx" />
     <Content Include="mss10r.aspx" />
     <Content Include="mss11r.aspx" />
     <Content Include="mss1r.aspx" />
@@ -551,6 +554,8 @@
     <Content Include="Template\oczc.xlsx" />
     <Content Include="Template\wizg_aspx.xlsx" />
     <Content Include="Template\oczu.xlsx" />
+    <Content Include="Template\osok.xlsx" />
+    <Content Include="Template\oktp2.xlsx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -574,6 +579,33 @@
     <Compile Include="adm.aspx.designer.cs">
       <DependentUpon>adm.aspx</DependentUpon>
     </Compile>
+    <Compile Include="akti.aspx.cs">
+      <DependentUpon>akti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="akti.aspx.designer.cs">
+      <DependentUpon>akti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\DevExpress_Web_ASPxDiagram_v23_2.pl.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DevExpress_Web_ASPxDiagram_v23_2.pl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\DevExpress_Web_ASPxEditors_v23_2.pl.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DevExpress_Web_ASPxEditors_v23_2.pl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\DevExpress_Web_ASPxGantt_v23_2.pl.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DevExpress_Web_ASPxGantt_v23_2.pl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\DevExpress_Web_ASPxGridView_V17.1.designer.cs">
+      <DependentUpon>DevExpress_Web_ASPxGridView_V17.1.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="kontrolka2022.aspx.cs">
       <DependentUpon>kontrolka2022.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -581,12 +613,33 @@
     <Compile Include="kontrolka2022.aspx.designer.cs">
       <DependentUpon>kontrolka2022.aspx</DependentUpon>
     </Compile>
+    <Compile Include="kontrolka2022X.aspx.cs">
+      <DependentUpon>kontrolka2022X.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kontrolka2022X.aspx.designer.cs">
+      <DependentUpon>kontrolka2022X.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mp2.aspx.cs">
+      <DependentUpon>mp2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mp2.aspx.designer.cs">
+      <DependentUpon>mp2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="nowaN.aspx.cs">
       <DependentUpon>nowaN.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="nowaN.aspx.designer.cs">
       <DependentUpon>nowaN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aglg.aspx.cs">
+      <DependentUpon>aglg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aglg.aspx.designer.cs">
+      <DependentUpon>aglg.aspx</DependentUpon>
     </Compile>
     <Compile Include="oglk.aspx.cs">
       <DependentUpon>oglk.aspx</DependentUpon>
@@ -622,6 +675,27 @@
     </Compile>
     <Compile Include="aktg2.aspx.designer.cs">
       <DependentUpon>aktg2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oktp2.aspx.cs">
+      <DependentUpon>oktp2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oktp2.aspx.designer.cs">
+      <DependentUpon>oktp2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="osog.aspx.cs">
+      <DependentUpon>osog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="osog.aspx.designer.cs">
+      <DependentUpon>osog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oktc.aspx.cs">
+      <DependentUpon>oktc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oktc.aspx.designer.cs">
+      <DependentUpon>oktc.aspx</DependentUpon>
     </Compile>
     <Compile Include="oktr.aspx.cs">
       <DependentUpon>oktr.aspx</DependentUpon>
@@ -713,13 +787,6 @@
     </Compile>
     <Compile Include="aktk.aspx.designer.cs">
       <DependentUpon>aktk.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="aglg.aspx.cs">
-      <DependentUpon>aglg.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="aglg.aspx.designer.cs">
-      <DependentUpon>aglg.aspx</DependentUpon>
     </Compile>
     <Compile Include="aglc.aspx.cs">
       <DependentUpon>aglc.aspx</DependentUpon>
@@ -849,13 +916,6 @@
     </Compile>
     <Compile Include="mss10e.aspx.designer.cs">
       <DependentUpon>mss10e.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="oktc.aspx.cs">
-      <DependentUpon>oktc.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="oktc.aspx.designer.cs">
-      <DependentUpon>oktc.aspx</DependentUpon>
     </Compile>
     <Compile Include="oglk2.aspx.cs">
       <DependentUpon>oglk2.aspx</DependentUpon>
@@ -1101,6 +1161,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="RenderingResult.cs" />
     <Compile Include="SerwisWymiany.asmx.cs">
       <DependentUpon>SerwisWymiany.asmx</DependentUpon>
       <SubType>Component</SubType>
@@ -1169,6 +1230,13 @@
       <DependentUpon>obba.aspx</DependentUpon>
     </Compile>
     <Content Include="time.txt" />
+    <Compile Include="TheNewControll.aspx.cs">
+      <DependentUpon>TheNewControll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TheNewControll.aspx.designer.cs">
+      <DependentUpon>TheNewControll.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserControlls\ZarzadzanieFormularzami.ascx.cs">
       <DependentUpon>ZarzadzanieFormularzami.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1279,13 +1347,6 @@
     </Compile>
     <Compile Include="kof.aspx.designer.cs">
       <DependentUpon>kof.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="kontrolka.aspx.cs">
-      <DependentUpon>kontrolka.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="kontrolka.aspx.designer.cs">
-      <DependentUpon>kontrolka.aspx</DependentUpon>
     </Compile>
     <Compile Include="mss10r.aspx.cs">
       <DependentUpon>mss10r.aspx</DependentUpon>
@@ -1530,7 +1591,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="App_GlobalResources\" />
     <Folder Include="classes\App_LocalResources\" />
     <Folder Include="Wymiana2\Odpowiedzi\" />
     <Folder Include="Wymiana2\Zapytania\" />
@@ -1538,6 +1598,22 @@
     <Folder Include="Wymiana\Tmp\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_GlobalResources\DevExpress_Web_ASPxDiagram_v23_2.pl.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>DevExpress_Web_ASPxDiagram_v23_2.pl.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\DevExpress_Web_ASPxEditors_v23_2.pl.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>DevExpress_Web_ASPxEditors_v23_2.pl.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\DevExpress_Web_ASPxGantt_v23_2.pl.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>DevExpress_Web_ASPxGantt_v23_2.pl.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\DevExpress_Web_ASPxGridView_V17.1.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>DevExpress_Web_ASPxGridView_V17.1.designer.cs</LastGenOutput>
+    </Content>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -1597,8 +1673,7 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
-    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
