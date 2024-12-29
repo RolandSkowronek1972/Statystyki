@@ -54,15 +54,8 @@ namespace stat2018
 
                 if (!IsPostBack)
                 {
-
-
-                    string cs = cl.podajConnectionString(idWydzialInt);
                     odswiez(cl.podajConnectionString(idWydzialInt), Date1.Date.ToShortDateString(), Date2.Date.ToShortDateString(), idWydzialInt);
-                 
-
                 }
-
-
             }
             catch
             { 
@@ -131,14 +124,9 @@ namespace stat2018
         {
             DataTable parametry = cm.makeParameterTable();
             parametry.Rows.Add("@ident", idWydzialu);
-
-
-
             parametry.Rows.Add("@id_tabeli", idTabeli);
-            
-            var opis = cm.getQuerryValue("SELECT  distinct    opis FROM         kwerendy where  id_wydzial =@ident and id_tabeli = @id_tabeli and id_wiersza=0 and id_kolumny=0", cm.con_str, parametry);
 
-            return opis;
+            return cm.getQuerryValue("SELECT  distinct    opis FROM kwerendy where  id_wydzial =@ident and id_tabeli = @id_tabeli and id_wiersza=0 and id_kolumny=0", cm.con_str, parametry);
 
         }
 
@@ -162,9 +150,9 @@ namespace stat2018
             DataTable parametryDoTabeli = cm.makeParameterTable();
             parametryDoTabeli.Rows.Add("@data_1", data_1);
             parametryDoTabeli.Rows.Add("@data_2", data_2);
-            DataTable dane = cm.getDataTable(kw, ConnectionString, parametryDoTabeli, tenPlik);
+            return cm.getDataTable(kw, ConnectionString, parametryDoTabeli, tenPlik);
            
-           return dane;
+           
         }
 
 

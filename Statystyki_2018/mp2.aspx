@@ -122,7 +122,7 @@
 
 
         <dx:ASPxGridView ID="ASPxGridView2" runat="server" AutoGenerateColumns="False"  Theme="MetropolisBlue" EnableCallbackAnimation="True">
-                        <SettingsPager PageSize="10100">
+                        <SettingsPager PageSize="20">
                         </SettingsPager>
                         <Settings HorizontalScrollBarMode="Visible" UseFixedTableLayout="True" ShowFooter="True" />
 

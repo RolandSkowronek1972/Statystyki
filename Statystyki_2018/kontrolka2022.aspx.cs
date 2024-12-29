@@ -2,17 +2,12 @@
 using DevExpress.Utils.Extensions;
 using DevExpress.Web;
 using DevExpress.XtraPrinting;
-using DevExpress.XtraRichEdit.Import.OpenXml;
-using NPOI.SS.Formula.Functions;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
 using System.IO;
-using System.Net;
-using System.Web.Services.Description;
+
 
 namespace Statystyki_2018
 {
@@ -27,29 +22,19 @@ namespace Statystyki_2018
         protected void Page_Load(object sender, EventArgs e)
         {
 
-
-
             CultureInfo newCulture = (CultureInfo)CultureInfo.CurrentCulture.Clone();
 
-            // Use the dot symbol as a thousand separator
             newCulture.NumberFormat.NumberGroupSeparator = ".";
-            // Use the comma symbol as a decimal separator
             newCulture.NumberFormat.NumberDecimalSeparator = ",";
-            // Show currency in euros
             newCulture.NumberFormat.CurrencySymbol = "PLN";
-            // Copy date-time format from the en-us culture
             newCulture.DateTimeFormat = new CultureInfo("pl-PL").DateTimeFormat;
 
             System.Threading.Thread.CurrentThread.CurrentCulture = newCulture;
             System.Threading.Thread.CurrentThread.CurrentUICulture = newCulture;
 
-            //Bind the grid only once
             if (!IsPostBack)
             {
-                // if (Session["valueX"] == null)
-                //  {
                 Session["valueX"] = Request.QueryString["w"];
-                //  }
                 DateTime dTime = DateTime.Now.AddMonths(-1);
 
                 string ident = (string)Session["valueX"];
@@ -88,13 +73,10 @@ namespace Statystyki_2018
                 }
 
                 grid.DataBind();
-
                 DataBindX();
 
             }
         }
-
-
 
 
         protected void szukaj(object sender, EventArgs e)
@@ -125,13 +107,56 @@ namespace Statystyki_2018
             ASPxGridViewExporter1.TopMargin = 0;
             ASPxGridViewExporter1.BottomMargin = 0;
             ASPxGridViewExporter1.WritePdfToResponse("kontrolka-" + DateTime.Now.ToShortDateString());
-            //   ScriptManager.RegisterStartupScript(Page, Page.GetType(), "print2", "JavaScript:window.open('kontrolkaDruk.aspx')", true);
+            
         }
 
         protected void dataBinding(object sender, EventArgs e)
         {
             DataBindX();
         }
+        protected void Excell(object sender, EventArgs e)
+        {
+            ASPxGridViewExporter1.WriteXlsxToResponse("kontrolka - " + DateTime.Now.ToShortDateString());
+        }
+
+        protected void ASPxGridViewExporter1_RenderBrick(object sender, DevExpress.Web.ASPxGridViewExportRenderingEventArgs e)
+        {
+            StringFormat sFormat = new StringFormat(StringFormatFlags.NoWrap);
+            BrickStringFormat brickSFormat = new BrickStringFormat(sFormat);
+            e.XlsxFormatString = sFormat.ToString();
+        }
+
+
+     
+        protected void grid_CustomColumnDisplayText(object sender, ASPxGridViewColumnDisplayTextEventArgs e)
+        {
+            if (e.Column.FieldName == "Lp")
+            {
+                e.DisplayText = (e.VisibleIndex + 1).ToString();
+            }
+
+        }
+        protected override void InitializeCulture()
+        {
+            var trueLand = Request.QueryString["lang"];
+            var lang = "pl-PL";// 
+            if (!string.IsNullOrEmpty(lang))
+            {
+                Culture = lang;
+                UICulture = lang;
+            }
+        }
+
+        protected void grid_SelectionChanged(object sender, EventArgs e)
+        {
+            var cos = e.ToArray();
+        }
+
+        protected void Automat(object sender, EventArgs e)
+        {
+             string nazwa = GenrateDataFile();
+        }
+
 
         private DataTable GetTable(DateTime dataPoczatkowa, DateTime dataKoncowa, string ident, string tenPlik)
         {
@@ -155,18 +180,6 @@ namespace Statystyki_2018
             }
 
             return dT;
-        }
-
-        protected void Excell(object sender, EventArgs e)
-        {
-            ASPxGridViewExporter1.WriteXlsxToResponse("kontrolka - " + DateTime.Now.ToShortDateString());
-        }
-
-        protected void ASPxGridViewExporter1_RenderBrick(object sender, DevExpress.Web.ASPxGridViewExportRenderingEventArgs e)
-        {
-            StringFormat sFormat = new StringFormat(StringFormatFlags.NoWrap);
-            BrickStringFormat brickSFormat = new BrickStringFormat(sFormat);
-            e.XlsxFormatString = sFormat.ToString();
         }
 
         private void DataBindX()
@@ -352,65 +365,8 @@ namespace Statystyki_2018
                     columnCounter++;
 
                 }
-
-
             }
-
-
-
             ASPxGridViewExporter1.DataBind();
-        }
-        private int ColumnLenght(DataTable dataTable, int ColumnNumber)
-        {
-            int maxLenght = 0;
-
-            foreach (DataRow row in dataTable.Rows)
-            {
-                int tmpMaxLenght = 0;
-                string cellValue = row[ColumnNumber].ToString();
-                if (cellValue != null)
-                {
-                    tmpMaxLenght = cellValue.Length;
-                    if (tmpMaxLenght > maxLenght)
-                    {
-                        maxLenght = tmpMaxLenght;
-                    }
-                }
-
-            }
-
-            return maxLenght;
-        }
-        protected void grid_CustomColumnDisplayText(object sender, ASPxGridViewColumnDisplayTextEventArgs e)
-        {
-            if (e.Column.FieldName == "Lp")
-            {
-                e.DisplayText = (e.VisibleIndex + 1).ToString();
-            }
-
-        }
-        protected override void InitializeCulture()
-        {
-            var trueLand = Request.QueryString["lang"];
-            var lang = "pl-PL";// 
-            if (!string.IsNullOrEmpty(lang))
-            {
-                Culture = lang;
-                UICulture = lang;
-            }
-        }
-
-        protected void grid_SelectionChanged(object sender, EventArgs e)
-        {
-            var cos = e.ToArray();
-        }
-
-        protected void Automat(object sender, EventArgs e)
-        {
-             string nazwa = GenrateDataFile();
-
-            //StartScript(nazwaPlikuDanych); 
-
         }
 
         private string GenrateDataFile()
@@ -464,15 +420,10 @@ namespace Statystyki_2018
                     s = PSS_NUM.ToString() + "|" + PSS_ROK.ToString() + "|" + PSS_REP;
                     sw.WriteLine(s);
                 }
-
-                
                 this.Response.Clear();
-               
                 this.Response.AddHeader("Content-Disposition", "attachment;filename=" + fNewFile.Name);
                 this.Response.WriteFile(fNewFile.FullName);
                 this.Response.End();
-               
-              
 
 
             }
@@ -485,7 +436,7 @@ namespace Statystyki_2018
             return (nazwaPlikuDanych);
 
         }
-
+        /*
         private void StartScript(string nazwa)
         {
             WebClient client = new WebClient();
@@ -500,21 +451,31 @@ namespace Statystyki_2018
             ProcessStartInfo startInfo = new ProcessStartInfo(nazwa);
             Process.Start(startInfo);
 
-            /*
-
-            string fileName = "c:\\RunScript\\run.bat";
-            ProcessStartInfo startInfo = new ProcessStartInfo(fileName);
-            Process.Start(startInfo);*/
         }
+        */
+        /*
+      private int ColumnLenght(DataTable dataTable, int ColumnNumber)
+      {
+          int maxLenght = 0;
 
-        protected void Skrypt(object sender, EventArgs e)
-        {
-              StartScript(HiddenField1.Value);
+          foreach (DataRow row in dataTable.Rows)
+          {
+              int tmpMaxLenght = 0;
+              string cellValue = row[ColumnNumber].ToString();
+              if (cellValue != null)
+              {
+                  tmpMaxLenght = cellValue.Length;
+                  if (tmpMaxLenght > maxLenght)
+                  {
+                      maxLenght = tmpMaxLenght;
+                  }
+              }
 
+          }
 
-
-
-        }
+          return maxLenght;
+      }
+      */
     }
 
 }

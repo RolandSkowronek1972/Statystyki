@@ -7,7 +7,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_PublishTargetUrl>C:\test\publish</_PublishTargetUrl>
-    <History>True|2024-11-07T19:38:28.4795631Z||;True|2024-11-07T20:38:05.8915334+01:00||;</History>
+    <History>True|2024-11-26T08:09:24.5777312Z||;True|2024-11-26T09:07:18.4768652+01:00||;True|2024-11-24T16:32:56.9672795+01:00||;True|2024-11-07T20:38:28.4795631+01:00||;True|2024-11-07T20:38:05.8915334+01:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -382,6 +382,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="bin/AjaxMin.dll">
       <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="bin/App_GlobalResources.compiled">
+      <publishTime>11/26/2024 09:09:02</publishTime>
+    </File>
+    <File Include="bin/App_GlobalResources.dll">
+      <publishTime>11/26/2024 09:09:01</publishTime>
     </File>
     <File Include="bin/de/DevExpress.Data.v16.1.resources.dll">
       <publishTime>10/31/2016 09:49:22</publishTime>
@@ -959,6 +965,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/pl/AjaxControlToolkit.resources.dll">
       <publishTime>08/13/2014 06:31:40</publishTime>
     </File>
+    <File Include="bin/pl/App_GlobalResources.resources.dll">
+      <publishTime>11/26/2024 09:08:59</publishTime>
+    </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>05/24/2018 15:38:22</publishTime>
     </File>
@@ -1224,10 +1233,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/13/2018 11:20:50</publishTime>
     </File>
     <File Include="bin/stat2018.dll">
-      <publishTime>11/07/2024 20:38:25</publishTime>
+      <publishTime>11/26/2024 09:08:25</publishTime>
     </File>
     <File Include="bin/stat2018.pdb">
-      <publishTime>11/07/2024 20:38:25</publishTime>
+      <publishTime>11/26/2024 09:08:25</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
       <publishTime>02/01/2018 12:17:18</publishTime>
@@ -1419,7 +1428,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/19/2024 10:29:14</publishTime>
     </File>
     <File Include="kontrolka2022.aspx.cs">
-      <publishTime>11/07/2024 19:58:37</publishTime>
+      <publishTime>11/24/2024 16:29:50</publishTime>
     </File>
     <File Include="kontrolka2022.aspx.designer.cs">
       <publishTime>10/19/2024 10:27:53</publishTime>
@@ -1485,7 +1494,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/07/2024 20:04:18</publishTime>
     </File>
     <File Include="mp2.aspx.cs">
-      <publishTime>11/07/2024 20:37:54</publishTime>
+      <publishTime>11/24/2024 16:22:54</publishTime>
     </File>
     <File Include="mp2.aspx.designer.cs">
       <publishTime>07/10/2024 22:08:21</publishTime>
@@ -2180,6 +2189,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="popup.aspx.designer.cs">
       <publishTime>12/11/2022 13:42:34</publishTime>
     </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>11/26/2024 09:08:28</publishTime>
+    </File>
     <File Include="Properties/AssemblyInfo.cs">
       <publishTime>12/19/2022 11:16:53</publishTime>
     </File>
@@ -2193,7 +2205,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/16/2023 12:48:09</publishTime>
     </File>
     <File Include="Properties/PublishProfiles/file.pubxml">
-      <publishTime>11/07/2024 20:38:20</publishTime>
+      <publishTime>11/26/2024 09:08:16</publishTime>
     </File>
     <File Include="Properties/PublishProfiles/FolderProfile.pubxml">
       <publishTime>12/11/2022 13:42:32</publishTime>
@@ -2298,7 +2310,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/11/2024 15:56:06</publishTime>
     </File>
     <File Include="Statystyki_2018.csproj.user">
-      <publishTime>11/07/2024 20:38:22</publishTime>
+      <publishTime>11/26/2024 09:08:19</publishTime>
     </File>
     <File Include="style/card.css">
       <publishTime>12/11/2022 13:42:34</publishTime>
@@ -2697,7 +2709,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/23/2024 17:12:48</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>11/07/2024 20:38:01</publishTime>
+      <publishTime>11/26/2024 09:08:26</publishTime>
     </File>
     <File Include="Web.Debug.config">
       <publishTime>12/11/2022 13:42:32</publishTime>
