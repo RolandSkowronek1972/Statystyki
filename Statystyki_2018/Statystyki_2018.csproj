@@ -184,7 +184,6 @@
     <Content Include="akrg.aspx" />
     <Content Include="akrp.aspx" />
     <Content Include="akrk.aspx" />
-    <Content Include="aktc.xlsx" />
     <None Include="Connected Services\ServiceReference2\SerwisWymiany.wsdl" />
     <None Include="Connected Services\ServiceReference3\SerwisWymiany.disco" />
     <None Include="Connected Services\ServiceReference3\configuration91.svcinfo" />
@@ -556,6 +555,7 @@
     <Content Include="Template\oczu.xlsx" />
     <Content Include="Template\osok.xlsx" />
     <Content Include="Template\oktp2.xlsx" />
+    <Content Include="Template\aktc.xlsx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

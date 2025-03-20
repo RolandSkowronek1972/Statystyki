@@ -66,7 +66,7 @@
             </tr>
         </table>
     </div>
-    <div style="width: 1150px; margin: 0 auto 0 auto; position: relative; top: 30px;">
+    <div style=" margin: 0 auto 0 auto; position: relative; top: 30px;">
         <div>
             &nbsp;<asp:Label ID="Label1" runat="server" Text="Ruch spraw"></asp:Label>
             &nbsp;&nbsp;&nbsp;

@@ -243,14 +243,7 @@ namespace Statystyki_2018
             {
                 rozmiarCzcionki = 10;
             }
-            /*  try
-              {
-                  szerokosctabeli = int.Parse(cm.getQuerryValue("SELECT szerokosctabeli FROM            konfig  WHERE        (ident = @ident)", cm.con_str, parameters));
-              }
-              catch
-              {
-                  szerokosctabeli = 1150;
-              }*/
+
             cm.log.Info("Kontrolka -rozmiar czcionki: " + rozmiarCzcionki.ToString());
             cm.log.Info("Kontrolka -szerokosc Kolumny: " + szerokoscKolumny.ToString());
             cm.log.Info("Kontrolka -szerokosc tabeli: " + szerokosctabeli.ToString());
@@ -436,46 +429,7 @@ namespace Statystyki_2018
             return (nazwaPlikuDanych);
 
         }
-        /*
-        private void StartScript(string nazwa)
-        {
-            WebClient client = new WebClient();
-            Byte[] buffer = client.DownloadData(nazwa);
-            if (buffer != null)
-            {
-                Response.ContentType = "application/pdf";
-                Response.AddHeader("content-lenght", buffer.Length.ToString());
-                Response.BinaryWrite(buffer);
-            }
 
-            ProcessStartInfo startInfo = new ProcessStartInfo(nazwa);
-            Process.Start(startInfo);
-
-        }
-        */
-        /*
-      private int ColumnLenght(DataTable dataTable, int ColumnNumber)
-      {
-          int maxLenght = 0;
-
-          foreach (DataRow row in dataTable.Rows)
-          {
-              int tmpMaxLenght = 0;
-              string cellValue = row[ColumnNumber].ToString();
-              if (cellValue != null)
-              {
-                  tmpMaxLenght = cellValue.Length;
-                  if (tmpMaxLenght > maxLenght)
-                  {
-                      maxLenght = tmpMaxLenght;
-                  }
-              }
-
-          }
-
-          return maxLenght;
-      }
-      */
     }
 
 }

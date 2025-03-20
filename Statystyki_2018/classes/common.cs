@@ -310,22 +310,17 @@ namespace Statystyki_2018
             ilosckolunPrzedIteracja = 1,
             ilosckolunPoIteracji = 2,
             lp = 3,
-
-            //===============
             informacjeOtabeli = 0,
-
             naglowek = 1,
             tabelaBoczna = 2,
             tabelaStyli = 3,
-
-            //nr noda z komorkami
             nodZkomorkami = 4
         }
-
+        /*
         internal DataTable PodajListeKwerend(int v1, int id_tabeli, int v2, string tenPlik)
         {
             throw new NotImplementedException();
-        }
+        }*/
 
         public DataTable schematTabeli()
         {
@@ -382,12 +377,7 @@ namespace Statystyki_2018
                 result = getQuerryValue("SELECT DISTINCT nazwa FROM wydzialy where ident=@id and plik=@plik", con_str, parameters);
             }
             catch
-            {
-
-             
-            }
-         
-           
+            {}
 
             return result;
         }

@@ -146,8 +146,8 @@ namespace Statystyki_2018
 
                 DataTable table = (DataTable)Session["tabelka001"];
 
-                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 20, 0, 5, true, true, false, false, false);
-                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 11, 11, 3, 3, false);
+                MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 20, 0, 4, true, true, false, false, false);
+                MyWorksheet1 = tb.tworzArkuszwExcleBezSedziow(MyExcel.Workbook.Worksheets[2], (DataTable)Session["tabelka002"], 11, 9, 2, 2, false);
                 try
                 {
                     MyExcel.SaveAs(fNewFile);

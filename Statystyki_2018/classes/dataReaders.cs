@@ -525,33 +525,35 @@ namespace Statystyki_2018
 
                     // przepisanie danych sedziow
                     int index = 0;
-
-                    foreach (DataRow dRow in tabelaDanychDlaSedziow.Rows)
+                    if (tabelaDanychDlaSedziow != null)
                     {
-                        try
+                        foreach (DataRow dRow in tabelaDanychDlaSedziow.Rows)
                         {
-                            string idSedziego = dRow[1].ToString().Trim();
-                            //linq znajdz wiersz z sedzim
-                            // pobierz index
-
-                            string warosc = dRow[0].ToString().Trim();
-                            index = 0;
-                            foreach (DataRow dr in dTable.Rows)
+                            try
                             {
-                                if (dr.ItemArray.Length < 2)
+                                string idSedziego = dRow[1].ToString().Trim();
+                                //linq znajdz wiersz z sedzim
+                                // pobierz index
+
+                                string warosc = dRow[0].ToString().Trim();
+                                index = 0;
+                                foreach (DataRow dr in dTable.Rows)
                                 {
-                                    continue;
+                                    if (dr.ItemArray.Length < 2)
+                                    {
+                                        continue;
+                                    }
+                                    string nr_sedziego = dr[1].ToString();
+                                    if (nr_sedziego == idSedziego)
+                                    {
+                                        dTable.Rows[index][getColumnName(int.Parse(kolumna))] = warosc;
+                                    }
+                                    index++;
                                 }
-                                string nr_sedziego = dr[1].ToString();
-                                if (nr_sedziego == idSedziego)
-                                {
-                                    dTable.Rows[index][getColumnName(int.Parse(kolumna))] = warosc;
-                                }
-                                index++;
                             }
+                            catch
+                            { }
                         }
-                        catch
-                        { }
                     }
                 }
             }

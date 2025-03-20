@@ -6,7 +6,6 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using OfficeOpenXml;
 
-
 namespace Statystyki_2018
 {
     public partial class akap : System.Web.UI.Page
@@ -19,7 +18,7 @@ namespace Statystyki_2018
 
         protected void Page_Load(object sender, EventArgs e)
         {
-             string idWydzial = Request.QueryString["w"]; Session["czesc"] = cm.nazwaFormularza(tenPlik, idWydzial) ;
+            string idWydzial = Request.QueryString["w"]; Session["czesc"] = cm.nazwaFormularza(tenPlik, idWydzial);
             try
             {
                 if (idWydzial == null)
@@ -30,7 +29,6 @@ namespace Statystyki_2018
                 IdentyfikatorUzytkownika = (string)Session["identyfikatorUzytkownika"];
                 DataTable parametry = cm.makeParameterTable();
                 parametry.Rows.Add("@identyfikatorUzytkownika", IdentyfikatorUzytkownika);
-
 
                 if (cm.getQuerryValue("select admin from uzytkownik where ident =@identyfikatorUzytkownika", cm.con_str, parametry) == "0" && !cm.dostep(idWydzial, (string)Session["identyfikatorUzytkownika"]))
                 {
@@ -81,8 +79,6 @@ namespace Statystyki_2018
 
         protected void odswiez()
         {
-       
-
             string yyx = (string)Session["id_dzialu"];
             id_dzialu.Text = (string)Session["txt_dzialu"];
             string txt = string.Empty; //
@@ -90,89 +86,85 @@ namespace Statystyki_2018
             txt = txt + cl.clear_maim_db();
             try
             {
-
-                DataTable tabelka01 = dr. generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 1,20,20,tenPlik);
+                DataTable tabelka01 = dr.generuj_dane_do_tabeli_wierszy2018(Date1.Date, Date2.Date, (string)Session["id_dzialu"], 1, 20, 20, tenPlik);
                 Session["tabelka001"] = tabelka01;
                 //row 1
-                LB_12.Text = tabelka01.Rows[0][1].ToString().Trim();
-                LB_13.Text = tabelka01.Rows[0][2].ToString().Trim();
-                LB_14.Text = tabelka01.Rows[0][3].ToString().Trim();
-                LB_15.Text = tabelka01.Rows[0][4].ToString().Trim();
-                LB_16.Text = tabelka01.Rows[0][5].ToString().Trim();
-                LB_17.Text = tabelka01.Rows[0][6].ToString().Trim();
-                LB_18.Text = tabelka01.Rows[0][7].ToString().Trim();
-                LB_19.Text = tabelka01.Rows[0][8].ToString().Trim();
-                LB_110.Text = tabelka01.Rows[0][9].ToString().Trim();
-                LB_111.Text = tabelka01.Rows[0][10].ToString().Trim();
-                LB_112.Text = tabelka01.Rows[0][11].ToString().Trim();
+                LB_12.Text = tabelka01.Rows[0][0].ToString().Trim();
+                LB_13.Text = tabelka01.Rows[0][1].ToString().Trim();
+                LB_14.Text = tabelka01.Rows[0][2].ToString().Trim();
+                LB_15.Text = tabelka01.Rows[0][3].ToString().Trim();
+                LB_16.Text = tabelka01.Rows[0][4].ToString().Trim();
+                LB_17.Text = tabelka01.Rows[0][5].ToString().Trim();
+                LB_18.Text = tabelka01.Rows[0][6].ToString().Trim();
+                LB_19.Text = tabelka01.Rows[0][7].ToString().Trim();
+                LB_110.Text = tabelka01.Rows[0][8].ToString().Trim();
+                LB_111.Text = tabelka01.Rows[0][9].ToString().Trim();
+                LB_112.Text = tabelka01.Rows[0][10].ToString().Trim();
 
                 //row 2
-                LB_22.Text = tabelka01.Rows[1][1].ToString().Trim();
-                LB_23.Text = tabelka01.Rows[1][2].ToString().Trim();
-                LB_24.Text = tabelka01.Rows[1][3].ToString().Trim();
-                LB_25.Text = tabelka01.Rows[1][4].ToString().Trim();
-                LB_26.Text = tabelka01.Rows[1][5].ToString().Trim();
-                LB_27.Text = tabelka01.Rows[1][6].ToString().Trim();
-                LB_28.Text = tabelka01.Rows[1][7].ToString().Trim();
-                LB_29.Text = tabelka01.Rows[1][8].ToString().Trim();
-                LB_210.Text = tabelka01.Rows[1][9].ToString().Trim();
-                LB_211.Text = tabelka01.Rows[1][10].ToString().Trim();
-                LB_212.Text = tabelka01.Rows[1][11].ToString().Trim();
+                LB_22.Text = tabelka01.Rows[1][0].ToString().Trim();
+                LB_23.Text = tabelka01.Rows[1][1].ToString().Trim();
+                LB_24.Text = tabelka01.Rows[1][2].ToString().Trim();
+                LB_25.Text = tabelka01.Rows[1][3].ToString().Trim();
+                LB_26.Text = tabelka01.Rows[1][4].ToString().Trim();
+                LB_27.Text = tabelka01.Rows[1][5].ToString().Trim();
+                LB_28.Text = tabelka01.Rows[1][6].ToString().Trim();
+                LB_29.Text = tabelka01.Rows[1][7].ToString().Trim();
+                LB_210.Text = tabelka01.Rows[1][8].ToString().Trim();
+                LB_211.Text = tabelka01.Rows[1][9].ToString().Trim();
+                LB_212.Text = tabelka01.Rows[1][10].ToString().Trim();
 
                 //row 3
-                LB_32.Text = tabelka01.Rows[2][1].ToString().Trim();
-                LB_33.Text = tabelka01.Rows[2][2].ToString().Trim();
-                LB_34.Text = tabelka01.Rows[2][3].ToString().Trim();
-                LB_35.Text = tabelka01.Rows[2][4].ToString().Trim();
-                LB_36.Text = tabelka01.Rows[2][5].ToString().Trim();
-                LB_37.Text = tabelka01.Rows[2][6].ToString().Trim();
-                LB_38.Text = tabelka01.Rows[2][7].ToString().Trim();
-                LB_39.Text = tabelka01.Rows[2][8].ToString().Trim();
-                LB_310.Text = tabelka01.Rows[2][9].ToString().Trim();
-                LB_311.Text = tabelka01.Rows[2][10].ToString().Trim();
-                LB_312.Text = tabelka01.Rows[2][11].ToString().Trim();
-
+                LB_32.Text = tabelka01.Rows[2][0].ToString().Trim();
+                LB_33.Text = tabelka01.Rows[2][1].ToString().Trim();
+                LB_34.Text = tabelka01.Rows[2][2].ToString().Trim();
+                LB_35.Text = tabelka01.Rows[2][3].ToString().Trim();
+                LB_36.Text = tabelka01.Rows[2][4].ToString().Trim();
+                LB_37.Text = tabelka01.Rows[2][5].ToString().Trim();
+                LB_38.Text = tabelka01.Rows[2][6].ToString().Trim();
+                LB_39.Text = tabelka01.Rows[2][7].ToString().Trim();
+                LB_310.Text = tabelka01.Rows[2][8].ToString().Trim();
+                LB_311.Text = tabelka01.Rows[2][9].ToString().Trim();
+                LB_312.Text = tabelka01.Rows[2][10].ToString().Trim();
 
                 //row 4
-                LB_42.Text = tabelka01.Rows[3][1].ToString().Trim();
-                LB_43.Text = tabelka01.Rows[3][2].ToString().Trim();
-                LB_44.Text = tabelka01.Rows[3][3].ToString().Trim();
-                LB_45.Text = tabelka01.Rows[3][4].ToString().Trim();
-                LB_46.Text = tabelka01.Rows[3][5].ToString().Trim();
-                LB_47.Text = tabelka01.Rows[3][6].ToString().Trim();
-                LB_48.Text = tabelka01.Rows[3][7].ToString().Trim();
-                LB_49.Text = tabelka01.Rows[3][8].ToString().Trim();
-                LB_410.Text = tabelka01.Rows[3][9].ToString().Trim();
-                LB_411.Text = tabelka01.Rows[3][10].ToString().Trim();
-                LB_412.Text = tabelka01.Rows[3][11].ToString().Trim();
-
+                LB_42.Text = tabelka01.Rows[3][0].ToString().Trim();
+                LB_43.Text = tabelka01.Rows[3][1].ToString().Trim();
+                LB_44.Text = tabelka01.Rows[3][2].ToString().Trim();
+                LB_45.Text = tabelka01.Rows[3][3].ToString().Trim();
+                LB_46.Text = tabelka01.Rows[3][4].ToString().Trim();
+                LB_47.Text = tabelka01.Rows[3][5].ToString().Trim();
+                LB_48.Text = tabelka01.Rows[3][6].ToString().Trim();
+                LB_49.Text = tabelka01.Rows[3][7].ToString().Trim();
+                LB_410.Text = tabelka01.Rows[3][8].ToString().Trim();
+                LB_411.Text = tabelka01.Rows[3][9].ToString().Trim();
+                LB_412.Text = tabelka01.Rows[3][10].ToString().Trim();
 
                 //row 5
-                LB_52.Text = tabelka01.Rows[4][1].ToString().Trim();
-                LB_53.Text = tabelka01.Rows[4][2].ToString().Trim();
-                LB_54.Text = tabelka01.Rows[4][3].ToString().Trim();
-                LB_55.Text = tabelka01.Rows[4][4].ToString().Trim();
-                LB_56.Text = tabelka01.Rows[4][5].ToString().Trim();
-                LB_57.Text = tabelka01.Rows[4][6].ToString().Trim();
-                LB_58.Text = tabelka01.Rows[4][7].ToString().Trim();
-                LB_59.Text = tabelka01.Rows[4][8].ToString().Trim();
-                LB_510.Text = tabelka01.Rows[4][9].ToString().Trim();
-                LB_511.Text = tabelka01.Rows[4][10].ToString().Trim();
-                LB_512.Text = tabelka01.Rows[4][11].ToString().Trim();
-
+                LB_52.Text = tabelka01.Rows[4][0].ToString().Trim();
+                LB_53.Text = tabelka01.Rows[4][1].ToString().Trim();
+                LB_54.Text = tabelka01.Rows[4][2].ToString().Trim();
+                LB_55.Text = tabelka01.Rows[4][3].ToString().Trim();
+                LB_56.Text = tabelka01.Rows[4][4].ToString().Trim();
+                LB_57.Text = tabelka01.Rows[4][5].ToString().Trim();
+                LB_58.Text = tabelka01.Rows[4][6].ToString().Trim();
+                LB_59.Text = tabelka01.Rows[4][7].ToString().Trim();
+                LB_510.Text = tabelka01.Rows[4][8].ToString().Trim();
+                LB_511.Text = tabelka01.Rows[4][9].ToString().Trim();
+                LB_512.Text = tabelka01.Rows[4][10].ToString().Trim();
 
                 //row 6
-                LB_62.Text = tabelka01.Rows[5][1].ToString().Trim();
-                LB_63.Text = tabelka01.Rows[5][2].ToString().Trim();
-                LB_64.Text = tabelka01.Rows[5][3].ToString().Trim();
-                LB_65.Text = tabelka01.Rows[5][4].ToString().Trim();
-                LB_66.Text = tabelka01.Rows[5][5].ToString().Trim();
-                LB_67.Text = tabelka01.Rows[5][6].ToString().Trim();
-                LB_68.Text = tabelka01.Rows[5][7].ToString().Trim();
-                LB_69.Text = tabelka01.Rows[5][8].ToString().Trim();
-                LB_610.Text = tabelka01.Rows[5][9].ToString().Trim();
-                LB_611.Text = tabelka01.Rows[5][10].ToString().Trim();
-                LB_612.Text = tabelka01.Rows[5][11].ToString().Trim();
+                LB_62.Text = tabelka01.Rows[5][0].ToString().Trim();
+                LB_63.Text = tabelka01.Rows[5][1].ToString().Trim();
+                LB_64.Text = tabelka01.Rows[5][2].ToString().Trim();
+                LB_65.Text = tabelka01.Rows[5][3].ToString().Trim();
+                LB_66.Text = tabelka01.Rows[5][4].ToString().Trim();
+                LB_67.Text = tabelka01.Rows[5][5].ToString().Trim();
+                LB_68.Text = tabelka01.Rows[5][6].ToString().Trim();
+                LB_69.Text = tabelka01.Rows[5][7].ToString().Trim();
+                LB_610.Text = tabelka01.Rows[5][8].ToString().Trim();
+                LB_611.Text = tabelka01.Rows[5][9].ToString().Trim();
+                LB_612.Text = tabelka01.Rows[5][10].ToString().Trim();
 
                 //row 7
                 LB_72.Text = tabelka01.Rows[6][1].ToString().Trim();
@@ -187,111 +179,96 @@ namespace Statystyki_2018
                 LB_711.Text = tabelka01.Rows[6][10].ToString().Trim();
                 LB_712.Text = tabelka01.Rows[6][11].ToString().Trim();
 
-
                 //row 8
-                LB_82.Text = tabelka01.Rows[7][1].ToString().Trim();
-                LB_83.Text = tabelka01.Rows[7][2].ToString().Trim();
-                LB_84.Text = tabelka01.Rows[7][3].ToString().Trim();
-                LB_85.Text = tabelka01.Rows[7][4].ToString().Trim();
-                LB_86.Text = tabelka01.Rows[7][5].ToString().Trim();
-                LB_87.Text = tabelka01.Rows[7][6].ToString().Trim();
-                LB_88.Text = tabelka01.Rows[7][7].ToString().Trim();
-                LB_89.Text = tabelka01.Rows[7][8].ToString().Trim();
-                LB_810.Text = tabelka01.Rows[7][9].ToString().Trim();
-                LB_811.Text = tabelka01.Rows[7][10].ToString().Trim();
-                LB_812.Text = tabelka01.Rows[7][11].ToString().Trim();
+                LB_82.Text = tabelka01.Rows[7][0].ToString().Trim();
+                LB_83.Text = tabelka01.Rows[7][1].ToString().Trim();
+                LB_84.Text = tabelka01.Rows[7][2].ToString().Trim();
+                LB_85.Text = tabelka01.Rows[7][3].ToString().Trim();
+                LB_86.Text = tabelka01.Rows[7][4].ToString().Trim();
+                LB_87.Text = tabelka01.Rows[7][5].ToString().Trim();
+                LB_88.Text = tabelka01.Rows[7][6].ToString().Trim();
+                LB_89.Text = tabelka01.Rows[7][7].ToString().Trim();
+                LB_810.Text = tabelka01.Rows[7][8].ToString().Trim();
+                LB_811.Text = tabelka01.Rows[7][9].ToString().Trim();
+                LB_812.Text = tabelka01.Rows[7][10].ToString().Trim();
 
                 //row 9
-                LB_92.Text = tabelka01.Rows[8][1].ToString().Trim();
-                LB_93.Text = tabelka01.Rows[8][2].ToString().Trim();
-                LB_94.Text = tabelka01.Rows[8][3].ToString().Trim();
-                LB_95.Text = tabelka01.Rows[8][4].ToString().Trim();
-                LB_96.Text = tabelka01.Rows[8][5].ToString().Trim();
-                LB_97.Text = tabelka01.Rows[8][6].ToString().Trim();
-                LB_98.Text = tabelka01.Rows[8][7].ToString().Trim();
-                LB_99.Text = tabelka01.Rows[8][8].ToString().Trim();
-                LB_910.Text = tabelka01.Rows[8][9].ToString().Trim();
-                LB_911.Text = tabelka01.Rows[8][10].ToString().Trim();
-                LB_912.Text = tabelka01.Rows[8][11].ToString().Trim();
+                LB_92.Text = tabelka01.Rows[8][0].ToString().Trim();
+                LB_93.Text = tabelka01.Rows[8][1].ToString().Trim();
+                LB_94.Text = tabelka01.Rows[8][2].ToString().Trim();
+                LB_95.Text = tabelka01.Rows[8][3].ToString().Trim();
+                LB_96.Text = tabelka01.Rows[8][4].ToString().Trim();
+                LB_97.Text = tabelka01.Rows[8][5].ToString().Trim();
+                LB_98.Text = tabelka01.Rows[8][6].ToString().Trim();
+                LB_99.Text = tabelka01.Rows[8][7].ToString().Trim();
+                LB_910.Text = tabelka01.Rows[8][8].ToString().Trim();
+                LB_911.Text = tabelka01.Rows[8][9].ToString().Trim();
+                LB_912.Text = tabelka01.Rows[8][10].ToString().Trim();
 
                 //row10
-                LB_102.Text = tabelka01.Rows[9][1].ToString().Trim();
-                LB_103.Text = tabelka01.Rows[9][2].ToString().Trim();
-                LB_104.Text = tabelka01.Rows[9][3].ToString().Trim();
-                LB_105.Text = tabelka01.Rows[9][4].ToString().Trim();
-                LB_106.Text = tabelka01.Rows[9][5].ToString().Trim();
-                LB_107.Text = tabelka01.Rows[9][6].ToString().Trim();
-                LB_108.Text = tabelka01.Rows[9][7].ToString().Trim();
-                LB_109.Text = tabelka01.Rows[9][8].ToString().Trim();
-                LB_1010.Text = tabelka01.Rows[9][9].ToString().Trim();
-                LB_1011.Text = tabelka01.Rows[9][10].ToString().Trim();
-                LB_1012.Text = tabelka01.Rows[9][11].ToString().Trim();
-
+                LB_102.Text = tabelka01.Rows[9][0].ToString().Trim();
+                LB_103.Text = tabelka01.Rows[9][1].ToString().Trim();
+                LB_104.Text = tabelka01.Rows[9][2].ToString().Trim();
+                LB_105.Text = tabelka01.Rows[9][3].ToString().Trim();
+                LB_106.Text = tabelka01.Rows[9][4].ToString().Trim();
+                LB_107.Text = tabelka01.Rows[9][5].ToString().Trim();
+                LB_108.Text = tabelka01.Rows[9][6].ToString().Trim();
+                LB_109.Text = tabelka01.Rows[9][7].ToString().Trim();
+                LB_1010.Text = tabelka01.Rows[9][8].ToString().Trim();
+                LB_1011.Text = tabelka01.Rows[9][9].ToString().Trim();
+                LB_1012.Text = tabelka01.Rows[9][10].ToString().Trim();
 
                 //row11
-                LB_11_2.Text = tabelka01.Rows[10][1].ToString().Trim();
-                LB_11_3.Text = tabelka01.Rows[10][2].ToString().Trim();
-                LB_11_4.Text = tabelka01.Rows[10][3].ToString().Trim();
-                LB_11_5.Text = tabelka01.Rows[10][4].ToString().Trim();
-                LB_11_6.Text = tabelka01.Rows[10][5].ToString().Trim();
-                LB_11_7.Text = tabelka01.Rows[10][6].ToString().Trim();
-                LB_11_8.Text = tabelka01.Rows[10][7].ToString().Trim();
-                LB_11_9.Text = tabelka01.Rows[10][8].ToString().Trim();
-                LB_11_10.Text = tabelka01.Rows[10][9].ToString().Trim();
-                LB_11_11.Text = tabelka01.Rows[10][10].ToString().Trim();
-                LB_11_12.Text = tabelka01.Rows[10][11].ToString().Trim();
-                /*LB_11_13.Text = tabelka01.Rows[10][12].ToString().Trim();
-                LB_1114.Text = tabelka01.Rows[10][13].ToString().Trim();
-                LB_1115.Text = tabelka01.Rows[10][14].ToString().Trim();
-                LB_1116.Text = tabelka01.Rows[10][15].ToString().Trim();
-                LB_1117.Text = tabelka01.Rows[10][16].ToString().Trim();
-                LB_1118.Text = tabelka01.Rows[10][17].ToString().Trim();
-                LB_1119.Text = tabelka01.Rows[10][18].ToString().Trim();
-                LB_1120.Text = tabelka01.Rows[10][19].ToString().Trim();
-                */
+                LB_11_2.Text = tabelka01.Rows[10][0].ToString().Trim();
+                LB_11_3.Text = tabelka01.Rows[10][1].ToString().Trim();
+                LB_11_4.Text = tabelka01.Rows[10][2].ToString().Trim();
+                LB_11_5.Text = tabelka01.Rows[10][3].ToString().Trim();
+                LB_11_6.Text = tabelka01.Rows[10][4].ToString().Trim();
+                LB_11_7.Text = tabelka01.Rows[10][5].ToString().Trim();
+                LB_11_8.Text = tabelka01.Rows[10][6].ToString().Trim();
+                LB_11_9.Text = tabelka01.Rows[10][7].ToString().Trim();
+                LB_11_10.Text = tabelka01.Rows[10][8].ToString().Trim();
+                LB_11_11.Text = tabelka01.Rows[10][9].ToString().Trim();
+                LB_11_12.Text = tabelka01.Rows[10][10].ToString().Trim();
 
                 //row12
-                LB_122.Text = tabelka01.Rows[11][1].ToString().Trim();
-                LB_123.Text = tabelka01.Rows[11][2].ToString().Trim();
-                LB_124.Text = tabelka01.Rows[11][3].ToString().Trim();
-                LB_125.Text = tabelka01.Rows[11][4].ToString().Trim();
-                LB_126.Text = tabelka01.Rows[11][5].ToString().Trim();
-                LB_127.Text = tabelka01.Rows[11][6].ToString().Trim();
-                LB_128.Text = tabelka01.Rows[11][7].ToString().Trim();
-                LB_129.Text = tabelka01.Rows[11][8].ToString().Trim();
-                LB_1210.Text = tabelka01.Rows[11][9].ToString().Trim();
-                LB_1211.Text = tabelka01.Rows[11][10].ToString().Trim();
-                LB_1212.Text = tabelka01.Rows[11][11].ToString().Trim();
-
+                LB_122.Text = tabelka01.Rows[11][0].ToString().Trim();
+                LB_123.Text = tabelka01.Rows[11][1].ToString().Trim();
+                LB_124.Text = tabelka01.Rows[11][2].ToString().Trim();
+                LB_125.Text = tabelka01.Rows[11][3].ToString().Trim();
+                LB_126.Text = tabelka01.Rows[11][4].ToString().Trim();
+                LB_127.Text = tabelka01.Rows[11][5].ToString().Trim();
+                LB_128.Text = tabelka01.Rows[11][6].ToString().Trim();
+                LB_129.Text = tabelka01.Rows[11][7].ToString().Trim();
+                LB_1210.Text = tabelka01.Rows[11][8].ToString().Trim();
+                LB_1211.Text = tabelka01.Rows[11][9].ToString().Trim();
+                LB_1212.Text = tabelka01.Rows[11][10].ToString().Trim();
 
                 //row13
-                LB_132.Text = tabelka01.Rows[12][1].ToString().Trim();
-                LB_133.Text = tabelka01.Rows[12][2].ToString().Trim();
-                LB_134.Text = tabelka01.Rows[12][3].ToString().Trim();
-                LB_135.Text = tabelka01.Rows[12][4].ToString().Trim();
-                LB_136.Text = tabelka01.Rows[12][5].ToString().Trim();
-                LB_137.Text = tabelka01.Rows[12][6].ToString().Trim();
-                LB_138.Text = tabelka01.Rows[12][7].ToString().Trim();
-                LB_139.Text = tabelka01.Rows[12][8].ToString().Trim();
-                LB_1310.Text = tabelka01.Rows[12][9].ToString().Trim();
-                LB_1311.Text = tabelka01.Rows[12][10].ToString().Trim();
-                LB_1312.Text = tabelka01.Rows[12][11].ToString().Trim();
-
+                LB_132.Text = tabelka01.Rows[12][0].ToString().Trim();
+                LB_133.Text = tabelka01.Rows[12][1].ToString().Trim();
+                LB_134.Text = tabelka01.Rows[12][2].ToString().Trim();
+                LB_135.Text = tabelka01.Rows[12][3].ToString().Trim();
+                LB_136.Text = tabelka01.Rows[12][4].ToString().Trim();
+                LB_137.Text = tabelka01.Rows[12][5].ToString().Trim();
+                LB_138.Text = tabelka01.Rows[12][6].ToString().Trim();
+                LB_139.Text = tabelka01.Rows[12][7].ToString().Trim();
+                LB_1310.Text = tabelka01.Rows[12][8].ToString().Trim();
+                LB_1311.Text = tabelka01.Rows[12][9].ToString().Trim();
+                LB_1312.Text = tabelka01.Rows[12][10].ToString().Trim();
 
                 //row14
-                LB_142.Text = tabelka01.Rows[13][1].ToString().Trim();
-                LB_143.Text = tabelka01.Rows[13][2].ToString().Trim();
-                LB_144.Text = tabelka01.Rows[13][3].ToString().Trim();
-                LB_145.Text = tabelka01.Rows[13][4].ToString().Trim();
-                LB_146.Text = tabelka01.Rows[13][5].ToString().Trim();
-                LB_147.Text = tabelka01.Rows[13][6].ToString().Trim();
-                LB_148.Text = tabelka01.Rows[13][7].ToString().Trim();
-                LB_149.Text = tabelka01.Rows[13][8].ToString().Trim();
-                LB_1410.Text = tabelka01.Rows[13][9].ToString().Trim();
-                LB_1411.Text = tabelka01.Rows[13][10].ToString().Trim();
-                LB_1412.Text = tabelka01.Rows[13][11].ToString().Trim();
-
-
+                LB_142.Text = tabelka01.Rows[13][0].ToString().Trim();
+                LB_143.Text = tabelka01.Rows[13][1].ToString().Trim();
+                LB_144.Text = tabelka01.Rows[13][2].ToString().Trim();
+                LB_145.Text = tabelka01.Rows[13][3].ToString().Trim();
+                LB_146.Text = tabelka01.Rows[13][4].ToString().Trim();
+                LB_147.Text = tabelka01.Rows[13][5].ToString().Trim();
+                LB_148.Text = tabelka01.Rows[13][6].ToString().Trim();
+                LB_149.Text = tabelka01.Rows[13][7].ToString().Trim();
+                LB_1410.Text = tabelka01.Rows[13][8].ToString().Trim();
+                LB_1411.Text = tabelka01.Rows[13][9].ToString().Trim();
+                LB_1412.Text = tabelka01.Rows[13][10].ToString().Trim();
 
                 txt = txt + cl.generuj_dane_do_tabeli_(int.Parse((string)Session["id_dzialu"]), 1, Date1.Date, Date2.Date);
                 txt = txt + cl.generuj_dane_do_tabeli_(int.Parse((string)Session["id_dzialu"]), 2, Date1.Date, Date2.Date);
@@ -301,7 +278,6 @@ namespace Statystyki_2018
                 txt = txt + cl.generuj_dane_do_tabeli_(int.Parse((string)Session["id_dzialu"]), 6, Date1.Date, Date2.Date);
                 txt = txt + cl.generuj_dane_do_tabeli_(int.Parse((string)Session["id_dzialu"]), 7, Date1.Date, Date2.Date);
                 //txt = txt + cl.uzupelnij_statusy();
-
             }
             catch (Exception ex)
             {
@@ -327,15 +303,12 @@ namespace Statystyki_2018
 
             Label11.Text = txt;
             Label3.Text = cl.nazwaSadu((string)Session["id_dzialu"]);
-
-
         }
 
-
         #region "nagłowki tabel"
+
         protected void makeHeader()
         {
-
             System.Web.UI.WebControls.GridView sn = new System.Web.UI.WebControls.GridView();
 
             Session["header_01"] = null;
@@ -348,7 +321,6 @@ namespace Statystyki_2018
             Session["header_08"] = null;
 
             #region tabela  1 (wierszowa)
-
 
             DataTable dT_01 = new DataTable();
             dT_01.Columns.Clear();
@@ -402,10 +374,10 @@ namespace Statystyki_2018
             dT_01.Rows.Add(new Object[] { "2", "sprawy wg. repertoriów lub wykazów", "8", "1" });
             //   Session["header_01"] = dT_01;
 
-            #endregion
-
+            #endregion tabela  1 (wierszowa)
 
             #region tabela  2 ()
+
             //pierwsza sedziowska
             dT_02.Clear();
 
@@ -431,8 +403,6 @@ namespace Statystyki_2018
             dT_02.Rows.Add(new Object[] { "2", "w tym ilość odroczeń publikacji orzeczeń", "1", "2", "h" });//
             dT_02.Rows.Add(new Object[] { "2", "Liczba wyznaczonych spraw na posiedzenie ", "4", "1", "h" });//
 
-
-
             dT_02.Rows.Add(new Object[] { "3", "L.p.", "1", "3", "h" });//
             dT_02.Rows.Add(new Object[] { "3", "Imię i Nazwisko", "1", "3", "h" });//
             dT_02.Rows.Add(new Object[] { "3", "Ilość spraw <br/>w referacie <br/>(na koniec okresu stat.)", "3", "1", "h" });//
@@ -440,16 +410,13 @@ namespace Statystyki_2018
             dT_02.Rows.Add(new Object[] { "3", "Wyznaczenia", "10", "1", "h" });//
             dT_02.Rows.Add(new Object[] { "3", "Wyznaczono spraw ogółem (r.8+15)", "1", "3", "h" });//
 
-
-
-
-
             Session["header_02"] = dT_02;
             //  makeHeader1(sn, dT_02);
 
+            #endregion tabela  2 ()
 
-            #endregion
             #region tabela  3 ()
+
             //druga sedziowska
             dT_03.Clear();
             dT_03.Rows.Add(new Object[] { "1", "L.p.", "1", "1", "h" });//
@@ -465,9 +432,6 @@ namespace Statystyki_2018
             dT_03.Rows.Add(new Object[] { "1", "9", "1", "1", "h" });//
 
             dT_03.Rows.Add(new Object[] { "1", "10", "1", "1", "h" });//
-
-
-
 
             dT_03.Rows.Add(new Object[] { "2", "rozprawy", "1", "1", "h" });//
             dT_03.Rows.Add(new Object[] { "2", "posiedzenia", "1", "1", "h" });//
@@ -486,19 +450,14 @@ namespace Statystyki_2018
             dT_03.Rows.Add(new Object[] { "3", "Liczba załatwionych spraw na rozprawie", "3", "1", "h" });//
             dT_03.Rows.Add(new Object[] { "3", "Liczba załatwionych spraw na posiedzeniu", "4", "1", "h" });//
 
-
-
             dT_03.Rows.Add(new Object[] { "4", "Sprawy wg Ksiąg", "2", "3", "h" });//
             dT_03.Rows.Add(new Object[] { "4", "Liczba odbytych sesji - wokandy łącznie pion ubezp. oraz pracy", "2", "2", "h" });//
             dT_03.Rows.Add(new Object[] { "4", "ZAŁATWIENIA", "7", "1", "h" });//
             dT_03.Rows.Add(new Object[] { "4", "Załatwiono spraw ogółem (r.5+9)", "1", "3", "h" });//
 
-
             Session["header_03"] = dT_03;
 
-            #endregion
-
-
+            #endregion tabela  3 ()
 
             #region tabela  4 ()
 
@@ -529,8 +488,6 @@ namespace Statystyki_2018
             dT_04.Rows.Add(new Object[] { "2", "w tym ilość odroczeń publikacji orzeczeń", "1", "2", "h" });//
             dT_04.Rows.Add(new Object[] { "2", "Liczba wyznaczonych spraw na posiedzeniu ", "6", "1", "h" });//
 
-
-
             dT_04.Rows.Add(new Object[] { "3", "L.p.", "1", "3", "h" });//
             dT_04.Rows.Add(new Object[] { "3", "Imię i Nazwisko", "1", "3", "h" });//
             dT_04.Rows.Add(new Object[] { "3", "Ilość spraw <br/>w referacie <br/>(na koniec okresu stat.)", "3", "1", "h" });//
@@ -538,13 +495,9 @@ namespace Statystyki_2018
             dT_04.Rows.Add(new Object[] { "3", "Wyznaczenia", "13", "1", "h" });//
             dT_04.Rows.Add(new Object[] { "3", "Wyznaczono spraw ogółem (r.7+13)", "1", "3", "h" });//
 
-
-
             Session["header_04"] = dT_04;
 
-
-
-            #endregion
+            #endregion tabela  4 ()
 
             #region tabela  5 ()
 
@@ -569,7 +522,6 @@ namespace Statystyki_2018
             dT_05.Rows.Add(new Object[] { "2", "Wykaz Kas-z", "1", "1" });
             dT_05.Rows.Add(new Object[] { "2", "Razem r.1-3", "1", "1" });
 
-
             dT_05.Rows.Add(new Object[] { "2", "P", "1", "1", "v" });
             dT_05.Rows.Add(new Object[] { "2", "Po", "1", "1", "v" });
             dT_05.Rows.Add(new Object[] { "2", "Np", "1", "1", "v" });
@@ -577,22 +529,16 @@ namespace Statystyki_2018
             dT_05.Rows.Add(new Object[] { "2", "WSC", "1", "1", "v" });
             dT_05.Rows.Add(new Object[] { "2", "Razem r.5-9", "1", "1" });
 
-
-
             dT_05.Rows.Add(new Object[] { "3", "Liczba spraw załatwionych na rozprawie", "4", "1" });
             dT_05.Rows.Add(new Object[] { "3", "Liczba spraw załatwionych na rozprawie", "6", "1" });
-
 
             dT_05.Rows.Add(new Object[] { "4", "Skargi wg ksiąg ", "2", "3" });
             dT_05.Rows.Add(new Object[] { "4", "ZAŁATWIENIA", "10", "1" });
             dT_05.Rows.Add(new Object[] { "4", "Załatwionych spraw ogółem (r.4+10)", "1", "3" });
 
-
             Session["header_05"] = dT_05;
 
-
-
-            #endregion
+            #endregion tabela  5 ()
 
             #region tabela  6 ()
 
@@ -603,7 +549,6 @@ namespace Statystyki_2018
             dT_06.Columns.Add("Column3", typeof(string));
             dT_06.Columns.Add("Column4", typeof(string));
             dT_06.Clear();
-
 
             dT_06.Rows.Add(new Object[] { "1", "1-14 dni", "1", "1" });
             dT_06.Rows.Add(new Object[] { "1", "%", "1", "1" });
@@ -630,12 +575,10 @@ namespace Statystyki_2018
             dT_06.Rows.Add(new Object[] { "1", "%", "1", "1" });
             dT_06.Rows.Add(new Object[] { "1", "ilość dni nieobecności w danym miesiącu", "1", "1" });
 
-
             dT_06.Rows.Add(new Object[] { "2", "ilość sporządzonych uzasadnień ogółem", "1", "2" });
             dT_06.Rows.Add(new Object[] { "2", "w  terminie ustawowym", "1", "2" });
 
             dT_06.Rows.Add(new Object[] { "2", "po upływie terminu ustawowego", "12", "1" });
-
 
             dT_06.Rows.Add(new Object[] { "3", "L.p.", "1", "3" });
             dT_06.Rows.Add(new Object[] { "3", "Imie i nazwisko", "1", "3" });
@@ -646,14 +589,10 @@ namespace Statystyki_2018
             dT_06.Rows.Add(new Object[] { "3", "liczba spraw, w których niewniesiono środka zaskażenia ", "2", "2" });
             dT_06.Rows.Add(new Object[] { "3", "nieobecności w pracy (zwolnienia, urlopy…)", "1", "2" });
 
-
-
-
             Session["header_06"] = dT_06;
             //  Session["header_07"] = dT_06;
 
-
-            #endregion
+            #endregion tabela  6 ()
 
             #region tabela  7()
 
@@ -692,21 +631,13 @@ namespace Statystyki_2018
             dT_07.Rows.Add(new Object[] { "2", "WSC", "1", "1" });
             dT_07.Rows.Add(new Object[] { "2", "razem (r.5-9)", "1", "1" });
 
-
             dT_07.Rows.Add(new Object[] { "3", "Sprawy wg Ksiąg", "2", "2" });
             dT_07.Rows.Add(new Object[] { "3", "ZAŁATWIENIA od początku roku", "10", "1" });
             dT_07.Rows.Add(new Object[] { "3", "Załatwionych spraw ogółem (r.4+10)", "1", "2" });
             Session["header_07"] = dT_07;
 
-            #endregion
-
-
-
+            #endregion tabela  7()
         }
-
-
-
-     
 
         protected void GridView2_RowCreated(object sender, GridViewRowEventArgs e)
         {
@@ -778,24 +709,17 @@ namespace Statystyki_2018
             }
         }
 
-
         #endregion "nagłowki tabel"
 
         #region "obsługa oncommand  tabel z nazwiskami"
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             //Label8.Text = GridView1.SelectedDataKey[1].ToString() + " " + GridView1.SelectedDataKey[2].ToString();
             makeLabels();
         }
 
-
-
-
-
         #endregion "obsługa oncommand  tabel z nazwiskami"
-
 
         protected void makeLabels()
         {
@@ -812,7 +736,6 @@ namespace Statystyki_2018
                 { }
                 Label3.Text = cl.nazwaSadu((string)Session["id_dzialu"]);
 
-
                 id_dzialu.Text = (string)Session["txt_dzialu"];
                 Label28.Text = cl.podajUzytkownika(User_id, domain);
                 Label29.Text = DateTime.Now.ToLongDateString();
@@ -823,14 +746,12 @@ namespace Statystyki_2018
                 catch
                 { }
 
-
                 string strMonthName = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(Date2.Date.Month);
                 int last_day = DateTime.DaysInMonth(Date2.Date.Year, Date2.Date.Month);
                 if (((Date1.Date.Day == 1) && (Date2.Date.Day == last_day)) && ((Date1.Date.Month == Date2.Date.Month)))
                 {
                     // cały miesiąc
                     Label19.Text = " II Liczba sesji, wyznaczonych i załatwionych spraw z zakresu ubezpieczeń społ. przez sędziów za miesiąc " + strMonthName + " " + Date2.Date.Year.ToString() + " roku.";
-                    //Label17.Text = "II Liczba sesji, wyznaczonych i załatwionych spraw z zakresu prawa pracy przez sędziów za miesiąc " + strMonthName + " " + Date2.Date.Year.ToString() + " roku.";
                     //Stan referatów sędziów na koniec miesiąca
                     Label15.Text = "II Liczba sesji, wyznaczonych i załatwionych spraw z zakresu prawa pracy przez sędziów na koniec miesiąca " + strMonthName + " " + Date2.Date.Year.ToString() + " roku.";
                     //Informacje o ruchu sprawa za miesiąc: 
@@ -838,14 +759,10 @@ namespace Statystyki_2018
                     //Pozostało z ubieglego miesiąca
                     Label2.Text = "IV Terminowość sporządzania uzasadnień, absencja za miesiąc:  " + strMonthName + " " + Date2.Date.Year.ToString() + " roku.";
                     Label7.Text = "V. Liczba załatwionych spraw od początku roku";
-
-
-
                 }
                 else
                 {
                     Label19.Text = "II Liczba sesji, wyznaczonych i załatwionych spraw z zakresu ubezpieczeń społ. przez sędziów za okres od " + Date1.Text + " do  " + Date2.Text;
-                    //	Label17.Text = "II Liczba sesji, wyznaczonych i załatwionych spraw z zakresu prawa pracy przez sędziów za okres od" + Date1.Text + " do  " + Date2.Text;
                     Label15.Text = "II Liczba sesji, wyznaczonych i załatwionych spraw z zakresu prawa pracy przez sędziów za okres od " + Date1.Text + " do  " + Date2.Text;
                     Label5.Text = "Informacje o ruchu sprawa cywilnych za okres od:  " + Date1.Text + " do  " + Date2.Text;
                     Label2.Text = "IV Terminowość sporządzania uzasadnień, absencja za okres od:  " + Date1.Text + " do  " + Date2.Text;
@@ -854,16 +771,12 @@ namespace Statystyki_2018
             }
             catch
             {
-
             }
-
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-
             ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print2", "JavaScript: window.print();", true);
-            // ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "print", "window.open('raport_01_print.aspx', '')", true);
         }
 
         protected void Button3_Click(object sender, EventArgs e)
@@ -880,13 +793,12 @@ namespace Statystyki_2018
             }
             catch (Exception ex)
             {
-                                cm.log.Error(tenPlik + " " + ex.Message );    
+                cm.log.Error(tenPlik + " " + ex.Message);
             }
 
             // pierwsza tabelka
 
             DataTable tabelka001 = (DataTable)Session["tabelka001"];
-
 
             try
             {
@@ -895,7 +807,6 @@ namespace Statystyki_2018
                     // pierwsza
 
                     ExcelWorksheet MyWorksheet = MyExcel.Workbook.Worksheets[1];
-
 
                     DataTable table = (DataTable)Session["tabelka001"];
                     DataView view = table.DefaultView;
@@ -912,36 +823,29 @@ namespace Statystyki_2018
                         j++;
                     }
 
-
-                    // druga 
+                    // druga
                     view = (DataView)tabela_2.Select(DataSourceSelectArguments.Empty);
                     robArkusz(MyExcel, 2, view, 7, 19);
 
-
-                    // trzecia 
+                    // trzecia
 
                     DataView view2 = (DataView)tabela_3.Select(DataSourceSelectArguments.Empty);
                     robArkusz(MyExcel, 3, view2, 7, 13);
 
-                    // czwarta 
+                    // czwarta
                     DataView view3 = (DataView)tabela_4.Select(DataSourceSelectArguments.Empty);
                     robArkusz(MyExcel, 4, view3, 7, 20);
 
-
-                    // piąta 
+                    // piąta
                     DataView view5 = (DataView)tabela_5.Select(DataSourceSelectArguments.Empty);
                     robArkusz(MyExcel, 5, view5, 8, 14);
 
-
-
-                    // szósta 
+                    // szósta
                     DataView view6 = (DataView)tabela_6.Select(DataSourceSelectArguments.Empty);
                     robArkusz(MyExcel, 6, view6, 6, 26);
 
-
                     DataView view7 = (DataView)tabela_7.Select(DataSourceSelectArguments.Empty);
                     robArkusz(MyExcel, 7, view7, 6, 14);
-
 
                     try
                     {
@@ -952,13 +856,11 @@ namespace Statystyki_2018
                         this.Response.AddHeader("Content-Disposition", "attachment;filename=" + fNewFile.Name);
                         this.Response.WriteFile(fNewFile.FullName);
                         this.Response.End();
-
                     }
                     catch (Exception ex)
                     {
-                           cm.log.Error(tenPlik + " " + ex.Message );
+                        cm.log.Error(tenPlik + " " + ex.Message);
                     }
-
                 }//end of using
                 odswiez();
             }
@@ -967,7 +869,6 @@ namespace Statystyki_2018
                 cm.log.Error(tenPlik + " " + ex.Message);
             }
         }
-
 
         protected void LinkButton54_Click(object sender, EventArgs e)
         {
@@ -982,11 +883,6 @@ namespace Statystyki_2018
             makeLabels();
         }
 
-
-
-
-
-
         protected void GridView1_RowCreated(object sender, GridViewRowEventArgs e)
         {
             if (e.Row.RowType == DataControlRowType.Header)
@@ -997,24 +893,15 @@ namespace Statystyki_2018
             }
         }
 
-     
-
         protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
         {
-
             if (e.Row.RowType == DataControlRowType.Footer)
             {
                 DataTable table = ((DataView)tabela_2.Select(DataSourceSelectArguments.Empty)).ToTable();
 
-                tabela.makeSumRow(table, e,1);
-
+                tabela.makeSumRow(table, e, 1);
             }
         }
-
-
-
-
-
 
         protected void GridView3_RowDataBound(object sender, GridViewRowEventArgs e)
         {
@@ -1022,8 +909,7 @@ namespace Statystyki_2018
             {
                 DataTable table = ((DataView)tabela_3.Select(DataSourceSelectArguments.Empty)).ToTable();
 
-                tabela.makeSumRow(table, e,1);
-
+                tabela.makeSumRow(table, e, 1);
             }
         }
 
@@ -1033,8 +919,7 @@ namespace Statystyki_2018
             {
                 DataTable table = ((DataView)tabela_4.Select(DataSourceSelectArguments.Empty)).ToTable();
 
-                tabela.makeSumRow(table, e,1);
-
+                tabela.makeSumRow(table, e, 1);
             }
         }
 
@@ -1044,11 +929,9 @@ namespace Statystyki_2018
             {
                 DataTable table = ((DataView)tabela_5.Select(DataSourceSelectArguments.Empty)).ToTable();
 
-                tabela.makeSumRow(table, e,1);
-
+                tabela.makeSumRow(table, e, 1);
             }
         }
-
 
         protected void GridView6_RowDataBound(object sender, GridViewRowEventArgs e)
         {
@@ -1056,8 +939,7 @@ namespace Statystyki_2018
             {
                 DataTable table = ((DataView)tabela_6.Select(DataSourceSelectArguments.Empty)).ToTable();
 
-                tabela.makeSumRow(table, e,1);
-
+                tabela.makeSumRow(table, e, 1);
             }
         }
 
@@ -1067,14 +949,12 @@ namespace Statystyki_2018
             {
                 DataTable table = ((DataView)tabela_7.Select(DataSourceSelectArguments.Empty)).ToTable();
 
-                tabela.makeSumRow(table, e,1);
-
+                tabela.makeSumRow(table, e, 1);
             }
         }
 
         protected void robArkusz(ExcelPackage MyExcel, int nrArkusza, DataView View, int rowikPlus, int ilKolumn)
         {
-
             ExcelWorksheet MyWorksheet8 = MyExcel.Workbook.Worksheets[nrArkusza];
 
             DataTable table7 = View.ToTable();
@@ -1087,7 +967,7 @@ namespace Statystyki_2018
             catch
             { }
 
-            //        table.Columns.Remove("funkcja");
+          
             int rowik = 1;
             foreach (DataRow dR in table7.Rows)
             {
@@ -1113,11 +993,8 @@ namespace Statystyki_2018
                     manageCells(MyWorksheet8, rowik + rowikPlus, i + 2, sumObject.ToString());
                 }
             }
-            catch 
+            catch
             { }
-
-
-
         }
 
         protected void manageCells(ExcelWorksheet sheet, int rowik, int col, string value)
@@ -1130,19 +1007,14 @@ namespace Statystyki_2018
                 try
                 {
                     sheet.Cells[rowik, col].Value = double.Parse(value);
-
                 }
-                catch 
+                catch
                 {
                     sheet.Cells[rowik, col].Value = value;
                 }
-
-
             }
             catch
             { } // end of try
         }
-
-
     }
 }

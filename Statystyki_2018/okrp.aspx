@@ -39,7 +39,7 @@
     <script src="Scripts/rls.js"></script>
 
     <div id="menu" style="background-color: #f7f7f7; z-index: 9999" class="noprint">
-        <div class="manu_back" style="height: 40px; margin: 0 auto 0 auto; position: relative; width: 1050px; left: 0px;">
+        <div class="manu_back" style="height: 40px; margin: 0 auto 0 auto; position: relative; width: auto; left: 0px;">
             <table>
                 <tr>
                     <td style="width: auto; padding-left: 5px;">
@@ -69,7 +69,7 @@
         </div>
     </div>
 
-    <div style="width: 1150px; margin: 0 40px 0 40px; position: relative; top: 60px;">
+    <div style="width: 100%; margin: 0 40 0 40; position: relative; top: 60px;">
 
         <div id="Div2" style="z-index: 10;">
             <div style="margin-left: auto; margin-right: auto; text-align: center; width: auto;">

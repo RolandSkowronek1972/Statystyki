@@ -7,7 +7,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_PublishTargetUrl>C:\test\publish</_PublishTargetUrl>
-    <History>True|2024-11-26T08:09:24.5777312Z||;True|2024-11-26T09:07:18.4768652+01:00||;True|2024-11-24T16:32:56.9672795+01:00||;True|2024-11-07T20:38:28.4795631+01:00||;True|2024-11-07T20:38:05.8915334+01:00||;</History>
+    <History>True|2025-03-09T15:18:15.6622647Z||;True|2025-02-23T11:33:56.7844505+01:00||;True|2025-02-14T18:26:17.2681784+01:00||;True|2025-02-12T21:17:56.5762842+01:00||;True|2024-11-26T09:09:24.5777312+01:00||;True|2024-11-26T09:07:18.4768652+01:00||;True|2024-11-24T16:32:56.9672795+01:00||;True|2024-11-07T20:38:28.4795631+01:00||;True|2024-11-07T20:38:05.8915334+01:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -147,7 +147,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/23/2024 17:12:43</publishTime>
     </File>
     <File Include="akrp.aspx">
-      <publishTime>06/23/2024 17:12:43</publishTime>
+      <publishTime>03/09/2025 15:54:01</publishTime>
     </File>
     <File Include="akrp.aspx.cs">
       <publishTime>06/23/2024 17:12:42</publishTime>
@@ -384,10 +384,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="bin/App_GlobalResources.compiled">
-      <publishTime>11/26/2024 09:09:02</publishTime>
+      <publishTime>03/09/2025 16:17:49</publishTime>
     </File>
     <File Include="bin/App_GlobalResources.dll">
-      <publishTime>11/26/2024 09:09:01</publishTime>
+      <publishTime>03/09/2025 16:17:48</publishTime>
     </File>
     <File Include="bin/de/DevExpress.Data.v16.1.resources.dll">
       <publishTime>10/31/2016 09:49:22</publishTime>
@@ -966,7 +966,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/13/2014 06:31:40</publishTime>
     </File>
     <File Include="bin/pl/App_GlobalResources.resources.dll">
-      <publishTime>11/26/2024 09:08:59</publishTime>
+      <publishTime>03/09/2025 16:17:47</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>05/24/2018 15:38:22</publishTime>
@@ -1233,10 +1233,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/13/2018 11:20:50</publishTime>
     </File>
     <File Include="bin/stat2018.dll">
-      <publishTime>11/26/2024 09:08:25</publishTime>
+      <publishTime>03/09/2025 16:17:26</publishTime>
     </File>
     <File Include="bin/stat2018.pdb">
-      <publishTime>11/26/2024 09:08:25</publishTime>
+      <publishTime>03/09/2025 16:17:26</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
       <publishTime>02/01/2018 12:17:18</publishTime>
@@ -1491,7 +1491,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/23/2024 17:12:44</publishTime>
     </File>
     <File Include="mp2.aspx">
-      <publishTime>11/07/2024 20:04:18</publishTime>
+      <publishTime>02/16/2025 15:03:09</publishTime>
     </File>
     <File Include="mp2.aspx.cs">
       <publishTime>11/24/2024 16:22:54</publishTime>
@@ -1863,7 +1863,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/23/2024 17:12:46</publishTime>
     </File>
     <File Include="okrp.aspx">
-      <publishTime>06/23/2024 17:12:48</publishTime>
+      <publishTime>02/16/2025 15:36:43</publishTime>
     </File>
     <File Include="okrp.aspx.cs">
       <publishTime>06/23/2024 17:12:48</publishTime>
@@ -1944,7 +1944,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/23/2024 17:12:46</publishTime>
     </File>
     <File Include="oktp2.aspx">
-      <publishTime>10/11/2024 15:44:55</publishTime>
+      <publishTime>02/20/2025 13:06:58</publishTime>
     </File>
     <File Include="oktp2.aspx.cs">
       <publishTime>10/11/2024 15:54:12</publishTime>
@@ -2190,7 +2190,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/11/2022 13:42:34</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>11/26/2024 09:08:28</publishTime>
+      <publishTime>03/09/2025 16:17:29</publishTime>
     </File>
     <File Include="Properties/AssemblyInfo.cs">
       <publishTime>12/19/2022 11:16:53</publishTime>
@@ -2307,10 +2307,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="Statystyki_2018.csproj">
-      <publishTime>10/11/2024 15:56:06</publishTime>
+      <publishTime>02/12/2025 21:10:53</publishTime>
     </File>
     <File Include="Statystyki_2018.csproj.user">
-      <publishTime>11/26/2024 09:08:19</publishTime>
+      <publishTime>03/09/2025 16:17:23</publishTime>
     </File>
     <File Include="style/card.css">
       <publishTime>12/11/2022 13:42:34</publishTime>
@@ -2407,6 +2407,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Template/akrp.xlsx">
       <publishTime>12/11/2022 13:42:32</publishTime>
+    </File>
+    <File Include="Template/aktc.xlsx">
+      <publishTime>02/12/2025 21:13:57</publishTime>
     </File>
     <File Include="Template/aktc2.xlsx">
       <publishTime>12/11/2022 13:42:32</publishTime>
@@ -2697,7 +2700,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/11/2022 13:42:32</publishTime>
     </File>
     <File Include="version.txt">
-      <publishTime>11/07/2024 20:01:05</publishTime>
+      <publishTime>03/09/2025 16:17:23</publishTime>
     </File>
     <File Include="wab.aspx">
       <publishTime>06/23/2024 17:12:48</publishTime>

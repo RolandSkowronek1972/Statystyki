@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Web;
+using System.Web.DynamicData;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -64,53 +65,38 @@ namespace stat2018
 
         }
 
+        private void showHideGrid(ASPxGridView aSPxGridView, DataTable dataTable)
+        {
+
+            aSPxGridView.DataSource = null;
+            aSPxGridView.DataSourceID = null;
+            aSPxGridView.AutoGenerateColumns = true;
+            aSPxGridView.Columns.Clear();
+            if (dataTable == null)
+            {
+                aSPxGridView.Visible = false;
+
+            }
+            else
+            {
+                aSPxGridView.DataSource = dataTable;
+                aSPxGridView.DataBind();
+                aSPxGridView.Visible = true;
+            }
+
+
+        }
+
         private void odswiez(string cs, string DateBegin, string DateEnd, int idWydzialInt)
         {
-            ASPxGridView1.DataSource = null;
-            ASPxGridView1.DataSourceID = null;
-            ASPxGridView1.AutoGenerateColumns = true;
-            ASPxGridView1.Columns.Clear();
-            DataTable dataTable1 = tabela(idWydzialInt, 1, DateBegin, DateEnd, cs);
-            string dColumn = string.Empty;
-
-            ASPxGridView1.DataSource = dataTable1;
-            ASPxGridView1.DataBind();
-
-            ASPxGridView2.DataSource = null;
-            ASPxGridView2.DataSourceID = null;
-            ASPxGridView2.AutoGenerateColumns = true;
-            ASPxGridView2.Columns.Clear();
-            ASPxGridView2.DataSource = tabela(idWydzialInt, 2, DateBegin, DateEnd, cs);
-            ASPxGridView2.DataBind();
-
-
-            ASPxGridView3.DataSource = null;
-            ASPxGridView3.DataSourceID = null;
-            ASPxGridView3.AutoGenerateColumns = true;
-            ASPxGridView3.Columns.Clear();
-            ASPxGridView3.DataSource = tabela(idWydzialInt, 3, DateBegin, DateEnd, cs);
-            ASPxGridView3.DataBind();
-
-            ASPxGridView4.DataSource = null;
-            ASPxGridView4.DataSourceID = null;
-            ASPxGridView4.AutoGenerateColumns = true;
-            ASPxGridView4.Columns.Clear();
-            ASPxGridView4.DataSource = tabela(idWydzialInt, 4, DateBegin, DateEnd, cs);
-            ASPxGridView4.DataBind();
-
-            ASPxGridView5.DataSource = null;
-            ASPxGridView5.DataSourceID = null;
-            ASPxGridView5.AutoGenerateColumns = true;
-            ASPxGridView5.Columns.Clear();
-            ASPxGridView5.DataSource = tabela(idWydzialInt, 5, DateBegin, DateEnd, cs);
-            ASPxGridView5.DataBind();
-
-            ASPxGridView6.DataSource = null;
-            ASPxGridView6.DataSourceID = null;
-            ASPxGridView6.AutoGenerateColumns = true;
-            ASPxGridView6.Columns.Clear();
-            ASPxGridView6.DataSource = tabela(idWydzialInt, 6, DateBegin, DateEnd, cs);
-            ASPxGridView6.DataBind();
+            
+            showHideGrid(ASPxGridView1, tabela(idWydzialInt, 1, DateBegin, DateEnd, cs));
+            showHideGrid(ASPxGridView2, tabela(idWydzialInt, 2, DateBegin, DateEnd, cs));
+            showHideGrid(ASPxGridView3, tabela(idWydzialInt, 3, DateBegin, DateEnd, cs));
+            showHideGrid(ASPxGridView4, tabela(idWydzialInt, 4, DateBegin, DateEnd, cs));
+            showHideGrid(ASPxGridView5, tabela(idWydzialInt, 5, DateBegin, DateEnd, cs));
+            showHideGrid(ASPxGridView6, tabela(idWydzialInt, 6, DateBegin, DateEnd, cs));
+            showHideGrid(ASPxGridView7, tabela(idWydzialInt, 7, DateBegin, DateEnd, cs));
 
             OpisTabeli01.Text = OpisTabeli(1, idWydzialInt);
             OpisTabeli02.Text = OpisTabeli(2, idWydzialInt);
@@ -135,7 +121,7 @@ namespace stat2018
             
             if (cl.debug(idDzialu))
             {
-                cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 1");
+                cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli "+ IdTabeli.ToString());
             }
   
             DataTable parametry = cm.makeParameterTable();

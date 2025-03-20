@@ -65,7 +65,7 @@
        </div>
    </div>
     
-    <div style="width: 1150px; margin: 0 auto 0 auto; position: relative; top: 60px;">
+    <div style=" margin: 0 auto 0 auto; position: relative; top: 60px;">
 
         <div id="Div2" style="z-index: 10;">
             <div style="margin-left: auto; margin-right: auto; text-align: center; width: auto;">
@@ -78,8 +78,6 @@
         <div>
             <br />
             <asp:Label ID="OpisTabeli01" runat="server"></asp:Label>
-
-
         <dx:ASPxGridView ID="ASPxGridView1" runat="server" AutoGenerateColumns="False"  Theme="MetropolisBlue" EnableCallbackAnimation="True">
                         <SettingsPager PageSize="20">
                         </SettingsPager>
@@ -111,15 +109,11 @@
         </Styles>
                    </dx:ASPxGridView>
 
-
             <br />
-
-            
         </div>
-                <div>
+        <div>
             <br />
             <asp:Label ID="OpisTabeli02" runat="server"></asp:Label>
-
 
         <dx:ASPxGridView ID="ASPxGridView2" runat="server" AutoGenerateColumns="False"  Theme="MetropolisBlue" EnableCallbackAnimation="True">
                         <SettingsPager PageSize="20">
@@ -152,18 +146,15 @@
         </Styles>
                    </dx:ASPxGridView>
 
-
             <br />
-
-            
         </div>
-                <div>
+        <div>
             <br />
             <asp:Label ID="OpisTabeli03" runat="server"></asp:Label>
 
 
         <dx:ASPxGridView ID="ASPxGridView3" runat="server" AutoGenerateColumns="False"  Theme="MetropolisBlue" EnableCallbackAnimation="True">
-                        <SettingsPager PageSize="10100">
+                        <SettingsPager PageSize="20">
                         </SettingsPager>
                         <Settings HorizontalScrollBarMode="Visible" UseFixedTableLayout="True" ShowFooter="True" />
 
@@ -192,19 +183,14 @@
             </AlternatingRow>
         </Styles>
                    </dx:ASPxGridView>
-
-
             <br />
-
             
         </div>
-                <div>
+        <div>
             <br />
             <asp:Label ID="OpisTabeli04" runat="server"></asp:Label>
-
-
         <dx:ASPxGridView ID="ASPxGridView4" runat="server" AutoGenerateColumns="False"  Theme="MetropolisBlue" EnableCallbackAnimation="True">
-                        <SettingsPager PageSize="10100">
+                        <SettingsPager PageSize="20">
                         </SettingsPager>
                         <Settings HorizontalScrollBarMode="Visible" UseFixedTableLayout="True" ShowFooter="True" />
 
@@ -234,18 +220,14 @@
         </Styles>
                    </dx:ASPxGridView>
 
-
             <br />
-
-            
         </div>
-                <div>
+        <div>
             <br />
             <asp:Label ID="OpisTabeli05" runat="server"></asp:Label>
 
-
         <dx:ASPxGridView ID="ASPxGridView5" runat="server" AutoGenerateColumns="False"  Theme="MetropolisBlue" EnableCallbackAnimation="True">
-                        <SettingsPager PageSize="10100">
+                        <SettingsPager PageSize="20">
                         </SettingsPager>
                         <Settings HorizontalScrollBarMode="Visible" UseFixedTableLayout="True" ShowFooter="True" />
 
@@ -263,30 +245,28 @@
                         <TotalSummary>
                             <dx:ASPxSummaryItem  DisplayFormat="Ogółem" Visible="true" ShowInColumn="1" />
                         </TotalSummary>
-     <GroupSummary>
-    <dx:ASPxSummaryItem FieldName="MyField" SummaryType="Sum" DisplayFormat="{0}" />
-</GroupSummary>
+                        <GroupSummary>
+                        <dx:ASPxSummaryItem FieldName="MyField" SummaryType="Sum" DisplayFormat="{0}" />
+                        </GroupSummary>
                         <Styles>
-                            <Footer CssClass="borderAll  gray" HorizontalAlign="Center">
+                           <Footer CssClass="borderAll  gray" HorizontalAlign="Center">
                             </Footer>
 
-            <AlternatingRow BackColor="#DCDCDC">
-            </AlternatingRow>
-        </Styles>
+                        <AlternatingRow BackColor="#DCDCDC">
+                        </AlternatingRow>
+                        </Styles>
                    </dx:ASPxGridView>
-
-
             <br />
 
             
         </div>
-                <div>
+        <div>
             <br />
             <asp:Label ID="OpisTabeli06" runat="server"></asp:Label>
 
 
         <dx:ASPxGridView ID="ASPxGridView6" runat="server" AutoGenerateColumns="False"  Theme="MetropolisBlue" EnableCallbackAnimation="True">
-                        <SettingsPager PageSize="10100">
+                        <SettingsPager PageSize="20">
                         </SettingsPager>
                         <Settings HorizontalScrollBarMode="Visible" UseFixedTableLayout="True" ShowFooter="True" />
 
@@ -315,19 +295,17 @@
             </AlternatingRow>
         </Styles>
                    </dx:ASPxGridView>
-
-
             <br />
 
             
         </div>
-                <div>
+        <div>
             <br />
             <asp:Label ID="Label8" runat="server"></asp:Label>
 
 
         <dx:ASPxGridView ID="ASPxGridView7" runat="server" AutoGenerateColumns="False"  Theme="MetropolisBlue" EnableCallbackAnimation="True">
-                        <SettingsPager PageSize="10100">
+                        <SettingsPager PageSize="20">
                         </SettingsPager>
                         <Settings HorizontalScrollBarMode="Visible" UseFixedTableLayout="True" ShowFooter="True" />
 
@@ -373,4 +351,6 @@
 
        <asp:Label ID="Label11" runat="server"></asp:Label>
    </div>
+    </div>
+
 </asp:Content>
