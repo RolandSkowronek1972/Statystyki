@@ -62,46 +62,32 @@ namespace Statystyki_2018
 
             bool result = true;
             log.Info("rozpoczecie logowania "+ DateTime.Now.ToLongTimeString());
+
+            string DomainUserName = string.Empty;
             try
             {
-                using (PrincipalContext pc = new PrincipalContext(ContextType.Domain, TextBox3.Text.Trim()))
+                DomainUserName = Logowanie.podajIdUzytkownikaDomenowego(TextBox1.Text.Trim());
+            }
+            catch { }
+
+            if (!string.IsNullOrEmpty(DomainUserName))
+            {
+                try
                 {
-                    try
+                    using (PrincipalContext pc = new PrincipalContext(ContextType.Domain, TextBox3.Text.Trim()))
                     {
-                        log.Info("rozpoczecie logowania domenowego " + DateTime.Now.ToLongTimeString());
-                        result = pc.ValidateCredentials(TextBox1.Text.Trim(), TextBox2.Text.Trim());
-                        if (result)
+                        try
                         {
-                            log.Info("wynik logowania domenowego " + DateTime.Now.ToLongTimeString());
-                            log.Info("Logowanie domenowe się powiodło");
-                            Session["damain"] = "1";
-                            string id = Logowanie.podajIdUzytkownikaDomenowego(TextBox1.Text);
-                            Session["user_id"] = TextBox1.Text.Trim();
-                            Session["userIdNum"] = id;
-                            Session["identyfikatorUzytkownika"] = id;
-                            Session["daneUzytkownika"] = Logowanie.PodajDaneUzytkownika(TextBox1.Text.Trim());
-                        }
-                        else
-                        {
-                            log.Info("rozpoczecie logowania z bazy danych " + DateTime.Now.ToLongTimeString());
-                            Session["damain"] = "0";
-                            //log.Info("Logowanie użytkowników z bazy danych");
-                            string id = Logowanie.loguj(TextBox1.Text.Trim(), TextBox2.Text.Trim());
-                            log.Info("wynik logowania z bazy danych " + DateTime.Now.ToLongTimeString());
-                            int ident = 0;
-                            try
+                            log.Info("rozpoczecie logowania domenowego " + DateTime.Now.ToLongTimeString());
+
+
+                            result = pc.ValidateCredentials(TextBox1.Text.Trim(), TextBox2.Text.Trim());
+                            if (result)
                             {
-                                ident = int.Parse(id);
-                            }
-                            catch
-                            {
-                               
-                            }
-                            if (ident > 0)
-                            {
-                                log.Info("uzytkownik zgodny " + DateTime.Now.ToLongTimeString());
-                                //log.Info("Logowanie poprawne!!! identyfikator użytkownika: " + TextBox1.Text.Trim() + " identyfikator: " + id);
-                                result = true;
+                                log.Info("wynik logowania domenowego " + DateTime.Now.ToLongTimeString());
+                                log.Info("Logowanie domenowe się powiodło");
+                                Session["damain"] = "1";
+                                string id = Logowanie.podajIdUzytkownikaDomenowego(TextBox1.Text);
                                 Session["user_id"] = TextBox1.Text.Trim();
                                 Session["userIdNum"] = id;
                                 Session["identyfikatorUzytkownika"] = id;
@@ -109,31 +95,87 @@ namespace Statystyki_2018
                             }
                             else
                             {
-                                log.Error("Logowanie nie poprawne!!! Użytkownik: " + TextBox1.Text.Trim() + " podał niepoprawne hasło lub nie istanieje na liście użytkowników");
+                                log.Info("rozpoczecie logowania z bazy danych " + DateTime.Now.ToLongTimeString());
+                                Session["damain"] = "0";
+                                //log.Info("Logowanie użytkowników z bazy danych");
+                                string id = Logowanie.loguj(TextBox1.Text.Trim(), TextBox2.Text.Trim());
+                                log.Info("wynik logowania z bazy danych " + DateTime.Now.ToLongTimeString());
+                                int ident = 0;
+                                try
+                                {
+                                    ident = int.Parse(id);
+                                }
+                                catch
+                                {
+
+                                }
+                                if (ident > 0)
+                                {
+                                    log.Info("uzytkownik zgodny " + DateTime.Now.ToLongTimeString());
+                                    //log.Info("Logowanie poprawne!!! identyfikator użytkownika: " + TextBox1.Text.Trim() + " identyfikator: " + id);
+                                    result = true;
+                                    Session["user_id"] = TextBox1.Text.Trim();
+                                    Session["userIdNum"] = id;
+                                    Session["identyfikatorUzytkownika"] = id;
+                                    Session["daneUzytkownika"] = Logowanie.PodajDaneUzytkownika(TextBox1.Text.Trim());
+                                }
+                                else
+                                {
+                                    log.Error("Logowanie nie poprawne!!! Użytkownik: " + TextBox1.Text.Trim() + " podał niepoprawne hasło lub nie istanieje na liście użytkowników");
+                                }
                             }
                         }
-                    }
-                    catch
-                    {
-                        log.Info("Logowanie niepoprawne !!! Użytkownik: " + TextBox1.Text.Trim() + " podał niepoprawne hasło lub nie istanieje na liście użytkowników");
+                        catch
+                        {
+                            log.Info("Logowanie niepoprawne !!! Użytkownik: " + TextBox1.Text.Trim() + " podał niepoprawne hasło lub nie istanieje na liście użytkowników");
+                        }
                     }
                 }
+
+                catch
+
+                {
+                    log.Info("bład logowania domenowego  " + DateTime.Now.ToLongTimeString());
+
+                    //log.Error("Logowanie domenowe się nie powiodło");
+                    Session["damain"] = "0";
+                    //log.Info("Logowanie użytkowników z bazy danych");
+                    log.Info("próba logowania z bazy  " + DateTime.Now.ToLongTimeString());
+                    string id = Logowanie.loguj(TextBox1.Text.Trim(), TextBox2.Text.Trim());
+                    if (id != "")
+                    {
+                        log.Info("logowania z bazy poprawne  " + DateTime.Now.ToLongTimeString());
+                        result = true;
+                        Session["user_id"] = TextBox1.Text.Trim();
+                        Session["userIdNum"] = id;
+                        Session["identyfikatorUzytkownika"] = id;
+                        Session["daneUzytkownika"] = Logowanie.PodajDaneUzytkownika(TextBox1.Text.Trim());
+                    }
+                    else
+                    {
+                        result = false;
+                    }
+                    // Label3.Text = ex.Message; ;
+                }
+
             }
-
-            catch
-
+            else
             {
-                log.Info("bład logowania domenowego  " + DateTime.Now.ToLongTimeString());
-
-                //log.Error("Logowanie domenowe się nie powiodło");
+                log.Info("rozpoczecie logowania z bazy danych " + DateTime.Now.ToLongTimeString());
                 Session["damain"] = "0";
                 //log.Info("Logowanie użytkowników z bazy danych");
-                log.Info("próba logowania z bazy  " + DateTime.Now.ToLongTimeString());
                 string id = Logowanie.loguj(TextBox1.Text.Trim(), TextBox2.Text.Trim());
-                if (id != "")
+                log.Info("wynik logowania z bazy danych " + DateTime.Now.ToLongTimeString());
+                int ident = 0;
+                try
                 {
-                    log.Info("logowania z bazy poprawne  " + DateTime.Now.ToLongTimeString());
-                     result = true;
+                    ident = int.Parse(id);
+                }
+                catch {}
+                if (ident > 0)
+                {
+                    log.Info("uzytkownik zgodny " + DateTime.Now.ToLongTimeString());
+                    result = true;
                     Session["user_id"] = TextBox1.Text.Trim();
                     Session["userIdNum"] = id;
                     Session["identyfikatorUzytkownika"] = id;
@@ -141,10 +183,12 @@ namespace Statystyki_2018
                 }
                 else
                 {
-                    result = false;
+                    log.Error("Logowanie nie poprawne!!! Użytkownik: " + TextBox1.Text.Trim() + " podał niepoprawne hasło lub nie istanieje na liście użytkowników");
                 }
-                // Label3.Text = ex.Message; ;
+
             }
+
+
 
             if (result)
             {

@@ -134,8 +134,8 @@ namespace Statystyki_2018
 
             using (ExcelPackage MyExcel = new ExcelPackage(existingFile))
             {
-                
-                ExcelWorksheet MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], (DataTable)Session["tabelka001"], 125, 0, 10, true, false, false, false, false);
+                DataTable test = (DataTable)Session["doexcela"];
+                ExcelWorksheet MyWorksheet1 = tb.tworzArkuszwExcle(MyExcel.Workbook.Worksheets[1], (DataTable)Session["doexcela"], 105, 0, 9, true, false, false, false, false);
 
                 try
                 {
@@ -160,8 +160,9 @@ namespace Statystyki_2018
             {
                 cm.log.Info(tenPlik + ": rozpoczęcie tworzenia tabeli 1");
             }
-            DataTable tabelka01 = DevExpressXXL.zLicznikiemKolumn(dr.konwertujNaPrzecinek(dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse(idDzialu), 5, Date1.Date, Date2.Date, 220, tenPlik)));
-
+            DataTable TabelaPierwotna = dr.generuj_dane_do_tabeli_sedziowskiej_2019(int.Parse(idDzialu), 5, Date1.Date, Date2.Date, 220, tenPlik);
+            DataTable tabelka01 = DevExpressXXL.zLicznikiemKolumn(dr.konwertujNaPrzecinek(TabelaPierwotna));
+            Session["doexcela"] = TabelaPierwotna;
             Session["tabelka001"] = tabelka01;
 
             ASPxGridView1.DataSource = null;
